@@ -1,0 +1,9 @@
+[
+  {
+    "name": "GROUP_NATUR",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_zom_squirrel", "weight": 1 }
+    ]
+  }
+]
