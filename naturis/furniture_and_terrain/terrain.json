@@ -1,0 +1,13 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_natur",
+    "name": "natural grass",
+    "description": "An area of hardy grass about ankle high.",
+    "symbol": ".",
+    "color": "green",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE", "GRAZABLE" ],
+    "bash": { "sound": "thump", "ter_set": "t_dirt", "str_min": 15, "str_max": 40, "bash_below": true }
+   }
+]
