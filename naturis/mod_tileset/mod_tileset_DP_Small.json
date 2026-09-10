@@ -1,0 +1,16 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/naturis_expan_dp_small.png",
+        "tiles": [
+          { "id": "mon_zom_squirrel", "fg": 1, "rotates": false }
+        ],
+        "sprite_width": 20,
+        "sprite_height": 20
+      }
+    ]
+  }
+]
