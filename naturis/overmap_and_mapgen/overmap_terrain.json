@@ -1,0 +1,10 @@
+[
+   {
+    "type": "overmap_terrain",
+    "id": "nature_flowers",
+    "name": "nature",
+    "sym": "C",
+    "color": "cyan",
+    "see_cost": "none"
+  }
+]
