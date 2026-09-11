@@ -6,7 +6,10 @@
       {
         "file": "mod_tileset/naturis_expan_dp_normal.png",
         "tiles": [
-          { "id": "t_natur", "fg": 1 }
+          { "id": "t_natur", "fg": 1 },
+          { "id": "t_natur_2", "fg": 2 },
+          { "id": "f_obelisk", "fg": 3 },
+          { "id": "f_obelisk_glow", "fg": 4 }
         ],
         "sprite_width": 32,
         "sprite_height": 32

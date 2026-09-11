@@ -1,0 +1,17 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+ "file": "mod_tileset/naturis_expan_dp_tall.png",
+        "tiles": [
+              { "id": "f_obelisk_big", "fg": 4 },
+              { "id": "f_obelisk_big_glow", "fg": 5 }
+        ],
+        "sprite_width": 32,
+        "sprite_height": 48
+      }
+    ]
+  }
+]
