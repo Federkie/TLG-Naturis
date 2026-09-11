@@ -1,9 +1,0 @@
-[
-  {
-    "type": "palette",
-    "id": "naturis_palette",
-    "terrain": {
-      "_": "t_natur" 
-    }
-  }
-]
