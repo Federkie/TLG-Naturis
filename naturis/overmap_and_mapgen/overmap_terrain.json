@@ -3,8 +3,9 @@
     "type": "overmap_terrain",
     "id": "nature_flowers",
     "name": "nature",
-    "sym": "C",
+    "sym": "N",
     "color": "cyan",
+    "vision_levels": "always_full",
     "see_cost": "none"
   }
 ]
