@@ -1,0 +1,10 @@
+[
+   {
+    "type": "city_building",
+    "id": "nature_flowers",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "nature_flowers_north" }
+    ]
+  }
+]
