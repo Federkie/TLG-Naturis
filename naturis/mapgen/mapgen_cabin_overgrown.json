@@ -1,0 +1,121 @@
+[
+  {
+    "type": "mapgen",
+    "om_terrain": [ "cabin_overgrown" ],
+    "weight": 200,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "------------------------",
+        "-**********************-",
+        "-...#######...*********-",
+        "-...#LCCCL#........****-",
+        "-...W     W...###....**-",
+        "-...#     #...#L#.***.*-",
+        "-...###+###...#=#..****-",
+        "-......~~~....~~~~..***-",
+        "-........~~~~~~.......*-",
+        "-..######+##ww###ww##.*-",
+        "-..# RRR   Y  A#DBBD#.*-",
+        "-..# RSR      A# BB #..-",
+        "-..# rrr      A#    #..-",
+        "-..#          A###=##..-",
+        "-..wdc              w..-",
+        "-..wd     cttc      w..-",
+        "-..#dOOO  cttc      #..-",
+        "-..#####           3#.*-",
+        "-..w   =           u#.*-",
+        "-..wBBD#        152u#%*-",
+        "-..#####ww##+###ww###.*-",
+        "-********..~~P.......**-",
+        "-********..~~..********-",
+        "-----------GG-----------"
+      ],
+      "palettes": [ "overgrown_palette" ],
+      "terrain": {
+      "-": "t_fence",
+      "*": [ [ "t_region_groundcover", 15 ], "t_region_shrub" ],
+     ".": [ [ "t_region_groundcover", 4 ], [ "t_region_groundcover_forest", 3 ], "t_region_shrub" ],
+      "#": "t_wall_log",
+      "~": [ [ "t_region_groundcover_barren", 3 ], [ "t_region_groundcover", 3 ], "t_region_shrub" ],
+      "+": [ [ "t_door_c", 1 ], [ "t_door_locked", 4 ], [ "t_door_b", 2 ], [ "t_door_elocked", 2 ] ],
+      "w": "t_window_domestic",
+      "r": "t_floor",
+      "=": [ [ "t_door_c", 1 ], [ "t_door_o", 1 ], [ "t_door_b", 2 ] ],
+      "%": "t_gutter_downspout",
+   "P": "t_water_pump",
+      "G": "t_fencegate_c",
+      "W": [ [ "t_window_boarded", 2 ], "t_window" ]
+      },
+    "furniture": {
+      "L": "f_locker",
+      "B": "f_bed",
+      "S": "f_woodstove",
+      "d": [ [ "f_desk", 1 ], [ "f_null", 3 ] ],
+      "t": "f_table" ,
+      "u": "f_cupboard",
+      "O": "f_sofa"
+    },
+    "items": {
+      "C": { "item": "trash", "chance": 20 },
+      "R": [
+        { "item": "camping", "chance": 50 },
+        { "item": "gear_survival", "chance": 30 },
+        { "item": "cannedfood", "chance": 50, "repeat": [ 2, 4 ] },
+        { "item": "stash_food", "chance": 50 }
+      ],
+      "A": [
+        { "item": "homebooks", "chance": 60, "repeat": [ 1, 3 ] },
+        { "item": "magazines", "chance": 60, "repeat": [ 1, 8 ] },
+        { "item": "manuals", "chance": 30 }
+      ],
+      "D": [
+        { "item": "SUS_dresser_mens", "chance": 50, "repeat": [ 1, 4 ] },
+        { "item": "SUS_dresser_womens", "chance": 50, "repeat": [ 1, 4 ] }
+      ],
+      "B": { "item": "bed", "chance": 60, "repeat": [ 1, 3 ] },
+      "S": { "item": "stash_wood", "chance": 60, "repeat": [ 2, 4 ] },
+      "3": { "item": "SUS_junk_drawer_messy", "chance": 20 },
+     "1": { "item": "SUS_junk_drawer_messy", "chance": 20 },
+      "5": { "item": "SUS_kitchen_sink", "chance": 10 },
+      "2": { "item": "SUS_junk_drawer_messy", "chance": 20 }
+    },
+      "place_loot": [ { "group": "corpse_generic_human", "x": 7, "y": 4, "chance": 100 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "cabin_overgrown_roof",
+    "object": {
+      "fill_ter": "t_tar_flat_roof",
+      "rows": [
+        "                        ",
+        "                        ",
+        "    .......             ",
+        "    .......             ",
+        "    .......   ...       ",
+        "    .......   ...       ",
+        "    .......   ...       ",
+        "                        ",
+        "                        ",
+        "   ------------------   ",
+        "   -................-   ",
+        "   -..~.............-   ",
+        "   -................-   ",
+        "   -................-   ",
+        "   -................-   ",
+        "   -................-   ",
+        "   -................-   ",
+        "   -................-   ",
+        "   -................-   ",
+        "   -................5   ",
+        "   ------------------   ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [ "roof_palette" ],
+      "terrain": { ".": "t_tar_flat_roof" }
+    }
+  }
+]
