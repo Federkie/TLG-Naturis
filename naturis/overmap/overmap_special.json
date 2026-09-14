@@ -13,6 +13,6 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 25, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS" ]
   }
 ]
