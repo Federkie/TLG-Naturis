@@ -2,7 +2,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "forest_heart_0" ],
-    "weight": 200,
     "object": {
       "fill_ter": "t_natur_2",
       "rows": [
