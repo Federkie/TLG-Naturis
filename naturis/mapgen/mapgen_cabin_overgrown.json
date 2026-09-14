@@ -4,7 +4,7 @@
     "om_terrain": [ "cabin_overgrown" ],
     "weight": 200,
     "object": {
-      "fill_ter": "t_natur_2",
+      "fill_ter": "t_carpet_red",
       "rows": [
         "------------------------",
         "------------------------",
