@@ -114,7 +114,7 @@
         "#----------------------#",
         "########################"
       ],
-      "palettes": [ "roof_palette" ],
+      "palettes": [ "overgrown_palette" ],
       "terrain": { 
          "#": "t_wall_dirt", 
          "S": "t_stairs_up",
