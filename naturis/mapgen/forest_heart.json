@@ -4,7 +4,7 @@
     "om_terrain": [ "forest_heart_0" ],
     "weight": 200,
     "object": {
-      "fill_ter": "t_carpet_red",
+      "fill_ter": "t_natur_2",
       "rows": [
         "------------------------",
         "------------------------",
@@ -21,73 +21,24 @@
         "------------------------",
         "------------------------",
         "--------------o---------",
-        "--------0---m-----0-----",
-        "----m-------------------",
-        "-----------------m------",
+        "--------0---------0-----",
+        "------------------------",
+        "------------------------",
         "------o-----ss----------",
-        "-m-----------------0----",
-        "------0----m----o-------",
+        "-------------------0----",
+        "------0---------o-------",
         "--------------0---------",
         "------------------------",
         "------------------------"
       ],
-      "palettes": [ "overgrown_palette" ],
-      "terrain": {
-      "-": "t_region_groundcover_forest",
-      "s": "t_stairs_down",
-     ".": [ [ "t_region_groundcover", 4 ], [ "t_region_groundcover_forest", 3 ], "t_region_shrub" ],
-      "#": "t_wall_log",
-      "~": [ [ "t_region_groundcover_barren", 3 ], [ "t_region_groundcover", 3 ], "t_region_shrub" ],
-      "+": [ [ "t_door_c", 1 ], [ "t_door_locked", 4 ], [ "t_door_b", 2 ], [ "t_door_elocked", 2 ] ],
-      "w": "t_window_domestic",
-      "r": "t_floor",
-      "=": [ [ "t_door_c", 1 ], [ "t_door_o", 1 ], [ "t_door_b", 2 ] ],
-      "%": "t_gutter_downspout",
-   "P": "t_water_pump",
-      "G": "t_fencegate_c",
-      "W": [ [ "t_window_boarded", 2 ], "t_window" ]
-      },
-    "furniture": {
-      "L": "f_locker",
-      "B": "f_bed",
-      "S": "f_woodstove",
-      "d": [ [ "f_desk", 1 ], [ "f_null", 3 ] ],
-      "t": "f_table" ,
-      "u": "f_cupboard",
-      "O": "f_sofa"
-    },
-    "items": {
-      "C": { "item": "trash", "chance": 20 },
-      "R": [
-        { "item": "camping", "chance": 50 },
-        { "item": "gear_survival", "chance": 30 },
-        { "item": "cannedfood", "chance": 50, "repeat": [ 2, 4 ] },
-        { "item": "stash_food", "chance": 50 }
-      ],
-      "A": [
-        { "item": "homebooks", "chance": 60, "repeat": [ 1, 3 ] },
-        { "item": "magazines", "chance": 60, "repeat": [ 1, 8 ] },
-        { "item": "manuals", "chance": 30 }
-      ],
-      "D": [
-        { "item": "SUS_dresser_mens", "chance": 50, "repeat": [ 1, 4 ] },
-        { "item": "SUS_dresser_womens", "chance": 50, "repeat": [ 1, 4 ] }
-      ],
-      "B": { "item": "bed", "chance": 60, "repeat": [ 1, 3 ] },
-      "S": { "item": "stash_wood", "chance": 60, "repeat": [ 2, 4 ] },
-      "3": { "item": "SUS_junk_drawer_messy", "chance": 20 },
-     "1": { "item": "SUS_junk_drawer_messy", "chance": 20 },
-      "5": { "item": "SUS_kitchen_sink", "chance": 10 },
-      "2": { "item": "SUS_junk_drawer_messy", "chance": 20 }
-    },
-      "place_loot": [ { "group": "corpse_generic_human", "x": 7, "y": 4, "chance": 100 } ]
+      "palettes": [ "overgrown_palette" ]
     }
   },
   {
     "type": "mapgen",
     "om_terrain": "forest_heart_1",
     "object": {
-      "fill_ter": "t_carpet_red",
+      "fill_ter": "t_natur_2",
       "rows": [
         "###########DD###########",
         "#----------------------#",
@@ -114,58 +65,15 @@
         "#----------------------#",
         "########################"
       ],
-      "palettes": [ "overgrown_palette" ],
-      "terrain": { 
-         "#": "t_wall_dirt", 
-         "S": "t_stairs_up",
-         "w": "t_window_stained_blue",
-         "l": "t_rock_wall",
-         "D": [ [ "t_door_locked_interior", 15 ], [ "t_door_locked", 5 ], [ "t_door_c", 2 ] ]
-}
-    },
+      "palettes": [ "overgrown_palette" ]
+    }
+},
 
-{
-    "type": "mapgen",
-    "om_terrain": "forest_heart_11",
-    "object": {
-      "fill_ter": "t_carpet_red",
-      "rows": [
-        "###########DD###########",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------D------D-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------lwlwwlwl-------#",
-        "#-------D------D-------#",
-        "#llwDwlll------lllwDwll#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------w------w-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------w--SS--w-------#",
-        "#-------l------l-------#",
-        "#-------l------l-------#",
-        "#-------w------w-------#",
-        "#-------l------l-------#",
-        "########llllllll########"
-      ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { 
-         "#": "t_wall_dirt", 
-  
-}
-    },
 {
     "type": "mapgen",
     "om_terrain": "forest_heart_1n",
     "object": {
-      "fill_ter": "t_carpet_red",
+      "fill_ter": "t_natur_2",
       "rows": [
         "########################",
         "#--------l-------------#",
@@ -192,55 +100,16 @@
         "#-l--------l-----------#",
         "#########lllDDlll#######"
       ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { 
-         "#": "t_wall_dirt", 
+      "palettes": [ "overgrown_palette" ]
   
 }
     },
 
 {
     "type": "mapgen",
-    "om_terrain": "forest_heart_1n2",
-    "object": {
-      "fill_ter": "t_carpet_red",
-      "rows": [
-        "########################",
-        "#--------l-------------#",
-        "#--------D-------------#",
-        "#--------llllllllllll--#",
-        "#---s----l**********l--#",
-        "#--------l*--------*l--#",
-        "#lllllllll*--------*l--#",
-        "#**********--------*l--#",
-        "#*-----------------*l--#",
-        "#*-----------------*l--#",
-        "#*-----------------*l--#",
-        "#*-----------------*l--#",
-        "#*--------lDDl-----*l--#",
-        "#*--------l  l-----*l--#",
-        "#*--------l  l-----*l--#",
-        "#*--------llll-----*l--#",
-        "#*-----------------*l--#",
-        "#*-----------------*l--#",
-        "#*----lllllllllDDl**l--#",
-        "#*----l-------l--llll--#",
-        "#*----D-------l--------#",
-        "#*----D-------l--------#",
-        "#*****l-------l--------#",
-        "#########lllDDlll#######"
-      ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { 
-         "#": "t_wall_dirt", 
-
-}
-    },
-{
-    "type": "mapgen",
     "om_terrain": "forest_heart_2n",
     "object": {
-      "fill_ter": "t_carpet_red",
+      "fill_ter": "t_natur_2",
       "rows": [
         "########################",
         "#--------llllllllllll--#",
@@ -267,56 +136,17 @@
         "#----------l--l--------#",
         "###########lDDl#########"
       ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { 
-         "#": "t_wall_dirt", 
+      "palettes": [ "overgrown_palette" ]
 
 }
     },
 
-{
-    "type": "mapgen",
-    "om_terrain": "forest_heart_2n2",
-    "object": {
-      "fill_ter": "t_carpet_red",
-      "rows": [
-        "########################",
-        "#-------------l--------#",
-        "#-------------w--------#",
-        "#-------------D--------#",
-        "#---s---------w--------#",
-        "#-------------l--------#",
-        "#lllllllllllllllllllDll#",
-        "#----------------------#",
-        "#----------------------#",
-        "#----------------------#",
-        "#----------------------#",
-        "#lllllllDlllDDlllDlllll#",
-        "#----------l--l--------#",
-        "#----------w--w--------#",
-        "#----------l--l--------#",
-        "#----------w--w--------#",
-        "#lllDlllllll--lllllDlll#",
-        "#          w--w        #",
-        "#          l--l        #",
-        "#          w--w        #",
-        "#          l--l        #",
-        "#          w--w        #",
-        "#          l--l        #",
-        "###########lDDl#########"
-      ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { 
-         "#": "t_wall_dirt", 
-
-}
-    },
 
   {
     "type": "mapgen",
     "om_terrain": "forest_heart_2",
     "object": {
-      "fill_ter": "t_carpet_red",
+      "fill_ter": "t_natur_2",
       "rows": [
         "##########lDDl##########",
         "#o*------------------*0#",
@@ -343,43 +173,10 @@
         "#0*------------------*o#",
         "########################"
       ],
-      "palettes": [ "roof_palette" ]
-
-     },
-
-  {
-    "type": "mapgen",
-    "om_terrain": "forest_heart_21",
-    "object": {
-      "fill_ter": "t_carpet_red",
-      "rows": [
-        "##########lDDl##########",
-        "#o*******0*--*0********o#",
-        "#-*-------*--*-------*-#",
-        "#-*-------*--*-------*-#",
-        "#-*-------*--*-------*-#",
-        "#-*-------o--o-------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#-*------llDDll------*-#",
-        "#-*------l    l------*-#",
-        "#-*------l    l------*-#",
-        "#-*------l    l------*-#",
-        "#-*------l    l------*-#",
-        "#-*------l    l------*-#",
-        "#-*------llllll------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#-*------------------*-#",
-        "#o********************o#",
-        "########################"
-      ],
-      "palettes": [ "roof_palette" ]
+      "palettes": [ "overgrown_palette" ]
+}
 
      }
-    }
+
+    
 ]
