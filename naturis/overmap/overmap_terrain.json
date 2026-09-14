@@ -1,10 +1,63 @@
 [
    {
     "type": "overmap_terrain",
-    "id": [ "nature_flowers" ],
+    "id": "nature_flowers",
     "name": "nature",
     "sym": "N",
     "color": "cyan",
     "see_cost": "none"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cabin_overgrown",
+    "vision_levels": "isolated_building",
+    "name": "cabin",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": [ "RISK_LOW", "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cabin_overgrown_roof",
+    "vision_levels": "roof_or_air",
+    "name": "cabin roof",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": "none"
+  },
+
+
+  {
+    "type": "overmap_terrain",
+    "id": "forest_heart_0",
+    "vision_levels": "isolated_building",
+    "name": "Heart of the forest",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": [ "RISK_HIGH", "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "forest_heart_1",
+    "copy-from": "forest_heart_0"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "forest_heart_1n",
+    "copy-from": "forest_heart_0"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "forest_heart_2n",
+    "copy-from": "forest_heart_0"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "forest_heart_2",
+    "copy-from": "forest_heart_0"
   }
+
+
 ]
