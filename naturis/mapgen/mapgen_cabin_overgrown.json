@@ -117,7 +117,7 @@
       "palettes": [ "roof_palette" ],
       "terrain": { 
          "#": "t_wall_dirt", 
-     "S": "t_stairs_up"
+         "S": "t_stairs_up"
 }
     },
 
