@@ -33,7 +33,7 @@
       ],
       "palettes": [ "overgrown_palette" ],
       "terrain": {
-      "-": "t_forestfloor",
+      "-": "t_region_groundcover_forest",
       "*": [ [ "t_region_groundcover", 15 ], "t_region_shrub" ],
      ".": [ [ "t_region_groundcover", 4 ], [ "t_region_groundcover_forest", 3 ], "t_region_shrub" ],
       "#": "t_wall_log",
