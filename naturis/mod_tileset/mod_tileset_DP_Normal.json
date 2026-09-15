@@ -10,7 +10,7 @@
           { "id": "t_natur_2", "fg": 2 },
           { "id": "f_obelisk", "fg": 3 },
           { "id": "f_obelisk_glow", "fg": 4 },
-          { "id": "t_m_mushroom", "fg": ? },
+          { "id": "t_m_mushroom", "fg": 14 },
           { "id": "f_m_mushroom_harvested", "fg": ? }
         ],
         "sprite_width": 32,
