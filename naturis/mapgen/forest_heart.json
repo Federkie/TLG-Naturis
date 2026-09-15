@@ -3,7 +3,7 @@
     "type": "mapgen",
     "om_terrain": [ "forest_heart_0" ],
     "object": {
-      "fill_ter": "t_forest_floor",
+      "fill_ter": "t_forestfloor",
       "rows": [
         "........................",
         "........................",
