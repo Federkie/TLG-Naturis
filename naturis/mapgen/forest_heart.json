@@ -64,7 +64,8 @@
         "#,,,,,,,---------~~,,,,#",
         "########################"
       ],
-      "palettes": [ "overgrown_palette" ]
+      "palettes": [ "overgrown_palette" ],
+      "terrain": { "b": "t_nature_2" },
     }
 },
 
