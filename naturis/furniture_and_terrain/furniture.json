@@ -1,0 +1,220 @@
+[
+{
+    "type": "furniture",
+    "id": "f_obelisk",
+    "name": "small obelisk",
+    "description": "A obelisk.",
+    "symbol": "0",
+    "color": "blue",
+    "move_cost_mod": 6,
+    "coverage": 35,
+    "concealment": 35,
+    "required_str": 16,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [ "NOITEM", "TRANSPARENT", "MINEABLE", "UNSTABLE", "MOUNTABLE", "SHORT" ],
+    "bash": {
+      "str_min": 32,
+      "str_max": 80,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [ { "item": "rock", "count": [ 35, 50 ] }, { "item": "sharp_rock", "count": [ 3, 7 ] } ]
+    }
+    },
+{
+    "type": "furniture",
+    "id": "f_obelisk_glow",
+    "name": "small glowing obelisk",
+    "description": "A glowing obelisk.",
+    "symbol": "0",
+    "color": "blue",
+    "move_cost_mod": 6,
+    "light_emitted": 12,
+    "coverage": 35,
+    "concealment": 35,
+    "required_str": 16,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [ "NOITEM", "TRANSPARENT", "MINEABLE", "UNSTABLE", "MOUNTABLE", "SHORT" ],
+    "bash": {
+      "str_min": 32,
+      "str_max": 80,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [ { "item": "rock", "count": [ 35, 50 ] }, { "item": "sharp_rock", "count": [ 3, 7 ] } ]
+    }
+   },
+  {
+    "type": "furniture",
+    "id": "f_obelisk_big",
+    "name": "large obelisk",
+    "description": "A obelisk that's taller than a man.",
+    "symbol": "O",
+    "color": "blue",
+    "move_cost_mod": -1,
+    "coverage": 65,
+    "concealment": 65,
+    "required_str": 32,
+    "flags": [ "NOITEM", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 64,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 65, 85 ] },
+        { "item": "sharp_rock", "count": [ 5, 9 ] },
+        { "item": "material_limestone", "charges": [ 2, 5 ], "prob": 30 },
+        { "item": "material_rocksalt", "count": [ 0, 1 ], "prob": 10 },
+        { "item": "material_rhodonite", "count": [ 0, 1 ], "prob": 1 },
+        { "item": "material_zincite", "count": [ 0, 5 ], "prob": 2 }
+      ]
+    }
+    },
+  {
+    "type": "furniture",
+    "id": "f_obelisk_big_glow",
+    "name": "large glowing obelisk",
+    "description": "A glowing obelisk that's taller than a man.",
+    "symbol": "o",
+    "color": "blue",
+    "move_cost_mod": -1,
+    "light_emitted": 12,
+    "coverage": 65,
+    "concealment": 65,
+    "required_str": 32,
+    "flags": [ "NOITEM", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 64,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 65, 85 ] },
+        { "item": "sharp_rock", "count": [ 5, 9 ] },
+        { "item": "material_limestone", "charges": [ 2, 5 ], "prob": 30 },
+        { "item": "material_rocksalt", "count": [ 0, 1 ], "prob": 10 },
+        { "item": "material_rhodonite", "count": [ 0, 1 ], "prob": 1 },
+        { "item": "material_zincite", "count": [ 0, 5 ], "prob": 2 }
+      ]
+    }
+  },
+ {
+    "type": "furniture",
+    "id": "f_chair_grown",
+    "name": "overgrown wooden chair",
+    "symbol": "#",
+    "description": "A simple overgrown wooden chair.",
+    "color": "green",
+    "move_cost_mod": 1,
+    "coverage": 35,
+    "concealment": 35,
+    "comfort": 0,
+    "floor_bedding_warmth": -1500,
+    "bonus_fire_warmth_feet": 1000,
+    "required_str": 3,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "ORGANIC", "MOUNTABLE", "CAN_SIT", "EASY_DECONSTRUCT", "ALIGN_WORKBENCH" ],
+    "deconstruct": { "items": [ { "item": "chair_wood", "count": 1 } ] },
+    "bash": {
+      "str_min": 5,
+      "str_max": 20,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "nuts_bolts", "charges": [ 2, 10 ] },
+        { "item": "splinter", "count": [ 1, 10 ] }
+      ]
+    }
+  },
+{
+    "type": "furniture",
+    "id": "f_stool_grown",
+    "name": "wooden overgrown stool",
+    "symbol": "#",
+    "looks_like": "f_chair_grown",
+    "description": "A simple overgrown stool with four legs and a seat.",
+    "color": "green",
+    "move_cost_mod": 1,
+    "coverage": 8,
+    "comfort": 0,
+    "bonus_fire_warmth_feet": 1000,
+    "required_str": 3,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "ORGANIC", "MOUNTABLE", "CAN_SIT", "EASY_DECONSTRUCT", "ALIGN_WORKBENCH" ],
+    "deconstruct": { "items": [ { "item": "stool_wood", "count": 1 } ] },
+    "max_volume": "875 L",
+    "bash": {
+      "str_min": 5,
+      "str_max": 18,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "nuts_bolts", "charges": [ 1, 5 ] }, { "item": "splinter", "count": [ 3, 10 ] } ]
+    }
+  },
+ {
+    "type": "furniture",
+    "id": "f_trashcan_grown",
+    "name": "overgrown trash can",
+    "symbol": "&",
+    "description": "A overgrown plastic bin for storing discarded waste as to be disposed of later.",
+    "color": "light_cyan",
+    "move_cost_mod": 1,
+    "required_str": 5,
+    "coverage": 15,
+    "max_volume": "40 L",
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "CONTAINER", "PLACE_ITEM", "MOUNTABLE", "SHORT", "SMALL_HIDE", "EASY_DECONSTRUCT" ],
+    "bash": {
+      "str_min": 1,
+      "str_max": 1,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "trashcan", "count": 1, "damage": [ 2, 5 ] } ]
+    },
+    "deconstruct": { "items": [ { "item": "trashcan", "count": 1 } ] }
+  },
+{
+    "type": "furniture",
+    "id": "f_rack_coat_grown",
+    "name": "coat rack",
+    "description": "A overgrown tall wooden pole with a set of hooks used to store outdoor jackets and hats to allow easy access.",
+    "symbol": "Y",
+    "color": "green",
+    "move_cost_mod": -1,
+    "coverage": 6,
+    "required_str": 3,
+    "flags": [ "TRANSPARENT", "FLAMMABLE", "PLACE_ITEM", "BLOCKSDOOR", "MOUNTABLE" ],
+    "deconstruct": {
+      "items": [ { "item": "nail", "charges": [ 1, 4 ] }, { "item": "stick_long", "count": 1 } ]
+    },
+    "max_volume": "15 L",
+    "bash": {
+      "str_min": 5,
+      "str_max": 25,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "splinter", "count": [ 4, 9 ] }, { "item": "nail", "charges": [ 1, 2 ] } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_dresser_grown",
+    "name": "overgrown dresser",
+    "symbol": "{",
+    "description": "A overgrown simple wooden cabinet with a column of short drawers.  While intended for storing clothes, there's nothing stopping you from storing whatever fits.",
+    "color": "green",
+    "move_cost_mod": -1,
+    "coverage": 70,
+    "rotates_to": "WALL",
+    "concealment": 70,
+    "required_str": 8,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE", "PLACE_ITEM", "ORGANIC", "BLOCKSDOOR", "MOUNTABLE", "NO_SELF_CONNECT" ],
+    "deconstruct": {
+      "items": [ { "item": "2x4", "count": 4 }, { "item": "wood_panel", "count": [ 0, 1 ] }, { "item": "nail", "charges": [ 4, 6 ] } ]
+    },
+    "max_volume": "1000 L",
+    "bash": {
+      "str_min": 10,
+      "str_max": 30,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 1, 4 ] }, { "item": "nail", "charges": [ 3, 6 ] }, { "item": "splinter", "count": 3 } ]
+    }
+  }
+]
