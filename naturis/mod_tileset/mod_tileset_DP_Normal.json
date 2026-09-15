@@ -5,16 +5,25 @@
     "tiles-new": [
       {
         "file": "mod_tileset/naturis_expan_dp_normal.png",
+        "sprite_width": 32,
+        "sprite_height": 32,
         "tiles": [
-          { "id": "t_natur", "fg": 1 },
-          { "id": "t_natur_2", "fg": 2 },
-          { "id": "f_obelisk", "fg": 3 },
-          { "id": "f_obelisk_glow", "fg": 4 },
+          { "id": "t_natur", "fg": 1, "rotates": false, "bg": 5 },
+          { "id": "t_natur_2", "fg": 2, "rotates": false, "bg": 5 },
+
+          { "id": "f_obelisk", "fg": 3, "rotates": false, "bg": 5  },
+          { "id": "f_obelisk_glow", "fg": 4, "rotates": false, "bg": 5  },
+          { "id": "mon_forest_dog", "fg": 6, "rotates": false, "bg": 5  },
+          { "id": "t_natur_root", "fg": 7, "rotates": false, "bg": 5  },
+          { "id": "f_chair_grown", "fg": 8, "rotates": false, "bg": 5  },
+          { "id": "f_rack_coat_grown", "fg": 9, "rotates": false, "bg": 5  },
+          { "id": "f_trashcan_grown", "fg": 10, "rotates": false, "bg": 5  },
+          { "id": "f_stool_grown", "fg": 11, "rotates": false, "bg": 5  },
+          { "id": "f_dresser_grown", "fg": 12, "rotates": false, "bg": 5  },
           { "id": "t_m_mushroom", "fg": 14 },
           { "id": "f_m_mushroom_harvested", "fg": ? }
-        ],
-        "sprite_width": 32,
-        "sprite_height": 32
+
+        ]
       }
     ]
   }
