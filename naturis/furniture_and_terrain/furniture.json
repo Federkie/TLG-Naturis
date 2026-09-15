@@ -216,5 +216,25 @@
       "sound_fail": "whump.",
       "items": [ { "item": "2x4", "count": [ 1, 4 ] }, { "item": "nail", "charges": [ 3, 6 ] }, { "item": "splinter", "count": 3 } ]
     }
-  }
+  },
+{
+    "type": "furniture",
+    "id": "f_natur_root",
+    "name": "roots",
+    "description": "some roots.",
+    "symbol": "~",
+    "color": "brown",
+    "move_cost_mod": 3,
+    "coverage": 10,
+    "concealment": 15,
+    "required_str": 8,
+    "flags": [ "NOITEM", "TRANSPARENT", "UNSTABLE", "MOUNTABLE", "SHORT" ],
+    "bash": {
+      "str_min": 9,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": { "item": "rock", "count": [ 35, 50 ] }
+    }
+    }
 ]
