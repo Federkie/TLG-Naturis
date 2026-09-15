@@ -12,7 +12,7 @@
        ".": "t_forestfloor",
        "m": "t_m_mushroom",
        "D": [ [ "t_door_locked_interior", 15 ], [ "t_door_locked", 5 ], [ "t_door_c", 2 ], [ "t_door_o", 2 ] ],
-    "*": "t_water_pool"
+    "*": "t_water_dp"
     },
     "furniture": {
       "c": [ [ "f_chair_grown", 1 ], [ "f_null", 5 ] ],
