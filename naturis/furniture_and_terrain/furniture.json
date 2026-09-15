@@ -228,13 +228,13 @@
     "coverage": 10,
     "concealment": 15,
     "required_str": 8,
-    "flags": [ "NOITEM", "TRANSPARENT", "UNSTABLE", "MOUNTABLE", "SHORT" ],
+    "flags": [ "NOITEM", "TRANSPARENT", "UNSTABLE", "MOUNTABLE", "SHORT", "FLAMMABLE_ASH", "ORGANIC" ],
     "bash": {
       "str_min": 9,
       "str_max": 40,
       "sound": "smash!",
       "sound_fail": "thump.",
-      "items": { "item": "rock", "count": [ 35, 50 ] }
+      "items": { "item": "splinter", "count": [ 10, 25 ] }
     }
     }
 ]
