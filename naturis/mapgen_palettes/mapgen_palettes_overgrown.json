@@ -5,8 +5,8 @@
     "terrain": {
        "-": "t_natur_2",
        "#": "t_wall_dirt", 
-       "S": "t_stairs_up",
-       "s": "t_stairs_down",
+       "S": "t_ladder_up",
+       "s": "t_ladder_down",
        "w": "t_window_stained_blue",
        "l": "t_rock_wall",
        ".": "t_forestfloor",
