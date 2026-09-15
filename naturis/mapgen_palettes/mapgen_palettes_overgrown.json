@@ -20,6 +20,7 @@
       "t": "f_stool_grown",
       "&": "f_trashcan_grown",
       "T": "f_dresser_grown",
+      "~": "f_natur_root",
       "Y": "f_rack_coat_grown",
       "0": [ [ "f_obelisk", 4 ], [ "f_obelisk_glow", 2] ],
       "o": [ [ "f_obelisk_big", 1 ], [ "f_obelisk_big_glow", 1 ] ]
