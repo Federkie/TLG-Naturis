@@ -10,6 +10,7 @@
        "w": "t_window_stained_blue",
        "l": "t_rock_wall",
        ".": "t_forestfloor",
+       "id": "t_m_mushroom",
        "D": [ [ "t_door_locked_interior", 15 ], [ "t_door_locked", 5 ], [ "t_door_c", 2 ] ],
     "*": "t_water_pool"
     },
