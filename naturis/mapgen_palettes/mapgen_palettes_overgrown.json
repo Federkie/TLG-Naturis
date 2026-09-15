@@ -12,6 +12,7 @@
        ".": "t_forestfloor",
        "m": "t_m_mushroom",
        ",": "t_grass",
+       "+": "t_red_carpet",
        "D": [ [ "t_door_locked_interior", 15 ], [ "t_door_locked", 5 ], [ "t_door_c", 2 ], [ "t_door_o", 2 ] ],
     "*": "t_water_dp"
     },
