@@ -13,3 +13,12 @@ This creature allows plants and trees to grow, including in buildings.
 Heart of the forest: 
 A location with its own flora and fauna, several levels and a final. 
 I recommend a mid game equipment.
+
+
+To do: 
+- More spawn points for the Forest Walker
+- Rework the Change Terrain function of the Forest Walker
+- More locations
+- Anomalies
+- Overgrown buildings in cities
+- Overgrown sprites
