@@ -1,0 +1,110 @@
+[
+  {
+    "id": "mon_bone_snake",
+    "type": "MONSTER",
+    "name": { "str": "bone snake" },
+    "description": "The skeletal remains of a gigantic snake, constantly scanning the air for new victims.",
+    "default_faction": "fleshy",
+    "bodytype": "snake",
+    "species": [ "REPTILE" ],
+    "diff": 2,
+    "volume": "40000 ml",
+    "weight": "30000 g",
+    "hp": 64,
+    "speed": 100,
+    "material": [ "bone" ],
+    "symbol": "s",
+    "color": "red",
+    "morale": 80,
+    "aggression": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_damage": [ { "damage_type": "stab", "amount": 3 } ],
+    "dodge": 3,
+    "vision_day": 25,
+    "vision_night": 6,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "harvest": "mutant_animal_large_noskin",
+    "dissect": "dissect_lizard_sample_small",
+    "special_attacks": [
+      [ "ABSORB_MEAT", 10 ],
+      [ "RATTLE", 6 ],
+      {
+        "type": "bite",
+        "cooldown": 6,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 7, "armor_multiplier": 0.7 } ]
+      }
+    ],
+    "flags": [ "SEES", "SMELLS", "HARDTOSHOOT", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "ANIMAL", "SWIMS" ],
+    "armor": { "bash": 4, "cut": 3, "bullet": 1, "electric": 1 }
+  },
+
+
+  {
+    "id": "mon_flesh_wolf",
+    "type": "MONSTER",
+    "name": { "str": "flesh wolf" },
+    "description": "The grotesque figure of an upright walking wolf that was skinned alive. Now it is searching for victims to suffer in its place.",
+    "default_faction": "fleshy",
+    "bodytype": "dog",
+    "species": [ "FLESH" ],
+    "diff": 7,
+    "families": [ "prof_intro_biology" ],
+    "volume": "150 L",
+    "weight": "170 kg",
+    "hp": 140,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "W",
+    "color": "red",
+    "scents_tracked": [ "sc_human", "sc_fetid" ],
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_damage": [
+      { "damage_type": "cut", "amount": 2.0, "armor_penetration": 1, "armor_multiplier": 1.2, "damage_multiplier": 1.4 },
+      { "damage_type": "stab", "amount": 3.0, "armor_penetration": 6 }
+    ],
+    "grab_strength": 25,
+    "special_attacks": [
+      [ "ABSORB_MEAT", 15 ],
+      [ "HOWL", 6 ],
+      { "id": "cut_throat" },
+      [ "LUNGE", 10 ],
+      { "id": "bite_grab" },
+      {
+        "type": "spell",
+        "spell_data": { "id": "flesh_burst", "min_level": 1 },
+        "monster_message": "%1$s roars in pain!!!",
+        "cooldown": 30
+      }
+    ],
+    "dodge": 3,
+    "bleed_rate": 120,
+    "vision_day": 30,
+    "vision_night": 10,
+    "fear_triggers": [ "FIRE" ],
+    "harvest": "mutant_animal_large_noskin",
+    "dissect": "dissect_canine_sample_single",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "GOODHEARING",
+      "KEENNOSE",
+      "BASHES",
+      "GRABS",
+      "PATH_AVOID_DANGER",
+      "PATH_AVOID_FIRE",
+      "WARM"
+    ],
+    "armor": { "bash": 5, "cut": 3, "stab": 7 }
+  }
+
+
+
+
+]

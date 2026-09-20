@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "overgrown",
+    "friendly": [ "fleshy" ],
+    "neutral": [ "triffid" ]
+  },
+
+  {
+    "type": "MONSTER_FACTION",
+    "name": "fleshy",
+    "friendly": [ "overgrown" ],
+    "neutral": [ "triffid" ]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mon_old_chick",
+    "type": "MONSTER",
+    "name": { "str": "old chick" },
+    "description": "A domesticated descendant of junglefowl, it may still be the most numerous bird in the world.  Before the Cataclysm, it was raised by humans as a source of meat, eggs, and early morning wakeup calls.",
+    "default_faction": "small_animal",
+    "bodytype": "bird",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "BIRD" ],
+    "volume": "2 L",
+    "weight": "2200 g",
+    "hp": 20,
+    "speed": 70,
+    "material": [ "wood" ],
+    "symbol": "v",
+    "color": "green",
+    "aggression": -99,
+    "morale": -9,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "dodge": 3,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bird" ],
+    "weakpoint_sets": [ "wps_bird_body" ],
+    "harvest": "old_chick",
+    "dissect": "dissect_bird_sample_single",
+    "biosignature": { "biosig_item": "splinter", "biosig_timer": 3 },
+    "petfood": {
+      "food": [ "BIRDFOOD" ],
+      "feed": "The %s seems to like you!  It runs around your legs and seems friendly.",
+      "pet": "The %s runs around your leg."
+    },
+      "fear_triggers": [ "SOUND", "PLAYER_CLOSE", "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
+    "flags": [ "SEES", "ANIMAL", "PATH_AVOID_DANGER", "CANPLAY", "SWARMS", "CAN_BE_CULLED", "SMALL_HIDER" ]
+  },
+
+
+
+  {
+    "id": "mon_rain_chick",
+    "type": "MONSTER",
+    "name": { "str": "rain chick" },
+    "description": "A tiny darkly-colored chick, it could be from a number of different species.",
+    "default_faction": "small_animal",
+    "bodytype": "bird",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "BIRD" ],
+    "volume": "90 ml",
+    "weight": "70 g",
+    "hp": 1,
+    "speed": 40,
+    "material": [ "flesh" ],
+    "symbol": "v",
+    "color": "green",
+    "aggression": -99,
+    "morale": 10,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "dodge": 1,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bird" ],
+    "harvest": "bird_tiny",
+    "upgrades": { "age_grow": 20, "into": "mon_rainbird" },
+    "fear_triggers": [ "SOUND", "PLAYER_CLOSE", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
+    "petfood": {
+      "food": [ "BIRDFOOD" ],
+      "feed": "The %s seems to like you!  It runs around your legs and seems friendly.",
+      "pet": "The %s runs around your leg."
+    },
+    "flags": [ "SEES", "HEARS", "ANIMAL", "PATH_AVOID_DANGER", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER" ]
+  }
+
+
+  
+
+]

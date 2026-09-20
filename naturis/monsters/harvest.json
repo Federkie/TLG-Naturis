@@ -1,0 +1,30 @@
+[
+  {
+    "id": "overgrown",
+    "type": "harvest",
+    "entries": [
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.2 },
+      { "drop": "stick", "type": "bone", "mass_ratio": 0.05 },
+      { "drop": "vine_30", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "withered", "type": "skin", "mass_ratio": 0.01 }
+    ]
+  },
+{
+    "id": "old_chick",
+    "type": "harvest",
+    "entries": [
+      { "drop": "splinter", "type": "bone", "mass_ratio": 0.2 },
+      { "drop": "stick", "type": "bone", "mass_ratio": 0.05 },
+      { "drop": "vine_30", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "withered", "type": "skin", "mass_ratio": 0.01 }
+    ]
+  },
+  {
+    "id": "shroom_harvest",
+    "type": "harvest",
+    "entries": [ { "drop": "strange_shroom", "base_num": [ 1, 3 ], "scale_num": [ 0, 0.3 ] } ]
+  }
+
+
+
+]

@@ -1,9 +1,55 @@
 [
   {
-    "name": "GROUP_NATUR",
+    "name": "GROUP_HEART",
     "type": "monstergroup",
-    "monsters": [
-      { "monster": "mon_zom_squirrel", "weight": 1 }
+     "monsters": [
+      { "monster": "mon_forest_dog", "weight": 350, "cost_multiplier": 0 },
+   { "monster": "mon_old_stone", "weight": 100, "cost_multiplier": 0 },
+      { "monster": "mon_bone_snake", "weight": 200, "cost_multiplier": 0 },
+{ "monster": "mon_old_chick", "weight": 50, "cost_multiplier": 0 },
+      { "monster": "mon_walking_tree", "weight": 200, "cost_multiplier": 0 }
     ]
+  },
+{
+    "name": "GROUP_ZOM_HEART",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_zom_squirrel", "weight": 200, "cost_multiplier": 0 },
+      { "monster": "mon_zom_bat", "weight": 200, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_fat", "weight": 200, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_tough", "weight": 100, "cost_multiplier": 0 },
+      { "monster": "mon_zombie", "weight": 400, "cost_multiplier": 0 }
+    ]
+  },
+
+{
+
+    "name": "GROUP_FOREST_WALKER",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_forest_walker", "weight": 75, "cost_multiplier": 0 } ]
+},
+
+{
+
+    "name": "GROUP_EGG_HEART",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_rain_chick", "weight": 300, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_HEART_FINAL",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_old_bird", "weight": 300, "cost_multiplier": 0 },
+      { "monster": "mon_flesh_wolf", "weight": 300, "cost_multiplier": 0 }
+
+]
+
+  
   }
+
+
+
+
 ]
