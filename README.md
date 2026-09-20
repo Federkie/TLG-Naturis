@@ -11,4 +11,5 @@ The forest walker (WIP):
 This creature allows plants and trees to grow, including in buildings. 
 
 Heart of the forest: 
-A location with its own flora and fauna, several levels and a final. I recommend a mid game equipment.
+A location with its own flora and fauna, several levels and a final. 
+I recommend a mid game equipment.
