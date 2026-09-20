@@ -10,20 +10,19 @@
     "flags": [ "DIGGABLE", "FLAT", "PLOWABLE", "GRAZABLE" ],
     "bash": { "sound": "thump", "ter_set": "t_dirt", "str_min": 15, "str_max": 40, "bash_below": true }
    },
-
 {
     "type": "terrain",
     "id": "t_m_mushroom",
     "name": "magic mushroom",
     "description": "A shroom!!!",
     "symbol": "#",
-    "color": "purple",
+    "color": "red",
     "move_cost": 3,
     "coverage": 20,
     "concealment": 20,
     "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "SMALL_HIDE" ],
     "examine_action": "harvest_ter",
-    "harvest_by_season": [ { "seasons": [ "spring" ], "id": "fern_harv" } ],
+    "harvest_by_season": [ { "seasons": [ "spring" ], "id": "shroom_harvest" } ],
     "transforms_into": "t_m_mushroom_harvested",
     "bash": {
       "str_min": 2,
@@ -40,11 +39,11 @@
     "name": "magic mushroom",
     "description": "A short plant harvested.",
     "symbol": "#",
-    "color": "purple",
+    "color": "red",
     "move_cost": 3,
     "coverage": 20,
     "concealment": 20,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "SMALL_HIDE" ],
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE" ],
     "examine_action": "harvested_plant",
     "transforms_into": "t_m_mushroom",
     "bash": {
@@ -55,6 +54,17 @@
       "ter_set": "t_dirt",
       "items": [ { "item": "withered", "prob": 50, "count": [ 1, 2 ] }, { "item": "leaves", "count": [ 1, 2 ] } ]
     }
-  }
+  },
+  {
+    "type": "terrain",
+    "id": "t_natur_2",
+    "name": "natural grass with roots",
+    "description": "An area of hardy grass about ankle high.",
+    "symbol": ".",
+    "color": "green",
+    "move_cost": 3,
+    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE", "GRAZABLE" ],
+    "bash": { "sound": "thump", "ter_set": "t_dirt", "str_min": 15, "str_max": 40, "bash_below": true }
+   }
 
 ]

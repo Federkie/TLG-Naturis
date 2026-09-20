@@ -28,7 +28,7 @@
     "symbol": "0",
     "color": "blue",
     "move_cost_mod": 6,
-    "light_emitted": 12,
+    "light_emitted": 6,
     "coverage": 35,
     "concealment": 35,
     "required_str": 16,
@@ -77,7 +77,7 @@
     "symbol": "o",
     "color": "blue",
     "move_cost_mod": -1,
-    "light_emitted": 12,
+    "light_emitted": 6,
     "coverage": 65,
     "concealment": 65,
     "required_str": 32,
@@ -96,7 +96,7 @@
         { "item": "material_zincite", "count": [ 0, 5 ], "prob": 2 }
       ]
     }
-  },
+  }, 
  {
     "type": "furniture",
     "id": "f_chair_grown",
@@ -129,7 +129,6 @@
     "id": "f_stool_grown",
     "name": "wooden overgrown stool",
     "symbol": "#",
-    "looks_like": "f_chair_grown",
     "description": "A simple overgrown stool with four legs and a seat.",
     "color": "green",
     "move_cost_mod": 1,
@@ -221,20 +220,22 @@
     "type": "furniture",
     "id": "f_natur_root",
     "name": "roots",
-    "description": "some roots.",
     "symbol": "~",
-    "color": "brown",
-    "move_cost_mod": 3,
-    "coverage": 10,
-    "concealment": 15,
-    "required_str": 8,
-    "flags": [ "NOITEM", "TRANSPARENT", "UNSTABLE", "MOUNTABLE", "SHORT", "FLAMMABLE_ASH", "ORGANIC" ],
+    "description": "Some roots.",
+    "color": "green",
+    "move_cost_mod": 1,
+    "coverage": 8,
+    "required_str": 3,
+    "flags": [ "TRANSPARENT", "NOITEM",  "FLAMMABLE_ASH", "ORGANIC", "MOUNTABLE" ],
     "bash": {
-      "str_min": 9,
-      "str_max": 40,
+      "str_min": 32,
+      "str_max": 80,
       "sound": "smash!",
       "sound_fail": "thump.",
-      "items": { "item": "splinter", "count": [ 10, 25 ] }
+      "items": [ { "item": "splinter", "count": [ 10, 25 ] }, { "item": "rock", "count": [ 1, 3 ] } ]
     }
-    }
+    
+  }
+
+
 ]
