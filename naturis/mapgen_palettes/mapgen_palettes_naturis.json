@@ -1,0 +1,16 @@
+[
+  {
+    "type": "palette",
+    "id": "naturis_palette",
+    "terrain": {
+      "_": "t_natur_2",
+      "w": "t_natur"
+    },
+    "furniture": {
+      "0": "f_obelisk",
+      "1": "f_obelisk_glow",
+      "O": "f_obelisk_big",
+      "o": "f_obelisk_big_glow"
+    }
+  }
+]
