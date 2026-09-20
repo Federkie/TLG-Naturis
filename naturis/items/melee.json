@@ -1,0 +1,28 @@
+[
+  {
+    "id": "sword_rooted",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "category": "weapons",
+    "name": { "str": "rooted sword" },
+    "description": "A simple short sword made of bronze.",
+    "weight": "950 g",
+    "volume": "160 ml",
+    "longest_side": "55 cm",
+    "price": "200 USD",
+    "price_postapoc": "20 USD",
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "line", "balance": "neutral" },
+    "material": [ "wood", "steel" ],
+    "symbol": "!",
+    "color": "green",
+    "techniques": [ "WBLOCK_1" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 3 ] ],
+    "flags": [ "SHEATH_SWORD" ],
+    "weapon_category": [ "SHORT_SWORDS" ],
+    "melee_damage": { "bash": 8, "cut": 17 }
+  }
+
+
+
+
+]

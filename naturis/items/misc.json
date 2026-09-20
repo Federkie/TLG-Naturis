@@ -1,0 +1,20 @@
+[
+  {
+    "type": "ITEM",
+    "id": "plush_cthulu",
+    "name": { "str": "plush cthulu" },
+    "description": "A manufactured plush toy.",
+    "category": "other",
+    "material": [ { "type": "faux_fur", "portion": 1 }, { "type": "synthetic_fluff", "portion": 15 } ],
+    "weight": "900 g",
+    "volume": "3 L",
+    "price": "20 USD",
+    "price_postapoc": "1 USD",
+    "symbol": "i",
+    "color": "cyan",
+    "flags": [ "SLEEP_AID", "NO_SALVAGE" ]
+}
+
+
+
+]
