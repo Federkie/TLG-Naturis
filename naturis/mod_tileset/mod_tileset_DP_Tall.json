@@ -4,10 +4,18 @@
     "compatibility": [ "MshockXottoplus" ],
     "tiles-new": [
       {
- "file": "mod_tileset/naturis_expan_dp_tall.png",
+        "file": "mod_tileset/naturis_expan_dp_tall.png",
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -16,
         "tiles": [
-              { "id": "f_obelisk_big", "fg": 4 },
-              { "id": "f_obelisk_big_glow", "fg": 5 }
+		  { "id": "f_obelisk_big", "fg": 4, "rotates": false },
+		  { "id": "f_obelisk_big_glow", "fg": 5, "rotates": false },
+		  { "id": "mon_forest_walker", "fg": 1, "rotates": false, "bg": 6 },
+		  { "id": "mon_walking_tree", "fg": 7, "rotates": false, "bg": 6 },
+		  { "id": "mon_hunting_bird", "fg": 0, "rotates": false, "bg": 6 },
+		  { "id": "mon_old_bird", "fg": 2, "rotates": false, "bg": 6 },
+		  { "id": "mon_flesh_wolf", "fg": 3, "rotates": false, "bg": 6 },
+		  { "id": "mon_old_stone", "fg": 8, "rotates": false }
         ],
         "sprite_width": 32,
         "sprite_height": 48
@@ -15,3 +23,4 @@
     ]
   }
 ]
+

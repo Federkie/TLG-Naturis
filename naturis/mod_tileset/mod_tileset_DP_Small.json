@@ -5,8 +5,15 @@
     "tiles-new": [
       {
         "file": "mod_tileset/naturis_expan_dp_small.png",
+        "sprite_offset_x": 12,
+        "sprite_offset_y": 12,
         "tiles": [
-          { "id": "mon_zom_squirrel", "fg": 1, "rotates": false }
+		  { "id": "mon_zom_squirrel", "fg": 1, "rotates": false },
+		  { "id": "mon_zom_bat", "fg": 0, "rotates": false },
+		  { "id": "egg_rooted", "fg": 2, "rotates": false },
+		  { "id": "strange_shroom", "fg": 3, "rotates": false },
+		  { "id": "mon_old_chick", "fg": 4, "rotates": false },
+		  { "id": "mon_rain_chick", "fg": 5, "rotates": false }
         ],
         "sprite_width": 20,
         "sprite_height": 20
