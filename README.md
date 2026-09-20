@@ -22,3 +22,5 @@ To do:
 - Anomalies
 - Overgrown buildings in cities
 - Overgrown sprites
+- Better descriptions
+
