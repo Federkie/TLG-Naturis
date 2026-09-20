@@ -1,0 +1,193 @@
+[
+  {
+    "id": "heart_books",
+    "type": "item_group",
+    "items": [
+      [ "essay_book", 5 ],
+      [ "poetry_book", 8 ],
+      [ "philosophy_book", 6 ],
+      [ "novel_experimental", 5 ],
+      [ "poetic_edda", 8 ],
+      [ "brewing_cookbook", 6 ],
+      [ "cookbook_human", 2 ],
+      [ "cookbook_bloodforgood", 3 ],
+      [ "winemaking_beginner", 6 ],
+      [ "bronze_book", 1 ],
+      [ "jewelry_book", 6 ],
+      [ "textbook_armwest", 3 ],
+      [ "textbook_mesoam", 3 ],
+      [ "ZSG", 2 ],
+      [ "necropolis_freq", 6 ],
+      [ "priest_diary", 6 ],
+      [ "tall_tales", 6 ],
+      [ "collector_book", 6 ],
+      [ "occult_economicon", 6 ],
+      [ "occult_bobliographon", 6 ],
+      [ "occult_glimpses", 6 ],
+      [ "necronomicon", 8 ],
+      [ "book_pieces", 20 ],
+      [ "book_anthology_htloop", 6 ],
+      [ "book_anthology_an", 7 ]
+    ]
+  },
+
+
+{
+    "id": "heart_rare",
+    "type": "item_group",
+    "items": [
+      [ "machete", 1 ],
+      [ "cavalry_sabre", 1 ],
+      [ "hollow_cane", 3 ],
+      [ "sword_cane", 1 ],
+      [ "copper_ax", 1 ],
+      [ "hatchet", 2 ],
+      [ "cane", 4 ],
+      [ "mace_bronze", 1 ],
+      [ "walking_stick", 4 ],
+      [ "knife_carving", 4 ],
+      [ "knife_hunting", 2 ],
+      [ "bone_knife", 4 ],
+      [ "copper_knife", 3 ],
+      [ "brush_axe", 2 ],
+      [ "bullwhip", 3 ],
+      [ "bullwhip_razor", 2 ]
+    ]
+  },
+
+
+
+  {
+    "id": "heart_armor",
+    "type": "item_group",
+    "items": [
+      [ "sheet_metal_bracers", 1 ],
+      [ "chainmail_sleeves", 2 ],
+      [ "cloak_fur", 7 ],
+      [ "cloak_leather", 7 ],
+      [ "boots_fur", 6 ],
+      [ "gambeson", 4 ],
+      [ "gambeson_loose", 4 ],
+      [ "leather_gauntlets", 7 ],
+      [ "hat_fur", 7 ],
+      [ "bead_bracelet", 7 ],
+      [ "bead_necklace", 7 ],
+      [ "diamond_ring", 5 ],
+      [ "copper_ring", 8 ],
+      [ "gold_bracelet", 3 ],
+      [ "gold_locket", 3 ],
+      [ "gold_ring", 3 ],
+      [ "gold_cufflinks", 3 ],
+      [ "diamond_cufflinks", 2 ],
+      [ "small_relic", 8 ],
+      [ "holy_symbol", 8 ],
+      [ "silver_ring", 5 ],
+      [ "robe", 15 ],
+      [ "cloak", 10 ],
+      [ "leather_belt", 7 ],
+      [ "boots", 5 ],
+      [ "boots_plate", 3 ]
+    ]
+  },
+  {
+    "id": "heart_items",
+    "type": "item_group",
+    "items": [
+      [ "deck_of_cards", 3 ],
+      [ "chess", 3 ],
+      [ "cards_magic", 3 ],
+      [ "knight_mage", 1 ],
+      [ "bag_canvas", 2 ],
+      [ "bone_flute", 3 ],
+      [ "clarinet", 1 ],
+      [ "flute", 2 ],
+      [ "candle", 4 ],
+      [ "citrine", 1 ],
+      [ "emerald", 1 ],
+      [ "sapphire", 1 ],
+      [ "wine_mycus", 3 ],
+      [ "wine_marloss", 3 ],
+      [ "torch", 4 ],
+      [ "wine_cabernet", 1 ],
+      [ "wine_vermouth", 3 ],
+      [ "chem_sodium", 2 ],
+      [ "button_steel", 3 ],
+      [ "button_wood", 4 ],
+      [ "button_bone", 4 ],
+      [ "gold_small", 1 ],
+      [ "lead", 4 ],
+      [ "shovel", 5 ],
+      [ "scythe", 1 ],
+      [ "primitive_shovel", 5 ],
+      [ "sickle_stone", 3 ],
+      [ "sickle", 1 ],
+      [ "bronze_sickle", 2 ],
+      [ "magnesium", 2 ],
+      [ "silver_small", 2 ],
+      [ "copper_fragment", 2 ],
+      [ "tin", 3 ],
+      [ "bee_sting", 2 ],
+      [ "antler", 1 ],
+      [ "fighter_sting", 1 ],
+      [ "wasp_sting", 2 ],
+      [ "bone_fossil", 1 ],
+      [ "large_bone_fossil", 1 ],
+      [ "splinter", 5 ],
+      [ "spear_shaft", 1 ],
+      [ "clay_pot", 3 ],
+      [ "mortar_pestle", 3 ],
+      [ "oil_cooker", 2 ],
+      [ "sieve_primitive", 3 ],
+      [ "clay_urn", 1 ],
+      [ "etched_skull", 2 ],
+      [ "fur_rollmat", 3 ],
+      [ "tindalos_whistle", 1 ],
+      [ "knife_butcher", 3 ],
+      [ "bottle_glass", 5 ],
+      [ "clay_teapot", 3 ],
+      [ "amethyst", 1 ]
+    ]
+  },
+{
+    "id": "heart_occult",
+    "type": "item_group",
+    "items": [
+      [ "bone_tainted", 7 ],
+      [ "bone_human", 5 ],
+      [ "bone", 5 ],
+      [ "skull_human", 2 ],
+      [ "skull_human_tainted", 3 ],
+      [ "skull_canis_small", 6 ],
+      [ "skull_canis", 4 ],
+      [ "skull_canis_triclopean", 1 ],
+      [ "skull_feline_small", 3 ],
+      [ "skull_tiger", 1 ],
+      [ "skull_raccoon", 2 ],
+      [ "skull_bear", 1 ],
+      [ "skull_opossum", 1 ],
+      [ "mercury", 3 ],
+      [ "skull_rodent", 5 ]
+    ]
+  },
+{
+    "id": "heart_final",
+    "type": "item_group",
+    "items": [
+      [ "egg_rooted", 3 ],
+      [ "sword_rooted", 2 ],
+      [ "iv_mutagen_plant", 1 ]
+     
+    ]
+  },
+{
+    "id": "heart_plush",
+    "type": "item_group",
+    "items": [
+      [ "needle_bone", 3 ],
+      [ "plush_cthulu", 1 ],
+      [ "teddy_bear", 2 ]
+     
+    ]
+  }
+
+]
