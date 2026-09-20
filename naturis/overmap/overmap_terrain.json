@@ -1,33 +1,4 @@
 [
-   {
-    "type": "overmap_terrain",
-    "id": "nature_flowers",
-    "name": "nature",
-    "sym": "N",
-    "color": "cyan",
-    "see_cost": "none"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cabin_overgrown",
-    "vision_levels": "isolated_building",
-    "name": "cabin",
-    "sym": "C",
-    "color": "i_green",
-    "see_cost": "high",
-    "flags": [ "RISK_LOW", "SOURCE_SAFETY" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cabin_overgrown_roof",
-    "vision_levels": "roof_or_air",
-    "name": "cabin roof",
-    "sym": "C",
-    "color": "i_green",
-    "see_cost": "none"
-  },
-
-
   {
     "type": "overmap_terrain",
     "id": "forest_heart_0",
@@ -36,7 +7,7 @@
     "sym": "F",
     "color": "i_green",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH", "SOURCE_SAFETY" ]
+    "flags": [ "RISK_HIGH"]
   },
   {
     "type": "overmap_terrain",

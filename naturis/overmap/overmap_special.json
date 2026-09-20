@@ -5,14 +5,14 @@
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "forest_heart_0_north" },
       { "point": [ 0, 0, -1 ], "overmap": "forest_heart_1_north"},
-      { "point": [ 0, 1, -1 ], "overmap": "forest_heart_1n_north"},
-      { "point": [ 0, 1, -2 ], "overmap": "forest_heart_2n_north"},
+      { "point": [ 0, -1, -1 ], "overmap": "forest_heart_1n_north"},
+      { "point": [ 0, -1, -2 ], "overmap": "forest_heart_2n_north"},
       { "point": [ 0, 0, -2 ], "overmap": "forest_heart_2_north"}
     ],
     "locations": [ "forest" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 25, 100 ],
+    "occurrences": [ 0, 2 ],
     "flags": [ "CLASSIC", "WILDERNESS" ]
   }
 ]
