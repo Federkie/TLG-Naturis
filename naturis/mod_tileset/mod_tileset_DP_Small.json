@@ -13,7 +13,20 @@
 		  { "id": "egg_rooted", "fg": 2, "rotates": false },
 		  { "id": "strange_shroom", "fg": 3, "rotates": false },
 		  { "id": "mon_old_chick", "fg": 4, "rotates": false },
-		  { "id": "mon_rain_chick", "fg": 5, "rotates": false }
+		  { "id": "mon_rain_chick", "fg": 5, "rotates": false },
+		  { "id": "forest_blood", "fg": 6, "rotates": false },
+{
+            "id": "sword_burning_on",
+            "fg": [
+              { "weight": 25, "sprite": 7 },
+              { "weight": 25, "sprite": 8 },
+              { "weight": 25, "sprite": 9 },
+              { "weight": 25, "sprite": 10 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          { "id": "sword_burning_off", "fg": 11, "rotates": false }
         ],
         "sprite_width": 20,
         "sprite_height": 20

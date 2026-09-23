@@ -25,7 +25,30 @@
           { "id": "sword_rooted", "fg": 32, "rotates": false },
           { "id": "mon_rainbird", "fg": 33, "rotates": false, "bg": 5 },
           { "id": "plush_cthulu", "fg": 34, "rotates": false },
-          { "id": "overlay_wielded_sword_rooted", "fg": 35, "rotates": false }
+          { "id": "overlay_wielded_sword_rooted", "fg": 35, "rotates": false },
+  {
+            "id": "mon_fire_anomaly",
+            "fg": [
+              { "weight": 25, "sprite": 36 },
+              { "weight": 25, "sprite": 37 },
+              { "weight": 25, "sprite": 38 },
+              { "weight": 25, "sprite": 39 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+  {
+            "id": "overlay_wielded_sword_burning_on",
+            "fg": [
+              { "weight": 25, "sprite": 40 },
+              { "weight": 25, "sprite": 41 },
+              { "weight": 25, "sprite": 43 },
+              { "weight": 25, "sprite": 42 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+          { "id": "overlay_wielded_sword_burning_off", "fg": 44, "rotates": false }
 
         ]
       }
