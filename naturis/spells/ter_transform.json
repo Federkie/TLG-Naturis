@@ -1,7 +1,4 @@
 [
-
-
-
 {
     "type": "ter_furn_transform",
     "id": "create_flesh",
@@ -9,21 +6,31 @@
 } 
 ]
   },
-
-
-
-
  {
     "type": "ter_furn_transform",
     "id": "grow_grass",
     "terrain": [ 
    { 
-   "result": [ [ "t_grass", 5 ], [ "t_grass_long", 3 ], [ "t_region_tree", 1 ] ],
-    "valid_terrain": [ "t_floor" ] 
-}
-
+   "result": [ [ "t_grass", 12 ], [ "t_grass_long", 3 ], [ "t_tree_young", 1 ], [ "t_m_mushroom", 1 ], [ "t_region_tree", 1 ] ],
+    "valid_terrain": [ "t_floor" ] },
+   { 
+   "result": [ [ "t_grass", 12 ], [ "t_m_mushroom", 1 ], [ "t_tree_young", 1 ], [ "t_grass_long", 3 ], [ "t_region_tree", 1 ] ],
+    "valid_terrain": [ "t_pavement" ] },
+   {
+   "result": [ [ "t_grass", 12 ], [ "t_m_mushroom", 1 ], [ "t_tree_young", 1 ], [ "t_grass_long", 3 ], [ "t_region_tree", 1 ] ],
+    "valid_terrain": [ "t_pavement_yellow" ] },
+ {
+   "result": [ [ "t_grass", 12 ], [ "t_m_mushroom", 1 ], [ "t_tree_young", 1 ], [ "t_grass_long", 3 ], [ "t_region_tree", 1 ] ],
+    "valid_terrain": [ "t_thconc_floor" ] },
+   { 
+   "result": [ [ "t_grass", 12 ], [ "t_m_mushroom", 1 ], [ "t_tree_young", 1 ], [ "t_grass_long", 3 ], [ "t_region_tree", 1 ] ],
+    "valid_terrain": [ "t_concrete" ] },
+   {
+   "result": [ [ "t_grass", 12 ], [ "t_m_mushroom", 1 ], [ "t_tree_young", 1 ], [ "t_grass_long", 3 ], [ "t_region_tree", 1 ] ],
+    "valid_terrain": [ "t_zebra" ] }
 ]
   }
-
-
 ]
+
+
+
