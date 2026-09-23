@@ -1,0 +1,69 @@
+[
+ {
+    "id": "mon_fire_anomaly",
+    "type": "MONSTER",
+    "name": { "str": "fire anomaly" },
+    "description": "PLACEHOLDER",
+    "default_faction": "anomaly",
+    "species": [ "FIRE_ANOMALY" ],
+    "diff": 5,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 500,
+    "speed": 80,
+    "material": [ "stone" ],
+    "symbol": "2",
+    "luminance": 6,
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "vision_night": 1,
+    "weakpoint_sets": [ "wps_turret" ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "flame_spray","min_level": 1 },
+        "monster_message": "%1$s spits fire!!!",
+        "cooldown": 15
+      }
+],
+
+    "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN", "FIREY" ],
+    "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
+  },
+{
+    "id": "mon_shock_anomaly",
+    "type": "MONSTER",
+    "name": { "str": "shock anomaly" },
+    "description": "PLACEHOLDER",
+    "default_faction": "anomaly",
+    "species": [ "ELECTRIC_ANOMALY" ],
+    "diff": 5,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 500,
+    "speed": 80,
+    "material": [ "stone" ],
+    "symbol": "2",
+    "luminance": 16,
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "vision_night": 7,
+    "weakpoint_sets": [ "wps_turret" ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "shock_cone","min_level": 1 },
+        "monster_message": "%1$s spawns electric fields!!!",
+        "cooldown": 20
+      },
+      [ "PULL_METAL_WEAPON", 100 ]
+],
+
+    "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN", "ELECTRIC" ],
+    "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
+  }
+
+
+]

@@ -6,6 +6,16 @@
     "id": "FLESH",
     "footsteps": "moist.",
     "bleeds": "fd_blood"
+  },
+  {
+    "type": "SPECIES",
+    "id": "FIRE_ANOMALY",
+    "bleeds": "fd_fire"
+  },
+  {
+    "type": "SPECIES",
+    "id": "ELECTRIC_ANOMALY",
+    "bleeds": "fd_electricity"
   }
 
 

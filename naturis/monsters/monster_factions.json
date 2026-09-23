@@ -2,14 +2,28 @@
   {
     "type": "MONSTER_FACTION",
     "name": "overgrown",
-    "friendly": [ "fleshy" ],
+    "friendly": [ "fleshy", "zombie" ],
     "neutral": [ "triffid" ]
   },
 
   {
     "type": "MONSTER_FACTION",
     "name": "fleshy",
-    "friendly": [ "overgrown" ],
+    "friendly": [ "overgrown", "anomaly" ],
     "neutral": [ "triffid" ]
+  },
+{
+    "type": "MONSTER_FACTION",
+    "name": "anomaly",
+    "friendly": [ "overgrown" ],
+    "neutral": [ "overgrown" ]
+  },
+
+
+{
+    "type": "MONSTER_FACTION",
+    "name": "zombie",
+    "copy-from": "zombie",
+    "neutral": [ "overgrown", "anomaly" ]
   }
 ]
