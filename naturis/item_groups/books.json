@@ -1,0 +1,12 @@
+[
+ {
+    "type": "item_group",
+    "id": "homebooks",
+    "copy-from": "homebooks",
+    "extend": {
+      "items": [
+        { "item": "modular_weapons", "prob": 1 }
+      ]
+    }
+  }
+]

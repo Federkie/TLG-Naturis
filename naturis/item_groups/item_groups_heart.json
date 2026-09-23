@@ -185,9 +185,20 @@
     "items": [
       [ "needle_bone", 3 ],
       [ "plush_cthulu", 1 ],
-      [ "teddy_bear", 2 ]
-     
+      [ "teddy_bear", 2 ]     
+    ]
+  },
+{
+    "id": "fairy_ring_items",
+    "type": "item_group",
+    "items": [
+      [ "forest_blood", 2 ],
+      [ "forest_blood_2", 1 ],
+      [ "bone_fossil", 3 ]   
     ]
   }
+
+
+
 
 ]
