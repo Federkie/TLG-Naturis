@@ -28,6 +28,21 @@
     "type": "overmap_terrain",
     "id": "forest_heart_2",
     "copy-from": "forest_heart_0"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "fairy_ring" ,
+    "vision_levels": "isolated_building",
+    "name": " Fairy_ring",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": [ "RISK_HIGH"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "fairy_ring_roof", 
+    "copy-from": "fairy_ring" 
   }
 
 
