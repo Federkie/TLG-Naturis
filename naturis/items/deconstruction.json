@@ -7,6 +7,14 @@
     "time": "35 m",
     "qualities": [ { "id": "HAMMER", "level": 2 } ],
     "components": [ [ [ "splinter", 6 ] ] , [ [ "blade", 1 ] ] ]
+  },
+ {
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "club_rooted",
+    "time": "35 m",
+    "qualities": [ { "id": "HAMMER", "level": 2 } ],
+    "components": [ [ [ "splinter", 6 ] ] , [ [ "blade", 1 ] ] ]
   }
 
 

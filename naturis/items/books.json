@@ -1,0 +1,22 @@
+[
+    {
+    "id": "modular_weapons",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "name": { "str": "modular weapons" },
+    "description": "A list of weird weapons that look like they shouldn’t work.",
+    "weight": "400 g",
+    "volume": "750 ml",
+    "price": "4 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "paper", "plastic" ],
+    "symbol": "?",
+    "looks_like": "record_patient",
+    "color": "green",
+    "required_level": 2,
+    "intelligence": 8,
+    "time": "45 m",
+    "read_skill": "mechanics",
+    "read_fun": -2
+  }
+]

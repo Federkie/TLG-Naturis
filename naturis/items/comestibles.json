@@ -10,15 +10,14 @@
     "symbol": "o",
     "quench": 4,
     "calories": 46,
-    "description": "use it!",
+    "description": "water it!",
     "price": "24 cent",
     "price_postapoc": "30 cent",
     "material": [ "egg" ],
     "volume": "45 ml",
     "fun": -10,
     "use_action": { "type": "cast_spell", "spell_id": "hatch_rain_chick", "no_fail": true, "level": 1 },
-
-    "flags": [ "FREEZERBURN", "RAW", "ACT_IN_FIRE" ],
+    "flags": [ "FREEZERBURN", "RAW", "WATER_EXTINGUISH" ],
     "vitamins": [ [ "iron", "400 μg" ], [ "calcium", "12 mg" ], [ "egg_allergen", 1 ] ]
   },
   {
@@ -43,6 +42,27 @@
       "activation_message": "You bite in the mushroom.",
       "vitamins": [ [ "amphetamine", 3 ] ]
     }
+  },
+{
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "egg_fire",
+    "name": { "str": "fire egg" },
+    "weight": "50 g",
+    "color": "green",
+    "comestible_type": "FOOD",
+    "symbol": "o",
+    "quench": 4,
+    "calories": 46,
+    "description": "burn it!",
+    "price": "24 cent",
+    "price_postapoc": "30 cent",
+    "material": [ "egg" ],
+    "volume": "45 ml",
+    "fun": -10,
+    "use_action": { "type": "cast_spell", "spell_id": "eggsplosion", "no_fail": true, "level": 1 },
+    "flags": [ "FREEZERBURN", "RAW", "ACT_IN_FIRE" ],
+    "vitamins": [ [ "iron", "400 μg" ], [ "calcium", "12 mg" ], [ "egg_allergen", 1 ] ]
   }
 
 
