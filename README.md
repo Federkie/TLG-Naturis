@@ -16,12 +16,14 @@ I recommend a mid game equipment.
 
 
 To do: 
-- More spawn points for the Forest Walker
-- Rework the Change Terrain function of the Forest Walker
+
 - More locations
 - Anomalies
 - Overgrown buildings in cities
+- modular weapons + recipes
 - Overgrown sprites
+- anomaly loot
+- anomaly items/weapons
 - Better descriptions
 
 ## Installation Instructions
