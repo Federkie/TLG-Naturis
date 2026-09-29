@@ -54,6 +54,11 @@
     "volume": "150 L",
     "weight": "170 kg",
     "hp": 140,
+    "death_function": {
+      "message": "The %s explodes in a shower of gore!",
+      "corpse_type": "NO_CORPSE",
+      "effect": { "id": "death_blood", "hit_self": true, "min_level": 0 }
+  },
     "speed": 120,
     "material": [ "flesh" ],
     "symbol": "W",

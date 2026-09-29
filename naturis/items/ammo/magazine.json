@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fa_r_mag",
+    "type": "ITEM",
+    "subtypes": [ "MAGAZINE" ],
+    "name": { "str": "fa_r_mag" },
+    "description": "An aluminum box magazine containing a single four round stack of .450 Bushmaster cartridges, engineered to fit and feed appropriately converted AR-platform rifles.",
+    "weight": "226 g",
+    "volume": "290 ml",
+    "longest_side": "190 mm",
+    "price": "29 USD 99 cent",
+    "price_postapoc": "2 USD 50 cent",
+    "material": [ "aluminum" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ "fa_r"],
+    "flags": [ "MAG_COMPACT" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "fa_r": 4 } } ]
+  }
+
+
+]

@@ -10,9 +10,9 @@
       { "point": [ 0, 0, -2 ], "overmap": "forest_heart_2_north"}
     ],
     "locations": [ "forest" ],
-    "city_distance": [ 20, -1 ],
+    "city_distance": [ 25, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 2 ],
+    "occurrences": [ 0, 1 ],
     "flags": [ "WILDERNESS" ]
   },
   {
@@ -24,6 +24,19 @@
     ],
     "locations": [ "forest" ],
     "city_distance": [ 20, -1 ],
+    "city_sizes": [ 0, 12 ],
+    "occurrences": [ 0, 2 ],
+    "flags": [ "WILDERNESS" ]
+  },
+ {
+    "type": "overmap_special",
+    "id": "forgotten_cellar",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "forgotten_cellar_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "forgotten_cellar_1n_north" }
+    ],
+    "locations": [ "forest" ],
+    "city_distance": [ 5, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 0, 2 ],
     "flags": [ "WILDERNESS" ]

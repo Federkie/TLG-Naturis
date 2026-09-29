@@ -1,0 +1,146 @@
+[
+  {
+    "id": "mon_rapid striker",
+    "type": "MONSTER",
+    "name": { "str": "rapid striker" },
+    "description": "A primal fear strikes when the club-like tail of this massively warped snake shifts, an assortment of bones rattling softly.  Multiple sets of hollow fangs have erupted in its maw, which itself is flanked by skinless ropes of powerful muscle.  Its scales constantly shed off and regrow with unnatural speed.",
+    "default_faction": "overgrown",
+    "bodytype": "dog",
+    "species": [ "MYTHIC" ],
+    "diff": 10,
+    "volume": "620 L",
+    "weight": "760 kg",
+    "hp": 400,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "S",
+    "color": "brown",
+    "aggression": 60,
+    "morale": 40,
+    "melee_skill": 8,
+    "melee_dice": 5,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
+    "dodge": 3,
+    "vision_day": 35,
+    "vision_night": 15,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "harvest": "mutant_animal_large_noskin",
+    "dissect": "dissect_lizard_sample_large",
+    "grab_strength": 70,
+    "special_attacks": [
+
+
+
+      {
+        "type": "spell",
+        "spell_data": { "id": "rapid_striker_tail_detach", "min_level": 1 },
+        "monster_message": "The maimed tail start twitching erratically!",
+        "cooldown": 2000,
+        "caster_condition": { "math": [ "u_health() <= 30" ] }
+},
+
+
+
+      {
+        "id": "bite_grab",
+        "cooldown": 8,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 32, "armor_multiplier": 0.1 } ],
+        "effects": [ { "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 } ],
+        "infection_chance": 50
+      }
+    ],
+    "regenerates": 1,
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "PUSH_MON", "SWIMS" ],
+    "armor": { "bash": 6, "cut": 10, "bullet": 6, "electric": 3, "acid": 6 }
+  },
+  {
+    "id": "mon_rapid_striker_tail",
+    "type": "MONSTER",
+    "name": { "str": "detached tail" },
+    "description": "The strangely branching leg of a mutated cellar spider that… fell?  crawled?  off of the main body when hurt.  It now flails about blindly, irregular clawed appendages grasping at anything that comes close.",
+    "color": "brown",
+    "symbol": "7",
+    "default_faction": "factionless",
+    "bodytype": "snake",
+    "species": [ "INSECT" ],
+    "material": [ "iflesh" ],
+    "volume": "10 L",
+    "weight": "10 kg",
+    "hp": 25,
+    "aggression": 100,
+    "morale": 100,
+    "speed": 50,
+    "attack_cost": 25,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "grab_strength": 10,
+    "special_attacks": [ { "id": "grab", "cooldown": 5 }, [ "SUICIDE", 180 ] ],
+    "upgrades": { "half_life": 1, "into_group": "GROUP_EMPTY" },
+    "dodge": 7,
+    "bleed_rate": 0,
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug", "prof_wp_spider" ],
+    "death_function": { "corpse_type": "NO_CORPSE" },
+    "flags": [ "HEARS", "GOODHEARING", "STUMBLES", "WEBWALK", "GRABS", "ATTACKMON", "HARDTOSHOOT", "STUN_IMMUNE", "NOHEAD" ]
+  },
+{
+    "id": "mon_forest_dragon",
+    "type": "MONSTER",
+    "name": { "str": "forest dragon" },
+    "description": ".",
+    "default_faction": "overgrown",
+    "bodytype": "snake",
+    "species": [ "MYTHIC"],
+    "volume": "625000 ml",
+    "weight": "200 kg",
+    "hp": 250,
+    "diff": 10,
+    "speed": 95,
+    "material": [ "dry_plant" ],
+    "symbol": "S",
+    "color": "green",
+    "scents_tracked": [ "sc_human", "sc_fetid" ],
+    "aggression": 60,
+    "anger_triggers": [ "HURT", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "morale": 100,
+      "death_function": {
+      "message": "The %s explodes in a shower of leaves!",
+      "effect": { "id": "death_leaves", "hit_self": true, "min_level": 0 }
+  },
+    "melee_skill": 7,
+    "melee_dice": 4,
+    "melee_dice_sides": 7,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "dodge": 3,
+    "families": [
+      "prof_intro_biology",
+      "prof_physiology"
+    ],
+    "bleed_rate": 50,
+    "vision_day": 35,
+    "vision_night": 8,
+    "dissect": "dissect_lizard_sample_single",
+    "special_attacks": [
+     {"type": "spell",
+        "spell_data": { "id": "leave_burst"},
+        "monster_message": "The %s shoots sharp leaves on you!",
+        "cooldown": 35
+      },    
+      { "id": "bite_grab", "cooldown": 5 }, 
+      { "id": "bite_grab_required", "cooldown": 8 },
+      { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
+      { "id": "longswipe" },
+      { "id": "cut_throat" },
+      { "id": "smash", "throw_strength": 72, "cooldown": 30 }
+    ],
+    "death_drops": "mon_forest_dragon_death_drops",
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF", "PUSH_MON" ],
+    "armor": { "bash": 15, "cut": 20, "bullet": 30, "electric": 4, "acid": 10 }
+  }
+
+
+
+]

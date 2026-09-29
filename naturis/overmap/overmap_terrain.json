@@ -43,7 +43,22 @@
     "type": "overmap_terrain",
     "id": "fairy_ring_roof", 
     "copy-from": "fairy_ring" 
+  },
+{
+    "type": "overmap_terrain",
+    "id": "forgotten_cellar",
+    "vision_levels": "blends_till_details",
+    "name": "forgotten cellar",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": [ "RISK_HIGH"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "forgotten_cellar_1n", 
+    "copy-from": "forgotten_cellar" 
   }
 
-
 ]
+

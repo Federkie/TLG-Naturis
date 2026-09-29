@@ -49,7 +49,7 @@
     "id": "mon_forest_walker",
     "type": "MONSTER",
     "name": { "str": "forest walker" },
-    "description": "place.",
+    "description": "A hulking figure made of branches, roots, and bones. Its pale deer skull is crowned with antlers of black wood..",
     "default_faction": "overgrown",
     "bodytype": "human",
     "species": [ "PLANT" ],
@@ -57,6 +57,7 @@
     "volume": "73000 ml",
     "weight": "72000 g",
     "hp": 200,
+     "death_function": { "effect": { "id": "death_leaves", "hit_self": true }, "message": "The %s explodes in a cloud of leaves and twigs!!" },
     "speed": 90,
     "material": [ "wood" ],
     "symbol": "F",
@@ -70,7 +71,7 @@
     "dodge": 1,
     "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_head_small" ],
     "families": [ "prof_intro_biology", "prof_physiology" ],
-    "bleed_rate": 50,
+    "bleed_rate": 10,
     "vision_night": 4,
     "fear_triggers": [ "FIRE" ],
     "harvest": "overgrown",
@@ -78,14 +79,13 @@
     "anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
     "special_attacks": [
-      ["GROWPLANTS", 70 ],
       { "id": "grab", "cooldown": 10 },
       { "id": "mutant_antler", "cooldown": 15 },
       {
         "type": "spell",
         "spell_data": { "id": "create_nature", "min_level": 1 },
         "monster_message": "%1$s roars!!!",
-        "cooldown": 2000,
+        "cooldown": 5000,
         "allow_no_target": true
       }
     ],
@@ -131,6 +131,7 @@
     "melee_damage": [ { "damage_type": "bash", "amount": 1 } ],
     "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_head_small" ],
     "families": [ "prof_intro_biology", "prof_physiology" ],
+    "death_drops": "mon_walking_tree_death_drops",
     "vision_night": 5,
     "harvest": "overgrown",
     "grab_strength": 50,
@@ -188,7 +189,6 @@
       "SEES",
       "HEARS",
       "GOODHEARING",
-      "ANIMAL",
       "PATH_AVOID_DANGER",
       "HIT_AND_RUN",
       "GROUP_MORALE"
@@ -197,8 +197,6 @@
     "categories": [ "WILDLIFE" ],
     "armor": { "bash": 4, "cut": 4, "bullet": 6, "electric": 2 }
   },
-
-
   {
     "id": "mon_old_stone",
     "type": "MONSTER",
@@ -230,6 +228,10 @@
     "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF", "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN" ],
     "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
   }
+
+
+
+
 
 
 ]

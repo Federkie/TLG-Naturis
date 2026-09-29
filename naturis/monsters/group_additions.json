@@ -1,0 +1,68 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_HORDE",
+    "monsters": [
+      { "monster": "mon_forest_walker", "weight": 1, "cost_multiplier": 4 },
+      { "monster": "mon_flesh_wolf", "weight": 1, "cost_multiplier": 25 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "//": "+15% child",
+    "monsters": [
+      { "monster": "mon_fire_anomaly", "weight": 1, "cost_multiplier": 25, "starts": "30 days" },
+      { "monster": "mon_forest_walker", "weight": 1, "cost_multiplier": 20, "starts": "30 days" },
+      { "monster": "mon_acid_anomaly", "weight": 1, "cost_multiplier": 25, "starts": "30 days" },
+      { "monster": "mon_shock_anomaly", "weight": 1, "cost_multiplier": 25, "starts": "30 days" }
+    ]
+  },
+{
+    "type": "monstergroup",
+    "name": "GROUP_SEWER",
+    "monsters": [
+      { "monster": "mon_shock_anomaly", "weight": 5 },
+      { "monster": "mon_acid_anomaly", "weight": 5 },
+      { "monster": "mon_fire_anomaly", "weight": 5 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_BLACK_ROAD",
+    "monsters": [
+      { "monster": "mon_forest_walker", "weight": 5 },
+      { "monster": "mon_shock_anomaly", "weight": 5 },
+      { "monster": "mon_acid_anomaly", "weight": 5 },
+      { "monster": "mon_fire_anomaly", "weight": 5 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SUBWAY",
+    "monsters": [
+      { "monster": "mon_shock_anomaly", "weight": 5 },
+      { "monster": "mon_acid_anomaly", "weight": 5 },
+      { "monster": "mon_fire_anomaly", "weight": 5 }
+    ]
+  },
+  {
+    "name": "GROUP_PARK_SCENIC",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_forest_walker", "weight": 2 },
+      { "monster": "mon_zom_squirrel", "weight": 5 },
+      { "monster": "mon_zom_bat", "weight": 5 }
+    ]
+  },
+ {
+    "type": "monstergroup",
+    "name": "GROUP_Forest",
+    "monsters": [
+      { "monster": "mon_forest_walker", "weight": 2, "cost_multiplier": 100 },
+      { "monster": "mon_walking_tree", "weight": 3, "cost_multiplier": 10 },
+      { "monster": "mon_forest_dog", "weight": 5, "cost_multiplier": 5 },
+      { "monster": "mon_forest_dragon", "weight": 1, "cost_multiplier": 300, "starts": "40 days" }
+    ]
+  }
+]

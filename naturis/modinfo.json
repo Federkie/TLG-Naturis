@@ -4,7 +4,7 @@
     "id": "Naturis",
     "name": "<color_green>Naturis</color>",
     "authors": [ "Federkie" ],
-    "description": "Adds the wanderer and some natural phenomens. ",
+    "description": "Adds the forest walker and some natural phenomens. ",
     "version": "TLG version",
     "category": "content",
     "dependencies": [ "tlg" ]

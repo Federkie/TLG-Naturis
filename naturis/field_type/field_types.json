@@ -1,0 +1,40 @@
+[
+  {
+    "id": "fd_leaves",
+    "type": "field_type",
+    "substance_name": "leaves",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "leaves ", "sym": "~", "color": "green" },
+      { "name": "some leaves", "color": "light_red" },
+      { "name": "many leaves", "color": "red" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "25 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "2 days",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+ {
+    "id": "fd_leaves_pink",
+    "type": "field_type",
+    "substance_name": "pink",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "leaves ", "sym": "~", "color": "green" },
+      { "name": "some pink leaves", "color": "light_red" },
+      { "name": "many pink leaves", "color": "red" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "25 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "2 days",
+    "accelerated_decay": true,
+    "display_field": true
+  }
+
+
+]

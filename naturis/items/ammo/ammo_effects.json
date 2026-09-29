@@ -1,0 +1,42 @@
+[
+  {
+    "id": "TRAIL_FIRE",
+    "type": "ammo_effect",
+    "//": "Creates a trail of fire",
+    "trail": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 2, "chance": 45 }
+  },
+ {
+    "id": "TRAIL_LEAVES",
+    "type": "ammo_effect",
+    "//": "Creates a trail of leaves",
+    "trail": { "field_type": "fd_leaves_pink", "intensity_min": 1, "intensity_max": 2, "chance": 45 }
+  },
+  {
+    "id": "NAPALM_SMALL",
+    "type": "ammo_effect",
+    "//": "Explosion that spreads fire",
+    "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 1, "size": 2 },
+    "explosion": { "power": 10, "distance_factor": 0.2, "fire": true }
+  },
+  {
+    "id": "SHOCK_BULLET",
+    "type": "ammo_effect",
+    "//": "Creates a trail of lightning and a burst at the end.",
+    "aoe": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 5, "chance": 25 }
+  },
+  {
+    "id": "AE_LEAVE_STORM",
+    "type": "ammo_effect",
+    "always_cast_spell": true,
+    "spell_data": { "id": "leave_storm_ammo" }
+  },
+ {
+    "id": "AE_GRAVITY_X",
+    "type": "ammo_effect",
+    "always_cast_spell": true,
+    "spell_data": { "id": "insert_all_ammo" }
+  }
+
+
+
+]

@@ -32,6 +32,7 @@
       "feed": "The %s seems to like you!  It runs around your legs and seems friendly.",
       "pet": "The %s runs around your leg."
     },
+      "upgrades": { "half_life": 96, "into": "mon_old_bird" },
       "fear_triggers": [ "SOUND", "PLAYER_CLOSE", "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
     "flags": [ "SEES", "ANIMAL", "PATH_AVOID_DANGER", "CANPLAY", "SWARMS", "CAN_BE_CULLED", "SMALL_HIDER" ]
   },

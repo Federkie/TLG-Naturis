@@ -1,0 +1,19 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/naturis_expan_dp_fillerlarge.png",
+        "sprite_offset_x": -32,
+        "sprite_offset_y": -32,
+        "sprite_width": 64,
+        "sprite_height": 64,
+        "tiles": [
+          { "id": "mon_forest_dragon", "fg": 0, "rotates": false },
+          { "id": "corpse_mon_forest_dragon", "fg": 1, "rotates": false }
+    ]
+  }
+] 
+}
+]

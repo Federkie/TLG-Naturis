@@ -1,0 +1,31 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "id": "disk_cutting",
+    "name": { "str": "cutting disk" },
+    "symbol": "=",
+    "color": "green",
+    "description": "A fletched aluminum crossbow bolt with a bladed tip.  Useful for maximizing damage to the target.",
+    "replace_materials": { "steel": "aluminum" },
+    "stack_max": 5,
+    "stack_size": 1,
+    "volume": "7 ml",
+    "longest_side": "300 mm",
+    "price": "11 USD 20 cent",
+    "price_postapoc": "80 cent",
+    "weight": "35 g",
+    "ammo_type": "disk",
+    "damage": { "damage_type": "cut", "amount": 8 },
+    "effects": [ "NOGIB", "NEVER_MISFIRES", "NON_FOULING" ],
+    "loudness": 0,
+    "range": 7,
+    "dispersion": 75,
+    "recovery_chance": 96,
+    "melee_damage": { "cut": 4 }
+  }
+
+
+
+
+]

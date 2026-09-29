@@ -26,7 +26,8 @@
             "rotates": false,
             "animated": true
           },
-          { "id": "sword_burning_off", "fg": 11, "rotates": false }
+          { "id": "sword_burning_off", "fg": 11, "rotates": false },
+          { "id": "forest_pearl", "fg": 12, "rotates": false }
         ],
         "sprite_width": 20,
         "sprite_height": 20

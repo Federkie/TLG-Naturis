@@ -48,8 +48,54 @@
             "rotates": false,
             "animated": true
           },
-          { "id": "overlay_wielded_sword_burning_off", "fg": 44, "rotates": false }
-
+          { "id": "overlay_wielded_sword_burning_off", "fg": 44, "rotates": false },
+  {
+            "id": "mon_acid_anomaly",
+            "fg": [
+              { "weight": 25, "sprite": 45 },
+              { "weight": 25, "sprite": 46 },
+              { "weight": 25, "sprite": 47 },
+              { "weight": 25, "sprite": 48 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+  {
+            "id": "mon_shock_anomaly",
+            "fg": [
+              { "weight": 25, "sprite": 49 },
+              { "weight": 25, "sprite": 50 },
+              { "weight": 25, "sprite": 51 },
+              { "weight": 25, "sprite": 52 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+  {
+            "id": "mon_gravity_anomaly",
+            "fg": [
+              { "weight": 25, "sprite": 53 },
+              { "weight": 25, "sprite": 54 },
+              { "weight": 25, "sprite": 55 },
+              { "weight": 25, "sprite": 56 }
+            ],
+            "rotates": false,
+            "animated": true
+          },
+{
+            "id": "mon_acid_anomaly_small",
+            "fg": [
+              { "weight": 30, "sprite": 57 },
+              { "weight": 30, "sprite": 58 },
+              { "weight": 30, "sprite": 59 }
+            ],
+            "rotates": false,
+            "animated": false
+          },
+          { "id": "fd_leaves", "fg": 60, "rotates": false },
+          { "id": "overlay_wielded_f_rifle", "fg": 61, "rotates": false },
+          { "id": "f_rifle", "fg": 62, "rotates": false },
+          { "id": "fd_leaves_pink", "fg": 63, "rotates": false }
         ]
       }
     ]

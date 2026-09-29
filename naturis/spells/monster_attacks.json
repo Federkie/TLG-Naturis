@@ -1,0 +1,27 @@
+[
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "tail_slash",
+    "cooldown": 10,
+    "move_cost": 120,
+    "damage_max_instance": [ { "damage_type": "cut", "amount": 20, "armor_multiplier": 0.3 } ],
+    "range": 3,
+    "no_adjacent": true,
+    "effects": [ { "id": "downed", "chance": 33, "duration": [ 1, 3 ] } ],
+    "condition": { "not": { "u_has_effect": "maimed_tail" } },
+    "dodgeable": true,
+    "uncanny_dodgeable": true,
+    "hitsize_min": 4,
+    "hit_dmg_u": "%1$s's clubbed tail whips out and hits your %2$s!",
+    "hit_dmg_npc": "%1$s's tail stings <npcname>!",
+    "miss_msg_u": "%1$s tries to club you, but you dodge!",
+    "miss_msg_npc": "%1$s tries to club <npcname>, but they dodge!",
+    "no_dmg_msg_u": "%1$s's clubbed tail bounces off your %2$s.",
+    "no_dmg_msg_npc": "%1$s tries to club <npcname>, but it fails to penetrate their armor."
+  }
+
+
+
+
+]

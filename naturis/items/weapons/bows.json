@@ -1,0 +1,36 @@
+[
+  {
+    "id": "disk_crossbow",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "reload_noise_volume": 8,
+    "symbol": "(",
+    "looks_like": "crossbow",
+    "color": "green",
+    "name": { "str": "disk crossbow" },
+    "description": "Also called a stonebow, this light crossbow fires pebbles or other small projectiles rather than bolts with surprising accuracy, if not a lot of power.",
+    "price": "800 USD",
+    "price_postapoc": "520 USD",
+    "material": [ "wood" ],
+    "flags": [ "CROSSBOW", "FIRE_TWOHAND" ],
+    "min_strength": 5,
+    "skill": "archery",
+    "ammo": [ "disk" ],
+    "weight": "1906 g",
+    "volume": "1250 ml",
+    "longest_side": "86 cm",
+    "ranged_damage": { "damage_type": "cut", "amount": 9 },
+    "range": 15,
+    "dispersion": 55,
+    "sight_dispersion": 90,
+    "durability": 6,
+    "clip_size": 2,
+    "reload": 400,
+    "loudness": 8,
+    "valid_mod_locations": [ [ "dampening", 1 ], [ "sling", 1 ], [ "mechanism", 1 ] ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "disk": 2 } } ],
+    "melee_damage": { "bash": 5 }
+  }
+
+
+]

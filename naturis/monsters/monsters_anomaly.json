@@ -9,7 +9,8 @@
     "diff": 5,
     "volume": "30000 ml",
     "weight": "40750 g",
-    "hp": 500,
+    "hp": 300,
+    "death_function": { "effect": { "id": "death_smokeburst", "hit_self": true }, "message": "The %s explodes!" },
     "speed": 80,
     "material": [ "stone" ],
     "symbol": "2",
@@ -27,7 +28,13 @@
         "cooldown": 15
       }
 ],
-
+        "attack_effs": [
+         {
+          "id": "onfire",
+          "duration": 15,
+          "chance": 15
+         }
+          ],
     "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN", "FIREY" ],
     "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
   },
@@ -42,6 +49,7 @@
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 500,
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
     "speed": 80,
     "material": [ "stone" ],
     "symbol": "2",
@@ -52,18 +60,118 @@
     "vision_night": 7,
     "weakpoint_sets": [ "wps_turret" ],
     "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "shock_cone","min_level": 1 },
-        "monster_message": "%1$s spawns electric fields!!!",
-        "cooldown": 20
-      },
-      [ "PULL_METAL_WEAPON", 100 ]
+        [ "SHOCKSTORM", 20 ],
+        [ "PULL_METAL_WEAPON", 100 ]
 ],
+        "special_when_hit": [ "ZAPBACK", 80 ],
 
+        "attack_effs": [
+         {
+          "id": "zapped",
+          "duration": 15,
+          "chance": 30
+         }
+          ],
     "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN", "ELECTRIC" ],
     "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
+  },
+{
+    "id": "mon_acid_anomaly",
+    "type": "MONSTER",
+    "name": { "str": "acid anomaly" },
+    "description": "PLACEHOLDER",
+    "default_faction": "anomaly",
+    "species": [ "ACID_ANOMALY" ],
+    "diff": 5,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 50,
+    "death_function": { "effect": { "id": "death_acid_anomaly", "hit_self": true }, "message": "The %s explodes!" },
+    "speed": 80,
+    "material": [ "stone" ],
+    "symbol": "2",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "vision_night": 7,
+    "weakpoint_sets": [ "wps_turret" ],
+    "special_attacks": [
+  {
+        "type": "spell",
+        "spell_data": { "id": "acid_spray", "min_level": 1 },
+        "monster_message": "%1$s spits acid!!!",
+        "cooldown": 45
+      }
+],
+        "attack_effs": [
+         {
+          "id": "corroding",
+          "duration": 10,
+          "chance": 25
+         }
+          ],
+    "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN" ],
+    "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
+  },
+{
+    "id": "mon_acid_anomaly_small",
+    "type": "MONSTER",
+    "name": { "str": "small acid anomaly" },
+    "description": "PLACEHOLDER",
+    "default_faction": "anomaly",
+    "species": [ "ACID_ANOMALY" ],
+    "diff": 5,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 50,
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
+    "speed": 80,
+    "material": [ "stone" ],
+    "symbol": "2",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "vision_night": 7,
+    "weakpoint_sets": [ "wps_turret" ],
+    "special_attacks": [
+  {
+        "type": "spell",
+        "spell_data": { "id": "acid_barf_weak", "min_level": 1 },
+        "monster_message": "%1$s spits acid!!!",
+        "cooldown": 45
+      }
+          ],
+    "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN" ],
+    "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 2 }
+  },
+{
+    "id": "mon_gravity_anomaly",
+    "type": "MONSTER",
+    "name": { "str": "gravity anomaly" },
+    "description": "PLACEHOLDER",
+    "default_faction": "anomaly",
+    "species": [ "FIRE_ANOMALY" ],
+    "diff": 5,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 350,
+    "death_function": { "effect": { "id": "insert_all", "hit_self": true }, "message": "The %s explodes!" },
+    "speed": 80,
+    "grab_strength": 80,
+    "material": [ "stone" ],
+    "symbol": "2",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "vision_night": 12,
+    "weakpoint_sets": [ "wps_turret" ],
+    "special_attacks": [
+      { "id": "ranged_pull", "cooldown": 10, "grab_data": { "pull_weight_ratio": 1.5 } },
+      { "id": "smash", "cooldown": 30, "throw_strength": 30 },
+      { "id": "stag_smash","cooldown": 50, "throw_strength": 50 }
+],
+    "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN" ],
+    "armor": { "bash": 5, "cut": 12, "bullet": 15, "stab": 14, "acid": 1 }
   }
-
 
 ]

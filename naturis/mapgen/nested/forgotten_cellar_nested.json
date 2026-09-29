@@ -1,0 +1,253 @@
+[
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_7x7_crate_01",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        ",,,,q",
+        ",,,,q",
+        ",qqq,",
+        ",qqqq",
+        ",,,qq"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 3 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "q": [ 
+         { "item": "NC_ARSONIST_STOCK", "chance": 5, "repeat": [ 0, 2 ] },
+         { "item": "vfw_tools", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "homeguns", "chance": 15, "repeat": [ 2, 4 ] }
+,        { "item": "oa_ig_rd_electronic_trash", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "oa_ig_rd_metal_trash", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "mansion_guns", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "hospital_bed", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_6x6_destroy",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        ",~~,,,",
+        ",0,m0,",
+        ",,~o,,",
+        ",,0,~,",
+        ",,,,,,",
+        ",^,,0,"
+      ],
+      "flags": [ "DISMANTLE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "palettes": [ "overgrown_palette" ]
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_6x6_destroy_water",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        ",~~,k,",
+        ",0,kKk",
+        ",kKKk~",
+        ",kKKk,",
+        ",kKkk,",
+        ",^k,0,"
+      ],
+      "flags": [ "DISMANTLE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "palettes": [ "overgrown_palette" ],
+      "terrain": {
+        "k": "t_water_sh",
+        "K": "t_water_dp"
+      }
+    }
+  },
+ {
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_7x7_crate_02",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        ",,,,q",
+        ",,,,q",
+        ",qqq,",
+        ",qqqq",
+        ",,,qq"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 3 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "q": [ 
+         { "item": "recycle_aluminum", "chance": 15, "repeat": [ 3, 6 ] },
+         { "item": "vfw_tools", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "recycle_glass", "chance": 25, "repeat": [ 2, 4 ] }
+,        { "item": "recycle_electronic", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "stripclub_dirty", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "recycle_plastic", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "steel_mill_mill", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_7x7_crate_03",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        ",,,,q",
+        ",,,,q",
+        ",qqq,",
+        ",qqqq",
+        ",,,qq"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 3 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "q": [ 
+         { "item": "recycle_battery", "chance":  15, "repeat": [ 3, 5 ] },
+         { "item": "vfw_tools", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "recycle_copper", "chance": 15, "repeat": [ 2, 4 ] }
+,        { "item": "recycle_paper", "chance": 30, "repeat": [ 5, 8 ] },
+         { "item": "recycle_iron", "chance": 40, "repeat": [ 5, 8 ] },
+         { "item": "mansion_guns", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "steel_mill_mill", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_7x7_crate_04",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        ",,,,q",
+        ",,,,q",
+        ",qqq,",
+        ",qqqq",
+        ",,,qq"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 3 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "q": [ 
+         { "item": "recycle_steel", "chance": 15, "repeat": [ 0, 2 ] },
+         { "item": "museum_armor", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "subway", "chance": 15, "repeat": [ 2, 4 ] }
+,        { "item": "recycle_electronic", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "stripclub_dirty", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "cavern", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "steel_mill_mill", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_7x7_crate_05",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rows": [
+        ",,,,q",
+        ",,,,q",
+        ",qqq,",
+        ",qqqq",
+        ",,,qq"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 3 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 6, 12 ] }
+]
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_2x2_table_1",
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rows": [
+        "C=",
+        "  "
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 2 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "=": [ 
+         { "item": "mine_materials", "chance": 60, "repeat": [ 2, 8 ] },
+         { "item": "museum_misc", "chance": 60, "repeat": [ 1, 2 ] },
+         { "item": "mansion_guns", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "methlab", "chance": 30, "repeat": [ 1, 3 ] }
+       ]
+      }
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_2x2_table_2",
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rows": [
+        "==",
+        "=="
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 2 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "=": [ 
+         { "item": "mine_materials", "chance": 60, "repeat": [ 2, 8 ] },
+         { "item": "museum_misc", "chance": 60, "repeat": [ 1, 2 ] },
+         { "item": "mansion_guns", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "methlab", "chance": 30, "repeat": [ 1, 3 ] }
+       ]
+      }
+    }
+  },
+{
+    "type": "mapgen",
+    "nested_mapgen_id": "cellar_2x2_table_3",
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rows": [
+        "C=",
+        ",,"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "overgrown_palette" ],
+      "place_monster": [
+        { "group": "GROUP_CELLAR", "x": [ 1, 2 ], "y": [ 1, 2 ], "chance": 70, "repeat": [ 3, 12 ] }
+],
+    "items": {
+        "=": [ 
+         { "item": "mine_materials", "chance": 60, "repeat": [ 2, 8 ] },
+         { "item": "homebooks", "chance": 60, "repeat": [ 1, 2 ] },
+         { "item": "mansion_guns", "chance": 20, "repeat": [ 2, 5 ] },
+         { "item": "methlab", "chance": 30, "repeat": [ 1, 3 ] }
+       ]
+      }
+    }
+  }
+
+
+]

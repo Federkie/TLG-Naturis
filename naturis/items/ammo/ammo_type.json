@@ -1,0 +1,25 @@
+[
+
+
+  {
+    "type": "ammunition_type",
+    "id": "fa_r",
+    "name": "explosive forest rifle ammo",
+    "default": "fa_r_heat"
+  },
+ {
+    "type": "ammunition_type",
+    "id": "gr_x",
+    "name": "gravity gun ammo",
+    "default": "gr_x_0"
+  },
+{
+    "type": "ammunition_type",
+    "id": "disk",
+    "name": "sharp cutting disks",
+    "default": "disk_cutting"
+  }
+
+
+
+]

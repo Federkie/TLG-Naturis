@@ -72,8 +72,16 @@
         "########################"
       ],
       "palettes": [ "overgrown_palette" ],
-
-
+      "place_nested": [
+        {
+          "chunks": [ 
+           [ "null", 100 ], 
+           [ "cellar_6x6_destroy", 10 ]
+         ],
+          "x": [ 3, 14 ],
+          "y": [ 4, 16 ]
+        }
+      ],
  "terrain": {
         "~": "t_forestfloor",
         "d": "t_forestfloor",

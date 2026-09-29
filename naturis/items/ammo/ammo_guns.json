@@ -1,0 +1,77 @@
+[
+
+
+  {
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "id": "fa_r_heat",
+    "price": "9999 USD 99 cent",
+    "price_postapoc": "10 USD",
+    "name": { "str_sp": "fa_r HEAT" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": ".",
+    "material": [ "steel", "powder" ],
+    "volume": "6 ml",
+    "weight": "5 g",
+    "ammo_type": "fa_r",
+    "damage": { "damage_type": "stab", "amount": 30, "armor_penetration": 15 },
+    "range": 40,
+    "dispersion": 5,
+    "stack_size": 1,
+    "recoil": 15,
+    "effects": [ "STREAM_TINY", "INCENDIARY", "BOUNCE", "TRAIL_FIRE", "NAPALM_SMALL" ]
+  },
+ {
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "id": "fa_r_leaves",
+    "price": "9999 USD 99 cent",
+    "price_postapoc": "10 USD",
+    "name": { "str_sp": "fa_r LEAVES" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": ".",
+    "material": [ "steel", "powder" ],
+    "volume": "6 ml",
+    "weight": "5 g",
+    "ammo_type": "fa_r",
+    "damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 5 },
+    "range": 35,
+    "dispersion": 5,
+    "stack_size": 1,
+    "recoil": 5,
+    "effects": [ "AE_LEAVE_STORM", "BOUNCE" ]
+  },
+  {
+    "id": "gr_x_0",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "name": { "str_sp": "gravity_x" },
+    "description": ".40 S&W ammunition with a 180gr FMJ bullet.  The .40 S&W round is descended from the 10mm Auto cartridge and maintains most of its predecessor's strengths while reducing recoil.  It was popular amongst law enforcement before the FBI switched to 9mm.",
+    "weight": "15 g",
+    "volume": "106 ml",
+    "longest_side": "29 mm",
+    "price": "200 USD 20 cent",
+    "price_postapoc": "50 USD",
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "lead", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 40,
+    "stack_size": 40,
+    "ammo_type": "gr_x",
+    "casing": "40_casing",
+    "range": 20,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 5,
+      "armor_penetration": 10
+    },
+    "dispersion": 50,
+    "recoil": 560,
+    "effects": [ "AE_GRAVITY_X" ]
+  }
+
+
+]

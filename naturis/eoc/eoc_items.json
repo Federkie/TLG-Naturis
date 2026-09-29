@@ -1,0 +1,15 @@
+[
+{
+    "type": "effect_on_condition",
+    "id": "EOC_BIOKIN_CRYSTAL_DRAINING",
+    "condition": { "u_has_item": "matrix_crystal_biokinesis" },
+    "effect": [
+      { "u_consume_item": "matrix_crystal_biokinesis", "count": 1 },
+      { "u_spawn_item": "matrix_crystal_drained", "suppress_message": true }
+    ]
+  }
+
+
+
+
+]
