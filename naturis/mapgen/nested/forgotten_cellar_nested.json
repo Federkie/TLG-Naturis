@@ -43,7 +43,11 @@
         ",^,,0,"
       ],
       "flags": [ "DISMANTLE_ALL_BEFORE_PLACING_TERRAIN" ],
-      "palettes": [ "overgrown_palette" ]
+      "palettes": [ "overgrown_palette" ],
+      "terrain": {
+        "0": "t_forestfloor",
+        "o": "t_forestfloor"
+      }
     }
   },
 {

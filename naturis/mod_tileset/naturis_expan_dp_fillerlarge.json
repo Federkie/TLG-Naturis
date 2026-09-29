@@ -11,7 +11,8 @@
         "sprite_height": 64,
         "tiles": [
           { "id": "mon_forest_dragon", "fg": 0, "rotates": false },
-          { "id": "corpse_mon_forest_dragon", "fg": 1, "rotates": false }
+          { "id": "corpse_mon_forest_dragon", "fg": 1, "rotates": false },
+          { "id": "mon_rapid_striker", "fg": 2, "rotates": false }
     ]
   }
 ] 

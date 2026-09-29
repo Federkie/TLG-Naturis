@@ -14,7 +14,7 @@
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_metalworking" } ],
     "using": [ [ "blacksmithing_standard", 1 ], [ "steel_standard", 1 ] ],
     "qualities": [{ "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 2 },{ "id": "HAMMER", "level": 2 }  ],
-    "components": [  [ "steel_fragment", 3 ], [ "steel_plate", 1 ]  ]
+    "components": [ [  [ "steel_fragment", 3 ], [ "steel_plate", 1 ]  ]  ]
   }
   
   

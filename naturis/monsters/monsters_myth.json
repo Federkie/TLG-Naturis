@@ -5,7 +5,7 @@
     "name": { "str": "rapid striker" },
     "description": ".",
     "default_faction": "overgrown",
-    "bodytype": "dog",
+    "bodytype": "lizard",
     "species": [ "MYTHIC" ],
     "diff": 10,
     "volume": "620 L",
@@ -37,7 +37,7 @@
         "spell_data": { "id": "rapid_striker_tail_detach", "min_level": 1 },
         "monster_message": "The maimed tail start twitching erratically!",
         "cooldown": 2000,
-        "caster_condition": { "math": [ "u_health() <= 30" ] }
+        "condition": { "math": [ "u_health() <= 30" ] }
 },
 
 
@@ -52,7 +52,7 @@
     ],
     "regenerates": 1,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
-    "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "PUSH_MON", "SWIMS" ],
+    "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS" ],
     "armor": { "bash": 6, "cut": 10, "bullet": 6, "electric": 3, "acid": 6 }
   },
   {
