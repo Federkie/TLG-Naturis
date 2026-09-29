@@ -2,7 +2,7 @@
 A mod for Cataclysm the last generation.
 This mod is still WIP!
 
-The goal of this mod is to bring a little more nature into the game by creating monsters that make urban terrain overgrown. New plants, exotic animals, anomalies and locations.
+The goal of this mod is to bring a little more nature into the game by creating monsters that make urban terrain overgrown. New plants, exotic creatures, anomalies and locations.
 
 
 Current feautures:
@@ -14,6 +14,16 @@ Mystical creatures (WIP):
 
 - forest dragon
 A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
+
+- rapid striker
+
+
+New weapons:
+- modular staff (rrcipe)
+- gasoline blade (recipe))
+- forest rifle (loot)
+- disk crossbow (recipe)
+
 
 
 Locations: 
@@ -29,15 +39,15 @@ Forgotten cellar:
 An old, abandoned vaulted cellar. You can find many useful things in it, but maybe also something completely different.
 
 To do: 
-- More spawn points for the Forest Walker
 - More thematic locations
-- Anomaly
+- Improve anomaly
 - Overgrown buildings in cities
 - Overgrown sprites
 - Better descriptions
 - Modular weapons
 - Unique loot
-- More mystical creatures
+- More mythical creatures
+- More mythical weapons
 
 ## Installation Instructions
 1. Download the src code in the latest mod release

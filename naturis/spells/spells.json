@@ -546,7 +546,7 @@
     "shape": "blast",
     "min_radius": 1,
     "max_radius": 3,
-    "effect_str": "mon_rapid_striker_tail"
+    "effect_str": "mon_rapid_striker_tail",
     "spawn_message": "The maimed tail wriggles loose!"
       }
 

@@ -1,9 +1,9 @@
 [
   {
-    "id": "mon_rapid striker",
+    "id": "mon_rapid_striker",
     "type": "MONSTER",
     "name": { "str": "rapid striker" },
-    "description": "A primal fear strikes when the club-like tail of this massively warped snake shifts, an assortment of bones rattling softly.  Multiple sets of hollow fangs have erupted in its maw, which itself is flanked by skinless ropes of powerful muscle.  Its scales constantly shed off and regrow with unnatural speed.",
+    "description": ".",
     "default_faction": "overgrown",
     "bodytype": "dog",
     "species": [ "MYTHIC" ],
@@ -44,10 +44,10 @@
 
       {
         "id": "bite_grab",
-        "cooldown": 8,
-        "damage_max_instance": [ { "damage_type": "stab", "amount": 32, "armor_multiplier": 0.1 } ],
+        "cooldown": 15,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 22, "armor_multiplier": 0.1 } ],
         "effects": [ { "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 } ],
-        "infection_chance": 50
+        "infection_chance": 30
       }
     ],
     "regenerates": 1,
@@ -59,7 +59,7 @@
     "id": "mon_rapid_striker_tail",
     "type": "MONSTER",
     "name": { "str": "detached tail" },
-    "description": "The strangely branching leg of a mutated cellar spider that… fell?  crawled?  off of the main body when hurt.  It now flails about blindly, irregular clawed appendages grasping at anything that comes close.",
+    "description": ".",
     "color": "brown",
     "symbol": "7",
     "default_faction": "factionless",
@@ -96,7 +96,7 @@
     "species": [ "MYTHIC"],
     "volume": "625000 ml",
     "weight": "200 kg",
-    "hp": 250,
+    "hp": 350,
     "diff": 10,
     "speed": 95,
     "material": [ "dry_plant" ],

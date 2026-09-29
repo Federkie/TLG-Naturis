@@ -168,7 +168,7 @@
     "special_attacks": [
       { "id": "ranged_pull", "cooldown": 10, "grab_data": { "pull_weight_ratio": 1.5 } },
       { "id": "smash", "cooldown": 30, "throw_strength": 30 },
-      { "id": "stag_smash","cooldown": 50, "throw_strength": 50 }
+      { "id": "stag_smash","cooldown": 50, "throw_strength": 40 }
 ],
     "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF",  "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN" ],
     "armor": { "bash": 5, "cut": 12, "bullet": 15, "stab": 14, "acid": 1 }

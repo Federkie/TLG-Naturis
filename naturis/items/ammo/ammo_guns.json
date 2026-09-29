@@ -12,17 +12,19 @@
     "color": "dark_gray",
     "description": ".",
     "material": [ "steel", "powder" ],
-    "volume": "6 ml",
-    "weight": "5 g",
+    "longest_side": "43 mm",
+    "volume": "160 ml",
+    "weight": "12 g",
     "ammo_type": "fa_r",
-    "damage": { "damage_type": "stab", "amount": 30, "armor_penetration": 15 },
+    "damage": { "damage_type": "stab", "amount": 36, "armor_penetration": 15 },
     "range": 40,
-    "dispersion": 5,
+    "dispersion": 30,
     "stack_size": 1,
-    "recoil": 15,
+    "recoil": 1000,
     "effects": [ "STREAM_TINY", "INCENDIARY", "BOUNCE", "TRAIL_FIRE", "NAPALM_SMALL" ]
   },
- {
+
+  {
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
     "id": "fa_r_leaves",
@@ -33,15 +35,16 @@
     "color": "dark_gray",
     "description": ".",
     "material": [ "steel", "powder" ],
-    "volume": "6 ml",
-    "weight": "5 g",
+    "longest_side": "43 mm",
+    "volume": "160 ml",
+    "weight": "12 g",
     "ammo_type": "fa_r",
     "damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 5 },
-    "range": 35,
-    "dispersion": 5,
+    "range": 40,
+    "dispersion": 30,
     "stack_size": 1,
-    "recoil": 5,
-    "effects": [ "AE_LEAVE_STORM", "BOUNCE" ]
+    "recoil": 1000,
+    "effects": [ "AE_LEAVE_STORM" ]
   },
   {
     "id": "gr_x_0",

@@ -1,9 +1,0 @@
-[
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_MINOR_SLEEP",
-    "effect": [ { "u_message": "You feel sleepy…" }, { "math": [ "u_val('fatigue')", "+=", "20" ] } ]
-  }
-
-
-]
