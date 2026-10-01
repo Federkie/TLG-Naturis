@@ -15,6 +15,7 @@ Mystical creatures (WIP):
 - forest dragon
 A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
 
+- rapid striker
 
 Locations: 
 
