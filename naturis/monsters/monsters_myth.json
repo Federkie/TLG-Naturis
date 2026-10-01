@@ -10,8 +10,8 @@
     "diff": 10,
     "volume": "620 L",
     "weight": "760 kg",
-    "hp": 400,
-    "speed": 110,
+    "hp": 350,
+    "speed": 140,
     "material": [ "flesh" ],
     "symbol": "S",
     "color": "brown",
@@ -29,19 +29,30 @@
     "dissect": "dissect_lizard_sample_large",
     "grab_strength": 70,
     "special_attacks": [
-
-
-
+{
+  "type": "spell",
+  "spell_data": {
+    "id": "rapid_striker_tail_detach",
+"hit_self": true,
+    "min_level": 1
+  },
+  "cooldown": 2,
+"allow_no_target": true,
+  "condition": {
+    "and": [
       {
-        "type": "spell",
-        "spell_data": { "id": "rapid_striker_tail_detach", "min_level": 1 },
-        "monster_message": "The maimed tail start twitching erratically!",
-        "cooldown": 2000,
-        "condition": { "math": [ "u_health() <= 30" ] }
+        "math": [
+          "u_hp('ALL') <= 50"
+        ]
+      },
+      {
+        "not": {
+          "u_has_effect": "maimed_tail"
+        }
+      }
+    ]
+  }
 },
-
-
-
       {
         "id": "bite_grab",
         "cooldown": 15,
@@ -53,7 +64,7 @@
     "regenerates": 1,
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS" ],
-    "armor": { "bash": 6, "cut": 10, "bullet": 6, "electric": 3, "acid": 6 }
+    "armor": { "bash": 6, "cut": 6, "bullet": 6, "electric": 3, "acid": 6 }
   },
   {
     "id": "mon_rapid_striker_tail",
@@ -62,10 +73,10 @@
     "description": ".",
     "color": "brown",
     "symbol": "7",
-    "default_faction": "factionless",
+    "default_faction": "overgrown",
     "bodytype": "snake",
-    "species": [ "INSECT" ],
-    "material": [ "iflesh" ],
+    "species": [ "MYTHIC" ],
+    "material": [ "flesh" ],
     "volume": "10 L",
     "weight": "10 kg",
     "hp": 25,
@@ -78,8 +89,6 @@
     "melee_dice_sides": 3,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "grab_strength": 10,
-    "special_attacks": [ { "id": "grab", "cooldown": 5 }, [ "SUICIDE", 180 ] ],
-    "upgrades": { "half_life": 1, "into_group": "GROUP_EMPTY" },
     "dodge": 7,
     "bleed_rate": 0,
     "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug", "prof_wp_spider" ],

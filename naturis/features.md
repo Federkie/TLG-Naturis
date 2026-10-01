@@ -16,13 +16,15 @@ Mystical creatures (WIP):
 A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
 
 - rapid striker
-
+WIP
 
 New weapons:
-- modular staff (rrcipe)
-- gasoline blade (recipe))
+- modular staff (recipe)
+- gasoline blade (recipe)
 - forest rifle (loot)
 - disk crossbow (recipe)
+- rooted sword
+- gravity gun (debug only, WIP)
 
 
 

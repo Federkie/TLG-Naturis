@@ -14,6 +14,14 @@
    "result": [ [ "t_grass", 12 ], [ "t_grass_long", 5 ], [ "t_tree_young", 1 ], [ "t_moss", 3 ],[ "t_fern", 2 ], [ "t_dirtmound", 1 ],[ "t_grass_tall", 3 ], [ "t_tree_young", 1 ], [ "t_m_mushroom", 1 ], [ "t_tree_birch", 1 ] ],
    "valid_flags": ["FLAT"] } ]
   },
+  {
+    "type": "ter_furn_transform",
+    "id": "grenade_grass",
+    "terrain": [ 
+    {
+   "result": [ [ "t_grass", 12 ], [ "t_grass_long", 2 ], [ "t_tree_young", 1 ], [ "t_moss", 3 ],[ "t_fern", 2 ], [ "t_dirtmound", 1 ],[ "t_grass_tall", 3 ], [ "t_tree_young", 1 ], [ "t_m_mushroom", 1 ], [ "t_tree_birch", 7 ] ],
+   "valid_flags": ["BURROWABLE"] } ]
+  },
 {
     "type": "ter_furn_transform",
     "id": "burn_terrain",

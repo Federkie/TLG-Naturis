@@ -1,0 +1,27 @@
+[
+ {
+   "type": "effect_on_condition",
+   "id": "EOC_RAPID_STRIKER_TAIL_DETACH",
+   "condition": 
+
+  { "math": [ "u_hp('ALL')", "<", "50" ] } ,
+   "effect": [
+     {
+        "u_spawn_monster": "mon_rapid_striker_tail",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "The maimed tail wriggles loose!"
+      },
+  {
+   "math": [ "u_val('morale') = -100" ]
+  },
+     { "u_add_effect": "maimed_tail", "duration": [ "24 hours", "55 hours" ] }
+     
+   ]
+   
+
+ }
+  
+  
+]

@@ -4,7 +4,7 @@
     "subtype": "collection",
     "id": "mon_forest_dragon_death_drops",
     "entries": [
-      { "item": "bone_curved", "count": [ 2, 4 ] },
+      { "item": "bone_curved", "count": [ 2, 5 ] },
       { "item": "dragon_hair", "count": [ 1, 5 ] },
       { "item": "forest_pearl", "count": [ 0, 3 ] }
     ]
@@ -16,7 +16,16 @@
     "entries": [
       { "item": "living_wood", "count": [ 0, 3 ] }
     ]
-  }
+  },
+   {
+   "type": "item_group",
+   "subtype": "collection",
+   "id": "mon_rapid_striker_death_drops",
+   "entries": [
+     { "item": "claw_sharp", "count": [1, 5] },
+     { "item": "bone_curved", "count": [1, 3] }
+   ]
+ }
 
 
 ]

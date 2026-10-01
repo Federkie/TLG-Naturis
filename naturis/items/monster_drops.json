@@ -64,6 +64,23 @@
     "price": "10 cent",
     "flags": [ "RAW", "NUTRIENT_OVERRIDE", "INEDIBLE", "NO_TEMP" ],
     "vitamins": [ [ "meat_allergen", 1 ] ]
+  },
+    {
+    "type": "ITEM",
+    "id": "claw_sharp",
+    "name": { "str": "sharp claw" },
+    "description": ".",
+    "weight": "540 g",
+    "to_hit": 1,
+    "color": "white",
+    "symbol": ",",
+    "material": ["flesh"],
+    "volume": "250 ml",
+    "flags": ["SPEAR"],
+    "weapon_category": ["SHIVS"],
+    "price": "50 USD",
+    "price_postapoc": "0 cent",
+    "melee_damage": { "stab": 8 }
   }
 
 
