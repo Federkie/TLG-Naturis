@@ -5,8 +5,29 @@
     "copy-from": "homebooks",
     "extend": {
       "items": [
-        { "item": "modular_weapons", "prob": 1 }
+        { "item": "modular_weapons", "prob": 1 },
+        { "item": "monster_hunter", "prob": 1 }
       ]
     }
-  }
+  },
+   {
+   "type": "item_group",
+   "id": "hardware_books",
+   "copy-from": "hardware_books",
+   "extend": {
+     "items": [
+       { "item": "modular_weapons", "prob": 1 }
+     ]
+   }
+ },
+  {
+   "type": "item_group",
+   "id": "kids_books",
+   "copy-from": "kids_books",
+   "extend": {
+     "items": [
+       { "item": "monster_hunter", "prob": 1 }
+     ]
+   }
+ }
 ]

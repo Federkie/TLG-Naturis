@@ -7,7 +7,8 @@
       [ "disk_cutting", 5 ],
       [ "fa_r_heat", 2 ],
       [ "fa_r_leaves", 3 ],
-      [ "disk_crossbow",2 ]
+      [ "gravity_gun", 1 ],
+      [ "disk_crossbow",3 ]
     ]
   }
 

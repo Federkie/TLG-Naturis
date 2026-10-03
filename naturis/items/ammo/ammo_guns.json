@@ -23,7 +23,6 @@
     "recoil": 1000,
     "effects": [ "STREAM_TINY", "INCENDIARY", "BOUNCE", "TRAIL_FIRE", "NAPALM_SMALL" ]
   },
-
   {
     "type": "ITEM",
     "subtypes": [ "AMMO" ],

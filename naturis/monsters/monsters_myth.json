@@ -16,7 +16,7 @@
     "symbol": "S",
     "color": "brown",
     "aggression": 60,
-    "morale": 40,
+    "morale": 80,
     "melee_skill": 8,
     "melee_dice": 5,
     "melee_dice_sides": 8,
@@ -62,6 +62,7 @@
       }
     ],
     "regenerates": 1,
+    "death_drops": "mon_rapid_striker_death_drops",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS" ],
     "armor": { "bash": 6, "cut": 6, "bullet": 6, "electric": 3, "acid": 6 }
@@ -136,18 +137,115 @@
      {"type": "spell",
         "spell_data": { "id": "leave_burst"},
         "monster_message": "The %s shoots sharp leaves on you!",
-        "cooldown": 35
+        "cooldown": 15
       },    
       { "id": "bite_grab", "cooldown": 5 }, 
       { "id": "bite_grab_required", "cooldown": 8 },
-      { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
+      { "id": "slam", "cooldown": 30, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
       { "id": "longswipe" },
       { "id": "cut_throat" },
-      { "id": "smash", "throw_strength": 72, "cooldown": 30 }
+      { "id": "smash", "throw_strength": 72, "cooldown": 35 }
     ],
     "death_drops": "mon_forest_dragon_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF", "PUSH_MON" ],
     "armor": { "bash": 15, "cut": 20, "bullet": 30, "electric": 4, "acid": 10 }
+  },
+    {
+    "type": "MONSTER",
+    "id": "mon_flying_fire",
+    "name": { "str": "Flying fire" },
+    "description": ".",
+    "species": "MYTHIC",
+    "default_faction": "overgrown",
+    "bodytype": "bird",
+    "death_function": { "effect": { "id": "eggsplosion", "hit_self": true }, "message": "The %s explodes!" },
+    "diff": 8,
+    "luminance": 10,
+    "symbol": "T",
+    "color": "blue_green",
+    "volume": "145 L",
+    "weight": "150 kg",
+    "material": "flesh", 
+    "aggression": 100,
+    "morale": 100,
+    "speed": 120,
+    "vision_day": 35,
+    "vision_night": 15,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 4.0 } ],
+    "dodge": 3,
+    "hp": 250,
+    "special_attacks": [
+      { "type": "leap", "cooldown": 5, "max_range": 5, "allow_no_target": true },
+      [ "SHRIEK_STUN", 10 ],
+      { "id": "hunter_peck" },
+      {"type": "spell",
+        "spell_data": { "id": "fire_jumping"},
+        "monster_message": "The %s spits fire on you!",
+        "cooldown": 20
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "GOODHEARING",
+      "PATH_AVOID_DANGER",
+      "HIT_AND_RUN",
+      "FLIES",
+      "FIREY",
+      "HARDTOSHOOT",
+      "KEEP_DISTANCE"
+    ],
+  "death_drops": "mon_flying_fire_death_drops",
+    "armor": { "bash": 3, "cut": 6, "bullet": 6, "electric": 2 }
+  },
+   {
+    "id": "mon_ice_former",
+    "type": "MONSTER",
+    "name": { "str": "ice former" },
+    "description": ".",
+    "default_faction": "overgrown",
+    "bodytype": "lizard",
+    "species": [ "MYTHIC" ],
+    "diff": 10,
+    "volume": "780 L",
+    "weight": "820 kg",
+    "hp": 400,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "S",
+    "color": "brown",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 5,
+    "melee_dice_sides": 7,
+    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
+    "dodge": 3,
+    "vision_day": 35,
+    "vision_night": 5,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "harvest": "mutant_animal_large_noskin",
+    "dissect": "dissect_lizard_sample_large",
+    "grab_strength": 50,
+    "special_attacks": [
+{
+  "type": "spell",
+  "spell_data": {
+    "id": "burst_ice" },
+    "cooldown": 15,
+    "monster_message": "The %s spits ice on you!"
+  },
+  { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
+  { "id": "bite_grab", "cooldown": 15 },
+  { "id": "longswipe" }
+    ],
+    "death_drops": "mon_ice_former_death_drops",
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "LOUDMOVES", "GOODHEARING", "COLDPROOF" ],
+    "armor": { "bash": 8, "cut": 9, "bullet": 7, "electric": 2, "acid": 3 }
   }
 
 

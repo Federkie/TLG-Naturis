@@ -15,7 +15,8 @@
 		  { "id": "mon_hunting_bird", "fg": 0, "rotates": false, "bg": 6 },
 		  { "id": "mon_old_bird", "fg": 2, "rotates": false, "bg": 6 },
 		  { "id": "mon_flesh_wolf", "fg": 3, "rotates": false, "bg": 6 },
-		  { "id": "mon_old_stone", "fg": 8, "rotates": false }
+		  { "id": "mon_old_stone", "fg": 8, "rotates": false },
+		  { "id": "t_ice_pillar", "fg": 9 , "rotates": false }
         ],
         "sprite_width": 32,
         "sprite_height": 48

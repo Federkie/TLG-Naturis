@@ -3,16 +3,15 @@
     "type": "ITEM",
     "id": "forest_pearl",
     "name": { "str": "forest pearl" },
-    "description": "A manufactured plush toy.",
+    "description": ".",
     "category": "other",
-    "material": [ { "type": "faux_fur", "portion": 1 }, { "type": "synthetic_fluff", "portion": 15 } ],
-    "weight": "900 g",
-    "volume": "3 L",
-    "price": "20 USD",
-    "price_postapoc": "1 USD",
+    "weight": "30 g",
+    "volume": "35 ml",
+    "price": "200 USD",
+    "price_postapoc": "100 USD",
     "symbol": "i",
     "color": "cyan",
-    "flags": [ "SLEEP_AID", "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE" ]
 },
 {
     "type": "ITEM",
@@ -20,7 +19,6 @@
     "name": { "str": "long hair" },
     "description": "The long neck hair of a forest dragon. It's wiry and hard to bend.",
     "category": "other",
-    "material": [ { "type": "faux_fur", "portion": 1 }, { "type": "synthetic_fluff", "portion": 15 } ],
     "weight": "900 g",
     "volume": "3 L",
     "price": "20 USD",
@@ -33,7 +31,7 @@
     "type": "ITEM",
     "id": "living_wood",
     "name": { "str": "living wood" },
-    "description": "A short, thick plank of wood, about 1/4th of a two by four.",
+    "description": ".",
     "category": "spare_parts",
     "weight": "800 g",
     "color": "brown",
@@ -42,8 +40,8 @@
     "volume": "1600 ml",
     "longest_side": "50 cm",
     "to_hit": { "grip": "none", "length": "short", "surface": "any", "balance": "clumsy" },
-    "price": "50 USD",
-    "price_postapoc": "100 cent",
+    "price": "70 USD",
+    "price_postapoc": "500 cent",
     "flags": [ "FIREWOOD" ],
     "melee_damage": { "bash": 7 }
   },
@@ -61,7 +59,7 @@
     "material": [ "bone" ],
     "comestible_type": "FOOD",
     "category": "spare_parts",
-    "price": "10 cent",
+    "price": "80 cent",
     "flags": [ "RAW", "NUTRIENT_OVERRIDE", "INEDIBLE", "NO_TEMP" ],
     "vitamins": [ [ "meat_allergen", 1 ] ]
   },
@@ -78,10 +76,37 @@
     "volume": "250 ml",
     "flags": ["SPEAR"],
     "weapon_category": ["SHIVS"],
-    "price": "50 USD",
-    "price_postapoc": "0 cent",
+    "price": "150 USD",
+    "price_postapoc": "100 cent",
     "melee_damage": { "stab": 8 }
-  }
+  },
+    {
+    "type": "ITEM",
+    "id": "leaves_pink",
+    "name": { "str": "handful of pink leaves", "str_pl": "handfuls of pink leaves" },
+    "description": ".",
+    "weight": "40 g",
+    "color": "green",
+    "symbol": ",",
+    "price": "80 cent",
+    "material": ["vegetable"],
+    "volume": "100 ml",
+    "flags": ["TRADER_AVOID", "FIREWOOD", "TINDER"]
+  },
+  {
+  "type": "ITEM",
+  "id": "chard_fire",
+  "name": { "str": "fire chard" },
+  "description": ".",
+  "category": "other",
+  "weight": "30 g",
+  "volume": "35 ml",
+  "price": "200 USD",
+  "price_postapoc": "100 USD",
+  "symbol": "s",
+  "color": "red",
+  "flags": ["NO_SALVAGE"]
+}
 
 
 ]

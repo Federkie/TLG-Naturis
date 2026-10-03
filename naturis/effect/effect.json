@@ -1,0 +1,20 @@
+[
+{
+  "type": "effect_type",
+  "id": "ice_spikes_damage",
+  "name": [ "Ice Spikes" ],
+  "desc": [ "You are impaled by sharp ice spikes!" ],
+  "rating": "bad",
+ "max_intensity": 1,
+  "max_duration": "1 second",
+
+  "base_mods": {
+    "hurt_min": [ 5 ],
+    "hurt_max": [ 20 ],
+    "hurt_chance": [ 100 ]
+  },
+
+  "show_in_info": false
+}
+  
+]

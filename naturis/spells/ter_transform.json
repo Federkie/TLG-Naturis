@@ -29,7 +29,14 @@
    { 
    "result": [ [ "t_lava", 1 ], [ "t_rock", 12 ], [ "t_coast_rock_surf", 2 ] ],
   "valid_flags": ["FLAT"] } ]
-
+  },
+    {
+    "type": "ter_furn_transform",
+    "id": "freeze_ground",
+    "terrain": [ 
+    {
+   "result": [ "t_ice_thin" ] ,
+   "valid_flags": ["FLAT"] } ]
   }
 
 

@@ -65,6 +65,44 @@
     "move_cost": 3,
     "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE", "GRAZABLE" ],
     "bash": { "sound": "thump", "ter_set": "t_dirt", "str_min": 15, "str_max": 40, "bash_below": true }
-   }
+   },
+     {
+    "type": "terrain",
+    "id": "t_ice_thin",
+    "name": "thin ice",
+    "looks_like": "t_ice_sh_thick",
+    "description": "A thin layer of ice.  It may not support much weight.",
+    "symbol": "/",
+    "color": "light_cyan",
+    "move_cost": 4,
+    "trap": "tr_thin_ice",
+    "examine_action": "thin_ice",
+    "bash": { "str_min": 3, "str_max": 6, "sound": "crack!", "ter_set": "t_grass" },
+    "flags": ["THIN_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
+  },
+    {
+    "type": "terrain",
+    "id": "t_ice_thick",
+    "name": "ice",
+    "looks_like": "t_ice_dp_thick",
+    "description": "A sheet of ice.",
+    "symbol": "/",
+    "color": "cyan",
+    "move_cost": 2,
+    "bash": { "str_min": 80, "str_max": 180, "sound": "crack!", "ter_set": "t_grass" },
+    "flags": ["THICK_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
+  },
+    {
+    "type": "terrain",
+    "id": "t_ice_pillar",
+    "name": "ice",
+    "looks_like": "t_ice_dp_thick",
+    "description": "A pillar of ice.",
+    "symbol": "/",
+    "color": "cyan",
+    "move_cost": -1,
+    "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_ice_thin" },
+    "flags": ["THICK_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
+  }
 
 ]

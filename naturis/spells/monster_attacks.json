@@ -19,7 +19,38 @@
     "miss_msg_npc": "%1$s tries to club <npcname>, but they dodge!",
     "no_dmg_msg_u": "%1$s's clubbed tail bounces off your %2$s.",
     "no_dmg_msg_npc": "%1$s tries to club <npcname>, but it fails to penetrate their armor."
-  }
+  },
+  {
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "ice_slam",
+  "cooldown": 20,
+  "move_cost": 180,
+
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 8
+    }
+  ],
+
+  "hitsize_min": 4,
+
+  "eoc": [
+    "EOC_SLAM_ICE_SPIKES"
+  ],
+
+  "hit_dmg_u": "%1$s slams into your %2$s!",
+  "hit_dmg_npc": "%1$s slams into <npcname>!",
+  "miss_msg_u": "%1$s tries to slam into you, but you dodge!",
+  "miss_msg_npc": "%1$s tries to slam into <npcname>, but they dodge!",
+  "no_dmg_msg_u": "%1$s slams into your %2$s, but your armor protects you.",
+  "no_dmg_msg_npc": "%1$s slams into <npcname>, but their armor protects them.",
+
+  "dodgeable": true,
+  "blockable": false
+}
+
 
 
 

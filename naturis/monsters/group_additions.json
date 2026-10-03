@@ -8,6 +8,13 @@
     ]
   },
   {
+  "type": "monstergroup",
+"name": "GROUP_CAVE",
+  "monsters": [
+    { "monster": "mon_zom_bat", "weight": 5, "cost_multiplier": 1 }
+  ]
+},
+  {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
     "//": "+15% child",
