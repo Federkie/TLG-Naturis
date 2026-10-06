@@ -26,15 +26,15 @@
         "u_run_inv_eocs": "all",
         "search_data": [
           {
-            "id": "regenerating_livingwood_staff"
+            "id": "regenerating_staff"
           }
         ],
         "true_eocs": [
           {
-            "id": "EOC_REGENERATING_LIVINGWOOD_STAFF_RESTORE",
+            "id": "EOC_REGENERATING_STAFF_RESTORE",
             "effect": [
               {
-                "transform_item": "regenerating_livingwood_staff"
+                "transform_item": "regenerating_staff"
               },
               {
                 "u_message": "The living wood rapidly knits itself back together."

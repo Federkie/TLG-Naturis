@@ -16,15 +16,28 @@ Mystical creatures (WIP):
 A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
 
 - rapid striker
-WIP
+- flying fire
+- ice former
+- static beast
 
-New weapons:
-- modular staff (recipe)
-- gasoline blade (recipe)
+
+
+New items:
+- modular staff (+recipe)
+- gasoline blade (+recipe)
 - forest rifle (loot)
-- disk crossbow (recipe)
+- disk crossbow (+recipe)
 - rooted sword
-- gravity gun (debug only, WIP)
+- gravity revolver (debug only, WIP)
+- regenerating staff (debug only, WIP)
+- living wood arm splint (+recipe)
+- living wood leg splint (+recipe)
+- scaled cloak (+recipe)
+- alternative medicine, book 
+- the stylish hunter!, book
+- 
+
+- I have temporarily removed the "rooted egg" function, as it can cause a crash.
 
 
 
@@ -39,6 +52,9 @@ An idyllic bunch of mushrooms.
 
 Forgotten cellar:
 An old, abandoned vaulted cellar. You can find many useful things in it, but maybe also something completely different.
+
+Burning fields:
+The home of the flying fire.
 
 To do: 
 - More thematic locations
