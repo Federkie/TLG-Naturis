@@ -7,14 +7,12 @@
   "rating": "bad",
  "max_intensity": 1,
   "max_duration": "1 second",
-
   "base_mods": {
     "hurt_min": [ 5 ],
     "hurt_max": [ 20 ],
     "hurt_chance": [ 100 ]
   },
-
-  "show_in_info": false
+  "show_in_info": true
 }
   
 ]

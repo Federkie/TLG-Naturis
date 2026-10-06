@@ -96,7 +96,9 @@
           { "id": "overlay_wielded_f_rifle", "fg": 61, "rotates": false },
           { "id": "f_rifle", "fg": 62, "rotates": false },
           { "id": "fd_leaves_pink", "fg": 63, "rotates": false },
-          { "id": "fd_spikes_ice", "fg": 64, "rotates": false }
+          { "id": "fd_permafrost","fg": 64, "rotates": false },
+          { "id": "permafrost_cleaver", "fg": 65, "rotates": false },
+          { "id": "overlay_wielded_permafrost_cleaver", "fg": 66, "rotates": false }
         ]
       }
     ]

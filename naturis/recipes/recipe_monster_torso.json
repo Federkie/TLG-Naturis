@@ -1,0 +1,23 @@
+[
+    {
+    "result": "cloak_scales",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "6 h",
+    "reversible": true,
+  "book_learn": [ [ "manual_tailor_monster", 3 ] ],
+    "using": [ [ "sewing_standard", 300], [ "tailoring_leather_sheet_simple", 8 ] ],
+    "components": [
+      [ [ "dragon_hair", 3 ] ],
+      [ [ "scale_forest_dragon", 30 ] ]
+    ],
+    "proficiencies": [ { "proficiency": "prof_leatherworking_basic" }, { "proficiency": "prof_leatherworking" } ],
+    "qualities": [ { "id": "LEATHER_AWL", "level": 1 }, { "id": "DRILL", "level": 2 } ]
+  }
+  
+  
+]

@@ -1,0 +1,81 @@
+[
+    {
+    "id": "cloak_scales",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "name": { "str": "scaled cloak" },
+    "description": "A long leather cloak, embroidered with the iridescent scales of a forest dragon..",
+    "weight": "3160 g",
+    "volume": "3600 ml",
+    "price": "300 USD",
+    "price_postapoc": "50 USD",
+    "to_hit": -1,
+    "material": [ "scales" ],
+    "symbol": "[",
+    "looks_like": "cloak",
+    "color": "dark_gray",
+    "warmth": 35,
+    "material_thickness": 1.6,
+    "environmental_protection": 4,
+    "flags": [ "OVERSIZE", "HOOD", "BELTED", "RAINPROOF", "POCKETS" ],
+    "armor": [
+      {
+        "encumbrance": 9,
+        "coverage": 65,
+        "covers": [ "torso", "arm_l", "arm_r", "wing_bird_l", "wing_bird_r", "cephalopod_tentacle_l", "cephalopod_tentacle_r" ]
+      },
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 65,
+        "encumbrance": 5,
+        "specifically_covers": [ "leg_draped_l", "leg_draped_r" ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "covers": [ "gastropod_foot" ],
+        "coverage": 50,
+        "encumbrance": 4,
+        "specifically_covers": [ "gastropod_foot_draped" ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "covers": [ "long_tail" ],
+        "coverage": 65,
+        "encumbrance": 5,
+        "specifically_covers": [ "long_tail_draped" ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "coverage": 65,
+        "encumbrance": 5,
+        "covers": [
+          "cephalopod_arm_1",
+          "cephalopod_arm_2",
+          "cephalopod_arm_3",
+          "cephalopod_arm_4",
+          "cephalopod_arm_5",
+          "cephalopod_arm_6"
+        ],
+        "specifically_covers": [
+          "cephalopod_arm_1_draped",
+          "cephalopod_arm_2_draped",
+          "cephalopod_arm_3_draped",
+          "cephalopod_arm_4_draped",
+          "cephalopod_arm_5_draped",
+          "cephalopod_arm_6_draped"
+        ],
+        "layers": [ "BELTED" ]
+      },
+      {
+        "coverage": 65,
+        "encumbrance": 5,
+        "covers": [ "crab_leg_1", "crab_leg_2", "crab_leg_3", "crab_leg_4" ],
+        "specifically_covers": [ "crab_leg_1_draped", "crab_leg_2_draped", "crab_leg_3_draped", "crab_leg_4_draped" ],
+        "layers": [ "BELTED" ]
+      }
+    ]
+  }
+  
+  
+  
+]

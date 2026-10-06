@@ -1,0 +1,134 @@
+[
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "burning_6x6_01",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        "''''''",
+        "q''q''",
+        "''''''",
+        "q'''''",
+        "'''q''",
+        "''''''"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "burning_palette" ],
+    "items": {
+        "q": [ 
+         { "item": "bones", "chance": 5, "repeat": [ 0, 2 ] },
+         { "item": "monparts", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "bug_parts", "chance": 15, "repeat": [ 2, 4 ] }
+,        { "item": "vertebrate_parts", "chance": 20, "repeat": [ 1, 2 ] },
+         { "item": "human_parts", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "medieval", "chance": 5, "repeat": [ 2, 5 ] },
+         { "item": "pottery", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "burning_6x6_02",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        "''''''",
+        "'''+''",
+        "''q'''",
+        "''''+'",
+        "'+''''",
+        "''''''"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+        "terrain": {
+    "+": "t_sand"
+  },
+
+      "palettes": [ "burning_palette" ],
+    "items": {
+        "q": [ 
+         { "item": "bones", "chance": 5, "repeat": [ 0, 2 ] },
+         { "item": "monparts", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "bug_parts", "chance": 15, "repeat": [ 2, 4 ] }
+,        { "item": "vertebrate_parts", "chance": 10, "repeat": [ 1, 8 ] },
+         { "item": "human_parts", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "medieval", "chance": 5, "repeat": [ 2, 5 ] },
+         { "item": "pottery", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "burning_6x6_03",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        "''''''",
+        "------",
+        "''---'",
+        "''----",
+        "'---''",
+        "''''''"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "burning_palette" ],
+    "items": {
+        "-": [ 
+         { "item": "bones", "chance": 5, "repeat": [ 0, 2 ] },
+         { "item": "monparts", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "bug_parts", "chance": 15, "repeat": [ 2, 4 ] }
+,        { "item": "vertebrate_parts", "chance": 10, "repeat": [ 1, 3 ] },
+         { "item": "human_parts", "chance": 60, "repeat": [ 5, 8 ] },
+         { "item": "medieval", "chance": 5, "repeat": [ 2, 5 ] },
+         { "item": "pottery", "chance": 30, "repeat": [ 3, 5 ] }
+       ]
+      }
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "burning_6x6_04",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        "''''''",
+        "''',''",
+        "'',,,'",
+        ",,,,,,",
+        "',,,''",
+        "''''''"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "burning_palette" ]
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "burning_6x6_05",
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rows": [
+        "''''''",
+        "''...'",
+        "'...''",
+        "......",
+        "'...'.",
+        "''''''"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+        "terrain": {
+    "+": "t_sand"
+  },
+        "place_fields": [
+    { "field": "fd_blood", "x": [1, 5], "y": [1, 5], "repeat": [1, 3] }
+  ],
+    "place_monster": [
+    { "monster": "mon_fire_chick", "x": [3], "y": [3] }
+  ],
+      "palettes": [ "burning_palette" ]
+    }
+  }
+  
+]

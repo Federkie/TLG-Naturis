@@ -109,7 +109,7 @@
     "hp": 350,
     "diff": 10,
     "speed": 95,
-    "material": [ "dry_plant" ],
+    "material": [ "flesh" ],
     "symbol": "S",
     "color": "green",
     "scents_tracked": [ "sc_human", "sc_fetid" ],
@@ -146,7 +146,14 @@
       { "id": "cut_throat" },
       { "id": "smash", "throw_strength": 72, "cooldown": 35 }
     ],
+"emit_fields": [
+  {
+    "emit_id": "emit_forest_dragon_track",
+    "delay": "15 h"
+  }
+],
     "death_drops": "mon_forest_dragon_death_drops",
+    "harvest": "forest_dragon",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF", "PUSH_MON" ],
     "armor": { "bash": 15, "cut": 20, "bullet": 30, "electric": 4, "acid": 10 }
   },
@@ -159,7 +166,7 @@
     "default_faction": "overgrown",
     "bodytype": "bird",
     "death_function": { "effect": { "id": "eggsplosion", "hit_self": true }, "message": "The %s explodes!" },
-    "diff": 8,
+    "diff": 9,
     "luminance": 10,
     "symbol": "T",
     "color": "blue_green",
@@ -198,6 +205,12 @@
       "HARDTOSHOOT",
       "KEEP_DISTANCE"
     ],
+"emit_fields": [
+  {
+    "emit_id": "emit_flying_fire_track",
+    "delay": "15 h"
+  }
+],
   "death_drops": "mon_flying_fire_death_drops",
     "armor": { "bash": 3, "cut": 6, "bullet": 6, "electric": 2 }
   },
@@ -242,10 +255,73 @@
   { "id": "bite_grab", "cooldown": 15 },
   { "id": "longswipe" }
     ],
+"emit_fields": [
+  {
+    "emit_id": "emit_ice_former_track",
+    "delay": "15 h"
+  }
+],
     "death_drops": "mon_ice_former_death_drops",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "LOUDMOVES", "GOODHEARING", "COLDPROOF" ],
     "armor": { "bash": 8, "cut": 9, "bullet": 7, "electric": 2, "acid": 3 }
+  },
+   {
+    "id": "mon_beast_static",
+    "type": "MONSTER",
+    "name": { "str": "static beast" },
+    "description": ".",
+    "default_faction": "overgrown",
+    "bodytype": "lizard",
+    "species": [ "MYTHIC" ],
+    "diff": 10,
+    "volume": "580 L",
+    "weight": "617 kg",
+    "hp": 450,
+    "luminance": 8,
+    "speed": 140,
+    "material": [ "flesh" ],
+    "symbol": "S",
+    "color": "brown",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 6,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "stab", "amount": 10 } ],
+    "dodge": 3,
+    "vision_day": 25,
+    "vision_night": 3,
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "harvest": "mutant_animal_large_noskin",
+    "dissect": "dissect_lizard_sample_large",
+    "grab_strength": 80,
+    "special_when_hit": [ "ZAPBACK", 100 ],
+    "special_attacks": [
+  [ "SHOCKSTORM", 25 ],
+  { "id": "grab_drag", "cooldown": 3 },
+  { "id": "drag_followup" },
+  { "id": "longswipe" }
+    ],
+"emit_fields": [
+  {
+    "emit_id": "emit_beast_static_track",
+    "delay": "15 h"
+  }
+],
+    "death_drops": "mon_beast_static_drops",
+    "anger_triggers": [ 
+      "HURT", 
+      "PLAYER_CLOSE", 
+      "PLAYER_WEAK" ],
+    "flags": [ 
+      "SEES", 
+      "ELECTRIC_FIELD", 
+      "CLIMBS", 
+      "ELECTRIC", 
+      "GOODHEARING",
+      "GRABS" ],
+    "armor": { "bash": 8, "cut": 12, "bullet": 8, "electric": 10, "acid": 6 }
   }
 
 

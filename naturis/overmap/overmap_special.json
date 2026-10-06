@@ -40,5 +40,18 @@
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 0, 2 ],
     "flags": [ "WILDERNESS" ]
-  }
+  },
+   {
+   "type": "overmap_special",
+   "id": "burning_fields",
+   "overmaps": [
+     { "point": [0, 0, 0], "overmap": "burning_fields_north" },
+     { "point": [0, 0, -1], "overmap": "burning_fields_1_north" }
+   ],
+   "locations": ["field"],
+   "city_distance": [20, -1],
+   "city_sizes": [0, 12],
+   "occurrences": [0, 2],
+   "flags": ["WILDERNESS"]
+ }
 ]

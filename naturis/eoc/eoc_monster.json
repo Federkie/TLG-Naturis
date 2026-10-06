@@ -3,7 +3,6 @@
    "type": "effect_on_condition",
    "id": "EOC_RAPID_STRIKER_TAIL_DETACH",
    "condition": 
-
   { "math": [ "u_hp('ALL')", "<", "50" ] } ,
    "effect": [
      {
@@ -17,11 +16,35 @@
    "math": [ "u_val('morale') = -100" ]
   },
      { "u_add_effect": "maimed_tail", "duration": [ "24 hours", "55 hours" ] }
-     
    ]
-   
-
- }
+ },
+   {
+    "type": "effect_on_condition",
+    "id": "EOC_REGENERATING_STAFF",
+    "effect": [
+      {
+        "u_run_inv_eocs": "all",
+        "search_data": [
+          {
+            "id": "regenerating_livingwood_staff"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_REGENERATING_LIVINGWOOD_STAFF_RESTORE",
+            "effect": [
+              {
+                "transform_item": "regenerating_livingwood_staff"
+              },
+              {
+                "u_message": "The living wood rapidly knits itself back together."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
   
   
 ]

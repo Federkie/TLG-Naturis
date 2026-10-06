@@ -60,5 +60,52 @@
     "time": "45 m",
     "read_skill": "fabrication",
     "read_fun": -1
+  },
+    {
+    "id": "manual_tailor_monster",
+    "type": "ITEM",
+    "subtypes": ["BOOK"],
+    "category": "manuals",
+    "name": { "str": "The stylish hunter!" },
+    "description": "An extensive book about exquisite clothing made from various materials.",
+    "weight": "454 g",
+    "volume": "750 ml",
+    "price": "45 USD",
+    "price_postapoc": "9 USD 50 cent",
+    "material": ["paper"],
+    "symbol": "?",
+    "looks_like": "manual_driving",
+    "color": "green",
+    "max_level": 5,
+    "proficiencies": [
+      { "proficiency": "prof_closures", "time_factor": 0.2, "fail_factor": 0.25 },
+      { "proficiency": "prof_elastics", "time_factor": 0.2, "fail_factor": 0.15 }
+    ],
+    "intelligence": 4,
+    "time": "18 m",
+    "read_skill": "tailor"
+  },
+    {
+    "id": "alternative_medicine",
+    "type": "ITEM",
+    "subtypes": ["BOOK"],
+    "category": "manuals",
+    "name": { "str": "alternative medicine" },
+    "description": ".",
+    "weight": "2063 g",
+    "volume": "2 L",
+    "price": "92 USD",
+    "price_postapoc": "25 USD",
+    "material": ["paper", "cardboard"],
+    "symbol": "?",
+    "color": "blue",
+    "required_level": 0,
+    "max_level": 3,
+    "intelligence": 6,
+    "proficiencies": [{ "proficiency": "prof_field_medic", "time_factor": 0.75, "fail_factor": 0.5 }],
+    "time": "35 m",
+    "melee_damage": { "bash": 8 },
+    "read_skill": "firstaid",
+    "read_fun": -1
   }
 ]

@@ -58,6 +58,21 @@
     "type": "overmap_terrain",
     "id": "forgotten_cellar_1n", 
     "copy-from": "forgotten_cellar" 
+  },
+  {
+  "type": "overmap_terrain",
+  "id": "burning_fields",
+  "vision_levels": "isolated_building",
+  "name": "Burning fields",
+  "sym": "F",
+  "color": "i_green",
+  "see_cost": "high",
+  "flags": ["RISK_HIGH"]
+},
+  {
+    "type": "overmap_terrain",
+    "id": "burning_fields_1",
+    "copy-from": "burning_fields"
   }
 
 ]

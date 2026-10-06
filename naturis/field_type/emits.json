@@ -1,0 +1,35 @@
+[
+  
+  {
+    "type": "emit",
+    "id": "emit_forest_dragon_track",
+    "field": "fd_leaves_pink",
+    "intensity": 1,
+    "chance": 4
+  },
+{
+    "type": "emit",
+    "id": "emit_flying_fire_track",
+    "field": "fd_fire",
+    "intensity": 1,
+    "chance": 4
+  },
+{
+    "type": "emit",
+    "id": "emit_ice_former_track",
+    "field": "fd_spikes_ice",
+    "intensity": 1,
+    "chance": 4
+  },
+{
+    "type": "emit",
+    "id": "emit_beast_static_track",
+    "field": "fd_electricity",
+    "intensity": 1,
+    "chance": 4
+  }
+
+  
+  
+  
+]

@@ -208,6 +208,87 @@
       "type": "transform"
     },
     "melee_damage": { "bash": 3, "stab": 15 }
+  },
+   {
+    "type": "ITEM",
+    "id": "permafrost_cleaver",
+    "subtypes": [ "TOOL" ],
+    "category": "weapons",
+    "name": {
+      "str": "Permafrost Cleaver"
+    },
+    "description": ".",
+    "weight": "4 kg",
+    "volume": "3 L",
+    "longest_side": "100 cm",
+    "symbol": "/",
+    "color": "light_cyan",
+    "price": "25000 USD",
+    "price_postapoc": "350 USD",
+    "material": [ "steel" ],
+    "repairs_with": [ "steel" ],
+    "to_hit": {
+      "grip": "weapon",
+      "length": "long",
+      "surface": "line",
+      "balance": "good"
+    },
+    "flags": [
+      "FRAGILE_MELEE",
+      "CONDUCTIVE",
+      "SHEATH_SWORD",
+      "ALWAYS_TWOHAND"
+    ],
+    "techniques": [
+      "WBLOCK_2",
+      "WIDE",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [ "CUT", 1 ],
+      [ "BUTCHER", 4 ]
+    ],
+    "weapon_category": [
+      "LONG_SWORDS"
+    ],
+    "melee_damage": {
+      "bash": 8,
+      "cut": 23
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "regenerating_staff",
+    "name": {
+      "str": "regenerating staff"
+    },
+    "description": "A sturdy staff carved from living wood. A forest pearl is embedded in the grip, while wiry forest dragon hair binds the wood together. The living material slowly restores itself after being damaged.",
+    "category": "weapons",
+    "weight": "1 kg",
+    "volume": "2 L",
+    "longest_side": "120 cm",
+    "price": "500 USD",
+    "price_postapoc": "250 USD",
+    "symbol": "/",
+    "color": "brown",
+    "material": [
+      "wood"
+    ],
+    "to_hit": 1,
+    "melee_damage": {
+      "bash": 10
+    },
+    "countdown_interval": "12 hours",
+    "countdown_action": {
+      "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        "EOC_REGENERATING_STAFF"
+      ]
+    },
+    "flags": [
+      "DURABLE_MELEE",
+      "NO_SALVAGE"
+    ]
   }
 
 

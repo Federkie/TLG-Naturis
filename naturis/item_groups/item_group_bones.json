@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bones",
+    "type": "item_group",
+    "items": [
+      ["bone_tainted", 1],
+      ["bone_human", 5],
+      ["bone", 5],
+      ["skull_human", 2],
+      ["skull_human_tainted", 3],
+      ["skull_canis_small", 6],
+      ["skull_canis", 4],
+      ["skull_canis_triclopean", 1],
+      ["skull_feline_small", 3],
+      ["skull_tiger", 1],
+      ["skull_raccoon", 2],
+      ["skull_bear", 1],
+      ["skull_opossum", 1],
+      ["skull_cervine", 5],
+      ["large_bone", 5],
+      ["bone_human", 5],
+      ["meal_bone", 2],
+      ["meal_bone_tainted", 3],
+      ["skull_feline_medium", 6],
+      ["skull_skunk", 4],
+      ["skull_rodent", 1],
+      ["skull_rabbit", 3],
+      ["skull_beaver", 1],
+      ["skull_sheep", 2],
+      ["skull_goat", 1],
+      ["skull_bovine", 1],
+      ["skull_equine", 3],
+      ["skull_moose", 5]
+    ]
+  }
+  
+]

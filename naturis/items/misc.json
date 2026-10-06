@@ -51,6 +51,46 @@
     "melee_damage": { "bash": 3 },
     "use_action": { "type": "cast_spell",
        "spell_id": "summon_animal_pets", "no_fail": true, "level": 1 }
+  },
+    {
+    "id": "arm_splint_living",
+    "type": "ITEM",
+    "subtypes": ["ARMOR"],
+    "name": { "str": "living wood arm splint" },
+    "description": "A highly flexible aid for positioning and immobilizing arm bones that emits gentle warmth.",
+    "weight": "300 g",
+    "volume": "1 L",
+    "price": "200 USD",
+    "price_postapoc": "50 cent",
+    "material": ["wood", "cotton"],
+    "symbol": "[",
+    "looks_like": "armguard_hard",
+    "color": "white",
+    "sided": true,
+    "warmth": 8,
+    "material_thickness": 1,
+    "flags": ["OUTER", "SPLINT", "ALLOWS_TAIL", "UNRESTRICTED"],
+    "armor": [{ "encumbrance": 70, "coverage": 75, "covers": ["arm_l", "arm_r", "wing_bird_l", "wing_bird_r"] }]
+  },
+    {
+    "id": "leg_splint_living",
+    "type": "ITEM",
+    "subtypes": ["ARMOR"],
+    "name": { "str": "living leg splint."},
+    "description": "A highly flexible aid for positioning and immobilizing bones that emits gentle warmth.",
+    "weight": "500 g",
+    "volume": "1 L",
+    "price": "200 USD",
+    "price_postapoc": "60 cent",
+    "material": ["wood", "cotton"],
+    "symbol": "[",
+    "looks_like": "legguard_hard",
+    "color": "white",
+    "sided": true,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": ["OUTER", "SPLINT", "ALLOWS_TAIL", "UNRESTRICTED"],
+    "armor": [{ "encumbrance": 70, "coverage": 75, "covers": ["leg_l", "leg_r"] }]
   }
 
 

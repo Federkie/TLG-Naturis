@@ -6,7 +6,9 @@
       " ": "t_open_air",
       ".": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
       "-": [ [ "t_lava", 1 ], [ "t_rock", 12 ], [ "t_coast_rock_surf", 2 ] ],
+      "'": "t_sand",
       ",": "t_lava",
+      "*": "t_rock",
       "S": "t_ladder_up",
       "s": "t_ladder_down",
       "^": [ [ "t_underbrush", 2], [ "t_shrub", 2], [ "t_moss", 2], [ "t_fern",1 ] ],
@@ -16,7 +18,8 @@
       "0": "f_obelisk",
       "1": "f_obelisk_glow",
       "O": "f_obelisk_big",
-      "o": "f_obelisk_big_glow"
+      "o": "f_obelisk_big_glow",
+      "+": [ [ "f_obelisk", 3 ], [ "f_obelisk_glow", 1 ], [ "f_obelisk_big", 2 ], [ "f_obelisk_big_glow", 1 ], [ "f_null", 2 ] ]
     }
   }
 ]

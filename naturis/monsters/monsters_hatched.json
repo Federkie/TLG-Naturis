@@ -89,7 +89,8 @@
   "material": ["flesh"],
   "symbol": "v",
   "color": "green",
-  "aggression": -99,
+  "aggression": 60,
+  "anger_triggers": [ "HURT", "PLAYER_WEAK", "PLAYER_CLOSE" ],
   "morale": 10,
   "melee_skill": 1,
   "melee_dice": 1,
@@ -98,7 +99,7 @@
   "dodge": 1,
   "families": ["prof_intro_biology", "prof_physiology", "prof_wp_basic_bird"],
   "harvest": "bird_tiny",
-  "fear_triggers": ["SOUND", "PLAYER_CLOSE", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT"],
+  "fear_triggers": ["SOUND", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT"],
   "petfood": {
     "food": ["BIRDFOOD"],
     "feed": "The %s seems to like you!  It runs around your legs and seems friendly.",

@@ -82,6 +82,23 @@
   },
     {
     "type": "ITEM",
+    "id": "forest_claw", 
+    "name": { "str": "sharp claw" },
+    "description": ".",
+    "weight": "540 g",
+    "to_hit": 1,
+    "color": "white",
+    "symbol": ",",
+    "material": ["flesh"],
+    "volume": "250 ml",
+    "flags": ["SPEAR"],
+    "weapon_category": ["SHIVS"],
+    "price": "150 USD",
+    "price_postapoc": "100 cent",
+    "melee_damage": { "stab": 8 }
+  },
+    {
+    "type": "ITEM",
     "id": "leaves_pink",
     "name": { "str": "handful of pink leaves", "str_pl": "handfuls of pink leaves" },
     "description": ".",
@@ -106,7 +123,83 @@
   "symbol": "s",
   "color": "red",
   "flags": ["NO_SALVAGE"]
-}
+},
+{
+  "type": "ITEM",
+  "id": "chard_ice",
+  "name": { "str": "ice chard" },
+  "description": ".",
+  "category": "other",
+  "weight": "30 g",
+  "volume": "35 ml",
+  "price": "200 USD",
+  "price_postapoc": "100 USD",
+  "symbol": "s",
+  "color": "red",
+  "flags": ["NO_SALVAGE"]
+},
+  {
+    "type": "ITEM",
+    "id": "heart_frozen",
+    "name": { "str": "frozen heart" },
+    "description": ".",
+    "category": "other",
+    "weight": "25 g",
+    "volume": "30 ml",
+    "price": "250 USD",
+    "price_postapoc": "200 USD",
+    "symbol": "s",
+    "color": "red",
+    "flags": ["NO_SALVAGE"]
+  },
+    {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "id": "feather_burning",
+    "category": "spare_parts",
+    "price": "10 USD",
+    "price_postapoc": "25 USD",
+    "name": { "str": "heated feather" },
+    "symbol": "=",
+    "color": "red",
+    "description": "A feather from a bird.  Useful for fletching arrows.",
+    "material": ["cotton"],
+    "volume": "250 ml",
+    "weight": "1 g",
+    "use_action": { "type": "firestarter", "moves": 40, "moves_slow": 1000 },
+    "flags": [ "FIRESTARTER", "WATER_BREAK", "TINDER" ]
+  },
+  {
+    "type": "ITEM",
+    "id": "scale_forest_dragon",
+    "name": {
+      "str": "forest dragon scale"
+    },
+    "description": "A large, tough scale shed by a forest dragon. It is surprisingly light for its strength and retains a faint green coloration.",
+    "weight": "120 g",
+    "volume": "250 ml",
+    "price": "500 USD",
+    "material": [
+      "scales"
+    ],
+    "symbol": "%",
+    "color": "green",
+    "category": "other",
+    "flags": [
+      "TRADER_AVOID"
+    ]
+  },
+    {
+    "type": "ITEM",
+    "id": "skull_forest_dragon",
+    "name": { "str": "triclopean canine skull" },
+    "description": "The skull of a what looks like a dog, although it has an extra eye socket.",
+    "copy-from": "skull_abstract",
+    "weight": "65 g",
+    "volume": "500 ml",
+    "longest_side": "12 cm"
+  }
+
 
 
 ]

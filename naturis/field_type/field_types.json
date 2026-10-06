@@ -89,7 +89,35 @@
   "priority": 2,
   "phase": "solid",
   "display_field": true
-}
+},
+  {
+    "id": "fd_permafrost",
+    "type": "field_type",
+    "substance_name": "permafrost",
+    "intensity_levels": [
+      {
+        "name": "thin permafrost",
+        "sym": "*",
+        "color": "light_cyan",
+        "convection_temperature_mod": -10
+      },
+      {
+        "name": "permafrost",
+        "color": "cyan",
+        "convection_temperature_mod": -25
+      },
+      {
+        "name": "deep permafrost",
+        "color": "blue",
+        "convection_temperature_mod": -40
+      }
+    ],
+    "description_affix": "covered_in",
+    "priority": 2,
+    "half_life": "8 seconds",
+    "phase": "solid",
+    "display_field": true
+  }
 
 
 

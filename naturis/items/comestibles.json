@@ -1,8 +1,4 @@
 [
-
-
-  
-  
   {
   "id": "strange_shroom",
   "type": "ITEM",
@@ -76,13 +72,6 @@
   "material": [ "egg" ],
   "volume": "45 ml",
   "fun": -10,
-  "countdown_interval": "1 second",
-  "countdown_action": {
-    "type": "cast_spell",
-    "spell_id": "hatch_rain_chick",
-    "no_fail": true,
-    "level": 1
-  },
   "flags": [
     "FREEZERBURN",
     "RAW",
