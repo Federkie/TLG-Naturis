@@ -2,15 +2,13 @@
 A mod for Cataclysm the last generation.
 This mod is still WIP!
 
-The goal of this mod is to bring a little more nature into the game by creating monsters that make urban terrain overgrown. New plants, exotic creatures, anomalies and locations.
+The goal is to integrate more natural features and new creatures. These monsters are the targets of hunting quests, allowing players to obtain rare materials and craft special items and weapons. 
+New plants, exotic creatures, anomalies and locations.
 
 
 Current feautures:
 
-The forest walker: 
-This creature allows plants and trees to grow, including in buildings.
-
-Mystical creatures (WIP):
+New creatures (WIP):
 
 - forest dragon
 A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
@@ -19,26 +17,84 @@ A large, dragon-like creature that you better not get too close to. Drops its ow
 - flying fire
 - ice former
 - static beast
+- zombat
+- forest dog
+- walking tree
+- bonesnake
+- old bird
+- flesh wolf
+- fire chick
+- old chick
+- rain bird
+- ...
+
+- forest walker
+This creature allows plants and trees to grow, including in buildings.
 
 
 
-New items:
+
+
+New items
+
+Weapons: 
 - modular staff (+recipe)
 - gasoline blade (+recipe)
-- forest rifle (loot)
+- forest rifle (+ recipe)
 - disk crossbow (+recipe)
-- rooted sword
+- rooted sword (WIP)
 - gravity revolver (debug only, WIP)
-- regenerating staff (debug only, WIP)
+- regenerating staff (+ recipe)
+- permafrost cleaver (+ recipe)
+- claw staff (+ recipe)
+- static sword (+ recipe)
+- rapid épeé (+ recipe)
+- 
+
+Ammo:
+- cutting disk (+ recipe)
+- static disk (+ recipe)
+- fa_r heat (+ recipe)
+- fa_r leaves (+ recipe)
+- 
+
+
+Armor:
+- scaled cloak (+recipe)
+- static leather armor (+ recipe)
+- feather cloak (+ recipe)
+- cryo gauntlets (+ recipe)
+
+Books:
+- alternative medicine
+- the stylish hunter!
+- hunting monsters
+
+Misc:
 - living wood arm splint (+recipe)
 - living wood leg splint (+recipe)
-- scaled cloak (+recipe)
-- alternative medicine, book 
-- the stylish hunter!, book
-- 
+- pink leave tea (+ recipe)
+- cryo powder (+ recipe)
+- burning egg
+- forest blood
 
 - I have temporarily removed the "rooted egg" function, as it can cause a crash.
 
+
+
+
+
+New proficiencys:
+
+- featherworking
+- monstermaterials
+- scaleworking
+- 
+
+New matierials:
+- durable leather
+- heated feathers
+- 
 
 
 Locations: 
@@ -55,6 +111,23 @@ An old, abandoned vaulted cellar. You can find many useful things in it, but may
 
 Burning fields:
 The home of the flying fire.
+
+Frozen Cave:
+.
+
+Hunting fields:
+.
+
+Hunter camp:
+.
+
+Pink flower ravine:
+.
+
+Static field
+.
+
+
 
 To do: 
 - More thematic locations

@@ -1,0 +1,18 @@
+[
+    {
+    "type": "enchantment",
+    "id": "enchant_zap_back",
+    "condition": "ALWAYS",
+    "has": "WORN",
+    "hit_me_effect": [{ "id": "zap_armor", "hit_self": false, "once_in": 3 }]
+  },
+    {
+    "type": "enchantment",
+    "id": "enchant_heat_resist",
+    "has": "WORN",
+    "condition": "ALWAYS",
+    "name": { "str": "heat resist" },
+    "description": ".",
+    "incoming_damage_mod": [{ "type": "heat", "multiply": -0.20 }]
+  }
+]

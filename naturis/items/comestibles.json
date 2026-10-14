@@ -8,7 +8,6 @@
   "description": "A strange mushroom with unusual psychoactive properties.",
   "weight": "5 g",
   "volume": "6 ml",
-  "price": "72 cent",
   "price_postapoc": "25 cent",
   "symbol": "!",
   "color": "light_red",
@@ -30,10 +29,6 @@
     ]
   }
 },
-
-  
-  
-  
 {
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
@@ -45,7 +40,7 @@
     "symbol": "o",
     "quench": 4,
     "calories": 46,
-    "description": "burn it!",
+    "description": "Caution: Fire! Use with caution and not indoors!",
     "price": "24 cent",
     "price_postapoc": "30 cent",
     "material": [ "egg" ],
@@ -66,8 +61,7 @@
   "symbol": "o",
   "quench": 4,
   "calories": 46,
-  "description": "A strange egg. Perhaps fire will awaken it.",
-  "price": "24 cent",
+  "description": "It currently has no effect; it was removed due to a bug.",
   "price_postapoc": "30 cent",
   "material": [ "egg" ],
   "volume": "45 ml",
@@ -82,7 +76,21 @@
     [ "calcium", "12 mg" ],
     [ "egg_allergen", 1 ]
   ]
-}
+},
+  {
+    "type": "ITEM",
+    "subtypes": ["COMESTIBLE"],
+    "id": "tea_leaves_pink",
+    "name": { "str_sp": "pink leaves tea" },
+    "copy-from": "herbal_tea",
+    "color": "red",
+    "spoils_in": "12 days",
+    "quench": 30,
+    "description": "An aromatic, slightly sweet tea made from pink petals.",
+    "price_postapoc": "30 cent",
+    "fun": 4,
+    "flags": ["EATEN_HOT", "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE"]
+  }
 
 
 

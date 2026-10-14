@@ -1,0 +1,95 @@
+[
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "static_1x1_01",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "+"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+         "terrain": {
+     "0": "t_rock_floor"
+   },
+      "palettes": [ "static_palette" ]
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "static_1x1_02",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "^"
+
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+
+      "palettes": [ "static_palette" ]
+    }
+  },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "static_1x1_03",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "_"
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "static_palette" ],
+    "items": {
+        "_": [ 
+         { "item": "bones", "chance": 25, "repeat": [ 0, 2 ] }
+       ]
+      }
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "static_1x1_04",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "_"
+      ],
+          "items": {
+      "_": [
+        { "item": "art", "chance": 15, "repeat": [0, 2] }
+      ]
+    },
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "static_palette" ]
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "static_1x1_05",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "_"
+      ],
+       "place_monster": [
+   { "group": "GROUP_ANOMALY_E", "x": [1], "y": [1], "repeat": [0, 3] }
+ ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "static_palette" ]
+    }
+  },
+      {
+     "type": "mapgen",
+     "nested_mapgen_id": "static_1x1_06",
+     "object": {
+       "mapgensize": [1, 1],
+       "rows": [
+         "_"
+       ],
+       "place_monster": [
+         { "group": "GROUP_PARK_SCENIC", "x": [1], "y": [1], "repeat": [0, 3] }
+       ],
+       "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+       "palettes": ["static_palette"]
+     }
+   }
+]

@@ -18,9 +18,38 @@
     ],
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
     "components": [
-      [ [ "dragon_hair", 2 ], [ "living_wood", 2 ] ],
+      [ [ "dragon_hair", 2 ] ], 
+     [ [ "living_wood", 2 ] ],
       [ [ "scrap", 2 ] ],
       [ [ "leather_patch", 1 ] ]
+    ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "f_rifle",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "gun", 3 ] ],
+    "difficulty": 6,
+    "time": "4 h",
+    "book_learn": [ [ "monster_hunter", 4 ] ],
+    "using": [ [ "welding_standard", 1 ] ],
+    "qualities": [ { "id": "DRILL", "level": 1 }, { "id": "CUT", "level": 2 } ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_welding_basic" },
+      { "proficiency": 
+        "prof_carving" },
+      { "proficiency": "prof_gunsmithing_improv" }
+    ],
+    "components": [ 
+      [ [ "air_launcher", 1 ] ], 
+      [ [ "forest_pearl", 1 ] ],
+      [ [ "dragon_hair", 2 ] ],
+      [ [ "shard_fire", 1 ] ],
+      [ [ "living_wood", 1 ] ] 
     ]
   }
 

@@ -4,7 +4,7 @@
     "type": "ITEM",
     "subtypes": [ "MAGAZINE" ],
     "name": { "str": "fa_r_mag" },
-    "description": "An aluminum box magazine containing a single four round stack of .450 Bushmaster cartridges, engineered to fit and feed appropriately converted AR-platform rifles.",
+    "description": "An aluminum box for various types of f_ar ammunition; it holds four rounds.",
     "weight": "226 g",
     "volume": "290 ml",
     "longest_side": "190 mm",

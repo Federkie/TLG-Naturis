@@ -2,43 +2,25 @@
 A mod for Cataclysm the last generation.
 This mod is still WIP!
 
-The goal of this mod is to bring a little more nature into the game by creating monsters that make urban terrain overgrown. New plants, exotic animals, anomalies and locations.
+The goal is to integrate more natural features and new creatures. These monsters are the targets of hunting quests, allowing players to obtain rare materials and craft special items and weapons. 
+With this mod, I’m not trying to simply add another Hulk or something similar. Instead, I’m creating unique creatures that behave differently and present their own distinct challenges.
+New plants, exotic creatures, anomalies and locations.
 
+## Features
+New creatures:
+Many new monsters and animals. Some of them can be hunted and yield rare, monster specific materials.
 
-Current feautures:
+New items:
+Materials obtained from the creatures can be crafted into rare weapons and other items. There are specific books and recipes for this purpose.
 
-The forest walker: 
-This creature allows plants and trees to grow, including in buildings.
+New locations:
+The new creatures inhabit their own territories, though they can also appear in the wild.
 
-Mystical creatures (WIP):
-
-- forest dragon
-A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
-
-- rapid striker
-
-Locations: 
-
-Heart of the forest: 
-A location with its own flora and fauna, several levels and a final. 
-I recommend a mid game equipment.
-
-Fairy ring:
-An idyllic bunch of mushrooms.
-
-Forgotten cellar:
-An old, abandoned vaulted cellar. You can find many useful things in it, but maybe also something completely different.
-
-To do: 
-- More spawn points for the Forest Walker
-- More thematic locations
-- Anomaly
-- Overgrown buildings in cities
-- Overgrown sprites
-- Better descriptions
-- Modular weapons
-- Unique loot
-- More mystical creatures
+## Planned feautures
+- custom biomes for the creatures
+- breeding system for the creatures
+- monster evolutions
+- more monster and items
 
 ## Installation Instructions
 1. Download the src code in the latest mod release

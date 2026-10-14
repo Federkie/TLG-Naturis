@@ -103,6 +103,51 @@
     "move_cost": -1,
     "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_ice_thin" },
     "flags": ["THICK_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
+  },
+  {
+  "type": "terrain",
+  "id": "t_pink_flowers",
+  "name": "pink flowers",
+  "description": "Flowers!!!",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 10,
+  "concealment": 10,
+  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "SMALL_HIDE"],
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [{ "seasons": ["spring"], "id": "leaves_pink" }],
+  "transforms_into": "t_pink_flowers_harvested",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
   }
+},
+{
+  "type": "terrain",
+  "id": "t_pink_flowers_harvested",
+  "name": "magic mushroom",
+  "description": "A short plant harvested.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 5,
+  "concealment": 5,
+  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE"],
+  "examine_action": "harvested_plant",
+  "transforms_into": "t_pink_flowers",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
+  }
+}
 
 ]

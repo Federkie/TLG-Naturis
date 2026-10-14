@@ -1,0 +1,36 @@
+[
+    {
+    "type": "proficiency",
+    "id": "prof_featherworking",
+    "category": "prof_tailoring",
+    "name": { "str": "Feather Sewing" },
+    "description": "You know some tricks for working with feathers.",
+    "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.20,
+    "time_to_learn": "8 h"
+  },
+      {
+      "type": "proficiency",
+      "id": "prof_monstermaterials",
+      "category": "prof_fabrication",
+      "name": { "str": "Monster Material Knowlegde" },
+      "description": "You have worked with various monster materials several times and know how to handle them.",
+      "can_learn": true,
+      "default_time_multiplier": 1.5,
+      "default_skill_penalty": 0.25,
+      "time_to_learn": "10 h"
+    },
+    {
+    "type": "proficiency",
+    "id": "prof_scaleworking",
+    "category": "prof_tailoring",
+    "name": { "str": "Working with scales" },
+    "description": "You know what a scale looks like and how to transform it into something even more elegant.",
+    "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.20,
+    "time_to_learn": "8 h"
+  }
+  
+]

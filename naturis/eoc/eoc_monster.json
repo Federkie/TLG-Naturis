@@ -44,7 +44,37 @@
         ]
       }
     ]
-  }
+  },
+{
+  "type": "effect_on_condition",
+  "id": "EOC_ICE_FORMER_EXPLOSION",
+    "condition": {
+     "not": { "npc_has_effect": "spell_cooldown" }
+  },
+  "effect": [
+    {
+      "npc_cast_spell": {
+        "id": "explosion_ice"
+      }
+    }
+  ]
+},
+ {
+  "type": "effect_on_condition",
+  "id": "EOC_MORALE_DROP",
+  "effect": [
+    {
+   "math": [ "u_val('morale') = -100" ]
+    }
+  ]
+},
+ {
+  "type": "effect_on_condition",
+  "id": "EOC_SPELL_COOLDOWN",
+  "effect": {
+   "u_add_effect": "spell_cooldown", "duration": [ 5, 20 ] }
+}
+  
   
   
 ]

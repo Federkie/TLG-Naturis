@@ -9,7 +9,6 @@
     "weight": "950 g",
     "volume": "160 ml",
     "longest_side": "55 cm",
-    "price": "200 USD",
     "price_postapoc": "20 USD",
     "to_hit": { "grip": "weapon", "length": "short", "surface": "line", "balance": "neutral" },
     "material": [ "wood", "steel" ],
@@ -43,8 +42,7 @@
       "type": "transform"
     },
     "name": { "str": "rooted club" },
-    "description": "A thin aluminum rod with a heavy head on one end for hitting golf balls.  It looks quite fragile, but it could do a fair bit of damage before the shaft got too bent.",
-    "price": "200 USD",
+    "description": ".",
     "price_postapoc": "20 USD",
     "material": [ "wood", "steel" ],
     "techniques": [ "WBLOCK_1" ],
@@ -159,7 +157,7 @@
     "type": "ITEM",
     "id": "staff_modular",
     "name": { "str": "modular staff" },
-    "description": ".",
+    "description": "A sturdy metal staff well suited for close quarters combat, though it is slow and unwieldy. Upon activation, a blade shoots out from one end, granting it the properties of a spear.",
     "weight": "2705 g",
     "longest_side": "145 cm",
     "volume": "4612 ml",
@@ -170,14 +168,14 @@
     "flags": [ "SHEATH_SPEAR", "WALKING_AID", "ALWAYS_TWOHAND", "CONDUCTIVE" ],
     "weapon_category": [ "STAFFS" ],
     "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
-    "price": "75 USD",
-    "price_postapoc": "8 USD",
+    "price": "290 USD",
+    "price_postapoc": "135 USD",
     "melee_damage": { "bash": 19 },
     "use_action": {
       "need_wielding": true,
       "target": "spear_modular",
       "msg": "You activate the blade on your staff.",
-      "moves": 75,
+      "moves": 35,
       "menu_text": "switch",
       "type": "transform" }
     },
@@ -185,19 +183,19 @@
     "type": "ITEM",
     "id": "spear_modular",
     "name": { "str": "modular spear" },
-    "description": "A stout wooden pole with the blade of a knife bolted into place at the end.  The shape of a knife blade isn't ideal for a spear, but it's still very sharp and effective.",
-    "price_postapoc": "30 USD",
+    "description": "A long blade protrudes from one end of your staff, turning it into a reasonably good spear.",
+    "price": "290 USD",
+    "price_postapoc": "135 USD",
     "color": "light_gray",
     "symbol": "/",
-    "material": [ { "type": "steel", "portion": 1 }, { "type": "wood", "portion": 9 } ],
+    "material": [ { "type": "steel", "portion": 9 }, { "type": "wood", "portion": 9 } ],
     "techniques": [ "WBLOCK_1" ],
     "weight": "2705 g",
     "volume": "4652 ml",
-    "longest_side": "165 cm",
+    "longest_side": "175 cm",
     "to_hit": { "grip": "solid", "length": "long", "surface": "point", "balance": "uneven" },
     "flags": [ "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "SHEATH_SPEAR", "POLEARM", "WALKING_AID" ],
     "weapon_category": [ "SPEARS" ],
-    "price": "160 USD",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -30 ] ],
      "use_action": {
       "need_wielding": true,
@@ -224,7 +222,7 @@
     "symbol": "/",
     "color": "light_cyan",
     "price": "25000 USD",
-    "price_postapoc": "350 USD",
+    "price_postapoc": "750 USD",
     "material": [ "steel" ],
     "repairs_with": [ "steel" ],
     "to_hit": {
@@ -252,8 +250,9 @@
       "LONG_SWORDS"
     ],
     "melee_damage": {
-      "bash": 8,
-      "cut": 23
+      "bash": 5,
+      "cut": 20,
+      "cold": 5
     }
   },
   {
@@ -267,7 +266,6 @@
     "weight": "1 kg",
     "volume": "2 L",
     "longest_side": "120 cm",
-    "price": "500 USD",
     "price_postapoc": "250 USD",
     "symbol": "/",
     "color": "brown",
@@ -289,7 +287,87 @@
       "DURABLE_MELEE",
       "NO_SALVAGE"
     ]
+  },
+  {
+    "type": "ITEM",
+    "id": "staff_claw",
+    "name": { "str": "claw staff" },
+    "description": "A long steel staff with claw like ends. It constantly carries a weak electrical charge.",
+    "weight": "2445 g",
+    "longest_side": "160 cm",
+    "volume": "4912 ml",
+    "color": "dark_gray",
+    "symbol": "/",
+    "material": [ { "type": "steel", "portion": 4 }, { "type": "chitin", "portion": 6 } ],
+    "techniques": [
+      "WBLOCK_2",
+      "SWEEP"
+    ],
+    "flags": [
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND",
+      "CONDUCTIVE"
+    ],
+    "weapon_category": [
+      "STAFFS"
+    ],
+    "to_hit": {
+      "grip": "solid",
+      "length": "long",
+      "surface": "any",
+      "balance": "clumsy"
+    },
+    "price_postapoc": "350 USD",
+    "melee_damage": {
+      "bash": 4,
+      "cut": 18,
+      "electric": 5
+    }
+  },
+  {
+    "id": "sword_static",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARTIFACT" ],
+    "category": "weapons",
+    "name": { "str": "static sword" },
+    "description": "A statically charged sword made from the stinger of a Static Beast. After a certain number of attacks required to charge it, it unleashes a powerful electric attack.",
+    "weight": "850 g",
+    "volume": "120 ml",
+    "longest_side": "62 cm",
+    "price_postapoc": "225 USD",
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "line", "balance": "good" },
+    "material": [ { "type": "steel", "portion": 8 }, { "type": "chitin", "portion": 2 } ],
+    "symbol": "!",
+    "color": "yellow",
+    "techniques": [ "WBLOCK_1" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "SHEATH_SWORD", "FRAGILE_MELEE", "MUNDANE" ],
+    "weapon_category": [ "SHORT_SWORDS" ],
+    "melee_damage": { "bash": 3, "cut": 17 },
+    "passive_effects": [{ "id": "electric_sword_enchant" }]
+  },
+    {
+    "id": "rapid_epee",
+    "type": "ITEM",
+    "subtypes": [ "ARTIFACT" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "name": { "str": "rapid épée" },
+    "description": "This épée incorporates the tail tip of a Rapid Striker, enabling even faster attacks and lending a spirited agility to its wielder.",
+    "price_postapoc": "230 USD",
+    "material": [ { "type": "steel", "portion": 8 }, { "type": "chitin", "portion": 2 } ],
+    "weight": "650 g",
+    "volume": "220 ml",
+    "longest_side": "100 cm",
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "point", "balance": "good" },
+    "techniques": ["WBLOCK_2"],
+    "flags": ["SHEATH_SWORD", "MUNDANE"],
+    "weapon_category": ["FENCING_WEAPONRY"],
+    "melee_damage": { "bash": 4, "stab": 16 },
+    "passive_effects": [{ "id": "rapid_enchant" }]
   }
 
+
+  
 
 ]

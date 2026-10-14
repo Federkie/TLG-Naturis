@@ -1,0 +1,48 @@
+[
+    {
+    "id": "zap_armor",
+    "type": "SPELL",
+    "name": { "str": "zap back" },
+    "description": {
+      "str": "."
+    },
+    "valid_targets": ["hostile"],
+    "flags": ["RANDOM_DAMAGE", "NO_EXPLOSION_SFX" ],
+    "message": "Your armor releases an electric arc!",
+    "shape": "blast",
+    "effect": "attack",
+    "damage_type": "electric",
+    "min_damage": 5,
+    "max_damage": 15,
+    "min_range": 1,
+    "max_range": 1,
+    "sound_description": "zap!"
+  },
+{
+    "id": "ice_spray",
+    "type": "SPELL",
+    "name": { "str": "ice spray" },
+    "description": "Sprays a powder mixture that solidifies into ice upon contact with the air.",
+    "effect": "attack",
+    "shape": "cone",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "NO_EXPLOSION_SFX", "SPLIT_DAMAGE", "RANDOM_AOE",  "RANDOM_DAMAGE" ],
+    "max_level": 1,
+    "min_damage": 15,
+    "max_damage": 45,
+    "min_aoe": 3,
+    "max_aoe": 8,
+    "aoe_increment": 1.4,
+    "min_range": 3,
+    "max_range": 8,
+    "field_id": "fd_spikes_ice",
+    "min_field_intensity": 1,
+    "max_field_intensity": 4,
+    "field_intensity_increment": 0.5,
+    "min_duration": 100,
+    "max_duration": 3000,
+    "damage_type": "cold",
+    "sound_description": "A blast of the powder freezes everything before you!"
+  }
+  
+]

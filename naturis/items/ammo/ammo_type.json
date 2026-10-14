@@ -18,6 +18,12 @@
     "id": "disk",
     "name": "sharp cutting disks",
     "default": "disk_cutting"
+  },
+    {
+    "type": "ammunition_type",
+    "id": "cryo_powder",
+    "name": "cryo powder",
+    "default": "cryo_powder"
   }
 
 

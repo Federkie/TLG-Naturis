@@ -1,0 +1,181 @@
+[
+  {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_HUNT_RAPID_STRIKER",
+    "name": "Hunt: Rapid Striker",
+    "description": "Hunt down a Rapid Striker and tell me what it was like.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_rapid_striker",
+    "monster_kill_goal": 1,
+    "difficulty": 6,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+    "assign_mission_target": {
+    "om_terrain": "fairy_ring",
+    "om_special": "fairy_ring",
+    "reveal_radius": 2,
+    "must_see": false
+  },
+  "update_mapgen": { "place_monster": [{ "monster": "mon_rapid_striker", "x": [1, 10], "y": [1, 10], "target": true }] }
+},
+    "followup": "MISSION_NATURIS_HUNT_FLYING_FIRE",
+    "dialogue": {
+      "describe": "Hunt: Rapid Striker.",
+      "offer": "Hunt down a Rapid Striker.",
+      "accepted": "All right, now get going and slay the beast.",
+      "rejected": "I hadn't expected anything else.",
+      "advice": "Bash his skull in, what else is there to explain?",
+      "inquire": "Were you successful?",
+      "success": "I didn't think you could do that.",
+      "success_lie": "Don't tell me fairy tales, slay the beast.",
+      "failure": "Come back when you're ready."
+    }
+  },
+  {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_HUNT_FLYING_FIRE",
+    "name": "Hunt: Flying Fire",
+    "description": "Bring one of those burning birds down from the sky.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_flying_fire",
+    "monster_kill_goal": 1,
+    "difficulty": 6,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+      "start": {
+    "assign_mission_target": {
+      "om_terrain": "burning_fields",
+      "om_special": "burning_fields",
+      "reveal_radius": 2,
+      "must_see": false
+    }
+  },
+    "followup": "MISSION_NATURIS_HUNT_ICE_FORMER",
+    "dialogue": {
+      "describe": "Hunt: Flying Fire.",
+      "offer": "Hunt down a flying fire.",
+      "accepted": "Now clip the creature's wings.",
+      "rejected": "Why do you hesitate?",
+      "advice": "Find something that protects you from fire.",
+      "inquire": "Is the bird down yet?",
+      "success": "It was about time, too.",
+      "success_lie": "Don't tell me fairy tales, slay the beast.",
+      "failure": "Come back when you're ready."
+    }
+  },
+  {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_HUNT_ICE_FORMER",
+    "name": "Hunt: Ice Former",
+    "description": "Hunt down an Ice Former and then come back to me.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_ice_former",
+    "monster_kill_goal": 1,
+    "difficulty": 6,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+     "start": {
+   "assign_mission_target": {
+     "om_terrain": "fairy_ring",
+     "om_special": "fairy_ring",
+     "reveal_radius": 2,
+     "must_see": false
+   },
+   "update_mapgen": { "place_monster": [{ "monster": "mon_ice_former", "x": [1, 10], "y": [1, 10], "target": true }] }
+ },
+    "followup": "MISSION_NATURIS_HUNT_STATIC_BEAST",
+    "dialogue": {
+      "describe": "Hunt: Ice Former.",
+      "offer": "Clip the claws of an Ice Former.",
+      "accepted": "Slay the beast.",
+      "rejected": "Then get lost.",
+      "advice": "Don't get caught off guard.",
+      "inquire": "Is the beast dead?",
+      "success": "Well, finally. The next prey is already waiting.",
+      "success_lie": "Don't tell me fairy tales, slay the beast.",
+      "failure": "Try again if you dare."
+    }
+  },
+  {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_HUNT_STATIC_BEAST",
+    "name": "Hunt: Static Beast",
+    "description": "Kill a static beast and return to me.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_beast_static",
+    "monster_kill_goal": 1,
+    "difficulty": 6,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+      "start": {
+    "assign_mission_target": {
+      "om_terrain": "pwr_sub_s",
+      "reveal_radius": 2,
+      "must_see": false
+    },
+    "update_mapgen": { "place_monster": [{ "monster": "mon_beast_static", "x": [1, 10], "y": [1, 10], "target": true }] }
+  },
+    "followup": "MISSION_NATURIS_HUNT_FOREST_DRAGON",
+    "dialogue": {
+      "describe": "Hunt: Static Beast.",
+      "offer": "Hunt down a static beast.",
+      "accepted": "Don't let it shock you!",
+      "rejected": "Coward.",
+      "advice": "You'd better leave your phone at home.",
+      "inquire": "Done already?",
+      "success": "There we go, now for the next one.",
+      "success_lie": "Don't tell me fairy tales, slay the beast.",
+      "failure": "That was to be expected."
+    }
+  },
+  {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_HUNT_FOREST_DRAGON",
+    "name": "Hunt: Forest Dragon",
+    "description": "Kill a forest dragon and come back.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_forest_dragon",
+    "monster_kill_goal": 1,
+    "difficulty": 6,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+      "start": {
+    "assign_mission_target": {
+      "om_terrain": "forest",
+      "reveal_radius": 2,
+      "must_see": false
+    },
+    "update_mapgen": { "place_monster": [{ "monster": "mon_forest_dragon", "x": [1, 10], "y": [1, 10], "target": true }] }
+  },
+    "dialogue": {
+      "describe": "Hunt: Forest Dragon.",
+      "offer": "Hunt down one of those forest dragons that are terrorizing the forest.",
+      "accepted": "Alright, bring the beast down from the sky.",
+      "rejected": "Then someone else will just do it.",
+      "advice": "It’s a dragon that scatters blossoms around itself. What more is there for me to explain?",
+      "inquire": "Did you bag it?",
+      "success": "That's how I like it.",
+      "success_lie": "Don't tell me fairy tales, slay the beast.",
+      "failure": "Try again."
+    }
+  }
+]

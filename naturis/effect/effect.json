@@ -8,11 +8,31 @@
  "max_intensity": 1,
   "max_duration": "1 second",
   "base_mods": {
-    "hurt_min": [ 5 ],
-    "hurt_max": [ 20 ],
-    "hurt_chance": [ 100 ]
+    "hurt_min": [ 15 ],
+    "hurt_max": [ 40 ],
+    "hurt_chance": [ 80 ]
   },
   "show_in_info": true
-}
+},
+  {
+    "type": "effect_type",
+    "id": "maimed_claw",
+    "name": ["Maimed Claw"],
+    "desc": ["Your Claw is broken.  You're not sure what to do with this information."],
+    "base_mods": { "speed_mod": [ 10 ] }
+  },
+    {
+    "type": "effect_type",
+    "id": "destroyed_tip",
+    "name": ["Destroyed Tail Tip"],
+    "desc": ["Your Tail Tip is broken.  You're not sure what to do with this information."],
+    "base_mods": { "speed_mod": [ 25 ] }
+  },
+    {
+    "type": "effect_type",
+    "id": "spell_cooldown",
+    "name": ["Spell Cooldown"],
+    "desc": ["."]
+   }
   
 ]

@@ -1,0 +1,78 @@
+[
+  {
+    "type": "npc_class",
+    "id": "NC_MONSTER_COLLECTOR",
+    "name": {
+      "str": "Monster collector"
+    },
+    "job_description": "A lonely man who collects materials for his monster exhibition and occasionally commissions work.",
+    "common": false
+  },
+  {
+    "type": "npc",
+    "id": "monster_collector",
+    "name_unique": "J.F. Xavier Atger ",
+    "gender": "male",
+    "name_suffix": "Monster collector",
+    "class": "NC_MONSTER_COLLECTOR",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_NATURIS_MONSTER_HUNTER",
+    "mission_offered": "MISSION_NATURIS_HUNT_RAPID_STRIKER",
+    "faction": "no_faction",
+    "age": 58,
+    "height": 174,
+    "str": 10,
+    "dex": 11,
+    "int": 11,
+    "per": 12,
+    "personality": {
+      "aggression": 1,
+      "bravery": 4,
+      "collector": 2,
+      "altruism": 1
+    }
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_NATURIS_MONSTER_HUNTER",
+    "dynamic_line": "Are you looking for work? I need someone to take down a few of those critters and bring me their parts.",
+    "responses": [
+      {
+        "text": "What should I do?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "I want to talk about my quest.",
+        "topic": "TALK_MISSION_INQUIRE",
+        "condition": "has_assigned_mission"
+      },
+      {
+        "text": "What was my task?",
+        "topic": "TALK_MISSION_LIST_ASSIGNED",
+        "condition": "has_many_assigned_missions"
+      },
+      {
+        "text": "Why are you collecting monster materials?",
+        "topic": "TALK_NATURIS_HUNTER_PERSONAL"
+      },
+      {
+        "text": "Bye.",
+        "topic": "TALK_DONE"
+      }
+    ],
+    "replace_built_in_responses": true
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_NATURIS_HUNTER_PERSONAL",
+    "dynamic_line": "I",
+    "responses": [
+      {
+        "text": "Back.",
+        "topic": "TALK_NATURIS_MONSTER_HUNTER"
+      }
+    ],
+    "replace_built_in_responses": true
+  }
+]

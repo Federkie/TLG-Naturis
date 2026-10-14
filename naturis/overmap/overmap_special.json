@@ -25,7 +25,7 @@
     "locations": [ "forest" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 2 ],
+    "occurrences": [ 0, 1 ],
     "flags": [ "WILDERNESS" ]
   },
  {
@@ -51,7 +51,72 @@
    "locations": ["field"],
    "city_distance": [20, -1],
    "city_sizes": [0, 12],
-   "occurrences": [0, 2],
+   "occurrences": [0, 1],
    "flags": ["WILDERNESS"]
- }
+ },
+ {
+  "type": "overmap_special",
+  "id": "hunter_camp",
+  "overmaps": [
+    { "point": [0, 0, 0], "overmap": "hunter_camp_north" },
+    { "point": [0, 0, 1], "overmap": "hunter_camp_roof_north" }
+  ],
+  "locations": ["forest"],
+  "city_distance": [10, -1],
+  "city_sizes": [0, 12],
+  "occurrences": [25, 100],
+  "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
+},
+ {
+   "type": "overmap_special",
+   "id": "frozen_cave",
+   "overmaps": [
+     { "point": [0, 0, 0], "overmap": "frozen_cave_north" },
+     { "point": [0, 0, -1], "overmap": "frozen_cave_underground_north" }
+   ],
+   "locations": ["forest"],
+   "city_distance": [20, -1],
+   "city_sizes": [0, 12],
+   "occurrences": [0, 1],
+   "flags": ["WILDERNESS"]
+ },
+  {
+   "type": "overmap_special",
+   "id": "pink_ravine",
+   "overmaps": [
+     { "point": [0, 0, 0], "overmap": "pink_ravine_north" },
+     { "point": [0, 0, -1], "overmap": "pink_ravine_ground_north" }
+   ],
+   "locations": ["forest"],
+   "city_distance": [20, -1],
+   "city_sizes": [0, 12],
+   "occurrences": [0, 1],
+   "flags": ["WILDERNESS"]
+ },
+   {
+   "type": "overmap_special",
+   "id": "hunting_fields",
+   "overmaps": [
+     { "point": [0, 0, 0], "overmap": "hunting_fields_north" }
+   ],
+   "locations": ["field"],
+   "city_distance": [20, -1],
+   "city_sizes": [0, 12],
+   "occurrences": [0, 1],
+   "flags": ["WILDERNESS"]
+ },
+   {
+    "type": "overmap_special",
+    "id": "static_fields",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "static_fields_north" },
+      { "point": [0, 0, 1], "overmap": "static_fields_roof_1_north" },
+      { "point": [0, 0, 2], "overmap": "static_fields_roof_2_north" }
+    ],
+    "locations": ["field"],
+    "city_distance": [20, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["WILDERNESS"]
+  }
 ]

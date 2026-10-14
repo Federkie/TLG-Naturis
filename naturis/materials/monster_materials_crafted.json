@@ -1,0 +1,28 @@
+[
+    {
+    "type": "material",
+    "id": "cryo_powder",
+    "name": "Cryo Powder",
+    "density": 1,
+    "specific_heat_liquid": 5.5,
+    "specific_heat_solid": 1.2,
+    "latent_heat": 10,
+    "soft": true,
+    "chip_resist": 0,
+    "dmg_adj": ["lightly damaged", "damaged", "very damaged", "thoroughly damaged"],
+    "bash_dmg_verb": "damaged",
+    "cut_dmg_verb": "damaged",
+    "acid_dmg_verb": "damaged",
+    "//": "The ground remains of a frozen heart.",
+       "burn_data": [
+     { "fuel": -100, "smoke": 1, "burn": 1 },
+     { "fuel": -50, "smoke": 2, "burn": 1 },
+     { "fuel": -10, "smoke": 2, "burn": 2 }
+   ],
+    "resist": { "bash": 1, "cut": 1, "acid": 0, "heat": 0, "bullet": 1 }
+  }
+  
+  
+  
+  
+]
