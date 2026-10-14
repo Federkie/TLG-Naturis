@@ -1,0 +1,91 @@
+[
+
+{
+  "type": "weakpoint_set",
+  "id": "wps_rapid_striker",
+  "weakpoints": [
+    {
+      "id": "head",
+      "name": "the head",
+      "is_head": true,
+      "damage_mult": {
+        "all": 1.1
+      },
+      "crit_mult": {
+        "all": 1.1
+      },
+      "armor_mult": {
+        "physical": 0.75
+      },
+      "difficulty": {
+        "melee": 3,
+        "ranged": 5
+      },
+  "effects": [
+        {
+          "effect": "staggered",
+          "chance": 25,
+          "duration": [ 5, 15 ],
+          "message": "The %s is staggered!",
+          "damage_required": [ 20, 50 ]
+        }
+      ],
+      "coverage": 15
+    },
+    {
+      "id": "body",
+      "name": "the body",
+      "damage_mult": {
+        "all": 1.0
+      },
+      "crit_mult": {
+        "all": 1.0
+      },
+      "armor_mult": {
+        "physical": 1.0
+      },
+      "difficulty": {
+        "melee": 4,
+        "ranged": 3
+      },
+      "coverage": 50
+    }, 
+    {
+      "id": "claw",
+      "name": "the claw",
+      "damage_mult": {
+        "all": 0.75
+      },
+      "crit_mult": {
+        "all": 1.1
+      },
+      "armor_mult": {
+        "physical": 0.9
+      },
+      "difficulty": {
+        "melee": 3,
+        "ranged": 4
+      },
+      "effects": [
+        {
+          "effect": "maimed_claw",
+          "chance": 50,
+          "duration": [ 15, 50 ],
+          "message": "The %s's claw is maimed!",
+          "damage_required": [ 1, 2 ]
+        },
+        {
+          "effect": "maimed_claw",
+          "chance": 75,
+          "duration": [ 100, 200 ],
+          "message": "The %s's claw is badly maimed!",
+          "damage_required": [ 10, 30 ]
+        }
+      ],
+      "coverage": 35
+    }
+    
+    
+  ]
+}
+]

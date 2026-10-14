@@ -2,7 +2,7 @@
   {
     "type": "overmap_terrain",
     "id": "forest_heart_0",
-    "vision_levels": "isolated_building",
+    "vision_levels": "first_glance_forest",
     "name": "Heart of the forest",
     "sym": "F",
     "color": "i_green",
@@ -32,12 +32,12 @@
   {
     "type": "overmap_terrain",
     "id": "fairy_ring" ,
-    "vision_levels": "isolated_building",
+    "vision_levels": "first_glance_forest",
     "name": " Fairy_ring",
     "sym": "F",
     "color": "i_green",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH"]
+    "flags": [ "RISK_LOW"]
   },
   {
     "type": "overmap_terrain",
@@ -62,7 +62,7 @@
   {
   "type": "overmap_terrain",
   "id": "burning_fields",
-  "vision_levels": "isolated_building",
+  "vision_levels": "blends_till_outlines",
   "name": "Burning fields",
   "sym": "F",
   "color": "i_green",
@@ -73,7 +73,81 @@
     "type": "overmap_terrain",
     "id": "burning_fields_1",
     "copy-from": "burning_fields"
-  }
-
+  },
+  {
+  "type": "overmap_terrain",
+  "id": "hunter_camp",
+  "vision_levels": "isolated_building",
+  "name": " Hunter_Camp",
+  "sym": "F",
+  "color": "i_green",
+  "see_cost": "high",
+  "flags": ["RISK_LOW"]
+},
+{
+  "type": "overmap_terrain",
+  "id": "hunter_camp_roof",
+  "copy-from": "hunter_camp"
+},
+  {
+  "type": "overmap_terrain",
+  "id": "hunting_fields",
+  "vision_levels": "blends_till_outlines",
+  "name": "Hunting fields",
+  "sym": "F",
+  "color": "i_green",
+  "see_cost": "high",
+  "flags": ["RISK_HIGH"]
+},
+ {
+   "type": "overmap_terrain",
+   "id": "frozen_cave",
+   "vision_levels": "blends_till_outlines",
+   "name": "Frozen cave",
+   "sym": "F",
+   "color": "i_green",
+   "see_cost": "high",
+   "flags": ["RISK_HIGH"]
+ },
+ {
+  "type": "overmap_terrain",
+  "id": "frozen_cave_underground",
+  "copy-from": "frozen_cave"
+},
+{
+  "type": "overmap_terrain",
+  "id": "pink_ravine",
+  "vision_levels": "blends_till_outlines",
+  "name": "Pink flower Ravine",
+  "sym": "F",
+  "color": "i_green",
+  "see_cost": "all_clear",
+  "flags": ["RISK_HIGH"]
+},
+{
+  "type": "overmap_terrain",
+  "id": "pink_ravine_ground",
+  "copy-from": "frozen_cave"
+},
+{
+  "type": "overmap_terrain",
+  "id": "static_fields",
+  "vision_levels": "isolated_tower",
+  "name": "Static field",
+  "sym": "F",
+  "color": "i_green",
+  "see_cost": "high",
+  "flags": ["RISK_HIGH"]
+},
+{
+  "type": "overmap_terrain",
+  "id": "static_fields_roof_1",
+  "copy-from": "static_fields"
+},
+{
+  "type": "overmap_terrain",
+  "id": "static_fields_roof_2",
+  "copy-from": "static_fields"
+}
 ]
 

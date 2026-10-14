@@ -91,7 +91,24 @@
     "material_thickness": 1,
     "flags": ["OUTER", "SPLINT", "ALLOWS_TAIL", "UNRESTRICTED"],
     "armor": [{ "encumbrance": 70, "coverage": 75, "covers": ["leg_l", "leg_r"] }]
+  },
+  {
+    "id": "cryo_powder",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "category": "chems",
+    "name": { "str_sp": "cryo powder" },
+    "description": "A cool, non-flammable powder. Obtained from the remains of an ice former.",
+    "weight": "1 mg",
+    "volume": "1 ml",
+    "price_postapoc": "1 USD",
+    "material": [ "powder_nonflam" ],
+    "symbol": "=",
+    "color": "dark_gray",
+    "count": 10,
+    "ammo_type": "cryo_powder"
   }
+
 
 
 

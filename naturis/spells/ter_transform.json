@@ -27,7 +27,7 @@
     "id": "burn_terrain",
     "terrain": [ 
    { 
-   "result": [ [ "t_lava", 1 ], [ "t_rock", 12 ], [ "t_coast_rock_surf", 2 ] ],
+   "result": [ [ "t_sand", 1 ],  [ "t_rock_floor", 2 ] ],
   "valid_flags": ["FLAT"] } ]
   },
     {

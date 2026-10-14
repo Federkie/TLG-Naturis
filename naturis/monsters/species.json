@@ -25,7 +25,7 @@
 {
     "type": "SPECIES",
     "id": "MYTHIC",
-    "bleeds": "fd_sap"
+    "bleeds": "fd_blood"
   }
 
 

@@ -3,9 +3,32 @@
     "type": "snippet",
     "category": "forest_dragon_harvest",
     "text": "You carve up the forest dragon and find some strange materials amidst its shimmering bones."
-  }
-
-
+  },
+  {
+    "type": "snippet",
+    "category": "rapid_striker_tail_harvest",
+    "text": "The snakelike tail twitches with every cut, as if a breath of life still lingered in it."
+  },
+  {
+    "type": "snippet",
+    "category": "rapid_striker_harvest",
+    "text": "The red scales of the great creature mingle with the drops of blood on the ground."
+  },
+    {
+    "type": "snippet",
+    "category": "static_beast_harvest",
+    "text": "The dead creature's powerful muscles emit a crackling sound with every cut, as if they were still charged with electricity."
+  },
+     {
+     "type": "snippet",
+     "category": "shroom_harvest",
+     "text": "You search through the mushrooms for a specimen that looks reasonably edible."
+   },
+   {
+     "type": "snippet",
+     "category": "flying_fire_harvest",
+     "text": "You carefully cut through the meat so as not to burn yourself on the still hot feathers."
+}
   
   
 ]

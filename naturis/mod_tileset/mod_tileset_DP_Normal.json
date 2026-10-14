@@ -96,9 +96,16 @@
           { "id": "overlay_wielded_f_rifle", "fg": 61, "rotates": false },
           { "id": "f_rifle", "fg": 62, "rotates": false },
           { "id": "fd_leaves_pink", "fg": 63, "rotates": false },
-          { "id": "fd_permafrost","fg": 64, "rotates": false },
+          { "id": "fd_spikes_ice","fg": 64, "rotates": false },
           { "id": "permafrost_cleaver", "fg": 65, "rotates": false },
-          { "id": "overlay_wielded_permafrost_cleaver", "fg": 66, "rotates": false }
+          { "id": "overlay_wielded_permafrost_cleaver", "fg": 66, "rotates": false },
+          { "id": "fd_monster_track","fg": 67, "rotates": false },
+          { "id": "staff_claw","fg": 68, "rotates": false },
+          { "id": "overlay_wielded_staff_claw","fg": 69, "rotates": false },
+          { "id": "t_pink_flowers", "fg": 70, "rotates": false },
+          { "id": "t_pink_flowers_harvested", "fg": 71, "rotates": false },
+          { "id": "overlay_wielded_sword_static", "fg": 72, "rotates": false },
+          { "id": "sword_static", "fg": 73, "rotates": false }
         ]
       }
     ]

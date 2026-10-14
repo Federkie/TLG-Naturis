@@ -3,14 +3,14 @@
     "id": "mon_rapid_striker",
     "type": "MONSTER",
     "name": { "str": "rapid striker" },
-    "description": ".",
+    "description": "A hulking lizard, its red scales shimmering like droplets of fresh blood. In its eyes glimmers a cold, lurking greed for new prey.",
     "default_faction": "overgrown",
     "bodytype": "lizard",
     "species": [ "MYTHIC" ],
     "diff": 10,
     "volume": "620 L",
     "weight": "760 kg",
-    "hp": 350,
+    "hp": 450,
     "speed": 140,
     "material": [ "flesh" ],
     "symbol": "S",
@@ -21,11 +21,14 @@
     "melee_dice": 5,
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
-    "dodge": 3,
+    "dodge": 4,
     "vision_day": 35,
     "vision_night": 15,
+      "weakpoint_sets": [
+    "wps_rapid_striker"
+  ],
     "families": [ "prof_intro_biology", "prof_physiology" ],
-    "harvest": "mutant_animal_large_noskin",
+    "harvest": "rapid_striker",
     "dissect": "dissect_lizard_sample_large",
     "grab_strength": 70,
     "special_attacks": [
@@ -53,6 +56,23 @@
     ]
   }
 },
+     { "id": "slam",
+         "cooldown": 10,
+    "condition": {
+    "and": [
+      {
+        "math": [
+          "u_hp('ALL') >= 300"
+        ]
+      },
+      {
+        "not": {
+          "u_has_effect": "maimed_tail"
+        }
+      }
+    ]
+  }
+     },
       {
         "id": "bite_grab",
         "cooldown": 15,
@@ -63,15 +83,21 @@
     ],
     "regenerates": 1,
     "death_drops": "mon_rapid_striker_death_drops",
+    "emit_fields": [
+  {
+    "emit_id": "emit_rapid_striker_track",
+    "delay": "4 h"
+  }
+],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS" ],
-    "armor": { "bash": 6, "cut": 6, "bullet": 6, "electric": 3, "acid": 6 }
+    "armor": { "bash": 6, "cut": 12, "bullet": 5, "electric": 5, "acid": 6 }
   },
   {
     "id": "mon_rapid_striker_tail",
     "type": "MONSTER",
     "name": { "str": "detached tail" },
-    "description": ".",
+    "description": "The severed tail of a rapid striker, still thrashing about aimlessly.",
     "color": "brown",
     "symbol": "7",
     "default_faction": "overgrown",
@@ -89,18 +115,18 @@
     "melee_dice": 2,
     "melee_dice_sides": 3,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
-    "grab_strength": 10,
+    "grab_strength": 15,
     "dodge": 7,
     "bleed_rate": 0,
     "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug", "prof_wp_spider" ],
-    "death_function": { "corpse_type": "NO_CORPSE" },
+    "harvest": "rapid_striker_tail",
     "flags": [ "HEARS", "GOODHEARING", "STUMBLES", "WEBWALK", "GRABS", "ATTACKMON", "HARDTOSHOOT", "STUN_IMMUNE", "NOHEAD" ]
   },
 {
     "id": "mon_forest_dragon",
     "type": "MONSTER",
     "name": { "str": "forest dragon" },
-    "description": ".",
+    "description": "A massive dragon that dwells deep within the forest. Its thick green scales and powerful body make it a formidable predator.",
     "default_faction": "overgrown",
     "bodytype": "snake",
     "species": [ "MYTHIC"],
@@ -132,48 +158,66 @@
     "bleed_rate": 50,
     "vision_day": 35,
     "vision_night": 8,
+    "weakpoint_sets": [
+    "wps_forest_dragon"
+  ],
     "dissect": "dissect_lizard_sample_single",
     "special_attacks": [
      {"type": "spell",
         "spell_data": { "id": "leave_burst"},
-        "monster_message": "The %s shoots sharp leaves on you!",
-        "cooldown": 15
+        "monster_message": "The %s shoots an shower of sharp leaves on you!",
+        "cooldown": 15,
+         "condition": {
+        "not": {
+            "u_has_effect": "destroyed_tip" }
+        }
       },    
       { "id": "bite_grab", "cooldown": 5 }, 
       { "id": "bite_grab_required", "cooldown": 8 },
-      { "id": "slam", "cooldown": 30, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
-      { "id": "longswipe" },
+      { "id": "slam", 
+        "cooldown": 30,
+        "condition": {
+        "not": {
+            "u_has_effect": "maimed_tail" }
+        },
+        "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
+      { "id": "longswipe",
+       "condition": {
+        "not": {
+            "u_has_effect": "maimed_tail" }
+        }
+      },
       { "id": "cut_throat" },
       { "id": "smash", "throw_strength": 72, "cooldown": 35 }
     ],
 "emit_fields": [
   {
     "emit_id": "emit_forest_dragon_track",
-    "delay": "15 h"
+    "delay": "7 h"
   }
 ],
     "death_drops": "mon_forest_dragon_death_drops",
     "harvest": "forest_dragon",
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF", "PUSH_MON" ],
-    "armor": { "bash": 15, "cut": 20, "bullet": 30, "electric": 4, "acid": 10 }
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF" ],
+    "armor": { "bash": 15, "cut": 20, "bullet": 15, "electric": 4, "acid": 10 }
   },
     {
     "type": "MONSTER",
     "id": "mon_flying_fire",
-    "name": { "str": "Flying fire" },
-    "description": ".",
+    "name": { "str": "flying fire" },
+    "description": "A majestic, brightly burning bird trailing a tail of fire behind it.",
     "species": "MYTHIC",
     "default_faction": "overgrown",
     "bodytype": "bird",
     "death_function": { "effect": { "id": "eggsplosion", "hit_self": true }, "message": "The %s explodes!" },
-    "diff": 9,
+    "diff": 8,
     "luminance": 10,
     "symbol": "T",
     "color": "blue_green",
     "volume": "145 L",
     "weight": "150 kg",
     "material": "flesh", 
-    "aggression": 100,
+    "aggression": 80,
     "morale": 100,
     "speed": 120,
     "vision_day": 35,
@@ -183,22 +227,29 @@
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "cut", "amount": 4.0 } ],
     "dodge": 3,
-    "hp": 250,
+    "hp": 350,
+    "harvest": "flying_fire",
+    "weakpoint_sets": [
+    "wps_flying_fire"
+  ],
     "special_attacks": [
-      { "type": "leap", "cooldown": 5, "max_range": 5, "allow_no_target": true },
-      [ "SHRIEK_STUN", 10 ],
+      { "type": "leap", "cooldown": 5, "max_range": 6, "allow_no_target": true },
+      [ "SHRIEK_STUN", 5 ],
       { "id": "hunter_peck" },
       {"type": "spell",
         "spell_data": { "id": "fire_jumping"},
         "monster_message": "The %s spits fire on you!",
-        "cooldown": 20
+        "cooldown": 10,
+        "condition": {
+        "not": {
+            "u_has_effect": "maimed_wings" }
+        }
       }
     ],
     "flags": [
       "SEES",
       "HEARS",
       "GOODHEARING",
-      "PATH_AVOID_DANGER",
       "HIT_AND_RUN",
       "FLIES",
       "FIREY",
@@ -208,25 +259,25 @@
 "emit_fields": [
   {
     "emit_id": "emit_flying_fire_track",
-    "delay": "15 h"
+    "delay": "6 h"
   }
 ],
   "death_drops": "mon_flying_fire_death_drops",
-    "armor": { "bash": 3, "cut": 6, "bullet": 6, "electric": 2 }
+    "armor": { "bash": 5, "cut": 10, "bullet": 8, "electric": 2 }
   },
    {
     "id": "mon_ice_former",
     "type": "MONSTER",
     "name": { "str": "ice former" },
-    "description": ".",
+    "description": "Sunlight refracts within the cold clutches of this creature, vying with the sparkling blue eyes that hold your gaze firmly captive.",
     "default_faction": "overgrown",
     "bodytype": "lizard",
     "species": [ "MYTHIC" ],
     "diff": 10,
     "volume": "780 L",
     "weight": "820 kg",
-    "hp": 400,
-    "speed": 120,
+    "hp": 520,
+    "speed": 100,
     "material": [ "flesh" ],
     "symbol": "S",
     "color": "brown",
@@ -236,11 +287,14 @@
     "melee_dice": 5,
     "melee_dice_sides": 7,
     "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
-    "dodge": 3,
-    "vision_day": 35,
-    "vision_night": 5,
+    "dodge": 2,
+    "vision_day": 25,
+    "vision_night": 3,
     "families": [ "prof_intro_biology", "prof_physiology" ],
-    "harvest": "mutant_animal_large_noskin",
+    "harvest": "ice_former",
+    "weakpoint_sets": [
+    "wps_ice_former"
+  ],
     "dissect": "dissect_lizard_sample_large",
     "grab_strength": 50,
     "special_attacks": [
@@ -248,10 +302,10 @@
   "type": "spell",
   "spell_data": {
     "id": "burst_ice" },
-    "cooldown": 15,
+    "cooldown": 10,
     "monster_message": "The %s spits ice on you!"
   },
-  { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
+  { "id": "slam", "cooldown": 15, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
   { "id": "bite_grab", "cooldown": 15 },
   { "id": "longswipe" }
     ],
@@ -262,25 +316,30 @@
   }
 ],
     "death_drops": "mon_ice_former_death_drops",
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "LOUDMOVES", "GOODHEARING", "COLDPROOF" ],
-    "armor": { "bash": 8, "cut": 9, "bullet": 7, "electric": 2, "acid": 3 }
+    "armor": { "bash": 10, "cut": 15, "bullet": 10, "electric": 1, "acid": 1 }
   },
-   {
+    {
     "id": "mon_beast_static",
     "type": "MONSTER",
-    "name": { "str": "static beast" },
-    "description": ".",
+    "name": {
+      "str": "static beast"
+    },
+    "description": "Crackling air envelops this creature, which consists solely of teeth and long, scythe like claws.",
     "default_faction": "overgrown",
     "bodytype": "lizard",
-    "species": [ "MYTHIC" ],
+    "species": [
+      "MYTHIC"
+    ],
     "diff": 10,
     "volume": "580 L",
     "weight": "617 kg",
-    "hp": 450,
-    "luminance": 8,
+    "hp": 400,
+    "luminance": 5,
     "speed": 140,
-    "material": [ "flesh" ],
+    "material": [
+      "flesh"
+    ],
     "symbol": "S",
     "color": "brown",
     "aggression": 100,
@@ -288,42 +347,77 @@
     "melee_skill": 8,
     "melee_dice": 6,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "stab", "amount": 10 } ],
+    "melee_damage": [
+      {
+        "damage_type": "stab",
+        "amount": 10
+      }
+    ],
     "dodge": 3,
     "vision_day": 25,
-    "vision_night": 3,
-    "families": [ "prof_intro_biology", "prof_physiology" ],
-    "harvest": "mutant_animal_large_noskin",
+    "vision_night": 5,
+    "families": [
+      "prof_intro_biology",
+      "prof_physiology"
+    ],
+    "weakpoint_sets": [
+      "wps_static_beast"
+    ],
     "dissect": "dissect_lizard_sample_large",
     "grab_strength": 80,
-    "special_when_hit": [ "ZAPBACK", 100 ],
     "special_attacks": [
-  [ "SHOCKSTORM", 25 ],
-  { "id": "grab_drag", "cooldown": 3 },
-  { "id": "drag_followup" },
-  { "id": "longswipe" }
+    ["SHOCKSTORM", 25 ],
+      { "id": "grab_drag", "cooldown": 15,
+          "condition": {
+    "not": {
+      "u_has_effect": "maimed_claw" }
+  }
+      },
+      { "id": "cut_throat",
+        "cooldown": 10,
+        "condition": {
+          "not": {
+            "u_has_effect": "maimed_claw" }
+        }
+      },
+      { "id": "longswipe" },
+{
+  "type": "spell",
+  "spell_data": {
+    "id": "explosion_static",
+       "hit_self": true },
+    "cooldown": 20,
+   "allow_no_target": true,
+       "condition": {
+            "u_has_effect": "maimed_claw" 
+        }
+      }
     ],
-"emit_fields": [
-  {
-    "emit_id": "emit_beast_static_track",
-    "delay": "15 h"
-  }
-],
+    "special_when_hit": [ "ZAPBACK", 100 ],
+    "emit_fields": [
+      {
+        "emit_id": "emit_beast_static_track",
+        "delay": "3 h"
+      }
+    ],
     "death_drops": "mon_beast_static_drops",
-    "anger_triggers": [ 
-      "HURT", 
-      "PLAYER_CLOSE", 
-      "PLAYER_WEAK" ],
-    "flags": [ 
-      "SEES", 
-      "ELECTRIC_FIELD", 
-      "CLIMBS", 
-      "ELECTRIC", 
+    "harvest": "static_beast",
+    "flags": [
+      "SEES",
+      "ELECTRIC_FIELD",
+      "CLIMBS",
+      "ELECTRIC",
       "GOODHEARING",
-      "GRABS" ],
-    "armor": { "bash": 8, "cut": 12, "bullet": 8, "electric": 10, "acid": 6 }
+      "GRABS"
+    ],
+    "armor": {
+      "bash": 8,
+      "cut": 15,
+      "bullet": 8,
+      "electric": 10,
+      "acid": 6
+    }
   }
-
 
 
 ]

@@ -11,7 +11,9 @@
   "type": "monstergroup",
 "name": "GROUP_CAVE",
   "monsters": [
-    { "monster": "mon_zom_bat", "weight": 5, "cost_multiplier": 1 }
+    { "monster": "mon_zom_bat", "weight": 5, "cost_multiplier": 1 },
+    { "monster": "mon_ice_former", "weight": 1, "cost_multiplier": 1 },
+    { "monster": "mon_rapid_striker", "weight": 1, "cost_multiplier": 1 }
   ]
 },
   {
@@ -66,11 +68,11 @@
     "type": "monstergroup",
     "name": "GROUP_Forest",
     "monsters": [
-      { "monster": "mon_forest_walker", "weight": 2, "cost_multiplier": 100 },
+      { "monster": "mon_forest_walker", "weight": 2, "cost_multiplier": 50 },
       { "monster": "mon_walking_tree", "weight": 3, "cost_multiplier": 10 },
       { "monster": "mon_forest_dog", "weight": 5, "cost_multiplier": 5 },
       { "monster": "mon_rapid_striker", "weight": 1, "cost_multiplier": 100 },
-      { "monster": "mon_forest_dragon", "weight": 1, "cost_multiplier": 300, "starts": "40 days" }
+      { "monster": "mon_forest_dragon", "weight": 1, "cost_multiplier": 100, "starts": "40 days" }
     ]
   }
 ]

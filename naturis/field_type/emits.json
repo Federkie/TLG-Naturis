@@ -27,6 +27,13 @@
     "field": "fd_electricity",
     "intensity": 1,
     "chance": 4
+  },
+    {
+    "type": "emit",
+    "id": "emit_rapid_striker_track",
+    "field": "fd_monster_track",
+    "intensity": 1,
+    "chance": 4
   }
 
   

@@ -1,0 +1,22 @@
+{
+  "type": "monster_attack",
+  "attack_type": "melee",
+  "id": "static_beast_explosion_charge",
+  "cooldown": 12,
+  "move_cost": 100,
+  "damage_max_instance": [
+    {
+      "damage_type": "bash",
+      "amount": 0
+    }
+  ],
+  "dodgeable": false,
+  "blockable": false,
+  "eoc": [
+    "EOC_static_beast_explosion_charge"
+  ],
+  "no_dmg_msg_u": "%s begins charging a massive explosive attack!",
+  "no_dmg_msg_npc": "%s begins charging a massive explosive attack!",
+  "miss_msg_u": "%s begins charging a massive explosive attack!",
+  "miss_msg_npc": "%s begins charging a massive explosive attack!"
+}

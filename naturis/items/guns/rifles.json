@@ -5,7 +5,7 @@
     "type": "ITEM",
     "subtypes": [ "GUN" ],
     "name": { "str": "forest rifle" },
-    "description": ".",
+    "description": "The first prototype of the forest rifle consists of a steel housing enclosing several cylinders. It owes its rather unimaginative name to its inventor's lack of creativity.",
     "weight": "2400 g",
     "volume": "2800 ml",
     "longest_side": "900 mm",

@@ -52,7 +52,25 @@
     "using": [ [ "bullet_forming", 2 ], [ "ammo_bullet", 2 ], [ "ammo_10mm", 1 ] ],
     "//": "330 mg gunpowder rounded to 3 100 mg 'pieces'",
     "proficiencies": [ { "proficiency": "prof_handloading" } ],
-    "components": [ [ [ "chard_fire", 1 ] ], [ [ "copper", 1 ] ] ]
+    "components": [ [ [ "shard_fire", 1 ] ], [ [ "copper", 1 ] ] ]
+  },
+   {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "disk_static",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 3 ] ],
+    "difficulty": 5,
+    "charges": 1,
+    "time": "1 h 30 m",
+    "book_learn": [ [ "monster_hunter", 4 ] ],
+    "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_metalworking" } ],
+    "using": [ [ "blacksmithing_standard", 1 ], [ "steel_standard", 1 ] ],
+    "qualities": [{ "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 2 },{ "id": "HAMMER", "level": 2 }  ],
+    "components": [ [  [ "steel_fragment", 3 ], [ "steel_plate", 1 ]  ], 
+    [ [ "shard_electric", 1] ] ]
   }
   
   

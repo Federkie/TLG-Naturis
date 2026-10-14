@@ -1,0 +1,109 @@
+[
+
+{
+  "type": "weakpoint_set",
+  "id": "wps_flying_fire",
+  "weakpoints": [
+    {
+      "id": "head",
+      "name": "the head",
+      "is_head": true,
+      "damage_mult": {
+        "all": 1.1
+      },
+      "crit_mult": {
+        "all": 1.1
+      },
+      "armor_mult": {
+        "physical": 0.75
+      },
+      "difficulty": {
+        "melee": 3,
+        "ranged": 5
+      },
+  "effects": [
+        {
+          "effect": "blind",
+          "chance": 15,
+          "duration": [ 20, 45 ],
+          "damage_required": [ 20, 50 ]
+        }
+      ],
+      "coverage": 5
+    },
+          {
+        "name": "the eye",
+        "is_head": true,
+        "armor_mult": { "physical": 0 },
+        "coverage": 1,
+        "crit_mult": { "all": 1.25 },
+        "coverage_mult": { "ranged": 0.5 },
+        "difficulty": { "point": 10, "broad": 10 },
+        "effects": [
+          { "effect": "blind", "duration": [1, 2], "chance": 25, "message": "The %s is blinded!", "damage_required": [1, 25] },
+          {
+            "effect": "blind",
+            "permanent": true,
+            "chance": 30,
+            "message": "The %s's eyes are obliterated!",
+            "damage_required": [26, 100]
+          }
+        ]
+      },
+    {
+      "id": "body",
+      "name": "the body",
+      "damage_mult": {
+        "all": 1.0
+      },
+      "crit_mult": {
+        "all": 1.0
+      },
+      "armor_mult": {
+        "physical": 1.0
+      },
+      "difficulty": {
+        "melee": 4,
+        "ranged": 3
+      },
+      "coverage": 20
+    }, 
+    {
+      "id": "wings",
+      "name": "the wings",
+      "damage_mult": {
+        "all": 0.75
+      },
+      "crit_mult": {
+        "all": 1.1
+      },
+      "armor_mult": {
+        "physical": 0.6
+      },
+      "difficulty": {
+        "melee": 3,
+        "ranged": 4
+      },
+      "effects": [
+        {
+          "effect": "maimed_wings",
+          "chance": 50,
+          "duration": [ 10, 30 ],
+          "message": "The %s's wings are maimed!",
+          "damage_required": [ 10, 20 ]
+        },
+        {
+          "effect": "maimed_wingd",
+          "chance": 75,
+          "duration": [ 30, 100 ],
+          "message": "The %s's wings are badly maimed!",
+          "damage_required": [ 10, 30 ]
+        }
+      ],
+      "coverage": 45
+    }
+    
+    
+  ]
+}
+]
