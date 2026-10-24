@@ -1,0 +1,99 @@
+[
+  {
+    "id": "leather_gauntlets_freeze",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "TOOL" ],
+    "category": "armor",
+    "name": { "str": "cryo gauntlets", "str_pl": "pairs of freeze gauntlets" },
+    "description": "A pair of heavy, fingerless leather gloves capable of spraying a rapidly freezing powder via a small tank and a simple mechanism.",
+    "weight": "550 g",
+    "volume": "950 ml",
+    "price_postapoc": "170 USD",
+    "to_hit": -2,
+    "material": [ { "type": "glass", "portion": 1 }, { "type": "leather_durable", "portion": 9 } ],
+    "symbol": "[",
+    "looks_like": "gloves_leather",
+    "color": "brown",
+    "warmth": 12,
+    "material_thickness": 3,
+    "environmental_protection": 2,
+    "flags": [ "UNRESTRICTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "FRAGILE_MELEE", "NORMAL", "MITTS", "MUNDANE", "ONLY_ONE" ],
+    "armor": [
+      {
+        "encumbrance": 8,
+        "coverage": 95,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r", "hand_back_l", "hand_back_r" ]
+      },
+      {
+        "encumbrance": 6,
+        "coverage": 70,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_palm_l", "hand_palm_r" ]
+      }
+    ],
+      "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "freeze blast",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_toolweapon_activate_leather_gauntlets_freeze",
+          "condition": { "and": [ { "not": "u_is_underwater" }, "has_ammo" ] },
+          "effect": [
+            { "u_make_sound": "crack!", "type": "combat", "volume": 5 },
+            { "u_message": "A blast of cryo powder freezes everything before you!" },
+            { "u_cast_spell": { "id": "ice_spray" } }
+          ],
+          "false_effect": [ { "u_message": "The cryo powder doesn't seem to be working!" } ]
+        }
+      ]
+      },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "description": "The small tank on the back of the hand holds 6 units of cryo powder.",
+        "rigid": true,
+        "watertight": true,
+        "ammo_restriction": { "cryo_powder": 6 }
+      }
+    ],
+    "charges_per_use": 1,
+    "tool_ammo": [ "cryo_powder" ],
+    "melee_damage": { "bash": 2 }
+  },
+    {
+    "id": "raptor_arm_guards",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "category": "armor",
+    "name": { "str": "raptor arm guards", "str_pl": "pairs of raptor arm guards" },
+    "description": "A set of leather arm guards reinforced with the tendons of raptors, which facilitate lighter attacks and thereby extend stamina.",
+    "weight": "450 g",
+    "volume": "400 ml",
+    "price_postapoc": "20 USD",
+    "to_hit": 1,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "arm_warmers",
+    "color": "brown",
+    "warmth": 25,
+    "material_thickness": 2,
+    "flags": [ "STURDY", "OUTER", "WATER_FRIENDLY", "MUNDANE", "ONLY_ONE", "UNRESTRICTED" ],
+    "armor": [
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "encumbrance": 8,
+        "coverage": 85,
+        "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_l", "arm_upper_r" ]
+      }
+    ],
+    "melee_damage": { "bash": 1 },
+    "passive_effects": [{ "id": "enchant_enhanced_stamina" }]
+  }
+  
+  
+  
+  
+
+
+]
