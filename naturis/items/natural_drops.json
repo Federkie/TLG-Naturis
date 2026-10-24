@@ -1,0 +1,51 @@
+[
+    {
+    "type": "ITEM",
+    "id": "charged_wood",
+    "name": { "str": "charged wood" },
+    "description": "Dark wood, streaked with light colored veins, that crackles slightly when touched.",
+    "category": "spare_parts",
+    "weight": "800 g",
+    "color": "green",
+    "symbol": "/",
+    "material": ["wood"],
+    "volume": "1450 ml",
+    "longest_side": "50 cm",
+    "to_hit": { "grip": "none", "length": "short", "surface": "any", "balance": "clumsy" },
+    "price_postapoc": "60 USD",
+    "flags": ["FIREWOOD"],
+    "melee_damage": { "bash": 6 }
+  },
+   {
+   "id": "charged_resin",
+   "type": "ITEM",
+   "subtypes": ["COMESTIBLE"],
+   "name": { "str_sp": "charged resin" },
+   "category": "chems",
+   "description": "A glossy resin that becomes statically charged when rubbed.",
+   "comestible_type": "INVALID",
+   "weight": "250 g",
+   "volume": "250 ml",
+   "price_postapoc": "10 USD",
+   "symbol": "=",
+   "color": "white",
+   "looks_like": "tallow"
+ },
+   {
+    "type": "ITEM",
+    "id": "otter_pearl",
+    "symbol": "*",
+    "color": "red",
+    "flags": ["GEMSTONE"],
+    "name": { "str": "otter pearl" },
+    "description": "A shimmering pearl. An otter’s favorite toy—one it surely must have lost. It’s mean of you to take it away from it.",
+    "price_postapoc": "10 USD",
+    "material": ["gemstone"],
+    "weight": "200 mg",
+    "volume": "6 ml",
+    "to_hit": -5
+  }
+  
+  
+  
+]

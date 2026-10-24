@@ -1,0 +1,60 @@
+[
+  {
+    "id": "flesh",
+    "type": "item_group",
+    "items": [
+      ["meat", 2],
+      ["meat_scrap", 5],
+      ["lung", 1],
+      ["liver", 1],
+      ["brain", 1],
+      ["sweetbread", 1],
+      ["kidney", 5],
+      ["stomach_large", 1],
+      ["bone_marrow", 4],
+      ["fat", 4]
+    
+    ]
+  },
+    {
+    "id": "flesh_bone",
+    "type": "item_group",
+    "items": [
+      ["meat", 2],
+      ["meat_scrap", 5],
+      ["lung", 1],
+      ["liver", 1],
+      ["brain", 1],
+      ["sweetbread", 1],
+      ["kidney", 5],
+      ["stomach_large", 1],
+      ["bone_marrow", 4],
+      ["fat", 4],
+      [ "bone_tainted", 7 ],
+      [ "bone_human", 5 ],
+      [ "bone", 5 ],
+      [ "skull_human", 2 ],
+      [ "skull_human_tainted", 3 ],
+      [ "skull_canis_small", 6 ],
+      [ "skull_canis", 4 ],
+      [ "skull_canis_triclopean", 1 ],
+      [ "skull_feline_small", 3 ],
+      [ "skull_tiger", 1 ],
+      [ "skull_raccoon", 2 ],
+      [ "skull_bear", 1 ],
+      [ "skull_opossum", 1 ],
+      [ "skull_rodent", 5 ]
+    
+      
+    ]
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+]

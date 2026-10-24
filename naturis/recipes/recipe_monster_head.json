@@ -1,0 +1,49 @@
+[
+    {
+    "result": "hood_crystal",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "3 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_leather_sheet", 2 ] ],
+    "qualities": [  { "id": "LEATHER_AWL", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_leatherworking_basic" }, { "proficiency": "prof_monstermaterials" } ],
+      "components": [
+      [ [ "water", 5 ], [ "water_clean", 5 ] ],
+      [ [ "crystallized_fur_sheet", 2 ] ]
+    ]
+  },
+  {
+    "result": "hood_crystal_xs",
+    "type": "recipe",
+    "copy-from": "hood_crystal",
+    "time": "2 h",
+    "using": [ [ "tailoring_leather_sheet", 1 ] ],
+    "qualities": [  { "id": "LEATHER_AWL", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_leatherworking_basic" } ],
+          "components": [
+      [ [ "crystallized_fur_sheet", 1 ] ]
+    ]
+  },
+  {
+    "result": "hood_crystal_xl",
+    "type": "recipe",
+    "copy-from": "hood_crystal",
+    "time": "4 h",
+    "using": [ [ "tailoring_leather_sheet", 4 ] ],
+    "qualities": [  { "id": "LEATHER_AWL", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_leatherworking_basic" } ],
+              "components": [
+      [ [ "crystallized_fur_sheet", 4 ] ]
+    ]
+  }
+  
+  
+  
+  
+  
+]

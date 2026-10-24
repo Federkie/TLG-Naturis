@@ -6,6 +6,7 @@
     "extend": {
       "items": [
         { "item": "modular_weapons", "prob": 1 },
+        { "item": "monster_hunter_2", "prob": 1 },
         { "item": "monster_hunter", "prob": 1 }
       ]
     }
@@ -26,7 +27,19 @@
    "copy-from": "kids_books",
    "extend": {
      "items": [
-       { "item": "monster_hunter", "prob": 1 }
+       { "item": "monster_hunter", "prob": 1 },
+       { "item": "monster_hunter_2", "prob": 1 }
+     ]
+   }
+ },
+  {
+   "type": "item_group",
+   "id": "mansion_books",
+   "copy-from": "mansion_books",
+   "extend": {
+     "items": [
+       { "item": "monster_hunter", "prob": 1 },
+       { "item": "monster_hunter_2", "prob": 2 }
      ]
    }
  }

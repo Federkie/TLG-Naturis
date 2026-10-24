@@ -6,8 +6,8 @@
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_HANDS",
     "skill_used": "tailor",
-    "skills_required": [ "mechanics",3 ],
-    "difficulty": 4,
+    "skills_required": [ "mechanics", 4 ],
+    "difficulty": 6,
     "time": "12 h",
     "book_learn": [ [ "manual_tailor_monster", 4 ] ],
     "using": [ [ "sewing_standard", 12 ], [ "tailoring_leather_small", 4 ] ],
@@ -16,7 +16,7 @@
       { "proficiency": "prof_leatherworking" },
       { "proficiency": "prof_chemical_engineering" }
     ],
-    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "CUT", "level": 2 } ],
+    "qualities": [ { "id": "HAMMER_SOFT", "level": 1 }, { "id": "CUT", "level": 2 } ],
         "components": [
       [ [ "test_tube", 1 ] ],
       [ [ "hose", 1 ] ],
@@ -25,7 +25,39 @@
       [ [ "leather_durable", 1 ] ],
       [ [ "condom_sealed", 1 ], [ "balloon", 1 ] ]
     ]
+  },
+    {
+    "result": "raptor_arm_guards",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "7 h",
+    "book_learn": [ [ "manual_tailor_monster", 3 ] ],
+    "byproducts": [ [ "leather_patch", 1 ] ],
+    "using": [ [ "tailoring_leather_sheet", 2 ],  [ "clasps", 4 ], [ "strap_small", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 }, { "id": "LEATHER_AWL", "level": 1 } ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_monstermaterials" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_closures", "time_multiplier": 1.25, "skill_penalty": 0.15 }
+    ], 
+      "components": [
+      [ [ "raptor_tendon", 6 ] ]
+    ]
   }
+ 
+  
+  
+  
+  
+  
+  
+
+ 
   
   
 ]

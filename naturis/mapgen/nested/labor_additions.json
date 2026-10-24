@@ -1,0 +1,58 @@
+[
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "glass_monster_cage",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "ggggg",
+        "g,STg",
+        "g,,,g",
+        "g,,,g",
+        "ggGgg"
+      ],
+      "palettes": [ "lab_palette" ],
+      "terrain": { ",": "t_floor_blue" },
+      "place_monster": [
+        {
+          "monster": [ "mon_big_raptor", "mon_ghost_stalker", "mon_crystal_walker", "mon_veil_stalker", "mon_ember_stalker" ],
+          "x": [ 2, 3 ],
+          "y": [ 1, 3 ],
+          "chance": 80
+        }
+      ]
+    }
+  },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "glass_monster_cage",
+    "object": {
+      "mapgensize": [ 5, 5 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "ggggg",
+        "g,STg",
+        "g,,,g",
+        "g,,,g",
+        "ggGgg"
+      ],
+      "palettes": [ "lab_palette" ],
+      "terrain": { ",": "t_floor_blue" },
+      "place_monster": [
+        {
+          "monster": [ "mon_otter_big", "mon_crawler_bastion" ],
+          "x": [ 2, 3 ],
+          "y": [ 1, 3 ],
+          "chance": 50
+        }
+      ]
+    }
+  }
+  
+  
+  
+  
+  
+  
+]

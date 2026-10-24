@@ -1,0 +1,22 @@
+[
+  {
+    "id": "materials_ice",
+    "type": "item_group",
+    "items": [
+      ["shard_ice", 4],
+      ["heart_frozen", 1],
+      ["claw_frozen", 2],
+      ["bone_frozen", 5],
+      ["perennial_ice", 1]
+    ]
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+]

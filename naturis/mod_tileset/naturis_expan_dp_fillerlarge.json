@@ -15,9 +15,10 @@
           { "id": "mon_rapid_striker", "fg": 2, "rotates": false, "bg": 12 },
           { "id": "mon_rapid_striker_tail","fg": 5, "rotates": false, "bg": 12 },
           { "id": "mon_flying_fire", "fg": 6, "rotates": false, "bg": 12 },
-          { "id": "mon_ice_former","fg": 7, "rotates": false, "bg": 12 },
-          { "id": "mon_beast_static","fg": 8, "rotates": false, "bg": 12 },
-          { "id": "mon_beast_static","fg": 8, "rotates": false, "bg": 12 }
+          { "id": "mon_ice_former", "fg": 7, "rotates": false, "bg": 12 },
+          { "id": "mon_beast_static", "fg": 8, "rotates": false, "bg": 12 },
+          { "id": "mon_crystal_walker", "fg": 14, "rotates": false, "bg": 12 },
+          { "id": "mon_crystal_walker_calf", "fg": 15, "rotates": false, "bg": 12 }
     ]
   }
 ] 

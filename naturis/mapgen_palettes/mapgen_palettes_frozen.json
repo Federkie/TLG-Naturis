@@ -6,7 +6,7 @@
       " ": "t_open_air",
       "'": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
       "-": [ [ "t_ice_sh_thick", 1 ], [ "t_sand", 12 ], [ "t_dirt", 2 ] ],
-      ".": "t_sand",
+      ".": "t_naturis_cold_stone",
       "*": "t_rock",
       "S": "t_ladder_up",
       "s": "t_ladder_down",

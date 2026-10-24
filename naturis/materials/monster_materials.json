@@ -39,6 +39,36 @@
     "cut_dmg_verb": { "str": "cut", "ctxt": "material cut damage verb" },
     "acid_dmg_verb": "singed",
     "wind_resist": 100,
-    "resist": { "bash": 1.0, "cut": 01.5, "bullet": 0.5, "acid": 1, "heat": 10 }
+    "resist": { "bash": 1.0, "cut": 1.5, "bullet": 0.5, "acid": 1, "heat": 10 }
+  },
+    {
+    "type": "material",
+    "id": "crystallized_fur",
+    "name": "crystallized_l fur",
+    "//": "Fur, when pressed flat, is typically 1-3mm depending on the animal (hide included).",
+    "density": 3.1,
+    "specific_heat_liquid": 0.2,
+    "specific_heat_solid": 0.2,
+    "latent_heat": 100,
+    "chip_resist": 0,
+    "soft": false,
+    "breathability": "POOR",
+    "repaired_with": "crystallized_fur_sheet",
+    "dmg_adj": ["scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered"],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "scratched",
+    "acid_dmg_verb": "etched",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
+    ],
+"resist": { "bash": 1, "cut": 6, "acid": 15, "heat": 3, "bullet": 1 },
+    "repair_difficulty": 4
   }
+  
+  
+  
+  
+  
   ]

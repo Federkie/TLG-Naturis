@@ -1,0 +1,33 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/naturis_expan_dp_big.png",
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48,
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "tiles": [
+		  { "id": "t_tree_static", "fg": 0, "rotates": false, "bg": 1  },
+		  {
+		    "id": "t_tree_burned",
+        "fg": [
+           { "weight": 25, "sprite": 2 },
+           { "weight": 25, "sprite": 3 },
+           { "weight": 25, "sprite": 4 },
+           { "weight": 25, "sprite": 5 },
+           { "weight": 25, "sprite": 6 }
+  ],
+  "rotates": false,
+  "animated": false,
+  "bg": 1 
+  },
+	  { "id": "t_tree_hollowed", "fg": 7, "rotates": false, "bg": 1  }
+        ]
+      }
+    ]
+  }
+]
+

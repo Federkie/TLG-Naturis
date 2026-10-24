@@ -28,7 +28,18 @@
           },
           { "id": "sword_burning_off", "fg": 11, "rotates": false },
           { "id": "forest_pearl", "fg": 12, "rotates": false },
-          { "id": "grenade_forest", "fg": 13, "rotates": false }
+          { "id": "grenade_forest", "fg": 13, "rotates": false },
+          { "id": "mon_fire_chick", "fg": 14, "rotates": false },
+          { "id": "mon_hatchling_static", "fg": 15, "rotates": false },
+          { "id": "egg_flying_fire", "fg": 16, "rotates": false },
+          { "id": "egg_ice_former", "fg": 17, "rotates": false },
+          { "id": "egg_forest_dragon", "fg": 18, "rotates": false },
+          { "id": "egg_rapid_striker", "fg": 19, "rotates": false },
+          { "id": "egg_static_beast", "fg": 20, "rotates": false },
+          { "id": "otter_pearl", "fg": 21, "rotates": false },
+          { "id": "mon_hatchling_fdragon", "fg": 22, "rotates": false },
+          { "id": "mon_hatchling_rapid", "fg": 23, "rotates": false },
+          { "id": "mon_hatchling_icef", "fg": 24, "rotates": false }
         ],
         "sprite_width": 20,
         "sprite_height": 20

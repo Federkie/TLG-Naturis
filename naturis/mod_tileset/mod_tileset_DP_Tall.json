@@ -16,7 +16,11 @@
 		  { "id": "mon_old_bird", "fg": 2, "rotates": false, "bg": 6 },
 		  { "id": "mon_flesh_wolf", "fg": 3, "rotates": false, "bg": 6 },
 		  { "id": "mon_old_stone", "fg": 8, "rotates": false },
-		  { "id": "t_ice_pillar", "fg": 9 , "rotates": false }
+		  { "id": "t_ice_pillar", "fg": 9 , "rotates": false },
+		  { "id": "mon_otter_big", "fg": 10, "rotates": false, "bg": 6 },
+		  { "id": "mon_veil_stalker", "fg": 11, "rotates": false, "bg": 6 },
+		  { "id": "mon_ghost_stalker", "fg": 12, "rotates": false, "bg": 6 },
+		  { "id": "mon_frost_brawler", "fg": 13, "rotates": false, "bg": 6 }
         ],
         "sprite_width": 32,
         "sprite_height": 48

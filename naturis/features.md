@@ -26,7 +26,20 @@ A large, dragon-like creature that you better not get too close to. Drops its ow
 - fire chick
 - old chick
 - rain bird
-- ...
+- big otter
+- big otter cub
+- thorn skitter
+- glow cap
+- crystal walker
+- crystal walker calv
+- veil stalker 
+- ghost stalker
+- small raptor
+- static hatchling
+- rapid hatchling
+- forest dragon hatchling
+- ice former hatchling
+- big raptor
 
 - forest walker
 This creature allows plants and trees to grow, including in buildings.
@@ -49,14 +62,16 @@ Weapons:
 - claw staff (+ recipe)
 - static sword (+ recipe)
 - rapid épeé (+ recipe)
-- 
+- inferno katana (+ recipe, WIP)
+- crystal axe (+ recipe)
+- claw knife (+ recipe)
 
 Ammo:
 - cutting disk (+ recipe)
 - static disk (+ recipe)
 - fa_r heat (+ recipe)
 - fa_r leaves (+ recipe)
-- 
+- crystal tipped arrow (+recipe)
 
 
 Armor:
@@ -64,19 +79,65 @@ Armor:
 - static leather armor (+ recipe)
 - feather cloak (+ recipe)
 - cryo gauntlets (+ recipe)
+- crystal cap (+ recipe)
+- raptor arm guards (+ recipe)
 
 Books:
 - alternative medicine
 - the stylish hunter!
 - hunting monsters
+- hunted monsters collector's edition
+
+Traps: 
+- electric hunting trap (+recipe)
+
 
 Misc:
 - living wood arm splint (+recipe)
 - living wood leg splint (+recipe)
 - pink leave tea (+ recipe)
 - cryo powder (+ recipe)
-- burning egg
-- forest blood
+- 
+
+New matierials:
+- thorn skin
+- crystal antler
+- crystalled fur sheat
+- shadow pearl
+- forest pearl
+- dragon hair
+- living wood
+- bone curved
+- claw sharp
+- forest claw
+- leaves pink
+- fire shard
+- ice shard
+- static shard
+- frozen heart
+- heated feather
+- forest dragon scale
+- forest dragon skull
+- sickle shaped claw
+- venomous fang
+- neck spike
+- long feather
+- frozen claw
+- static chunk
+- split tongue
+- frozen bone
+- charged stinger
+- durable leather
+- stazic beast plate
+- tail tip
+- fire pearl
+- old charcoal
+- perennial ice
+- static residue
+- mushroom network
+- strong bone
+- raptor tendon
+- long claw
 
 - I have temporarily removed the "rooted egg" function, as it can cause a crash.
 
@@ -91,10 +152,6 @@ New proficiencys:
 - scaleworking
 - 
 
-New matierials:
-- durable leather
-- heated feathers
-- 
 
 
 Locations: 

@@ -1,0 +1,23 @@
+[
+{
+    "id": "materials_fire",
+    "type": "item_group",
+    "items": [
+      [ "shard_fire", 2 ],
+      [ "feather_burning", 6 ],
+      [ "feather_long", 3 ],
+      [ "fire_pearl", 1 ],
+      [ "charcoal_old", 1 ],
+      [ "strong_bone",4 ]
+    ]
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+]

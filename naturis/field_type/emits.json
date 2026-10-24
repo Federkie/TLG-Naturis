@@ -34,7 +34,30 @@
     "field": "fd_monster_track",
     "intensity": 1,
     "chance": 4
-  }
+  },
+  {
+    "id": "emit_naturis_cold_aura",
+    "type": "emit",
+    "field": "fd_cold_air2",
+    "intensity": 3,
+    "qty": 9,
+    "chance": 100
+  },
+    {
+    "id": "emit_naturis_hot_aura",
+    "type": "emit",
+    "field": "fd_hot_air2",
+    "intensity": 3,
+    "qty": 9,
+    "chance": 100
+  },
+     {
+     "type": "emit",
+     "id": "emit_herbivore_track",
+     "field": "fd_monster_track_herb",
+     "intensity": 1,
+     "chance": 4
+   }
 
   
   

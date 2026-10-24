@@ -5,7 +5,6 @@
     "friendly": [ "fleshy", "zombie" ],
     "neutral": [ "triffid" ]
   },
-
   {
     "type": "MONSTER_FACTION",
     "name": "fleshy",
@@ -18,12 +17,47 @@
     "friendly": [ "overgrown" ],
     "neutral": [ "overgrown" ]
   },
-
-
 {
     "type": "MONSTER_FACTION",
     "name": "zombie",
     "copy-from": "zombie",
-    "neutral": [ "overgrown", "anomaly", "fleshy" ]
+    "neutral": [ "overgrown", "forest", "anomaly", "fleshy", "ice", "fire" ]
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "forest",
+    "friendly": ["static", "zombie", "small_animal", "overgrown", "triffid"],
+    "neutral": ["player", "human"],
+    "hate": [ "fire", "ice" ]
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "ice",
+    "friendly": ["fleshy", "zombie"],
+    "neutral": ["static"],
+    "hate": [ "player", "human", "forest" ]
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "static",
+    "friendly": ["fire"],
+    "neutral": ["fleshy"],
+    "hate": [ "player", "human", "zombie" ]
+  },
+   {
+   "type": "MONSTER_FACTION",
+   "name": "fire",
+   "friendly": ["zombie", "static"],
+   "neutral": ["fleshy"],
+   "hate": ["player", "human", "ice"]
+ },
+   {
+    "type": "MONSTER_FACTION",
+    "name": "water",
+    "base_faction": "animal",
+    "friendly": ["small_animal", "forest"],
+    "by_mood": [ "fish" ],
+    "neutral": ["fish", "player", "human"],
+    "hate": ["ice", "fire", "static"]
   }
 ]

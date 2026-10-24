@@ -71,6 +71,34 @@
     "qualities": [{ "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 2 },{ "id": "HAMMER", "level": 2 }  ],
     "components": [ [  [ "steel_fragment", 3 ], [ "steel_plate", 1 ]  ], 
     [ [ "shard_electric", 1] ] ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "arrow_wood_crystal",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "archery", 1 ] ],
+    "difficulty": 3,
+    "time": "21 m",
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_fletching" },
+      { "proficiency": "prof_carving" }
+    ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "HAMMER", "level": 1 },
+      { "id": "HAMMER_SOFT", "level": 1 },
+      { "id": "PUNCH", "level": 1 }
+    ],
+    "components": [
+      [ [ "adhesive", 1, "LIST" ], [ "filament", 2, "LIST" ] ],
+      [ [ "stick", 1 ], [ "broom", 1 ], [ "2x4", 1 ], [ "mop", 1 ] ],
+      [ [ "shard_crystal", 1] ],
+      [ [ "fletching", 1, "LIST" ] ]
+    ]
   }
   
   

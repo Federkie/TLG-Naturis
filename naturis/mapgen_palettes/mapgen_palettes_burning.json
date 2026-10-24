@@ -5,7 +5,7 @@
     "terrain": {
       " ": "t_open_air",
       ".": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
-      "-": [ [ "t_lava", 1 ], [ "t_rock", 12 ], [ "t_coast_rock_surf", 2 ] ],
+      "-": [ [ "t_lava", 1 ], [ "t_rock", 12 ], [ "t_dirt_rocky", 2 ] ],
       "'": "t_sand",
       ",": "t_lava",
       "*": "t_rock",

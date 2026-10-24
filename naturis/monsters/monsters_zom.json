@@ -69,9 +69,8 @@
     "vision_day": 3,
     "vision_night": 15,
     "harvest": "zombie_animal",
-    "special_attacks": { "id": "bite_humanoid", "cooldown": 5 }
-  }
-    ],
+    "special_attacks": [
+    { "id": "bite_humanoid", "cooldown": 5 } ],
     "flags": [
       "SEES",
       "HEARS",
@@ -88,7 +87,6 @@
       "SMALL_HIDER"
     ]
   },
-
 {
     "id": "mon_zom_birb",
     "type": "MONSTER",
@@ -117,13 +115,10 @@
     "vision_night": 2,
     "harvest": "zombie_animal",
     "special_attacks": [
-      {
       [ "SHRIEK", 80 ],
       [ "LUNGE", 10 ],
-      { "type": "leap", "cooldown": 20, "max_range": 4, "ignore_dest_danger": true, "allow_no_target": true },
-      }
+      { "type": "leap", "cooldown": 20, "max_range": 4, "ignore_dest_danger": true, "allow_no_target": true }
     ],
- 
     "flags": [
       "SEES",
       "HEARS",

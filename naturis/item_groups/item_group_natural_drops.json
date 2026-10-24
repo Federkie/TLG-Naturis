@@ -1,0 +1,21 @@
+[
+  {
+    "id": "natural_drops",
+    "type": "item_group",
+    "items": [
+      ["charged_wood", 2],
+      ["charged_resin", 1],
+      ["otter_pearl", 3],
+      ["forest_blood", 4],
+      ["forest_blood_2", 3]
+      
+      
+      
+      
+      
+    ]
+  }
+  
+  
+  
+]

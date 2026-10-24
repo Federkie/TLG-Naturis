@@ -1,0 +1,55 @@
+[
+{
+  "type": "weakpoint_set",
+  "id": "wps_veil_stalker",
+  "weakpoints": [
+    {
+      "id": "head",
+      "name": "the head",
+      "is_head": true,
+      "damage_mult": {
+        "all": 1.2
+      },
+      "crit_mult": {
+        "all": 1.2
+      },
+      "coverage_mult": { "melee": 0.5 },
+      "armor_mult": {
+        "physical": 0.65
+      },
+      "difficulty": {
+        "melee": 4,
+        "ranged": 5
+      },
+  "effects": [
+        {
+          "effect": "downed",
+          "chance": 25,
+          "duration": [ 5, 15 ],
+          "message": "The %s is downed!",
+          "damage_required": [ 20, 50 ]
+        }
+      ],
+      "coverage": 10
+    },
+    {
+      "id": "body",
+      "name": "the body",
+      "damage_mult": {
+        "all": 1.0
+      },
+      "crit_mult": {
+        "all": 1.0
+      },
+      "armor_mult": {
+        "physical": 1.0
+      },
+      "difficulty": {
+        "melee": 4,
+        "ranged": 3
+      },
+      "coverage": 40
+    }
+  ]
+}
+]

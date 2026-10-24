@@ -1,0 +1,16 @@
+[
+    {
+    "type": "ITEM",
+    "id": "lab_file_bio_naturis",
+    "name": { "str": "biology protocol" },
+    "copy-from": "file",
+    "description": "A sheet of paper adorned with an atom-and-flask symbol, detailing some questionable biological research.",
+    "snippet_category": "lab_file_bio_naturis"
+  }
+  
+  
+  
+  
+  
+  
+]

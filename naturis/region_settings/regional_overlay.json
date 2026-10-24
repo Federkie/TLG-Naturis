@@ -1,0 +1,44 @@
+[
+  {
+    "type": "map_extra_collection",
+    "id": "forest",
+    "copy-from": "forest",
+    "extend": {
+      "extras": [
+        [ "mx_naturis_nest", 10 ]
+      ]
+    }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "forest_thick",
+    "copy-from": "forest_thick",
+    "extend": {
+      "extras": [
+        [ "mx_naturis_nest", 25 ]
+      ]
+    }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "forest_water",
+    "copy-from": "forest_water",
+    "extend": {
+      "extras": [
+        [ "mx_naturis_nest", 3 ],
+        ["mx_naturis_swamp_additions", 15]
+      ]
+    }
+  },
+  {
+  "type": "map_extra_collection",
+  "id": "field",
+  "copy-from": "field",
+  "extend": {
+    "extras": [
+      ["mx_naturis_nest_field", 20],
+      ["mx_naturis_tracks_field", 40]
+    ]
+  }
+}
+]

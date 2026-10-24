@@ -1,0 +1,22 @@
+[
+  {
+    "id": "materials_ice",
+    "type": "item_group",
+    "items": [
+      ["shard_electric", 4],
+      ["sickle_shaped_claw", 1],
+      ["plate_static", 1],
+      ["bone_curved", 5],
+      ["stinger_charged", 1]
+    ]
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+]

@@ -148,6 +148,156 @@
     "ter_set": "t_dirt",
     "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
   }
-}
+},
+  {
+    "type": "terrain",
+    "id": "t_tree_static",
+    "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+    "name": "static tree",
+    "looks_like": "t_tree_dead",
+    "roof": "t_treetop",
+    "description": ".",
+    "symbol": "7",
+    "color": "brown",
+    "move_cost": 0,
+    "examine_action": "harvest_ter",
+   "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn", "winter" ], "id": "tree_static_harv" } ],
+    "transforms_into": "t_tree_static_dead", 
+    "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
+    "bash": {
+      "str_min": 70,
+      "str_max": 140,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [
+        { "item": "charged_wood", "count": [1, 4] },
+        { "item": "stick", "count": [1, 4] },
+        { "item": "shard_electric", "count": [5, 15] }
+      ]
+    }
+  },
+
+  {
+    "type": "terrain",
+    "id": "t_tree_static_dead", 
+    "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+    "name": "static tree",
+    "looks_like": "t_tree_dead",
+    "roof": "t_treetop",
+    "description": ".",
+    "symbol": "7",
+    "color": "brown",
+    "move_cost": 0,
+    "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
+    "bash": {
+      "str_min": 70,
+      "str_max": 140,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [
+        { "item": "charged_wood", "count": [1, 4] },
+        { "item": "stick", "count": [1, 4] },
+        { "item": "shard_electric", "count": [5, 15] }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_naturis_cold_stone",
+    "name": "frost stone",
+    "description": ".",
+    "symbol": "*",
+    "looks_like": "t_dirt_rocky",
+    "color": "light_blue",
+    "move_cost": 1,
+    "flags": [ "TRANSPARENT" ],
+    "emissions": [ "emit_cold_air3_blast" ]
+  },
+    {
+    "type": "terrain",
+    "id": "t_naturis_hot_stone",
+    "name": "heat stone",
+    "description": ".",
+    "symbol": "*",
+    "looks_like": "t_dirt_rocky",
+    "color": "light_blue",
+    "move_cost": 1,
+    "flags": ["TRANSPARENT"],
+    "emissions": ["emit_hot_air2_blast"]
+  },
+    {
+    "type": "terrain",
+    "id": "t_crystal_pillar",
+    "name": "crystal pillar",
+    "description": "A pillar of crystal.",
+    "symbol": "/",
+    "color": "cyan",
+    "move_cost": -1,
+    "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
+    "flags": ["TRANSPARENT"]
+  },
+    {
+    "type": "terrain",
+    "id": "t_tree_burned",
+    "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+    "name": "burned tree",
+    "looks_like": "t_tree_dead",
+    "roof": "t_treetop",
+    "description": ".",
+    "symbol": "7",
+    "color": "brown",
+    "move_cost": 0,
+    "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
+    "bash": {
+      "str_min": 50,
+      "str_max": 80,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [
+        { "item": "charcoal", "count": [1, 4] },
+        { "item": "stick", "count": [1, 4] }
+      ]
+    }
+  },
+    {
+    "type": "terrain",
+    "id": "t_tree_hollowed",
+    "name": "hollowed-out tree",
+    "description": ".",
+    "symbol": "#",
+    "color": "brown_green",
+    "looks_like": "t_leanto",
+    "floor_bedding_warmth": 1200,
+    "comfort": 4,
+    "move_cost": 2,
+    "coverage": 30,
+    "concealment": 30,
+    "connect_groups": "INDOORFLOOR",
+    "flags": [
+      "TRANSPARENT",
+      "CONTAINER",
+      "THIN_OBSTACLE",
+      "REDUCE_SCENT",
+      "INDOORS",
+      "FLAMMABLE_ASH",
+      "TINDER",
+      "MOUNTABLE",
+      "HIDE_PLACE"
+    ],
+    "bash": {
+      "str_min": 4,
+      "str_max": 60,
+      "sound": "crunch.",
+      "sound_fail": "brush.",
+      "ter_set": "t_dirt",
+      "items": [
+        { "item": "stick", "count": [3, 15] },
+        { "item": "withered", "count": [40, 80] }
+      ]
+    }
+  }
 
 ]

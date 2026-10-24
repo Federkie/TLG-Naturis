@@ -18,7 +18,15 @@
           { "id": "f_rack_coat_grown", "fg": 9, "rotates": false },
           { "id": "f_trashcan_grown", "fg": 10, "rotates": false },
           { "id": "f_stool_grown", "fg": 11, "rotates": false },
-          { "id": "f_dresser_grown", "fg": 12, "rotates": false },
+ {
+  "id": "f_dresser_grown", 
+  "fg": [
+    { "weight": 50, "sprite": 12 },
+    { "weight": 50, "sprite": 90 }
+  ],
+  "rotates": false,
+  "animated": false
+},
           { "id": "t_m_mushroom", "fg": 13, "bg": 0 },
           { "id": "mon_bone_snake", "fg": 30, "rotates": false, "bg": 5  },
           { "id": "t_m_mushroom_harvested", "fg": 29, "bg": 0 },
@@ -105,7 +113,55 @@
           { "id": "t_pink_flowers", "fg": 70, "rotates": false },
           { "id": "t_pink_flowers_harvested", "fg": 71, "rotates": false },
           { "id": "overlay_wielded_sword_static", "fg": 72, "rotates": false },
-          { "id": "sword_static", "fg": 73, "rotates": false }
+          { "id": "sword_static", "fg": 73, "rotates": false },
+          { "id": "fd_monster_track_herb", "fg": 74, "rotates": false },
+          { "id": "t_crystal_pillar", "fg": 75, "rotates": false, "bg": 71 },
+          { "id": "fd_crystal_shards", "fg": 76, "rotates": false },
+          { "id": "mon_glow_cap", "fg": 77, "rotates": false, "bg": 5  },
+           {
+            "id": [
+     "overmap_horde_1",
+     "overmap_horde_2",
+     "overmap_horde_3",
+     "overmap_horde_4",
+     "overmap_horde_5",
+     "overmap_horde_6",
+     "overmap_horde_7",
+     "overmap_horde_8",
+     "overmap_horde_9",
+     "overmap_horde_10"
+   ],
+   "fg": 67
+ },
+ {
+  "id": "mon_small_raptor",
+  "fg": [
+    { "weight": 25, "sprite": 78 },
+    { "weight": 25, "sprite": 79 },
+    { "weight": 25, "sprite": 80 },
+    { "weight": 25, "sprite": 81 },
+    { "weight": 25, "sprite": 82 },
+    { "weight": 25, "sprite": 83 }
+  ],
+  "rotates": false,
+  "animated": false
+},
+ { "id": "overlay_wielded_crystal_ax", "fg": 84, "rotates": false },
+ { "id": "crystal_ax", "fg": 85, "rotates": false },
+         {
+  "id": "fd_grounding",
+  "fg": [
+    { "weight": 25, "sprite": 86 },
+    { "weight": 25, "sprite": 87 },
+    { "weight": 25, "sprite": 88 },
+    { "weight": 25, "sprite": 89 }
+  ],
+  "rotates": false,
+  "animated": true
+},
+   { "id": "tr_electric_hunting_trap", "fg": 91, "rotates": false },
+   { "id": "electric_hunting_trap", "fg": 92, "rotates": false },
+   { "id": "mon_crawler_bastion", "fg": 95, "rotates": false, "bg": 5  }
         ]
       }
     ]

@@ -1,0 +1,13 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_HORDE",
+    "override": true,
+    "default": "mon_null",
+    "monsters": [
+      { "group": "GROUP_FOREST_H", "weight": 500, "cost_multiplier": 300, "pack_size": [ 3, 10 ] }, { "group": "GROUP_RAPID_H", "weight": 500, "cost_multiplier": 300, "pack_size": [ 2, 5 ] },
+      { "group": "GROUP_HORDE_STANDARD", "weight": 500, "cost_multiplier": 300 },
+      { "group": "GROUP_RAPTOR_H", "weight": 500, "cost_multiplier": 300, "pack_size": [ 5, 20 ] }
+    ]
+  }
+]

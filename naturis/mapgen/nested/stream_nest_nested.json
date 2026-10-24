@@ -1,0 +1,27 @@
+[
+     {
+     "type": "mapgen",
+     "nested_mapgen_id": "stream_nest_4x4_01",
+     "object": {
+       "mapgensize": [4, 4],
+       "rows": [
+         "  + ",
+         " +++",
+         " ++ ",
+         "    "
+       ],
+       "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+       "terrain": {
+         "+": "t_sand"
+       },
+      "place_monster": [
+        { "group": "GROUP_OTTER_BIG", "x": [2], "y": [2] }
+      ]
+     }
+   }
+  
+  
+  
+  
+  
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "type": "region_settings_forest_mapgen",
+    "id": "default",
+    "biomes": [
+      "naturis_biome_forest_default",
+      "naturis_biome_forest_thick_default",
+      "naturis_biome_forest_water_default"
+    ]
+  },
+  {
+    "type": "forest_biome_mapgen",
+    "id": "naturis_biome_forest_default",
+    "copy-from": "biome_forest_default",
+    "components": [
+      "trees_forest",
+      "naturis_mystic_forest_trees",
+      "shrubs_and_flowers_forest",
+      "naturis_mystic_forest_features",
+      "clutter_forest",
+      "water_forest"
+    ]
+  },
+  {
+    "type": "forest_biome_mapgen",
+    "id": "naturis_biome_forest_thick_default",
+    "copy-from": "biome_forest_thick_default",
+    "components": [
+      "trees_forest_thick",
+      "naturis_mystic_forest_trees",
+      "shrubs_and_flowers_forest_thick",
+      "naturis_mystic_forest_features",
+      "clutter_forest_thick",
+      "water_forest"
+    ]
+  },
+  {
+    "type": "forest_biome_mapgen",
+    "id": "naturis_biome_forest_water_default",
+    "copy-from": "biome_forest_water_default",
+    "components": [
+      "trees_forest_water",
+      "naturis_mystic_forest_trees",
+      "shrubs_and_flowers_forest_water",
+      "naturis_mystic_forest_features",
+      "clutter_forest_water",
+      "water_forest_water"
+    ]
+  }
+  ]

@@ -15,7 +15,7 @@
     "items": {
         "0": [ 
          { "item": "bones", "chance": 5, "repeat": [ 0, 2 ] },
-         { "item": "monparts", "chance": 5, "repeat": [ 1, 3 ] },
+         { "item": "materials_ice", "chance": 1, "repeat": [ 1, 3 ] },
          { "item": "bug_parts", "chance": 15, "repeat": [ 2, 4 ] }
 ,        { "item": "vertebrate_parts", "chance": 20, "repeat": [ 1, 2 ] },
          { "item": "human_parts", "chance": 60, "repeat": [ 5, 8 ] }
@@ -52,7 +52,7 @@
     "object": {
       "mapgensize": [ 2, 2 ],
       "rows": [
-        "--",
+        "*-",
         "--"
       ],
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
@@ -63,7 +63,7 @@
          { "item": "digging_soil_loam_50L", "chance": 5, "repeat": [ 1, 3 ] },
          { "item": "bug_parts", "chance": 15, "repeat": [ 2, 4 ] }
 ,        { "item": "vertebrate_parts", "chance": 10, "repeat": [ 1, 3 ] },
-         { "item": "human_parts", "chance": 60, "repeat": [ 5, 8 ] }
+         { "item": "materials_ice", "chance": 20, "repeat": [ 1, 3 ] }
        ]
       }
     }
@@ -75,11 +75,15 @@
       "mapgensize": [ 2, 2 ],
       "rows": [
         "--",
-        "--"
+        "-*"
       ],
+      "item": {
+         "-": { "item": "egg_ice_former", "chance": 30 }
+},
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
       "palettes": [ "frozen_palette" ]
-    }
+     }
+    
   },
    {
     "type": "mapgen",
@@ -87,8 +91,8 @@
     "object": {
       "mapgensize": [ 2, 2 ],
       "rows": [
-        "--",
-        "--"
+        "**",
+        "*-"
       ],
       "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
         "terrain": {
@@ -117,9 +121,41 @@
         "0": [ 
          { "item": "bones", "chance": 5, "repeat": [ 0, 2 ] },
          { "item": "mining_rock", "chance": 5, "repeat": [ 1, 3 ] }
-       ]
+       ] 
       },
       "palettes": ["frozen_palette"]
     }
-  }
+  },
+   {
+   "type": "mapgen",
+   "nested_mapgen_id": "frozen_2x2_07",
+   "object": {
+     "mapgensize": [2, 2],
+     "rows": [
+       "--",
+       "--"
+     ],
+      "place_monster": [
+        { "monster": "mon_frost_brawler", "x": [1, 2], "y": [1, 2], "chance": 60, "repeat": [1, 3] }
+      ],
+     "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+     "palettes": ["frozen_palette"]
+   }
+ },
+    {
+     "type": "mapgen",
+     "nested_mapgen_id": "frozen_2x2_08",
+     "object": {
+       "mapgensize": [2, 2],
+       "rows": [
+         "--",
+         "--"
+       ],
+       "place_monster": [
+         { "monster": "mon_ice_former", "x": [1, 2], "y": [1, 2], "chance": 60 }
+       ],
+       "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+       "palettes": ["frozen_palette"]
+     }
+   }
 ]

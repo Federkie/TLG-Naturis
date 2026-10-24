@@ -10,16 +10,16 @@
     "default_skill_penalty": 0.20,
     "time_to_learn": "8 h"
   },
-      {
-      "type": "proficiency",
-      "id": "prof_monstermaterials",
-      "category": "prof_fabrication",
+    {
+    "type": "proficiency",
+    "id": "prof_monstermaterials",
+    "category": "prof_fabrication",
       "name": { "str": "Monster Material Knowlegde" },
-      "description": "You have worked with various monster materials several times and know how to handle them.",
-      "can_learn": true,
-      "default_time_multiplier": 1.5,
-      "default_skill_penalty": 0.25,
-      "time_to_learn": "10 h"
+    "description": "You have worked with various monster materials several times and know how to handle them.",
+    "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.25,
+    "time_to_learn": "10 h"
     },
     {
     "type": "proficiency",
@@ -31,6 +31,17 @@
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.20,
     "time_to_learn": "8 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_wp_mythic",
+    "category": "prof_weakpoint",
+    "name": { "str": "Anatomy of mythical Beasts" },
+    "description": "You have already slain a number of these creatures and understand their anatomical makeup.",
+    "can_learn": true,
+    "time_to_learn": "30 h",
+    "default_weakpoint_bonus": 3,
+    "default_weakpoint_penalty": -2
   }
   
 ]

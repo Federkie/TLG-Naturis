@@ -19,12 +19,24 @@
     "name": "sharp cutting disks",
     "default": "disk_cutting"
   },
-    {
+{
     "type": "ammunition_type",
     "id": "cryo_powder",
     "name": "cryo powder",
     "default": "cryo_powder"
-  }
+  },
+  {
+  "type": "ammunition_type",
+  "id": "shard",
+  "name": "shard",
+  "default": "shard_electric"
+},
+   {
+   "type": "ammunition_type",
+   "id": "healing_liquid",
+   "name": "healing liquid",
+   "default": "healing_liquid"
+ }
 
 
 

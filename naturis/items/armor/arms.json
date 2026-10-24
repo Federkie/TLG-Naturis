@@ -17,7 +17,7 @@
     "warmth": 12,
     "material_thickness": 3,
     "environmental_protection": 2,
-    "flags": [ "UNRESTRICTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "FRAGILE_MELEE", "NORMAL", "MITTS", "MUNDANE" ],
+    "flags": [ "UNRESTRICTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "FRAGILE_MELEE", "NORMAL", "MITTS", "MUNDANE", "ONLY_ONE" ],
     "armor": [
       {
         "encumbrance": 8,
@@ -60,7 +60,39 @@
     "charges_per_use": 1,
     "tool_ammo": [ "cryo_powder" ],
     "melee_damage": { "bash": 2 }
+  },
+    {
+    "id": "raptor_arm_guards",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "category": "armor",
+    "name": { "str": "raptor arm guards", "str_pl": "pairs of raptor arm guards" },
+    "description": "A set of leather arm guards reinforced with the tendons of raptors, which facilitate lighter attacks and thereby extend stamina.",
+    "weight": "450 g",
+    "volume": "400 ml",
+    "price_postapoc": "20 USD",
+    "to_hit": 1,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "arm_warmers",
+    "color": "brown",
+    "warmth": 25,
+    "material_thickness": 2,
+    "flags": [ "STURDY", "OUTER", "WATER_FRIENDLY", "MUNDANE", "ONLY_ONE", "UNRESTRICTED" ],
+    "armor": [
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "encumbrance": 8,
+        "coverage": 85,
+        "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_l", "arm_upper_r" ]
+      }
+    ],
+    "melee_damage": { "bash": 1 },
+    "passive_effects": [{ "id": "enchant_enhanced_stamina" }]
   }
+  
+  
+  
   
 
 

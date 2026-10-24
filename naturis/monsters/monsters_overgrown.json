@@ -85,7 +85,7 @@
         "type": "spell",
         "spell_data": { "id": "create_nature", "min_level": 1 },
         "monster_message": "%1$s roars!!!",
-        "cooldown": 5000,
+        "cooldown": 1500,
         "allow_no_target": true
       }
     ],

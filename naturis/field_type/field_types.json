@@ -20,7 +20,7 @@
  {
     "id": "fd_leaves_pink",
     "type": "field_type",
-    "substance_name": "pink",
+    "substance_name": "pink leaves",
     "legacy_enum_id": 3,
     "intensity_levels": [
       { "name": "leaves ", "sym": "~", "color": "green" },
@@ -109,7 +109,69 @@
    "half_life": "1 days",
    "accelerated_decay": true,
    "display_field": true
- }
+ },
+ {
+   "id": "fd_monster_track_herb",
+   "type": "field_type",
+   "substance_name": "herbivore track",
+   "legacy_enum_id": 3,
+   "intensity_levels": [
+     { "name": "herbivore tracks", "sym": "~", "color": "green" },
+     { "name": "deep herbivore tracks", "color": "light_red" }
+     ],
+   "description_affix": "covered_in",
+   "underwater_age_speedup": "5 minutes",
+   "decay_amount_factor": 2,
+   "is_splattering": true,
+   "half_life": "1 days",
+   "accelerated_decay": true,
+   "display_field": true
+   },
+   {
+    "id": "fd_crystal_shards",
+    "type": "field_type",
+    "substance_name": "crystal shards",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "some crystal shards", "color": "light_red",
+        "dangerous": true,
+        "effects": [
+        {
+          "effect_id": "crystal_shards_damage",
+          "intensity": 1,
+          "min_duration": "1 second",
+          "max_duration": "1 second",
+          "is_environmental": false
+        }
+      ]},
+      { "name": "many crystal shards", "color": "red",
+        "dangerous": true,
+        "effects": [
+        {
+          "effect_id": "crystal_shards_damage",
+          "intensity": 1,
+          "min_duration": "1 second",
+          "max_duration": "1 second",
+          "is_environmental": false
+        }
+      ]
+      }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "55 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "4 days",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+    {
+    "id": "emit_cold_air3_blast",
+    "type": "emit",
+    "field": "fd_cold_air3",
+    "intensity": 3,
+    "qty": 100
+  }
 
 
 

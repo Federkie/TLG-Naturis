@@ -1,0 +1,58 @@
+[
+  {
+    "type": "map_extra",
+    "id": "mx_naturis_nest",
+    "name": { "str": "naturis nest forest" },
+    "description": "The nest of an naturis beast in the forest.",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_naturis_nest"
+    },
+    "min_max_zlevel": [ 0, 0 ],
+    "sym": "F",
+    "color": "magenta",
+    "autonote": false
+  },
+    {
+    "type": "map_extra",
+    "id": "mx_naturis_nest_field",
+    "name": { "str": "naturis nest field" },
+    "description": "The nest of an naturis beast on the field.",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_naturis_nest_field"
+    },
+    "min_max_zlevel": [0, 0],
+    "sym": "F",
+    "color": "magenta",
+    "autonote": false
+  },
+   {
+   "type": "map_extra",
+   "id": "mx_naturis_swamp_additions",
+   "name": { "str": "naturis swamp additions" },
+   "description": "Map extras for the swamp.",
+   "generator": {
+     "generator_method": "update_mapgen",
+     "generator_id": "mx_naturis_swamp_additions"
+   },
+   "min_max_zlevel": [0, 0],
+   "sym": "F",
+   "color": "magenta",
+   "autonote": false
+ },
+     {
+      "type": "map_extra",
+      "id": "mx_naturis_tracks_field",
+      "name": { "str": "naturis field tracks" },
+      "description": "Monster tracks.",
+      "generator": {
+        "generator_method": "update_mapgen",
+        "generator_id": "mx_naturis_tracks_field"
+      },
+      "min_max_zlevel": [0, 0],
+      "sym": "F",
+      "color": "magenta",
+      "autonote": false
+    }
+]

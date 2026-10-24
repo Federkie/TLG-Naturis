@@ -107,6 +107,66 @@
     "color": "dark_gray",
     "count": 10,
     "ammo_type": "cryo_powder"
+  },
+  {
+  "type": "ITEM",
+  "id": "shard_crystal",
+  "name": { "str": "crystal shard" },
+  "description": ".",
+  "category": "other",
+  "weight": "15 g",
+  "volume": "17 ml",
+  "price_postapoc": "10 USD",
+  "symbol": "s",
+  "color": "blue",
+  "flags": ["NO_SALVAGE"]
+},
+  {
+    "id": "forest_powder",
+    "type": "ITEM",
+    "subtypes": ["COMESTIBLE"],
+    "comestible_type": "MED",
+    "name": { "str_sp": "forest powder" },
+    "description": ".",
+    "weight": "5 g",
+    "volume": "5 ml",
+    "price_postapoc": "1 USD",
+    "material": ["powder"],
+    "symbol": "!",
+    "color": "light_gray",
+    "container": "bag_plastic_small",
+    "flags": ["NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "WATER_DISSOLVE", "NO_TEMP"],
+    "use_action": { "type": "heal", "bleed": 15, "disinfectant_power": 2, "bite": 0.95, "move_cost": 2000 }
+  },
+    {
+    "id": "healing_liquid",
+    "type": "ITEM",
+    "subtypes": ["AMMO"],
+    "category": "drugs",
+    "name": { "str_sp": "healing liquid" },
+    "description": "This hemostatic liquid stops bleeding quickly and reliably. A wrist injector is required for application.",
+    "weight": "1 mg",
+    "volume": "1 ml",
+    "container": "vial_glass",
+    "price_postapoc": "5 USD",
+    "material": [ "water" ],
+    "symbol": "~",
+    "color": "dark_gray",
+    "count": 6,
+    "ammo_type": "healing_liquid"
+  },
+  {
+    "id": "powder_shadow",
+    "type": "ITEM",
+    "category": "chems",
+    "name": { "str_sp": "shadow powder" },
+    "description": ".",
+    "weight": "1 mg",
+    "volume": "1 ml",
+    "price_postapoc": "1 USD",
+    "material": ["powder_nonflam"],
+    "symbol": "*",
+    "color": "dark_gray"
   }
 
 

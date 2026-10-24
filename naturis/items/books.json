@@ -107,5 +107,26 @@
     "melee_damage": { "bash": 8 },
     "read_skill": "firstaid",
     "read_fun": -1
+  },
+  {
+    "id": "monster_hunter_2",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "name": { "str": "hunted monsters collector's edition" },
+    "description": "The content is the same as that of the standard edition, but it includes detailed sketches and ideas for items that were never realized.",
+    "weight": "400 g",
+    "volume": "750 ml",
+    "price": "40 USD",
+    "price_postapoc": "50 cent",
+    "material": [ "paper", "plastic" ],
+    "symbol": "?",
+    "looks_like": "glassblowing_book",
+    "color": "green",
+    "required_level": 7,
+    "max_level": 6,
+    "intelligence": 7,
+    "time": "55 m",
+    "read_skill": "fabrication",
+    "read_fun": -1
   }
 ]

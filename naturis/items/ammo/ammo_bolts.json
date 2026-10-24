@@ -47,7 +47,30 @@
     "dispersion": 75,
     "recovery_chance": 65,
     "melee_damage": { "cut": 4 }
+  },
+    {
+    "type": "ITEM",
+    "subtypes": ["AMMO"],
+    "id": "arrow_wood_crystal",
+    "name": { "str": "crystal-tipped arrow" },
+    "looks_like": "arrow_cf",
+    "copy-from": "arrow_wood",
+    "description": "A fletched wooden arrow with a crystal head.  It's quite sharp, but very easily broken.",
+    "material": [{ "type": "wood", "portion": 81 }, { "type": "crystal", "portion": 19 }],
+    "effects": ["NOGIB", "NEVER_MISFIRES", "NON_FOULING"],
+    "volume": "95 ml",
+    "stack_max": 1,
+    "price_postapoc": "2 USD",
+    "weight": "34 g",
+    "longest_side": "76 cm",
+    "ammo_type": "arrow",
+    "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 4 },
+    "range": 6,
+    "dispersion": 150,
+    "recovery_chance": 60,
+    "melee_damage": { "stab": 4 }
   }
+ 
 
 
 

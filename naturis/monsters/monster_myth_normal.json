@@ -1,0 +1,266 @@
+[
+    {
+    "id": "mon_thorn_skitter",
+    "type": "MONSTER",
+    "name": { "str": "thorn skitter" },
+    "description": "An oversized lizard, with knobby thorns growing on its tough skin.",
+    "default_faction": "frog",
+    "bodytype": "lizard",
+    "species": [ "REPTILE" ],
+    "diff": 2,
+    "volume": "55 L",
+    "weight": "45 kg",
+    "hp": 40,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "B",
+    "color": "green",
+    "morale": 30,
+    "melee_skill": 4,
+    "melee_dice": 1,
+    "melee_dice_sides": 5,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "dodge": 2,
+    "armor": { "cut": 4 },
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "dissect": "dissect_lizard_sample_single",
+    "harvest": "thorn_skitter",
+    "vision_night": 5,
+    "path_settings": { "max_dist": 8 },
+    "grab_strength": 2,
+    "special_attacks": [
+           {
+        "type": "bite",
+        "cooldown": 15,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 4, "armor_multiplier": 0.7 }]
+      }
+    ],
+    "fear_triggers": [ "FRIEND_DIED", "FIRE", "SOUND" ],
+    "anger_triggers": [ "STALK", "PLAYER_WEAK", "PLAYER_CLOSE", "MATING_SEASON" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "flags": [ "FISHABLE", "SEES", "SMELLS", "HEARS", "SWIMS", "CLIMBS", "ANIMAL", "HIT_AND_RUN" ]
+  },
+    {
+    "id": "mon_glow_cap",
+    "type": "MONSTER",
+    "name": { "str": "glow cap" },
+    "description": "A large, disc-shaped mushroom that appears to hover above the ground. A cloud of iridescent spores surrounds it.",
+    "default_faction": "forest",
+    "species": [ "PLANT" ],
+    "diff": 2,
+    "volume": "111500 ml",
+    "weight": "80 kg",
+    "hp": 110,
+    "speed": 80,
+    "material": [ "vegetable" ],
+    "symbol": "F",
+    "color": "green",
+    "aggression": 20,
+    "luminance": 2,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
+    "bleed_rate": 60,
+    "weakpoint_sets": [ "wps_triffid" ],
+    "families": [ "prof_intro_biology", "prof_wp_triffid_basic", "prof_wp_triffid_advanced" ],
+    "harvest": "glow_cap",
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "emit_fields": [
+  {
+    "emit_id": "emit_hallucinogenic_spores",
+    "delay": "10 seconds"
+  }
+],
+    "dissect": "dissect_plant_sample_single",
+    "special_attacks": [
+      { "id": "long_barbed_tentacle", "throw_strength": 10 } 
+    ],
+    "flags": [ "NOHEAD", "SEES" ],
+    "armor": { "electric": 2 }
+  },
+  {
+    "id": "mon_small_raptor",
+    "type": "MONSTER",
+    "name": {
+      "str": "small raptor",
+      "str_pl": "small raptors"
+    },
+    "description": "A small, lean reptilian predator with short forelimbs, a narrow snout and sharp little claws. It is dangerous to small prey, but usually avoids opponents that are too large or well armed.",
+    "default_faction": "forest",
+    "bodytype": "lizard",
+    "species": [ "REPTILE" ],
+    "diff": 1,
+    "volume": "35 L",
+    "weight": "25000 g",
+    "hp": 35,
+    "speed": 110,
+    "stomach_size": 100,
+    "material": [ "flesh" ],
+    "symbol": "r",
+    "color": "brown",
+    "aggression": 40,
+    "morale": 20,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_damage": [
+      {
+        "damage_type": "cut",
+        "amount": 2
+      }
+    ],
+    "dodge": 1,
+    "families": [
+      "prof_intro_biology",
+      "prof_physiology"
+    ],
+      "special_attacks": [
+      [ "EAT_CARRION", 40 ]
+    ],
+    "harvest": "small_raptor",
+    "reproduction": { "baby_egg": "egg_small_raptor", "baby_count": 1, "baby_timer": 50 },
+    "dissect": "dissect_lizard_sample_single",
+    "vision_day": 20,
+    "vision_night": 3,
+    "path_settings": {
+      "max_dist": 8
+    },
+    "upgrades": { "half_life": 200, "into": "mon_big_raptor" },
+    "fear_triggers": [
+      "FRIEND_DIED",
+      "FIRE",
+      "SOUND"
+    ],
+    "anger_triggers": [
+      "HURT",
+      "PLAYER_WEAK"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "ANIMAL",
+      "HIT_AND_RUN",
+      "GROUP_MORALE"
+    ]
+  },
+  {
+    "id": "mon_frost_brawler",
+    "type": "MONSTER",
+    "name": {
+      "str": "frost brawler",
+      "str_pl": "frost brawlers"
+    },
+    "description": "A lean, pale predator adapted to frozen caves. Its dense fur and icy hide protect it from the cold, while its hooked claws and frostbitten bite make it dangerous at close range.",
+    "default_faction": "ice",
+    "bodytype": "lizard",
+    "species": ["REPTILE"],
+    "diff": 3,
+    "volume": "110 L",
+    "weight": "70000 g",
+    "hp": 115,
+    "speed": 120,
+    "material": ["flesh"],
+    "symbol": "r",
+    "color": "light_blue",
+    "aggression": 85,
+    "morale": 70,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_damage": [
+      { "damage_type": "cut", "amount": 3 },
+      { "damage_type": "cold", "amount": 2 }
+    ],
+    "dodge": 2,
+        "special_attacks": [
+      {"type": "spell",
+        "spell_data": { "id": "slash_ice_weak"},
+        "monster_message": "The %s  slashes you with his frozen claws!",
+        "cooldown": 10
+      }
+    ],
+    "armor": { "cut": 2, "bash": 1 },
+    "families": [
+      "prof_intro_biology", "prof_wp_mythic",
+      "prof_physiology"
+    ],
+    "harvest": "frost_brawler",
+    "dissect": "dissect_lizard_sample_single",
+    "vision_day": 20,
+    "vision_night": 6,
+    "path_settings": {
+      "max_dist": 10
+    },
+    "anger_triggers": [
+      "HURT",
+      "PLAYER_CLOSE",
+      "PLAYER_WEAK"
+    ],
+    "fear_triggers": [
+      "FIRE"
+    ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "ANIMAL",
+      "COLDPROOF"
+    ]
+  },
+   {
+   "id": "mon_ember_stalker",
+   "type": "MONSTER",
+   "name": { "str": "ember stalker" },
+   "description": "A dog-like, sluggish creature that is extremely aggressive. Its ability to set its surroundings on fire makes it more dangerous than initially assumed.",
+   "default_faction": "fire",
+   "bodytype": "dog",
+   "diff": 2,
+   "species": ["MYTHIC"],
+   "volume": "8200 ml",
+   "weight": "8350 g",
+   "hp": 125,
+   "speed": 80,
+   "material": ["flesh"],
+   "symbol": "d",
+   "color": "green",
+   "scents_tracked": ["sc_human", "sc_fetid"],
+   "aggression": 100,
+   "morale": 90,
+   "melee_skill": 4,
+   "melee_dice": 1,
+   "melee_dice_sides": 6,
+   "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
+   "grab_strength": 15,
+   "dodge": 1,
+   "families": ["prof_intro_biology", "prof_physiology", "prof_wp_mythic"],
+   "vision_night": 4,
+   "harvest": "ember_stalker",
+   "special_attacks": [
+     { "id": "bite_grab", "attack_upper": false, "cooldown": 8 },
+     { "id": "scratch_grab_required" },
+           {"type": "spell",
+        "spell_data": { "id": "fire_field"},
+        "monster_message": "The %s  spits fire!",
+        "cooldown": 25
+      }
+   ],
+   "flags": [
+     "SEES",
+     "HEARS",
+     "SMELLS",
+     "GRABS",
+     "BELLYUP"
+   ],
+   "armor": { "cut": 1, "bash": 3, "heat": 15 }
+ }
+
+
+  
+  
+  
+  
+  
+]

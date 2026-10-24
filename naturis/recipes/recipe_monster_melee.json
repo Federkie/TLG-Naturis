@@ -10,7 +10,7 @@
     "time": "3 h",
     "reversible": true,
     "proficiencies": [ { "proficiency": "prof_carving" } ],
-    "book_learn": [ [ "monster_hunter", 2 ] ],
+    "book_learn": [ [ "monster_hunter", 2 ], [ "monster_hunter_2", 1 ] ],
     "qualities": [ { "id": "SAW_W", "level": 2 }, { "id": "CUT", "level": 2 }, { "id": "DRILL", "level": 2 } ],
     "components": [
       [ [ "dragon_hair", 1 ] ],
@@ -30,7 +30,7 @@
     "time": "6 h",
     "reversible": true,
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_monstermaterials" } ],
-    "book_learn": [ [ "monster_hunter", 4 ] ],
+    "book_learn": [ [ "monster_hunter", 4 ], [ "monster_hunter_2", 3 ] ],
     "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "HAMMER", "level": 2 }, { "id": "CUT", "level": 2 } ],
     "components": [
@@ -49,7 +49,7 @@
     "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 4,
-    "book_learn": [ [ "monster_hunter", 4 ] ],
+    "book_learn": [ [ "monster_hunter", 4 ], [ "monster_hunter_2", 3 ] ],
     "time": "5 h 40 m",
     "proficiencies": [
       { "proficiency": "prof_metalworking" },
@@ -76,7 +76,7 @@
     "subcategory": "CSC_WEAPON_CUTTING",
     "skill_used": "fabrication",
     "difficulty": 7,
-    "book_learn": [ [ "monster_hunter", 5 ] ],
+    "book_learn": [ [ "monster_hunter", 5 ], [ "monster_hunter_2", 3 ] ],
     "time": "5 h",
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_redsmithing" }, { "proficiency": "prof_monstermaterials" } ],
     "using": [ [ "redsmithing_standard", 4 ] ],
@@ -98,13 +98,93 @@
     "difficulty": 4,
     "time": "3 h",
     "reversible": false,
-    "book_learn": [ [ "monster_hunter", 3 ] ],
+    "book_learn": [ [ "monster_hunter", 3 ], [ "monster_hunter_2", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_welding_basic" }, { "proficiency": "prof_monstermaterials" } ],
     "using": [ [ "welding_standard", 2 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 } ],
     "components": [
       [ [ "fencing_epee_sharpened", 1 ], [ "fencing_epee", 1 ] ],
       [ [ "tail_tip", 1 ] ]
+    ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "result": "katana_inferno",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "skills_required": [ "chemistry",3 ],
+    "difficulty": 8,
+    "time": "3 h",
+    "book_learn": [ [ "monster_hunter_2", 7 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_bladesmith" },
+      { "proficiency": "prof_monstermaterials" }
+    ],
+    "using": [ [ "blacksmithing_standard", 2 ], [ "steel_standard", 2 ] ],
+    "qualities": [ { "id": "GRIND", "level": 2 } ],
+    "components": [ 
+      [ [ "charcoal_old", 2 ] ],
+      [ [ "fire_pearl", 1 ] ],
+      [ [ "sword_static", 1 ] ] 
+    ],
+    "tools": [ [ [ "hotcut_any", 1, "LIST" ] ] ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "crystal_ax",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "2 h",
+    "reversible": false,
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_monstermaterials" }
+    ],
+    "qualities": [ { "id": "SAW_W", "level": 1 }, { "id": "HAMMER_SOFT", "level": 1 }, { "id": "DRILL", "level": 2 } ],
+    "components": [ [ [ "strong_bone", 1 ], [ "bone_curved", 2 ] ], 
+      [ [ "crystal_antler", 1 ] ],
+      [ [ "leather_patch", 2 ] ],
+      [ [ "nail", 4 ] ],
+      [ [ "super_glue", 2 ] ]
+    ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "claw_knife",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_STABBING",
+    "skill_used": "fabrication",
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ [ [ "duct_tape", 25 ] ], [ [ "claw_sharp", 1 ] ] ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "knife_forest",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "6 h 30 m",
+    "book_learn": [ [ "monster_hunter_2", 3 ], [ "monster_hunter", 4 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_monstermaterials" }
+    ],
+    "qualities": [ { "id": "GRIND", "level": 2 }, { "id": "SAW_W", "level": 2 }, { "id": "CUT", "level": 2 } ],
+    "components": [ [ [ "strong_bone", 1 ], [ "bone_curved", 2 ] ], 
+      [ [ "forest_claw", 1 ] ],
+      [ [ "dragon_hair", 4 ] ],
+      [ [ "leather_durable", 1 ] ]
     ]
   }
   

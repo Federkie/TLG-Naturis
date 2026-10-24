@@ -1,0 +1,41 @@
+[
+  {
+"type": "ITEM",
+"id": "electric_hunting_trap",
+"subtypes": [ "TOOL" ],
+"name": {
+"str": "electric hunting trap"
+},
+"description": "A single-use electrical hunting trap made from conductive materials. When a creature steps on it, the trap releases an electrical burst that damages nearby creatures.",
+"category": "traps",
+"weight": "700 g",
+"volume": "350 ml",
+"material": [ "steel", "plastic" ],
+"symbol": ";",
+"color": "light_blue",
+"use_action": {
+"type": "place_trap",
+"trap": "tr_electric_hunting_trap",
+"moves": 100,
+"practice": 1,
+"done_message": "You place the electric hunting trap."
+},
+"flags": [ "SINGLE_USE" ]
+},
+{
+"type": "trap",
+"id": "tr_electric_hunting_trap",
+"name": "placed electric hunting trap",
+"color": "light_blue",
+"symbol": "^",
+"action": "spell",
+"visibility": -1,
+"avoidance": 99,
+"difficulty": 0,
+"spell_data": {
+"id": "electric_trap_burst"
+}
+}
+  
+  
+]

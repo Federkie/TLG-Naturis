@@ -4,7 +4,7 @@
     "id": "Naturis",
     "name": "<color_green>Naturis</color>",
     "authors": [ "Federkie" ],
-    "description": "Adds the forest walker and some natural phenomens. ",
+    "description": "Expands the natural component with new creatures, hunting mechanics, and recipes. ",
     "version": "TLG version",
     "category": "content",
     "dependencies": [ "tlg" ]

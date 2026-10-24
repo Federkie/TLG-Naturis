@@ -1,0 +1,26 @@
+[
+  {
+    "type": "palette",
+    "id": "overgrown_swamp_palette",
+    "terrain": {
+       "/": [ [ "t_tree_young", 3 ], [ "t_trunk", 2 ],[ "t_null", 1 ],[ "t_dirtmound", 2 ] ],
+       "l": "t_wall_wood",
+       "_": "t_dirt_rocky",
+       ".": "t_water_murky"
+    },
+    "furniture": {
+      "C": [ [ "f_chair_grown", 1 ], [ "f_null", 2 ] ],
+      "x": [ [ "f_stool_grown", 1 ], [ "f_null", 2 ] ],
+      "t": "f_stool_grown",
+      "8": "f_trashcan_grown",
+      "T": "f_dresser_grown",
+      "=": "f_table",
+      "&": [ [ "f_chair_grown", 1 ], [ "f_dresser_grown", 1 ], [ "f_null", 2 ]  ],
+      "~": "f_natur_root",
+      "Y": "f_rack_coat_grown",
+      "d": "f_boulder_small",
+      "0": [ [ "f_obelisk", 6 ], [ "f_obelisk_glow", 1], [ "f_obelisk_big", 3 ], [ "f_obelisk_big_glow", 1 ] ],
+      "w": "f_sandbag_wall"
+    }
+  }
+]

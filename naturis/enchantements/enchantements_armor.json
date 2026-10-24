@@ -14,5 +14,14 @@
     "name": { "str": "heat resist" },
     "description": ".",
     "incoming_damage_mod": [{ "type": "heat", "multiply": -0.20 }]
-  }
+  },
+   {
+   "type": "enchantment",
+   "id": "enchant_enhanced_stamina",
+   "has": "WORN",
+   "condition": "ALWAYS",
+   "name": { "str": "heat resist" },
+   "description": ".",
+   "values": [ { "value": "MAX_STAMINA", "add": 200 } ]
+ }
 ]

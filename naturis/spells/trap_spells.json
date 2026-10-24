@@ -1,0 +1,63 @@
+[
+    {
+    "type": "SPELL",
+    "id": "electric_trap_burst",
+    "name": {
+      "str": "Electric Hunting Trap"
+    },
+    "description": "An electrical burst released by a hunting trap that can temporarily paralyze creatures.",
+    "effect": "attack",
+    "shape": "blast",
+    "valid_targets": [
+      "self",
+      "ally",
+      "hostile",
+      "ground"
+    ],
+    "flags": [
+      "SILENT", "NO_EXPLOSION_SFX"
+    ],
+    "min_damage": 15,
+    "max_damage": 50,
+    "min_aoe": 2,
+    "max_aoe": 3,
+    "damage_type": "electric",
+    "field_id": "fd_electricity",
+    "field_chance": 1,
+    "min_field_intensity": 1,
+    "max_field_intensity": 2,
+    "extra_effects": [
+      {
+        "id": "electric_trap_paralysis"
+      }
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "electric_trap_paralysis",
+    "name": {
+      "str": "Electric Trap Paralysis"
+    },
+    "description": "A brief paralysis caused by an electrical hunting trap.",
+    "effect": "attack",
+    "effect_str": "paralyzepoison",
+    "shape": "blast",
+    "valid_targets": [
+      "hostile"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_PROJECTILE",
+      "NO_EXPLOSION_SFX"
+    ],
+    "min_aoe": 2,
+    "max_aoe": 3,
+    "min_duration": 500,
+    "max_duration": 1000
+  }
+  
+  
+  
+  
+  
+]

@@ -1,13 +1,203 @@
 [
   {
     "type": "mission_definition",
+    "id": "MISSION_NATURIS_HUNT_THORN_SKITTER",
+    "name": "Hunt: Thorn Skitter",
+    "description": "Kill a Thorn Skitter and show me what you can do.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_thorn_skitter",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "swamp", "reveal_radius": 1, "random": true, "search_range": 15, "min_distance": 10 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_thorn_skitter", "x": 8, "y": 8, "target": true }] }
+    },
+    "followup": "MISSION_NATURIS_HUNT_SMALL_RAPTOR",
+    "dialogue": {
+      "describe": "Hunt: Thorn Skitter.",
+      "offer": "Kill one of those lizards, running all over the place. Even you should be able to manage that.",
+      "accepted": "All right, now get going and slay this lizard.",
+      "rejected": "I hadn't expected anything else.",
+      "advice": "Bash his skull in, what else is there to explain?",
+      "inquire": "Were you successful?",
+      "success": "Well, it wasn't exactly difficult.",
+      "success_lie": "Don't tell me fairy tales, slay the beast.",
+      "failure": "Come back when you're ready."
+    }
+  },
+   {
+   "type": "mission_definition",
+   "id": "MISSION_NATURIS_HUNT_SMALL_RAPTOR",
+   "name": "Hunt: small Raptors",
+   "description": "Kill three small Raptors and show me what you can do.",
+   "goal": "MGOAL_KILL_MONSTER",
+   "monster_type": "mon_small_raptor",
+   "monster_kill_goal": 3,
+   "difficulty": 2,
+   "value": 500,
+   "has_generic_rewards": false,
+   "invisible_on_complete": true,
+   "origins": ["ORIGIN_ANY_NPC"],
+      "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 15, "min_distance": 10 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_small_raptor", "pack_size": [4, 6], "x": 8, "y": 8, "target": true }] }
+    },
+   "followup": "MISSION_NATURIS_HUNT_GLOW_CAP",
+   "dialogue": {
+     "describe": "Hunt: Three small Raptors.",
+     "offer": "Kill three of those raptors, running all over the place. Even you should be able to manage that.",
+     "accepted": "All right, now get going and slay these Raptors.",
+     "rejected": "I hadn't expected anything else.",
+     "advice": "Bash his skull in, what else is there to explain?",
+     "inquire": "Were you successful?",
+     "success": "Well, it wasn't exactly difficult.",
+     "success_lie": "Don't tell me fairy tales, slay the beast.",
+     "failure": "Come back when you're ready."
+   },
+   "end": {
+  "effect": [
+    {
+      "u_spawn_item": "monster_hunter",
+      "count": 1
+    }
+  ]
+}
+ },
+  {
+  "type": "mission_definition",
+  "id": "MISSION_NATURIS_HUNT_GLOW_CAP",
+  "name": "Hunt: Glow Cap",
+  "description": "Hunt down a Glow Cap and tell me what it was like.",
+  "goal": "MGOAL_KILL_MONSTER",
+  "monster_type": "mon_glow_cap",
+  "monster_kill_goal": 1,
+  "difficulty": 3,
+  "value": 500,
+  "has_generic_rewards": false,
+  "invisible_on_complete": true,
+  "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "forest_thick",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 1,
+        "random": true,
+        "search_range": 20,
+        "min_distance": 10,
+        "z": 0
+      },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_glow_cap", "x": 11, "y": 11, "target": true }] }
+    },
+  "followup": "MISSION_NATURIS_HUNT_VEIL_STALKER",
+  "dialogue": {
+    "describe": "Hunt: Glow Cap.",
+    "offer": "Take down a glow cap, but watch out for its spores. They aren’t dangerous, but they can cloud your senses.",
+    "accepted": "All right, now get going and slay the beast.",
+    "rejected": "I hadn't expected anything else.",
+    "advice": "Chop the beast into pieces.",
+    "inquire": "Were you successful?",
+    "success": "That was an interesting trip, wasn't it? Now we can start with something difficult.",
+    "success_lie": "Don't tell me fairy tales, slay the beast.",
+    "failure": "Come back when you're ready."
+  }
+},
+ {
+   "type": "mission_definition",
+   "id": "MISSION_NATURIS_HUNT_VEIL_STALKER",
+   "name": "Hunt: Veil Stalker",
+   "description": "Hunt down a Veil Stalker and tell me what it was like.",
+   "goal": "MGOAL_KILL_MONSTER",
+   "monster_type": "mon_veil_stalker",
+   "monster_kill_goal": 1,
+   "difficulty": 6,
+   "value": 500,
+   "has_generic_rewards": false,
+   "invisible_on_complete": true,
+   "origins": ["ORIGIN_ANY_NPC"],
+   "start": {
+     "assign_mission_target": {
+       "om_terrain": "forest_thick",
+       "om_terrain_replace": "forest",
+       "reveal_radius": 1,
+       "random": true,
+       "search_range": 30,
+       "min_distance": 10,
+       "z": 0
+     },
+     "update_mapgen": { "place_monster": [{ "monster": "mon_veil_stalker", "x": 11, "y": 11, "target": true }] }
+   },
+   "followup": "MISSION_NATURIS_HUNT_CRYSTAL_WALKER",
+   "dialogue": {
+     "describe": "Hunt: Veil Stalker.",
+     "offer": "Take down a Veil Walker; one of those beasts is prowling the woods and getting in my way while I’m out gathering mushrooms.",
+     "accepted": "All right, now get going and slay the beast.",
+     "rejected": "I hadn't expected anything else.",
+     "advice": "Don't let yourself be caught off guard.",
+     "inquire": "Were you successful?",
+     "success": "His shadow may have caught you, but that was to be expected.",
+     "success_lie": "Don't tell me fairy tales, slay the beast.",
+     "failure": "Come back when you're ready."
+   }
+ },
+   {
+   "type": "mission_definition",
+   "id": "MISSION_NATURIS_HUNT_CRYSTAL_WALKER",
+   "name": "Hunt: Crystal Walker",
+   "description": "Hunt down a Crystal Walker and tell me what it was like.",
+   "goal": "MGOAL_KILL_MONSTER",
+   "monster_type": "mon_crystal_walker",
+   "monster_kill_goal": 1,
+   "difficulty": 6,
+   "value": 500,
+   "has_generic_rewards": false,
+   "invisible_on_complete": true,
+   "origins": ["ORIGIN_ANY_NPC"],
+  "start": {
+    "assign_mission_target": {
+      "om_terrain": "forest_thick",
+      "om_terrain_replace": "forest",
+      "reveal_radius": 1,
+      "random": true,
+      "search_range": 30,
+      "min_distance": 10,
+      "z": 0
+    },
+    "update_mapgen": { "place_monster": [{ "monster": "mon_crystal_walker", "x": 11, "y": 11, "target": true }] }
+  },
+   "followup": "MISSION_NATURIS_HUNT_FLYING_FIRE",
+   "dialogue": {
+     "describe": "Hunt: Crystal Walker.",
+     "offer": "Kill one of these Crystal Walkers, a deer-like creature. You’ll recognize it as soon as you see it.",
+     "accepted": "All right, now get going and slay the beast.",
+     "rejected": "I hadn't expected anything else.",
+     "advice": "Watch out for his antlers.",
+     "inquire": "Were you successful?",
+     "success": "He left something of you behind, impressive. Now things are getting started with some truly nasty critters!",
+     "success_lie": "Don't tell me fairy tales, slay the beast.",
+     "failure": "Come back when you're ready."
+   },
+     "end": {
+  "effect": [
+    {
+      "u_spawn_item": "manual_tailor_monster",
+      "count": 1
+    }
+  ]
+}
+ },
+  {
+    "type": "mission_definition",
     "id": "MISSION_NATURIS_HUNT_RAPID_STRIKER",
     "name": "Hunt: Rapid Striker",
     "description": "Hunt down a Rapid Striker and tell me what it was like.",
     "goal": "MGOAL_KILL_MONSTER",
     "monster_type": "mon_rapid_striker",
     "monster_kill_goal": 1,
-    "difficulty": 6,
+    "difficulty": 9,
     "value": 500,
     "has_generic_rewards": false,
     "invisible_on_complete": true,
@@ -21,7 +211,7 @@
   },
   "update_mapgen": { "place_monster": [{ "monster": "mon_rapid_striker", "x": [1, 10], "y": [1, 10], "target": true }] }
 },
-    "followup": "MISSION_NATURIS_HUNT_FLYING_FIRE",
+    "followup": "MISSION_NATURIS_HUNT_FOREST_DRAGON",
     "dialogue": {
       "describe": "Hunt: Rapid Striker.",
       "offer": "Hunt down a Rapid Striker.",
@@ -42,21 +232,17 @@
     "goal": "MGOAL_KILL_MONSTER",
     "monster_type": "mon_flying_fire",
     "monster_kill_goal": 1,
-    "difficulty": 6,
+    "difficulty": 7,
     "value": 500,
     "has_generic_rewards": false,
     "invisible_on_complete": true,
     "origins": [
       "ORIGIN_SECONDARY"
     ],
-      "start": {
-    "assign_mission_target": {
-      "om_terrain": "burning_fields",
-      "om_special": "burning_fields",
-      "reveal_radius": 2,
-      "must_see": false
-    }
-  },
+     "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 15, "min_distance": 20 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_flying_fire", "x": 8, "y": 8, "target": true }] }
+    },
     "followup": "MISSION_NATURIS_HUNT_ICE_FORMER",
     "dialogue": {
       "describe": "Hunt: Flying Fire.",
@@ -78,7 +264,7 @@
     "goal": "MGOAL_KILL_MONSTER",
     "monster_type": "mon_ice_former",
     "monster_kill_goal": 1,
-    "difficulty": 6,
+    "difficulty": 9,
     "value": 500,
     "has_generic_rewards": false,
     "invisible_on_complete": true,
@@ -115,7 +301,7 @@
     "goal": "MGOAL_KILL_MONSTER",
     "monster_type": "mon_beast_static",
     "monster_kill_goal": 1,
-    "difficulty": 6,
+    "difficulty": 9,
     "value": 500,
     "has_generic_rewards": false,
     "invisible_on_complete": true,
@@ -130,7 +316,7 @@
     },
     "update_mapgen": { "place_monster": [{ "monster": "mon_beast_static", "x": [1, 10], "y": [1, 10], "target": true }] }
   },
-    "followup": "MISSION_NATURIS_HUNT_FOREST_DRAGON",
+    "followup": "MISSION_NATURIS_HUNT_RAPID_STRIKER",
     "dialogue": {
       "describe": "Hunt: Static Beast.",
       "offer": "Hunt down a static beast.",
@@ -151,7 +337,7 @@
     "goal": "MGOAL_KILL_MONSTER",
     "monster_type": "mon_forest_dragon",
     "monster_kill_goal": 1,
-    "difficulty": 6,
+    "difficulty": 9,
     "value": 500,
     "has_generic_rewards": false,
     "invisible_on_complete": true,
@@ -176,6 +362,14 @@
       "success": "That's how I like it.",
       "success_lie": "Don't tell me fairy tales, slay the beast.",
       "failure": "Try again."
+    },
+      "end": {
+  "effect": [
+    {
+      "u_spawn_item": "monster_hunter_2",
+      "count": 1
     }
+  ]
+}
   }
 ]

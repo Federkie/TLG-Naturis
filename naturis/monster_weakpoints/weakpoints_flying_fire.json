@@ -93,7 +93,7 @@
           "damage_required": [ 10, 20 ]
         },
         {
-          "effect": "maimed_wingd",
+          "effect": "maimed_wings",
           "chance": 75,
           "duration": [ 30, 100 ],
           "message": "The %s's wings are badly maimed!",

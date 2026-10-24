@@ -1,0 +1,105 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_naturis_swamp_additions",
+    "object": {
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            1           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "nested": {
+        "1": {
+          "chunks": [
+            [
+              "naturis_overgrown_swamp_nested",
+              20
+            ],
+            [
+              "naturis_skitter_pond_nested", 60
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_overgrown_swamp_nested",
+    "object": {
+      "mapgensize": [
+        9,
+        9
+      ],
+      "rows": [
+        "         ",
+        "  /w   ww",
+        "  w 8_l w",
+        "  wl__  w",
+        "  wl=_l  ",
+        "  wlCTl  ",
+        "   lll   ",
+        "      w  ",
+        "         "
+      ],
+      "palettes": [ "overgrown_swamp_palette" ],
+      "items": {
+        "T": { "item": "tools_hunting", "chance": 10, "repeat": [ 1, 3 ] }
+        },
+      "terrain": {
+        "8": "t_dirt_rocky",
+        "=": "t_dirt_rocky",
+        "C": "t_dirt_rocky",
+        "T": "t_dirt_rocky"
+      }
+      }
+    },
+      {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_skitter_pond_nested",
+    "object": {
+      "mapgensize": [
+        9,
+        9
+      ],
+      "rows": [
+        "         ",
+        " .    0  ",
+        "0   ..   ",
+        "  .....  ",
+        "  ....   ",
+        "   ..0   ",
+        "         ",
+        "     d.  ",
+        "    ..   "
+      ],
+      "palettes": ["overgrown_swamp_palette"],
+          "place_monster": [
+      { "monster": "mon_thorn_skitter", "x": [3], "y": [3], "repeat": [ 1, 3 ]  }
+    ]
+    }
+  }
+
+]

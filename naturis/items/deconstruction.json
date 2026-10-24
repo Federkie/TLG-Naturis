@@ -15,7 +15,16 @@
     "time": "35 m",
     "qualities": [ { "id": "HAMMER", "level": 2 } ],
     "components": [ [ [ "splinter", 6 ] ] , [ [ "blade", 1 ] ] ]
+  },
+   {
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "crystal_antler",
+    "time": "35 m",
+    "qualities": [ { "id": "HAMMER_FINE", "level": 1 } ],
+    "components": [ [ [ "shard_crystal", 9 ] ] ]
   }
+
 
 
 

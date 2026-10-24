@@ -31,7 +31,7 @@
     "message": "<forest_dragon_harvest>",
     "entries": [
       { "drop": "forest_pearl", "type": "bone", "scale_num": [0, 3], "max": 1 },
-      { "drop": "forest_claw", "type": "bone", "scale_num": [1, 2], "max": 6 },
+      { "drop": "forest_claw", "type": "bone", "scale_num": [0, 2], "max": 2 },
       { "drop": "scale_forest_dragon", "type": "bone", "scale_num": [3, 7], "max": 20 },
       { "drop": "skull_forest_dragon", "type": "bone", "scale_num": [0, 3], "max": 1 },
       { "drop": "bone_curved", "type": "flesh", "mass_ratio": 0.3 },
@@ -85,7 +85,6 @@
    "entries": [
      { "drop": "shard_ice", "type": "bone", "scale_num": [0, 3], "max": 5 },
      { "drop": "heart_frozen", "type": "bone", "scale_num": [0, 1], "max": 1 },
-     { "drop": "scale_forest_dragon", "type": "bone", "scale_num": [1, 2], "max": 10 },
      { "drop": "perennial_ice", "type": "bone", "scale_num": [0, 1], "max": 2 },
      { "drop": "bone_frozen", "type": "flesh", "mass_ratio": 0.3 },
      { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
@@ -105,5 +104,164 @@
      { "drop": "feather_burning", "type": "skin", "mass_ratio": 0.02 },
      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
    ]
- }
+ },
+    {
+    "id": "fire_chick",
+    "type": "harvest",
+    "message": "<flying_fire_harvest>",
+    "entries": [
+      { "drop": "bone_curved", "type": "flesh", "mass_ratio": 0.3 },
+      { "drop": "feather_burning", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+    ]
+  },
+   {
+   "id": "static_hatchling",
+   "type": "harvest",
+   "message": "<static_beast_harvest>",
+   "entries": [
+     { "drop": "stinger_charged", "type": "bone", "scale_num": [0, 1], "max": 1 },
+     { "drop": "leather_durable", "type": "skin", "mass_ratio": 0.02 },
+     { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+   ]
+ },
+  {
+    "id": "tree_static_harv", 
+    "type": "harvest",
+    "message": "<shroom_harvest>",
+    "entries": [ 
+     { "drop": "charged_resin", "base_num": [ 1, 5 ] , "difficulty": 0 } ]
+  },
+   {
+   "id": "rapid_hatchling",
+   "type": "harvest",
+   "message": "<rapid_striker_harvest>",
+   "entries": [
+     { "drop": "bone_curved", "type": "bone", "scale_num": [0, 1], "max": 1 },
+     { "drop": "leather_durable", "type": "skin", "mass_ratio": 0.02 },
+     { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+   ]
+ },
+    {
+     "id": "fdragon_hatchling",
+     "type": "harvest",
+     "message": "<forest_dragon_harvest>",
+     "entries": [
+       { "drop": "bone_curved", "type": "bone", "scale_num": [0, 1], "max": 1 },
+       { "drop": "scale_forest_dragon", "type": "skin", "mass_ratio": 0.02 },
+       { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+     ]
+   },
+   {
+  "id": "icef_hatchling",
+  "type": "harvest",
+  "message": "<ice_former_harvest>",
+  "entries": [
+    { "drop": "bone_frozen", "type": "bone", "scale_num": [0, 1], "max": 1 },
+    { "drop": "shard_ice", "type": "skin", "mass_ratio": 0.02 },
+    { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+  ]
+},
+  {
+    "id": "thorn_skitter",
+    "type": "harvest",
+    "entries": [
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.28 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.04 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "heart", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "skin_thorn", "type": "skin", "mass_ratio": 0.02 }
+    ]
+  },
+    {
+    "id": "glow_cap",
+    "type": "harvest",
+    "message": ".",
+    "entries": [
+      { "drop": "vegetable_tainted", "base_num": [8, 12], "scale_num": [0.6, 0.8], "max": 30, "type": "flesh" },
+      { "drop": "mushroom_network", "base_num": [4, 8], "scale_num": [0.5, 0.7], "max": 10, "type": "bone" }
+    ]
+  },
+    {
+    "id": "crystal_walker",
+    "type": "harvest",
+    "entries": [
+      { "drop": "crystal_antler", "type": "bone", "base_num": [0, 2], "max": 2 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.32 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [1, 1], "max": 1, "type": "offal" },
+      { "drop": "strong_bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "bone_marrow", "type": "bone", "mass_ratio": 0.005 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 },
+      { "drop": "crystallized_fur_sheet", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  },
+  {
+    "id": "small_raptor",
+    "type": "harvest",
+    "entries": [
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.12 },
+      { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.015 },
+      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "claw_sharp", "type": "bone", "scale_num": [ 0, 2 ], "max": 4 },
+      { "drop": "raptor_tendon", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
+    ]
+  },
+   {
+   "id": "big_raptor",
+   "type": "harvest",
+   "entries": [
+     { "drop": "claw_long", "type": "bone", "base_num": [0, 2], "max": 2 },
+     { "drop": "meat", "type": "flesh", "mass_ratio": 0.32 },
+     { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+     { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+     { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+     { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+     { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+     { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+     { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+     { "drop": "stomach_large", "scale_num": [1, 1], "max": 1, "type": "offal" },
+     { "drop": "strong_bone", "type": "bone", "mass_ratio": 0.15 },
+     { "drop": "bone_marrow", "type": "bone", "mass_ratio": 0.005 },
+     { "drop": "raptor_tendon", "type": "bone", "mass_ratio": 0.00035 },
+     { "drop": "leather_durable", "type": "skin", "mass_ratio": 0.02 },
+     { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+   ]
+ },
+  {
+    "id": "frost_brawler",
+    "type": "harvest",
+    "entries": [
+      { "drop": "shard_ice", "type": "bone", "scale_num": [0, 1], "max": 2 },
+      { "drop": "bone_frozen", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+    ]
+  },
+    {
+    "id": "ember_stalker",
+    "type": "harvest",
+    "entries": [
+      { "drop": "shard_fire", "type": "bone", "scale_num": [0, 1], "max": 2 },
+      { "drop": "strong_bone", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+    ]
+  }
+
+
+
+
+
 ]

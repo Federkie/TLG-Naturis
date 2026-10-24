@@ -120,8 +120,70 @@
       { "group": "GROUP_PLAGUE_ROACH", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_zombie", "weight": 200, "cost_multiplier": 0 }
  ]
-}
-
+},
+{
+    "name": "GROUP_FIRE_CHICK",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_fire_chick", "weight": 100, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_HATCHLING_STATIC",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_hatchling_static", "weight": 100, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_HATCHLING_RAPID",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_hatchling_rapid", "weight": 100, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_HATCHLING_FDRAGON",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_hatchling_fdragon", "weight": 100, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_HATCHLING_ICEF",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_hatchling_icef", "weight": 100, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_OTTER_BIG",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_otter_big", "weight": 100, "cost_multiplier": 0 },
+      { "monster": "mon_cub_otter_big", "weight": 10, "cost_multiplier": 1 } 
+       
+     ]
+},
+{
+  "name": "GROUP_SMALL_RAPTOR",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_small_raptor", "weight": 100, "cost_multiplier": 1 }
+  ]
+},
+{
+  "name": "GROUP_SMALL_RAPTOR_HATCHLINGS",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_hatchling_small_raptor", "weight": 100, "cost_multiplier": 1 }
+  ]
+},
+  {
+    "name": "GROUP_RAPTORS",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_null", "weight": 900 },
+      { "monster": "mon_hatchling_small_raptor", "weight": 50, "cost_multiplier": 5, "ends": "30 days" },
+      { "monster": "mon_small_raptor", "weight": 50, "cost_multiplier": 5 },
+      { "monster": "mon_big_raptor", "weight": 50, "cost_multiplier": 5, "starts": "20 days" }
+    ]
+  }
 
 
 

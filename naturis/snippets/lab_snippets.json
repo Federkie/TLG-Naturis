@@ -1,0 +1,21 @@
+[
+  {
+    "type": "snippet",
+    "//": "Medium-length test logs concerning experiments on naturis creatures.",
+    "category": "lab_file_bio_naturis",
+    "text": [
+      {
+        "id": "lab_file_small_raptor",
+        "text": "All Small Raptor specimens exhibit a markedly elevated response to sudden movement and acoustic stimuli, regardless of age or body mass. Preliminary observations suggest that this behavior is not solely predatory in nature, but may represent a defensive response amplified by the compound's effects on neuromuscular development. Subjects introduced to unfamiliar environments demonstrate rapid territorial assessment and will frequently attempt to establish dominance over smaller organisms. Direct handling is strongly discouraged. Sedation protocols remain unreliable due to inconsistent metabolic rates between specimens, and the use of multiple handlers has resulted in increased agitation rather than improved containment. Further testing should prioritize feeding behavior, pack coordination, and the extent to which these responses persist in the absence of external stimuli."
+      },
+      {
+        "id": "lab_file_veil_stalker",
+        "text": "The Veil Stalker specimen, which could only be subdued through chemical sedation, has been secured in one of the containment units as a precautionary measure. The enclosure has been additionally equipped with an anesthetic gas delivery system to mitigate the risk of further containment breaches. One security officer sustained injuries during the transfer procedure and was subsequently admitted to the medical ward. The mechanism by which the test subject initiates its phase transition remains unconfirmed. Further observation is required to determine whether the phenomenon is triggered voluntarily or in response to external stimuli."
+      }
+    ]
+  }
+  
+  
+  
+  
+]

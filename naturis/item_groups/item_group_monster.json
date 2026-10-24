@@ -8,7 +8,18 @@
       [ "fa_r_heat", 2 ],
       [ "fa_r_leaves", 3 ],
       [ "gravity_gun", 1 ],
-      [ "disk_crossbow",3 ]
+      [ "disk_crossbow",1 ],
+      [ "disk_static", 3],
+      [ "arrow_wood_crystal", 4],
+      [ "sword_rooted", 1],
+      [ "permafrost_cleaver", 1],
+      [ "regenerating_staff", 3],
+      [ "staff_claw", 1],
+      [ "sword_static", 1],
+      [ "rapid_epee", 1],
+      [ "crystal_ax", 2],
+      [ "claw_knife", 3],
+      [ "knife_forest", 1]
     ]
   }
 

@@ -33,6 +33,28 @@
     "id": "spell_cooldown",
     "name": ["Spell Cooldown"],
     "desc": ["."]
-   }
+   },
+   {
+  "type": "effect_type",
+  "id": "crystal_shards_damage",
+  "name": ["crystal shards"],
+  "desc": ["You are impaled by sharp crystal shards!"],
+  "rating": "bad",
+  "max_intensity": 1,
+  "max_duration": "1 second",
+  "base_mods": {
+    "hurt_min": [15],
+    "hurt_max": [40],
+    "hurt_chance": [90]
+  },
+  "show_in_info": true
+},
+  {
+    "type": "effect_type",
+    "id": "destroyed_antler",
+    "name": ["Destroyed Antler"],
+    "desc": ["Your Antler is broken.  You're not sure what to do with this information."],
+    "base_mods": { "speed_mod": [15] }
+  }
   
 ]

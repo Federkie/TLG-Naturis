@@ -69,9 +69,6 @@
          ">": "t_slope_up"
     },
       "palettes": [ "frozen_palette" ],
-      "place_monster": [
-      { "monster": "mon_ice_former", "x": [15], "y": [5] }
-    ],
        "nested": {
    "?": {
      "chunks": [
@@ -81,7 +78,9 @@
        ["frozen_2x2_03", 30],
        ["frozen_2x2_04", 30],
        ["frozen_2x2_05", 30],
-       ["frozen_2x2_06", 30]
+       ["frozen_2x2_06", 30],
+       ["frozen_2x2_08", 20],
+       ["frozen_2x2_07", 50]
      ]
    }
  }

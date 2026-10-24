@@ -365,9 +365,121 @@
     "weapon_category": ["FENCING_WEAPONRY"],
     "melee_damage": { "bash": 4, "stab": 16 },
     "passive_effects": [{ "id": "rapid_enchant" }]
+  },
+  {
+    "id": "katana_inferno",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "category": "weapons",
+    "name": { "str_sp": "inferno katana" },
+    "description": ".",
+    "weight": "1250 g",
+    "volume": "300 ml",
+    "longest_side": "90 cm",
+    "symbol": "/",
+    "color": "light_gray",
+    "looks_like": "katana",
+    "price_postapoc": "845 USD",
+    "material": [ { "type": "leather_durable", "portion": 1.1 }, { "type": "steel", "portion": 94 }, { "type": "chitin", "portion": 2 }  ],
+    "repairs_with": [ "steel" ],
+    "flags": [ "DURABLE_MELEE", "CONDUCTIVE", "SHEATH_SWORD", "FLAMING", "FIRE", "MUNDANE" ],
+    "techniques": [ "RAPID", "WBLOCK_2" ],
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "line", "balance": "good" },
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "weapon_category": [ "LONG_SWORDS" ],
+    "melee_damage": { "bash": 4, "cut": 34 },
+      "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "shock field",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_toolweapon_activate_katana_static",
+          "condition": { "and": [ { "not": "u_is_underwater" }, "has_ammo" ] },
+          "effect": [
+            { "u_make_sound": "zap!", "type": "combat", "volume": 10 },
+            { "u_message": "!" },
+            { "u_cast_spell": { "id": "explosion_static" } }
+          ],
+          "false_effect": [ { "u_message": "The katana doesn't seem to be working!" } ]
+        }
+      ]
+      },
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "description": ".",
+        "rigid": true,
+        "watertight": true,
+        "ammo_restriction": { "shard": 3 }
+      }
+    ],
+    "charges_per_use": 1,
+    "tool_ammo": [ "shard" ]
+  },
+    {
+    "id": "crystal_ax",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str": "crystal axe" },
+    "description": "A massive axe, crafted from the antlers of a Crystal Walker. The sharp, pointed tines of the antlers give the weapon a fearsome appearance.",
+    "weight": "2025 g",
+    "volume": "2070 ml",
+    "longest_side": "77 cm",
+    "price_postapoc": "170 USD",
+    "to_hit": { "grip": "solid", "length": "short", "surface": "line", "balance": "uneven" },
+    "material": [ "bone", "crystal" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "qualities": [ [ "CUT", 1 ], [ "AXE", 1 ], [ "BUTCHER", -36 ] ],
+    "techniques": [ "WBLOCK_1", "BRUTAL", "SWEEP" ],
+    "flags": [ "FRAGILE_MELEE", "NONCONDUCTIVE", "SHEATH_AXE", "NO_SALVAGE" ],
+    "weapon_category": [ "HOOKING_WEAPONRY", "GREAT_AXES" ],
+    "melee_damage": { "bash": 15, "cut": 8, "stab": 9 }
+  },
+    {
+    "id": "claw_knife",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "category": "weapons",
+    "name": { "str": "claw knife" },
+    "description": ".",
+    "volume": "310 ml",
+    "weight": "320 g",
+    "longest_side": "35 cm",
+    "price_postapoc": "1 USD 75 cent",
+    "to_hit": { "grip": "bad", "length": "hand", "surface": "point", "balance": "neutral" },
+    "material": [ "bone" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", -23 ] ],
+    "techniques": [ "WBLOCK_0" ],
+    "flags": [ "SHEATH_KNIFE" ],
+    "weapon_category": [ "KNIVES" ],
+    "melee_damage": { "bash": 2, "cut": 14 },
+    "thrown_damage": [ { "damage_type": "stab", "amount": 9 } ]
+  },
+  {
+      "id": "knife_forest",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "category": "weapons",
+    "name": { "str": "forest-blade knife", "str_pl": "forest-blade knifes" },
+    "description": ".",
+    "weight": "101 g",
+    "volume": "95 ml",
+    "longest_side": "18 cm",
+    "price_postapoc": "125 USD",
+    "techniques": [ "WBLOCK_0" ],
+    "to_hit": { "grip": "weapon", "length": "hand", "surface": "point", "balance": "good" },
+    "material": [ "keratin", "leather_durable" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "qualities": [ [ "CUT", 2 ], [ "CUT_FINE", 2 ], [ "BUTCHER", 25 ] ],
+    "flags": [ "SHEATH_KNIFE", "NONCONDUCTIVE" ],
+    "weapon_category": [ "KNIVES" ],
+    "thrown_damage": [ { "damage_type": "cut", "amount": 8 } ],
+    "melee_damage": { "cut": 10 }
   }
-
-
   
 
 ]

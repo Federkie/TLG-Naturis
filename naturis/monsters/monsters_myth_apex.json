@@ -4,34 +4,38 @@
     "type": "MONSTER",
     "name": { "str": "rapid striker" },
     "description": "A hulking lizard, its red scales shimmering like droplets of fresh blood. In its eyes glimmers a cold, lurking greed for new prey.",
-    "default_faction": "overgrown",
+    "default_faction": "forest",
     "bodytype": "lizard",
     "species": [ "MYTHIC" ],
     "diff": 10,
     "volume": "620 L",
     "weight": "760 kg",
-    "hp": 450,
+    "hp": 400,
     "speed": 140,
+    "stomach_size": 8000,
     "material": [ "flesh" ],
     "symbol": "S",
     "color": "brown",
-    "aggression": 60,
+    "aggression": 0,
+    "aggro_character": false,
     "morale": 80,
-    "melee_skill": 8,
+    "melee_skill": 7,
     "melee_dice": 5,
-    "melee_dice_sides": 8,
+    "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
     "dodge": 4,
     "vision_day": 35,
     "vision_night": 15,
-      "weakpoint_sets": [
+    "weakpoint_sets": [
     "wps_rapid_striker"
   ],
-    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_mythic" ],
     "harvest": "rapid_striker",
     "dissect": "dissect_lizard_sample_large",
     "grab_strength": 70,
     "special_attacks": [
+      [ "EAT_FOOD", 80 ], 
+      [ "EAT_CARRION", 80 ],
 {
   "type": "spell",
   "spell_data": {
@@ -79,7 +83,81 @@
         "damage_max_instance": [ { "damage_type": "stab", "amount": 22, "armor_multiplier": 0.1 } ],
         "effects": [ { "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 } ],
         "infection_chance": 30
+      },
+{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "rapid_striker_wounded_lunge",
+    "cooldown": 12,
+    "move_cost": 130,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 10
+      },
+      {
+        "damage_type": "bash",
+        "amount": 18
       }
+    ],
+    "condition": {
+      "and": [
+        {
+          "math": [
+            "u_hp('ALL') > 50"
+          ]
+        },
+        {
+          "math": [
+            "u_hp('ALL') < 300"
+          ]
+        }
+      ]
+    },
+    "dodgeable": true,
+    "blockable": true,
+    "hit_dmg_u": "%1$s lunges forward and tears into your %2$s!",
+    "hit_dmg_npc": "%1$s lunges forward and tears into <npcname>!",
+    "miss_msg_u": "%1$s lunges at you, but you dodge!",
+    "miss_msg_npc": "%1$s lunges at <npcname>, but they dodge!",
+    "no_dmg_msg_u": "%1$s lunges at you, but your armor stops the blow.",
+    "no_dmg_msg_npc": "%1$s lunges at <npcname>, but their armor stops the blow."
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "rapid_striker_wounded_bite",
+    "cooldown": 7,
+    "move_cost": 90,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 14
+      }
+    ],
+    "condition": {
+      "and": [
+        {
+          "math": [
+            "u_hp('ALL') > 50"
+          ]
+        },
+        {
+          "math": [
+            "u_hp('ALL') < 300"
+          ]
+        }
+      ]
+    },
+    "dodgeable": true,
+    "blockable": true,
+    "hit_dmg_u": "%1$s snaps at you with its jaws!",
+    "hit_dmg_npc": "%1$s snaps at <npcname> with its jaws!",
+    "miss_msg_u": "%1$s snaps at you, but you dodge!",
+    "miss_msg_npc": "%1$s snaps at <npcname>, but they dodge!",
+    "no_dmg_msg_u": "%1$s bites at you, but your armor protects you.",
+    "no_dmg_msg_npc": "%1$s bites at <npcname>, but their armor protects them."
+  }
     ],
     "regenerates": 1,
     "death_drops": "mon_rapid_striker_death_drops",
@@ -89,9 +167,12 @@
     "delay": "4 h"
   }
 ],
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
-    "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS" ],
-    "armor": { "bash": 6, "cut": 12, "bullet": 5, "electric": 5, "acid": 6 }
+    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK", "PLAYER_NEAR_BABY", "PLAYER_WEAK", "MATING_SEASON" ],
+        "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 20 },
+    "reproduction": { "baby_egg": "egg_rapid_striker", "baby_count": 4, "baby_timer": 20 },
+    "baby_flags": ["AUTUMN"],
+    "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS", "EATS" ],
+    "armor": { "bash": 6, "cut": 8, "bullet": 5, "electric": 5, "acid": 6 }
   },
   {
     "id": "mon_rapid_striker_tail",
@@ -100,7 +181,7 @@
     "description": "The severed tail of a rapid striker, still thrashing about aimlessly.",
     "color": "brown",
     "symbol": "7",
-    "default_faction": "overgrown",
+    "default_faction": "forest",
     "bodytype": "snake",
     "species": [ "MYTHIC" ],
     "material": [ "flesh" ],
@@ -127,14 +208,15 @@
     "type": "MONSTER",
     "name": { "str": "forest dragon" },
     "description": "A massive dragon that dwells deep within the forest. Its thick green scales and powerful body make it a formidable predator.",
-    "default_faction": "overgrown",
+    "default_faction": "forest",
     "bodytype": "snake",
     "species": [ "MYTHIC"],
     "volume": "625000 ml",
     "weight": "200 kg",
-    "hp": 350,
+    "hp": 370,
     "diff": 10,
     "speed": 95,
+    "stomach_size": 5000,
     "material": [ "flesh" ],
     "symbol": "S",
     "color": "green",
@@ -147,13 +229,13 @@
       "effect": { "id": "death_leaves", "hit_self": true, "min_level": 0 }
   },
     "melee_skill": 7,
-    "melee_dice": 4,
+    "melee_dice": 3,
     "melee_dice_sides": 7,
     "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "dodge": 3,
     "families": [
       "prof_intro_biology",
-      "prof_physiology"
+      "prof_physiology", "prof_wp_mythic"
     ],
     "bleed_rate": 50,
     "vision_day": 35,
@@ -163,6 +245,7 @@
   ],
     "dissect": "dissect_lizard_sample_single",
     "special_attacks": [
+      [ "EAT_CROP", 60 ],
      {"type": "spell",
         "spell_data": { "id": "leave_burst"},
         "monster_message": "The %s shoots an shower of sharp leaves on you!",
@@ -198,7 +281,9 @@
 ],
     "death_drops": "mon_forest_dragon_death_drops",
     "harvest": "forest_dragon",
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF" ],
+        "reproduction": { "baby_egg": "egg_forest_dragon", "baby_count": 1, "baby_timer": 20 },
+    "baby_flags": ["SPRING"],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF", "EATS" ],
     "armor": { "bash": 15, "cut": 20, "bullet": 15, "electric": 4, "acid": 10 }
   },
     {
@@ -207,10 +292,10 @@
     "name": { "str": "flying fire" },
     "description": "A majestic, brightly burning bird trailing a tail of fire behind it.",
     "species": "MYTHIC",
-    "default_faction": "overgrown",
+    "default_faction": "fire",
     "bodytype": "bird",
     "death_function": { "effect": { "id": "eggsplosion", "hit_self": true }, "message": "The %s explodes!" },
-    "diff": 8,
+    "diff": 7,
     "luminance": 10,
     "symbol": "T",
     "color": "blue_green",
@@ -224,11 +309,12 @@
     "vision_night": 15,
     "melee_skill": 5,
     "melee_dice": 3,
-    "melee_dice_sides": 8,
+    "melee_dice_sides": 6,
     "melee_damage": [ { "damage_type": "cut", "amount": 4.0 } ],
     "dodge": 3,
     "hp": 350,
     "harvest": "flying_fire",
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_flying", "prof_wp_basic_bird", "prof_wp_mythic" ],
     "weakpoint_sets": [
     "wps_flying_fire"
   ],
@@ -246,6 +332,9 @@
         }
       }
     ],
+        "reproduction": { "baby_egg": "egg_flying_fire", "baby_count": 1, "baby_timer": 10 },
+    "baby_flags": ["SPRING", "SUMMER"],
+    "biosignature": { "biosig_item": "charcoal", "biosig_timer": 6 },
     "flags": [
       "SEES",
       "HEARS",
@@ -259,7 +348,11 @@
 "emit_fields": [
   {
     "emit_id": "emit_flying_fire_track",
-    "delay": "6 h"
+    "delay": "30 m"
+  },
+    {
+    "emit_id": "emit_naturis_hot_aura",
+    "delay": "1 m"
   }
 ],
   "death_drops": "mon_flying_fire_death_drops",
@@ -270,7 +363,7 @@
     "type": "MONSTER",
     "name": { "str": "ice former" },
     "description": "Sunlight refracts within the cold clutches of this creature, vying with the sparkling blue eyes that hold your gaze firmly captive.",
-    "default_faction": "overgrown",
+    "default_faction": "ice",
     "bodytype": "lizard",
     "species": [ "MYTHIC" ],
     "diff": 10,
@@ -290,7 +383,7 @@
     "dodge": 2,
     "vision_day": 25,
     "vision_night": 3,
-    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_mythic" ],
     "harvest": "ice_former",
     "weakpoint_sets": [
     "wps_ice_former"
@@ -311,11 +404,18 @@
     ],
 "emit_fields": [
   {
-    "emit_id": "emit_ice_former_track",
-    "delay": "15 h"
+    "emit_id": "emit_naturis_cold_aura",
+    "delay": "1 m"
+  },
+  {
+   "emit_id": "emit_ice_former_track",
+   "delay": "15 h"
   }
 ],
     "death_drops": "mon_ice_former_death_drops",
+        "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 10 },
+    "reproduction": { "baby_egg": "egg_ice_former", "baby_count": 2, "baby_timer": 35 },
+    "baby_flags": ["WINTER"],
     "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "LOUDMOVES", "GOODHEARING", "COLDPROOF" ],
     "armor": { "bash": 10, "cut": 15, "bullet": 10, "electric": 1, "acid": 1 }
   },
@@ -326,7 +426,7 @@
       "str": "static beast"
     },
     "description": "Crackling air envelops this creature, which consists solely of teeth and long, scythe like claws.",
-    "default_faction": "overgrown",
+    "default_faction": "static",
     "bodytype": "lizard",
     "species": [
       "MYTHIC"
@@ -358,7 +458,7 @@
     "vision_night": 5,
     "families": [
       "prof_intro_biology",
-      "prof_physiology"
+      "prof_physiology", "prof_wp_mythic"
     ],
     "weakpoint_sets": [
       "wps_static_beast"
@@ -402,6 +502,9 @@
     ],
     "death_drops": "mon_beast_static_drops",
     "harvest": "static_beast",
+    "biosignature": { "biosig_item": "static_residue", "biosig_timer": 10 },
+    "reproduction": { "baby_egg": "egg_static_beast", "baby_count": 3, "baby_timer": 15 },
+        "baby_flags": ["SUMMER"],
     "flags": [
       "SEES",
       "ELECTRIC_FIELD",

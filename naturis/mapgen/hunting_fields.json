@@ -34,6 +34,9 @@
       "items": {
         "'": { "item": "bones", "chance": 15 }
 },
+    "item": {
+     "'": { "item": "egg_rapid_striker", "chance": 5 }
+   },
    "place_fields": [
      { "field": "fd_blood", "x": [3, 12], "y": [4, 20], "repeat": [1, 30] }   ],
     "place_monster": [

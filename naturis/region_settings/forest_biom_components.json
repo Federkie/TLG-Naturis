@@ -1,0 +1,58 @@
+[
+  {
+    "type": "forest_biome_component",
+    "id": "naturis_mystic_forest_features",
+    "sequence": 2,
+    "chance": 650,
+    "types": [
+      [
+        "f_obelisk_big",
+        850
+      ],
+      [
+        "f_obelisk_big_glow",
+        1800
+      ],
+      [
+        "f_natur_root",
+        120
+      ],
+      [
+        "f_obelisk_glow",
+        1550
+      ],
+      [
+        "f_obelisk",
+        950
+      ],
+      [
+        "t_m_mushroom_harvested",
+        750
+      ],
+      [
+        "t_m_mushroom",
+        900
+      ],
+      [
+        "t_pink_flowers",
+        750
+      ],
+      [
+        "t_pink_flowers_harvested",
+        600
+      ]
+    ]
+  },
+    {
+    "type": "forest_biome_component",
+    "id": "naturis_mystic_forest_trees",
+    "sequence": 2,
+    "chance": 1800,
+    "types": [
+      [
+        "f_tree_static",
+        1
+      ]
+    ]
+  }
+]

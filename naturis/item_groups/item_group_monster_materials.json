@@ -1,0 +1,56 @@
+[
+  {
+    "id": "monster_materials",
+    "type": "item_group",
+    "items": [
+      ["shard_fire", 2],
+      ["feather_burning", 6],
+      ["feather_long", 3],
+      ["fire_pearl", 1],
+      ["charcoal_old", 1],
+      ["strong_bone", 4],
+      ["shard_ice", 4],
+      ["heart_frozen", 1],
+      ["claw_frozen", 2],
+      ["bone_frozen", 5],
+      ["perennial_ice", 1],
+      ["shard_electric", 4],
+      ["sickle_shaped_claw", 1],
+      ["plate_static", 1],
+      ["bone_curved", 5],
+      ["stinger_charged", 1],
+      ["tongue_split", 1],
+      ["scale_forest_dragon", 6],
+      ["tail_tip", 1],
+      ["forest_pearl", 1],
+      ["forest_claw", 1],
+      ["skull_forest_dragon", 1],
+      ["claw_sharp", 1],
+      ["fang_venomous", 1],
+      ["spike_neck", 2],
+      ["leather_durable", 3],
+      ["skin_thorn", 4],
+      ["vegetable_tainted", 3],
+      ["mushroom_network", 2],
+      ["crystal_antler", 1],
+      ["crystallized_fur_sheet", 3],
+      ["raptor_tendon", 3],
+      ["shard_crystal", 2],
+      ["claw_long", 2]
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    ]
+  }
+  
+  
+  
+]
