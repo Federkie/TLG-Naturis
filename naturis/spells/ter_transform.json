@@ -46,8 +46,15 @@
    "result": [ [ "t_crystal_pillar", 1 ],
    ["t_dirt_rocky", 3 ] ],
   "valid_flags": ["FLAT"] } ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "grow_crystals_big",
+    "terrain": [ 
+   { 
+   "result": [  ["t_dirt_rocky", 3 ], ["t_crystal_pillar_large", 2 ] ],
+  "valid_flags": ["FLAT"] } ]
   }
-
 
 
 

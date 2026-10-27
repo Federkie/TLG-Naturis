@@ -36,6 +36,12 @@
    "id": "healing_liquid",
    "name": "healing liquid",
    "default": "healing_liquid"
+ },
+  {
+   "type": "ammunition_type",
+   "id": "remnant",
+   "name": "remnant",
+   "default": "creature_remnant"
  }
 
 

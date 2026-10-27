@@ -5,11 +5,10 @@
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_OTHER",
-    "skill_used": "tailor",
-    "skills_required": [ "mechanics", 3 ],
+    "skill_used": "mechanics",
     "difficulty": 4,
     "time": "4 h",
-    "book_learn": [ [ "textbook_mechanics", 2 ], [ "manual_tailor_monster", 3 ] ],
+    "autolearn": [ ["research", 4] ],
     "qualities": [ { "id": "HAMMER_FINE", "level": 2 }, { "id": "SCREW_FINE", "level": 2 } ],
         "components": [
       [ [ "syringe", 1 ] ],

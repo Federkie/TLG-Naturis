@@ -7,17 +7,22 @@ With this mod, I’m not trying to simply add another Hulk or something similar.
 New plants, exotic creatures, anomalies and locations.
 
 ## Features
+
 New creatures:
 Many new monsters and animals. Some of them can be hunted and yield rare, monster specific materials.
 
 New items:
 Materials obtained from the creatures can be crafted into rare weapons and other items. There are specific books and recipes for this purpose.
 
+New skill "Research":
+Research levels up through the processing of special monster samples, which unlocks new recipes and possibilities.
+
 New locations:
 The new creatures inhabit their own territories, though they can also appear in the wild.
 
 ## Planned feautures
 - custom biomes for the creatures
+- more research skill functions
 - breeding system for the creatures
 - monster evolutions
 - more monster and items

@@ -520,6 +520,64 @@
       "electric": 10,
       "acid": 6
     }
+  },
+    {
+    "id": "mon_crystal_seeder",
+    "type": "MONSTER",
+    "name": { "str": "crystal seeder" },
+    "description": ".",
+    "default_faction": "crystal",
+    "bodytype": "human",
+    "species": ["MYTHIC", "HUMAN"],
+    "diff": 8,
+    "volume": "905000 ml",
+    "weight": "210 kg",
+    "hp": 520,
+    "speed": 105,
+    "material": ["flesh"],
+    "symbol": "Z",
+    "color": "green",
+    "scents_tracked": ["sc_human", "sc_fetid"],
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 7,
+    "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
+    "weakpoint_sets": ["wps_humanoid_body", "wps_humanoid_head_small", "wps_crystal_seeder"],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_wp_zombie", "prof_wp_hulk"],
+    "bleed_rate": 5,
+    "vision_day": 40,
+    "vision_night": 2,
+    "harvest": "crystal_seeder",
+    "grab_strength": 45,
+    "special_attacks": [
+      { "id": "grab" }, 
+      { "id": "scratch_humanoid" }, 
+      { "id": "smash", "throw_strength": 96 },
+      {"type": "spell",
+        "spell_data": { "id": "crystal_crawler_summon"},
+        "monster_message": "The %s summons several crystal crawlers!",
+        "cooldown": 25,
+         "condition": {
+        "not": {
+            "u_has_effect": "destroyed_heart" }
+        }
+      }         
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "GRABS",
+      "BASHES",
+      "DESTROYS",
+      "PUSH_MON",
+      "PUSH_VEH"
+    ],
+    "armor": { "bash": 12, "cut": 18, "bullet": 8, "electric": 8 }
   }
 
 

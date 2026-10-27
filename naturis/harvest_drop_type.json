@@ -1,0 +1,17 @@
+[
+    {
+    "type": "harvest_drop_type",
+    "id": "naturis_sample",
+    "group": false,
+    "dissect_only": true,
+    "harvest_skills": ["chemistry", "research"],
+    "msg_fielddress_fail": "harvest_drop_naturis_sample_field_dress",
+    "msg_butcher_fail": "harvest_drop_naturis_sample_butcher",
+    "msg_dissect_fail": "harvest_drop_naturis_sample_dissect_failed"
+  }
+  
+  
+  
+  
+  
+]

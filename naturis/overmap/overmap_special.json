@@ -61,9 +61,9 @@
     { "point": [0, 0, 0], "overmap": "hunter_camp_north" },
     { "point": [0, 0, 1], "overmap": "hunter_camp_roof_north" }
   ],
-  "locations": ["forest"],
+  "locations": ["forest", "field"],
   "city_distance": [5, -1],
-  "city_sizes": [0, 12],
+  "city_sizes": [0, 24],
   "occurrences": [5000, 7000],
   "flags": ["MAN_MADE", "OVERMAP_UNIQUE"]
 },
@@ -118,5 +118,26 @@
     "city_sizes": [0, 12],
     "occurrences": [0, 1],
     "flags": ["MAN_MADE"]
-  }
+  },
+{
+  "type": "overmap_special",
+  "id": "crystal_grove",
+  "overmaps": [
+    { "point": [ 0, 0, 0 ], "overmap": "crystal_grove_north" },
+    { "point": [ 0, -1, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ 1, -1, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ 1, 0, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ 1, 1, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ 0, 1, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ -1, 1, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ -1, 0, 0 ], "overmap": "crystal_field_north" },
+    { "point": [ -1, -1, 0 ], "overmap": "crystal_field_north" }
+  ],
+  "locations": [ "forest" ],
+  "city_distance": [ 25, -1 ],
+  "city_sizes": [ 0, 12 ],
+  "occurrences": [ 0, 1 ],
+  "flags": [ "WILDERNESS", "OVERMAP_UNIQUE" ]
+}
+
 ]

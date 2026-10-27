@@ -57,9 +57,15 @@
      ],
      "rows": [
        "   ",
-       "   ",
+       " 2 ",
        "   "
      ],
+       "item": {
+          "2": { "item": "creature_remnant", "chance": 80 }
+        },
+       "terrain": {
+        "2": "t_dirt_rocky"
+      },
          "place_fields": [
         {
           "field": "fd_monster_track",
@@ -79,9 +85,15 @@
      ],
      "rows": [
        "   ",
-       "   ",
+       " 2 ",
        "   "
      ],
+       "item": {
+         "2": { "item": "creature_remnant", "chance": 80 }
+       },
+       "terrain": {
+         "2": "t_dirt_rocky"
+       },
          "place_fields": [
         {
           "field": "fd_monster_track_herb",
@@ -101,10 +113,13 @@
          3
        ],
        "rows": [
-         "   ",
-         " + ",
-         "   "
+         "222",
+         "2+2",
+         "222"
        ],
+        "item": {
+         "2": { "item": "creature_remnant", "chance": 20 }
+       },
        "place_fields": [
        {
          "field": "fd_crystal_shards",
@@ -113,7 +128,8 @@
          "repeat": [1, 3]
        }],
              "terrain": {
-        "+": "t_crystal_pillar"
+        "+": "t_crystal_pillar",
+        "2": "t_dirt_rocky"
       }
      }
    }

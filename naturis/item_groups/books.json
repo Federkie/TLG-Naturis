@@ -5,9 +5,10 @@
     "copy-from": "homebooks",
     "extend": {
       "items": [
-        { "item": "modular_weapons", "prob": 1 },
+        { "item": "modular_weapons", "prob": 4 },
         { "item": "monster_hunter_2", "prob": 1 },
-        { "item": "monster_hunter", "prob": 1 }
+        { "item": "monster_hunter", "prob": 4 },
+        { "item": "alternative_medicine", "prob": 4 }
       ]
     }
   },
@@ -17,7 +18,7 @@
    "copy-from": "hardware_books",
    "extend": {
      "items": [
-       { "item": "modular_weapons", "prob": 1 }
+       { "item": "modular_weapons", "prob": 5 }
      ]
    }
  },
@@ -27,8 +28,8 @@
    "copy-from": "kids_books",
    "extend": {
      "items": [
-       { "item": "monster_hunter", "prob": 1 },
-       { "item": "monster_hunter_2", "prob": 1 }
+       { "item": "monster_hunter", "prob": 3 },
+       { "item": "monster_hunter_2", "prob": 4 }
      ]
    }
  },
@@ -38,8 +39,8 @@
    "copy-from": "mansion_books",
    "extend": {
      "items": [
-       { "item": "monster_hunter", "prob": 1 },
-       { "item": "monster_hunter_2", "prob": 2 }
+       { "item": "monster_hunter", "prob": 10 },
+       { "item": "monster_hunter_2", "prob": 15 }
      ]
    }
  }

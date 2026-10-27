@@ -1,0 +1,37 @@
+[
+    {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "naturis_sample_small",
+    "symbol": "q",
+    "color": "red",
+    "name": { "str": "naturis sample small" },
+    "description": "A sample of a small Naturis monster, ready for further examination.",
+    "price_postapoc": "20 cent",
+    "material": ["flesh"],
+    "flags": ["INEDIBLE"],
+    "spoils_in": "3 days",
+    "comestible_type": "FOOD",
+    "weight": "114 g",
+    "volume": "250 ml"
+  },
+    {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "naturis_sample_normal",
+    "symbol": "q",
+    "color": "red",
+    "name": { "str": "naturis sample normal" },
+    "description": "A sample of a medium Naturis monster, ready for further examination.",
+    "price_postapoc": "40 cent",
+    "material": ["flesh"],
+    "flags": ["INEDIBLE"],
+    "spoils_in": "4 days",
+    "comestible_type": "FOOD",
+    "weight": "114 g",
+    "volume": "250 ml"
+  }
+  
+  
+  
+]

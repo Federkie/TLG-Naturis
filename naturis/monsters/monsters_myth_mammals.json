@@ -84,6 +84,46 @@
     "path_settings": { "max_dist": 20, "avoid_sharp": true, "avoid_dangerous_fields": true },
     "armor": { "bash": 25, "cut": 30, "bullet": 40, "electric": 4, "acid": 4 },
     "death_drops": "mon_crawler_bastion_death_drops"
+  },
+    {
+    "id": "mon_crystal_crawler",
+    "type": "MONSTER",
+    "name": { "str": "crystal crawler" },
+    "description": ".",
+    "default_faction": "crystal",
+    "bodytype": "spider",
+    "species": [ "MYTHIC", "SPIDER" ],
+    "diff": 1,
+    "volume": "10 L",
+    "weight": "7 kg",
+    "hp": 10,
+    "speed": 120,
+    "material": [ "iflesh" ],
+    "symbol": "s",
+    "color": "brown",
+    "aggression": -5,
+    "morale": 5,
+    "aggro_character": false,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "grab_strength": 20,
+    "special_attacks": [
+      { "id": "grab" }
+    ],
+    "dodge": 6,
+    "weakpoint_sets": [ "wps_arthropod", "wps_arthropod_spider" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug", "prof_wp_spider" ],
+    "vision_day": 8,
+    "vision_night": 1,
+    "harvest": "crystal_crawler",
+    "dissect": "dissect_naturis_sample",
+    "fear_triggers": [ "FIRE" ],
+    "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
+    "path_settings": { "max_dist": 12, "avoid_sharp": true, "avoid_dangerous_fields": true },
+    "flags": [ "SEES", "HEARS", "GRABS", "WEBWALK", "CLIMBS", "HARDTOSHOOT", "PATH_AVOID_DANGER" ],
+    "armor": { "cut": 3, "acid": 8, "bullet": 1 }
   }
   
   

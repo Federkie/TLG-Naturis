@@ -1,0 +1,114 @@
+[
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_RESEARCH_FILE",
+  "effect": [
+    {
+      "if": {
+        "math": [ "u_skill('research') < 3" ]
+      },
+      "then": [
+        {
+          "math": [
+            "u_skill_exp('research', 'format': 'percentage') += 10"
+          ]
+        },
+        {
+          "u_message": "You analyze the file and gain research experience."
+        }
+      ]
+    },
+    {
+      "u_run_inv_eocs": "random",
+      "search_data": [
+        {
+          "id": "naturis_research_file"
+        }
+      ],
+      "true_eocs": [
+        {
+          "id": "EOC_NATURIS_RESEARCH_FILE_TRANSFORM",
+          "effect": [
+            {
+              "transform_item": "naturis_research_file_used"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_RESEARCH_DOSSIER",
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 15"
+        ]
+      },
+      {
+        "u_message": "You analyze the dossier and gain research experience."
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_research_dossier"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_RESEARCH_DOSSIER_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_research_dossier_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_ARCHIVE",
+  "effect": [
+    {
+      "math": [
+        "u_skill_exp('research', 'format': 'percentage') += 65"
+      ]
+    },
+    {
+      "u_message": "You you are studying the archive and gain research experience."
+    },
+    {
+      "u_learn_recipe": "spear_ice"
+    },
+    {
+      "u_message": "You learn how to craft an ice spear!"
+    },
+    {
+      "u_run_inv_eocs": "random",
+      "search_data": [
+        {
+          "id": "naturis_archive"
+        }
+      ],
+      "true_eocs": [
+        {
+          "id": "EOC_NATURIS_ARCHIVE_TRANSFORM",
+          "effect": [
+            {
+              "transform_item": "naturis_archive_used"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+  
+]

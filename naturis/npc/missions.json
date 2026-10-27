@@ -13,7 +13,7 @@
     "invisible_on_complete": true,
     "origins": ["ORIGIN_ANY_NPC"],
     "start": {
-      "assign_mission_target": { "om_terrain": "swamp", "reveal_radius": 1, "random": true, "search_range": 15, "min_distance": 10 },
+      "assign_mission_target": { "om_terrain": "forest_water", "om_terrain_replace": "forest", "reveal_radius": 1, "random": true, "search_range": 15, "min_distance": 10 },
       "update_mapgen": { "place_monster": [{ "monster": "mon_thorn_skitter", "x": 8, "y": 8, "target": true }] }
     },
     "followup": "MISSION_NATURIS_HUNT_SMALL_RAPTOR",
@@ -240,7 +240,7 @@
       "ORIGIN_SECONDARY"
     ],
      "start": {
-      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 15, "min_distance": 20 },
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 35, "min_distance": 10 },
       "update_mapgen": { "place_monster": [{ "monster": "mon_flying_fire", "x": 8, "y": 8, "target": true }] }
     },
     "followup": "MISSION_NATURIS_HUNT_ICE_FORMER",

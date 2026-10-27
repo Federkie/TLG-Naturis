@@ -1,0 +1,38 @@
+[
+  {
+    "type": "martial_art",
+    "id": "style_naturis_tech_sword",
+    "name": "Technological Sword Combat",
+    "description": "A sword-fighting system calibrated to the conductive reinforcement in Static Leather Armor.",
+    "initiate": [ "You assume a technological sword_fighting stance.", "%s assumes a technological sword_fighting stance." ],
+    "weapon_category": [ "LONG_SWORDS" ],
+    "static_buffs": [
+      {
+        "id": "buff_naturis_tech_sword_static",
+        "name": "Conductive Alignment",
+        "description": "The armor stabilizes your sword technique.",
+        "weapon_categories_allowed": [ "LONG_SWORDS" ],
+        "flat_bonuses": [
+          { "stat": "hit", "scaling-stat": "per", "scale": 0.2 }
+        ],
+        "mult_bonuses": [
+          { "stat": "damage", "type": "cut", "scale": 1.1 }
+        ]
+      }
+    ],
+    "oncrit_buffs": [
+      {
+        "id": "buff_naturis_tech_sword_crit",
+        "name": "Static Discharge",
+        "description": "A critical strike releases a brief electric discharge.",
+        "max_stacks": 1,
+        "weapon_categories_allowed": [ "LONG_SWORDS" ],
+        "flat_bonuses": [
+          { "stat": "damage", "type": "electric", "scaling-stat": "per", "scale": 0.5 }
+        ]
+      }
+    ],
+    "strictly_melee": true,
+    "learn_difficulty": 8
+  }
+]

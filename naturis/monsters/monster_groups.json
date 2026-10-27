@@ -183,6 +183,15 @@
       { "monster": "mon_small_raptor", "weight": 50, "cost_multiplier": 5 },
       { "monster": "mon_big_raptor", "weight": 50, "cost_multiplier": 5, "starts": "20 days" }
     ]
+  },
+    {
+    "name": "GROUP_CRYSTAL_FIELD",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_null", "weight": 50 },
+      { "monster": "mon_crystal_slurker", "weight": 50, "cost_multiplier": 1 },
+      { "monster": "mon_crystal_walker", "weight": 50, "cost_multiplier": 5, "starts": "20 days" }
+    ]
   }
 
 

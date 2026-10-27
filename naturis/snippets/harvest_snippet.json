@@ -28,7 +28,20 @@
      "type": "snippet",
      "category": "flying_fire_harvest",
      "text": "You carefully cut through the meat so as not to burn yourself on the still hot feathers."
-}
-  
-  
+},
+  {
+    "type": "snippet",
+    "category": "harvest_drop_naturis_sample_field_dress",
+    "text": ["You notice some strange organs, perhaps harvestable via careful dissection."]
+  },
+    {
+    "type": "snippet",
+    "category": "harvest_drop_naturis_sample_butcher",
+    "text": ["Your butchering tool destroys a strange organ.  Perhaps a more surgical approach would allow harvesting it."]
+  },
+  {
+    "type": "snippet",
+    "category": "harvest_drop_naturis_sample_dissect_failed",
+    "text": ["You discover only damaged organs."]
+  }
 ]

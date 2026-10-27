@@ -1,0 +1,73 @@
+[
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "crystal_3x3_01",
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "3 0",
+        "03 ",
+        " 0 "
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "crystal" ],
+    "items": {
+        "0": [ 
+         { "item": "bones", "chance": 25, "repeat": [ 0, 2 ] },
+         { "item": "digging_soil_loam_50L", "chance": 25, "repeat": [ 1, 3 ] },
+         { "item": "materials_crystal", "chance": 5, "repeat": [ 1, 3 ] }
+       ]
+      }
+    }
+  },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "crystal_3x3_02",
+    "object": {
+      "mapgensize": [3, 3],
+      "rows": [
+        "3 3",
+        "34 ",
+        " 3 "
+      ],
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "palettes": ["crystal"],
+      "items": {
+        "0": [
+          { "item": "bones", "chance": 25, "repeat": [0, 2] },
+          { "item": "digging_soil_loam_50L", "chance": 25, "repeat": [1, 3] },
+          { "item": "materials_crystal", "chance": 5, "repeat": [1, 3] }
+        ]
+      }
+    }
+  },
+   {
+   "type": "mapgen",
+   "nested_mapgen_id": "crystal_3x3_03",
+   "object": {
+     "mapgensize": [3, 3],
+     "rows": [
+       "3 3",
+       "33 ",
+       " 3 "
+     ],
+     "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+     "palettes": ["crystal"]
+   }
+ },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "crystal_3x3_04",
+    "object": {
+      "mapgensize": [3, 3],
+      "rows": [
+        "333",
+        "333",
+        "333"
+      ],
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "palettes": ["crystal"]
+    }
+  }
+  
+]

@@ -366,6 +366,11 @@
     "melee_skill": 2,
     "melee_dice": 1,
     "melee_dice_sides": 2,
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It runs around your legs and seems friendly.",
+      "pet": "The %s playfully jumps up at you and snaps at your hand."
+    },
     "melee_damage": [
       {
         "damage_type": "cut",

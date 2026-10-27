@@ -1,0 +1,47 @@
+[
+     {
+     "type": "ITEM",
+     "subtypes": ["COMESTIBLE"],
+     "id": "naturis_sample_static",
+     "symbol": "q",
+     "color": "red",
+     "name": { "str": "static beast sample" },
+     "description": "A sample of a static Naturis monster, ready for further examination.",
+     "price_postapoc": "2 USD",
+     "material": ["flesh"],
+     "flags": ["INEDIBLE"],
+     "spoils_in": "6 days",
+     "comestible_type": "FOOD",
+     "weight": "114 g",
+     "volume": "250 ml"
+   },
+     {
+     "type": "ITEM",
+     "copy-from": "naturis_sample_static",
+     "subtypes": ["COMESTIBLE"],
+     "id": "naturis_sample_rapid",
+     "name": { "str": "rapid striker sample" }
+   },
+     {
+       "type": "ITEM",
+       "copy-from": "naturis_sample_static",
+       "subtypes": ["COMESTIBLE"],
+       "id": "naturis_sample_fdragon",
+       "name": { "str": "forest dragon sample" }
+   },
+     {
+       "type": "ITEM",
+       "copy-from": "naturis_sample_static",
+       "subtypes": ["COMESTIBLE"],
+       "id": "naturis_sample_flfire",
+       "name": { "str": "flying fire sample" }
+     },
+      {
+       "type": "ITEM",
+       "copy-from": "naturis_sample_static",
+       "subtypes": ["COMESTIBLE"],
+       "id": "naturis_sample_iformer",
+       "name": { "str": "ice former sample" }
+   }
+   
+]

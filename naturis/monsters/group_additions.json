@@ -69,11 +69,10 @@
     "monsters": [
       { "monster": "mon_forest_walker", "weight": 1, "cost_multiplier": 50 },
       { "monster": "mon_glow_cap", "weight": 4, "cost_multiplier": 3 },
-      { "monster": "mon_walking_tree", "weight": 3, "cost_multiplier": 5 },
-      { "monster": "mon_forest_dog", "weight": 5, "cost_multiplier": 2 },
+      { "monster": "mon_walking_tree", "weight": 8, "cost_multiplier": 5 },
+      { "monster": "mon_forest_dog", "weight": 10, "cost_multiplier": 2 },
       { "monster": "mon_forest_dragon", "weight": 1, "cost_multiplier": 100, "starts": "300 days" },
       { "monster": "mon_crystal_walker", "weight": 3, "cost_multiplier": 10, "starts": "70 days" },
-      { "monster": "mon_thorn_skitter", "weight": 5 },
       { "monster": "mon_veil_stalker", "weight": 3 },
       { "monster": "mon_crawler_bastion", "weight": 1, "cost_multiplier": 0 }
     ]
@@ -119,8 +118,8 @@
    "type": "monstergroup",
    "name": "GROUP_FIELD",
    "monsters": [
-     { "monster": "mon_small_raptor", "weight": 8, "cost_multiplier": 2, "pack_size": [2, 7] },
-     { "monster": "mon_rapid_striker", "weight": 1, "cost_multiplier": 100, "starts": "300 days" },
+     { "monster": "mon_small_raptor", "weight": 10, "cost_multiplier": 2, "pack_size": [2, 7] },
+     { "monster": "mon_rapid_striker", "weight": 1, "cost_multiplier": 100, "starts": "150 days" },
      { "monster": "mon_big_raptor", "weight": 3, "cost_multiplier": 6, "starts": "30 days" },
      { "monster": "mon_crawler_bastion", "weight": 1, "cost_multiplier": 10 }
    ]

@@ -55,6 +55,35 @@
     "name": ["Destroyed Antler"],
     "desc": ["Your Antler is broken.  You're not sure what to do with this information."],
     "base_mods": { "speed_mod": [15] }
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_grounded",
+    "name": [ "Grounded" ],
+    "desc": [
+      "A grounding field reduces incoming electrical damage by 20 points."
+    ],
+    "rating": "good",
+    "max_duration": "2 seconds",
+    "show_in_info": true,
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "incoming_damage_mod": [
+          {
+            "type": "electric",
+            "add": -20
+          }
+        ]
+      }
+    ]
+  },
+    {
+    "type": "effect_type",
+    "id": "destroyed_heart",
+    "name": ["Destroyed heart"],
+    "desc": ["Your heart is broken.  You're not sure what to do with this information."],
+    "base_mods": { "speed_mod": [20] }
   }
   
 ]

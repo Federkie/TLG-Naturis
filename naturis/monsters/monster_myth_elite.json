@@ -4,7 +4,7 @@
     "type": "MONSTER",
     "name": { "str_sp": "crystal walker" },
     "description": "This tall, deer-like creature gleams like crystal in the sunlight. You’d best stay out of the way of its massive antlers.",
-    "default_faction": "forest",
+    "default_faction": "crystal",
     "bodytype": "horse",
     "categories": ["WILDLIFE"],
     "species": ["MYTHIC", "MAMMAL"],
@@ -42,7 +42,7 @@
     "baby_flags": ["AUTUMN"],
     "reproduction": { "baby_monster": "mon_crystal_walker_calf", "baby_count": 1, "baby_timer": 240 },
     "harvest": "crystal_walker",
-    "dissect": "dissect_cattle_sample_large",
+    "dissect": "dissect_naturis_sample_normal",
     "families": ["prof_intro_biology", "prof_physiology", "prof_wp_mythic"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 8 },
     "special_attacks": [
@@ -221,7 +221,7 @@
     ],
     "harvest": "big_raptor",
     "reproduction": { "baby_egg": "egg_small_raptor", "baby_count": 1, "baby_timer": 50 },
-    "dissect": "dissect_lizard_sample_single",
+    "dissect": "dissect_naturis_sample_normal",
     "vision_day": 30,
     "vision_night": 2,
     "flags": [

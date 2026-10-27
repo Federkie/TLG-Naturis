@@ -128,5 +128,22 @@
     "time": "55 m",
     "read_skill": "fabrication",
     "read_fun": -1
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "id": "book_creature_lore_field_guide",
+    "copy-from": "monster_hunter",
+    "name": {
+      "str": "Field Guide to Anomalous Fauna",
+      "str_pl": "copies of Field Guide to Anomalous Fauna"
+    },
+    "description": "A field guide documenting unusual creatures, their anatomy, behavior, habitats, and biological adaptations. Written for researchers and hunters working in areas affected by anomalous wildlife.",
+    "required_level": 0,
+    "max_level": 2,
+    "intelligence": 5,
+    "time": "20 m",
+    "read_skill": "research",
+    "read_fun": -1
   }
 ]

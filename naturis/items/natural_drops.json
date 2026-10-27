@@ -44,7 +44,21 @@
     "weight": "200 mg",
     "volume": "6 ml",
     "to_hit": -5
-  }
+  },
+     {
+     "id": "crystal_core",
+     "type": "ITEM",
+     "name": { "str_sp": "crystal core" },
+     "category": "chems",
+     "flags": ["GEMSTONE"],
+     "description": ".",
+     "weight": "250 g",
+     "volume": "250 ml",
+     "price_postapoc": "500 USD",
+     "symbol": "=",
+     "material": ["crystal"],
+     "color": "white"
+   }
   
   
   

@@ -171,6 +171,54 @@
     "field": "fd_cold_air3",
     "intensity": 3,
     "qty": 100
+  },
+    {
+    "type": "field_type",
+    "id": "fd_grounding",
+    "phase": "plasma",
+    "priority": 5,
+    "half_life": "5 minutes",
+    "percent_spread": 0,
+    "display_field": true,
+    "intensity_levels": [
+      {
+        "name": "grounding field",
+        "sym": "*",
+        "color": "light_blue",
+        "dangerous": false,
+        "effects": [
+          {
+            "effect_id": "effect_grounded",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "is_environmental": false
+          }
+        ]
+      }
+    ]
+  },
+    {
+    "id": "fd_bee_swarm_crystal",
+    "type": "field_type",
+    "substance_name": "crystal bees",
+    "intensity_levels": [
+      { "name": "a few crystal bees", "sym": ".", "dangerous": true, "translucency": 1 },
+      { "name": "a swarm of crystal bees", "color": "yellow", "transparent": true, "translucency": 1 },
+      { "name": "a cloud of crystal bees", "color": "green", "translucency": 0 }
+    ],
+    "decay_amount_factor": 5,
+    "gas_absorption_factor": "80m",
+    "percent_spread": 25,
+    "outdoor_age_speedup": "10 minutes",
+    "dirty_transparency_cache": true,
+    "has_fume": true,
+    "immunity_data": { "body_part_env_resistance": [ [ "torso", 5 ] ] },
+    "priority": 3,
+    "half_life": "10 minute",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": true
   }
 
 

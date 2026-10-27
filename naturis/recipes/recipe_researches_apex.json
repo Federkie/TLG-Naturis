@@ -1,0 +1,77 @@
+[
+   {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_static_archive",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_APEX",
+    "time": "3 h",
+    "autolearn": [ ["research", 6] ],
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 20 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_static", 1 ] ]
+    ]  
+    },
+    {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_rapid_archive",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_APEX",
+    "copy-from": "naturis_static_archive",
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 20 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_rapid", 1 ] ]
+    ]  
+    },
+    {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_fdragon_archive",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_APEX",
+    "copy-from": "naturis_static_archive",
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 20 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_fdragon", 1 ] ]
+    ]  
+    },
+    {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_flfire_archive",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_APEX",
+    "copy-from": "naturis_static_archive",
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 20 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_flfire", 1 ] ]
+    ]  
+    },
+    {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_iformer_archive",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_APEX",
+    "copy-from": "naturis_static_archive",
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 20 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_iformer", 1 ] ]
+    ]  
+    }
+  
+  
+  
+  
+]

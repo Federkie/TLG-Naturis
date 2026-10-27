@@ -214,7 +214,7 @@
       { "drop": "bone", "type": "bone", "mass_ratio": 0.12 },
       { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.015 },
       { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.25 },
-      { "drop": "claw_sharp", "type": "bone", "scale_num": [ 0, 2 ], "max": 4 },
+      { "drop": "claw_sharp", "type": "bone", "scale_num": [ 0, 2 ], "max": 2 },
       { "drop": "raptor_tendon", "type": "flesh", "scale_num": [ 1, 2 ], "max": 2 }
     ]
   },
@@ -246,7 +246,7 @@
       { "drop": "shard_ice", "type": "bone", "scale_num": [0, 1], "max": 2 },
       { "drop": "bone_frozen", "type": "flesh", "mass_ratio": 0.2 },
       { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
-      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
     ]
   },
     {
@@ -256,12 +256,86 @@
       { "drop": "shard_fire", "type": "bone", "scale_num": [0, 1], "max": 2 },
       { "drop": "strong_bone", "type": "flesh", "mass_ratio": 0.2 },
       { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
-      { "drop": "mutant_meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
     ]
-  }
-
-
-
+  },
+    {
+    "id": "dissect_naturis_sample",
+    "type": "harvest",
+    "message": "With cuts and pulls equally similar to both extraction and vandalism, you scrape together the most important parts of the creature.",
+    "entries": [{ "drop": "naturis_sample_small", "type": "naturis_sample" }]
+  },
+   {
+   "id": "dissect_naturis_sample_normal",
+   "type": "harvest",
+   "message": "With cuts and pulls equally similar to both extraction and vandalism, you scrape together the most important parts of the creature.",
+   "entries": [{ "drop": "naturis_sample_normal", "type": "naturis_sample" }]
+ },
+   {
+    "id": "crystal_slurker",
+    "type": "harvest",
+    "entries": [
+      { "drop": "shard_crystal", "type": "bone", "scale_num": [0, 1], "max": 2 },
+      { "drop": "strong_bone", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "crystallized_fur_sheet", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.1 }
+    ]
+  },
+    {
+    "id": "crystal_seeder",
+    "type": "harvest",
+    "entries": [
+      { "drop": "crystal_antler", "type": "bone", "base_num": [0, 2], "max": 2 },
+      { "drop": "meat", "type": "flesh", "mass_ratio": 0.32 },
+      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+      { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+      { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+      { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+      { "drop": "stomach_large", "scale_num": [1, 1], "max": 1, "type": "offal" },
+      { "drop": "strong_bone", "type": "bone", "mass_ratio": 0.15 },
+      { "drop": "bone_marrow", "type": "bone", "mass_ratio": 0.005 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 },
+      { "drop": "crystal_chunk", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+    ]
+  },
+    {
+    "id": "crystal_crawler",
+    "type": "harvest",
+    "entries": [
+      { "drop": "mutant_meat", "type": "flesh", "mass_ratio": 0.12 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.003 },
+      { "drop": "endochitin", "type": "bone", "mass_ratio": 0.01 },
+      { "drop": "mutant_bug_hydrogen_sacs", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "mutant_bug_organs", "type": "offal", "mass_ratio": 0.03 },
+      { "drop": "shard_crystal", "type": "bone", "mass_ratio": 0.08 }
+    ]
+  },
+    {
+    "id": "beehive_crystal_harv",
+    "type": "harvest",
+    "message": "You carefully crack open the hive structure and drain the liquid.",
+    "entries": [
+      { "drop": "honeycomb", "base_num": [4, 10], "difficulty": 0 },
+      { "drop": "honeycomb", "base_num": [1, 10], "difficulty": 1 },
+      { "drop": "honeycomb", "base_num": [1, 10], "difficulty": 2 },
+      { "drop": "honeycomb", "base_num": [1, 10], "difficulty": 3 },
+      { "drop": "wax", "base_num": [2, 4], "difficulty": 0 },
+      { "drop": "wax", "base_num": [1, 2], "difficulty": 1 },
+      { "drop": "wax", "base_num": [1, 2], "difficulty": 2 }
+    ]
+  },
+      {
+      "id": "heart_crystal_harv",
+      "type": "harvest",
+      "message": "You carefully crack open the crystal heart and take its core.",
+      "entries": [
+        { "drop": "crystal_core", "base_num": [1, 2], "difficulty": 0 }
+      ]
+    }
 
 
 ]

@@ -1,0 +1,16 @@
+[
+  {
+    "type": "skill",
+    "id": "research",
+    "name": {
+      "str": "Research"
+    },
+    "display_category": "display_interaction",
+    "sort_rank": 25000,
+    "description": "Your knowledge of creature biology, behavior, habitats, weaknesses, and the safe handling and processing of their remains."
+  }
+  
+  
+  
+  
+]

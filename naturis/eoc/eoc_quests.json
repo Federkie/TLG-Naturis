@@ -1,0 +1,112 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FIELD_SCANNER_HUNT",
+    "effect": [
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "creature_remnant"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT",
+            "effect": [
+              {
+                "switch": {
+                  "math": [ "rand(6)" ]
+                },
+                "cases": [
+                  {
+                    "case": 0,
+                    "effect": [
+                      {
+                        "assign_mission": "MISSION_NATURIS_SCANNER_THORN"
+                      },
+                      {
+                        "u_message": "The location of a creature has been determined."
+                      }
+                    ]
+                  },
+                  {
+                    "case": 1,
+                    "effect": [
+                      {
+                        "assign_mission": "MISSION_NATURIS_SCANNER_SMRAPTOR"
+                      },
+                      {
+                        "u_message": "The location of a creature has been determined."
+                      }
+                    ]
+                  },
+                  {
+                    "case": 2,
+                    "effect": [
+                      {
+                        "assign_mission": "MISSION_NATURIS_SCANNER_GLOW_CAP"
+                      },
+                      {
+                        "u_message": "The location of a creature has been determined."
+                      }
+                    ]
+                  },
+                  {
+                    "case": 3,
+                    "effect": [
+                      {
+                        "assign_mission": "MISSION_NATURIS_SCANNER_FRBRAWLER"
+                      },
+                      {
+                        "u_message": "The location of a creature has been determined."
+                      }
+                    ]
+                  },
+                  {
+                    "case": 4,
+                    "effect": [
+                      {
+                        "assign_mission": "MISSION_NATURIS_SCANNER_EMSTALKER"
+                      },
+                      {
+                        "u_message": "The location of a creature has been determined."
+                      }
+                    ]
+                  },
+                  {
+                    "case": 5,
+                    "effect": [
+                      {
+                        "assign_mission": "MISSION_NATURIS_SCANNER_CRSLURKER"
+                      },
+                      {
+                        "u_message": "The location of a creature has been determined."
+                      }
+                    ]
+                  }
+                 ]
+              },
+              {
+                "u_consume_item": "creature_remnant",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "false_eocs": [
+          "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT",
+    "effect": [
+      {
+        "u_message": "ERROR: No creature remnant available. You need at least one in order to be able to examine it."
+      }
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "id": "field_analysis_kit",
+    "name": {
+      "str": "field analysis kit"
+    },
+    "description": "A rudimentary analysis kit. It includes a sharp blade and a lens for examining samples. Nothing fancy, but it’ll do for starters.",
+    "category": "tools",
+    "weight": "180 g",
+    "volume": "150 ml",
+    "longest_side": "160 mm",
+    "price_postapoc": "2 USD",
+    "material": [ "plastic", "steel", "glass" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "qualities": [ [ "RESEARCH", 1 ], [ "CUT_FINE", 2 ] ],
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+ {
+  "id": "field_scanner",
+  "copy-from": "abstract_smart_phone",
+  "type": "ITEM",
+  "subtypes": [ "TOOL" ],
+  "name": { "str": "field scanner" },
+  "description": "A smartphone that has been converted into a research tool. Most of the smartphone's basic functions remained intact. It is capable of examining the remains of simple creatures and determining the direction in which the creature was moving.",
+  "weight": "240 g",
+  "volume": "120 ml",
+  "longest_side": "16 cm",
+  "price_postapoc": "10 USD",
+  "material": [
+    { "type": "aluminum", "portion": 5 },
+    { "type": "plastic", "portion": 5 }
+  ],
+  "looks_like": "smart_phone",
+  "symbol": ";",
+  "color": "light_gray",
+  "use_action": [
+    "E_FILE_DEVICE",
+    "EBOOKSAVE",
+    "CAMERA",
+    "CALORIES_INTAKE_TRACKER",
+    {
+      "target": "field_scanner_flashlight",
+      "msg": "You activate the flashlight app.",
+      "menu_text": "Turn on flashlight",
+      "need_charges": 1,
+      "need_charges_msg": "The field_scanner's charge is too low.",
+      "type": "transform"
+    },
+    {
+      "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        "EOC_NATURIS_FIELD_SCANNER_HUNT"
+      ],
+      "menu_text": "Analyze creature remnant",
+      "description": "Analyze the remains of a creature and obtain a clue as to its whereabouts."
+    },
+    {
+      "type": "link_up",
+      "cable_length": 3,
+      "charge_rate": "20 W"
+    }
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": { "battery": 56 }
+    },
+    {
+      "pocket_type": "E_FILE_STORAGE",
+      "rigid": true,
+      "max_contains_volume": "1 ml",
+      "max_contains_weight": "1 g",
+      "weight_multiplier": 0.0,
+      "ememory_max": "256 GB"
+    }
+  ]
+},
+  {
+    "id": "field_scanner_flashlight",
+    "copy-from": "smart_phone",
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "name": { "str": "field scanner - Flashlight", "str_pl": "field scanners - Flashlight" },
+    "power_draw": "2 W",
+    "revert_to": "field_scanner",
+    "use_action": [
+      "E_FILE_DEVICE",
+      "EBOOKSAVE",
+      "PORTABLE_GAME",
+      {
+        "ammo_scale": 0,
+        "target": "field_scanner",
+        "msg": "You deactivate the flashlight.",
+        "menu_text": "Turn off flashlight",
+        "type": "transform"
+      },
+      { "type": "link_up", "cable_length": 3, "charge_rate": "20 W" },
+       {
+   "type": "effect_on_conditions",
+   "effect_on_conditions": [
+     "EOC_NATURIS_FIELD_SCANNER_HUNT"
+   ],
+   "menu_text": "Analyze creature remnant",
+   "description": "Analyze a creature remnant and generate a hunting assignment."
+ }
+    ],
+    "light": 20,
+    "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] }
+  }
+]

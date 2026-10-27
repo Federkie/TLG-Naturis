@@ -8,6 +8,39 @@ New plants, exotic creatures, anomalies and locations.
 
 Current feautures:
 
+Research skill unlocks:
+1
+- 
+2
+- field scanner
+3
+- naturis research dossier
+4
+- wrist injector
+- healing liquid
+5
+- shadow cloak
+6
+- naturis static beast archive
+- inferno katana
+- naturis flying fire archive
+- naturis rapid striker archive
+- naturis ice former archive
+- ice spear 
+- naturis forest dragon archive
+7
+- forest rifle
+- fa_r leaves
+- fa_r heat
+8
+-
+9
+-
+10
+-
+-
+
+
 New creatures (WIP):
 
 - forest dragon

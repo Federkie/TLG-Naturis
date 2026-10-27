@@ -1,0 +1,181 @@
+[
+  {
+  "type": "mission_definition",
+  "id": "MISSION_NATURIS_SCANNER_THORN",
+    "name": "Suspected Creature Location",
+    "description": "Find the Thorn Skitter and take it down.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_thorn_skitter",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 10 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_thorn_skitter", "x": 8, "y": 8, "target": true }] }
+    },
+    "dialogue": {
+      "describe": "Hunt: Thorn Skitter.",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": ".",
+      "success": ".",
+      "success_lie": ".",
+      "failure": "."
+    }
+},
+  {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_SCANNER_SMRAPTOR",
+    "name": "Suspected Creature Location",
+    "description": "Find the small Ratpors and take them down.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_small_raptor",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 10 },
+        "update_mapgen": { "place_monster": [{ "monster": "mon_small_raptor", "pack_size": [4, 6], "x": 8, "y": 8, "target": true }] }
+    },
+    "dialogue": {
+      "describe": "Hunt: Small Raptors.",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": ".",
+      "success": ".",
+      "success_lie": ".",
+      "failure": "."
+    }
+  },
+    {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_SCANNER_GLOW_CAP",
+    "name": "Suspected Creature Location",
+    "description": "Find the Glow Cap and take it down.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_glow_cap",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest_thick",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 10 },
+        "update_mapgen": { "place_monster": [{ "monster": "mon_glow_cap", "x": 8, "y": 8, "target": true }] }
+    },
+    "dialogue": {
+      "describe": "Hunt: Glow Cap.",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": ".",
+      "success": ".",
+      "success_lie": ".",
+      "failure": "."
+    }
+  },
+    {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_SCANNER_FRBRAWLER",
+    "name": "Suspected Creature Location",
+    "description": "Find the Frost Brawler and take it down.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_frost_brawler",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest_thick",
+      "om_terrain_replace": "forest",
+      "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 10 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_frost_brawler", "x": 8, "y": 8, "target": true }] }
+    },
+    "dialogue": {
+      "describe": "Hunt: Frost Brawler.",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": ".",
+      "success": ".",
+      "success_lie": ".",
+      "failure": "."
+    }
+  },
+    {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_SCANNER_EMSTALKER",
+    "name": "Suspected Creature Location",
+    "description": "Find the Ember Stalker and take it down.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_ember_stalker",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest_water", "om_terrain_replace": "forest", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 10 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_ember_stalker", "x": 8, "y": 8, "target": true }] }
+    },
+    "dialogue": {
+      "describe": "Hunt: Ember Stalker.",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": ".",
+      "success": ".",
+      "success_lie": ".",
+      "failure": "."
+    }
+  },
+    {
+    "type": "mission_definition",
+    "id": "MISSION_NATURIS_SCANNER_CRSLURKER",
+    "name": "Suspected Creature Location",
+    "description": "Find the Crystal Slurker and take it down.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster_type": "mon_crystal_slurker",
+    "monster_kill_goal": 1,
+    "difficulty": 2,
+    "value": 500,
+    "has_generic_rewards": false,
+    "invisible_on_complete": true,
+    "origins": ["ORIGIN_ANY_NPC"],
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 10 },
+      "update_mapgen": { "place_monster": [{ "monster": "mon_crystal_slurker", "x": 8, "y": 8, "target": true }] }
+    },
+    "dialogue": {
+      "describe": "Hunt: Crystal Slurker.",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": ".",
+      "success": ".",
+      "success_lie": ".",
+      "failure": "."
+    }
+  }
+  
+]

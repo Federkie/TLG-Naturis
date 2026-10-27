@@ -592,7 +592,23 @@
    "weight": "700 mg",
    "volume": "6 ml",
    "to_hit": -5
- }
+ },
+   {
+    "id": "crystal_chunk",
+    "type": "ITEM",
+    "category": "spare_parts",
+    "name": { "str": "crystal chunk", "str_pl": "crystal chunks" },
+    "description": "A palm-sized piece of solid crystal.",
+    "weight": "750 g",
+    "volume": "125 ml",
+    "price_postapoc": "65 cent",
+    "to_hit": -3,
+    "material": [ "crystal" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "qualities": [ [ "CUT", 1 ] ],
+    "melee_damage": { "cut": 4 }
+  }
  
  
  

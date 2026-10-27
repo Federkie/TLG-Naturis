@@ -1,0 +1,30 @@
+[
+    {
+    "id": "raptorfood",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "FOOD",
+    "name": { "str_sp": "raptor food" },
+    "description": ".",
+    "weight": "554 g",
+    "spoils_in": "1 day",
+    "container": "can_medium",
+    "volume": "500 ml",
+    "price_postapoc": "4 USD 50 cent",
+    "to_hit": -5,
+    "material": [ "flesh" ],
+    "symbol": ";",
+    "quench": 2,
+    "calories": 450,
+    "vitamins": [ [ "vitC", 4 ], [ "iron", 17 ], [ "calcium", 0 ], [ "meat_allergen", 1 ] ],
+    "fun": -15,
+    "color": "brown",
+    "flags": [ "LUPINE" ],
+    "use_action": [ "PETFOOD" ],
+    "petfood": [ "RAPTORFOOD" ]
+  }
+  
+  
+  
+  
+]

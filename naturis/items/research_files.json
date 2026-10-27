@@ -1,0 +1,252 @@
+[ 
+  {
+   "type": "ITEM",
+   "subtypes": ["BOOKS"],
+   "id": "naturis_research_file",
+   "name": { "str": "naturis research file" },
+   "description": "A list of data obtained from the biological material of an exotic creature.",
+   "category": "spare_parts",
+   "weight": "3 g",
+   "color": "green",
+   "symbol": ",",
+   "price_postapoc": "0 cent",
+   "material": ["flesh"],
+   "volume": "6 ml",
+   "longest_side": "297 mm",
+   "flags": ["PAPER_SHAPED", "TINDER"],
+   "use_action": {
+     "type": "effect_on_conditions",
+     "menu_text": "Analyze file",
+     "effect_on_conditions": [
+       "EOC_NATURIS_RESEARCH_FILE"
+     ]
+   }
+ },
+ {
+   "type": "ITEM",
+   "subtypes": ["BOOKS"],
+   "id": "naturis_research_file_used",
+   "name": { "str": "analyzed research file" },
+   "description": "A list of data that you have already studied.",
+   "category": "spare_parts",
+   "weight": "3 g",
+   "color": "dark_gray",
+   "symbol": ",",
+   "price_postapoc": "0 cent",
+   "material": ["flesh"],
+   "volume": "6 ml",
+   "flags": ["PAPER_SHAPED", "TINDER"],
+   "longest_side": "297 mm"
+ },
+   {
+    "type": "ITEM",
+    "subtypes": ["BOOKS"],
+    "id": "naturis_research_dossier",
+    "name": { "str": "naturis research dossier" },
+    "description": ".",
+    "category": "spare_parts",
+    "weight": "6 g",
+    "color": "green",
+    "symbol": ",",
+    "price_postapoc": "0 cent",
+    "material": ["flesh"],
+    "volume": "12 ml",
+    "longest_side": "297 mm",
+    "flags": ["PAPER_SHAPED", "TINDER"],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Analyze file",
+      "effect_on_conditions": [
+        "EOC_NATURIS_RESEARCH_DOSSIER"
+      ]
+    }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": ["BOOKS"],
+    "id": "naturis_research_dossier_used",
+    "name": { "str": "analyzed research dossier" },
+    "description": ".",
+    "category": "spare_parts",
+    "weight": "6 g",
+    "color": "dark_gray",
+    "symbol": ",",
+    "price_postapoc": "0 cent",
+    "material": ["flesh"],
+    "volume": "12 ml",
+    "flags": ["PAPER_SHAPED", "TINDER"],
+    "longest_side": "297 mm"
+  },
+     {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_static_archive",
+     "name": { "str": "static beast research archive" },
+     "description": ".",
+     "category": "spare_parts",
+     "weight": "10 g",
+     "color": "green",
+     "symbol": ",",
+     "price_postapoc": "0 cent",
+     "material": ["flesh"],
+     "volume": "21 ml",
+     "longest_side": "297 mm",
+     "flags": ["PAPER_SHAPED", "TINDER"],
+     "use_action": {
+       "type": "effect_on_conditions",
+       "menu_text": "Analyze file",
+       "effect_on_conditions": [
+         "EOC_NATURIS_STATIC_ARCHIVE"
+       ]
+     }
+   },
+   {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_static_archive_used",
+     "name": { "str": "analyzed static beast research archive" },
+     "description": ".",
+     "category": "spare_parts",
+     "weight": "10 g",
+     "color": "dark_gray",
+     "symbol": ",",
+     "price_postapoc": "0 cent",
+     "material": ["flesh"],
+     "volume": "22 ml",
+     "flags": ["PAPER_SHAPED", "TINDER"],
+     "longest_side": "297 mm"
+   },
+   {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_rapid_archive",
+     "name": { "str": "rapid striker research archive" },
+     "copy-from": "naturis_static_archive",
+     "description": ".",
+     "use_action": {
+       "type": "effect_on_conditions",
+       "menu_text": "Analyze file",
+       "effect_on_conditions": [
+           "EOC_NATURIS_RAPID_ARCHIVE"
+         ]
+       }
+     },   
+   {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_rapid_archive_used",
+     "name": { "str": "analyzed rapid striker research archive" },
+     "copy-from": "naturis_static_archive_used",
+     "description": "."
+   },  
+      {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_fdragon_archive",
+     "name": { "str": "forest dragon research archive" },
+     "copy-from": "naturis_static_archive",
+     "description": ".",
+     "use_action": {
+       "type": "effect_on_conditions",
+       "menu_text": "Analyze file",
+       "effect_on_conditions": [
+         "EOC_NATURIS_FDRAGON_ARCHIVE"
+       ]
+     }
+   },
+   {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_fdragon_archive_used",
+     "name": { "str": "analyzed forest dragon research archive" },
+     "copy-from": "naturis_static_archive_used",
+     "description": "."
+   },
+   {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_flfire_archive",
+     "name": { "str": "flying fire research archive" },
+     "copy-from": "naturis_static_archive",
+     "description": ".",
+     "use_action": {
+     "type": "effect_on_conditions",
+     "menu_text": "Analyze file",
+     "effect_on_conditions": [
+            "EOC_NATURIS_FLFIRE_ARCHIVE"
+          ]
+        }
+      },
+      {
+      "type": "ITEM",
+      "subtypes": ["BOOKS"],
+      "id": "naturis_flfire_archive_used",
+      "name": { "str": "analyzed flying fire research archive" },
+      "copy-from": "naturis_static_archive_used",
+      "description": "."
+      },
+         {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_iformer_archive",
+     "name": { "str": "ice former research archive" },
+     "copy-from": "naturis_static_archive",
+     "description": ".",
+     "use_action": {
+       "type": "effect_on_conditions",
+       "menu_text": "Analyze file",
+       "effect_on_conditions": [
+         "EOC_NATURIS_IFORMER_ARCHIVE"
+       ]
+     }
+   },
+   {
+     "type": "ITEM",
+     "subtypes": ["BOOKS"],
+     "id": "naturis_iformer_archive_used",
+     "name": { "str": "analyzed ice former research archive" },
+     "copy-from": "naturis_static_archive_used",
+     "description": "."
+   },
+    {
+   "type": "ITEM",
+   "subtypes": ["BOOKS"],
+   "id": "naturis_archive",
+   "name": { "str": "naturis archive" },
+   "description": "An extensive collection of data on Naturis creatures, which enables the creation of advanced technology.",
+   "category": "spare_parts",
+   "weight": "12 g",
+   "color": "green",
+   "symbol": ",",
+   "price_postapoc": "0 cent",
+   "material": ["flesh"],
+   "volume": "24 ml",
+   "longest_side": "297 mm",
+   "flags": ["PAPER_SHAPED", "TINDER"],
+   "use_action": {
+     "type": "effect_on_conditions",
+     "menu_text": "Analyze file",
+     "effect_on_conditions": [
+       "EOC_NATURIS_ARCHIVE"
+     ]
+   }
+ },
+ {
+   "type": "ITEM",
+   "subtypes": ["BOOKS"],
+   "id": "naturis_archive_used",
+   "name": { "str": "analyzed naturis archive" },
+   "description": "A list of data that you have already studied.",
+   "category": "spare_parts",
+   "weight": "12 g",
+   "color": "dark_gray",
+   "symbol": ",",
+   "price_postapoc": "0 cent",
+   "material": ["flesh"],
+   "volume": "24 ml",
+   "flags": ["PAPER_SHAPED", "TINDER"],
+   "longest_side": "297 mm"
+ }
+   
+   
+]

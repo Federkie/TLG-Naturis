@@ -23,7 +23,7 @@
     "dodge": 2,
     "armor": { "cut": 4 },
     "families": [ "prof_intro_biology", "prof_physiology" ],
-    "dissect": "dissect_lizard_sample_single",
+    "dissect": "dissect_naturis_sample",
     "harvest": "thorn_skitter",
     "vision_night": 5,
     "path_settings": { "max_dist": 8 },
@@ -73,7 +73,7 @@
     "delay": "10 seconds"
   }
 ],
-    "dissect": "dissect_plant_sample_single",
+    "dissect": "dissect_naturis_sample",
     "special_attacks": [
       { "id": "long_barbed_tentacle", "throw_strength": 10 } 
     ],
@@ -121,7 +121,7 @@
     ],
     "harvest": "small_raptor",
     "reproduction": { "baby_egg": "egg_small_raptor", "baby_count": 1, "baby_timer": 50 },
-    "dissect": "dissect_lizard_sample_single",
+    "dissect": "dissect_naturis_sample",
     "vision_day": 20,
     "vision_night": 3,
     "path_settings": {
@@ -158,8 +158,8 @@
     "bodytype": "lizard",
     "species": ["REPTILE"],
     "diff": 3,
-    "volume": "110 L",
-    "weight": "70000 g",
+    "volume": "38 L",
+    "weight": "39 kg",
     "hp": 115,
     "speed": 120,
     "material": ["flesh"],
@@ -188,7 +188,7 @@
       "prof_physiology"
     ],
     "harvest": "frost_brawler",
-    "dissect": "dissect_lizard_sample_single",
+    "dissect": "dissect_naturis_sample",
     "vision_day": 20,
     "vision_night": 6,
     "path_settings": {
@@ -219,8 +219,8 @@
    "bodytype": "dog",
    "diff": 2,
    "species": ["MYTHIC"],
-   "volume": "8200 ml",
-   "weight": "8350 g",
+   "volume": "30 L",
+   "weight": "45 kg",
    "hp": 125,
    "speed": 80,
    "material": ["flesh"],
@@ -238,6 +238,7 @@
    "families": ["prof_intro_biology", "prof_physiology", "prof_wp_mythic"],
    "vision_night": 4,
    "harvest": "ember_stalker",
+   "dissect": "dissect_naturis_sample",
    "special_attacks": [
      { "id": "bite_grab", "attack_upper": false, "cooldown": 8 },
      { "id": "scratch_grab_required" },
@@ -255,8 +256,48 @@
      "BELLYUP"
    ],
    "armor": { "cut": 1, "bash": 3, "heat": 15 }
+ },
+ {
+   "id": "mon_crystal_slurker",
+   "type": "MONSTER",
+   "name": { "str": "crystal slurker" },
+   "description": ".",
+   "default_faction": "crystal",
+   "bodytype": "dog",
+   "diff": 2,
+   "species": ["MYTHIC"],
+   "volume": "25 L",
+   "weight": "35 kg",
+   "hp": 80,
+   "speed": 100,
+   "material": ["flesh"],
+   "symbol": "d",
+   "color": "green",
+   "scents_tracked": ["sc_human", "sc_fetid"],
+   "aggression": 40,
+   "morale": 60,
+   "melee_skill": 4,
+   "melee_dice": 2,
+   "melee_dice_sides": 4,
+   "melee_damage": [{ "damage_type": "cut", "amount": 3 }],
+   "grab_strength": 25,
+   "dodge": 1,
+   "families": ["prof_intro_biology", "prof_physiology", "prof_wp_mythic"],
+   "vision_night": 2,
+   "harvest": "crystal_slurker",
+   "dissect": "dissect_naturis_sample",
+   "special_attacks": [
+     { "id": "bite_grab", "attack_upper": false, "cooldown": 5 },
+     { "id": "scratch_grab_required" }
+   ],
+   "flags": [
+     "SEES",
+     "HEARS",
+     "SMELLS",
+     "GRABS"
+   ],
+   "armor": { "cut": 6, "bash": 5, "heat": 10 }
  }
-
 
   
   

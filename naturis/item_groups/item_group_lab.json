@@ -1,0 +1,43 @@
+[
+     {
+     "type": "item_group",
+     "id": "lab_files_biology",
+     "copy-from": "lab_files_biology",
+"subtype": "collection",
+     "extend": {
+       "items": [
+         { "item": "naturis_research_file", "prob": 10 },
+         { "item": "naturis_research_dossier", "prob": 5 },
+         { "item": "lab_file_bio_naturis", "prob": 5 }
+       ]
+     }
+   },
+     {
+    "type": "item_group",
+    "id": "supplies_samples_lab",
+    "copy-from": "supplies_samples_lab",
+    "extend": {
+      "items": [
+        { "item": "raptorfood", "prob": 1 },
+        { "item": "creature_remnant", "prob": 2 },
+        { "item": "naturis_sample_small", "prob": 2 },
+        { "item": "naturis_sample_normal", "prob": 1 }
+      ]
+    }
+  },
+       {
+       "type": "item_group",
+       "id": "science",
+       "copy-from": "science",
+       "extend": {
+         "items": [
+           { "item": "naturis_research_file", "prob": 3 },
+           { "item": "naturis_research_dossier", "prob": 2 },
+           { "item": "lab_file_bio_naturis", "prob": 1 },
+           { "item": "creature_remnant", "prob": 2 }
+         ]
+       }
+     }
+  
+  
+]

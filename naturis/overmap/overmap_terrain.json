@@ -148,6 +148,37 @@
   "type": "overmap_terrain",
   "id": "static_fields_roof_2",
   "copy-from": "static_fields"
-}
+},
+  {
+    "type": "overmap_terrain",
+    "id": "crystal_field",
+    "vision_levels": "first_glance_forest",
+    "name": "crystal field",
+    "copy-from": "generic_forest",
+    "looks_like": "forest_thick",
+    "mondensity": 1,
+    "spawns": { "group": "GROUP_CRYSTAL_FIELD", "population": [10, 30], "chance": 80 },
+    "sym": "F",
+    "color": "green",
+    "see_cost": "high",
+    "flags": ["REQUIRES_PREDECESSOR"]
+  },
+    {
+    "type": "overmap_terrain",
+    "id": "crystal_grove",
+    "name": "crystal grove",
+    "copy-from": "generic_forest",
+    "vision_levels": "first_glance_forest",
+    "sym": "F",
+    "looks_like": "forest_thick",
+    "color": "green",
+    "see_cost": "high",
+    "mondensity": 2,
+    "spawns": { "group": "GROUP_CRYSTAL_FIELD", "population": [50, 60], "chance": 80 },
+    "flags": ["RISK_EXTREME", "REQUIRES_PREDECESSOR"]
+  }
+  
+  
+  
 ]
 

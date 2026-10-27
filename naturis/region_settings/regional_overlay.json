@@ -25,7 +25,7 @@
     "copy-from": "forest_water",
     "extend": {
       "extras": [
-        [ "mx_naturis_nest", 3 ],
+        [ "mx_naturis_nest", 5 ],
         ["mx_naturis_swamp_additions", 15]
       ]
     }
@@ -37,7 +37,7 @@
   "extend": {
     "extras": [
       ["mx_naturis_nest_field", 20],
-      ["mx_naturis_tracks_field", 40]
+      ["mx_naturis_tracks_field", 80]
     ]
   }
 }

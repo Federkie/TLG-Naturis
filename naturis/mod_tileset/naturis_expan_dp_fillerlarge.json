@@ -5,7 +5,7 @@
     "tiles-new": [
       {
         "file": "mod_tileset/naturis_expan_dp_fillerlarge.png",
-        "sprite_offset_x": -32,
+        "sprite_offset_x": -16,
         "sprite_offset_y": -32,
         "sprite_width": 64,
         "sprite_height": 64,
@@ -18,7 +18,8 @@
           { "id": "mon_ice_former", "fg": 7, "rotates": false, "bg": 12 },
           { "id": "mon_beast_static", "fg": 8, "rotates": false, "bg": 12 },
           { "id": "mon_crystal_walker", "fg": 14, "rotates": false, "bg": 12 },
-          { "id": "mon_crystal_walker_calf", "fg": 15, "rotates": false, "bg": 12 }
+          { "id": "mon_crystal_walker_calf", "fg": 15, "rotates": false, "bg": 12 },
+          { "id": "mon_crystal_seeder", "fg": 16, "rotates": false, "bg": 12 }
     ]
   }
 ] 

@@ -1,0 +1,120 @@
+[
+{
+  "type": "weakpoint_set",
+  "id": "wps_crystal_seeder",
+  "weakpoints": [
+    {
+      "id": "head",
+      "name": "the head",
+      "is_head": true,
+      "damage_mult": {
+        "all": 1.1
+      },
+      "crit_mult": {
+        "all": 1.1
+      },
+      "armor_mult": {
+        "physical": 0.55
+      },
+      "difficulty": {
+        "melee": 6,
+        "ranged": 5
+      },
+  "effects": [
+        {
+          "effect": "blind",
+          "chance": 25,
+          "duration": [ 10, 20 ],
+          "message": "The %s is blinded!",
+          "damage_required": [ 20, 50 ]
+        }
+      ],
+      "coverage": 5
+    },
+      {
+        "id": "crystal_thin",
+        "name": "a thin crystalline layer",
+        "armor_mult": { "all": 0.5 },
+        "crit_mult": { "all": 1.25 },
+        "coverage_mult": { "point": 1.5 },
+        "difficulty": { "ranged": 6, "melee": 6 },
+        "coverage": 10
+      },
+            {
+        "id": "crystal_thick",
+        "name": "a thick crystalline layer",
+        "is_good": false,
+        "armor_mult": { "all": 2.0 },
+        "crit_mult": { "all": 0.75 },
+        "coverage_mult": { "cut": 1.8 },
+        "coverage": 30,
+        "effects": [
+          {
+            "effect": "maimed_armor",
+            "chance": 15,
+            "duration": 86400,
+            "message": "The %s's crystal layer cracks!",
+            "damage_required": [ 10, 30 ]
+          },
+          {
+            "effect": "maimed_armor",
+            "chance": 50,
+            "duration": 86400,
+            "message": "The %s's crystal layer cracks!",
+            "damage_required": [ 31, 100 ]
+          }
+        ]
+      },
+         {
+     "id": "crystal_cracked",
+     "name": "a crack in the crystal layer",
+     "armor_mult": { "all": 0.33 },
+     "crit_mult": { "all": 1.2 },
+     "coverage": 20,
+     "coverage_mult": { "cut": 1.5 },
+     "condition": { "npc_has_any_effect": ["maimed_armor"] }
+   },
+    {
+      "id": "heart",
+      "name": "the crystal heart",
+      "damage_mult": {
+        "all": 2.0
+      },
+      "crit_mult": {
+        "all": 2.0
+      },
+      "armor_mult": {
+        "physical": 3.0
+      },
+      "difficulty": {
+        "melee": 6,
+        "ranged": 8
+      },
+      "effects": [
+        {
+          "effect": "destroyed_heart",
+          "chance": 50,
+          "duration": [ 15, 50 ],
+          "message": "The %s's heart is cracked!",
+          "damage_required": [ 1, 2 ]
+        },
+        {
+          "effect": "destroyed_heart",
+          "chance": 75,
+          "duration": [ 1000, 2000 ],
+          "message": "The %s's heart is broken!",
+          "damage_required": [ 20, 40 ]
+        }
+      ],
+      "coverage": 5
+    }
+    
+    
+  ]
+}
+
+  
+  
+  
+  
+]

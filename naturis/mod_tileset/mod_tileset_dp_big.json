@@ -24,7 +24,31 @@
   "animated": false,
   "bg": 1 
   },
-	  { "id": "t_tree_hollowed", "fg": 7, "rotates": false, "bg": 1  }
+	  { "id": "t_tree_hollowed", "fg": 7, "rotates": false, "bg": 1  },
+  {
+		    "id": "t_tree_crystal",
+        "fg": [
+           { "weight": 30, "sprite": 8 },
+           { "weight": 30, "sprite": 9 },
+           { "weight": 30, "sprite": 10 },
+           { "weight": 10, "sprite": 14 },
+           { "weight": 10, "sprite": 15 }
+  ],
+  "rotates": false,
+  "animated": false,
+  "bg": 1 
+  },
+		  {
+		    "id": "t_crystal_pillar_large", 
+        "fg": [
+           { "weight": 25, "sprite": 11 },
+           { "weight": 25, "sprite": 12 },
+           { "weight": 25, "sprite": 13 }
+  ],
+  "rotates": false,
+  "animated": false,
+  "bg": 1 
+  }
         ]
       }
     ]

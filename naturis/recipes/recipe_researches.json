@@ -1,0 +1,76 @@
+[
+    {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_research_file",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_ANALYSIS",
+    "time": "30 m",
+    "autolearn": true,
+    "qualities": [ { "id": "RESEARCH", "level": 1 } ],
+    "components": [
+      [ [ "paper", 1 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_small", 1 ] ]
+    ]  
+    },
+   {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_research_dossier",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_ANALYSIS",
+    "time": "1 h",
+    "autolearn": [ ["research", 3] ],
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 2 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_normal", 1 ] ]
+    ]  
+    },
+      {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "field_analysis_kit",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "25 m",
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+      [ [ "xacto", 1 ] ],
+      [ [ "lens", 1 ], [ "lens_small", 2 ] ],
+      [ [ "rubber_band", 1 ] ]
+    ]
+  },
+      {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "field_scanner",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_TOOLS",
+    "skill_used": "electronics",
+    "difficulty": 2,
+    "time": "35 m",
+    "reversible": false,
+    "autolearn": [ ["research", 2] ],
+    "using": [ [ "soldering_standard", 4 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_elec_soldering" },
+      { "proficiency": "prof_elec_circuits" }
+    ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "smart_phone", 1 ] ],
+      [ [ "lens", 1 ], [ "lens_small", 2 ] ],
+      [ [ "test_tube", 1 ] ],
+      [ [ "cable", 4 ] ]
+    ]
+  }
+  
+  
+  
+]

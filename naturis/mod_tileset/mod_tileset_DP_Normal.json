@@ -115,7 +115,7 @@
           { "id": "overlay_wielded_sword_static", "fg": 72, "rotates": false },
           { "id": "sword_static", "fg": 73, "rotates": false },
           { "id": "fd_monster_track_herb", "fg": 74, "rotates": false },
-          { "id": "t_crystal_pillar", "fg": 75, "rotates": false, "bg": 71 },
+          { "id": "t_crystal_pillar", "fg": 75, "rotates": false, "bg": 109 },
           { "id": "fd_crystal_shards", "fg": 76, "rotates": false },
           { "id": "mon_glow_cap", "fg": 77, "rotates": false, "bg": 5  },
            {
@@ -144,7 +144,8 @@
     { "weight": 25, "sprite": 83 }
   ],
   "rotates": false,
-  "animated": false
+  "animated": false,
+  "bg": 5
 },
  { "id": "overlay_wielded_crystal_ax", "fg": 84, "rotates": false },
  { "id": "crystal_ax", "fg": 85, "rotates": false },
@@ -161,7 +162,28 @@
 },
    { "id": "tr_electric_hunting_trap", "fg": 91, "rotates": false },
    { "id": "electric_hunting_trap", "fg": 92, "rotates": false },
-   { "id": "mon_crawler_bastion", "fg": 95, "rotates": false, "bg": 5  }
+   { "id": "mon_crawler_bastion", "fg": 95, "rotates": false, "bg": 5  },
+   { "id": "spear_ice", "fg": 96, "rotates": false },
+   { "id": "ice_hammer", "fg": 97, "rotates": false },
+   { "id": "overlay_wielded_ice_spear", "fg": 98, "rotates": false },
+   { "id": "overlay_wielded_ice_hammer", "fg": 99, "rotates": false },
+   { "id": "mon_crystal_slurker", "fg": 100, "rotates": false, "bg": 5  },
+         {
+  "id": "t_dirt_crystal",
+  "fg": [
+    { "weight": 25, "sprite": 101 },
+    { "weight": 25, "sprite": 102 },
+    { "weight": 25, "sprite": 103 },
+    { "weight": 25, "sprite": 104 }
+  ],
+  "rotates": false,
+  "animated": false,
+  "bg": 109
+},
+   { "id": "t_beehive_crystal", "fg": 105, "rotates": false, "bg": 109  },
+   { "id": "fd_bee_swarm_crystal", "fg": 106, "rotates": false, "bg": 5  },
+   { "id": "t_heart_crystal", "fg": 107, "rotates": false, "bg": 109  },
+   { "id": "t_heart_crystal_destroyed", "fg": 108, "rotates": false, "bg": 109  }
         ]
       }
     ]

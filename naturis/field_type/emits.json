@@ -57,7 +57,15 @@
      "field": "fd_monster_track_herb",
      "intensity": 1,
      "chance": 4
-   }
+   },
+     {
+    "id": "emit_crystal_bees",
+    "type": "emit",
+    "//": "Periodic swarm of bees",
+    "field": "fd_bee_swarm_crystal",
+    "intensity": 3,
+    "chance": 15
+  }
 
   
   

@@ -298,6 +298,131 @@
         { "item": "withered", "count": [40, 80] }
       ]
     }
+  },
+      {
+      "type": "terrain",
+      "id": "t_tree_crystal",
+      "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+      "name": "crystal tree",
+      "looks_like": "t_tree_dead",
+      "roof": "t_treetop",
+      "description": ".",
+      "symbol": "7",
+      "color": "brown",
+      "move_cost": 0,
+      "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
+      "bash": {
+        "str_min": 50,
+        "str_max": 80,
+        "sound": "crunch!",
+        "sound_fail": "whack!",
+        "ter_set": "t_dirt",
+        "items": [
+          { "item": "shard_crystal", "count": [1, 4] },
+          { "item": "stick", "count": [1, 4] }
+        ]
+      }
+    },
+        {
+      "type": "terrain",
+      "id": "t_crystal_pillar_large",
+      "name": "large crystal pillar",
+      "description": "A pillar of crystal.",
+      "symbol": "/",
+      "color": "cyan",
+      "coverage": 25,
+      "move_cost": -1,
+      "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
+      "flags": ["TRANSPARENT"]
+    },
+      {
+    "type": "terrain",
+    "id": "t_beehive_crystal",
+    "name": "crystal bee hive",
+    "description": ".",
+    "symbol": "h",
+    "color": ["yellow"],
+    "move_cost": 0,
+    "coverage": 10,
+    "concealment": 10,
+    "flags": ["FLAMMABLE_ASH", "NOITEM"],
+    "examine_action": "harvest_ter",
+    "harvest_by_season": [{ "seasons": ["summer", "autumn"], "id": "beehive_crystal_harv" }],
+    "transforms_into": "t_stump",
+    "emissions": ["emit_crystal_bees"],
+    "bash": {
+      "str_min": 2,
+      "str_max": 5,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_tree",
+      "items": [{ "item": "wax", "count": [2, 4] }, { "item": "honeycomb", "count": [3, 6] }]
+    }
+  },
+        {
+        "type": "terrain",
+        "id": "t_heart_crystal",
+        "name": "crystal heart",
+        "description": ".",
+        "symbol": "h",
+        "color": ["yellow"],
+        "move_cost": 0,
+        "coverage": 15,
+        "concealment": 10,
+        "light_emitted": 3,
+        "flags": ["NOITEM"],
+        "examine_action": "harvest_ter",
+        "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn", "winter"], "id": "heart_crystal_harv" }],
+        "transforms_into": "t_heart_crystal_destroyed",
+        "emissions": ["emit_crystal_bees"],
+        "bash": {
+          "str_min": 25,
+          "str_max": 45,
+          "sound": "crunch!",
+          "sound_fail": "whack!",
+          "ter_set": "t_dirt",
+          "items": [{ "item": "shard_crystal", "count": [3, 6] }]
+        }
+      },
+            {
+        "type": "terrain",
+        "id": "t_heart_crystal_destroyed",
+        "name": "destroyed crystal heart",
+        "description": ".",
+        "symbol": "h",
+        "color": ["yellow"],
+        "move_cost": 0,
+        "coverage": 15,
+        "concealment": 10,
+        "flags": ["NOITEM"],
+        "bash": {
+          "str_min": 5,
+          "str_max": 15,
+          "sound": "crunch!",
+          "sound_fail": "whack!",
+          "ter_set": "t_dirt",
+          "items": [{ "item": "shard_crystal", "count": [2, 4] }]
+        }
+      },
+        {
+    "type": "terrain",
+    "id": "t_dirt_crystal",
+    "name": "rocky soil",
+    "description": "Various fragments and chunks of formerly large crystal structures.",
+    "symbol": ".",
+    "coverage": 0,
+    "color": "light_gray",
+    "looks_like": "t_railroad_rubble",
+    "move_cost": 2,
+    "flags": ["TRANSPARENT", "DIGGABLE", "FLAT", "TIRE_DAMAGE"],
+    "bash": {
+      "sound": "thump",
+      "ter_set": "t_open_air",
+      "str_min": 110,
+      "str_max": 220,
+      "str_min_supported": 100,
+      "bash_below": true
+    }
   }
 
 ]

@@ -1,0 +1,15 @@
+[
+  {
+  "id": "materials_crystal",
+  "type": "item_group",
+  "items": [
+    ["shard_crystal", 4],
+    ["strong_bone", 6],
+    ["crystallized_fur_sheet", 2],
+    ["crystal_antler", 1]
+  ]
+}
+  
+  
+  
+]

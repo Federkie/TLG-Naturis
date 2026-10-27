@@ -167,10 +167,63 @@
     "material": ["powder_nonflam"],
     "symbol": "*",
     "color": "dark_gray"
+  },
+    {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "id": "grounding_anchor_capsule",
+    "category": "tools",
+    "name": { "str": "grounding anchor" },
+    "description": "A single-use grounding device. When activated while wielded, it creates a static protective field that reduces incoming electrical damage.",
+    "weight": "255 g",
+    "volume": "260 ml",
+    "price_postapoc": "50 USD",
+    "material": ["steel", "plastic"],
+    "symbol": "*",
+    "color": "light_blue",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "revert_to": "grounding_anchor_spent",
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "SPELL_GROUNDING_ANCHOR",
+      "no_fail": true,
+      "level": 0,
+      "need_wielding": true,
+      "mundane": true
+    }
+  },
+    {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "id": "grounding_anchor_spent",
+    "category": "tools",
+    "name": { "str": "spent grounding anchor" },
+    "description": "An expended grounding device with no remaining charge.",
+    "weight": "250 g",
+    "volume": "260 ml",
+    "price_postapoc": "0 cent",
+    "material": ["steel", "plastic"],
+    "symbol": "*",
+    "color": "dark_gray"
+  },
+  {
+    "id": "creature_remnant",
+    "type": "ITEM",
+    "subtypes": ["AMMO"],
+    "category": "chems",
+    "name": { "str_sp": "creature remnant" },
+    "description": ".",
+    "weight": "5 g",
+    "volume": "6 ml",
+    "price_postapoc": "1 USD",
+    "material": ["bone"],
+    "symbol": "=",
+    "color": "dark_gray",
+    "count": 10,
+    "ammo_type": "remnant"
   }
-
-
-
 
 ]
 

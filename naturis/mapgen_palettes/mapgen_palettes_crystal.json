@@ -1,0 +1,24 @@
+[
+  {
+    "type": "palette",
+    "id": "crystal",
+    "terrain": {
+      "1": [ ["t_tree_crystal", 1], ["t_dirt_rocky", 10], ["t_dirt_crystal", 3], ["t_dirt", 15] ],
+      "0": "t_dirt_rocky",
+      "2": [ [ "t_dirt_crystal", 15 ], [ "t_tree_crystal", 3 ], [ "t_crystal_pillar_large", 1 ] ],
+      ".": "t_water_sh",
+      "4": "t_beehive_crystal",
+      "5": "t_heart_crystal",
+      "#": "t_tree_crystal",
+      "~": "t_sand"
+    },
+    "furniture": {
+      "3": [ [ "f_boulder_small", 3 ], [ "f_rubble_rock", 4 ], [ "f_boulder_medium", 2 ], [ "f_boulder_large", 1 ], [ "f_null", 50 ] ]
+    }
+  }
+]
+  
+  
+  
+  
+  
