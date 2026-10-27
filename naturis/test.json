@@ -1,0 +1,117 @@
+
+[
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "id": "grounding_anchor_capsule",
+    "category": "tools",
+    "name": { "str": "grounding anchor" },
+    "description": "A single-use grounding device. When activated while wielded, it creates a static protective field that reduces incoming electrical damage.",
+    "weight": "500 g",
+    "volume": "500 ml",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "light_blue",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "revert_to": "grounding_anchor_spent",
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "SPELL_GROUNDING_ANCHOR",
+      "no_fail": true,
+      "level": 0,
+      "need_wielding": true,
+      "mundane": true
+    }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "id": "grounding_anchor_spent",
+    "category": "tools",
+    "name": { "str": "spent grounding anchor" },
+    "description": "An expended grounding device with no remaining charge.",
+    "weight": "500 g",
+    "volume": "500 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [ "steel", "plastic" ],
+    "symbol": "*",
+    "color": "dark_gray"
+  },
+  {
+    "type": "field_type",
+    "id": "fd_grounding",
+    "phase": "plasma",
+    "priority": 5,
+    "half_life": "5 minutes",
+    "percent_spread": 0,
+    "display_field": true,
+    "intensity_levels": [
+      {
+        "name": "grounding field",
+        "sym": "*",
+        "color": "light_blue",
+        "dangerous": false,
+        "effects": [
+          {
+            "effect_id": "effect_grounded",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "is_environmental": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "SPELL",
+    "id": "SPELL_GROUNDING_ANCHOR",
+    "name": "Grounding Anchor",
+    "description": "Creates a static grounding field that protects nearby creatures against electrical damage.",
+    "valid_targets": [ "self", "ground" ],
+    "flags": [
+      "SILENT",
+      "NO_PROJECTILE",
+      "NO_EXPLOSION_SFX"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 0,
+    "max_range": 0,
+    "min_aoe": 4,
+    "max_aoe": 4,
+    "min_damage": 0,
+    "max_damage": 0,
+    "damage_type": "electric",
+    "field_id": "fd_grounding",
+    "field_chance": 1,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_grounded",
+    "name": [ "Grounded" ],
+    "desc": [
+      "A grounding field reduces incoming electrical damage by 20 points."
+    ],
+    "rating": "good",
+    "max_duration": "2 seconds",
+    "show_in_info": true,
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "incoming_damage_mod": [
+          {
+            "type": "electric",
+            "add": -20
+          }
+        ]
+      }
+    ]
+  }
+]
