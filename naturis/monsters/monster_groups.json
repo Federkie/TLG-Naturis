@@ -117,7 +117,6 @@
       { "monster": "mon_zombie_fat", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_zombie_tough", "weight": 70, "cost_multiplier": 0 },
       { "group": "GROUP_ROACH", "weight": 150, "cost_multiplier": 0 },
-      { "group": "GROUP_PLAGUE_ROACH", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_zombie", "weight": 200, "cost_multiplier": 0 }
  ]
 },
