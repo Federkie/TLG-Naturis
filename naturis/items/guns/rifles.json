@@ -10,7 +10,6 @@
     "volume": "2800 ml",
     "longest_side": "900 mm",
     "barrel_length": "451 mm",
-    "price": "800 USD",
     "price_postapoc": "35 USD",
     "to_hit": -1,
     "material": [ "steel", "glass" ],
@@ -25,9 +24,38 @@
       [ "sights mount", 1 ],
       [ "sling", 1 ]
     ],
-    "flags": [ "NEVER_JAMS" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "fa_r_mag" ] } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "fa_mag" ] } ],
     "melee_damage": { "bash": 9 }
+  },
+  {
+    "id": "rifle_resonance",
+    "copy-from": "rifle_semi",
+    "type": "ITEM",
+    "subtypes": ["GUN"],
+    "name": { "str": "resonance rifle" },
+    "description": "The latest weapon development, based on the properties of rare crystals. It can utilize multiple types of ammunition and is notable for its accuracy.",
+    "weight": "2100 g",
+    "volume": "2550 ml",
+    "longest_side": "880 mm",
+    "barrel_length": "448 mm",
+    "price_postapoc": "850 USD",
+    "to_hit": -1,
+    "material": ["steel", "crystal_hard"],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": ["fa_s"],
+    "dispersion": 100,
+    "durability": 8,
+    "min_cycle_recoil": 800,
+    "valid_mod_locations": [
+      ["underbarrel mount", 1],
+      ["sights mount", 1],
+      ["sling", 1]
+    ],
+    "flags": ["NEVER_JAMS"],
+    "pocket_data": [{ "pocket_type": "MAGAZINE_WELL", "item_restriction": ["fa_mag"] }],
+    "use_action": [ "GUN_REPAIR" ],
+    "melee_damage": { "bash": 12 }
   }
 
 

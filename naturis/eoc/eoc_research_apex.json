@@ -153,6 +153,44 @@
 },
 {
   "type": "effect_on_condition",
+  "id": "EOC_NATURIS_CRSEEDER_ARCHIVE",
+  "effect": [
+    {
+      "math": [
+        "u_skill_exp('research', 'format': 'percentage') += 35"
+      ]
+    },
+    {
+      "u_message": "You you are studying the archive and gain research experience."
+    },
+    {
+      "u_learn_recipe": "crystal_edge"
+    },
+    {
+      "u_message": "You learn how to craft an crystal edge!"
+    },
+    {
+      "u_run_inv_eocs": "random",
+      "search_data": [
+        {
+          "id": "naturis_crseeder_archive"
+        }
+      ],
+      "true_eocs": [
+        {
+          "id": "EOC_NATURIS_CRSEEDER_ARCHIVE_TRANSFORM",
+          "effect": [
+            {
+              "transform_item": "naturis_crseeder_archive_used"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "effect_on_condition",
   "id": "EOC_NATURIS_IFORMER_ARCHIVE",
   "effect": [
     {

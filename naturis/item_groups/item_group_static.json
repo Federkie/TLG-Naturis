@@ -1,6 +1,6 @@
 [
   {
-    "id": "materials_ice",
+    "id": "materials_static",
     "type": "item_group",
     "items": [
       ["shard_electric", 4],

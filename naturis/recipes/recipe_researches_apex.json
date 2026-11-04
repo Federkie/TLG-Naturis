@@ -7,6 +7,8 @@
     "subcategory": "CSC_RESEARCH_APEX",
     "time": "3 h",
     "autolearn": [ ["research", 6] ],
+    "skill_used": "research",
+    "difficulty": 6,
     "qualities": [ { "id": "RESEARCH", "level": 2 } ],
     "components": [
       [ [ "paper", 20 ] ],
@@ -68,6 +70,20 @@
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
       [ [ "naturis_sample_iformer", 1 ] ]
+    ]  
+    },
+    {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "naturis_crseeder_archive",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_APEX",
+    "copy-from": "naturis_static_archive",
+    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "components": [
+      [ [ "paper", 20 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
+      [ [ "naturis_sample_crseeder", 1 ] ]
     ]  
     }
   

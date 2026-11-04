@@ -42,6 +42,13 @@
        "subtypes": ["COMESTIBLE"],
        "id": "naturis_sample_iformer",
        "name": { "str": "ice former sample" }
-   }
+   },
+    {
+        "type": "ITEM",
+        "copy-from": "naturis_sample_static",
+        "subtypes": ["COMESTIBLE"],
+        "id": "naturis_sample_crseeder",
+        "name": { "str": "crystal seeder sample" }
+    }
    
 ]

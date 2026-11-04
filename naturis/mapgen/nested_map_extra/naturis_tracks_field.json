@@ -118,7 +118,7 @@
          "222"
        ],
         "item": {
-         "2": { "item": "creature_remnant", "chance": 20 }
+         "2": { "item": "creature_remnant", "chance": 80 }
        },
        "place_fields": [
        {

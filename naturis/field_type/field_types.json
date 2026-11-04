@@ -219,7 +219,33 @@
     "phase": "gas",
     "display_items": true,
     "display_field": true
-  }
+  },
+  {
+  "id": "fd_slow",
+  "type": "field_type",
+  "substance_name": "slowing field",
+  "intensity_levels": [
+    {
+      "name": "slowing field",
+      "sym": "5",
+      "color": "light_blue",
+      "dangerous": true,
+      "effects": [
+        {
+          "effect_id": "sludged",
+          "intensity": 1,
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "description_affix": "covered_in",
+  "priority": 2,
+  "half_life": "10 seconds",
+  "phase": "gas",
+  "display_field": true
+}
 
 
 

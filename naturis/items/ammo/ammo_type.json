@@ -42,6 +42,18 @@
    "id": "remnant",
    "name": "remnant",
    "default": "creature_remnant"
+ },
+ {
+  "type": "ammunition_type",
+  "id": "naturis_crystal",
+  "name": "crystal growth",
+  "default": "crystal_round"
+},
+ {
+  "type": "ammunition_type",
+  "id": "fa_s",
+  "name": "fa_s",
+  "default": "fa_s_crystal"
  }
 
 

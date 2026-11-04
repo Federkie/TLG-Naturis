@@ -285,12 +285,12 @@
     "id": "crystal_seeder",
     "type": "harvest",
     "entries": [
-      { "drop": "crystal_antler", "type": "bone", "base_num": [0, 2], "max": 2 },
-      { "drop": "meat", "type": "flesh", "mass_ratio": 0.32 },
-      { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+      { "drop": "crystal_lattice", "type": "bone", "base_num": [1, 5], "max": 3 },
+      { "drop": "mutant_meat", "type": "flesh", "mass_ratio": 0.32 },
+      { "drop": "crystal_seed", "type": "flesh", "mass_ratio": 0.01 },
       { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
       { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
-      { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "shard_crystal", "type": "blood", "mass_ratio": 0.1 },
       { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
       { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
       { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
@@ -333,9 +333,66 @@
       "type": "harvest",
       "message": "You carefully crack open the crystal heart and take its core.",
       "entries": [
-        { "drop": "crystal_core", "base_num": [1, 2], "difficulty": 0 }
+        { "drop": "crystal_core", "base_num": [1, 1], "difficulty": 0 }
       ]
-    }
-
-
+    },
+       {
+        "id": "crystal_harv",
+        "type": "harvest",
+        "message": "You carefully break out a few loose crystal pieces.",
+        "entries": [
+         { "drop": "shard_crystal", "base_num": [3, 7], "difficulty": 0 }, { "drop": "crystal_chunk", "base_num": [1, 3], "difficulty": 1 }
+        ]
+      },
+        {
+    "id": "forest",
+    "type": "harvest",
+    "entries": [
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.2 },
+      { "drop": "living_wood", "type": "bone", "mass_ratio": 0.05 },
+      { "drop": "vine_30", "type": "skin", "mass_ratio": 0.02 },
+      { "drop": "withered", "type": "skin", "mass_ratio": 0.01 }
+    ]
+  },
+    {
+      "id": "ice_shadow",
+      "type": "harvest",
+      "entries": [
+        { "drop": "ice_fang", "type": "bone", "base_num": [0, 2], "max": 2 },
+        { "drop": "meat", "type": "flesh", "mass_ratio": 0.32 },
+        { "drop": "meat_scrap", "type": "flesh", "mass_ratio": 0.01 },
+        { "drop": "lung", "type": "flesh", "mass_ratio": 0.0035 },
+        { "drop": "liver", "type": "offal", "mass_ratio": 0.01 },
+        { "drop": "animal_blood", "type": "blood", "mass_ratio": 0.1 },
+        { "drop": "brain", "type": "flesh", "mass_ratio": 0.005 },
+        { "drop": "sweetbread", "type": "flesh", "mass_ratio": 0.002 },
+        { "drop": "kidney", "type": "offal", "mass_ratio": 0.002 },
+        { "drop": "stomach_large", "scale_num": [1, 1], "max": 1, "type": "offal" },
+        { "drop": "bone_frozen", "type": "bone", "mass_ratio": 0.15 },
+        { "drop": "bone_marrow", "type": "bone", "mass_ratio": 0.005 },
+        { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 },
+        { "drop": "leather_durable", "type": "skin", "mass_ratio": 0.02 },
+        { "drop": "fat", "type": "flesh", "mass_ratio": 0.07 }
+      ]
+    },
+     {
+    "id": "ice_petals_harvest",
+    "type": "harvest",
+    "entries": [{ "drop": "ice_petals", "base_num": [1, 3], "scale_num": [0, 1] }]
+  },
+{
+    "id": "leaves_pink_harvest",
+    "type": "harvest",
+    "entries": [{ "drop": "leaves_pink", "base_num": [1, 3], "scale_num": [0, 1] }]
+  },
+{
+    "id": "crystal_pillar_large_harvest",
+    "type": "harvest",
+    "entries": [{ "drop": "crystal_chunk", "base_num": [1, 2], "scale_num": [1, 2] }]
+  },
+{
+    "id": "ice_pillar_large_harvest",
+    "type": "harvest",
+    "entries": [{ "drop": "ice_chunk","base_num": [1, 3], "scale_num": [1, 2] }]
+  }
 ]

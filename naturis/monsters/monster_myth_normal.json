@@ -38,7 +38,7 @@
     "fear_triggers": [ "FRIEND_DIED", "FIRE", "SOUND" ],
     "anger_triggers": [ "STALK", "PLAYER_WEAK", "PLAYER_CLOSE", "MATING_SEASON" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
-    "flags": [ "FISHABLE", "SEES", "SMELLS", "HEARS", "SWIMS", "CLIMBS", "ANIMAL", "HIT_AND_RUN" ]
+    "flags": [ "FISHABLE", "SEES", "NO_NECRO", "SMELLS", "HEARS", "SWIMS", "CLIMBS", "ANIMAL", "HIT_AND_RUN" ]
   },
     {
     "id": "mon_glow_cap",
@@ -141,6 +141,7 @@
       "SEES",
       "SMELLS",
       "HEARS",
+      "NO_NECRO",
       "ANIMAL",
       "HIT_AND_RUN",
       "GROUP_MORALE"
@@ -206,6 +207,7 @@
       "SEES",
       "SMELLS",
       "HEARS",
+      "NO_NECRO",
       "ANIMAL",
       "COLDPROOF"
     ]
@@ -253,6 +255,7 @@
      "HEARS",
      "SMELLS",
      "GRABS",
+     "NO_NECRO",
      "BELLYUP"
    ],
    "armor": { "cut": 1, "bash": 3, "heat": 15 }
@@ -261,7 +264,7 @@
    "id": "mon_crystal_slurker",
    "type": "MONSTER",
    "name": { "str": "crystal slurker" },
-   "description": ".",
+   "description": "This rather cute looking creature has already torn several unsuspecting victims to pieces with its tentacle like arms.",
    "default_faction": "crystal",
    "bodytype": "dog",
    "diff": 2,
@@ -294,11 +297,100 @@
      "SEES",
      "HEARS",
      "SMELLS",
+     "NO_NECRO",
      "GRABS"
    ],
    "armor": { "cut": 6, "bash": 5, "heat": 10 }
- }
-
+ },
+  {
+   "id": "mon_forest_dog",
+   "type": "MONSTER",
+   "name": { "str": "forest dog" },
+   "description": "Leaves, branches, and other plants come together to form a dog-like creature, one you’d best not get too close to.",
+   "default_faction": "forest",
+   "bodytype": "dog",
+   "diff": 2,
+   "species": ["MYTHIC"],
+   "volume": "32000 ml",
+   "weight": "43750 g",
+   "hp": 40,
+   "speed": 100,
+   "material": ["dry_plant"],
+   "symbol": "d",
+   "color": "green",
+   "scents_tracked": ["sc_human", "sc_fetid"],
+   "aggression": 100,
+   "morale": 80,
+   "melee_skill": 4,
+   "melee_dice": 1,
+   "melee_dice_sides": 8,
+   "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
+   "grab_strength": 15,
+   "dodge": 2,
+   "families": ["prof_intro_biology", "prof_physiology", "prof_wp_mythic"],
+   "vision_night": 6,
+   "fear_triggers": ["FIRE"],
+   "harvest": "forest",
+   "special_attacks": [
+     { "id": "bite_grab", "attack_upper": false, "cooldown": 3 },
+     { "id": "scratch_grab_required" }
+   ],
+   "flags": [
+     "SEES",
+     "HEARS",
+     "SMELLS",
+     "GRABS",
+     "STUMBLES",
+     "NO_BREATHE",
+     "BELLYUP",
+     "ATTACK_UPPER",
+     "NO_NECRO",
+     "FLAMMABLE"
+   ],
+   "armor": { "electric": 2 }
+ },
+{
+    "id": "mon_walking_tree",
+    "type": "MONSTER",
+    "name": { "str": "walking tree" },
+    "description": "a Hulk-like figure, half tree, half... whatever else.",
+    "default_faction": "overgrown",
+    "bodytype": "human",
+    "species": "MYTHIC",
+    "diff": 3,
+    "volume": "80000 ml",
+    "weight": "82000 g",
+    "hp": 115,
+    "speed": 45,
+    "material": [ "wood" ],
+    "symbol": "F",
+    "color": "green",
+    "aggression": 100,
+    "morale": 120,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "bash", "amount": 1 } ],
+    "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_head_small" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_mythic" ],
+    "vision_night": 5,
+    "harvest": "forest",
+    "grab_strength": 50,
+    "special_attacks": [ { "id": "grab", "cooldown": 5 } ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "STUMBLES",
+      "GRABS",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "NO_NECRO",
+      "BADVENOM"
+    ],
+    "armor": { "bash": 5, "cut": 3, "bullet": 6, "electric": 2 }
+  }
   
   
   

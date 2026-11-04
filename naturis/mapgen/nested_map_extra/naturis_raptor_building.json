@@ -1,0 +1,124 @@
+[
+  
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_naturis_raptor_building",
+    "object": {
+    "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "set": [ { "point": "bash", "x": [ 3, 20 ], "y": [ 3, 20 ], "repeat": [ 10, 20 ] } ],
+      "place_nested": [        
+        {
+          "chunks": [
+            ["null", 20],
+           ["naturis_small_raptor_house_nested", 15]
+          ],
+          "x": [0, 16],
+          "y": [0, 16]
+        } 
+      ],
+      "nested": {
+                " ": {
+          "chunks": [ ["damaged_door_nested_no_junk", 3],
+            ["destroyed_door_nested_no_junk", 3]
+          ]
+        }
+      }
+    }
+  },
+   {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_small_raptor_house_nested",
+    "object": {
+      "mapgensize": [
+        6,
+        6
+      ],
+      "rows": [
+        "  111 ",
+        " 11111",
+        "111211",
+        " 12211",
+        "111111",
+        "  11  "
+      ],
+        "item": {
+        "2": { "item": "egg_small_raptor", "chance": 70, "repeat": [1, 3] },
+        "1": { "item": "creature_remnant", "chance": 5, "repeat": [1, 3] }
+        },
+    
+"place_monster": [
+  {
+    "monster": "mon_small_raptor",
+    "x": 1,
+    "y": 1,
+    "pack_size": [ 1, 3 ],
+    "spawn_data": {
+      "patrol": [
+        {
+          "x": [ 1, 6 ],
+          "y": [ 1, 6 ]
+        },
+        {
+          "x": [ 1, 6 ],
+          "y": [ 1, 6 ]
+        },
+        {
+          "x": [ 1, 6 ],
+          "y": [ 1, 6 ]
+        }
+      ]
+    }
+  }
+],
+      "place_fields": [
+        {
+          "field": "fd_blood",
+          "x": [
+            2,
+            5
+          ],
+          "y": [ 1, 5 ],
+          "repeat": [ 1, 3 ]
+        }
+      ],
+      "terrain": {
+        "1": "t_dirt_rocky",
+        "2": "t_dirt_rocky"
+      }
+      }
+    }
+
+  
+  
+  
+  
+
+  
+  
+]

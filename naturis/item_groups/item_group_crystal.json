@@ -5,7 +5,10 @@
   "items": [
     ["shard_crystal", 4],
     ["strong_bone", 6],
-    ["crystallized_fur_sheet", 2],
+    ["crystallized_fur_sheet", 3],
+    ["crystal_lattice", 1],
+    ["crystal_chunk", 3],
+    ["crystal_seed", 2],
     ["crystal_antler", 1]
   ]
 }

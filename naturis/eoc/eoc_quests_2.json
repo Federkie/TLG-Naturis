@@ -1,0 +1,135 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_2",
+    "effect": [
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "creature_remnant"
+          }
+        ],
+        "true_eocs": [
+          "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_2"
+        ],
+        "false_eocs": [
+          "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_2"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_2",
+    "effect": [
+      {
+        "weighted_list_eocs": [
+          [ "EOC_NATURIS_SCANNER_TARGET_THORN_2", 30 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_2", 30 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_2", 20 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_2", 30 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_2", 30 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_2", 30 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_2", 10 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_2", 10 ],
+          [ "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_2", 10 ],
+          [ "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_2", 10 ]
+        ]
+      },
+      {
+        "u_consume_item": "creature_remnant",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_THORN_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_THORN" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_SMRAPTOR" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_GLOW_CAP" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_FRBRAWLER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_EMSTALKER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_CRSLURKER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_CRYSTAL_WALKER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_VEIL_STALKER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_BIG_RAPTOR" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+   {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_2",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_INVESTIGATE_NEST" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_2",
+    "effect": [
+      {
+        "u_message": "ERROR: No creature remnant available. You need at least one in order to be able to examine it."
+      }
+    ]
+  }
+]

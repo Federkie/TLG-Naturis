@@ -23,9 +23,86 @@
     "time": "35 m",
     "qualities": [ { "id": "HAMMER_FINE", "level": 1 } ],
     "components": [ [ [ "shard_crystal", 9 ] ] ]
+  },
+    {
+    "result": "grounding_anchor_spent",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "difficulty": 2,
+    "time": "5 m",
+    "using": [ [ "soldering_standard", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "plastic_chunk", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "e_scrap", 1 ] ]
+    ]
+  },
+  {
+    "result": "field_scanner",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "electronics",
+    "difficulty": 2,
+    "time": "4 m 30 s",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "scrap_aluminum", 1 ] ], [ [ "medium_battery_cell", 1 ] ], [ [ "small_lcd_screen", 1 ] ], [ [ "processor", 1 ] ],
+      [ [ "lens_small", 1 ] ],
+      [ [ "test_tube", 1 ] ]
+    ]
+  },
+    {
+    "result": "field_analysis_kit",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "30 s",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "spike", 1 ] ], 
+      [ [ "lens_small", 1 ] ]
+    ]
+  },
+    {
+    "result": "arm_splint_living",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "20 s",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "cotton_patch", 1 ] ], 
+      [ [ "splinter", 8 ] ]
+    ]
+  },
+    {
+    "result": "leg_splint_living",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "20 s",
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "cotton_patch", 1 ] ], 
+      [ [ "splinter", 8 ] ]
+    ]
+  },
+     {
+    "result": "crystal_seed_spent",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "10 s",
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "shard_crystal", 2 ] ]
+      ]
   }
-
-
 
 
 

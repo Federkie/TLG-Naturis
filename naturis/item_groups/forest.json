@@ -1,0 +1,19 @@
+[
+   {
+   "type": "item_group",
+   "id": "trash_forest",
+   "copy-from": "trash_forest",
+   "extend": {
+     "items": [
+       { "item": "creature_remnant", "prob": 3 },
+       { "item": "feather_burning", "prob": 1 },
+       { "item": "strong_bone", "prob": 2 }, 
+       { "item": "bone_curved", "prob": 2 }
+     ]
+   }
+ }
+  
+  
+  
+  
+]

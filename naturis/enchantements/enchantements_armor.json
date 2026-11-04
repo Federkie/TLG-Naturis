@@ -23,5 +23,19 @@
    "name": { "str": "heat resist" },
    "description": ".",
    "values": [ { "value": "MAX_STAMINA", "add": 200 } ]
- }
+ },
+  {
+   "type": "enchantment",
+   "id": "enchant_fling",
+   "has": "WORN",
+   "hit_you_effect": [{ "id": "fling", "hit_self": false, "once_in": 5 }]
+   },
+     {
+    "type": "enchantment",
+    "id": "enchant_strong",
+    "has": "WORN",
+  "values": [
+    { "value": "STRENGTH", "add": 1 }
+  ]
+  }
 ]

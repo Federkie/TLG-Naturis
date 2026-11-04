@@ -493,7 +493,7 @@
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "strong bone" },
-    "description": ".",
+    "description": "A large, heavy monster bone.",
     "weight": "385 g",
     "volume": "330 ml",
     "longest_side": "54 cm",
@@ -588,7 +588,7 @@
    "name": { "str": "structural crystal" },
    "description": "A very rare, hard material of unknown origin.",
    "price_postapoc": "200 USD",
-   "material": ["gemstone"],
+   "material": ["crystal_hard"],
    "weight": "700 mg",
    "volume": "6 ml",
    "to_hit": -5
@@ -603,13 +603,113 @@
     "volume": "125 ml",
     "price_postapoc": "65 cent",
     "to_hit": -3,
+    "material": [ "crystal_hard" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "qualities": [ [ "CUT", 1 ] ],
+    "melee_damage": { "cut": 4 }
+  },
+   {
+    "id": "crystal_lattice",
+    "type": "ITEM",
+    "category": "other",
+    "name": { "str": "crystal lattice", "str_pl": "crystal lattices" },
+    "description": "This material holds the crystal structure together and enables growth on biological material.",
+    "weight": "250 g",
+    "volume": "75 ml",
+    "price_postapoc": "100 USD",
+    "to_hit": -3,
     "material": [ "crystal" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "melee_damage": { "cut": 1 }
+  },
+  {
+  "type": "ITEM",
+  "subtypes": ["TOOL", "ARTIFACT"],
+  "id": "crystal_seed",
+  "category": "other",
+  "name": { "str": "crystal seed" },
+  "description": "A small, gemstone-like crystal from the inside of a crystal seeder. It grants the monster the ability to grow crystal structures. Creates a wall of crystals upon activation.",
+  "weight": "4 g",
+  "volume": "3 ml",
+  "price_postapoc": "20 USD",
+  "material": ["gemstone"],
+  "symbol": "*",
+  "color": "light_blue",
+  "initial_charges": 1,
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "flags": ["NO_SALVAGE", "GEMSTONE", "MUNDANE"],
+  "use_action": {
+   "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        {
+  "id": "EOC_CRYSTAL_SEED",
+   "effect": [
+    {
+      "u_cast_spell": {
+        "id": "create_crystals_player"
+      }
+    },
+      {
+     "u_message": "The crystal seed releases its energy and creates crystals."
+    },
+    {
+      "transform_item": "crystal_seed_spent"
+    }
+  ]
+}
+],
+    "need_wielding": true
+  }
+},
+{
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "id": "crystal_seed_spent",
+  "category": "tools",
+  "name": { "str": "empty crystal seed" },
+  "description": "An empty crystal seed; it doesn't seem to have much use anymore.",
+  "weight": "2 g",
+  "volume": "3 ml",
+  "price_postapoc": "0 cent",
+  "material": ["gemstone"],
+  "symbol": "*",
+  "flags": ["NO_SALVAGE", "GEMSTONE", "MUNDANE"],
+  "color": "dark_gray"
+},
+    {
+      "type": "ITEM",
+      "id": "ice_fang",
+      "name": { "str": "ice fang" },
+      "description": "a long, sharp fang.",
+      "weight": "540 g",
+      "color": "green",
+      "symbol": ",",
+      "material": ["keratin"],
+      "volume": "250 ml",
+      "flags": ["SPEAR"],
+      "weapon_category": ["SHIVS"],
+      "price_postapoc": "65 USD",
+      "melee_damage": { "stab": 6 }
+    },
+    {
+    "id": "ice_chunk",
+    "type": "ITEM",
+    "category": "spare_parts",
+    "name": { "str": "ice chunk", "str_pl": "ice chunks" },
+    "description": "A palm-sized piece of solid ice.",
+    "weight": "720 g",
+    "volume": "125 ml",
+    "price_postapoc": "65 cent",
+    "to_hit": -3,
+    "material": [ "perennial_ice" ],
     "symbol": ",",
     "color": "light_gray",
     "qualities": [ [ "CUT", 1 ] ],
     "melee_damage": { "cut": 4 }
   }
- 
  
  
  

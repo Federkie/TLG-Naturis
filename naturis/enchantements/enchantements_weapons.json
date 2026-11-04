@@ -5,10 +5,16 @@
      "has": "WIELD",
      "hit_you_effect": [{ "id": "electric_jumping", "hit_self": true, "once_in": 8 }]
    },
-      {
+    {
      "type": "enchantment",
      "id": "rapid_enchant",
      "has": "WIELD",
      "values": [ { "value": "SPEED", "add": 10 } ]
+   },
+    {
+     "type": "enchantment",
+     "id": "slow_enchant",
+     "has": "WIELD",
+     "hit_you_effect": [{ "id": "frost_slow", "hit_self": false, "once_in": 3 }]
    }
 ]

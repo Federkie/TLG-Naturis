@@ -5,20 +5,43 @@
     "terrain": {
       " ": "t_open_air",
       "'": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
-      "-": [ [ "t_ice_sh_thick", 1 ], [ "t_sand", 12 ], [ "t_dirt", 2 ] ],
+      "-": [ [ "t_ice_sh_thick", 1 ], [ "t_sand", 12 ], [ "t_dirt_rocky", 2 ] ],
       ".": "t_naturis_cold_stone",
       "*": "t_rock",
+      "w": "t_ice_dp_thick",
+      "f": [ [ "t_ice_flowers", 1], [ "t_ice_flowers_harvested", 2] ],
+      "W": "t_ice_dp_thin",
+      "I": "t_ice_pillar_large",
+      "x": "t_ice_perma",
+      "d": "t_dirt_rocky",
+      "i": [ [ "t_tree_ice", 2], [ "t_ice_pillar_large", 2], [ "t_dirt_rocky", 2] ],
       "S": "t_ladder_up",
+      "z": "t_ice_perma_lake",
+      "!": "t_ice_perma_lake",
+      "4": "t_dirt_rocky",
+      "X": "t_frozen_terror",
       "s": "t_ladder_down",
       "^": [ [ "t_underbrush", 2], [ "t_shrub", 2], [ "t_moss", 2], [ "t_fern",1 ] ],
-      "D": [ [ "t_door_locked_interior", 1 ], [ "t_door_locked", 2 ], [ "t_door_c", 2 ], [ "t_door_o", 1 ] ]
+      "D": [ [ "t_door_locked_interior", 1 ], [ "t_door_locked", 2 ], [ "t_door_c", 2 ], [ "t_door_o", 1 ] ],
+      "2": "t_door_glass_frosted_c",
+      "5": "t_strconc_wall",
+      "]": "t_wall_glass",
+      "`": "t_metal_floor",
+      "n": "t_naturis_frost_stone",
+      "%": "t_linoleum_white"
     },
     "furniture": {
       "0": "f_obelisk",
       "1": "f_obelisk_glow",
       "O": "f_obelisk_big",
+      "u": "f_console_broken",
+      "t": "f_table",
+      "c": "f_water_heater",
+      "h": "f_chair",
+      "L": "f_locker",
       "o": "f_obelisk_big_glow",
-      "+": [ [ "f_obelisk", 3 ], [ "f_obelisk_glow", 1 ], [ "f_obelisk_big", 2 ], [ "f_obelisk_big_glow", 1 ], [ "f_null", 2 ] ]
+      "+": [ [ "f_obelisk", 3 ], [ "f_obelisk_glow", 1 ], [ "f_obelisk_big", 2 ], [ "f_obelisk_big_glow", 1 ], [ "f_null", 2 ] ],
+      "4": [ [ "f_boulder_small", 3 ], [ "f_rubble_rock", 4 ], [ "f_boulder_medium", 2 ], [ "f_boulder_large", 1 ], [ "f_null", 50 ] ]
     }
   }
 ]

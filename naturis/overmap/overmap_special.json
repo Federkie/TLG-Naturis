@@ -136,8 +136,41 @@
   "locations": [ "forest" ],
   "city_distance": [ 25, -1 ],
   "city_sizes": [ 0, 12 ],
-  "occurrences": [ 0, 1 ],
+  "occurrences": [ 1, 2 ],
   "flags": [ "WILDERNESS", "OVERMAP_UNIQUE" ]
-}
+},
+{
+  "type": "overmap_special",
+  "id": "frostbound_cavern",
+  "overmaps": [
+    { "point": [0, 0, 0], "overmap": "frostbound_cavern_entrance_north" },
+    { "point": [0, 0, -1], "overmap": "frostbound_cavern_north" },
+    { "point": [0, -1, -1], "overmap": "frostbound_ground_north" },
+    { "point": [1, -1, -1], "overmap": "frostbound_ground_north" },
+    { "point": [1, 0, -1], "overmap": "frostbound_ground_north" },
+    { "point": [1, 1, -1], "overmap": "frostbound_ground_north" },
+    { "point": [0, 1, -1], "overmap": "frostbound_ground_north" },
+    { "point": [-1, 1, -1], "overmap": "frostbound_ground_north" },
+    { "point": [-1, 0, -1], "overmap": "frostbound_ground_north" },
+    { "point": [-1, -1, -1], "overmap": "frostbound_ground_north" }
+  ],
+  "locations": ["forest"],
+  "city_distance": [25, -1],
+  "city_sizes": [0, 12],
+  "occurrences": [1, 2],
+  "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
+},
+  {
+    "type": "overmap_special",
+    "id": "monster_nest",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "monster_nest_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [20, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [2, 8],
+    "flags": ["WILDERNESS"]
+  }
 
 ]

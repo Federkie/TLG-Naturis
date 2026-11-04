@@ -39,7 +39,10 @@
           { "id": "otter_pearl", "fg": 21, "rotates": false },
           { "id": "mon_hatchling_fdragon", "fg": 22, "rotates": false },
           { "id": "mon_hatchling_rapid", "fg": 23, "rotates": false },
-          { "id": "mon_hatchling_icef", "fg": 24, "rotates": false }
+          { "id": "mon_hatchling_icef", "fg": 24, "rotates": false },
+          { "id": "mon_crystal_crawler", "fg": 25, "rotates": false },
+          { "id": "mon_ice_mole", "fg": 26, "rotates": false },
+          { "id": "mon_ice_worm", "fg": 27, "rotates": false }
         ],
         "sprite_width": 20,
         "sprite_height": 20

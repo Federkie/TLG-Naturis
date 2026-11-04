@@ -31,7 +31,6 @@
         "                        "
       ],
       "palettes": [ "crystal" ],
-      "nested": { " ": { "chunks": [ "1x1_megafernification", "null" ] } },
       "place_nested": [
         { "chunks": [ "24x24_crystal_field_n" ], "neighbors": { "south": [ "crystal_grove" ] }, "x": 0, "y": 0 },
         { "chunks": [ "24x24_crystal_field_ne" ], "neighbors": { "south_west": [ "crystal_grove" ] }, "x": 0, "y": 0 },

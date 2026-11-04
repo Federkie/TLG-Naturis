@@ -28,6 +28,12 @@
            "type": "harvest",
            "message": "With cuts and pulls equally similar to both extraction and vandalism, you scrape together the most important parts of the creature.",
            "entries": [{ "drop": "naturis_sample_iformer", "type": "naturis_sample" }]
-         }
+         },
+            {
+             "id": "dissect_naturis_sample_crseeder",
+             "type": "harvest",
+             "message": "With cuts and pulls equally similar to both extraction and vandalism, you scrape together the most important parts of the creature.",
+             "entries": [{ "drop": "naturis_sample_crseeder", "type": "naturis_sample" }]
+           }
   
 ]

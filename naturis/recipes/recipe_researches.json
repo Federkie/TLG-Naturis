@@ -20,6 +20,8 @@
     "result": "naturis_research_dossier",
     "category": "CC_RESEARCH",
     "subcategory": "CSC_RESEARCH_ANALYSIS",
+    "skill_used": "research",
+    "difficulty": 2,
     "time": "1 h",
     "autolearn": [ ["research", 3] ],
     "qualities": [ { "id": "RESEARCH", "level": 2 } ],
@@ -69,8 +71,55 @@
       [ [ "test_tube", 1 ] ],
       [ [ "cable", 4 ] ]
     ]
+  },
+        {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "field_scanner_2",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_TOOLS",
+    "skill_used": "electronics",
+    "difficulty": 5,
+    "time": "1 h",
+    "reversible": false,
+    "autolearn": [ ["research", 5] ],
+    "using": [ [ "soldering_standard", 6 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_elec_soldering" },
+      { "proficiency": "prof_elec_circuits" }
+    ],
+    "qualities": [ { "id": "SCREW", "level": 2 } ],
+    "components": [
+      [ [ "field_scanner", 1 ] ],
+      [ [ "lens_small", 4 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "e_scrap", 3 ] ]
+    ]
+  },
+   {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "field_scanner_3",
+    "category": "CC_RESEARCH",
+    "subcategory": "CSC_RESEARCH_TOOLS",
+    "skill_used": "electronics",
+    "difficulty": 8,
+    "time": "2 h",
+    "reversible": false,
+    "autolearn": [ ["research", 8] ],
+    "using": [ [ "soldering_standard", 2 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_elec_soldering" },
+      { "proficiency": "prof_elec_circuits" }
+    ],
+    "qualities": [ { "id": "SCREW_FINE", "level": 2 }, { "id": "VISE", "level": 1 } ],
+    "components": [
+      [ [ "field_scanner_2", 1 ] ],
+      [ [ "magnifying_glass", 1 ] ],
+      [ [ "antenna", 1 ] ],
+      [ [ "cable", 3 ] ]
+    ]
   }
-  
   
   
 ]

@@ -1,47 +1,62 @@
 # TLG-Naturis
-A mod for Cataclysm the last generation.
-This mod is still WIP!
-
-The goal is to integrate more natural features and new creatures. These monsters are the targets of hunting quests, allowing players to obtain rare materials and craft special items and weapons. 
-New plants, exotic creatures, anomalies and locations.
-
 
 Current feautures:
 
 Research skill unlocks:
 1
+- chipped ice
 - 
 2
 - field scanner
+- crystal-tipped arrow
 3
 - naturis research dossier
+- raptorfood
+- crystal alloy
+- frostclaw
+- raptor arm guards
+- raptor longbow
 4
-- wrist injector
-- healing liquid
+- 
+- crystal field trap
+- grounding anchor
+- ice field trap
+- electric hunting trap
 5
 - shadow cloak
+- field scanner MK. II
+- arm amplifier
+- rapid epee
+- permafrost cleaver
 6
-- naturis static beast archive
-- inferno katana
+- naturis static beast archive (inferno katana)
 - naturis flying fire archive
 - naturis rapid striker archive
-- naturis ice former archive
-- ice spear 
+- naturis ice former archive (ice spear)
 - naturis forest dragon archive
+- naturis crystal seeder archive (crystal edge)
+- static sword
 7
 - forest rifle
 - fa_r leaves
 - fa_r heat
+- fa magazine
+- wrist injector
+- healing liquid
 8
--
+- field scanner MK. III
+- resonance rifle
+- fa_s crystal
+- claw staff
+- freeze
 9
--
+- static leather armor
 10
 -
 -
 
 
-New creatures (WIP):
+New creatures:
 
 - forest dragon
 A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
@@ -73,6 +88,10 @@ A large, dragon-like creature that you better not get too close to. Drops its ow
 - forest dragon hatchling
 - ice former hatchling
 - big raptor
+- crystal seeder
+- crystal crawler
+- ice shadow
+- frost brawler
 
 - forest walker
 This creature allows plants and trees to grow, including in buildings.
@@ -95,9 +114,16 @@ Weapons:
 - claw staff (+ recipe)
 - static sword (+ recipe)
 - rapid épeé (+ recipe)
-- inferno katana (+ recipe, WIP)
+- inferno katana (+ recipe)
 - crystal axe (+ recipe)
 - claw knife (+ recipe)
+- ice spear (+ recipe)
+- ice hammer
+- crystal edge (+ recipe)
+- resonance rifle (+ recipe)
+- chipped ice (+ recipe)
+- ftostclaw (+ recipe)
+- raptor longbow (+ recipe)
 
 Ammo:
 - cutting disk (+ recipe)
@@ -105,6 +131,7 @@ Ammo:
 - fa_r heat (+ recipe)
 - fa_r leaves (+ recipe)
 - crystal tipped arrow (+recipe)
+- fa_s CRYSTAL
 
 
 Armor:
@@ -114,6 +141,8 @@ Armor:
 - cryo gauntlets (+ recipe)
 - crystal cap (+ recipe)
 - raptor arm guards (+ recipe)
+- shadow cloak (+ recipe)
+- tech ring (WIP)
 
 Books:
 - alternative medicine
@@ -123,6 +152,13 @@ Books:
 
 Traps: 
 - electric hunting trap (+recipe)
+- ice field trap (+recipe)
+
+Tools: 
+- field scanner (+ recipe)
+- field scanner MK. II (+ recipe)
+- field scanner MK. III (+ recipe)
+- field analyse kit (+ recipe)
 
 
 Misc:
@@ -130,7 +166,7 @@ Misc:
 - living wood leg splint (+recipe)
 - pink leave tea (+ recipe)
 - cryo powder (+ recipe)
-- 
+- grounding anchor (+ recipe)
 
 New matierials:
 - thorn skin
@@ -171,6 +207,13 @@ New matierials:
 - strong bone
 - raptor tendon
 - long claw
+- crystal chunk
+- crystal seed
+- crystal lattice
+- crystal core
+- frozen petals
+- ice fang
+- ice chunk
 
 - I have temporarily removed the "rooted egg" function, as it can cause a crash.
 
@@ -200,33 +243,38 @@ Forgotten cellar:
 An old, abandoned vaulted cellar. You can find many useful things in it, but maybe also something completely different.
 
 Burning fields:
-The home of the flying fire.
+Dwelling place and breeding ground of the flying fire.
 
 Frozen Cave:
-.
+Dwelling place and breeding ground of the ice former.
 
 Hunting fields:
-.
+Dwelling place and breeding ground of the rapid striker.
 
 Hunter camp:
-.
+The hut of the old, eccentric hermit. When in a good mood, he hands out monster-hunting quests.
 
 Pink flower ravine:
-.
+Dwelling place and breeding ground of the forest dragon.
 
 Static field
-.
+Dwelling place and breeding ground of the static beast.
 
+Crystal grove
+A vast area overgrown with crystals, featuring its own unique dangers and resources. Home to the Crystal Seeder.
+
+Monster nest
+A large nest belonging to a predator that might still be in the vicinity. Rich in monster materials.
+
+Frostbound cavern
+A vast area overgrown with ice, featuring its own unique dangers and resources.
 
 
 To do: 
 - More thematic locations
 - Improve anomaly
-- Overgrown buildings in cities
 - Overgrown sprites
 - Better descriptions
-- Modular weapons
-- Unique loot
 - More mythical creatures
 - More mythical weapons
 

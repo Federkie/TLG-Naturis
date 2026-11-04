@@ -8,7 +8,7 @@
     "skill_used": "mechanics",
     "difficulty": 4,
     "time": "4 h",
-    "autolearn": [ ["research", 4] ],
+    "autolearn": [ ["research", 7] ],
     "qualities": [ { "id": "HAMMER_FINE", "level": 2 }, { "id": "SCREW_FINE", "level": 2 } ],
         "components": [
       [ [ "syringe", 1 ] ],

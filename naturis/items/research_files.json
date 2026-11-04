@@ -10,7 +10,7 @@
    "color": "green",
    "symbol": ",",
    "price_postapoc": "0 cent",
-   "material": ["flesh"],
+   "material": ["paper"],
    "volume": "6 ml",
    "longest_side": "297 mm",
    "flags": ["PAPER_SHAPED", "TINDER"],
@@ -33,7 +33,7 @@
    "color": "dark_gray",
    "symbol": ",",
    "price_postapoc": "0 cent",
-   "material": ["flesh"],
+   "material": ["paper"],
    "volume": "6 ml",
    "flags": ["PAPER_SHAPED", "TINDER"],
    "longest_side": "297 mm"
@@ -43,13 +43,13 @@
     "subtypes": ["BOOKS"],
     "id": "naturis_research_dossier",
     "name": { "str": "naturis research dossier" },
-    "description": ".",
+    "description": "An expanded overview of creature-specific characteristics and materials.",
     "category": "spare_parts",
     "weight": "6 g",
     "color": "green",
     "symbol": ",",
     "price_postapoc": "0 cent",
-    "material": ["flesh"],
+    "material": ["paper"],
     "volume": "12 ml",
     "longest_side": "297 mm",
     "flags": ["PAPER_SHAPED", "TINDER"],
@@ -66,13 +66,13 @@
     "subtypes": ["BOOKS"],
     "id": "naturis_research_dossier_used",
     "name": { "str": "analyzed research dossier" },
-    "description": ".",
+    "description": "A list of data that you have already studied.",
     "category": "spare_parts",
     "weight": "6 g",
     "color": "dark_gray",
     "symbol": ",",
     "price_postapoc": "0 cent",
-    "material": ["flesh"],
+    "material": ["paper"],
     "volume": "12 ml",
     "flags": ["PAPER_SHAPED", "TINDER"],
     "longest_side": "297 mm"
@@ -82,13 +82,13 @@
      "subtypes": ["BOOKS"],
      "id": "naturis_static_archive",
      "name": { "str": "static beast research archive" },
-     "description": ".",
+     "description": "A detailed treatise on the research findings of an static beast.",
      "category": "spare_parts",
      "weight": "10 g",
      "color": "green",
      "symbol": ",",
      "price_postapoc": "0 cent",
-     "material": ["flesh"],
+     "material": ["paper"],
      "volume": "21 ml",
      "longest_side": "297 mm",
      "flags": ["PAPER_SHAPED", "TINDER"],
@@ -105,13 +105,13 @@
      "subtypes": ["BOOKS"],
      "id": "naturis_static_archive_used",
      "name": { "str": "analyzed static beast research archive" },
-     "description": ".",
+     "description": "A list of data that you have already studied.",
      "category": "spare_parts",
      "weight": "10 g",
      "color": "dark_gray",
      "symbol": ",",
      "price_postapoc": "0 cent",
-     "material": ["flesh"],
+     "material": ["paper"],
      "volume": "22 ml",
      "flags": ["PAPER_SHAPED", "TINDER"],
      "longest_side": "297 mm"
@@ -122,7 +122,7 @@
      "id": "naturis_rapid_archive",
      "name": { "str": "rapid striker research archive" },
      "copy-from": "naturis_static_archive",
-     "description": ".",
+     "description": "A detailed treatise on the research findings of an rapid striker.",
      "use_action": {
        "type": "effect_on_conditions",
        "menu_text": "Analyze file",
@@ -137,7 +137,7 @@
      "id": "naturis_rapid_archive_used",
      "name": { "str": "analyzed rapid striker research archive" },
      "copy-from": "naturis_static_archive_used",
-     "description": "."
+     "description": "A list of data that you have already studied."
    },  
       {
      "type": "ITEM",
@@ -145,7 +145,7 @@
      "id": "naturis_fdragon_archive",
      "name": { "str": "forest dragon research archive" },
      "copy-from": "naturis_static_archive",
-     "description": ".",
+     "description": "A detailed treatise on the research findings of an forest dragon.",
      "use_action": {
        "type": "effect_on_conditions",
        "menu_text": "Analyze file",
@@ -160,7 +160,7 @@
      "id": "naturis_fdragon_archive_used",
      "name": { "str": "analyzed forest dragon research archive" },
      "copy-from": "naturis_static_archive_used",
-     "description": "."
+     "description": "A list of data that you have already studied."
    },
    {
      "type": "ITEM",
@@ -168,7 +168,7 @@
      "id": "naturis_flfire_archive",
      "name": { "str": "flying fire research archive" },
      "copy-from": "naturis_static_archive",
-     "description": ".",
+     "description": "A detailed treatise on the research findings of an flying fire.",
      "use_action": {
      "type": "effect_on_conditions",
      "menu_text": "Analyze file",
@@ -183,7 +183,7 @@
       "id": "naturis_flfire_archive_used",
       "name": { "str": "analyzed flying fire research archive" },
       "copy-from": "naturis_static_archive_used",
-      "description": "."
+      "description": "A list of data that you have already studied."
       },
          {
      "type": "ITEM",
@@ -191,7 +191,7 @@
      "id": "naturis_iformer_archive",
      "name": { "str": "ice former research archive" },
      "copy-from": "naturis_static_archive",
-     "description": ".",
+     "description": "A detailed treatise on the research findings of an ice former.",
      "use_action": {
        "type": "effect_on_conditions",
        "menu_text": "Analyze file",
@@ -206,7 +206,7 @@
      "id": "naturis_iformer_archive_used",
      "name": { "str": "analyzed ice former research archive" },
      "copy-from": "naturis_static_archive_used",
-     "description": "."
+     "description": "A list of data that you have already studied."
    },
     {
    "type": "ITEM",
@@ -219,7 +219,7 @@
    "color": "green",
    "symbol": ",",
    "price_postapoc": "0 cent",
-   "material": ["flesh"],
+   "material": ["paper"],
    "volume": "24 ml",
    "longest_side": "297 mm",
    "flags": ["PAPER_SHAPED", "TINDER"],
@@ -242,11 +242,34 @@
    "color": "dark_gray",
    "symbol": ",",
    "price_postapoc": "0 cent",
-   "material": ["flesh"],
+   "material": ["paper"],
    "volume": "24 ml",
    "flags": ["PAPER_SHAPED", "TINDER"],
    "longest_side": "297 mm"
- }
+ },
+          {
+           "type": "ITEM",
+           "subtypes": ["BOOKS"],
+           "id": "naturis_crseeder_archive",
+           "name": { "str": "crystal seeder research archive" },
+           "copy-from": "naturis_static_archive",
+           "description": "A detailed treatise on the research findings of an crystal seeder.",
+           "use_action": {
+             "type": "effect_on_conditions",
+             "menu_text": "Analyze file",
+             "effect_on_conditions": [
+               "EOC_NATURIS_CRSEEDER_ARCHIVE"
+             ]
+           }
+         },
+         {
+           "type": "ITEM",
+           "subtypes": ["BOOKS"],
+           "id": "naturis_crseeder_archive_used",
+           "name": { "str": "analyzed crystal seeder research archive" },
+           "copy-from": "naturis_static_archive_used",
+           "description": "A list of data that you have already studied."
+         }
    
    
 ]

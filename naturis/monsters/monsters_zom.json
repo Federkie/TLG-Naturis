@@ -45,7 +45,7 @@
     "id": "mon_zom_bat",
     "type": "MONSTER",
     "name": { "str": "zombat" },
-    "description": "placeholder",
+    "description": "This undead bat can barely manage to stay airborne, yet it still tries to bite at anything within its reach.",
     "species": [ "ZOMBIE" ],
     "default_faction": "zombie",
     "diff": 1,

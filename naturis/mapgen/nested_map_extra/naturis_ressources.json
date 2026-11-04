@@ -1,0 +1,128 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_naturis_ressources",
+    "object": {
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            1           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "nested": {
+        "1": {
+          "chunks": [
+            [
+              "naturis_crystal_pillar_nested",
+              30
+            ],
+            [
+              "naturis_ice_pillar_nested",
+              30
+            ],
+            [
+              "naturis_flower_pink_nested",
+              40
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_crystal_pillar_nested",
+    "object": {
+      "mapgensize": [
+        9,
+        9
+      ],
+      "rows": [
+        "       2 ",
+        "         ",
+        "   11    ",
+        "  1221   ",
+        "   1211  ",
+        "   2211  ",
+        "   112   ",
+        "         ",
+        "         "
+      ],
+      "terrain": {
+        "1": "t_dirt_rocky",
+        "2": [ [ "t_dirt_crystal", 15 ], [ "t_tree_crystal", 3 ], [ "t_crystal_pillar_large", 1 ] ]
+      }
+      }
+    },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_flower_pink_nested",
+    "object": {
+      "mapgensize": [
+        9,
+        9
+      ],
+      "rows": [
+        "  1    2 ",
+        "    111  ",
+        "   11    ",
+        "  1221   ",
+        "   1211  ",
+        " 2 2211  ",
+        "11 112   ",
+        "     11  ",
+        "         "
+      ],
+      "terrain": {
+        "1": [ [ "t_pink_flowers", 3 ], [ "t_pink_flowers_harvested", 1 ] ],
+        "2": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ]
+      }
+      }
+    },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_ice_pillar_nested",
+    "object": {
+      "mapgensize": [
+        9,
+        9
+      ],
+      "rows": [
+        "       2 ",
+        "         ",
+        "   11    ",
+        "  1221   ",
+        "   1211  ",
+        "   2211  ",
+        "   112   ",
+        "         ",
+        "         "
+      ],
+      "terrain": {
+        "1": "t_dirt_rocky",
+        "2": [ [ "t_naturis_cold_stone", 15 ], [ "t_tree_ice", 1 ], [ "t_tree_ice", 3 ], [ "t_ice_pillar_large", 2 ] ]
+      }
+      }
+    }
+]

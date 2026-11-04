@@ -1,0 +1,75 @@
+[
+    {
+    "type": "mapgen",
+    "om_terrain": "monster_nest",
+    "object": {
+      "fallback_predecessor_mapgen": "forest",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "          .....         ",
+        "         .~~~~...       ",
+        "        .~~~~~~~~..     ",
+        "       ..~~~~~~~~~...   ",
+        "      ..~~~~~~~~~~~.    ",
+        "      .~~~~~~~~~~~..    ",
+        "      ..~~~~~~~~~~.     ",
+        "        .~~~~~~~~~.     ",
+        "         .~~~~~~..      ",
+        "          ..~~~...      ",
+        "           ....         ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+       "terrain": {
+          "~": "t_monster_nest",
+          ".": "t_grass"
+       },
+       "items": {
+         "~": [{ "item": "monster_materials", "chance": 5, "repeat": 2 }, { "item": "bones", "chance": 5 }
+         ]
+       },
+
+      "place_items": [
+        { "item": "clothing_soldier_set", "x": [6, 17], "y": [8, 15], "repeat": [1, 2], "chance": 10 },
+        { "item": "military_squad_guns", "x": [8, 17], "y": [8, 15], "repeat": [1, 2], "chance": 5 }
+         ],
+           "place_item": [
+        { "item": "feather", "x": [8, 15], "y": [8, 15], "amount": [1, 2], "repeat": [5, 20], "chance": 30 },
+        {
+          "item": "down_feather",
+          "x": [8, 15],
+          "y": [8, 15],
+          "amount": [1, 2],
+          "repeat": [1, 24],
+          "chance": 20
+        },
+        {
+          "item": "feather_burning",
+          "x": [8, 15],
+          "y": [8, 15],
+          "amount": [1, 2],
+          "repeat": [1, 5],
+          "chance": 5
+        },
+        {
+          "item": "straw_pile",
+          "x": [8, 15],
+          "y": [8, 15],
+          "amount": [1, 2],
+          "repeat": [1, 10],
+          "chance": 20
+        }
+      ]
+    }
+  }
+]

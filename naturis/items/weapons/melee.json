@@ -42,7 +42,7 @@
       "type": "transform"
     },
     "name": { "str": "rooted club" },
-    "description": ".",
+    "description": "A wooden club.",
     "price_postapoc": "20 USD",
     "material": [ "wood", "steel" ],
     "techniques": [ "WBLOCK_1" ],
@@ -51,7 +51,7 @@
     "volume": "500 ml",
     "longest_side": "110 cm",
     "to_hit": { "grip": "solid", "length": "short", "surface": "line", "balance": "neutral" },
-    "melee_damage": { "bash": 16,"cut": 2 }
+    "melee_damage": { "bash": 16, "cut": 2 }
   },
 {
     "id": "sword_burning_off",
@@ -215,7 +215,7 @@
     "name": {
       "str": "Permafrost Cleaver"
     },
-    "description": ".",
+    "description": "A curved sword with a jagged blade made of hard ice that does not melt, even in the sun.",
     "weight": "4 kg",
     "volume": "3 L",
     "longest_side": "100 cm",
@@ -320,7 +320,7 @@
     "price_postapoc": "350 USD",
     "melee_damage": {
       "bash": 4,
-      "cut": 18,
+      "cut": 22,
       "electric": 5
     }
   },
@@ -372,7 +372,7 @@
     "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str_sp": "inferno katana" },
-    "description": ".",
+    "description": "A long sword. Its blade glows intensely with heat, and when used correctly, it generates a wide electrical field around the wielder.",
     "weight": "1250 g",
     "volume": "300 ml",
     "longest_side": "90 cm",
@@ -442,7 +442,7 @@
     "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "claw knife" },
-    "description": ".",
+    "description": "A simple knife, fashioned from the claw of a raptor.",
     "volume": "310 ml",
     "weight": "320 g",
     "longest_side": "35 cm",
@@ -464,10 +464,10 @@
     "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "forest-blade knife", "str_pl": "forest-blade knifes" },
-    "description": ".",
+    "description": "A long knife made from the claw of a forest dragon.",
     "weight": "101 g",
-    "volume": "95 ml",
-    "longest_side": "18 cm",
+    "volume": "100 ml",
+    "longest_side": "21 cm",
     "price_postapoc": "125 USD",
     "techniques": [ "WBLOCK_0" ],
     "to_hit": { "grip": "weapon", "length": "hand", "surface": "point", "balance": "good" },
@@ -478,7 +478,7 @@
     "flags": [ "SHEATH_KNIFE", "NONCONDUCTIVE" ],
     "weapon_category": [ "KNIVES" ],
     "thrown_damage": [ { "damage_type": "cut", "amount": 8 } ],
-    "melee_damage": { "cut": 10 }
+    "melee_damage": { "stab": 10 }
   },
     {
     "type": "ITEM",
@@ -534,5 +534,51 @@
     "to_hit": { "grip": "weapon", "length": "long", "surface": "point", "balance": "uneven" },
     "category": "weapons",
     "melee_damage": { "bash": 15, "stab": 25 }
+  },
+   {
+    "id": "crystal_edge",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "category": "weapons",
+    "name": { "str": "crystal edge" },
+    "description": "A curved sword made of hardened crystal. It is extremely sharp and grants additional armor penetration—a benefit derived from a specialized martial art.",
+    "weight": "900 g",
+    "volume": "280 ml",
+    "longest_side": "90 cm",
+    "symbol": "/",
+    "color": "light_gray",
+    "looks_like": "katana",
+    "price_postapoc": "805 USD",
+    "material": [ { "type": "leather_durable", "portion": 1.1 }, { "type": "steel", "portion": 2 }, { "type": "alloy_crystal", "portion": 97 } ],
+    "repairs_with": [ "alloy_crystal" ],
+    "flags": ["DURABLE_MELEE", "NONCONDUCTIVE", "SHEATH_SWORD" ],
+    "techniques": [ "RAPID", "WBLOCK_1" ],
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "line", "balance": "good" },
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "weapon_category": [ "LONG_SWORDS" ],
+    "melee_damage": { "bash": 1, "cut": 36 }
+  },
+   {
+      "id": "frostclaw",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARTIFACT" ],
+    "category": "weapons",
+    "name": { "str": "frostclaw", "str_pl": "frostclaws" },
+    "description": "A dagger made from a frozen claw that slightly freezes the opponent with every hit, hindering their movements.",
+    "weight": "110 g",
+    "volume": "100 ml",
+    "longest_side": "20 cm",
+    "price_postapoc": "100 USD",
+    "techniques": [ "WBLOCK_0" ],
+    "to_hit": { "grip": "weapon", "length": "hand", "surface": "point", "balance": "good" },
+    "material": [ "perennial_ice", "leather_durable" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "qualities": [ [ "CUT", 2 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 15 ] ],
+    "flags": [ "SHEATH_KNIFE", "MUNDANE", "NONCONDUCTIVE" ],
+    "weapon_category": [ "KNIVES" ],
+    "thrown_damage": [ { "damage_type": "cut", "amount": 8 } ],
+    "melee_damage": { "stab": 9 },
+    "passive_effects": [{ "id": "slow_enchant" }]
   }
 ]

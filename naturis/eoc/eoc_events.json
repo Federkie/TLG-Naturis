@@ -1,61 +1,320 @@
 [
   {
     "type": "effect_on_condition",
-    "id": "EOC_NATURIS_TECH_SWORD_ARMOR_WEAR",
+    "id": "EOC_TECH_KNIVE_ARMOR_WEAR",
     "eoc_type": "EVENT",
     "required_event": "character_wears_item",
     "effect": [
       {
-        "run_eocs": "EOC_NATURIS_TECH_SWORD_ARMOR_CHECK",
+        "run_eocs": "EOC_TECH_KNIVE_ARMOR_CHECK",
         "time_in_future": 1
       }
     ]
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_NATURIS_TECH_SWORD_ARMOR_TAKEOFF",
+    "id": "EOC_TECH_KNIVE_ARMOR_TAKEOFF",
     "eoc_type": "EVENT",
     "required_event": "character_takeoff_item",
     "effect": [
       {
-        "run_eocs": "EOC_NATURIS_TECH_SWORD_ARMOR_CHECK",
+        "run_eocs": "EOC_TECH_KNIVE_ARMOR_CHECK",
         "time_in_future": 1
       }
     ]
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_NATURIS_TECH_SWORD_ARMOR_CHECK",
+    "id": "EOC_TECH_KNIVE_ARMOR_CHECK",
     "effect": [
       {
         "u_run_inv_eocs": "all",
         "search_data": [
           {
-            "id": "static_leather_armor",
+            "id": "tech_ring",
             "worn_only": true
           }
         ],
         "true_eocs": [
           {
-            "id": "EOC_NATURIS_TECH_SWORD_ARMOR_PRESENT",
+            "id": "EOC_TECH_KNIVE_ARMOR_PRESENT",
             "effect": [
               {
-                "u_learn_martial_art": "style_naturis_tech_sword"
+                "u_learn_martial_art": "style_tech_sword"
               }
             ]
           }
         ],
         "false_eocs": [
           {
-            "id": "EOC_NATURIS_TECH_SWORD_ARMOR_ABSENT",
+            "id": "EOC_TECH_KNIVE_ARMOR_ABSENT",
             "effect": [
               {
-                "u_forget_martial_art": "style_naturis_tech_sword"
+                "u_forget_martial_art": "style_tech_sword"
               }
             ]
           }
         ]
       }
     ]
-  }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CRYSTAL_EDGE_WIELD",
+    "eoc_type": "EVENT",
+    "required_event": "character_wields_item",
+    "effect": [
+      {
+        "run_eocs": "EOC_CRYSTAL_EDGE_CHECK",
+        "time_in_future": 1
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CRYSTAL_EDGE_UNWIELD",
+    "eoc_type": "EVENT",
+    "required_event": "character_wields_item",
+    "effect": [
+      {
+        "run_eocs": "EOC_CRYSTAL_EDGE_CHECK",
+        "time_in_future": 1
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CRYSTAL_EDGE_CHECK",
+    "effect": [
+      {
+        "u_run_inv_eocs": "all",
+        "search_data": [
+          {
+            "id": "crystal_edge",
+            "wielded_only": true
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_CRYSTAL_EDGE_PRESENT",
+            "effect": [
+              {
+                "u_learn_martial_art": "style_crystal_edge"
+              }
+            ]
+          }
+        ],
+        "false_eocs": [
+          {
+            "id": "EOC_CRYSTAL_EDGE_ABSENT",
+            "effect": [
+              {
+                "u_forget_martial_art": "style_crystal_edge"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+    {
+    "type": "effect_on_condition",
+    "id": "EOC_RAPTOR_NEST_TRIGGER",
+    "global": true,
+    "run_for_npcs": true,
+    "eoc_type": "EVENT",
+    "required_event": "avatar_moves",
+    "condition": {
+      "and": [
+        { "u_is_on_terrain": "t_raptor_nest" },
+        {
+          "not": { "u_has_effect": "spell_cooldown" }
+        }
+      ]
+    },
+    "effect": [
+      {
+        "if": {
+          "x_in_y_chance": { "x": 1, "y": 5 }
+        },
+        "then": [
+          {
+            "u_spawn_monster": "mon_small_raptor",
+            "real_count": 3,
+            "min_radius": 20,
+            "max_radius": 22
+          },
+          {
+            "u_add_effect": "spell_cooldown",
+            "duration": "10 h"
+          },
+          {
+            "u_message": "You disturbed a raptor nest! Something is moving nearby.",
+            "type": "warning"
+          }
+        ]
+      }
+    ]
+  },
+    {
+    "type": "effect_on_condition",
+    "id": "EOC_RAPID_NEST_TRIGGER",
+    "global": true,
+    "run_for_npcs": true,
+    "eoc_type": "EVENT",
+    "required_event": "avatar_moves",
+    "condition": {
+      "and": [
+        { "u_is_on_terrain": "t_rapid_nest" },
+        {
+          "not": { "u_has_effect": "spell_cooldown" }
+        }
+      ]
+    },
+    "effect": [
+      {
+        "if": {
+          "x_in_y_chance": { "x": 1, "y": 10 }
+        },
+        "then": [
+          {
+            "u_spawn_monster": "mon_rapid_striker",
+            "real_count": 1,
+            "min_radius": 20,
+            "max_radius": 22
+          },
+          {
+            "u_add_effect": "spell_cooldown",
+            "duration": "10 h"
+          },
+          {
+            "u_message": "You disturbed a rapid striker nest! Something is moving nearby.",
+            "type": "warning"
+          }
+        ]
+      }
+    ]
+  },
+{
+  "type": "effect_on_condition",
+  "id": "EOC_FROSTBOUND_LAKE_TRIGGER",
+  "global": true,
+  "run_for_npcs": false,
+  "eoc_type": "EVENT",
+  "required_event": "avatar_moves",
+  "condition": {
+    "and": [
+      { "u_is_on_terrain": "t_ice_perma_lake" },
+      {
+        "not": {
+          "u_has_effect": "spell_cooldown"
+        }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "if": {
+        "x_in_y_chance": {
+          "x": 1,
+          "y": 10
+        }
+      },
+      "then": [
+        {
+          "mapgen_update": "mx_frostbound_lake_nested",
+          "om_terrain": "frostbound_ground"
+        },
+        {
+          "u_location_variable": {
+            "u_val": "water_spawn"
+          },
+          "min_radius": 0,
+          "max_radius": 0,
+          "terrain": "t_water_sh",
+          "target_min_radius": 0,
+          "target_max_radius": 15,
+          "true_eocs": "EOC_FROSTBOUND_LAKE_SPAWN"
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_FROSTBOUND_LAKE_SPAWN",
+  "effect": [
+{
+  "u_spawn_monster": "GROUP_FROSTBOUND_LAKE",
+  "group": true,
+  "real_count": 1,
+  "min_radius": 0,
+  "max_radius": 1,
+  "target_var": {
+    "u_val": "water_spawn"
+  },
+  "open_air_allowed": true,
+  "true_eocs": [
+    {
+      "id": "EOC_FROSTBOUND_LAKE_SPAWN_SUCCESS",
+      "effect": [
+        {
+          "u_message": "Ice Shadow spawned successfully!"
+        }
+      ]
+    }
+  ]
+},
+    {
+      "u_add_effect": "spell_cooldown",
+      "duration": "10 h"
+    },
+    {
+      "u_message": "The ice beneath your feet breaks!",
+      "type": "warning"
+    }
+  ]
+},
+ {
+  "type": "effect_on_condition",
+  "id": "EOC_NEST_TRIGGER",
+  "global": true,
+  "run_for_npcs": true,
+  "eoc_type": "EVENT",
+  "required_event": "avatar_moves",
+  "condition": {
+    "and": [
+      { "u_is_on_terrain": "t_monster_nest" },
+      {
+        "not": { "u_has_effect": "spell_cooldown" }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "if": {
+        "x_in_y_chance": { "x": 1, "y": 5 }
+      },
+      "then": [
+        {
+          "u_spawn_monster": "GROUP_NEST_TRIGGER",
+          "group": true,
+          "single_target": true,
+          "real_count": 1,
+          "min_radius": 10,
+          "max_radius": 20
+        },
+        {
+          "u_add_effect": "spell_cooldown",
+          "duration": "10 h"
+        },
+          {
+            "u_message": "You disturbed a nest! Something is moving nearby.",
+            "type": "warning"
+          }
+      ]
+    }
+  ]
+}
+
 ]

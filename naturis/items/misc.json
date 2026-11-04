@@ -112,7 +112,7 @@
   "type": "ITEM",
   "id": "shard_crystal",
   "name": { "str": "crystal shard" },
-  "description": ".",
+  "description": "A small, sharp crystal fragment.",
   "category": "other",
   "weight": "15 g",
   "volume": "17 ml",
@@ -127,7 +127,7 @@
     "subtypes": ["COMESTIBLE"],
     "comestible_type": "MED",
     "name": { "str_sp": "forest powder" },
-    "description": ".",
+    "description": "A forest pearl processed into powder.",
     "weight": "5 g",
     "volume": "5 ml",
     "price_postapoc": "1 USD",
@@ -160,7 +160,7 @@
     "type": "ITEM",
     "category": "chems",
     "name": { "str_sp": "shadow powder" },
-    "description": ".",
+    "description": "A dark, strangely smelling powder. Its outlines blur in the light, as if it were trying to flee from it.",
     "weight": "1 mg",
     "volume": "1 ml",
     "price_postapoc": "1 USD",
@@ -168,32 +168,43 @@
     "symbol": "*",
     "color": "dark_gray"
   },
+{
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "id": "grounding_anchor_capsule",
+  "category": "tools",
+  "name": { "str": "grounding anchor" },
+  "description": "A single-use grounding device. When activated while wielded, it creates a static protective field that reduces incoming electrical damage.",
+  "weight": "255 g",
+  "volume": "260 ml",
+  "price_postapoc": "50 USD",
+  "material": ["steel", "plastic"],
+  "symbol": "*",
+  "color": "light_blue",
+  "initial_charges": 1,
+  "max_charges": 1,
+  "charges_per_use": 1,
+  "use_action": {
+   "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        {
+  "id": "EOC_GROUNDING_ANCHOR",
+  "effect": [
     {
-    "type": "ITEM",
-    "subtypes": ["TOOL"],
-    "id": "grounding_anchor_capsule",
-    "category": "tools",
-    "name": { "str": "grounding anchor" },
-    "description": "A single-use grounding device. When activated while wielded, it creates a static protective field that reduces incoming electrical damage.",
-    "weight": "255 g",
-    "volume": "260 ml",
-    "price_postapoc": "50 USD",
-    "material": ["steel", "plastic"],
-    "symbol": "*",
-    "color": "light_blue",
-    "initial_charges": 1,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "revert_to": "grounding_anchor_spent",
-    "use_action": {
-      "type": "cast_spell",
-      "spell_id": "SPELL_GROUNDING_ANCHOR",
-      "no_fail": true,
-      "level": 0,
-      "need_wielding": true,
-      "mundane": true
+      "u_cast_spell": {
+        "id": "grounding"
+      }
+    },
+      {
+     "u_message": "A grounding field forms around you."
+    },
+    {
+      "transform_item": "grounding_anchor_spent"
     }
-  },
+  ]        }
+      ]
+  }
+},
     {
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -214,16 +225,49 @@
     "subtypes": ["AMMO"],
     "category": "chems",
     "name": { "str_sp": "creature remnant" },
-    "description": ".",
+    "description": "The remains left behind by a creature. It’s hard to say whether it’s a scale, droppings, or something similar. You should be able to examine it more closely using a field scanner.",
     "weight": "5 g",
     "volume": "6 ml",
     "price_postapoc": "1 USD",
     "material": ["bone"],
-    "symbol": "=",
+    "symbol": "*",
     "color": "dark_gray",
     "count": 10,
     "ammo_type": "remnant"
-  }
+  },
+    {
+    "id": "powder_crystal",
+    "type": "ITEM",
+    "category": "chems",
+    "name": { "str_sp": "crystal powder" },
+    "description": "Crystal ground into a light colored powder.",
+    "weight": "1 mg",
+    "volume": "1 ml",
+    "price_postapoc": "10 cent",
+    "material": ["powder_nonflam"],
+    "symbol": "*",
+    "color": "dark_gray"
+  },
+     {
+      "type": "ITEM",
+      "id": "chipped_ice",
+      "category": "weapons",
+      "price_postapoc": "2 USD",
+      "name": { "str": "chipped ice" },
+      "symbol": ";",
+      "color": "light_gray",
+      "description": "It works well as a thrown weapon, but it is very fragile and shatters very easily upon impact.",
+      "material": ["perennial_ice"],
+      "volume": "57 ml",
+      "weight": "190 g",
+      "longest_side": "33 cm",
+      "flags": ["SHEATH_KNIFE", "FRAGILE_MELEE"],
+      "weapon_category": ["KNIVES"],
+      "techniques": ["WBLOCK_0"],
+      "thrown_damage": [{ "damage_type": "bash", "amount": 1 }, { "damage_type": "stab", "amount": 9 }],
+      "melee_damage": { "bash": 9 }
+    }
+ 
 
 ]
 

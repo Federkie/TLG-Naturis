@@ -40,7 +40,7 @@
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_DRUGS",
     "skill_used": "chemistry",
-    "autolearn": [ ["research", 4] ],
+    "autolearn": [ ["research", 7] ],
     "difficulty": 5,
     "batch_time_factors": [ 20, 6 ],
     "charges": 3,

@@ -149,17 +149,6 @@
 },
  { "id": "overlay_wielded_crystal_ax", "fg": 84, "rotates": false },
  { "id": "crystal_ax", "fg": 85, "rotates": false },
-         {
-  "id": "fd_grounding",
-  "fg": [
-    { "weight": 25, "sprite": 86 },
-    { "weight": 25, "sprite": 87 },
-    { "weight": 25, "sprite": 88 },
-    { "weight": 25, "sprite": 89 }
-  ],
-  "rotates": false,
-  "animated": true
-},
    { "id": "tr_electric_hunting_trap", "fg": 91, "rotates": false },
    { "id": "electric_hunting_trap", "fg": 92, "rotates": false },
    { "id": "mon_crawler_bastion", "fg": 95, "rotates": false, "bg": 5  },
@@ -183,7 +172,70 @@
    { "id": "t_beehive_crystal", "fg": 105, "rotates": false, "bg": 109  },
    { "id": "fd_bee_swarm_crystal", "fg": 106, "rotates": false, "bg": 5  },
    { "id": "t_heart_crystal", "fg": 107, "rotates": false, "bg": 109  },
-   { "id": "t_heart_crystal_destroyed", "fg": 108, "rotates": false, "bg": 109  }
+   { "id": "t_heart_crystal_destroyed", "fg": 108, "rotates": false, "bg": 109  },
+   { "id": "crystal_edge", "fg": 110, "rotates": false },
+   { "id": "overlay_wielded_crystal_edge", "fg": 111, "rotates": false },
+   
+   { "id": "fd_grounding", "fg": 112, "rotates": false, 
+     "multitile": true, 
+     "additional_tiles": [
+       {"id": "center", "fg": 113}, 
+       {"id": "corner", "fg": 114}, 
+       {"id": "edge", "fg": 115}, 
+       {"id": "t_connection", "fg": 116},
+       {"id": "end_piece", "fg": 117}, 
+       {"id": "unconnected", "fg": 112}
+                        ]
+                    },
+   { "id": [
+              "t_raptor_nest",
+              "t_rapid_nest"
+            ],
+     "fg": 118, "rotates": false, 
+     "multitile": true, 
+     "additional_tiles": [
+      {"id": "center", "fg": 119,  "bg": 109}, 
+       {"id": "corner", "fg": 120,  "bg": 109}, 
+       {"id": "edge", "fg": 121,  "bg": 109}, 
+       {"id": "t_connection", "fg": 122,  "bg": 109},
+       {"id": "end_piece", "fg": 123,  "bg": 109}, 
+       {"id": "unconnected", "fg": 118,  "bg": 109}
+                        ]
+                    },
+     { "id": "t_ice_perma", "fg": 124, 
+     "rotates": false, 
+     "multitile": true, 
+     "additional_tiles": [
+      {"id": "center", "fg": [
+        { "weight": 20, "sprite": 125 },
+        { "weight": 5, "sprite": 126  }
+            ], "bg": 109 },       
+       {"id": "corner", "fg": 127,  "bg": 109}, 
+       {"id": "edge", "fg": 128,  "bg": 109}, 
+       {"id": "t_connection", "fg": 129,  "bg": 109},
+       {"id": "end_piece", "fg": 130,  "bg": 109}, 
+       {"id": "unconnected", "fg": 124,  "bg": 109}
+                        ]
+                    },
+         { "id": "t_ice_flowers", "fg": 134, "rotates": false }, 
+         { "id": "t_ice_flowers_harvested", "fg": 135, "rotates": false },
+
+     { "id": "t_naturis_frost_stone", "fg": 136, 
+     "rotates": false, 
+     "multitile": true, 
+     "additional_tiles": [
+      {"id": "center", "fg": [
+        { "weight": 30, "sprite": 131 },
+        { "weight": 30, "sprite": 132 },
+        { "weight": 30, "sprite": 133  }
+            ] },       
+       {"id": "corner", "fg": 137 }, 
+       {"id": "edge", "fg": 138 }, 
+       {"id": "t_connection", "fg": 139 },
+       {"id": "end_piece", "fg": 140 }, 
+       {"id": "unconnected", "fg": 136 }
+                        ]
+                    }
         ]
       }
     ]

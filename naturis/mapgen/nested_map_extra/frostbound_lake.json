@@ -1,0 +1,43 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_frostbound_lake_nested",
+    "object": {
+      "rows": [
+        "                        ",
+        "                        ",
+        "        111111111       ",
+        "        11111111        ",
+        "        1111111         ",
+        "          111           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "flags": [
+        "ALLOW_TERRAIN_UNDER_OTHER_DATA"
+      ],
+       "terrain": {
+        "1": "t_water_sh"
+      }
+    }
+  }
+  
+  
+  
+]

@@ -176,8 +176,58 @@
     "mondensity": 2,
     "spawns": { "group": "GROUP_CRYSTAL_FIELD", "population": [50, 60], "chance": 80 },
     "flags": ["RISK_EXTREME", "REQUIRES_PREDECESSOR"]
-  }
-  
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "frostbound_ground",
+    "vision_levels": "first_glance_forest",
+    "name": "Frostbound Ground",
+    "copy-from": "generic_forest",
+    "looks_like": "forest_thick",
+    "mondensity": 2,
+    "spawns": { "group": "GROUP_FROST_GROUND", "population": [30, 60], "chance": 80 },
+    "sym": "F",
+    "color": "green",
+    "see_cost": "high",
+    "flags": ["RISK_EXTREME"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "frostbound_cavern",
+    "name": "Frostbound Cavern",
+    "copy-from": "generic_forest",
+    "vision_levels": "first_glance_forest",
+    "sym": "F",
+    "looks_like": "forest_thick",
+    "color": "green",
+    "see_cost": "high",
+    "mondensity": 1,
+    "spawns": { "group": "GROUP_FROST_GROUND", "population": [4, 10], "chance": 80 },
+    "flags": ["RISK_EXTREME"]
+  },
+   {
+   "type": "overmap_terrain",
+   "id": "frostbound_cavern_entrance",
+   "vision_levels": "blends_till_outlines",
+   "name": "Fostbound Cavern Entrance",
+   "sym": "F",
+   "color": "i_green",
+   "see_cost": "high",
+   "looks_like": "forest_thick",
+   "flags": ["REQUIRES_PREDECESSOR"]
+ },
+     {
+      "type": "overmap_terrain",
+      "id": "monster_nest",
+      "name": "monster nest",
+      "copy-from": "generic_forest",
+      "vision_levels": "first_glance_forest",
+      "sym": "F",
+      "looks_like": "forest_thick",
+      "color": "green",
+      "see_cost": "high",
+      "flags": ["RISK_EXTREME", "REQUIRES_PREDECESSOR"]
+    }
   
   
 ]

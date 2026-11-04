@@ -35,7 +35,19 @@
     "type": "ammo_effect",
     "always_cast_spell": true,
     "spell_data": { "id": "insert_all_ammo" }
-  }
+  },
+   {
+   "id": "CRYSTAL_GROWTH",
+   "type": "ammo_effect",
+   "always_cast_spell": true,
+   "spell_data": { "id": "create_crystals_player" }
+ },
+    {
+     "id": "FLING",
+     "type": "ammo_effect",
+     "always_cast_spell": true,
+     "spell_data": { "id": "fling" }
+   }
 
 
 

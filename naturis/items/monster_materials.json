@@ -1,0 +1,21 @@
+[
+    {
+    "id": "alloy_crystal",
+    "type": "ITEM",
+    "category": "spare_parts",
+    "name": { "str": "crystal alloy", "str_pl": "crystal alloys" },
+    "description": "A palm-sized piece of crystal alloy.",
+    "weight": "845 g",
+    "volume": "125 ml",
+    "price_postapoc": "1 USD",
+    "to_hit": -3,
+    "material": [ "alloy_crystal" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "qualities": [ [ "HAMMER", 1 ] ],
+    "melee_damage": { "bash": 4 }
+  }
+  
+  
+  
+]

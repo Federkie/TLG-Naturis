@@ -1,0 +1,159 @@
+[
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "frost_3x3_01",
+    "object": {
+      "mapgensize": [ 3, 3 ],
+      "rows": [
+        "i..",
+        ".i.",
+        ".i."
+      ],
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ],
+      "palettes": [ "frozen_palette" ],
+    "items": {
+        ".": [ 
+         { "item": "bones", "chance": 25, "repeat": [ 0, 2 ] },
+         { "item": "digging_soil_loam_50L", "chance": 25, "repeat": [ 1, 3 ] },
+         { "item": "materials_ice", "chance": 5, "repeat": [ 1, 3 ] }
+       ]
+      }
+    }
+  },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "frost_3x3_02",
+    "object": {
+      "mapgensize": [3, 3],
+      "rows": [
+        "i4i",
+        "4+4",
+        "44."
+      ],
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "palettes": ["frozen_palette"],
+      "items": {
+        ".": [
+          { "item": "bones", "chance": 25, "repeat": [0, 2] },
+          { "item": "digging_soil_loam_50L", "chance": 25, "repeat": [1, 3] },
+          { "item": "materials_ice", "chance": 5, "repeat": [1, 3] }
+        ]
+      }
+    }
+  },
+   {
+   "type": "mapgen",
+   "nested_mapgen_id": "frost_3x3_03",
+   "object": {
+     "mapgensize": [3, 3],
+     "rows": [
+       "WWW",
+       "WWW",
+       "WWW"
+     ],
+     "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+     "palettes": ["frozen_palette"]
+   }
+ },
+    {
+    "type": "mapgen",
+    "nested_mapgen_id": "frost_3x3_04",
+    "object": {
+      "mapgensize": [3, 3],
+      "rows": [
+        ".W.",
+        "iW.",
+        "W.."
+      ],
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "palettes": ["frozen_palette"]
+    }
+  },
+      {
+      "type": "mapgen",
+      "nested_mapgen_id": "frost_3x3_05",
+      "object": {
+        "mapgensize": [3, 3],
+        "rows": [
+          ".*.",
+          "**.",
+          ".**"
+        ],
+        "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+        "palettes": ["frozen_palette"]
+      }
+    },
+     {
+      "type": "mapgen",
+      "nested_mapgen_id": "frost_3x3_06",
+      "object": {
+        "mapgensize": [3, 3],
+        "rows": [
+            "iii",
+            "iii",
+            "iii"
+          ],
+        "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+        "palettes": ["frozen_palette"]
+        }
+     },
+        {
+        "type": "mapgen",
+        "nested_mapgen_id": "frost_3x3_07",
+        "object": {
+          "mapgensize": [3, 3],
+          "rows": [
+            "xxx",
+            "xxx",
+            "xxx"
+          ],
+          "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+          "palettes": ["frozen_palette"]
+        }
+      },
+        {
+          "type": "mapgen",
+          "nested_mapgen_id": "frost_3x3_08",
+          "object": {
+            "mapgensize": [3, 3],
+            "rows": [
+              "...",
+              ".X.",
+              "..."
+            ],
+            "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+            "palettes": ["frozen_palette"]
+          }
+        },
+          {
+          "type": "mapgen",
+          "nested_mapgen_id": "frost_3x3_09",
+          "object": {
+            "mapgensize": [3, 3],
+            "rows": [
+              "fff",
+              "ff.",
+              ".f."
+            ],
+            "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+            "palettes": ["frozen_palette"]
+          }
+        },
+             {
+            "type": "mapgen",
+            "nested_mapgen_id": "frost_3x3_10",
+            "object": {
+              "mapgensize": [3, 3],
+              "rows": [
+                ".~.",
+                "~~~",
+                ".~."
+              ],
+            "terrain": {
+              "~": "t_monster_nest"
+          },
+              "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+              "palettes": ["frozen_palette"]
+            }
+          }
+]

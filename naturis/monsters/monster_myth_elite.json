@@ -233,6 +233,68 @@
       "GROUP_MORALE"
     ],
     "armor": { "bash": 4, "cut": 4, "stab": 1, "heat": 3, "bullet": 2, "electric": 1 }
+  },
+    {
+    "id": "mon_ice_shadow",
+    "type": "MONSTER",
+    "name": {
+      "str": "ice shadow"
+    },
+    "description": "A large, ray-like creature. Most of the time, it remains hidden, waiting for unsuspecting victims.",
+    "default_faction": "ice",
+    "bodytype": "lizard",
+    "species": [ "MYTHIC" ],
+    "diff": 5,
+    "volume": "90 L",
+    "weight": "48000 g",
+    "hp": 150,
+    "speed": 120,
+    "stomach_size": 600,
+    "material": [ "flesh" ],
+    "symbol": "r",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 7,
+    "melee_damage": [
+      {
+        "damage_type": "cut",
+        "amount": 2
+      }
+    ],
+    "dodge": 3,
+    "weakpoint_sets": ["wps_ice_shadow"],
+    "families": [
+      "prof_intro_biology",
+      "prof_physiology", "prof_wp_mythic"
+    ],
+      "special_attacks": [
+      [ "EAT_CARRION", 40 ],
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 6, "armor_multiplier": 0.5 }]
+      },
+      { "id": "cut_throat", "cooldown": 15, 
+        "condition": {
+        "not": {
+            "u_has_effect": "damaged_swing" }
+        }
+      }
+    ],
+    "harvest": "ice_shadow",
+    "dissect": "dissect_naturis_sample_normal",
+    "vision_day": 30,
+    "vision_night": 2,
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "FLIES"
+    ],
+    "armor": { "bash": 5, "cut": 2, "stab": 1, "heat": 1, "bullet": 1, "electric": 2 }
   }
   
   

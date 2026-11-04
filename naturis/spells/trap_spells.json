@@ -54,7 +54,30 @@
     "max_aoe": 3,
     "min_duration": 500,
     "max_duration": 1000
-  }
+  },
+ {
+  "id": "ice_trap_explosion",
+  "type": "SPELL",
+  "name": { "str": "ice trap explosion" },
+  "valid_targets": ["hostile", "ground"],
+  "description": "Trap generated ice field.",
+  "effect": "attack",
+  "extra_effects": [{ "id": "spell_cooldown" }],
+  "message": "The %s releases an ice field!",
+  "field_id": "fd_spikes_ice",
+  "field_chance": 1.9,
+  "min_field_intensity": 1,
+  "field_intensity_variance": 1,
+  "max_field_intensity": 3,
+  "min_aoe": 3,
+  "max_aoe": 5,
+  "min_damage": 30,
+  "max_damage": 70,
+  "min_duration": 1,
+  "damage_type": "cold",
+  "shape": "blast",
+  "flags": ["RANDOM_AOE", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX"]
+}
   
   
   

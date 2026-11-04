@@ -32,9 +32,9 @@
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "mechanics",
     "skills_required": [ [ "gun", 3 ] ],
-    "difficulty": 6,
+    "difficulty": 7,
     "time": "4 h",
-    "book_learn": [ [ "monster_hunter", 4 ] ],
+    "autolearn": [ ["research", 7] ],
     "using": [ [ "welding_standard", 1 ] ],
     "qualities": [ { "id": "DRILL", "level": 1 }, { "id": "CUT", "level": 2 } ],
     "proficiencies": [
@@ -51,6 +51,56 @@
       [ [ "shard_fire", 1 ] ],
       [ [ "living_wood", 1 ] ] 
     ]
+  },
+  {
+  "type": "recipe",
+  "result": "rifle_resonance",
+  "activity_level": "BRISK_EXERCISE",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "difficulty": 8,
+  "time": "12 h",
+  "autolearn": [
+    [ "research", 8 ]
+  ],
+  "proficiencies": [
+    { "proficiency": "prof_metalworking" },
+    { "proficiency": "prof_welding_basic" },
+    { "proficiency": "prof_gunsmithing_improv" }
+  ],
+  "using": [ [ "welding_standard", 2 ] ],
+  "qualities": [
+    { "id": "WRENCH", "level": 2 },
+    { "id": "DRILL", "level": 2 },
+    { "id": "SAW_M", "level": 2 }
+  ],
+  "components": [
+    [ [ "crystal_core", 1 ] ],
+    [ [ "alloy_crystal", 4 ] ],
+    [ [ "copper_wire", 6 ] ],
+    [ [ "power_supply", 1 ] ],
+    [ [ "gun_module", 1 ] ],
+    [ [ "pipe", 1 ] ]
+  ]
+},
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "compbow_raptor",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "archery", 3 ],
+    "difficulty": 5,
+    "time": "9 h",
+    "decomp_learn": 1,
+    "proficiencies": [ { "proficiency": "prof_bowyery" }, { "proficiency": "prof_carving" } ],
+    "autolearn": [
+       ["research", 3]
+        ],
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "components": [ [ [ "stick_long", 1 ], [ "2x4", 1 ] ], [ [ "raptor_tendon", 2 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
   }
 
 

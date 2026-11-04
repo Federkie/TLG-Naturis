@@ -80,7 +80,7 @@
     "volume": "1500 ml",
     "fun": -8,
     "flags": [ "FREEZERBURN", "RAW" ],
-    "rot_spawn": {  "group": "GROUP_HATCHLING_RAPID", "chance": 70 },
+    "rot_spawn": {  "group": "GROUP_HATCHLING_FDRAGON", "chance": 70 },
     "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
   },
     {

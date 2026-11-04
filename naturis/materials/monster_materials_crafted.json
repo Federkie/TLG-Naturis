@@ -20,7 +20,30 @@
      { "fuel": -10, "smoke": 2, "burn": 2 }
    ],
     "resist": { "bash": 1, "cut": 1, "acid": 0, "heat": 0, "bullet": 1 }
+  },
+       {
+    "type": "material",
+    "id": "alloy_crystal",
+    "name": "crystal alloy",
+    "density": 3.6,
+    "specific_heat_liquid": 1.16,
+    "specific_heat_solid": 0.84,
+    "latent_heat": 270,
+    "chip_resist": 8,
+    "dmg_adj": [ "scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "scratched",
+    "acid_dmg_verb": "etched",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
+    ],
+    "burn_products": [ [ "glass_shard", 0.5 ] ],
+    "repair_difficulty": 4,
+    "resist": { "bash": 2, "cut": 4, "acid": 15, "heat": 3, "bullet": 1 }
   }
+  
   
   
   

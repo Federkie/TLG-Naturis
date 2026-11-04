@@ -32,6 +32,22 @@
     ],
     "charges_per_use": 1,
     "tool_ammo": [ "healing_liquid" ]
+  },
+    {
+    "id": "tech_ring",
+    "type": "ITEM",
+    "subtypes": ["ARMOR"],
+    "name": { "str": "tech ring" },
+    "description": "This ring strengthens your attacks and generates an electric shock on critical hits.",
+    "weight": "15 g",
+    "volume": "1 ml",
+    "price_postapoc": "100 USD",
+    "material": ["silver"],
+    "symbol": "[",
+    "color": "light_gray",
+    "sided": true,
+    "armor": [{ "coverage": 0, "covers": ["hand_l", "hand_r"], "specifically_covers": ["hand_fingers_l", "hand_fingers_r"] }],
+    "flags": ["FANCY", "NO_WEAR_EFFECT", "SKINTIGHT", "ALLOWS_TALONS"]
   }
   
   

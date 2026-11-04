@@ -1,10 +1,10 @@
 [
   {
-    "id": "fa_r_mag",
+    "id": "fa_mag",
     "type": "ITEM",
     "subtypes": [ "MAGAZINE" ],
-    "name": { "str": "fa_r_mag" },
-    "description": "An aluminum box for various types of f_ar ammunition; it holds four rounds.",
+    "name": { "str": "fa_mag" },
+    "description": "An aluminum box for various types of 'fa' ammunition; it holds twelve rounds.",
     "weight": "226 g",
     "volume": "290 ml",
     "longest_side": "190 mm",
@@ -15,7 +15,7 @@
     "color": "light_gray",
     "ammo_type": [ "fa_r"],
     "flags": [ "MAG_COMPACT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "fa_r": 4 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "fa_r": 12, "fa_s": 12 } } ]
   }
 
 

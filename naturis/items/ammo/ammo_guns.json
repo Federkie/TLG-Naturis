@@ -69,6 +69,50 @@
     "dispersion": 50,
     "recoil": 560,
     "effects": [ "AE_GRAVITY_X" ]
+  },
+  {
+  "type": "ITEM",
+  "subtypes": ["AMMO"],
+  "id": "crystal_round",
+  "name": { "str": "crystal growth round" },
+  "description": "A specialized projectile containing a crystal growth charge. On impact, it triggers rapid crystal formation.",
+  "symbol": "=",
+  "color": "light_blue",
+  "material": ["steel", "crystal"],
+  "weight": "30 g",
+  "volume": "55 ml",
+  "longest_side": "43 mm",
+  "price_postapoc": "5 USD",
+  "ammo_type": "naturis_crystal",
+  "damage": {
+    "damage_type": "stab",
+    "amount": 1
+  },
+  "range": 20,
+  "dispersion": 100,
+  "recoil": 1000,
+  "stack_size": 1,
+  "effects": ["CRYSTAL_GROWTH"]
+},
+  {
+    "type": "ITEM",
+    "subtypes": ["AMMO"],
+    "id": "fa_s_crystal",
+    "price_postapoc": "20 USD",
+    "name": { "str_sp": "fa_s CRYSTAL" },
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "a specialized type of ammunition with additional armor penetration.",
+    "material": ["steel", "crystal"],
+    "longest_side": "43 mm",
+    "volume": "160 ml",
+    "weight": "12 g",
+    "ammo_type": "fa_s",
+    "damage": { "damage_type": "stab", "amount": 45, "armor_penetration": 40 },
+    "range": 35,
+    "dispersion": 15,
+    "stack_size": 36,
+    "recoil": 800
   }
 
 

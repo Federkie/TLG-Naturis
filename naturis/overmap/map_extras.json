@@ -54,5 +54,47 @@
       "sym": "F",
       "color": "magenta",
       "autonote": false
-    }
+    },
+     {
+      "type": "map_extra",
+      "id": "mx_naturis_ressources",
+      "name": { "str": "naturis ressources" },
+      "description": "Natural Ressources.",
+      "generator": {
+        "generator_method": "update_mapgen",
+        "generator_id": "mx_naturis_ressources"
+      },
+      "min_max_zlevel": [0, 0],
+      "sym": "F",
+      "color": "magenta",
+      "autonote": false
+    },
+     {
+       "type": "map_extra",
+       "id": "mx_naturis_overgrown_buildings",
+       "name": { "str": "naturis ressources" },
+       "description": "Natural locations in buildings.",
+       "generator": {
+         "generator_method": "update_mapgen",
+         "generator_id": "mx_naturis_overgrown_buildings"
+       },
+       "min_max_zlevel": [0, 0],
+       "sym": "F",
+       "color": "magenta",
+       "autonote": false
+    },
+         {
+       "type": "map_extra",
+       "id": "mx_naturis_raptor_building",
+       "name": { "str": "naturis ressources" },
+       "description": "Small raptor nests in buildings.",
+       "generator": {
+         "generator_method": "update_mapgen",
+         "generator_id": "mx_naturis_raptor_building"
+       },
+       "min_max_zlevel": [0, 0],
+       "sym": "F",
+       "color": "magenta",
+       "autonote": false
+     }
 ]

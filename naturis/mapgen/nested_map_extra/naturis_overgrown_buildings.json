@@ -1,0 +1,138 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_naturis_overgrown_buildings",
+    "object": {
+    "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "set": [ { "point": "bash", "x": [ 3, 20 ], "y": [ 3, 20 ], "repeat": [ 1, 3 ] } ],
+        "place_nested": [        
+        {
+          "chunks": [
+            ["null", 20],
+           ["naturis_crystal_house_nested", 15],
+           ["naturis_flower_nested", 15],
+           ["naturis_forest_nested", 15]
+          ],
+          "x": [0, 10],
+          "y": [0, 10]
+        } 
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_crystal_house_nested",
+    "object": {
+      "mapgensize": [
+        7,
+        7
+      ],
+      "rows": [
+        " 111111",
+        "1121211",
+        "112111 ",
+        "111211 ",
+        " 1111  ",
+        "  1    ",
+        "       "
+      ],
+      "terrain": {
+        "1":[ [ "t_dirt_rocky", 6 ], [ "t_null", 10 ] ],
+        "2": [ [ "t_dirt_crystal", 5 ],  [ "t_crystal_pillar_large", 1 ] ]
+      },
+      "place_monster": [
+  {
+    "monster": "mon_crystal_crawler", "chance": 30,
+    "x": 3,
+    "y": 3,
+    "pack_size": [ 1, 3 ]
+  }
+]
+      }
+    },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_flower_nested",
+    "object": {
+      "mapgensize": [
+        7,
+        7
+      ],
+      "rows": [
+        "  12   ",
+        " 22211 ",
+        "   112 ",
+        "  1221 ",
+        "   1211",
+        " 222211",
+        "112112 "
+      ],
+      "terrain": {
+        "1": [ [ "t_pink_flowers", 3 ], [ "t_null", 1 ], [ "t_pink_flowers_harvested", 1 ] ],
+        "2": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ]
+      }
+      }
+    },
+      {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_forest_nested",
+    "object": {
+      "mapgensize": [
+        7,
+        7
+      ],
+      "rows": [
+        "  111  ",
+        " 111111",
+        "   11  ",
+        "  1221 ",
+        " 111211",
+        " 112211",
+        "11111  "
+      ],
+       "terrain": {
+        "1":  [ [ "t_grass", 3 ], [ "t_null", 1 ], [ "t_grass_dead", 1 ], [ "t_forestfloor", 2 ] ],
+        "2": [ [ "t_tree_young", 3 ], [ "t_trunk", 2 ], [ "t_dirtmound", 2 ] ]
+      },
+       "place_monster": [
+      {
+        "monster": "mon_forest_walker",
+        "chance": 30,
+        "x": 3,
+        "y": 3
+      }
+       ]
+      }
+    }
+
+  
+  
+  
+  
+]

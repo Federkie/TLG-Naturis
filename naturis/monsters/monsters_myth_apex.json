@@ -31,7 +31,7 @@
   ],
     "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_mythic" ],
     "harvest": "rapid_striker",
-    "dissect": "dissect_lizard_sample_large",
+    "dissect": "dissect_naturis_sample_rapid",
     "grab_strength": 70,
     "special_attacks": [
       [ "EAT_FOOD", 80 ], 
@@ -243,7 +243,7 @@
     "weakpoint_sets": [
     "wps_forest_dragon"
   ],
-    "dissect": "dissect_lizard_sample_single",
+    "dissect": "dissect_naturis_sample_fdragon",
     "special_attacks": [
       [ "EAT_CROP", 60 ],
      {"type": "spell",
@@ -310,6 +310,7 @@
     "melee_skill": 5,
     "melee_dice": 3,
     "melee_dice_sides": 6,
+    "dissect": "dissect_naturis_sample_flfire",
     "melee_damage": [ { "damage_type": "cut", "amount": 4.0 } ],
     "dodge": 3,
     "hp": 350,
@@ -388,7 +389,7 @@
     "weakpoint_sets": [
     "wps_ice_former"
   ],
-    "dissect": "dissect_lizard_sample_large",
+    "dissect": "dissect_naturis_sample_iformer",
     "grab_strength": 50,
     "special_attacks": [
 {
@@ -463,7 +464,7 @@
     "weakpoint_sets": [
       "wps_static_beast"
     ],
-    "dissect": "dissect_lizard_sample_large",
+    "dissect": "dissect_naturis_sample_static",
     "grab_strength": 80,
     "special_attacks": [
     ["SHOCKSTORM", 25 ],
@@ -525,7 +526,7 @@
     "id": "mon_crystal_seeder",
     "type": "MONSTER",
     "name": { "str": "crystal seeder" },
-    "description": ".",
+    "description": "A large, Hulk-like creature. Its skin is covered in large crystals that provide it with natural armor. It is probably not a good idea to face this creature unprepared.",
     "default_faction": "crystal",
     "bodytype": "human",
     "species": ["MYTHIC", "HUMAN"],
@@ -543,6 +544,7 @@
     "melee_skill": 5,
     "melee_dice": 3,
     "melee_dice_sides": 7,
+    "dissect": "dissect_naturis_sample_crseeder",
     "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
     "weakpoint_sets": ["wps_humanoid_body", "wps_humanoid_head_small", "wps_crystal_seeder"],
     "families": ["prof_intro_biology", "prof_physiology", "prof_wp_zombie", "prof_wp_hulk"],

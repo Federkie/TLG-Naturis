@@ -7,39 +7,51 @@
     "types": [
       [
         "f_obelisk_big",
-        850
+        5
       ],
       [
         "f_obelisk_big_glow",
-        3800
+        1
       ],
       [
         "f_natur_root",
-        120
+        50
       ],
       [
         "f_obelisk_glow",
-        3550
+        2
+      ],
+      [
+        "t_beehive_crystal",
+        20
       ],
       [
         "f_obelisk",
-        950
+        40
       ],
       [
         "t_m_mushroom_harvested",
-        750
+        50
       ],
       [
         "t_m_mushroom",
-        900
+        40
+      ],
+      [
+        "t_crystal_pillar_large",
+        10
+      ],
+      [
+        "t_tree_crystal",
+        5
       ],
       [
         "t_pink_flowers",
-        750
+        45
       ],
       [
         "t_pink_flowers_harvested",
-        600
+        50
       ]
     ]
   },

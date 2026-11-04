@@ -51,15 +51,27 @@
      "name": { "str_sp": "crystal core" },
      "category": "chems",
      "flags": ["GEMSTONE"],
-     "description": ".",
+     "description": "The inside of a crystal heart. This crystal looks rare, you’d better keep it safe.",
      "weight": "250 g",
      "volume": "250 ml",
      "price_postapoc": "500 USD",
      "symbol": "=",
-     "material": ["crystal"],
+     "material": ["crystal_hard"],
      "color": "white"
-   }
-  
+   },
+    {
+      "type": "ITEM",
+      "id": "ice_petals",
+      "name": { "str": "handful of frozen petala", "str_pl": "handfuls of feozen petals" },
+      "description": "Several small, blue blossoms from ice flowers.",
+      "weight": "10 g",
+      "color": "green",
+      "symbol": ",",
+      "price": "3 USD",
+      "material": ["vegetable"],
+      "volume": "100 ml",
+      "flags": ["TRADER_AVOID"]
+    }
   
   
 ]

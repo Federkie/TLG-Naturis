@@ -86,9 +86,30 @@
     ],
     "burn_products": [ [ "glass_shard", 0.5 ] ],
     "resist": { "bash": 6, "cut": 6, "acid": 15, "heat": 5, "bullet": 2 }
+  },
+    {
+    "type": "material",
+    "id": "crystal_hard",
+    "name": "hard crystal",
+    "//": "Specific heat and latent heat copied from glass",
+    "density": 3.1,
+    "specific_heat_liquid": 0.2,
+    "specific_heat_solid": 0.2,
+    "latent_heat": 100,
+    "chip_resist": 0,
+    "dmg_adj": [ "scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "scratched",
+    "acid_dmg_verb": "etched",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
+    ],
+    "burn_products": [ [ "glass_shard", 0.5 ] ],
+    "repair_difficulty": 4,
+    "resist": { "bash": 20, "cut": 25, "acid": 15, "heat": 5, "bullet": 1 }
   }
-  
-  
   
   
   

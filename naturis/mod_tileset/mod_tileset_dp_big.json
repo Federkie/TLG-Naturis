@@ -48,7 +48,22 @@
   "rotates": false,
   "animated": false,
   "bg": 1 
-  }
+  },
+  		  {
+		    "id": "t_ice_pillar_large",
+		    "fg": [
+		      { "weight": 25, "sprite": 16 },
+		      { "weight": 25, "sprite": 17 },
+		      { "weight": 25, "sprite": 18 }
+		    ],
+		    "rotates": false,
+		    "animated": false,
+		    "bg": 1
+		  },
+		  { "id": "t_ice_pillar_large_harv", "fg": 19, "rotates": false, "bg": 1  },
+		  { "id": "t_crystal_pillar_large_harv", "fg": 20, "rotates": false, "bg": 1  },
+		  { "id": "t_tree_ice", "fg": 21, "rotates": false, "bg": 1  },
+		  { "id": "t_frozen_terror", "fg": 22, "rotates": false, "bg": 1  }
         ]
       }
     ]

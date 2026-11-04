@@ -7,6 +7,9 @@
       ["heart_frozen", 1],
       ["claw_frozen", 2],
       ["bone_frozen", 5],
+      ["ice_petals", 3],
+      ["ice_fang", 2],
+      ["ice_chunk", 3],
       ["perennial_ice", 1]
     ]
   }

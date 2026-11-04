@@ -1,32 +1,32 @@
 [
   {
     "type": "martial_art",
-    "id": "style_naturis_tech_sword",
-    "name": "Technological Sword Combat",
-    "description": "A sword-fighting system calibrated to the conductive reinforcement in Static Leather Armor.",
-    "initiate": [ "You assume a technological sword_fighting stance.", "%s assumes a technological sword_fighting stance." ],
-    "weapon_category": [ "LONG_SWORDS" ],
+    "id": "style_tech_knive",
+    "name": "Technological Knive Combat",
+    "description": ".",
+    "initiate": [ "You assume a technological knive fighting stance.", "%s assumes a technological knive fighting stance." ],
+    "weapon_category": [ "KNIVES" ],
     "static_buffs": [
       {
-        "id": "buff_naturis_tech_sword_static",
+        "id": "buff_tech_knive_static",
         "name": "Conductive Alignment",
-        "description": "The armor stabilizes your sword technique.",
-        "weapon_categories_allowed": [ "LONG_SWORDS" ],
+        "description": "The armor stabilizes your knive technique.",
+        "weapon_categories_allowed": [ "KNIVES" ],
         "flat_bonuses": [
           { "stat": "hit", "scaling-stat": "per", "scale": 0.2 }
         ],
         "mult_bonuses": [
-          { "stat": "damage", "type": "cut", "scale": 1.1 }
+          { "stat": "damage", "type": "stab", "scale": 1.1 }
         ]
       }
     ],
     "oncrit_buffs": [
       {
-        "id": "buff_naturis_tech_sword_crit",
+        "id": "buff_tech_knife_crit",
         "name": "Static Discharge",
         "description": "A critical strike releases a brief electric discharge.",
         "max_stacks": 1,
-        "weapon_categories_allowed": [ "LONG_SWORDS" ],
+        "weapon_categories_allowed": [ "KNIVES" ],
         "flat_bonuses": [
           { "stat": "damage", "type": "electric", "scaling-stat": "per", "scale": 0.5 }
         ]
@@ -34,5 +34,41 @@
     ],
     "strictly_melee": true,
     "learn_difficulty": 8
-  }
+  },
+  {
+  "type": "martial_art",
+  "id": "style_crystal_edge",
+  "name": "Crystal Edge Combat",
+  "description": "A specialized sword fighting style that combines armor piercing cuts with evasive movement.",
+  "initiate": [
+    "You assume the Crystal Edge combat stance.",
+    "%s assumes the Crystal Edge combat stance."
+  ],
+  "weapon_category": [ "LONG_SWORDS" ],
+  "static_buffs": [
+    {
+      "id": "buff_crystal_edge_static",
+      "name": "Crystal Resonance",
+      "description": "Crystalline resonance enhances armor penetration and evasive movement.",
+      "weapon_categories_allowed": [ "LONG_SWORDS" ],
+      "flat_bonuses": [
+        {
+          "stat": "arpen",
+          "type": "cut",
+          "scaling-stat": "str",
+          "scale": 0.5
+        },
+        {
+          "stat": "dodge",
+          "scale": 1.0
+        }
+      ]
+    }
+  ],
+  "strictly_melee": true,
+  "learn_difficulty": 8
+}
+  
+  
+  
 ]

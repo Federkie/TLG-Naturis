@@ -1,0 +1,39 @@
+[
+{
+  "id": "crystal_launcher",
+  "copy-from": "underbarrel_base",
+  "type": "ITEM",
+  "subtypes": [ "GUNMOD", "GUN" ],
+  "name": { "str": "crystal launcher" },
+  "description": "A specialized underbarrel launcher that fires crystal growth rounds. On impact, the projectile triggers crystal growth.",
+  "weight": "1500 g",
+  "volume": "500 ml",
+  "price_postapoc": "50 USD",
+  "install_time": "5 m",
+  "material": [ "steel", "crystal" ],
+  "symbol": ":",
+  "color": "light_blue",
+  "location": "underbarrel",
+  "mod_targets": [ "rifle" ],
+  "ammo": [ "naturis_crystal" ],
+  "skill": "launcher",
+  "dispersion": 180,
+  "durability": 10,
+  "clip_size": 1,
+  "min_skills": [ [ "launcher", 2 ] ],
+  "flags": [ "NEVER_JAMS", "RELOAD_EJECT" ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "ammo_restriction": {
+        "naturis_crystal": 1
+      },
+      "rigid": true
+    }
+  ]
+}
+  
+  
+  
+  
+]

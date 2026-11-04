@@ -5,7 +5,7 @@
     "subtypes": [ "COMESTIBLE" ],
     "comestible_type": "FOOD",
     "name": { "str_sp": "raptor food" },
-    "description": ".",
+    "description": "A mixture of different types of meat. A young raptor should be happy with that.",
     "weight": "554 g",
     "spoils_in": "1 day",
     "container": "can_medium",
