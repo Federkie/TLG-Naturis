@@ -3,32 +3,31 @@
 Current feautures:
 
 Research skill unlocks:
-1
+
+- 1
 - chipped ice
-- 
-2
+- 2
 - field scanner
 - crystal-tipped arrow
-3
+- 3
 - naturis research dossier
 - raptorfood
 - crystal alloy
 - frostclaw
 - raptor arm guards
 - raptor longbow
-4
-- 
+- 4
 - crystal field trap
 - grounding anchor
 - ice field trap
 - electric hunting trap
-5
+- 5
 - shadow cloak
 - field scanner MK. II
 - arm amplifier
 - rapid epee
 - permafrost cleaver
-6
+- 6
 - naturis static beast archive (inferno katana)
 - naturis flying fire archive
 - naturis rapid striker archive
@@ -36,22 +35,22 @@ Research skill unlocks:
 - naturis forest dragon archive
 - naturis crystal seeder archive (crystal edge)
 - static sword
-7
+- 7
 - forest rifle
 - fa_r leaves
 - fa_r heat
 - fa magazine
 - wrist injector
 - healing liquid
-8
+- 8
 - field scanner MK. III
 - resonance rifle
 - fa_s crystal
 - claw staff
 - freeze
-9
+- 9
 - static leather armor
-10
+- 10
 -
 -
 
