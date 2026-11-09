@@ -125,6 +125,48 @@
     "flags": [ "FREEZERBURN", "RAW" ],
     "rot_spawn": { "group": "GROUP_SMALL_RAPTOR_HATCHLINGS", "chance": 30 },
     "vitamins": [ [ "iron", "900 μg" ], [ "calcium", "28 mg" ], [ "egg_allergen", 1 ] ]
+  },
+     {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "egg_unknown",
+    "name": { "str": "unknown egg" },
+    "weight": "1500 g",
+    "color": "brown",
+    "spoils_in": "25 days",
+    "comestible_type": "FOOD",
+    "symbol": "o",
+    "quench": 4,
+    "calories": 2600,
+    "description": "A large egg, the origin of which is difficult to determine. Perhaps you should wait to see what hatches from it.",
+    "price_postapoc": "120 USD",
+    "material": [ "egg" ],
+    "volume": "1500 ml",
+    "fun": -8,
+    "flags": [ "RAW" ],
+    "rot_spawn": {  "group": "GROUP_HATCHLINGS", "chance": 60 },
+    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+  },
+   {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "egg_forest_raptor",
+    "name": { "str": "forest raptor egg" },
+    "weight": "1500 g",
+    "color": "brown",
+    "spoils_in": "15 days",
+    "comestible_type": "FOOD",
+    "symbol": "o",
+    "quench": 4,
+    "calories": 2600,
+    "description": "A greenish, almost transparent egg. If you look closely, you can almost make out what’s inside.",
+    "price_postapoc": "10 USD",
+    "material": [ "egg" ],
+    "volume": "1500 ml",
+    "fun": -8,
+    "flags": [ "RAW" ],
+    "rot_spawn": {  "group": "GROUP_FOREST_RAPTOR_HATCHLINGS", "chance": 60 },
+    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
   }
   
   

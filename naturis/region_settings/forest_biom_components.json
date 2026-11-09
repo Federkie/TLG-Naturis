@@ -26,16 +26,32 @@
         20
       ],
       [
+        "t_scratch_marks",
+        10
+      ],     
+      [
+        "t_egg_shells",
+        10
+      ],     
+      [
+        "t_fungal_deposit",
+        10
+      ],
+      [
+        "t_fungal_deposit_harvested",
+        15
+      ],
+      [
         "f_obelisk",
         40
       ],
       [
         "t_m_mushroom_harvested",
-        50
+        40
       ],
       [
         "t_m_mushroom",
-        40
+        30
       ],
       [
         "t_crystal_pillar_large",

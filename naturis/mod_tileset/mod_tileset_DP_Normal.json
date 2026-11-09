@@ -219,7 +219,6 @@
                     },
          { "id": "t_ice_flowers", "fg": 134, "rotates": false }, 
          { "id": "t_ice_flowers_harvested", "fg": 135, "rotates": false },
-
      { "id": "t_naturis_frost_stone", "fg": 136, 
      "rotates": false, 
      "multitile": true, 
@@ -235,7 +234,25 @@
        {"id": "end_piece", "fg": 140 }, 
        {"id": "unconnected", "fg": 136 }
                         ]
-                    }
+                    },
+       { "id": "t_scratch_marks", "fg": 141, "rotates": false }, 
+       { "id": "t_egg_shells", "fg": 142, "rotates": false },
+    { "id": "fd_grinding_mark", "fg": 143, "rotates": false, 
+     "multitile": true, 
+     "additional_tiles": [
+       {"id": "center", "fg": 144}, 
+       {"id": "corner", "fg": 145}, 
+       {"id": "edge", "fg": 146}, 
+       {"id": "t_connection", "fg": 147},
+       {"id": "end_piece", "fg": 148}, 
+       {"id": "unconnected", "fg": 143}
+                        ]
+                    },
+          { "id": "mon_crystal_weaver", "fg": 149, "rotates": false, "bg": 5  },
+          { "id": "mon_ice_weaver", "fg": 150, "rotates": false, "bg": 5  },
+          { "id": "t_fungal_deposit", "fg": 151, "rotates": false, "bg": 5 }, 
+          { "id": "t_fungal_deposit_harvested", "fg": 152, "rotates": false, "bg": 5 }
+
         ]
       }
     ]

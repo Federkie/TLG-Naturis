@@ -29,7 +29,7 @@
     "weakpoint_sets": [
     "wps_rapid_striker"
   ],
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_mythic" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic" ],
     "harvest": "rapid_striker",
     "dissect": "dissect_naturis_sample_rapid",
     "grab_strength": 70,
@@ -47,33 +47,17 @@
 "allow_no_target": true,
   "condition": {
     "and": [
-      {
-        "math": [
-          "u_hp('ALL') <= 50"
-        ]
+      { "math": [ "u_hp('ALL') <= 50" ]
       },
-      {
-        "not": {
-          "u_has_effect": "maimed_tail"
-        }
-      }
+      { "not": { "u_has_effect": "maimed_tail" } }
     ]
   }
 },
-     { "id": "slam",
-         "cooldown": 10,
+  { "id": "slam", "cooldown": 10,
     "condition": {
     "and": [
-      {
-        "math": [
-          "u_hp('ALL') >= 300"
-        ]
-      },
-      {
-        "not": {
-          "u_has_effect": "maimed_tail"
-        }
-      }
+      { "math": [ "u_hp('ALL') >= 300" ] },
+      { "not": { "u_has_effect": "maimed_tail" } }
     ]
   }
      },
@@ -84,34 +68,22 @@
         "effects": [ { "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 } ],
         "infection_chance": 30
       },
-{
+   {
     "type": "monster_attack",
     "attack_type": "melee",
     "id": "rapid_striker_wounded_lunge",
     "cooldown": 12,
     "move_cost": 130,
     "damage_max_instance": [
-      {
-        "damage_type": "cut",
-        "amount": 10
-      },
-      {
-        "damage_type": "bash",
-        "amount": 18
-      }
+      { "damage_type": "cut",
+        "amount": 10 },
+      { "damage_type": "bash", "amount": 18 }
     ],
     "condition": {
       "and": [
-        {
-          "math": [
-            "u_hp('ALL') > 50"
-          ]
+        { "math": [ "u_hp('ALL') > 50" ]
         },
-        {
-          "math": [
-            "u_hp('ALL') < 300"
-          ]
-        }
+        { "math": [ "u_hp('ALL') < 300" ] }
       ]
     },
     "dodgeable": true,
@@ -130,23 +102,13 @@
     "cooldown": 7,
     "move_cost": 90,
     "damage_max_instance": [
-      {
-        "damage_type": "stab",
-        "amount": 14
-      }
+      { "damage_type": "stab",
+        "amount": 14 }
     ],
     "condition": {
       "and": [
-        {
-          "math": [
-            "u_hp('ALL') > 50"
-          ]
-        },
-        {
-          "math": [
-            "u_hp('ALL') < 300"
-          ]
-        }
+        { "math": [ "u_hp('ALL') > 50" ] },
+        { "math": [ "u_hp('ALL') < 300" ] } 
       ]
     },
     "dodgeable": true,
@@ -156,17 +118,11 @@
     "miss_msg_u": "%1$s snaps at you, but you dodge!",
     "miss_msg_npc": "%1$s snaps at <npcname>, but they dodge!",
     "no_dmg_msg_u": "%1$s bites at you, but your armor protects you.",
-    "no_dmg_msg_npc": "%1$s bites at <npcname>, but their armor protects them."
-  }
-    ],
+    "no_dmg_msg_npc": "%1$s bites at <npcname>, but their armor protects them." } ],
     "regenerates": 1,
     "death_drops": "mon_rapid_striker_death_drops",
     "emit_fields": [
-  {
-    "emit_id": "emit_rapid_striker_track",
-    "delay": "4 h"
-  }
-],
+    { "emit_id": "emit_grinding_mark", "delay": "1 s" } ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK", "PLAYER_NEAR_BABY", "PLAYER_WEAK", "MATING_SEASON" ],
         "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 20 },
     "reproduction": { "baby_egg": "egg_rapid_striker", "baby_count": 4, "baby_timer": 20 },
@@ -257,8 +213,7 @@
       },    
       { "id": "bite_grab", "cooldown": 5 }, 
       { "id": "bite_grab_required", "cooldown": 8 },
-      { "id": "slam", 
-        "cooldown": 30,
+      { "id": "slam",  "cooldown": 30,
         "condition": {
         "not": {
             "u_has_effect": "maimed_tail" }
@@ -434,10 +389,10 @@
     ],
     "diff": 10,
     "volume": "580 L",
-    "weight": "617 kg",
+    "weight": "605 kg",
     "hp": 400,
     "luminance": 5,
-    "speed": 140,
+    "speed": 130,
     "material": [
       "flesh"
     ],
@@ -553,6 +508,9 @@
     "vision_night": 2,
     "harvest": "crystal_seeder",
     "grab_strength": 45,
+        "emit_fields": [
+     { "emit_id": "emit_grinding_mark", "delay": "1 s" } ],
+    "death_drops": "mon_crystal_seeder_death_drops",
     "special_attacks": [
       { "id": "grab" }, 
       { "id": "scratch_humanoid" }, 

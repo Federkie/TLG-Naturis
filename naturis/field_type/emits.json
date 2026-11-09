@@ -5,35 +5,35 @@
     "id": "emit_forest_dragon_track",
     "field": "fd_leaves_pink",
     "intensity": 1,
-    "chance": 4
+    "chance": 50
   },
 {
     "type": "emit",
     "id": "emit_flying_fire_track",
     "field": "fd_fire",
     "intensity": 1,
-    "chance": 4
+    "chance": 50
   },
 {
     "type": "emit",
     "id": "emit_ice_former_track",
     "field": "fd_spikes_ice",
     "intensity": 1,
-    "chance": 4
+    "chance": 50
   },
 {
     "type": "emit",
     "id": "emit_beast_static_track",
     "field": "fd_electricity",
     "intensity": 1,
-    "chance": 4
+    "chance": 50
   },
     {
     "type": "emit",
     "id": "emit_rapid_striker_track",
     "field": "fd_monster_track",
     "intensity": 1,
-    "chance": 4
+    "chance": 50
   },
   {
     "id": "emit_naturis_cold_aura",
@@ -56,7 +56,7 @@
      "id": "emit_herbivore_track",
      "field": "fd_monster_track_herb",
      "intensity": 1,
-     "chance": 4
+     "chance": 50
    },
      {
     "id": "emit_crystal_bees",
@@ -65,6 +65,13 @@
     "field": "fd_bee_swarm_crystal",
     "intensity": 3,
     "chance": 15
+  },
+    {
+    "type": "emit",
+    "id": "emit_grinding_mark",
+    "field": "fd_grinding_mark",
+    "intensity": 1,
+    "chance": 100
   }
 
   

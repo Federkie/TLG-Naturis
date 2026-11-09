@@ -181,7 +181,154 @@
     "families": ["prof_intro_biology", "prof_physiology"],
     "harvest": "mammal_tiny",
     "flags": ["SEES", "HEARS", "SMELLS", "DIGS", "HARDTOSHOOT", "KEENNOSE", "PATH_AVOID_DANGER", "ANIMAL", "SWIMS", "COLDPROOF"]
+  },
+     {
+    "id": "mon_egg_snatcher",
+    "type": "MONSTER",
+    "name": {
+      "str": "egg snatcher"
+    },
+    "description": "A small, lizard-like creature that feeds on the eggs of other species. It is usually on its way from one nest to another, in search of new prey.",
+    "default_faction": "thief",
+    "bodytype": "lizard",
+    "species": [ "REPTILE" ],
+    "diff": 1,
+    "volume": "20 L",
+    "weight": "18000 g",
+    "hp": 15,
+    "speed": 140,
+    "stomach_size": 50,
+    "material": [ "flesh" ],
+    "symbol": "r",
+    "color": "brown",
+    "aggression": -30,
+    "morale": 10,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "melee_damage": [
+      {
+        "damage_type": "cut",
+        "amount": 1
+      }
+    ],
+    "dodge": 5,
+    "families": [
+      "prof_intro_biology",
+      "prof_physiology"
+    ],
+      "special_attacks": [
+      [ "EAT_CARRION", 40 ]
+    ],
+    "harvest": "small_raptor",
+    "dissect": "dissect_lizard_sample_single",
+    "vision_day": 30,
+    "vision_night": 10,
+    "fear_triggers": [
+      "FIRE",
+      "SOUND", 
+      "PLAYER_CLOSE"
+    ],
+    "reproduction": { "baby_egg": "egg_unknown", "baby_count": 1, "baby_timer": 30 },
+    "death_drops": "mon_egg_snatcher_death_drops",
+    "baby_flags": ["AUTUMN", "SUMMER", "SPRING"],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "HEARS",
+      "ANIMAL",
+      "HIT_AND_RUN",
+      "HARDTOSHOOT",
+      "EATS"
+    ]
+  },
+   {
+    "id": "mon_crystal_weaver",
+    "type": "MONSTER",
+    "name": { "str": "crystal weaver" },
+    "description": "A small, beetle-like crystal creature. When it gets startled, it creates small patches of crystal.",
+    "default_faction": "roach",
+    "bodytype": "insect",
+    "species": [ "INSECT" ],
+    "volume": "25 L",
+    "weight": "33958 g",
+    "hp": 20,
+    "speed": 110,
+    "material": [ "iflesh" ],
+    "symbol": "a",
+    "color": "brown",
+    "aggression": -30,
+    "morale": 0,
+    "stomach_size": 50,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "dodge": 2,
+    "weakpoint_sets": [ "wps_arthropod" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug" ],
+    "vision_day": 5,
+    "vision_night": 5,
+    "biosignature": { "biosig_item": "shard_crystal", "biosig_timer": 5 },
+    "special_attacks": [ [ "EAT_FOOD", 60 ], [ "EAT_CARRION", 60 ], 
+          {
+        "type": "spell",
+        "spell_data": { "id": "create_crystal_s", "min_level": 1 },
+        "monster_message": "%1$s hisses excitedly!",
+        "cooldown": 1500,
+        "allow_no_target": true
+      } 
+    ],
+    "fear_triggers": [ "BRIGHT_LIGHT" ],
+    "scents_tracked": [ "sc_fetid", "sc_human" ],
+    "death_function": { "effect": { "id": "create_crystal_s", "hit_self": true }, "message": "The %s body explodes in a cloud of crystals!", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "HEARS", "SMELLS", "CLIMBS", "EATS", "PATH_AVOID_DANGER", "SMALL_HIDER", "CORNERED_FIGHTER", "EATS" ],
+    "armor": { "bash": 2, "cut": 8, "acid": 5, "bullet": 2 }
+  },
+    {
+    "id": "mon_ice_weaver",
+    "type": "MONSTER",
+    "name": { "str": "ice weaver" },
+    "description": "A small, beetle-like ice creature. When it gets startled, it creates small patches of ice.",
+    "default_faction": "roach",
+    "bodytype": "insect",
+    "species": [ "INSECT" ],
+    "volume": "25 L",
+    "weight": "33958 g",
+    "hp": 20,
+    "speed": 110,
+    "material": [ "iflesh" ],
+    "symbol": "a",
+    "color": "brown",
+    "aggression": -30,
+    "morale": 0,
+    "stomach_size": 50,
+    "melee_skill": 0,
+    "melee_dice": 0,
+    "melee_dice_sides": 0,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "dodge": 2,
+    "weakpoint_sets": [ "wps_arthropod" ],
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug" ],
+    "vision_day": 5,
+    "vision_night": 5,
+    "death_function": { "effect": { "id": "create_ice_s", "hit_self": true }, "message": "The %s body explodes in a cloud of ice!", "corpse_type": "NO_CORPSE" },
+    "biosignature": { "biosig_item": "shard_ice", "biosig_timer": 5 },
+    "special_attacks": [ [ "EAT_FOOD", 60 ], [ "EAT_CARRION", 60 ], 
+          {
+        "type": "spell",
+        "spell_data": { "id": "create_ice_s", "min_level": 1 },
+        "monster_message": "%1$s hisses excitedly!",
+        "cooldown": 1500,
+        "allow_no_target": true
+      } 
+    ],
+    "fear_triggers": [ "BRIGHT_LIGHT" ],
+    "scents_tracked": [ "sc_fetid", "sc_human" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "CLIMBS", "EATS", "PATH_AVOID_DANGER", "SMALL_HIDER", "CORNERED_FIGHTER", "EATS" ],
+    "armor": { "bash": 2, "cut": 8, "acid": 5, "bullet": 2 }
   }
+ 
   
   
   

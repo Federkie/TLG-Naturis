@@ -245,7 +245,24 @@
   "half_life": "10 seconds",
   "phase": "gas",
   "display_field": true
-}
+},
+ {
+   "id": "fd_grinding_mark",
+   "type": "field_type",
+   "substance_name": "grinding mark",
+   "legacy_enum_id": 3,
+   "intensity_levels": [
+     { "name": "grinding mark", "sym": "~", "color": "green" },
+     { "name": "deep grinding mark", "color": "light_red" }
+   ],
+   "description_affix": "covered_in",
+   "underwater_age_speedup": "2 minutes",
+   "decay_amount_factor": 2,
+   "is_splattering": true,
+   "half_life": "1 days",
+   "accelerated_decay": true,
+   "display_field": true
+ }
 
 
 

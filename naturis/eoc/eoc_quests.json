@@ -11,93 +11,96 @@
           }
         ],
         "true_eocs": [
-          {
-            "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT",
-            "effect": [
-              {
-                "switch": {
-                  "math": [ "rand(6)" ]
-                },
-                "cases": [
-                  {
-                    "case": 0,
-                    "effect": [
-                      {
-                        "assign_mission": "MISSION_NATURIS_SCANNER_THORN"
-                      },
-                      {
-                        "u_message": "The location of a creature has been determined."
-                      }
-                    ]
-                  },
-                  {
-                    "case": 1,
-                    "effect": [
-                      {
-                        "assign_mission": "MISSION_NATURIS_SCANNER_SMRAPTOR"
-                      },
-                      {
-                        "u_message": "The location of a creature has been determined."
-                      }
-                    ]
-                  },
-                  {
-                    "case": 2,
-                    "effect": [
-                      {
-                        "assign_mission": "MISSION_NATURIS_SCANNER_GLOW_CAP"
-                      },
-                      {
-                        "u_message": "The location of a creature has been determined."
-                      }
-                    ]
-                  },
-                  {
-                    "case": 3,
-                    "effect": [
-                      {
-                        "assign_mission": "MISSION_NATURIS_SCANNER_FRBRAWLER"
-                      },
-                      {
-                        "u_message": "The location of a creature has been determined."
-                      }
-                    ]
-                  },
-                  {
-                    "case": 4,
-                    "effect": [
-                      {
-                        "assign_mission": "MISSION_NATURIS_SCANNER_EMSTALKER"
-                      },
-                      {
-                        "u_message": "The location of a creature has been determined."
-                      }
-                    ]
-                  },
-                  {
-                    "case": 5,
-                    "effect": [
-                      {
-                        "assign_mission": "MISSION_NATURIS_SCANNER_CRSLURKER"
-                      },
-                      {
-                        "u_message": "The location of a creature has been determined."
-                      }
-                    ]
-                  }
-                 ]
-              },
-              {
-                "u_consume_item": "creature_remnant",
-                "count": 1
-              }
-            ]
-          }
+          "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT"
         ],
         "false_eocs": [
           "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT"
         ]
       }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT",
+    "effect": [
+      {
+        "if": {
+          "u_has_proficiency": "prof_field_research"
+        },
+        "then": [
+          {
+            "weighted_list_eocs": [
+              [ "EOC_NATURIS_SCANNER_TARGET_THORN", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER", 30 ]
+            ]
+          }
+        ],
+        "else": [
+          {
+            "weighted_list_eocs": [
+              [ "EOC_NATURIS_SCANNER_TARGET_THORN", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR", 30 ],
+              [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER", 30 ]
+            ]
+          }
+        ]
+      },
+      {
+        "u_consume_item": "creature_remnant",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_THORN",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_THORN" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_SMRAPTOR" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_GLOW_CAP" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_FRBRAWLER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_EMSTALKER",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_EMSTALKER" },
+      { "u_message": "The location of a creature has been determined." }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_SCANNER_TARGET_CRSLURKER",
+    "effect": [
+      { "assign_mission": "MISSION_NATURIS_SCANNER_CRSLURKER" },
+      { "u_message": "The location of a creature has been determined." }
     ]
   },
   {

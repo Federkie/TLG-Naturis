@@ -206,7 +206,7 @@
     "dodge": 2,
     "families": [
       "prof_intro_biology",
-      "prof_physiology", "prof_wp_mythic"
+      "prof_physiology", "prof_field_research",  "prof_wp_mythic"
     ],
     "weakpoint_sets": ["wps_big_raptor"],
       "special_attacks": [
@@ -221,6 +221,7 @@
     ],
     "harvest": "big_raptor",
     "reproduction": { "baby_egg": "egg_small_raptor", "baby_count": 1, "baby_timer": 50 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "dissect": "dissect_naturis_sample_normal",
     "vision_day": 30,
     "vision_night": 2,

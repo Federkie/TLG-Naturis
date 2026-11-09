@@ -266,7 +266,22 @@
       "techniques": ["WBLOCK_0"],
       "thrown_damage": [{ "damage_type": "bash", "amount": 1 }, { "damage_type": "stab", "amount": 9 }],
       "melee_damage": { "bash": 9 }
-    }
+    },
+   {
+    "id": "bandages_mycelium",
+    "type": "ITEM",
+    "category": "drugs",
+    "name": { "str": "mycelium bandage" },
+    "description": "A bandage made of mycelium fiber. It takes a bit of effort to bring yourself to use it, but it possesses properties similar to the original.",
+    "weight": "70 g",
+    "volume": "27 ml",
+    "price_postapoc": "18 cent",
+    "material": ["vegetable"],
+    "symbol": "!",
+    "color": "white",
+    "flags": ["SINGLE_USE", "TINDER"],
+    "use_action": { "type": "heal", "bandages_power": 4, "bleed": 10, "move_cost": 7000 }
+   }
  
 
 ]

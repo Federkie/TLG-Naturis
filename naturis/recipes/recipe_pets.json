@@ -1,0 +1,60 @@
+[
+    {
+    "result": "iron_armor_raptor",
+    "type": "recipe",
+    "activity_level": "BRISK_EXERCISE",
+    "copy-from": "jacket_leather_mod",
+    "category": "CC_ANIMALS",
+    "skills_required": [ "tailor", 3 ],
+    "time": "24 h",
+    "book_learn": [ [ "textbook_tailor", 5 ], [ "tailor_portfolio", 5 ], [ "textbook_armwest", 4 ], [ "textbook_armschina", 4 ] ],
+    "using": [ [ "sewing_standard", 260 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "DRILL", "level": 2 } ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic", "time_multiplier": 1.1, "skill_penalty": 0.15 },
+      { "proficiency": "prof_closures", "time_multiplier": 1.1 },
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_armorsmithing" },
+      { "proficiency": "prof_articulation" }
+    ],
+    "components": [ [ [ "steel_fragment", 60 ], [ "scrap", 180 ] ], [ [ "leather_armor_horse", 1 ] ] ]
+  },
+  {
+    "result": "leather_armor_raptor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "id_suffix": "from_scratch",
+    "category": "CC_ANIMALS",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "skills_required": [ "tailor", 6 ],
+    "time": "10 h 30 m",
+    "book_learn": [
+      [ "textbook_tailor", 4 ],
+      [ "tailor_portfolio", 5 ],
+      [ "textbook_survival", 3 ],
+      [ "trappers_companion", 3 ],
+      [ "survival_book", 3 ],
+      [ "textbook_armwest", 6 ],
+      [ "textbook_armschina", 6 ]
+    ],
+    "reversible": true,
+    "using": [ [ "tailoring_leather_sheet", 55 ], [ "tailoring_cotton_sheet", 55 ], [ "surface_heat", 60 ], [ "clasps", 4 ] ],
+    "qualities": [ { "id": "COOK", "level": 3 }, { "id": "LEATHER_AWL", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
+    "components": [
+      [ [ "water", 30 ], [ "water_clean", 30 ] ],
+      [ [ "wax_any", 6, "LIST" ], [ "any_tallow", 82, "LIST" ], [ "vinegar", 30 ], [ "pine_bough", 60 ] ],
+      [ [ "salt", 150 ] ]
+    ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_leatherworking" }
+    ]
+  }
+  
+  
+  
+]

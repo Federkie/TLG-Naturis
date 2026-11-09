@@ -34,6 +34,24 @@
     "color": "white",
     "qualities": [ ["RESEARCH", 2] ],
     "melee_damage": { "bash": 3 }
+  },
+   {
+    "id": "magnifying_glass",
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "name": { "str": "magnifying glass", "str_pl": "magnifying glasses" },
+    "description": "A magnifying glass, for closely examining fine details.  It can also be used for starting fires if direct sunlight is available.",
+    "weight": "400 g",
+    "volume": "250 ml",
+    "price": "6 USD",
+    "price_postapoc": "50 cent",
+    "to_hit": -1,
+    "material": ["glass", "plastic"],
+    "symbol": "o",
+    "color": "green",
+    "qualities": [ ["RESEARCH", 1] ],
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "flags": ["FIRESTARTER"]
   }
   
   

@@ -1,194 +1,217 @@
 [
   {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_3",
-    "effect": [
-      {
-        "u_run_inv_eocs": "random",
-        "search_data": [
-          {
-            "id": "creature_remnant"
-          }
-        ],
-        "true_eocs": [
-          "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3"
-        ],
-        "false_eocs": [
-          "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3",
-    "effect": [
-      {
-        "weighted_list_eocs": [
-          [ "EOC_NATURIS_SCANNER_TARGET_THORN_3", 10 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10 ],
-
-          [ "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10 ],
-
-          [ "EOC_NATURIS_SCANNER_TARGET_RAPID_3", 4 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_FDRAGON_3", 3 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_FLFIRE_3", 3 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_IFORMER_3", 2 ],
-
-          [ "EOC_NATURIS_SCANNER_TARGET_STATIC_3", 2 ],
-          [ "EOC_NATURIS_SCANNER_TARGET_CRSEEDER_3", 1 ],
-          [ "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10 ]
-        ]
-      },
-      {
-        "u_consume_item": "creature_remnant",
-        "count": 1
-      }
-    ]
-  },
-
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_THORN_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_THORN" },
-      { "u_message": "The location of Thorn Skitter has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_SMRAPTOR" },
-      { "u_message": "The location of a Small Raptor has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_GLOW_CAP" },
-      { "u_message": "The location of a Glow Cap has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_FRBRAWLER" },
-      { "u_message": "The location of a Frost Brawler has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_EMSTALKER" },
-      { "u_message": "The location of an Ember Stalker has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_CRSLURKER" },
-      { "u_message": "The location of a Crystal Slurker has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_CRYSTAL_WALKER" },
-      { "u_message": "The location of a Crystal Walker has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_VEIL_STALKER" },
-      { "u_message": "The location of a Veil Stalker has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_BIG_RAPTOR" },
-      { "u_message": "The location of a Big Raptor has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_RAPID_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_RAPID" },
-      { "u_message": "The location of a Rapid Striker has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_FDRAGON_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_FDRAGON" },
-      { "u_message": "The location of a Forest Dragon has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_FLFIRE_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_FLFIRE" },
-      { "u_message": "The location of a Flying Fire has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_IFORMER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_IFORMER" },
-      { "u_message": "The location of an Ice Former has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_STATIC_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_STATIC" },
-      { "u_message": "The location of a Static Beast has been determined." }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_TARGET_CRSEEDER_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_CRSEEDER" },
-      { "u_message": "The location of a Crystal Seeder has been determined." }
-    ]
-  },
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_3",
+  "effect": [
     {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3",
-    "effect": [
-      { "assign_mission": "MISSION_NATURIS_SCANNER_INVESTIGATE_NEST" },
-      { "u_message": "The location of a monster nest has been determined." }
-    ]
-  },
+      "u_run_inv_eocs": "random",
+      "search_data": [
+        {
+          "id": "creature_remnant"
+        }
+      ],
+      "true_eocs": [
+        "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3"
+      ],
+      "false_eocs": [
+        "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3"
+      ]
+    }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3",
+  "effect": [
+    {
+      "if": {
+        "u_has_proficiency": "prof_field_research"
+      },
+      "then": [
+        {
+          "weighted_list_eocs": [
+            [ "EOC_NATURIS_SCANNER_TARGET_THORN_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10 ],
 
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3",
-    "effect": [
-      {
-        "u_message": "ERROR: No creature remnant available. You need at least one in order to be able to examine it."
-      }
-    ]
-  }
+            [ "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10 ],
+
+            [ "EOC_NATURIS_SCANNER_TARGET_RAPID_3", 4 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_FDRAGON_3", 3 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_FLFIRE_3", 3 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_IFORMER_3", 2 ],
+
+            [ "EOC_NATURIS_SCANNER_TARGET_STATIC_3", 2 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_CRSEEDER_3", 1 ],
+            [ "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10 ]
+          ]
+        }
+      ],
+      "else": [
+        {
+          "weighted_list_eocs": [
+            [ "EOC_NATURIS_SCANNER_TARGET_THORN_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10 ],
+
+            [ "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7 ],
+            [ "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10 ],
+
+            [ "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10 ]
+          ]
+        }
+      ]
+    },
+    {
+      "u_consume_item": "creature_remnant",
+      "count": 1
+    }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_THORN_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_THORN" },
+    { "u_message": "The location of Thorn Skitter has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_SMRAPTOR" },
+    { "u_message": "The location of a Small Raptor has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_GLOW_CAP" },
+    { "u_message": "The location of a Glow Cap has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_FRBRAWLER" },
+    { "u_message": "The location of a Frost Brawler has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_EMSTALKER" },
+    { "u_message": "The location of an Ember Stalker has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_CRSLURKER" },
+    { "u_message": "The location of a Crystal Slurker has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_CRYSTAL_WALKER" },
+    { "u_message": "The location of a Crystal Walker has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_VEIL_STALKER" },
+    { "u_message": "The location of a Veil Stalker has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_BIG_RAPTOR" },
+    { "u_message": "The location of a Big Raptor has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_RAPID_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_RAPID" },
+    { "u_message": "The location of a Rapid Striker has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_FDRAGON_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_FDRAGON" },
+    { "u_message": "The location of a Forest Dragon has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_FLFIRE_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_FLFIRE" },
+    { "u_message": "The location of a Flying Fire has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_IFORMER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_IFORMER" },
+    { "u_message": "The location of an Ice Former has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_STATIC_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_STATIC" },
+    { "u_message": "The location of a Static Beast has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_TARGET_CRSEEDER_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_CRSEEDER" },
+    { "u_message": "The location of a Crystal Seeder has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3",
+  "effect": [
+    { "assign_mission": "MISSION_NATURIS_SCANNER_INVESTIGATE_NEST" },
+    { "u_message": "The location of a monster nest has been determined." }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3",
+  "effect": [
+    {
+      "u_message": "ERROR: No creature remnant available. You need at least one in order to be able to examine it."
+    }
+  ]
+}
 ]

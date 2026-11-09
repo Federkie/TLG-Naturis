@@ -38,6 +38,7 @@
     "extras": [
       ["mx_naturis_nest_field", 50],
       ["mx_naturis_ressources", 150],
+      ["mx_naturis_monster_markings", 200],
       ["mx_naturis_tracks_field", 250]
     ]
   }
