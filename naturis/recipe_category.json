@@ -8,5 +8,119 @@
     "CSC_RESEARCH_TOOLS",
     "CSC_RESEARCH_APEX"
   ]
+},
+{
+  "type": "nested_category",
+  "id": "nested_tea",
+  "name": "teas",
+  "copy-from": "nested_tea",
+  "extend": {
+    "nested_category_data": [
+      "tea_leaves_pink"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_arm_splint",
+  "name": "arm splints",
+  "copy-from": "nested_arm_splint",
+  "extend": {
+    "nested_category_data": [
+      "arm_splint_living"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_leg_splint",
+  "name": "leg splints",
+  "copy-from": "nested_leg_splint",
+  "extend": {
+    "nested_category_data": [
+      "leg_splint_living"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_hemostatic",
+  "name": "hemostatic compounds",
+  "copy-from": "nested_hemostatic",
+  "extend": {
+    "nested_category_data": [
+      "healing_liquid"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_cloak",
+  "name": "cloaks",
+  "copy-from": "nested_cloak",
+  "extend": {
+    "nested_category_data": [
+      "cloak_scales",
+      "cloak_feather",
+      "cloak_shadow"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_spears",
+  "name": "spears",
+  "copy-from": "nested_spears",
+  "extend": {
+    "nested_category_data": [
+      "spear_ice"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_bows",
+  "name": "bows",
+  "copy-from": "nested_bows",
+  "extend": {
+    "nested_category_data": [
+      "compbow_raptor"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_staffs",
+  "name": "staffs",
+  "copy-from": "nested_staffs",
+  "extend": {
+    "nested_category_data": [
+      "regenerating_staff",
+      "staff_claw",
+      "staff_modular"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_crossbows",
+  "name": "crossbows",
+  "copy-from": "nested_crossbows",
+  "extend": {
+    "nested_category_data": [
+      "disk_crossbow"
+    ]
+  }
+},
+{
+  "type": "nested_category",
+  "id": "nested_bandages",
+  "name": "bandages",
+  "copy-from": "nested_bandages",
+  "extend": {
+    "nested_category_data": [
+      "bandages_mycelium"
+    ]
+  }
 }
 ]

@@ -64,7 +64,7 @@
   "locations": ["forest", "field"],
   "city_distance": [5, -1],
   "city_sizes": [0, 24],
-  "occurrences": [5000, 7000],
+  "occurrences": [9, 10],
   "flags": ["MAN_MADE", "OVERMAP_UNIQUE"]
 },
  {

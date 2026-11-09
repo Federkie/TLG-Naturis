@@ -62,6 +62,22 @@
    { 
    "result": [  ["t_dirt_rocky", 1 ], ["t_crystal_pillar_large", 4 ] ],
   "valid_flags": ["FLAT"] } ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "grow_crystal",
+    "terrain": [ 
+    {
+   "result": [ [ "t_crystal_pillar", 1 ], [ "t_crystal_pillar_large", 1 ], [ "t_dirt_crystal", 3 ] ],
+   "valid_flags": ["BURROWABLE"] } ]
+  },
+    {
+    "type": "ter_furn_transform",
+    "id": "grow_ice",
+    "terrain": [ 
+    {
+   "result": [ [ "t_ice_flowers", 1 ], [ "t_ice_pillar_large", 1 ], [ "t_naturis_cold_stone", 3 ] ],
+   "valid_flags": ["BURROWABLE"] } ]
   }
 
 

@@ -1,0 +1,44 @@
+[
+    {
+    "type": "ITEM",
+    "subtypes": ["PET_ARMOR"],
+    "id": "leather_armor_raptor",
+    "symbol": "[",
+    "min_pet_vol": "380 L",
+    "max_pet_vol": "1000 L",
+    "pet_bodytype": "kangoroo",
+    "longest_side": "60 cm",
+    "flags": ["IS_PET_ARMOR"],
+    "color": "green",
+    "name": { "str": "leather cuirass with lining" },
+    "description": "A leather harness for a large raptor. The fabric lining provides better padding and greater comfort for the animal wearing it.",
+    "price_postapoc": "30 USD",
+    "material": ["cotton", "leather"],
+    "weight": "14 kg",
+    "volume": "145 L",
+    "material_thickness": 6
+  },
+   {
+    "type": "ITEM",
+    "subtypes": ["PET_ARMOR"],
+    "id": "iron_armor_raptor",
+    "symbol": "[",
+    "min_pet_vol": "380 L",
+    "max_pet_vol": "1000 L",
+    "pet_bodytype": "kangoroo",
+    "longest_side": "60 cm",
+    "flags": ["IS_PET_ARMOR"],
+    "color": "brown",
+    "name": { "str": "iron ratpor armor" },
+    "description": "A heavy covering of strategically-placed iron plates and leather, suitably made for raptors as protection.  You could put this on a friendly raptor.",
+    "price_postapoc": "10 USD",
+    "material": ["iron", "leather"],
+    "weight": "28 kg",
+    "volume": "145 L",
+    "material_thickness": 4
+  }
+  
+  
+  
+  
+]

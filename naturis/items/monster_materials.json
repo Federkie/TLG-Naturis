@@ -14,7 +14,56 @@
     "color": "light_gray",
     "qualities": [ [ "HAMMER", 1 ] ],
     "melee_damage": { "bash": 4 }
-  }
+  },
+  {
+  "id": "mycelium_fiber",
+  "type": "ITEM",
+  "name": { "str": "mycelium fiber" },
+  "description": "A dense, fibrous sheet of organic material. The fungal network has grown through the plant fibers, binding them into a surprisingly resilient material.",
+  "weight": "180 g",
+  "volume": "250 ml",
+  "material": ["vegetable"],
+  "symbol": "#",
+  "color": "brown",
+  "flags": ["NO_SALVAGE", "TINDER"]
+},
+  {
+    "id": "mycelium",
+    "type": "ITEM",
+    "name": { "str": "mycelium" },
+    "description": "A sponge-like lump of organic material.",
+    "weight": "5 g",
+    "volume": "6 ml",
+    "price_postapoc": "50 cent",
+    "material": ["vegetable"],
+    "symbol": "s",
+    "color": "yellow",
+    "flags": ["NO_SALVAGE"]
+  },
+    {
+      "id": "mycelium_mother",
+      "type": "ITEM",
+      "name": { "str": "mycelium mother jar" },
+      "description": "This jar contains a batch of pickles set to ferment.  You can seal up the jar once the process is completed.",
+      "weight": "850 g",
+      "volume": "680 ml",
+      "longest_side": "132 mm",
+      "price_postapoc": "20 cent",
+      "material": ["glass", "vegetable"],
+      "symbol": "%",
+      "color": "white",
+      "use_action": {
+        "target": "mycelium",
+        "container": "jar_glass_sealed",
+        "target_charges": 6,
+        "msg": "The mycelium has matured. You carefully open the jar and collect the dense organic mass.",
+        "moves": 50,
+        "type": "delayed_transform",
+        "transform_age": 201600,
+        "not_ready_msg": "It looks the same as before, it probably needs a bit more time."
+      },
+      "melee_damage": { "bash": 8 }
+    }
   
   
   

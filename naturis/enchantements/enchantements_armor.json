@@ -20,7 +20,7 @@
    "id": "enchant_enhanced_stamina",
    "has": "WORN",
    "condition": "ALWAYS",
-   "name": { "str": "heat resist" },
+   "name": { "str": "enhanced stamina" },
    "description": ".",
    "values": [ { "value": "MAX_STAMINA", "add": 200 } ]
  },

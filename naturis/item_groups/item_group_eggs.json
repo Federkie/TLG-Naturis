@@ -1,0 +1,18 @@
+[
+    {
+    "id": "naturis_eggs",
+    "type": "item_group",
+    "items": [
+      ["egg_flying_fire", 2],
+      ["egg_static_beast", 5],
+      ["egg_rapid_striker", 1],
+      ["egg_forest_dragon", 1],
+      ["egg_ice_former", 1],
+      ["egg_small_raptor", 1]
+      
+    ]
+  }
+  
+  
+  
+]

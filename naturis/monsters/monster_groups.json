@@ -196,9 +196,10 @@
       "type": "monstergroup",
       "monsters": [
         { "monster": "mon_null", "weight": 50 },
-        { "monster": "mon_frost_brawler", "weight": 30, "cost_multiplier": 1 },
+        { "monster": "mon_frost_brawler", "weight": 30, "cost_multiplier": 3 },
         { "monster": "mon_ice_mole", "weight": 20, "cost_multiplier": 0 },
-        { "monster": "mon_ice_worm", "weight": 20, "cost_multiplier": 0 }
+        { "monster": "mon_ice_worm", "weight": 20, "cost_multiplier": 0 },
+        { "monster": "mon_blob_frozen", "weight": 20, "pack_size": [ 2, 5 ], "cost_multiplier": 4 }
       ]
     },
    {
@@ -215,11 +216,30 @@
   ]
 },
 {
-
     "name": "GROUP_FROSTBOUND_LAKE",
     "type": "monstergroup",
      "monsters": [
       { "monster": "mon_ice_shadow", "weight": 100, "cost_multiplier": 0 } ]
+},
+{
+    "name": "GROUP_HATCHLINGS",
+    "type": "monstergroup",
+     "monsters": [
+      { "monster": "mon_old_chick", "weight": 1 },
+     { "monster": "mon_rain_chick", "weight": 5 },
+     { "monster": "mon_hatchling_static", "weight": 1 },
+     { "monster": "mon_hatchling_rapid", "weight": 1 },
+     { "monster": "mon_hatchling_fdragon", "weight": 1 }, 
+     { "monster": "mon_hatchling_icef", "weight": 1 },
+     { "monster": "mon_hatchling_small_raptor", "weight": 1 } 
+     ]
+},
+{
+  "name": "GROUP_FOREST_RAPTOR_HATCHLINGS",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_hatchling_forest_raptor", "weight": 100, "cost_multiplier": 1 }
+  ]
 }
 
 

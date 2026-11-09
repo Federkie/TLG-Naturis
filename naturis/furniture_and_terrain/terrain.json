@@ -632,6 +632,82 @@
     "move_cost": 1,
     "flags": ["TRANSPARENT"],
     "emissions": ["emit_cold_air3_blast"]
+  },
+         {
+          "type": "terrain",
+          "id": "t_scratch_marks",
+          "name": "scratch marks",
+          "description": "Scratch marks from a large creature, perhaps they will tell you a bit more about the local fauna.",
+          "symbol": "*",
+          "examine_action": {
+            "type": "effect_on_condition",
+            "effect_on_conditions": [
+              "EOC_MONSTER_MARKS"
+            ]
+          },
+          "color": "cyan",
+          "move_cost": 1,
+          "flags": ["TRANSPARENT"]
+        },
+        {
+          "type": "terrain",
+          "id": "t_egg_shells",
+          "name": "broken eggshells",
+          "description": "Broken eggshells from a large monster. It’s hard to tell whether they were plundered or if the creatures hatched. Perhaps you’ll learn more by examining them.",
+          "symbol": "*",
+          "examine_action": {
+            "type": "effect_on_condition",
+            "effect_on_conditions": [
+              "EOC_MONSTER_MARKS"
+            ]
+          },
+          "color": "cyan",
+          "move_cost": 1,
+          "flags": ["TRANSPARENT"]
+        },
+  {
+  "type": "terrain",
+  "id": "t_fungal_deposit",
+  "name": "fungal deposit",
+  "description": "A strange fungal network that has overgrown the ground. Perhaps it can be processed into something useful.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 2,
+  "coverage": 10,
+  "concealment": 10,
+  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB"],
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn"], "id": "fungal_deposit_harvest" }],
+  "transforms_into": "t_fungal_deposit_harvested",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
   }
-  
+},
+{
+  "type": "terrain",
+  "id": "t_fungal_deposit_harvested",
+  "name": "fungal scraps ",
+  "description": "A short fungus harvested.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 20,
+  "concealment": 20,
+  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE"],
+  "examine_action": "harvested_plant",
+  "transforms_into": "t_fungal_deposit",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
+  }
+}
 ]

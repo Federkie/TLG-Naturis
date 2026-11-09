@@ -1,0 +1,86 @@
+[
+  
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_naturis_monster_markings",
+    "object": {
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            1           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "nested": {
+        "1": {
+          "chunks": [
+            [
+              "naturis_scratch_marks",
+              10
+            ],
+            [
+              "naturis_egg_shells",
+              10
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_scratch_marks",
+    "object": {
+      "mapgensize": [
+        1,
+        1
+      ],
+      "rows": [
+        "1"
+      ],
+      "terrain": {
+        "1": "t_scratch_marks"
+      }
+      }
+    },
+      {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_egg_shells",
+    "object": {
+      "mapgensize": [
+        1,
+        1
+      ],
+      "rows": [
+        "1"
+      ],
+      "terrain": {
+        "1": "t_egg_shells"
+      }
+      }
+    }
+
+  
+  
+  
+]

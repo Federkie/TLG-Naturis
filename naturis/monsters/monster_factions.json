@@ -20,35 +20,35 @@
     "type": "MONSTER_FACTION",
     "name": "zombie",
     "copy-from": "zombie",
-    "neutral": [ "overgrown", "crystal", "anomaly", "fleshy", "ice", "fire" ]
+    "neutral": [ "overgrown", "crystal", "anomaly", "thief", "fleshy", "ice", "fire" ]
   },
     {
     "type": "MONSTER_FACTION",
     "name": "forest",
     "friendly": ["static", "crystal", "small_animal", "overgrown", "triffid"],
     "neutral": ["player", "human"],
-    "hate": [ "fire", "ice", "zombie" ]
+    "hate": [ "fire", "thief", "ice", "zombie" ]
   },
     {
     "type": "MONSTER_FACTION",
     "name": "ice",
     "friendly": ["fleshy", "zombie"],
     "neutral": ["static"],
-    "hate": [ "player", "human", "forest" ]
+    "hate": [ "player", "thief", "human", "forest" ]
   },
     {
     "type": "MONSTER_FACTION",
     "name": "static",
     "friendly": ["fire"],
     "neutral": ["fleshy"],
-    "hate": [ "player", "human", "zombie" ]
+    "hate": [ "player", "thief", "human", "zombie" ]
   },
    {
    "type": "MONSTER_FACTION",
    "name": "fire",
    "friendly": ["zombie", "static"],
    "neutral": ["fleshy"],
-   "hate": ["player", "human", "ice"]
+   "hate": ["player", "thief", "human", "ice"]
  },
    {
     "type": "MONSTER_FACTION",
@@ -57,13 +57,19 @@
     "friendly": ["small_animal", "forest"],
     "by_mood": [ "fish" ],
     "neutral": ["fish", "player", "human"],
-    "hate": ["ice", "fire", "static"]
+    "hate": ["ice", "thief", "fire", "static"]
   },
       {
       "type": "MONSTER_FACTION",
       "name": "crystal",
       "friendly": ["forest", "small_animal", "overgrown"],
       "neutral": ["player", "human"],
-      "hate": ["fire", "ice", "zombie"]
-    }
+      "hate": ["fire", "thief", "ice", "zombie"]
+    },
+       {
+        "type": "MONSTER_FACTION",
+        "name": "thief",
+        "friendly": ["zombie", "small_animal"],
+        "neutral": ["player", "human"]
+      }
 ]

@@ -42,6 +42,17 @@
     "time_to_learn": "30 h",
     "default_weakpoint_bonus": 3,
     "default_weakpoint_penalty": -2
+  },
+   {
+    "type": "proficiency",
+    "id": "prof_field_research",
+    "category": "prof_weakpoint",
+    "name": { "str": "Field Research" },
+    "description": "You have researched the way of life of the creatures that dwell here.",
+    "can_learn": true,
+    "time_to_learn": "10 h",
+    "default_weakpoint_bonus": 1,
+    "default_weakpoint_penalty": -1
   }
   
 ]

@@ -16,11 +16,14 @@ Research skill unlocks:
 - frostclaw
 - raptor arm guards
 - raptor longbow
+- mycelium_mother (mycelium)
+- mycelium bandages
 - 4
 - crystal field trap
 - grounding anchor
 - ice field trap
 - electric hunting trap
+- mycelium fiber
 - 5
 - shadow cloak
 - field scanner MK. II
@@ -91,6 +94,14 @@ A large, dragon-like creature that you better not get too close to. Drops its ow
 - crystal crawler
 - ice shadow
 - frost brawler
+- forest raptor
+- forest raptor hatchling
+- juvenile forest raptor
+- ice blob
+- juvenile apex monster
+- egg snatcher
+- ice weaver
+- crystal weaver
 
 - forest walker
 This creature allows plants and trees to grow, including in buildings.
@@ -121,7 +132,7 @@ Weapons:
 - crystal edge (+ recipe)
 - resonance rifle (+ recipe)
 - chipped ice (+ recipe)
-- ftostclaw (+ recipe)
+- frostclaw (+ recipe)
 - raptor longbow (+ recipe)
 
 Ammo:
@@ -142,6 +153,8 @@ Armor:
 - raptor arm guards (+ recipe)
 - shadow cloak (+ recipe)
 - tech ring (WIP)
+- raptor leather armor (pet)
+- raptor iron armor (pet)
 
 Books:
 - alternative medicine
@@ -166,6 +179,9 @@ Misc:
 - pink leave tea (+ recipe)
 - cryo powder (+ recipe)
 - grounding anchor (+ recipe)
+- mycelium mycelium
+- mycelium fiber
+- mycelium bandages
 
 New matierials:
 - thorn skin
@@ -213,11 +229,13 @@ New matierials:
 - frozen petals
 - ice fang
 - ice chunk
+- forest enzyme
 
 - I have temporarily removed the "rooted egg" function, as it can cause a crash.
 
 
-
+New professions:
+- wildstalker
 
 
 New proficiencys:

@@ -293,7 +293,7 @@
   "effect": [
     {
       "if": {
-        "x_in_y_chance": { "x": 1, "y": 5 }
+        "x_in_y_chance": { "x": 1, "y": 10 }
       },
       "then": [
         {

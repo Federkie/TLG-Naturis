@@ -1,0 +1,41 @@
+[
+  {
+  "id": "create_crystal_s",
+  "type": "SPELL",
+  "name": { "str": "create crystal" },
+  "description": "Creates crystal.",
+  "valid_targets": ["ground"],
+  "flags": ["SILENT", "NO_EXPLOSION_SFX"],
+  "effect": "ter_transform",
+  "effect_str": "grow_crystal",
+  "shape": "blast",
+  "max_level": 1,
+  "min_range": 0,
+  "max_range": 1,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 2,
+  "max_aoe": 3
+},
+  {
+    "id": "create_ice_s",
+    "type": "SPELL",
+    "name": { "str": "create ice" },
+    "description": "Creates ice.",
+    "valid_targets": ["ground"],
+    "flags": ["SILENT", "NO_EXPLOSION_SFX"],
+    "effect": "ter_transform",
+    "effect_str": "grow_ice",
+    "shape": "blast",
+    "max_level": 1,
+    "min_range": 0,
+    "max_range": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 2,
+    "max_aoe": 3
+  }
+  
+  
+  
+]
