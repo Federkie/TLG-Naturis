@@ -1,0 +1,94 @@
+[
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_HEALING_EXTRACT",
+      "effect": [
+        { "u_message": "You drink the water that has a greenish shimmer." },
+        { "u_lose_effect": "effect_healing_water_comedown" },
+        { "u_add_effect": "effect_healing_water", "duration": "15 minutes" },
+        { "math": [ "u_vitamin('extract_overload')", "+=", "1" ] },
+        { "run_eocs": "EOC_HEALING_EXTRACT_BONUS" },
+        { "run_eocs": "EOC_HEALING_EXTRACT_COMEDOWN", "time_in_future": ["15 minutes", "30 minutes"] }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_HEALING_EXTRACT_COMEDOWN",
+      "effect": [
+        { "u_lose_effect": "effect_healing_water" },
+        { "u_add_effect": "effect_healing_water_comedown", "duration": {
+               "math": [ "clamp(300 - (u_skill('research') * 20), 150, 300)" ] }
+               }
+      ]
+    },
+{
+  "type": "effect_on_condition",
+  "id": "EOC_DORMANT_EXTRACT",
+  "effect": [
+    {
+      "u_message": "With some effort, you drink the strange liquid."
+    },
+    { "math": [ "u_vitamin('extract_overload')", "+=", "1" ] },
+    {
+      "weighted_list_eocs": [
+        [ "EOC_DORMANT_EXTRACT_1", 2 ],
+        [ "EOC_DORMANT_EXTRACT_2", 2 ],
+        [ "EOC_DORMANT_EXTRACT_3", 1 ]
+      ]
+    }
+  ]
+},
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_DORMANT_EXTRACT_1",
+      "effect": [
+        { "u_message": "With some effort, you drink the strange liquid." },
+        { "u_add_effect": "effect_speed_extract", "duration": ["5 minutes", "25 minutes"] }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_DORMANT_EXTRACT_2",
+      "effect": [
+        { "u_message": "With some effort, you drink the strange liquid." },
+        { "u_add_effect": "effect_enhanced_vision", "duration": ["15 minutes", "35 minutes"] }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_DORMANT_EXTRACT_3",
+      "effect": [
+        { "u_message": "With some effort, you drink the strange liquid." },
+        { "u_lose_effect": "effect_bad_extract" },
+        { "u_add_effect": "effect_bad_extract", "duration": {
+               "math": [ "clamp(300 - (u_skill('research') * 20), 150, 300)" ] } 
+        }
+      ]
+    },
+    {
+      "type": "effect_on_condition",
+      "id": "EOC_ENHANCED_STAMINA_EXTRACT",
+      "effect": [
+        { "u_message": "You drink the herb-heavy mixture." },
+        { "u_lose_effect": "effect_healing_water_comedown" },
+        { "u_add_effect": "effect_enhanced_stamina", "duration": ["15 minutes", "25 minutes"] },
+        { "math": [ "u_vitamin('extract_overload')", "+=", "1" ] },
+        { "run_eocs": "EOC_ENHANCED_STAMINA_BONUS" },
+        { "run_eocs": "EOC_HEALING_EXTRACT_COMEDOWN", "time_in_future": ["25 minutes", "40 minutes"] }
+      ]
+    },
+        {
+      "type": "effect_on_condition",
+      "id": "EOC_REDUCED_FATIGUE_EXTRACT",
+      "effect": [
+        { "u_message": "You drink the herb-heavy mixture." },
+        { "u_lose_effect": "effect_healing_water_comedown" },
+        { "math": ["u_val('fatigue')", "-=", "rng(20,40)"] }, { "math": ["u_val('sleep_deprivation')", "-=", "rng(200,400)"] },
+        { "math": [ "u_vitamin('extract_overload')", "+=", "1" ] },
+        { "run_eocs": "EOC_REDUCED_FATIGUE_BONUS" },
+        { "run_eocs": "EOC_HEALING_EXTRACT_COMEDOWN", "time_in_future": ["25 minutes", "40 minutes"] }
+      ]
+    }
+  
+  
+]

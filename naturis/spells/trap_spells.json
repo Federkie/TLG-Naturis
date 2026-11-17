@@ -77,8 +77,31 @@
   "damage_type": "cold",
   "shape": "blast",
   "flags": ["RANDOM_AOE", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX"]
-}
-  
+},
+    {
+      "type": "SPELL",
+      "id": "slow_field",
+      "name": "Slow Field",
+      "description": "Creates a slowing field.",
+      "valid_targets": ["hostile", "ground", "self"],
+      "flags": [
+        "SILENT",
+        "NO_PROJECTILE",
+        "NO_EXPLOSION_SFX"
+      ],
+      "effect": "attack",
+      "shape": "blast",
+      "min_range": 0,
+      "max_range": 0,
+      "min_aoe": 4,
+      "max_aoe": 4,
+      "min_damage": 0,
+      "max_damage": 0,
+      "field_id": "fd_slow",
+      "field_chance": 1,
+      "min_field_intensity": 1,
+      "max_field_intensity": 1
+    }
   
   
   

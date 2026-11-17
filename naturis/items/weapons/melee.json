@@ -216,13 +216,12 @@
       "str": "Permafrost Cleaver"
     },
     "description": "A curved sword with a jagged blade made of hard ice that does not melt, even in the sun.",
-    "weight": "4 kg",
+    "weight": "3 kg",
     "volume": "3 L",
     "longest_side": "100 cm",
     "symbol": "/",
     "color": "light_cyan",
-    "price": "25000 USD",
-    "price_postapoc": "750 USD",
+    "price_postapoc": "120 USD",
     "material": [ "steel" ],
     "repairs_with": [ "steel" ],
     "to_hit": {
@@ -580,5 +579,24 @@
     "thrown_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "melee_damage": { "stab": 9 },
     "passive_effects": [{ "id": "slow_enchant" }]
+  },
+  {
+    "type": "ITEM",
+    "category": "weapons",
+    "id": "cudgel_bone",
+    "name": { "str": "bone cudgel" },
+    "description": "A sturdy monster bone, fashioned into a primitive club using simple tools.",
+    "weight": "680 g",
+    "volume": "820 ml",
+    "longest_side": "65 cm",
+    "price_postapoc": "20 cent",
+    "color": "brown",
+    "symbol": "/",
+    "material": ["bone"],
+    "techniques": ["WBLOCK_1", "PRECISE"],
+    "weapon_category": ["BLUDGEONS"],
+    "to_hit": { "grip": "weapon", "length": "short", "surface": "any", "balance": "neutral" },
+    "price": "1 USD",
+    "melee_damage": { "bash": 16 }
   }
 ]

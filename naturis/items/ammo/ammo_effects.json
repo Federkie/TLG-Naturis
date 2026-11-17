@@ -43,10 +43,10 @@
    "spell_data": { "id": "create_crystals_player" }
  },
     {
-     "id": "FLING",
+     "id": "ROOT",
      "type": "ammo_effect",
      "always_cast_spell": true,
-     "spell_data": { "id": "fling" }
+     "spell_data": { "id": "root_field" }
    }
 
 

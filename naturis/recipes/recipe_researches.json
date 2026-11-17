@@ -7,11 +7,12 @@
     "subcategory": "CSC_RESEARCH_ANALYSIS",
     "time": "30 m",
     "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
     "qualities": [ { "id": "RESEARCH", "level": 1 } ],
     "components": [
       [ [ "paper", 1 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_small", 1 ] ]
+      [ [ "naturis_sample_small", 1 ], [ "naturis_sample_small_pres", 1 ] ]
     ]  
     },
    {
@@ -21,6 +22,7 @@
     "category": "CC_RESEARCH",
     "subcategory": "CSC_RESEARCH_ANALYSIS",
     "skill_used": "research",
+    "flags": [ "BLIND_HARD" ],
     "difficulty": 2,
     "time": "1 h",
     "autolearn": [ ["research", 3] ],
@@ -28,7 +30,7 @@
     "components": [
       [ [ "paper", 2 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_normal", 1 ] ]
+      [ [ "naturis_sample_normal", 1 ], [ "naturis_sample_normal_pres", 1 ] ]
     ]  
     },
       {

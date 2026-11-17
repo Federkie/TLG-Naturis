@@ -53,6 +53,27 @@
     "time_to_learn": "10 h",
     "default_weakpoint_bonus": 1,
     "default_weakpoint_penalty": -1
-  }
+  },
+    {
+     "type": "proficiency",
+     "id": "prof_biological_extraction",
+     "category": "prof_chem",
+     "name": { "str": "Biological Extraction" },
+     "description": "You have gained a great deal of experience in the production of extracts and also know how to use them.",
+     "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.20,
+    "time_to_learn": "8 h"
+   },
+{
+  "type": "proficiency",
+  "id": "prof_raptor_care",
+  "category": "prof_raptor",
+  "name": { "str": "Raptor Care" },
+  "description": "You learned how to fight with your companion.",
+  "can_learn": true,
+    "default_time_multiplier": 1.25,
+  "time_to_learn": "6 h"
+}
   
 ]

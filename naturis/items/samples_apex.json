@@ -49,6 +49,49 @@
         "subtypes": ["COMESTIBLE"],
         "id": "naturis_sample_crseeder",
         "name": { "str": "crystal seeder sample" }
-    }
-   
+    },
+     {
+       "id": "naturis_sample_static_pres",
+       "type": "ITEM",
+       "subtypes": ["COMESTIBLE"],
+       "copy-from": "naturis_sample_small_pres",
+       "name": { "str": "preserved naturis sample (static beast)" }
+          },
+ {
+  "id": "naturis_sample_rapid_pres",
+  "type": "ITEM",
+  "subtypes": ["COMESTIBLE"],
+  "copy-from": "naturis_sample_small_pres",
+  "name": { "str": "preserved naturis sample (rapid striker)" }
+},
+{
+  "id": "naturis_sample_fdragon_pres",
+  "type": "ITEM",
+  "subtypes": ["COMESTIBLE"],
+  "copy-from": "naturis_sample_small_pres",
+  "name": { "str": "preserved naturis sample (forest dragon)" }
+},
+{
+  "id": "naturis_sample_flfire_pres",
+  "type": "ITEM",
+  "subtypes": ["COMESTIBLE"],
+  "copy-from": "naturis_sample_small_pres",
+  "name": { "str": "preserved naturis sample (flying fire)" }
+},
+{
+  "id": "naturis_sample_iformer_pres",
+  "type": "ITEM",
+  "subtypes": ["COMESTIBLE"],
+  "copy-from": "naturis_sample_small_pres",
+  "name": { "str": "preserved naturis sample (ice former)" }
+},
+{
+  "id": "naturis_sample_crseeder_pres",
+  "type": "ITEM",
+  "subtypes": ["COMESTIBLE"],
+  "copy-from": "naturis_sample_small_pres",
+  "name": { "str": "preserved naturis sample (crystal seeder)" }
+}
+
+
 ]

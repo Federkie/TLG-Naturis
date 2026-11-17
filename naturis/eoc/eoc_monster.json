@@ -71,8 +71,30 @@
  {
   "type": "effect_on_condition",
   "id": "EOC_SPELL_COOLDOWN",
-  "effect": {
+  "effect": [
+  {
    "u_add_effect": "spell_cooldown", "duration": [ 5, 20 ] }
+   ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_PET_EXTRA_UNLOCK",
+  "effect": [
+    {
+      "u_add_effect": "extra_spell",
+      "duration": "PERMANENT"
+    }
+  ]
+},
+{
+  "type": "effect_on_condition",
+  "id": "EOC_PET_MARTIAL_ART",
+  "effect": [
+    {
+      "u_add_effect": "pet_martial_art",
+      "duration": "PERMANENT"
+    }
+  ]
 }
   
   

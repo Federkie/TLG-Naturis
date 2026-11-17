@@ -101,7 +101,34 @@
         ],
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [ [ [ "stick_long", 1 ], [ "2x4", 1 ] ], [ [ "raptor_tendon", 2 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
-  }
+  },
+  {
+  "type": "recipe",
+  "result": "root_circuit_rifle",
+  "activity_level": "BRISK_EXERCISE",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "difficulty": 8,
+  "time": "22 h",
+  "proficiencies": [
+    { "proficiency": "prof_monstermaterials" },
+    { "proficiency": "prof_carpentry_basic" }
+  ],
+  "qualities": [
+    { "id": "WRENCH", "level": 2 },
+    { "id": "DRILL", "level": 2 },
+    { "id": "SAW_W", "level": 2 }
+  ],
+  "components": [
+    [ [ "biological_conductor", 1 ] ],
+    [ [ "living_wood", 2 ] ],
+    [ [ "forest_enzyme", 4 ] ],
+    [ [ "golden_heart", 1 ] ],
+    [ [ "mycelium", 2 ] ],
+    [ [ "forest_pearl", 1 ] ]
+  ]
+}
 
 
 

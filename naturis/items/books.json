@@ -132,18 +132,52 @@
   {
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
-    "id": "book_creature_lore_field_guide",
+    "id": "book_research_2",
     "copy-from": "monster_hunter",
     "name": {
-      "str": "Field Guide to Anomalous Fauna",
-      "str_pl": "copies of Field Guide to Anomalous Fauna"
+      "str": "Creatures Beyond Civilization",
+      "str_pl": "copies of Creatures Beyond Civilization"
     },
-    "description": "A field guide documenting unusual creatures, their anatomy, behavior, habitats, and biological adaptations. Written for researchers and hunters working in areas affected by anomalous wildlife.",
+    "description": ".",
     "required_level": 0,
-    "max_level": 2,
-    "intelligence": 5,
-    "time": "20 m",
+    "max_level": 3,
+    "intelligence": 7,
+    "time": "30 m",
     "read_skill": "research",
     "read_fun": -1
-  }
+  },
+{
+  "type": "ITEM",
+  "subtypes": ["BOOK"],
+  "id": "book_research_3",
+  "copy-from": "monster_hunter",
+  "name": {
+    "str": "Field Guide to Anomalous Fauna",
+    "str_pl": "copies of Field Guide to Anomalous Fauna"
+  },
+  "description": ".",
+  "required_level": 4,
+  "max_level": 7,
+  "intelligence": 7,
+  "time": "45 m",
+  "read_skill": "research",
+  "read_fun": -2
+},
+{
+  "type": "ITEM",
+  "subtypes": ["BOOK"],
+  "id": "book_research_4",
+  "copy-from": "monster_hunter",
+  "name": {
+    "str": "Unclassified Species",
+    "str_pl": "copies of Unclassified Species"
+  },
+  "description": ".",
+  "required_level": 8,
+  "max_level": 10,
+  "intelligence": 9,
+  "time": "55 m",
+  "read_skill": "research",
+  "read_fun": -2
+}
 ]

@@ -61,7 +61,32 @@
     "max_damage": 45,
     "min_duration": 1,
     "damage_type": "electric"
-  }
+  },
+{
+  "id": "root_field",
+  "type": "SPELL",
+  "name": { "str": "root field" },
+  "description": "Creates roots around the target.",
+  "effect": "attack",
+  "shape": "blast",
+  "valid_targets": ["ally", "hostile", "ground", "self"],
+  "flags": ["NO_EXPLOSION_SFX", "RANDOM_AOE"],
+  "max_level": 1,
+  "min_damage": 1,
+  "max_damage": 1,
+  "min_aoe": 1,
+  "max_aoe": 3,
+  "aoe_increment": 1.5,
+  "min_range": 0,
+  "max_range": 0,
+  "field_id": "fd_roots",
+  "min_field_intensity": 1,
+  "max_field_intensity": 1,
+  "field_intensity_increment": 0.8,
+  "min_duration": 100,
+  "max_duration": 1000,
+  "damage_type": "cut"
+}
   
   
   

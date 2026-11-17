@@ -281,7 +281,94 @@
     "color": "white",
     "flags": ["SINGLE_USE", "TINDER"],
     "use_action": { "type": "heal", "bandages_power": 4, "bleed": 10, "move_cost": 7000 }
-   }
+   },
+   {
+    "type": "ITEM",
+    "subtypes": ["COMPOSTABLE", "COMESTIBLE"],
+    "id": "fermentable_liquid_rapid",
+    "name": { "str_sp": "rapidly fermentable liquid mixture" },
+    "volume": "500 ml",
+    "weight": "500 g",
+    "description": "A mixture of various organic waste materials and water. Thanks to the forest dog enzyme, it takes only half the time.",
+    "copy-from": "fertilizer_liquid",
+    "price_postapoc": "0 cent",
+    "flags": ["NUTRIENT_OVERRIDE", "TRADER_AVOID"],
+    "charges": 1,
+    "compost_time": "30 days",
+    "compost_results": { "fermented_fertilizer_liquid": 1, "biogas": 250 }
+  },
+      {
+      "id": "natural_antibiotic_ferment",
+      "type": "ITEM",
+      "name": { "str": "natural antibiotic ferment" },
+      "description": "This jar contains a batch of vegetables set to ferment.  You can seal up the jar once the process is completed.",
+      "weight": "850 g",
+      "volume": "680 ml",
+      "longest_side": "132 mm",
+      "price_postapoc": "20 cent",
+      "material": ["glass", "vegetable"],
+      "symbol": "%",
+      "color": "white",
+      "use_action": {
+        "target": "natural_antibiotic",
+        "container": "jar_glass_sealed",
+        "target_charges": 6,
+        "msg": "The concoction is bubbling slightly. You think it’s about ready, so you seal the jar.",
+        "moves": 50,
+        "type": "delayed_transform",
+        "transform_age": 100800,
+        "not_ready_msg": "It looks the same as before, it probably needs a bit more time."
+      },
+      "melee_damage": { "bash": 8 }
+    },
+  {
+    "id": "natural_antibiotic",
+    "type": "ITEM",
+    "subtypes": ["COMESTIBLE", "AMMO"],
+    "comestible_type": "MED",
+    "name": { "str": "natural antibiotic" },
+    "description": "A sharp, very acidic liquid. It is said to have antibiotic effects.",
+    "charges": 1,
+    "phase": "liquid",
+    "container": "jar_glass_sealed",
+    "weight": "5 g",
+    "volume": "6 ml",
+    "price_postapoc": "50 cent",
+    "material": ["vegetable"],
+    "symbol": "s",
+    "color": "yellow",
+    "quench": 50,
+    "fun": -4,
+    "ammo_type": "water",
+    "flags": ["EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME"],
+    "use_action": [ "WEAK_ANTIBIOTIC" ]
+  },
+  {
+    "id": "turmeric",
+    "copy-from": "spice",
+    "type": "ITEM",
+    "subtypes": ["COMESTIBLE"],
+    "name": { "str_sp": "turmeric" },
+    "description": "Ground turmeric, popular in many dishes. Also a natural coloring agent.",
+    "color": "brown"
+  },
+  {
+    "id": "fire_shard_starter",
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "name": { "str": "fire shard starter", "str_pl": "fire shard starters" },
+    "description": "A fire shard and a hard stone. When the two are struck together, the shard shatters and produces a small flame.",
+    "weight": "614 g",
+    "volume": "250 ml",
+    "price": "3 USD",
+    "price_postapoc": "4 USD",
+    "to_hit": -1,
+    "material": ["stone"],
+    "symbol": ",",
+    "color": "dark_gray",
+    "use_action": { "type": "firestarter", "moves": 40, "moves_slow": 400 },
+    "flags": ["FIRESTARTER", "REQUIRES_TINDER", "SINGLE_USE"]
+  }
  
 
 ]

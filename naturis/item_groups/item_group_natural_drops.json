@@ -6,8 +6,22 @@
       ["charged_wood", 2],
       ["charged_resin", 1],
       ["otter_pearl", 3],
-      ["forest_blood", 4],
-      ["forest_blood_2", 3]
+      ["forest_blood", 3],
+      ["forest_blood_2", 3],
+      ["ice_petals", 3],
+      ["creature_remnant", 3],
+      ["ice_chunk", 2],
+      ["mushroom_network", 2],
+      ["crystal_chunk", 2],
+      ["leaves_pink", 4],
+      ["strange_shroom", 3]
+    ]
+  },
+    {
+    "id": "golden_heart",
+    "type": "item_group",
+    "items": [
+      ["golden_heart", 1]
       
       
       

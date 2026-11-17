@@ -1,0 +1,302 @@
+[
+  {
+    "id": "mon_crystal_prism_raptor",
+    "type": "MONSTER",
+    "name": { "str": "prism raptor", "str_pl": "prism raptors" },
+    "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
+    "default_faction": "forest",
+    "bodytype": "kangoroo",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "REPTILE" ],
+    "looks_like": "mon_crystal_raptor",
+    "volume": "455000 ml",
+    "weight": "460 kg",
+    "hp": 220,
+    "speed": 240,
+    "attack_cost": 200,
+    "material": [ "flesh" ],
+    "symbol": "R",
+    "color": "brown",
+    "morale": 100,
+    "aggro_character": false,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "vision_day": 32,
+    "vision_night": 6,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "dodge": 4,
+    "stomach_size": 9000,
+    "regenerates": 1,
+    "regeneration_modifiers": [  ["critter_well_fed", 2] ],
+    "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": [ "FIRE", "SOUND" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "dissect": "dissect_naturis_sample_normal",
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
+    "baby_flags": [ "AUTUMN" ],
+    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
+    "chat_topics": [ "TALK_RAPTOR" ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", 100 ], 
+      { "id": "tail_club" },
+      { "id": "bite_grab",
+         "cooldown": 20,
+         "damage_max_instance": [{ "damage_type": "stab", "amount": 20, "armor_multiplier": 0.1 }],
+         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+            "infection_chance": 30
+          },
+      {
+        "id": "laser_claw",
+        "type": "spell",
+        "spell_data": { "id": "laser_claw"},
+        "monster_message": "The %s strikes with its charged claws!",
+        "cooldown": 15,
+        "condition": {
+            "u_has_effect": "extra_spell"
+        }
+      },
+      {
+  "id": "laser_beam",
+  "type": "spell",
+  "spell_data": { "id": "laser_beam" },
+  "monster_message": "The %s fires a concentrated beam!",
+  "cooldown": 15,
+  "condition": {
+    "u_has_effect": "extra_spell_2"
+  }
+}
+    ],
+     "emit_fields": [
+     {
+      "emit_id": "raptor_track",
+      "delay": "1 s"
+     }
+     ],
+    "petfood": { "food": [ "RAPTORFOOD" ], 
+    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    "mountable_weight_ratio": 0.33,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "CANPLAY",
+      "DOGFOOD",
+      "HIT_AND_RUN",
+      "PET_MOUNTABLE",
+      "PATH_AVOID_DANGER",
+      "WARM",
+      "EATS",
+      "SPELL_EXTRA",
+      "SWIMS",
+      "CORNERED_FIGHTER",
+      "BELLYUP",
+      "GOODHEARING"
+    ],
+    "armor": { "bash": 5, "cut": 18, "bullet": 2, "electric": 4 }
+  },
+ {
+    "id": "mon_crystal_resonance_raptor",
+    "type": "MONSTER",
+    "name": { "str": "resonance raptor", "str_pl": "resonance raptors" },
+    "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
+    "default_faction": "forest",
+    "bodytype": "kangoroo",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "REPTILE" ],
+    "looks_like": "mon_crystal_raptor",
+    "volume": "455000 ml",
+    "weight": "460 kg",
+    "hp": 260,
+    "speed": 220,
+    "attack_cost": 200,
+    "material": [ "flesh" ],
+    "symbol": "R",
+    "color": "brown",
+    "morale": 100,
+    "aggro_character": false,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "vision_day": 32,
+    "vision_night": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "dodge": 4,
+    "stomach_size": 9000,
+    "regenerates": 1,
+    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": [ "FIRE" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "dissect": "dissect_naturis_sample_normal",
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
+    "baby_flags": [ "AUTUMN" ],
+    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
+    "chat_topics": [ "TALK_RAPTOR" ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", 100 ], 
+      { "id": "bite_grab",
+         "cooldown": 20,
+         "damage_max_instance": [{ "damage_type": "stab", "amount": 20, "armor_multiplier": 0.1 }],
+         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+            "infection_chance": 30
+          },
+          {
+  "id": "resonance_beam",
+  "type": "spell",
+  "spell_data": { "id": "resonance_beam" },
+  "monster_message": "The %s lets out a loud scream!",
+  "cooldown": 20,
+  "condition": {
+    "u_has_effect": "extra_spell"
+  }
+},
+{
+  "id": "resonance_shield",
+  "type": "spell",
+  "spell_data": { "id": "resonance_shield" },
+  "monster_message": "The %s protects his self with a crystal aura.",
+  "cooldown": 60,
+  "allow_no_target": true,
+  "condition": {
+  "and": [ { "not": { "u_has_effect": "effect_resonance_shield" } },  { "u_has_effect": "extra_spell_2" }  ] }
+}
+      
+    ],
+     "emit_fields": [
+     {
+      "emit_id": "raptor_track",
+      "delay": "1 s"
+     }
+     ],
+    "petfood": { "food": [ "RAPTORFOOD" ], 
+    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    "mountable_weight_ratio": 0.33,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "CANPLAY",
+      "DOGFOOD",
+      "HIT_AND_RUN",
+      "PET_MOUNTABLE",
+      "PATH_AVOID_DANGER",
+      "WARM",
+      "EATS",
+      "SPELL_EXTRA",
+      "SWIMS",
+      "CORNERED_FIGHTER",
+      "BELLYUP",
+      "GOODHEARING"
+    ],
+    "armor": { "bash": 6, "cut": 18, "bullet": 4, "electric": 6 }
+  },
+ {
+    "id": "mon_crystal_genesis_raptor",
+    "type": "MONSTER",
+    "name": { "str": "genesis raptor", "str_pl": "genesis raptors" },
+    "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
+    "default_faction": "forest",
+    "bodytype": "kangoroo",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "REPTILE" ],
+    "looks_like": "mon_crystal_raptor",
+    "volume": "455000 ml",
+    "weight": "490 kg",
+    "hp": 280,
+    "speed": 200,
+    "attack_cost": 190,
+    "material": [ "flesh" ],
+    "symbol": "R",
+    "color": "brown",
+    "morale": 150,
+    "aggro_character": false,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "vision_day": 32,
+    "vision_night": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "dodge": 1,
+    "stomach_size": 9500,
+    "regenerates": 1,
+    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
+    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": [ "FIRE" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "dissect": "dissect_naturis_sample_normal",
+    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
+    "baby_flags": [ "AUTUMN" ],
+    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
+    "chat_topics": [ "TALK_RAPTOR" ],
+    "special_attacks": [ 
+      [ "EAT_CARRION", 100 ], 
+      { "id": "bite_grab",
+         "cooldown": 20,
+         "damage_max_instance": [{ "damage_type": "stab", "amount": 20, "armor_multiplier": 0.1 }],
+         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+            "infection_chance": 30
+          },
+      {
+  "id": "heavy_stomp",
+  "type": "spell",
+  "spell_data": { "id": "heavy_stomp" },
+  "monster_message": "The %s stamps forcefully onto the ground!",
+  "cooldown": 15,
+  "condition": {
+    "u_has_effect": "extra_spell"
+  }
+},
+{
+  "id": "create_crystals_cone",
+  "type": "spell",
+  "spell_data": { "id": "create_crystals_cone" },
+  "monster_message": "The %s lets crystals grow!",
+  "cooldown": 40,
+  "condition": {
+    "u_has_effect": "extra_spell_2"
+  }
+}
+    ],
+     "emit_fields": [
+     {
+      "emit_id": "raptor_track",
+      "delay": "1 s"
+     }
+     ],
+    "petfood": { "food": [ "RAPTORFOOD" ], 
+    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    "mountable_weight_ratio": 0.36,
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "CANPLAY",
+      "DOGFOOD",
+      "HIT_AND_RUN",
+      "PET_MOUNTABLE",
+      "PATH_AVOID_DANGER",
+      "WARM",
+      "SPELL_EXTRA",
+      "EATS",
+      "SWIMS",
+      "CORNERED_FIGHTER",
+      "BELLYUP",
+      "GOODHEARING"
+    ],
+    "armor": { "bash": 12, "cut": 22, "bullet": 8, "electric": 6 }
+  }
+  
+  
+  
+  
+]

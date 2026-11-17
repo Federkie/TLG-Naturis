@@ -1,0 +1,18 @@
+[
+    {
+    "id": [ "TALK_RAPTOR" ],
+    "type": "talk_topic",
+    "dynamic_line": [ 
+      "The raptor stares at you intently, as if he wants to understand you.",
+      "The raptor nudges you with his beack, as if to let you know that he understands you.",
+      "The raptor pricks up its pointed ears attentively."],
+    "responses": [
+      {
+        "text": "You feel a bit embarrassed because you tried to talk to an animal ...",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+  
+  
+]

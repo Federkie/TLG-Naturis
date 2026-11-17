@@ -64,10 +64,86 @@
       { "id": "t_crystal_pillar_large_harv", "fg": 20, "rotates": false, "bg": 1  },
       { "id": "t_tree_ice", "fg": 21, "rotates": false, "bg": 1  },
       { "id": "t_frozen_terror", "fg": 22, "rotates": false, "bg": 1  },
-      { "id": "overlay_worn_tack_mon_forest_raptor", "fg": 23, "rotates": false },
+   { "id": [
+     "overlay_worn_tack_mon_forest_raptor", 
+     "overlay_worn_tack_mon_forest_raptor_static",
+     "overlay_worn_tack_mon_forest_raptor_overgrown",
+     "overlay_worn_tack_mon_forest_raptor_ancient",
+          "overlay_worn_tack_mon_crystal_raptor",
+     "overlay_worn_tack_mon_ice_raptor",
+     "overlay_worn_tack_mon_fire_raptor",
+     "overlay_worn_tack_mon_ancient_thorn_raptor",
+     "overlay_worn_tack_mon_ancient_stalker_raptor",
+     "overlay_worn_tack_mon_ancient_striker_raptor",
+     "overlay_worn_tack_mon_crystal_prism_raptor",
+     "overlay_worn_tack_mon_crystal_resonance_raptor",
+     "overlay_worn_tack_mon_crystal_genesis_raptor"
+   ],
+   "fg": 23
+ },
       { "id": "mon_forest_raptor", "fg": 24, "rotates": false, "bg": 27 },
-      { "id": "overlay_worn_leather_armor_raptor_mon_forest_raptor", "fg": 25, "rotates": false }, 
-      { "id": "overlay_worn_iron_armor_raptor_mon_forest_raptor", "fg": 26, "rotates": false }
+   { "id": [
+     "overlay_worn_leather_armor_raptor_mon_forest_raptor", 
+     "overlay_worn_leather_armor_raptor_mon_forest_raptor_static",
+     "overlay_worn_leather_armor_raptor_mon_forest_raptor_overgrown",
+     "overlay_worn_leather_armor_raptor_mon_forest_raptor_ancient",
+      "overlay_worn_leather_armor_raptor_mon_ancient_raptor",
+     "overlay_worn_leather_armor_raptor_mon_crystal_raptor",
+     "overlay_worn_leather_armor_raptor_mon_ice_raptor",
+     "overlay_worn_leather_armor_raptor_mon_fire_raptor",
+     "overlay_worn_leather_armor_raptor_mon_ancient_thorn_raptor",
+     "overlay_worn_leather_armor_raptor_mon_ancient_stalker_raptor",
+     "overlay_worn_leather_armor_raptor_mon_ancient_striker_raptor",
+     "overlay_worn_leather_armor_raptor_mon_crystal_prism_raptor",
+     "overlay_worn_leather_armor_raptor_mon_crystal_resonance_raptor",
+     "overlay_worn_leather_armor_raptor_mon_crystal_genesis_raptor"
+   ],
+   "fg": 25
+ },
+   { "id": [
+     "overlay_worn_iron_armor_raptor_mon_forest_raptor", 
+     "overlay_worn_iron_armor_raptor_mon_forest_raptor_static",
+     "overlay_worn_iron_armor_raptor_mon_forest_raptor_overgrown",
+     "overlay_worn_iron_armor_raptor_mon_forest_raptor_ancient",
+     "overlay_worn_iron_armor_raptor_mon_ancient_raptor",
+     "overlay_worn_iron_armor_raptor_mon_crystal_raptor",
+     "overlay_worn_iron_armor_raptor_mon_ice_raptor",
+     "overlay_worn_iron_armor_raptor_mon_fire_raptor",
+     "overlay_worn_iron_armor_raptor_mon_ancient_thorn_raptor",
+     "overlay_worn_iron_armor_raptor_mon_ancient_stalker_raptor",
+     "overlay_worn_iron_armor_raptor_mon_ancient_striker_raptor",
+     "overlay_worn_iron_armor_raptor_mon_crystal_prism_raptor",
+     "overlay_worn_iron_armor_raptor_mon_crystal_resonance_raptor",
+     "overlay_worn_iron_armor_raptor_mon_crystal_genesis_raptor"
+   ],
+   "fg": 26
+ },
+      { "id": "t_tree_hollowed_gold", "fg": 28, "rotates": false, "bg": 1  },
+      { "id": "mon_forest_raptor_static", "fg": 29, "rotates": false, "bg": 27 },
+    { "id": [
+     "overlay_worn_storage_mon_forest_raptor", 
+     "overlay_worn_storage_mon_forest_raptor_static",
+     "overlay_worn_storage_mon_forest_raptor_overgrown",
+     "overlay_worn_storage_mon_forest_raptor_ancient",
+     "overlay_worn_storage_mon_ancient_raptor",
+     "overlay_worn_storage_mon_crystal_raptor",
+     "overlay_worn_storage_mon_ice_raptor",
+     "overlay_worn_storage_mon_fire_raptor",
+     "overlay_worn_storage_mon_ancient_thorn_raptor",
+     "overlay_worn_storage_mon_ancient_stalker_raptor",
+     "overlay_worn_storage_mon_ancient_striker_raptor",
+     "overlay_worn_storage_mon_crystal_prism_raptor",
+     "overlay_worn_storage_mon_crystal_resonance_raptor",
+     "overlay_worn_storage_mon_crystal_genesis_raptor"
+   ],
+   "fg": 30
+ },
+ { "id": "mon_forest_raptor_overgrown", "fg": 31, "rotates": false, "bg": 27 },
+ { "id": "mon_ancient_raptor", "fg": 32, "rotates": false, "bg": 27 },
+ { "id": "mon_crystal_raptor", "fg": 33, "rotates": false, "bg": 27 },
+ { "id": "mon_ice_raptor", "fg": 34, "rotates": false, "bg": 27 },
+ { "id": "mon_fire_raptor", "fg": 35, "rotates": false, "bg": 27 },
+ { "id": "mon_ancient_thorn_raptor", "fg": 36, "rotates": false, "bg": 27 }
         ]
       }
     ]

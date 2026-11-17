@@ -23,12 +23,12 @@ Rather than existing alongside the main game, naturis is intended to integrate s
 
 ## Planned feautures
 - custom biomes for the creatures
-- more research skill functions
-- breeding system for the creatures
+- more research functions
 - monster evolutions
 - more monster and items
 
 ## Installation Instructions
 1. Download the src code in the latest mod release
 2. Unzip the file in the 'data\mods' directory
+Note: In either case it is recommended that, if updating the mod, to delete the older version of the folder rather than just dumping the new one onto the old one.
 

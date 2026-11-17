@@ -5,7 +5,7 @@
   "effect": [
     {
       "math": [
-        "u_proficiency('prof_field_research', 'format': 'percent', 'direct': true) += 5"
+        "u_proficiency('prof_field_research', 'format': 'percent', 'direct': true) += 8"
       ]
     },
     {
@@ -29,6 +29,7 @@
 "result": "t_dirt",
  "valid_terrain": [
 "t_egg_shells",
+"t_growing_dog",
 "t_scratch_marks"
 ]
 }

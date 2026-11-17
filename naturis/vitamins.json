@@ -1,0 +1,15 @@
+[
+    {
+    "id": "extract_overload",
+    "type": "vitamin",
+    "vit_type": "counter",
+    "name": { "str": "Extract Overload" },
+    "excess": "extract_sickness",
+    "min": 0,
+    "max": 15,
+    "rate": "90 m",
+    "disease_excess": [ [ 4, 7 ], [ 8, 10 ], [ 11, 12 ], [ 13, 15 ] ]
+  }
+  
+  
+]

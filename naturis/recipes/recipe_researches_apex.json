@@ -8,12 +8,13 @@
     "time": "3 h",
     "autolearn": [ ["research", 6] ],
     "skill_used": "research",
+    "flags": [ "BLIND_HARD" ],
     "difficulty": 6,
     "qualities": [ { "id": "RESEARCH", "level": 2 } ],
     "components": [
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_static", 1 ] ]
+      [ [ "naturis_sample_static", 1 ], [ "naturis_sample_static_pres", 1 ] ]
     ]  
     },
     {
@@ -27,7 +28,7 @@
     "components": [
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_rapid", 1 ] ]
+      [ [ "naturis_sample_rapid", 1 ], [ "naturis_sample_rapid_pres", 1 ] ]
     ]  
     },
     {
@@ -41,7 +42,7 @@
     "components": [
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_fdragon", 1 ] ]
+      [ [ "naturis_sample_fdragon", 1 ], [ "naturis_sample_fdragon_pres", 1 ] ]
     ]  
     },
     {
@@ -55,7 +56,7 @@
     "components": [
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_flfire", 1 ] ]
+      [ [ "naturis_sample_flfire", 1 ], [ "naturis_sample_flfire_pres", 1 ] ]
     ]  
     },
     {
@@ -69,7 +70,7 @@
     "components": [
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_iformer", 1 ] ]
+      [ [ "naturis_sample_iformer", 1 ], [ "naturis_sample_iformer_pres", 1 ] ]
     ]  
     },
     {
@@ -83,7 +84,7 @@
     "components": [
       [ [ "paper", 20 ] ],
       [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_crseeder", 1 ] ]
+      [ [ "naturis_sample_crseeder", 1 ], [ "naturis_sample_crseeder_pres", 1 ] ]
     ]  
     }
   

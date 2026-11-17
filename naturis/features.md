@@ -1,8 +1,8 @@
 # TLG-Naturis
 
-Current feautures:
+Current features:
 
-Research skill unlocks:
+## Research skill unlocks:
 
 - 1
 - chipped ice
@@ -18,24 +18,33 @@ Research skill unlocks:
 - raptor longbow
 - mycelium_mother (mycelium)
 - mycelium bandages
+- dormant seed extract
 - 4
 - crystal field trap
 - grounding anchor
 - ice field trap
+- slow-down trap
+- growing trees trap
 - electric hunting trap
 - mycelium fiber
+- rapidly fermentable liquid mixture
+- enhanced stamina extract
+- invigorating extract
+- forest raptor mutator
+- pet stimulator
 - 5
 - shadow cloak
 - field scanner MK. II
 - arm amplifier
 - rapid epee
 - permafrost cleaver
+- biological phase conductor
 - 6
 - naturis static beast archive (inferno katana)
 - naturis flying fire archive
 - naturis rapid striker archive
 - naturis ice former archive (ice spear)
-- naturis forest dragon archive
+- naturis forest dragon archive (root circuit rifle)
 - naturis crystal seeder archive (crystal edge)
 - static sword
 - 7
@@ -45,24 +54,29 @@ Research skill unlocks:
 - fa magazine
 - wrist injector
 - healing liquid
+- healing water
+- enhanced pet stimulator
+- ancient raptor mutator
+- crystal raptor mutator
+- ice raptor mutator
 - 8
 - field scanner MK. III
 - resonance rifle
 - fa_s crystal
 - claw staff
-- freeze
+- freeze gauntlets
+- pet enhancer
 - 9
 - static leather armor
+- tech ring
 - 10
--
--
+- profi pet stimulator
+- pet enhancer plus
 
 
-New creatures:
+## New creatures:
 
 - forest dragon
-A large, dragon-like creature that you better not get too close to. Drops its own items, which can be used to craft special weapons.
-
 - rapid striker
 - flying fire
 - ice former
@@ -81,7 +95,7 @@ A large, dragon-like creature that you better not get too close to. Drops its ow
 - thorn skitter
 - glow cap
 - crystal walker
-- crystal walker calv
+- crystal walker calf
 - veil stalker 
 - ghost stalker
 - small raptor
@@ -102,15 +116,26 @@ A large, dragon-like creature that you better not get too close to. Drops its ow
 - egg snatcher
 - ice weaver
 - crystal weaver
-
 - forest walker
-This creature allows plants and trees to grow, including in buildings.
+- ice raptor
+- static raptor
+- fire raptor
+- crystal raptor
+- ancient raptor
+
+## Raptor Mutations
+- ancient thorn raptor
+- ancient striker raptor
+- ancient stalker raptor
+- zero raptor
+- frostspike raptor
+- blizzard raptor
+- prism raptor
+- resonance raptor
+- genesis raptor
 
 
-
-
-
-New items
+## New items
 
 Weapons: 
 - modular staff (+recipe)
@@ -134,6 +159,8 @@ Weapons:
 - chipped ice (+ recipe)
 - frostclaw (+ recipe)
 - raptor longbow (+ recipe)
+- root circuit rifle (+ recipe)
+- bone cudgel (+ recipe)
 
 Ammo:
 - cutting disk (+ recipe)
@@ -152,25 +179,32 @@ Armor:
 - crystal cap (+ recipe)
 - raptor arm guards (+ recipe)
 - shadow cloak (+ recipe)
-- tech ring (WIP)
+- tech ring (+ recipe)
 - raptor leather armor (pet)
 - raptor iron armor (pet)
+- raptor saddlebag (pet)
 
 Books:
 - alternative medicine
 - the stylish hunter!
 - hunting monsters
 - hunted monsters collector's edition
+- pet martial arts (+ recipe)
 
 Traps: 
 - electric hunting trap (+recipe)
 - ice field trap (+recipe)
+- crystal field trap (+ recipe)
+- slow trap (+ recipe)
+- growing trees trap (+ recipe)
+- gravity trap (WIP, debug only)
 
 Tools: 
 - field scanner (+ recipe)
 - field scanner MK. II (+ recipe)
 - field scanner MK. III (+ recipe)
 - field analyse kit (+ recipe)
+- fire shard starter (+ recipe)
 
 
 Misc:
@@ -179,11 +213,32 @@ Misc:
 - pink leave tea (+ recipe)
 - cryo powder (+ recipe)
 - grounding anchor (+ recipe)
-- mycelium mycelium
-- mycelium fiber
-- mycelium bandages
+- mycelium mother (+ recipw)
+- mycelium fiber (+ recipe)
+- mycelium bandages (+ recipe)
+- natural antibiotic ferment (+ recipe)
+- natural antibiotic 
+- pet stimulator (+ recipe)
+- enhaned pet stimulator (+ recipe)
+- profi pet stimulator (+ recipe)
 
-New matierials:
+
+Samples:
+- preserved naturis sample small (+ recipe)
+- preserved naturis sample normal (+ recipe)
+- preserved naturis sample (apex + recipe)
+- naturis samole small
+- naturis sample normal
+- naturia sample apex
+
+
+Extracts:
+- healing water extract (+ recipe)
+- dormant seed extract (+ recipe)
+- enhanced stamina ectract (+ recipe)
+- invigorating extract (+ recipe)
+
+New materials:
 - thorn skin
 - crystal antler
 - crystalled fur sheat
@@ -198,7 +253,7 @@ New matierials:
 - fire shard
 - ice shard
 - static shard
-- frozen heart
+- frozen stone
 - heated feather
 - forest dragon scale
 - forest dragon skull
@@ -212,7 +267,7 @@ New matierials:
 - frozen bone
 - charged stinger
 - durable leather
-- stazic beast plate
+- static beast plate
 - tail tip
 - fire pearl
 - old charcoal
@@ -230,24 +285,30 @@ New matierials:
 - ice fang
 - ice chunk
 - forest enzyme
+- biological phase conductor
+- forest seedling
+- frost heart
+- golden heart
 
 - I have temporarily removed the "rooted egg" function, as it can cause a crash.
 
 
-New professions:
+## New professions:
 - wildstalker
+- wannabe explorer
 
 
-New proficiencys:
+## New proficiencies:
 
 - featherworking
 - monstermaterials
 - scaleworking
-- 
+- field research
+- biological extraction
 
 
 
-Locations: 
+## Locations: 
 
 Heart of the forest: 
 A location with its own flora and fauna, several levels and a final. 
@@ -287,13 +348,20 @@ Frostbound cavern
 A vast area overgrown with ice, featuring its own unique dangers and resources.
 
 
-To do: 
-- More thematic locations
+## To do: 
 - Improve anomaly
-- Overgrown sprites
-- Better descriptions
-- More mythical creatures
-- More mythical weapons
+- Improve forest heart
+- Static location + monsters
+- Fire location + monsters
+
+## Roadmap
+- static material line
+- fire material line
+- swamp expansion
+- naturis lab
+
+## Known Issues
+- rooted egg has no function
 
 ## Installation Instructions
 1. Download the src code in the latest mod release

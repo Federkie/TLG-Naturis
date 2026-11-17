@@ -26,11 +26,39 @@
     "price_postapoc": "40 cent",
     "material": ["flesh"],
     "flags": ["INEDIBLE"],
-    "spoils_in": "4 days",
+    "spoils_in": "6 days",
     "comestible_type": "FOOD",
     "weight": "114 g",
     "volume": "250 ml"
-  }
+  },
+      {
+        "id": "naturis_sample_small_pres",
+        "type": "ITEM",
+        "subtypes": [ "COMESTIBLE" ],
+        "name": { "str": "preserved naturis sample (small)" },
+        "description": "A naturis sample, it has been preserved in alcohol to increase its durability.",
+        "weight": "850 g",
+        "volume": "680 ml",
+        "longest_side": "132 mm",
+        "price_postapoc": "25 cent",
+        "material": ["glass", "flesh"],
+        "flags": ["INEDIBLE"],
+        "spoils_in": "40 days",
+        "comestible_type": "FOOD",
+        "symbol": "%",
+        "color": "white",
+        "melee_damage": { "bash": 8 }
+      },
+          {
+      "id": "naturis_sample_normal_pres",
+      "type": "ITEM",
+      "subtypes": [ "COMESTIBLE" ],
+      "copy-from": "naturis_sample_small_pres",
+        "name": { "str": "preserved naturis sample (normal)" },
+        "description": "A naturis sample, it has been preserved in alcohol to increase its durability."
+    }
+      
+      
   
   
   

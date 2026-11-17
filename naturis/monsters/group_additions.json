@@ -68,6 +68,7 @@
     "monsters": [
       { "monster": "mon_forest_walker", "weight": 1, "cost_multiplier": 50 },
       { "monster": "mon_glow_cap", "weight": 10, "cost_multiplier": 3 },
+      { "monster": "mon_forest_raptor", "weight": 3, "cost_multiplier": 3 },
       { "monster": "mon_egg_snatcher", "weight": 5, "cost_multiplier": 0 },
       { "monster": "mon_walking_tree", "weight": 8, "cost_multiplier": 5 },
       { "monster": "mon_forest_dog", "weight": 10, "cost_multiplier": 2 },

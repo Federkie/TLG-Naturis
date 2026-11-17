@@ -123,14 +123,36 @@
     ]
   }
 },
-
 {
   "type": "recipe_category",
   "id": "CC_ANIMALS",
   "copy-from": "CC_ANIMALS",
   "extend": {
     "recipe_subcategories": [
-      "CSC_ANIMALS_RAPTOR_ARMOR"
+      "CSC_ANIMALS_RAPTOR_ARMOR",
+      "CSC_ANIMALS_STIMULANTS",
+      "CSC_ANIMALS_TRAINING"
+    ]
+  }
+},
+{
+  "type": "recipe_category",
+  "id": "CC_CHEM",
+  "copy-from": "CC_CHEM",
+  "extend": {
+    "recipe_subcategories": [
+      "CSC_CHEM_EXTRACTS",
+      "CSC_CHEM_SAMPLES"
+    ]
+  }
+},
+{
+  "type": "recipe_category",
+  "id": "CC_PRACTICE",
+  "copy-from": "CC_PRACTICE",
+  "extend": {
+    "recipe_subcategories": [
+      "CSC_PRACTICE_RESEARCH"
     ]
   }
 }

@@ -113,7 +113,32 @@
     "dispersion": 15,
     "stack_size": 36,
     "recoil": 800
-  }
+  },
+{
+  "id": "root_ammo",
+  "type": "ITEM",
+  "subtypes": ["AMMO"],
+  "name": { "str_sp": "Root ammo" },
+  "description": "A charge for the Root Circuit Rifle.",
+  "weight": "1 g",
+  "volume": "1 ml",
+  "price_postapoc": "1 USD",
+  "material": ["wood"],
+  "symbol": "=",
+  "color": "red",
+  "count": 1,
+  "stack_size": 6,
+  "ammo_type": "root_ammo",
+  "range": 35,
+  "dispersion": 5,
+  "recoil": 5,
+  "damage": {
+    "damage_type": "stab",
+    "amount": 40,
+    "armor_penetration": 2
+  },
+  "effects": ["ROOT"]
+}
 
 
 ]

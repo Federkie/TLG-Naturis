@@ -6,7 +6,7 @@
       { "monster": "mon_forest_dog", "weight": 350, "cost_multiplier": 0 },
    { "monster": "mon_old_stone", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_bone_snake", "weight": 200, "cost_multiplier": 0 },
-{ "monster": "mon_old_chick", "weight": 50, "cost_multiplier": 0 },
+      { "monster": "mon_old_chick", "weight": 50, "cost_multiplier": 0 },
       { "monster": "mon_walking_tree", "weight": 200, "cost_multiplier": 0 }
     ]
   },
@@ -212,7 +212,8 @@
     { "monster": "mon_beast_static", "weight": 1 },
     { "monster": "mon_forest_dragon", "weight": 1 }, 
     { "monster": "mon_flying_fire", "weight": 1 },
-    { "monster": "mon_ice_former", "weight": 1 }
+    { "monster": "mon_ice_former", "weight": 1 },
+    { "monster": "mon_forest_raptor", "weight": 3 }
   ]
 },
 {
@@ -226,19 +227,97 @@
     "type": "monstergroup",
      "monsters": [
       { "monster": "mon_old_chick", "weight": 1 },
-     { "monster": "mon_rain_chick", "weight": 5 },
+     { "monster": "mon_rain_chick", "weight": 3 },
      { "monster": "mon_hatchling_static", "weight": 1 },
      { "monster": "mon_hatchling_rapid", "weight": 1 },
      { "monster": "mon_hatchling_fdragon", "weight": 1 }, 
      { "monster": "mon_hatchling_icef", "weight": 1 },
-     { "monster": "mon_hatchling_small_raptor", "weight": 1 } 
+     { "monster": "mon_hatchling_small_raptor", "weight": 5 },
+     { "monster": "mon_hatchling_forest_raptor", "weight": 3 }
      ]
 },
 {
   "name": "GROUP_FOREST_RAPTOR_HATCHLINGS",
   "type": "monstergroup",
   "monsters": [
-    { "monster": "mon_hatchling_forest_raptor", "weight": 100, "cost_multiplier": 1 }
+    { "monster": "mon_hatchling_forest_raptor", "weight": 100 }
+  ]
+},
+{
+  
+  "name": "GROUP_AWAKENING",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_hatchling_forest_raptor", "weight": 5, "cost_multiplier": 0 },
+    { "monster": "mon_hatchling_fdragon", "weight": 5, "cost_multiplier": 0 },
+    { "monster": "mon_forest_raptor", "weight": 1, "cost_multiplier": 6 },
+    { "monster": "mon_forest_walker", "weight": 2, "cost_multiplier": 10 },
+    { "monster": "mon_forest_dog", "weight": 10, "cost_multiplier": 2 },
+    { "monster": "mon_walking_tree", "weight": 8, "cost_multiplier": 5 },
+    { "group": "GROUP_PETS_SPELL", "weight": 5, "cost_multiplier": 0 }
+  ]
+},
+{
+  "name": "GROUP_FOREST_DOG",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_forest_dog" }
+  ]
+},
+{
+  "name": "GROUP_RAPTOR_UPGRADES",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_crystal_raptor", "weight": 30 },
+    { "monster": "mon_ice_raptor", "weight": 30 },
+    { "monster": "mon_fire_raptor", "weight": 30 },
+    { "monster": "mon_ancient_raptor", "weight": 10 },
+    { "monster": "mon_static_raptor", "weight": 30 }
+  ]
+},
+{
+  "name": "GROUP_ANRAPTOR_UPGRADES",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_ancient_thorn_raptor", "weight": 30 },
+    { "monster": "mon_ancient_striker_raptor", "weight": 30 },
+    { "monster": "mon_ancient_stalker_raptor", "weight": 10 }
+  ]
+},
+{
+  "name": "GROUP_STRAPTOR_UPGRADES",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_static_thunder_raptor", "weight": 30 },
+    { "monster": "mon_static_singularity_raptor", "weight": 30 },
+    { "monster": "mon_static_tempest_raptor", "weight": 10 }
+  ]
+},
+{
+  "name": "GROUP_FIRAPTOR_UPGRADES",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_fire_blaze_raptor", "weight": 30 },
+    { "monster": "mon_fire_obsidian_raptor", "weight": 30 },
+    { "monster": "mon_fire_solaris_raptor", "weight": 10 }
+  ]
+},
+{
+  "name": "GROUP_ICRAPTOR_UPGRADES",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_ice_zero_raptor", "weight": 30 },
+    { "monster": "mon_ice_frostspike_raptor", "weight": 30 },
+    { "monster": "mon_ice_blizzard_raptor", "weight": 10 }
+  ]
+},
+{
+  "name": "GROUP_CRRAPTOR_UPGRADES",
+  "type": "monstergroup",
+  "monsters": [
+    { "monster": "mon_crystal_prism_raptor", "weight": 30 },
+    { "monster": "mon_crystal_resonance_raptor", "weight": 30 },
+    { "monster": "mon_crystal_genesis_raptor", "weight": 10 }
   ]
 }
 

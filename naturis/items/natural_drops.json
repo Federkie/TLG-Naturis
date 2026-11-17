@@ -71,7 +71,35 @@
       "material": ["vegetable"],
       "volume": "100 ml",
       "flags": ["TRADER_AVOID"]
-    }
+    },
+      {
+       "id": "golden_heart",
+       "type": "ITEM",
+       "name": { "str_sp": "golden heart" },
+       "category": "chems",
+       "flags": ["GEMSTONE"],
+       "description": "A gold-shimmering gemstone. It looks like a lump of resin in which plant remains and small animals have found their glassy grave.",
+       "weight": "250 g",
+       "volume": "250 ml",
+       "price_postapoc": "500 USD",
+       "symbol": "=",
+       "material": ["crystal"],
+       "color": "white"
+     },
+ {
+  "id": "frost_heart",
+  "type": "ITEM",
+  "name": { "str_sp": "frost heart" },
+  "category": "chems",
+  "flags": ["GEMSTONE"],
+  "description": "A chunk of hard ice. It still feels cool and dry, as if the warm surroundings have no effect on it.",
+  "weight": "250 g",
+  "volume": "250 ml",
+  "price_postapoc": "500 USD",
+  "symbol": "=",
+  "material": ["crystal"],
+  "color": "white"
+}
   
   
 ]
