@@ -37,7 +37,7 @@
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
     "baby_flags": [ "AUTUMN" ],
     "upgrades": {
-       "half_life": 60,
+       "half_life": 90,
        "into_group": "GROUP_RAPTOR_UPGRADES"
       },
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
@@ -338,7 +338,7 @@
 {
     "id": "mon_ice_raptor",
     "type": "MONSTER",
-    "name": { "str": " raptor" },
+    "name": { "str": "ice raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
@@ -426,7 +426,7 @@
 {
     "id": "mon_fire_raptor",
     "type": "MONSTER",
-    "name": { "str": " raptor" },
+    "name": { "str": "fire raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
