@@ -536,22 +536,38 @@
        "flags": ["TRANSPARENT", "FLAT"]
      },
  {
-   "type": "terrain",
-   "id": "t_frozen_terror",
-   "name": "frozen terror",
-   "description": "The remains of a large creature. Its silent scream is trapped forever in ancient ice.",
-   "symbol": "/",
-   "color": "cyan",
-   "coverage": 25,
-   "move_cost": -1,
-   "bash": {
-     "str_min": 60,
-     "str_max": 180,
-     "sound": "crack!",
-     "ter_set": "t_dirt_rocky"
-   },
-   "flags": ["TRANSPARENT"]
- },
+  "type": "terrain",
+  "id": "t_frozen_terror",
+  "name": "frozen terror",
+  "description": "The remains of a large creature. Its silent scream is trapped forever in ancient ice.",
+  "symbol": "/",
+  "color": "cyan",
+  "coverage": 25,
+  "move_cost": -1,
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn", "winter"], "id": "frozen_terror_harvest" }],
+  "transforms_into": "t_frozen_terror_harv",
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
+  },
+  "flags": ["TRANSPARENT"]
+},
+{
+  "type": "terrain",
+  "id": "t_frozen_terror_harv",
+  "name": "frozen terror",
+  "description": "The remains of some ice.",
+  "looks_like": "t_ice_pillar_large_harv",
+  "symbol": "/",
+  "color": "cyan",
+  "coverage": 25,
+  "move_cost": -1,
+  "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
+  "flags": ["TRANSPARENT"]
+},
    {
     "type": "terrain",
     "id": "t_ice_flowers",
@@ -709,5 +725,61 @@
     "ter_set": "t_dirt",
     "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
   }
-}
+},
+        {
+          "type": "terrain",
+          "id": "t_growing_dog",
+          "name": "growing forest dog",
+          "description": "Half decomposed bones and plant remains have begun to coalesce into a dog-like body. It won’t be long now before it comes to life.",
+          "symbol": "*",
+          "examine_action": {
+            "type": "effect_on_condition",
+            "effect_on_conditions": [
+              "EOC_MONSTER_MARKS"
+            ]
+          },
+          "color": "cyan",
+          "move_cost": 1,
+          "flags": ["TRANSPARENT"]
+        },
+     {
+      "type": "terrain",
+      "id": "t_tree_hollowed_gold",
+      "name": "pink hollowed-out tree",
+      "description": "A large, old tree, whose hollow trunk offers a comfortable place to spend the night.",
+      "symbol": "#",
+      "color": "brown_green",
+      "looks_like": "t_tree_hollowed",
+      "floor_bedding_warmth": 1200,
+      "comfort": 4,
+      "move_cost": 2,
+      "coverage": 30,
+      "concealment": 30,
+      "connect_groups": "INDOORFLOOR",
+      "examine_action": "harvest_ter",
+        "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn", "winter"], "id": "hollowed_gold_harv" }],
+        "transforms_into": "t_tree_hollowed",
+      "flags": [
+        "TRANSPARENT",
+        "CONTAINER",
+        "THIN_OBSTACLE",
+        "REDUCE_SCENT",
+        "INDOORS",
+        "FLAMMABLE_ASH",
+        "TINDER",
+        "MOUNTABLE",
+        "HIDE_PLACE"
+      ],
+      "bash": {
+        "str_min": 4,
+        "str_max": 60,
+        "sound": "crunch.",
+        "sound_fail": "brush.",
+        "ter_set": "t_dirt",
+        "items": [
+          { "item": "stick", "count": [3, 15] },
+          { "item": "withered", "count": [40, 80] }
+        ]
+      }
+    }
 ]

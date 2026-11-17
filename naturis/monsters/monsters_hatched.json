@@ -86,8 +86,8 @@
   "material": ["flesh"],
   "symbol": "v",
   "color": "green",
-  "aggression": 10,
-  "anger_triggers": [ "HURT", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+  "aggression": -30,
+  "anger_triggers": [ "PLAYER_WEAK" ],
   "morale": 10,
   "melee_skill": 1,
   "melee_dice": 1,
@@ -97,7 +97,7 @@
   "weakpoint_sets": [ "wps_flying_fire" ],
   "families": ["prof_intro_biology", "prof_physiology", "prof_wp_basic_bird", "prof_wp_mythic" ],
   "harvest": "fire_chick",
-  "fear_triggers": ["SOUND", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT"],
+  "fear_triggers": ["SOUND", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE"],
   "upgrades": { "age_grow": 100, "into": "mon_flying_fire" },
   "biosignature": { "biosig_item": "charcoal", "biosig_timer": 6 },
   "petfood": {
@@ -443,11 +443,21 @@
     "dissect": "dissect_lizard_sample_small",
     "path_settings": { "max_dist": 10, "avoid_sharp": true, "avoid_dangerous_fields": false },
     "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 7 },
-    "upgrades": { "age_grow": 140, "into": "mon_juvenile_forest_raptor" },
-    "special_attacks": [ [ "EAT_FOOD", 60 ], [ "EAT_CARRION", 60 ] ],
+    "petfood": { "food": [ "DOGFOOD", "RAPTORFOOD" ], 
+    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "upgrades": { "age_grow": 15, "into": "mon_juvenile_forest_raptor" },
+    "special_attacks": [ 
+      [ "EAT_FOOD", 60 ], 
+      [ "EAT_CARRION", 60 ],
+      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
+   "condition": {
+    "u_has_effect": "pet_martial_art"
+  }
+}
+    ],
     "fear_triggers": [ "FIRE", "SOUND", "PLAYER_CLOSE", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "scents_tracked": [ "sc_fetid", "sc_human" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "CLIMBS", "EATS", "GUILT_OTHERS", "PATH_AVOID_DANGER", "SMALL_HIDER", "CORNERED_FIGHTER", "EATS", "HARDTOSHOOT" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "CLIMBS", "EATS", "GUILT_OTHERS", "PATH_AVOID_DANGER", "SMALL_HIDER", "HIT_AND_RUN", "CORNERED_FIGHTER", "EATS", "HARDTOSHOOT" ],
     "death_function": { "effect": {"id": "death_guilt", "min_level": 6 } },
     "armor": { "bash": 1, "cut": 8, "acid": 5, "bullet": 2 }
   }

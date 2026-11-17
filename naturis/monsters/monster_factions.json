@@ -2,7 +2,7 @@
   {
     "type": "MONSTER_FACTION",
     "name": "overgrown",
-    "friendly": [ "fleshy", "zombie" ],
+    "friendly": [ "fleshy", "forest", "zombie" ],
     "neutral": [ "triffid" ]
   },
   {
@@ -20,20 +20,20 @@
     "type": "MONSTER_FACTION",
     "name": "zombie",
     "copy-from": "zombie",
-    "neutral": [ "overgrown", "crystal", "anomaly", "thief", "fleshy", "ice", "fire" ]
+    "neutral": [ "overgrown", "crystal", "anomaly", "thief", "fleshy", "ice", "fire", "test_creature" ]
   },
     {
     "type": "MONSTER_FACTION",
     "name": "forest",
     "friendly": ["static", "crystal", "small_animal", "overgrown", "triffid"],
     "neutral": ["player", "human"],
-    "hate": [ "fire", "thief", "ice", "zombie" ]
+    "hate": [ "fire", "thief", "ice", "zombie", "test_creature"]
   },
     {
     "type": "MONSTER_FACTION",
     "name": "ice",
     "friendly": ["fleshy", "zombie"],
-    "neutral": ["static"],
+    "neutral": ["static", "test_creature"],
     "hate": [ "player", "thief", "human", "forest" ]
   },
     {
@@ -47,14 +47,14 @@
    "type": "MONSTER_FACTION",
    "name": "fire",
    "friendly": ["zombie", "static"],
-   "neutral": ["fleshy"],
+   "neutral": ["fleshy", "test_creature"],
    "hate": ["player", "thief", "human", "ice"]
  },
    {
     "type": "MONSTER_FACTION",
     "name": "water",
     "base_faction": "animal",
-    "friendly": ["small_animal", "forest"],
+    "friendly": ["small_animal", "forest", "test_creature"],
     "by_mood": [ "fish" ],
     "neutral": ["fish", "player", "human"],
     "hate": ["ice", "thief", "fire", "static"]
@@ -63,7 +63,7 @@
       "type": "MONSTER_FACTION",
       "name": "crystal",
       "friendly": ["forest", "small_animal", "overgrown"],
-      "neutral": ["player", "human"],
+      "neutral": ["player", "test_creature", "human"],
       "hate": ["fire", "thief", "ice", "zombie"]
     },
        {
@@ -71,5 +71,13 @@
         "name": "thief",
         "friendly": ["zombie", "small_animal"],
         "neutral": ["player", "human"]
-      }
+      },
+  {
+  "type": "MONSTER_FACTION",
+  "name": "test_creature",
+  "friendly": ["player", "small_animal"],
+  "neutral": ["overgrown", "zombie", "static", "crystal", "anomaly", "thief", "fleshy", "ice", "fire"],
+  "hate": ["human"],
+  "by_mood": [ "zombie" ]
+}
 ]

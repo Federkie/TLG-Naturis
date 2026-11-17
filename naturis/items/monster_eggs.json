@@ -167,6 +167,25 @@
     "flags": [ "RAW" ],
     "rot_spawn": {  "group": "GROUP_FOREST_RAPTOR_HATCHLINGS", "chance": 60 },
     "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+  },
+     {
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "id": "dog_seedling",
+    "name": { "str": "forest seedling" },
+    "weight": "50 g",
+    "color": "brown",
+    "spoils_in": "60 days",
+    "comestible_type": "FOOD",
+    "looks_like": "egg_bird",
+    "symbol": "o",
+    "quench": 4,
+    "description": "A small, green tuber. After some time, perhaps something will hatch from it.",
+    "price_postapoc": "35 cent",
+    "material": [ "dry_plant" ],
+    "volume": "50 ml",
+    "flags": [ "INEDIBLE", "RAW" ],
+    "rot_spawn": { "group": "GROUP_FOREST_DOG", "chance": 70 }
   }
   
   

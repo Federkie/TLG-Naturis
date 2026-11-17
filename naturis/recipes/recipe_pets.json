@@ -55,8 +55,267 @@
       { "proficiency": "prof_closures" },
       { "proficiency": "prof_leatherworking" }
     ]
+  },
+   {
+    "result": "saddlebag_raptor",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_RAPTOR_ARMOR",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "6 h",
+    "autolearn": true,
+    "using": [ [ "tailoring_leather_sheet", 3 ], [ "clasps", 2 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_closures" },
+      { "proficiency": "prof_leatherworking" }
+    ]
+  },
+    {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "pet_stimulator",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 4] ],
+    "difficulty": 5,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "dog_seedling", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "pet_stimulator_enhanced",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 7] ],
+    "difficulty": 7,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "living_wood", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+ {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "pet_stimulator_profi",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 10] ],
+    "difficulty": 9,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "forest_powder", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "praptor_mutator",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 5] ],
+    "difficulty": 5,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "dog_seedling", 2 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "praptor_mutator_forest",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 7] ],
+    "difficulty": 7,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "golden_heart", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "praptor_mutator_crystal",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 7] ],
+    "difficulty": 7,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "crystal_core", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "praptor_mutator_ice",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_STIMULANTS",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 7] ],
+    "difficulty": 7,
+    "time": "45 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "frost_heart", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "martial_art_pet",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_TRAINING",
+    "time": "45 m",
+    "autolearn": true,
+    "flags": [ "BLIND_HARD" ],
+    "proficiencies": [
+    {
+      "proficiency": "prof_raptor_care",
+      "required": true
+    }
+  ],
+    "components": [
+      [ [ "paper", 2 ] ],
+      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ]
+    ]  
+    },
+ {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "pet_extra_spell",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_TRAINING",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 8] ],
+    "difficulty": 7,
+    "time": "25 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "shard_fire", 1 ] ], 
+      [ [ "shard_electric", 1 ] ], 
+      [ [ "shard_ice", 1 ] ], 
+      [ [ "forest_enzyme", 1 ] ], 
+      [ [ "shard_crystal", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "pet_extra_spell_2",
+    "category": "CC_ANIMALS",
+    "subcategory": "CSC_ANIMALS_TRAINING",
+    "skill_used": "chemistry",
+    "autolearn": [ ["research", 10] ],
+    "difficulty": 7,
+    "time": "55 m",
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_pharmaceutical" }
+    ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ 
+      [ [ "fire_pearl", 1 ] ], 
+      [ [ "stone_frozen", 1 ] ], 
+      [ [ "plate_static", 1 ] ], 
+      [ [ "forest_pearl", 1 ] ], 
+      [ [ "crystal_seed", 1 ] ], 
+      [ [ "syringe", 1 ] ], 
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "forest_enzyme", 1 ] ] 
+    ]
   }
-  
-  
   
 ]

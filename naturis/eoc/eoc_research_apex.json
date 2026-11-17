@@ -1,231 +1,458 @@
 [
-{
-  "type": "effect_on_condition",
-  "id": "EOC_NATURIS_STATIC_ARCHIVE",
-  "effect": [
-    {
-      "math": [
-        "u_skill_exp('research', 'format': 'percentage') += 35"
-      ]
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_STATIC_ARCHIVE",
+    "condition": {
+      "roll_contested": {
+        "math": [
+          "u_val('intelligence') + u_skill('research') + (u_has_proficiency('prof_field_research') ? 1 : 0)"
+        ]
+      },
+      "difficulty": 18
     },
-    {
-      "u_message": "You you are studying the archive and gain research experience."
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You successfully analyze the archive and gain research experience.",
+        "type": "good"
+      },
+      {
+        "u_learn_recipe": "katana_inferno"
+      },
+      {
+        "u_message": "You learn how to craft an inferno katana!"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_static_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_STATIC_ARCHIVE_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_static_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You cannot fully decipher the archive, but you gain some research experience.",
+        "type": "bad"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_static_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_STATIC_ARCHIVE_TRANSFORM_2",
+            "effect": [
+              {
+                "transform_item": "naturis_static_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_RAPID_ARCHIVE",
+    "condition": {
+      "roll_contested": {
+        "math": [
+          "u_val('intelligence') + u_skill('research') + (u_has_proficiency('prof_field_research') ? 1 : 0)"
+        ]
+      },
+      "difficulty": 18
     },
-    {
-      "u_learn_recipe": "katana_inferno"
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You successfully analyze the archive and gain research experience.",
+        "type": "good"
+      },
+      {
+        "u_learn_recipe": "katana_inferno"
+      },
+      {
+        "u_message": "You learn how to craft an inferno katana!"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_rapid_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_RAPID_ARCHIVE_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_rapid_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You cannot fully decipher the archive, but you gain some research experience.",
+        "type": "bad"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_rapid_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_RAPID_ARCHIVE_TRANSFORM_2",
+            "effect": [
+              {
+                "transform_item": "naturis_rapid_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FDRAGON_ARCHIVE",
+    "condition": {
+      "roll_contested": {
+        "math": [
+          "u_val('intelligence') + u_skill('research') + (u_has_proficiency('prof_field_research') ? 1 : 0)"
+        ]
+      },
+      "difficulty": 18
     },
-    {
-      "u_message": "You learn how to craft an inferno katana!"
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You successfully analyze the archive and gain research experience.",
+        "type": "good"
+      },
+      {
+        "u_learn_recipe": "root_circuit_rifle"
+      },
+      {
+        "u_message": "You learn how to craft an root circuit rifle!"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_fdragon_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_FDRAGON_ARCHIVE_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_fdragon_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You cannot fully decipher the archive, but you gain some research experience.",
+        "type": "bad"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_fdragon_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_FDRAGON_ARCHIVE_TRANSFORM_2",
+            "effect": [
+              {
+                "transform_item": "naturis_fdragon_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_FLFIRE_ARCHIVE",
+    "condition": {
+      "roll_contested": {
+        "math": [
+          "u_val('intelligence') + u_skill('research') + (u_has_proficiency('prof_field_research') ? 1 : 0)"
+        ]
+      },
+      "difficulty": 18
     },
-    {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "naturis_static_archive"
-        }
-      ],
-      "true_eocs": [
-        {
-          "id": "EOC_NATURIS_STATIC_ARCHIVE_TRANSFORM",
-          "effect": [
-            {
-              "transform_item": "naturis_static_archive_used"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-},
-{
-  "type": "effect_on_condition",
-  "id": "EOC_NATURIS_RAPID_ARCHIVE",
-  "effect": [
-    {
-      "math": [
-        "u_skill_exp('research', 'format': 'percentage') += 35"
-      ]
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You successfully analyze the archive and gain research experience.",
+        "type": "good"
+      },
+      {
+        "u_learn_recipe": "katana_inferno"
+      },
+      {
+        "u_message": "You learn how to craft an inferno katana!"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_flfire_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_FLFIRE_ARCHIVE_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_flfire_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You cannot fully decipher the archive, but you gain some research experience.",
+        "type": "bad"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_flfire_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_FLFIRE_ARCHIVE_TRANSFORM_2",
+            "effect": [
+              {
+                "transform_item": "naturis_flfire_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_CRSEEDER_ARCHIVE",
+    "condition": {
+      "roll_contested": {
+        "math": [
+          "u_val('intelligence') + u_skill('research') + (u_has_proficiency('prof_field_research') ? 1 : 0)"
+        ]
+      },
+      "difficulty": 18
     },
-    {
-      "u_message": "You you are studying the archive and gain research experience."
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You successfully analyze the archive and gain research experience.",
+        "type": "good"
+      },
+      {
+        "u_learn_recipe": "crystal_edge"
+      },
+      {
+        "u_message": "You learn how to craft an crystal edge!"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_crseeder_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_CRSEEDER_ARCHIVE_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_crseeder_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You cannot fully decipher the archive, but you gain some research experience.",
+        "type": "bad"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_crseeder_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_CRSEEDER_ARCHIVE_TRANSFORM_2",
+            "effect": [
+              {
+                "transform_item": "naturis_crseeder_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NATURIS_IFORMER_ARCHIVE",
+    "condition": {
+      "roll_contested": {
+        "math": [
+          "u_val('intelligence') + u_skill('research') + (u_has_proficiency('prof_field_research') ? 1 : 0)"
+        ]
+      },
+      "difficulty": 18
     },
-    {
-      "u_learn_recipe": "katana_inferno"
-    },
-    {
-      "u_message": "You learn how to craft a new item!"
-    },
-    {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "naturis_rapid_archive"
-        }
-      ],
-      "true_eocs": [
-        {
-          "id": "EOC_NATURIS_RAPID_ARCHIVE_TRANSFORM",
-          "effect": [
-            {
-              "transform_item": "naturis_rapid_archive_used"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-},
-{
-  "type": "effect_on_condition",
-  "id": "EOC_NATURIS_FDRAGON_ARCHIVE",
-  "effect": [
-    {
-      "math": [
-        "u_skill_exp('research', 'format': 'percentage') += 35"
-      ]
-    },
-    {
-      "u_message": "You you are studying the archive and gain research experience."
-    },
-    {
-      "u_learn_recipe": "katana_inferno"
-    },
-    {
-      "u_message": "You learn how to craft a new item!"
-    },
-    {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "naturis_fdragon_archive"
-        }
-      ],
-      "true_eocs": [
-        {
-          "id": "EOC_NATURIS_FDRAGON_ARCHIVE_TRANSFORM",
-          "effect": [
-            {
-              "transform_item": "naturis_fdragon_archive_used"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-},
-{
-  "type": "effect_on_condition",
-  "id": "EOC_NATURIS_FLFIRE_ARCHIVE",
-  "effect": [
-    {
-      "math": [
-        "u_skill_exp('research', 'format': 'percentage') += 35"
-      ]
-    },
-    {
-      "u_message": "You you are studying the archive and gain research experience."
-    },
-    {
-      "u_learn_recipe": "katana_inferno"
-    },
-    {
-      "u_message": "You learn how to craft a new item!"
-    },
-    {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "naturis_flfire_archive"
-        }
-      ],
-      "true_eocs": [
-        {
-          "id": "EOC_NATURIS_FLFIRE_ARCHIVE_TRANSFORM",
-          "effect": [
-            {
-              "transform_item": "naturis_flfire_archive_used"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-},
-{
-  "type": "effect_on_condition",
-  "id": "EOC_NATURIS_CRSEEDER_ARCHIVE",
-  "effect": [
-    {
-      "math": [
-        "u_skill_exp('research', 'format': 'percentage') += 35"
-      ]
-    },
-    {
-      "u_message": "You you are studying the archive and gain research experience."
-    },
-    {
-      "u_learn_recipe": "crystal_edge"
-    },
-    {
-      "u_message": "You learn how to craft an crystal edge!"
-    },
-    {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "naturis_crseeder_archive"
-        }
-      ],
-      "true_eocs": [
-        {
-          "id": "EOC_NATURIS_CRSEEDER_ARCHIVE_TRANSFORM",
-          "effect": [
-            {
-              "transform_item": "naturis_crseeder_archive_used"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-},
-{
-  "type": "effect_on_condition",
-  "id": "EOC_NATURIS_IFORMER_ARCHIVE",
-  "effect": [
-    {
-      "math": [
-        "u_skill_exp('research', 'format': 'percentage') += 35"
-      ]
-    },
-    {
-      "u_message": "You you are studying the archive and gain research experience."
-    },
-    {
-      "u_learn_recipe": "spear_ice"
-    },
-    {
-      "u_message": "You learn how to craft an ice spear!"
-    },
-    {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "naturis_iformer_archive"
-        }
-      ],
-      "true_eocs": [
-        {
-          "id": "EOC_NATURIS_IFORMER_ARCHIVE_TRANSFORM",
-          "effect": [
-            {
-              "transform_item": "naturis_iformer_archive_used"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You successfully analyze the archive and gain research experience.",
+        "type": "good"
+      },
+      {
+        "u_learn_recipe": "spear_ice"
+      },
+      {
+        "u_message": "You learn how to craft an ice spear!"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_iformer_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_IFORMER_ARCHIVE_TRANSFORM",
+            "effect": [
+              {
+                "transform_item": "naturis_iformer_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "false_effect": [
+      {
+        "math": [
+          "u_skill_exp('research', 'format': 'percentage') += 35"
+        ]
+      },
+      {
+        "u_message": "You cannot fully decipher the archive, but you gain some research experience.",
+        "type": "bad"
+      },
+      {
+        "u_run_inv_eocs": "random",
+        "search_data": [
+          {
+            "id": "naturis_iformer_archive"
+          }
+        ],
+        "true_eocs": [
+          {
+            "id": "EOC_NATURIS_IFORMER_ARCHIVE_TRANSFORM_2",
+            "effect": [
+              {
+                "transform_item": "naturis_iformer_archive_used"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]

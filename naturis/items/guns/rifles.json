@@ -56,7 +56,66 @@
     "pocket_data": [{ "pocket_type": "MAGAZINE_WELL", "item_restriction": ["fa_mag"] }],
     "use_action": [ "GUN_REPAIR" ],
     "melee_damage": { "bash": 12 }
+  },
+ {
+    "id": "root_circuit_rifle",
+    "looks_like": "f_rifle",
+    "type": "ITEM",
+    "subtypes": ["GUN", "ARTIFACT"],
+    "reload_noise_volume": 2,
+    "name": { "str": "Root Circuit Rifle" },
+    "description": "A rifle with a barrel made of natural, living wood, through which crystal fibers run like electrical circuits. It fires small, root-like projectiles that anchor themselves briefly into the ground upon impact.",
+    "weight": "4350 g",
+    "volume": "3 L",
+    "longest_side": "965 mm",
+    "price": "16 kUSD",
+    "price_postapoc": "65 USD",
+    "to_hit": -1,
+    "melee_damage": { "bash": 8 },
+    "material": ["crystal", "wood"],
+    "symbol": "(",
+    "color": "cyan",
+    "skill": "rifle",
+    "range": 30,
+    "dispersion": 10,
+    "recoil": 5,
+    "durability": 4,
+    "modes": [["DEFAULT", "semi-auto", 1]],
+    "loudness": 2,
+    "reload": 0,
+    "clip_size": 6,
+    "valid_mod_locations": [
+      ["grip", 1],
+      ["rail", 1],
+      ["sights", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["stock accessory", 1]
+    ],
+    "ammo": ["root_ammo"],
+    "ammo_effects": ["TRIP"],
+    "flags": [
+      "NO_UNLOAD",
+      "NON_FOULING",
+      "NEEDS_NO_LUBE",
+      "MUNDANE",
+      "NO_REPAIR"
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+        "ammo_restriction": { "root_ammo": 6 }
+      }
+    ],
+    "charge_info": {
+      "recharge_type": "periodic",
+      "time": "5 m",
+      "regenerate_ammo": true
+    }
   }
-
+  
+  
+  
+  
 
 ]

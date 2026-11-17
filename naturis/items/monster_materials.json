@@ -44,7 +44,7 @@
       "id": "mycelium_mother",
       "type": "ITEM",
       "name": { "str": "mycelium mother jar" },
-      "description": "This jar contains a batch of pickles set to ferment.  You can seal up the jar once the process is completed.",
+      "description": "This jar contains a batch of vegetables set to ferment.  You can seal up the jar once the process is completed.",
       "weight": "850 g",
       "volume": "680 ml",
       "longest_side": "132 mm",
@@ -63,7 +63,23 @@
         "not_ready_msg": "It looks the same as before, it probably needs a bit more time."
       },
       "melee_damage": { "bash": 8 }
-    }
+    },
+     {
+    "id": "biological_conductor",
+    "type": "ITEM",
+    "category": "spare_parts",
+    "name": { "str": "biological phase conductor" },
+    "description": "A composite material made of copper and wood, created through the influence of forest enzyme.",
+    "weight": "245 g",
+    "volume": "220 ml",
+    "price_postapoc": "3 USD",
+    "to_hit": -3,
+    "material": [ "wood", "copper" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "qualities": [ [ "HAMMER", 1 ] ],
+    "melee_damage": { "bash": 2 }
+  }
   
   
   

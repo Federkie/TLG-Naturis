@@ -224,6 +224,7 @@
   "id": "fd_slow",
   "type": "field_type",
   "substance_name": "slowing field",
+  "looks_like": "fd_grounding",
   "intensity_levels": [
     {
       "name": "slowing field",
@@ -262,7 +263,51 @@
    "half_life": "1 days",
    "accelerated_decay": true,
    "display_field": true
- }
+ },
+ {
+   "id": "fd_raptor_track",
+   "type": "field_type",
+   "substance_name": "monster track",
+   "legacy_enum_id": 3,
+   "intensity_levels": [
+     { "name": "monster tracks", "sym": "~", "color": "green" },
+     { "name": "deep monster tracks", "color": "light_red" }
+   ],
+   "description_affix": "covered_in",
+   "underwater_age_speedup": "5 minutes",
+   "decay_amount_factor": 2,
+   "is_splattering": true,
+   "half_life": "1 hour",
+   "accelerated_decay": true,
+   "display_field": true
+ },
+   {
+  "id": "fd_roots",
+  "type": "field_type",
+  "substance_name": "root field",
+  "looks_like": "fd_grounding",
+  "intensity_levels": [
+    {
+      "name": "slowing field",
+      "sym": "5",
+      "color": "light_blue",
+      "dangerous": true,
+      "effects": [
+        {
+          "effect_id": "sludged",
+          "intensity": 1,
+          "immune_in_vehicle": true,
+          "is_environmental": false
+        }
+      ]
+    }
+  ],
+  "description_affix": "covered_in",
+  "priority": 2,
+  "half_life": "50 seconds",
+  "phase": "gas",
+  "display_field": true
+}
 
 
 

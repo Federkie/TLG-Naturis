@@ -10,7 +10,7 @@
       ["charcoal_old", 1],
       ["strong_bone", 4],
       ["shard_ice", 4],
-      ["heart_frozen", 1],
+      ["stone_frozen", 1],
       ["claw_frozen", 2],
       ["bone_frozen", 5],
       ["perennial_ice", 1],
@@ -37,6 +37,9 @@
       ["raptor_tendon", 3],
       ["shard_crystal", 2],
       ["creature_remnant", 3],
+      ["crystal_seed", 2],
+      ["crystal_lattice", 2],
+      ["forest_enzyme", 3],
       ["claw_long", 2]
     
       

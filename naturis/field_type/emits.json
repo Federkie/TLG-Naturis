@@ -72,6 +72,13 @@
     "field": "fd_grinding_mark",
     "intensity": 1,
     "chance": 100
+  },
+{
+    "type": "emit",
+    "id": "raptor_track",
+    "field": "fd_raptor_track", 
+    "intensity": 1,
+    "chance": 50
   }
 
   

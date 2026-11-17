@@ -10,7 +10,7 @@
     "longest_side": "60 cm",
     "flags": ["IS_PET_ARMOR"],
     "color": "green",
-    "name": { "str": "leather cuirass with lining" },
+    "name": { "str": "leather raptor armor" },
     "description": "A leather harness for a large raptor. The fabric lining provides better padding and greater comfort for the animal wearing it.",
     "price_postapoc": "30 USD",
     "material": ["cotton", "leather"],
@@ -29,13 +29,47 @@
     "longest_side": "60 cm",
     "flags": ["IS_PET_ARMOR"],
     "color": "brown",
-    "name": { "str": "iron ratpor armor" },
+    "name": { "str": "iron raptor armor" },
     "description": "A heavy covering of strategically-placed iron plates and leather, suitably made for raptors as protection.  You could put this on a friendly raptor.",
     "price_postapoc": "10 USD",
     "material": ["iron", "leather"],
     "weight": "28 kg",
     "volume": "145 L",
     "material_thickness": 4
+  },
+  {
+    "id": "saddlebag_raptor",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "name": { "str": "raptor saddle bags", "str_pl": "pairs of raptor saddle bags" },
+    "description": "A pair of covered pouches laid across the back of a raptor behind the saddle.",
+    "weight": "800 g",
+    "volume": "6500 ml",
+    "price_postapoc": "5 USD",
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "dump_pouch",
+    "color": "green",
+    "warmth": 10,
+    "material_thickness": 2,
+    "flags": [ "BELTED", "WATER_FRIENDLY" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "14 L",
+        "max_contains_weight": "19 kg",
+        "max_item_length": "60 cm",
+        "moves": 200
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "14 L",
+        "max_contains_weight": "19 kg",
+        "max_item_length": "60 cm",
+        "moves": 200
+      }
+    ],
+    "armor": [ { "encumbrance": 28, "coverage": 45, "covers": [ "hand_l", "hand_r" ] } ]
   }
   
   

@@ -54,7 +54,14 @@
   "id": "fa_s",
   "name": "fa_s",
   "default": "fa_s_crystal"
+ },
+    {
+   "type": "ammunition_type",
+   "id": "root_ammo",
+   "name": "Root Circuit Rifle Charge",
+   "default": "root_ammo"
  }
+
 
 
 

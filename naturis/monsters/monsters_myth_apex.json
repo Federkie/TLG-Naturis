@@ -119,7 +119,9 @@
     "miss_msg_npc": "%1$s snaps at <npcname>, but they dodge!",
     "no_dmg_msg_u": "%1$s bites at you, but your armor protects you.",
     "no_dmg_msg_npc": "%1$s bites at <npcname>, but their armor protects them." } ],
-    "regenerates": 1,
+    "regenerates": 0,
+    "regeneration_modifiers": [  ["maimed_tail", 1] ],
+    "regen_morale": true,
     "death_drops": "mon_rapid_striker_death_drops",
     "emit_fields": [
     { "emit_id": "emit_grinding_mark", "delay": "1 s" } ],

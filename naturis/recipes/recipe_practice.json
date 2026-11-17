@@ -1,0 +1,22 @@
+[
+    {
+    "id": "practice_research_basics",
+    "type": "practice",
+    "activity_level": "NO_EXERCISE",
+    "category": "CC_PRACTICE",
+    "subcategory": "CSC_PRACTICE_RESEARCH",
+    "name": "creature observations",
+    "description": "You observe the newly emerged fauna, their habits and ways of life.",
+    "skill_used": "research",
+    "time": "2 h",
+    "autolearn": [ [ "research", 0 ] ],
+    "practice_data": { "min_difficulty": 0, "max_difficulty": 1, "skill_limit": 2 },
+        "tools": [
+      [
+        "binoculars"
+      ]
+    ]
+  }
+  
+  
+]

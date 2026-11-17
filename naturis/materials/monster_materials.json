@@ -44,7 +44,7 @@
     {
     "type": "material",
     "id": "crystallized_fur",
-    "name": "crystallized_l fur",
+    "name": "crystallized fur",
     "//": "Fur, when pressed flat, is typically 1-3mm depending on the animal (hide included).",
     "density": 3.1,
     "specific_heat_liquid": 0.2,

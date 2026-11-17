@@ -219,7 +219,10 @@
         "vision_night": 2,
         "dissect": "dissect_naturis_sample",
         "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 7 },
-        "upgrades": { "age_grow": 120, "into": "mon_forest_raptor" },
+        "petfood": { 
+              "food": [ "DOGFOOD", "RAPTORFOOD" ], 
+               "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+        "upgrades": { "age_grow": 30, "into": "mon_forest_raptor" },
         "special_attacks": [
           ["EAT_FOOD", 60],
           ["EAT_CARRION", 60]

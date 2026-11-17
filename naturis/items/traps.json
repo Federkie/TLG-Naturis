@@ -109,7 +109,118 @@
   "spell_data": {
     "id": "ice_trap_explosion"
   }
-}
+},
+  {
+    "type": "ITEM",
+    "id": "slow_trap",
+    "subtypes": ["TOOL"],
+    "name": {
+      "str": "slow-down trap"
+    },
+    "description": "A single-use slowing trap. When a creature steps on it, a field is generated that makes any movement difficult.",
+    "category": "traps",
+    "weight": "700 g",
+    "volume": "350 ml",
+    "material": ["steel", "plastic"],
+    "symbol": ";",
+    "color": "light_blue",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_slow_trap",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "You place the slow-down trap."
+    },
+    "flags": ["SINGLE_USE"]
+  },
+  {
+    "type": "trap",
+    "id": "tr_slow_trap",
+    "name": "placed slow-down trap",
+    "color": "light_blue",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 30,
+    "difficulty": 0,
+    "spell_data": {
+      "id": "slow_field"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "forest_trap",
+    "subtypes": ["TOOL"],
+    "name": {
+      "str": "growing trees trap"
+    },
+    "description": "A single-use trap. If something steps on it, an effect is triggered that causes trees and shrubs to grow over a wide area.",
+    "category": "traps",
+    "weight": "700 g",
+    "volume": "350 ml",
+    "material": ["steel", "plastic"],
+    "symbol": ";",
+    "color": "light_blue",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_forest_trap",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "You place the growing trees trap."
+    },
+    "flags": ["SINGLE_USE"]
+  },
+  {
+    "type": "trap",
+    "id": "tr_forest_trap",
+    "name": "placed growing trees trap",
+    "color": "light_blue",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 30,
+    "difficulty": 0,
+    "spell_data": {
+      "id": "create_nature"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "gravity_trap",
+    "subtypes": ["TOOL"],
+    "name": {
+      "str": "gravity trap"
+    },
+    "description": "A single-use trap. When something sets off the trigger, an impulse is released that draws everything in its vicinity toward it.",
+    "category": "traps",
+    "weight": "700 g",
+    "volume": "350 ml",
+    "material": ["steel", "plastic"],
+    "symbol": ";",
+    "color": "light_blue",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_gravity_trap",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "You place the gravity trap."
+    },
+    "flags": ["SINGLE_USE"]
+  },
+  {
+    "type": "trap",
+    "id": "tr_gravity_trap",
+    "name": "placed gravity trap",
+    "color": "light_blue",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 30,
+    "difficulty": 0,
+    "spell_data": {
+      "id": "insert_all_ammo"
+    }
+  }
   
   
 

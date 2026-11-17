@@ -1,0 +1,115 @@
+[
+    {
+      "type": "effect_type",
+      "id": "effect_healing_water",
+      "name": ["healing water"],
+      "desc": ["You drank the water that has a greenish shimmer."],
+      "apply_message": "You feel refreshed and energetic.",
+      "remove_message": "The hyped-up feeling fades, and you feel weak and exhausted.",
+      "rating": "good",
+      "max_duration": "15 minutes",
+      "max_intensity": 1,
+      "base_mods": {
+        "speed_mod": [20]
+      },
+      "flags": ["BLEED_IMMUNE"],
+      "enchantments": [
+      {
+        "values": [
+          { "value": "REGEN_HP", "multiply": 20.0 },
+          { "value": "REGEN_HP_AWAKE", "multiply": 10.0 }
+        ]
+      }]
+    },
+    {
+      "type": "effect_type",
+      "id": "effect_healing_water_comedown",
+      "name": ["healing water aftereffects"],
+      "desc": ["You are suffering from the side effects of the healing water."],
+      "apply_message": "",
+      "remove_message": "You are slowly starting to feel better again.",
+      "rating": "bad",
+      "max_duration": "20 hours",
+      "max_intensity": 1,
+      "base_mods": {
+        "str_mod": [-3],
+        "dex_mod": [-2],
+        "speed_mod": [-30],
+        "pain_chance": [10],
+        "pain_min": [1],
+        "pain_max_val": [5],
+        "pain_tick": [50],
+        "vomit_chance": [50],
+        "vomit_tick": [100]
+      }
+    },
+      {
+    "type": "effect_type",
+    "id": "effect_speed_extract",
+    "name": [ "dormant seed extract" ],
+    "desc": [ "You drank the strange potion." ],
+    "apply_message": "You feel refreshed and energetic.",
+    "remove_message": "The hyped-up feeling fades, and you feel like you did before.",
+    "rating": "good",
+    "max_duration": "25 minutes",
+    "max_intensity": 1,
+    "base_mods": { 
+      "speed_mod": [ 40 ] }
+  },
+      {
+    "type": "effect_type",
+    "id": "effect_enhanced_vision",
+    "name": [ "enhanced vision effect" ],
+    "desc": [ "You drank the strange extract." ],
+    "apply_message": "You have the feeling that you could see much more sharply.",
+    "remove_message": "Slowly, your vision clouds over again.",
+    "rating": "good",
+    "max_duration": "35 minutes",
+    "max_intensity": 1,
+    "base_mods": { 
+      "dex_mod": [ 2 ] },
+      "flags": [ "ENHANCED_VISION" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_bad_extract",
+    "name": ["bad extract effects"],
+    "desc": ["You are suffering from a bad extract"],
+    "apply_message": "You’re not feeling so well ...",
+    "remove_message": "You are slowly starting to feel better again.",
+    "rating": "bad",
+    "max_duration": "30 minutes",
+    "max_intensity": 1,
+    "base_mods": {
+      "str_mod": [-5],
+      "dex_mod": [-3],
+      "speed_mod": [-60],
+      "pain_chance": [30],
+      "pain_min": [1],
+      "pain_max_val": [5],
+      "pain_tick": [100],
+      "vomit_chance": [100],
+      "vomit_tick": [200]
+    }
+  },
+      {
+    "type": "effect_type",
+    "id": "effect_enhanced_stamina",
+    "name": [ "enhanced stamina effect" ],
+    "desc": [ "You drank the strange extract." ],
+    "apply_message": "You feel fit and full of energy.",
+    "remove_message": "You feel the burst of energy fading.",
+    "rating": "good",
+    "max_duration": "25 minutes",
+    "max_intensity": 1,
+    "enchantments": [
+      {
+        "values": [
+          { "value": "STAMINA_REGEN_MOD", "add": 2.0 }
+        ]
+      }
+    ]
+  }
+  
+  
+]
