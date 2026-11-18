@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": "stasis_cage",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -16,7 +16,7 @@
     "flags": ["TRADER_AVOID"],
     "melee_damage": { "bash": 1, "cut": 1 }
   },
-    {
+  {
     "id": "pet_stimulator",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -34,34 +34,46 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "heal_pet", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "heal_pet",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
-  "type": "ITEM",
-  "subtypes": ["TOOL"],
-  "category": "drugs",
-  "id": "pet_stimulator_enhanced",
-  "name": { "str": "enhanced pet stimulator" },
-  "copy-from": "pet_stimulator",
-  "description": "A syringe, prepared with a medicinal liquid. Heals a pet for a random amount.",
-  "use_action": 
-   { "type": "cast_spell",
-      "spell_id": "heal_pet", "no_fail": true, "level": 2 }
-},
-{
-  "type": "ITEM",
-  "subtypes": ["TOOL"],
-  "category": "drugs",
-  "id": "pet_stimulator_profi",
-  "name": { "str": "professional pet stimulator" },
-  "copy-from": "pet_stimulator",
-  "description": "A syringe, prepared with a medicinal liquid. Heals a pet for a random amount.",
-  "use_action": 
-   { "type": "cast_spell",
-      "spell_id": "heal_pet", "no_fail": true, "level": 3 }
-},
+  {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "category": "drugs",
+    "id": "pet_stimulator_enhanced",
+    "name": { "str": "enhanced pet stimulator" },
+    "copy-from": "pet_stimulator",
+    "description": "A syringe, prepared with a medicinal liquid. Heals a pet for a random amount.",
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "heal_pet",
+      "no_fail": true,
+      "level": 2
+    }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "category": "drugs",
+    "id": "pet_stimulator_profi",
+    "name": { "str": "professional pet stimulator" },
+    "copy-from": "pet_stimulator",
+    "description": "A syringe, prepared with a medicinal liquid. Heals a pet for a random amount.",
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "heal_pet",
+      "no_fail": true,
+      "level": 3
+    }
+  },
   {
     "id": "pet_upgrader",
     "type": "ITEM",
@@ -80,11 +92,15 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "pet_upgrade", "no_fail": true, "level": 1  }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "pet_upgrade",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
+  {
     "id": "praptor_mutator",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -102,11 +118,15 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "forest_raptor_mutation", "no_fail": true, "level": 1  }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "forest_raptor_mutation",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
+  {
     "id": "praptor_mutator_forest",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -124,11 +144,15 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "mutate_praptor_forest", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "mutate_praptor_forest",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
+  {
     "id": "praptor_mutator_fire",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -146,11 +170,15 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "mutate_praptor_fire", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "mutate_praptor_fire",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
+  {
     "id": "praptor_mutator_crystal",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -168,11 +196,15 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "mutate_praptor_crystal", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "mutate_praptor_crystal",
+      "no_fail": true,
+      "level": 1
+    }
   },
- {
+  {
     "id": "praptor_mutator_ice",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -190,11 +222,15 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "mutate_praptor_ice", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "mutate_praptor_ice",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
+  {
     "id": "praptor_mutator_static",
     "type": "ITEM",
     "subtypes": ["TOOL"],
@@ -212,9 +248,13 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "mutate_praptor_static", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "mutate_praptor_static",
+      "no_fail": true,
+      "level": 1
+    }
   },
   {
     "id": "pet_extra_spell",
@@ -233,9 +273,13 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-   "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "pet_extra_unlock", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "pet_extra_unlock",
+      "no_fail": true,
+      "level": 1
+    }
   },
   {
     "id": "pet_extra_spell_2",
@@ -254,16 +298,42 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action": 
-    { "type": "cast_spell",
-       "spell_id": "pet_extra_unlock_2", "no_fail": true, "level": 1 }
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "pet_extra_unlock_2",
+      "no_fail": true,
+      "level": 1
+    }
   },
- {
+  {
+    "type": "ITEM",
+    "subtypes": ["BOOKS"],
+    "id": "martial_art_pet",
+    "name": { "str": "pet martial arts" },
+    "description": "A curriculum on how to teach a raptor new combat technique.",
+    "weight": "6 g",
+    "color": "green",
+    "symbol": ",",
+    "price_postapoc": "0 cent",
+    "material": ["paper"],
+    "volume": "12 ml",
+    "longest_side": "297 mm",
+    "flags": ["PAPER_SHAPED", "TINDER"],
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "martial_art_pet",
+      "no_fail": true,
+      "level": 1
+    }
+  },
+  {
   "type": "ITEM",
   "subtypes": ["BOOKS"],
-  "id": "martial_art_pet",
-  "name": { "str": "pet martial arts" },
-  "description": "A curriculum on how to teach a raptor new combat techniques.",
+  "id": "martial_art_pet_def",
+  "name": { "str": "def pet martial arts" },
+  "description": "A curriculum on how to teach a raptor new defensive combat technique.",
   "weight": "6 g",
   "color": "green",
   "symbol": ",",
@@ -272,9 +342,13 @@
   "volume": "12 ml",
   "longest_side": "297 mm",
   "flags": ["PAPER_SHAPED", "TINDER"],
-  "use_action": 
-      { "type": "cast_spell",
-       "spell_id": "martial_art_pet", "no_fail": true, "level": 1 }
+  "use_action":
+  {
+    "type": "cast_spell",
+    "spell_id": "martial_art_pet_def",
+    "no_fail": true,
+    "level": 1
+  }
 }
   
   

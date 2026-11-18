@@ -1,9 +1,9 @@
 [
-    {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "7x7_burned_ground",
     "object": {
-      "mapgensize": [ 7, 7 ],
+      "mapgensize": [7, 7],
       "rows": [
         "  xxx  ",
         " xxXxx ",
@@ -13,10 +13,16 @@
         " xxXxx ",
         "  xxx  "
       ],
-      "nested": { "X": { "chunks": [ "1x1_burned_ground" ] }, "x": { "chunks": [ "1x1_burned_ground_slight", "null" ] } },
-      "place_monster": [ { "monster": "mon_ember_stalker", "chance": 20, "x": 3, "y": 3 } ],
-      "furniture": { "X": [ [ "f_null", 7 ], [ "f_fireweed", 1 ] ], "x": [ [ "f_null", 11 ], [ "f_fireweed", 1 ] ] },
-      "flags": [ "SKIP_ON_OPEN_AIR" ]
+      "nested": { "X": { "chunks": ["1x1_burned_ground"] }, "x": { "chunks": ["1x1_burned_ground_slight", "null"] } },
+      "place_monster": [{ "monster": "mon_ember_stalker", "chance": 20, "x": 3, "y": 3 }],
+      "furniture": { "X": [
+          ["f_null", 7],
+          ["f_fireweed", 1]
+        ], "x": [
+          ["f_null", 11],
+          ["f_fireweed", 1]
+        ] },
+      "flags": ["SKIP_ON_OPEN_AIR"]
     }
   }
   

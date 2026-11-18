@@ -1,7 +1,9 @@
 [
   {
     "type": "mapgen",
-    "om_terrain": [ [ "farm_2" ] ],
+    "om_terrain": [
+      ["farm_2"]
+    ],
     "weight": 50,
     "object": {
       "fill_ter": "t_floor",
@@ -31,7 +33,7 @@
         "..............u.........",
         "........................"
       ],
-      "palettes": [ "standard_domestic_palette", "standard_domestic_lino_bathroom" ],
+      "palettes": ["standard_domestic_palette", "standard_domestic_lino_bathroom"],
       "terrain": {
         "!": "t_wall_wood",
         ",": "t_region_soil",
@@ -51,25 +53,24 @@
         ],
         "~": [
           { "item": "flesh_bone", "chance": 40 }
-             ]
+        ]
       },
-       "place_fields": [
-        {
-          "field": "fd_blood",
-          "x": [2, 22],
-          "y": [2, 22],
-          "repeat": [1, 3]
-        },
-        {
-          "field": "fd_monster_track",
-          "x": [2, 22],
-          "y": [2, 22],
-          "repeat": [1, 3]
-        }
-      ],
-      "place_monster": [ { "monster": "mon_small_raptor", "pack_size": [2, 22], "chance": 30, "x": [2, 22], "y": [2, 22] } ],
-      "place_loot": [ { "group": "corpse_generic_human", "x": [ 2, 22 ], "y": [ 2, 22 ], "chance": 100 } ]
+      "place_fields": [
+      {
+        "field": "fd_blood",
+        "x": [2, 22],
+        "y": [2, 22],
+        "repeat": [1, 3]
+      },
+      {
+        "field": "fd_monster_track",
+        "x": [2, 22],
+        "y": [2, 22],
+        "repeat": [1, 3]
+      }],
+      "place_monster": [{ "monster": "mon_small_raptor", "pack_size": [2, 22], "chance": 30, "x": [2, 22], "y": [2, 22] }],
+      "place_loot": [{ "group": "corpse_generic_human", "x": [2, 22], "y": [2, 22], "chance": 100 }]
     }
   }
   
-  ]
+]

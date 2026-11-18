@@ -7,7 +7,7 @@
     "sym": "F",
     "color": "i_green",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH"]
+    "flags": ["RISK_HIGH"]
   },
   {
     "type": "overmap_terrain",
@@ -31,20 +31,20 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "fairy_ring" ,
+    "id": "fairy_ring",
     "vision_levels": "first_glance_forest",
     "name": " Fairy_ring",
     "sym": "F",
     "color": "i_green",
     "see_cost": "high",
-    "flags": [ "RISK_LOW"]
+    "flags": ["RISK_LOW"]
   },
   {
     "type": "overmap_terrain",
-    "id": "fairy_ring_roof", 
-    "copy-from": "fairy_ring" 
+    "id": "fairy_ring_roof",
+    "copy-from": "fairy_ring"
   },
-{
+  {
     "type": "overmap_terrain",
     "id": "forgotten_cellar",
     "vision_levels": "blends_till_details",
@@ -52,103 +52,103 @@
     "sym": "F",
     "color": "i_green",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH"]
+    "flags": ["RISK_HIGH"]
   },
   {
     "type": "overmap_terrain",
-    "id": "forgotten_cellar_1n", 
-    "copy-from": "forgotten_cellar" 
+    "id": "forgotten_cellar_1n",
+    "copy-from": "forgotten_cellar"
   },
   {
-  "type": "overmap_terrain",
-  "id": "burning_fields",
-  "vision_levels": "blends_till_outlines",
-  "name": "Burning fields",
-  "sym": "F",
-  "color": "i_green",
-  "see_cost": "high",
-  "flags": ["RISK_HIGH"]
-},
+    "type": "overmap_terrain",
+    "id": "burning_fields",
+    "vision_levels": "blends_till_outlines",
+    "name": "Burning fields",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": ["RISK_HIGH"]
+  },
   {
     "type": "overmap_terrain",
     "id": "burning_fields_1",
     "copy-from": "burning_fields"
   },
   {
-  "type": "overmap_terrain",
-  "id": "hunter_camp",
-  "vision_levels": "isolated_building",
-  "name": " Hunter_Camp",
-  "sym": "F",
-  "color": "i_green",
-  "see_cost": "high",
-  "flags": ["RISK_LOW"]
-},
-{
-  "type": "overmap_terrain",
-  "id": "hunter_camp_roof",
-  "copy-from": "hunter_camp"
-},
+    "type": "overmap_terrain",
+    "id": "hunter_camp",
+    "vision_levels": "isolated_building",
+    "name": " Hunter_Camp",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": ["RISK_LOW"]
+  },
   {
-  "type": "overmap_terrain",
-  "id": "hunting_fields",
-  "vision_levels": "blends_till_outlines",
-  "name": "Hunting fields",
-  "sym": "F",
-  "color": "i_green",
-  "see_cost": "high",
-  "flags": ["RISK_HIGH"]
-},
- {
-   "type": "overmap_terrain",
-   "id": "frozen_cave",
-   "vision_levels": "blends_till_outlines",
-   "name": "Frozen cave",
-   "sym": "F",
-   "color": "i_green",
-   "see_cost": "high",
-   "flags": ["RISK_HIGH"]
- },
- {
-  "type": "overmap_terrain",
-  "id": "frozen_cave_underground",
-  "copy-from": "frozen_cave"
-},
-{
-  "type": "overmap_terrain",
-  "id": "pink_ravine",
-  "vision_levels": "blends_till_outlines",
-  "name": "Pink flower Ravine",
-  "sym": "F",
-  "color": "i_green",
-  "see_cost": "all_clear",
-  "flags": ["RISK_HIGH"]
-},
-{
-  "type": "overmap_terrain",
-  "id": "pink_ravine_ground",
-  "copy-from": "frozen_cave"
-},
-{
-  "type": "overmap_terrain",
-  "id": "static_fields",
-  "vision_levels": "isolated_tower",
-  "name": "Static field",
-  "sym": "F",
-  "color": "i_green",
-  "see_cost": "high",
-  "flags": ["RISK_HIGH"]
-},
-{
-  "type": "overmap_terrain",
-  "id": "static_fields_roof_1",
-  "copy-from": "static_fields"
-},
-{
-  "type": "overmap_terrain",
-  "id": "static_fields_roof_2",
-  "copy-from": "static_fields"
-},
+    "type": "overmap_terrain",
+    "id": "hunter_camp_roof",
+    "copy-from": "hunter_camp"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "hunting_fields",
+    "vision_levels": "blends_till_outlines",
+    "name": "Hunting fields",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": ["RISK_HIGH"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "frozen_cave",
+    "vision_levels": "blends_till_outlines",
+    "name": "Frozen cave",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": ["RISK_HIGH"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "frozen_cave_underground",
+    "copy-from": "frozen_cave"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "pink_ravine",
+    "vision_levels": "blends_till_outlines",
+    "name": "Pink flower Ravine",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "all_clear",
+    "flags": ["RISK_HIGH"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "pink_ravine_ground",
+    "copy-from": "frozen_cave"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "static_fields",
+    "vision_levels": "isolated_tower",
+    "name": "Static field",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "flags": ["RISK_HIGH"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "static_fields_roof_1",
+    "copy-from": "static_fields"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "static_fields_roof_2",
+    "copy-from": "static_fields"
+  },
   {
     "type": "overmap_terrain",
     "id": "crystal_field",
@@ -163,7 +163,7 @@
     "see_cost": "high",
     "flags": ["REQUIRES_PREDECESSOR"]
   },
-    {
+  {
     "type": "overmap_terrain",
     "id": "crystal_grove",
     "name": "crystal grove",
@@ -205,30 +205,30 @@
     "spawns": { "group": "GROUP_FROST_GROUND", "population": [4, 10], "chance": 80 },
     "flags": ["RISK_EXTREME"]
   },
-   {
-   "type": "overmap_terrain",
-   "id": "frostbound_cavern_entrance",
-   "vision_levels": "blends_till_outlines",
-   "name": "Fostbound Cavern Entrance",
-   "sym": "F",
-   "color": "i_green",
-   "see_cost": "high",
-   "looks_like": "forest_thick",
-   "flags": ["REQUIRES_PREDECESSOR"]
- },
-     {
-      "type": "overmap_terrain",
-      "id": "monster_nest",
-      "name": "monster nest",
-      "copy-from": "generic_forest",
-      "vision_levels": "first_glance_forest",
-      "sym": "F",
-      "looks_like": "forest_thick",
-      "color": "green",
-      "see_cost": "high",
-      "flags": ["RISK_EXTREME", "REQUIRES_PREDECESSOR"]
-    },
-   {
+  {
+    "type": "overmap_terrain",
+    "id": "frostbound_cavern_entrance",
+    "vision_levels": "blends_till_outlines",
+    "name": "Fostbound Cavern Entrance",
+    "sym": "F",
+    "color": "i_green",
+    "see_cost": "high",
+    "looks_like": "forest_thick",
+    "flags": ["REQUIRES_PREDECESSOR"]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "monster_nest",
+    "name": "monster nest",
+    "copy-from": "generic_forest",
+    "vision_levels": "first_glance_forest",
+    "sym": "F",
+    "looks_like": "forest_thick",
+    "color": "green",
+    "see_cost": "high",
+    "flags": ["RISK_EXTREME", "REQUIRES_PREDECESSOR"]
+  },
+  {
     "type": "overmap_terrain",
     "id": "awakening_field",
     "vision_levels": "first_glance_forest",
@@ -259,4 +259,3 @@
   
   
 ]
-

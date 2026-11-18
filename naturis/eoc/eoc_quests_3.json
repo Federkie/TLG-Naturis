@@ -1,81 +1,76 @@
 [
-  {
+{
   "type": "effect_on_condition",
   "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_3",
   "effect": [
+  {
+    "u_run_inv_eocs": "random",
+    "search_data": [
     {
-      "u_run_inv_eocs": "random",
-      "search_data": [
-        {
-          "id": "creature_remnant"
-        }
-      ],
-      "true_eocs": [
-        "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3"
-      ],
-      "false_eocs": [
-        "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3"
-      ]
-    }
-  ]
+      "id": "creature_remnant"
+    }],
+    "true_eocs": [
+      "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3"
+    ],
+    "false_eocs": [
+      "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3"
+    ]
+  }]
 },
 {
   "type": "effect_on_condition",
   "id": "EOC_NATURIS_FIELD_SCANNER_HUNT_REMNANT_3",
   "effect": [
-    {
-      "if": {
-        "u_has_proficiency": "prof_field_research"
-      },
-      "then": [
-        {
-          "weighted_list_eocs": [
-            [ "EOC_NATURIS_SCANNER_TARGET_THORN_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10 ],
-
-            [ "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10 ],
-
-            [ "EOC_NATURIS_SCANNER_TARGET_RAPID_3", 4 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_FDRAGON_3", 3 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_FLFIRE_3", 3 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_IFORMER_3", 2 ],
-
-            [ "EOC_NATURIS_SCANNER_TARGET_STATIC_3", 2 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_CRSEEDER_3", 1 ],
-            [ "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10 ]
-          ]
-        }
-      ],
-      "else": [
-        {
-          "weighted_list_eocs": [
-            [ "EOC_NATURIS_SCANNER_TARGET_THORN_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10 ],
-
-            [ "EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7 ],
-            [ "EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10 ],
-
-            [ "EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10 ]
-          ]
-        }
-      ]
+  {
+    "if": {
+      "u_has_proficiency": "prof_field_research"
     },
+    "then": [
     {
-      "u_consume_item": "creature_remnant",
-      "count": 1
-    }
-  ]
+      "weighted_list_eocs": [
+        ["EOC_NATURIS_SCANNER_TARGET_THORN_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10],
+        
+        ["EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8],
+        ["EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7],
+        ["EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10],
+        
+        ["EOC_NATURIS_SCANNER_TARGET_RAPID_3", 4],
+        ["EOC_NATURIS_SCANNER_TARGET_FDRAGON_3", 3],
+        ["EOC_NATURIS_SCANNER_TARGET_FLFIRE_3", 3],
+        ["EOC_NATURIS_SCANNER_TARGET_IFORMER_3", 2],
+        
+        ["EOC_NATURIS_SCANNER_TARGET_STATIC_3", 2],
+        ["EOC_NATURIS_SCANNER_TARGET_CRSEEDER_3", 1],
+        ["EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10]
+      ]
+    }],
+    "else": [
+    {
+      "weighted_list_eocs": [
+        ["EOC_NATURIS_SCANNER_TARGET_THORN_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_SMRAPTOR_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_GLOW_CAP_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_FRBRAWLER_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_EMSTALKER_3", 10],
+        ["EOC_NATURIS_SCANNER_TARGET_CRSLURKER_3", 10],
+        
+        ["EOC_NATURIS_SCANNER_TARGET_CRYSTAL_WALKER_3", 8],
+        ["EOC_NATURIS_SCANNER_TARGET_VEIL_STALKER_3", 7],
+        ["EOC_NATURIS_SCANNER_TARGET_BIG_RAPTOR_3", 10],
+        
+        ["EOC_NATURIS_SCANNER_INVESTIGATE_NEST_3", 10]
+      ]
+    }]
+  },
+  {
+    "u_consume_item": "creature_remnant",
+    "count": 1
+  }]
 },
 {
   "type": "effect_on_condition",
@@ -209,9 +204,7 @@
   "type": "effect_on_condition",
   "id": "EOC_NATURIS_FIELD_SCANNER_NO_REMNANT_3",
   "effect": [
-    {
-      "u_message": "ERROR: No creature remnant available. You need at least one in order to be able to examine it."
-    }
-  ]
-}
-]
+  {
+    "u_message": "ERROR: No creature remnant available. You need at least one in order to be able to examine it."
+  }]
+}]

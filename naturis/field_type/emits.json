@@ -7,28 +7,28 @@
     "intensity": 1,
     "chance": 50
   },
-{
+  {
     "type": "emit",
     "id": "emit_flying_fire_track",
     "field": "fd_fire",
     "intensity": 1,
     "chance": 50
   },
-{
+  {
     "type": "emit",
     "id": "emit_ice_former_track",
     "field": "fd_spikes_ice",
     "intensity": 1,
     "chance": 50
   },
-{
+  {
     "type": "emit",
     "id": "emit_beast_static_track",
     "field": "fd_electricity",
     "intensity": 1,
     "chance": 50
   },
-    {
+  {
     "type": "emit",
     "id": "emit_rapid_striker_track",
     "field": "fd_monster_track",
@@ -43,7 +43,7 @@
     "qty": 9,
     "chance": 100
   },
-    {
+  {
     "id": "emit_naturis_hot_aura",
     "type": "emit",
     "field": "fd_hot_air2",
@@ -51,14 +51,14 @@
     "qty": 9,
     "chance": 100
   },
-     {
-     "type": "emit",
-     "id": "emit_herbivore_track",
-     "field": "fd_monster_track_herb",
-     "intensity": 1,
-     "chance": 50
-   },
-     {
+  {
+    "type": "emit",
+    "id": "emit_herbivore_track",
+    "field": "fd_monster_track_herb",
+    "intensity": 1,
+    "chance": 50
+  },
+  {
     "id": "emit_crystal_bees",
     "type": "emit",
     "//": "Periodic swarm of bees",
@@ -66,21 +66,21 @@
     "intensity": 3,
     "chance": 15
   },
-    {
+  {
     "type": "emit",
     "id": "emit_grinding_mark",
     "field": "fd_grinding_mark",
     "intensity": 1,
     "chance": 100
   },
-{
+  {
     "type": "emit",
     "id": "raptor_track",
-    "field": "fd_raptor_track", 
+    "field": "fd_raptor_track",
     "intensity": 1,
     "chance": 50
   }
-
+  
   
   
   

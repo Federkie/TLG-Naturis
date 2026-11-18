@@ -10,7 +10,7 @@
     "soft": false,
     "chip_resist": 7,
     "repaired_with": "leather_patch",
-    "dmg_adj": [ "scratched", { "str": "cut", "ctxt": "material damage adjective" }, "shredded", "tattered" ],
+    "dmg_adj": ["scratched", { "str": "cut", "ctxt": "material damage adjective" }, "shredded", "tattered"],
     "bash_dmg_verb": "cracked",
     "cut_dmg_verb": "sliced",
     "acid_dmg_verb": "burned",
@@ -19,7 +19,9 @@
       { "fuel": 0.1, "smoke": 3, "burn": 0.002, "volume_per_turn": "500 ml" },
       { "fuel": 0.2, "smoke": 10, "burn": 0.004, "volume_per_turn": "1 L" }
     ],
-    "burn_products": [ [ "corpse_ash", 0.035 ] ],
+    "burn_products": [
+      ["corpse_ash", 0.035]
+    ],
     "resist": { "bash": 1.3, "cut": 3.2, "acid": 6, "heat": 2.5, "bullet": 2.0 },
     "repair_difficulty": 5
   },
@@ -34,14 +36,14 @@
     "soft": true,
     "chip_resist": 8,
     "breathability": "POOR",
-    "dmg_adj": [ "ripped", "torn", "shredded", "tattered" ],
+    "dmg_adj": ["ripped", "torn", "shredded", "tattered"],
     "bash_dmg_verb": "ripped",
     "cut_dmg_verb": { "str": "cut", "ctxt": "material cut damage verb" },
     "acid_dmg_verb": "singed",
     "wind_resist": 100,
     "resist": { "bash": 1.0, "cut": 1.5, "bullet": 0.5, "acid": 1, "heat": 10 }
   },
-    {
+  {
     "type": "material",
     "id": "crystallized_fur",
     "name": "crystallized fur",
@@ -63,10 +65,10 @@
       { "fuel": 0, "smoke": 0, "burn": 0 },
       { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
     ],
-"resist": { "bash": 1, "cut": 6, "acid": 15, "heat": 3, "bullet": 1 },
+    "resist": { "bash": 1, "cut": 6, "acid": 15, "heat": 3, "bullet": 1 },
     "repair_difficulty": 4
   },
-    {
+  {
     "type": "material",
     "id": "perennial_ice",
     "name": "perennial ice",
@@ -75,7 +77,7 @@
     "specific_heat_solid": 0.2,
     "latent_heat": 100,
     "chip_resist": 0,
-    "dmg_adj": [ "scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered" ],
+    "dmg_adj": ["scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered"],
     "bash_dmg_verb": "cracked",
     "cut_dmg_verb": "scratched",
     "acid_dmg_verb": "etched",
@@ -84,10 +86,12 @@
       { "fuel": 0, "smoke": 0, "burn": 0 },
       { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
     ],
-    "burn_products": [ [ "glass_shard", 0.5 ] ],
+    "burn_products": [
+      ["glass_shard", 0.5]
+    ],
     "resist": { "bash": 6, "cut": 6, "acid": 15, "heat": 5, "bullet": 2 }
   },
-    {
+  {
     "type": "material",
     "id": "crystal_hard",
     "name": "hard crystal",
@@ -97,7 +101,7 @@
     "specific_heat_solid": 0.2,
     "latent_heat": 100,
     "chip_resist": 0,
-    "dmg_adj": [ "scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered" ],
+    "dmg_adj": ["scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered"],
     "bash_dmg_verb": "cracked",
     "cut_dmg_verb": "scratched",
     "acid_dmg_verb": "etched",
@@ -106,11 +110,13 @@
       { "fuel": 0, "smoke": 0, "burn": 0 },
       { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
     ],
-    "burn_products": [ [ "glass_shard", 0.5 ] ],
+    "burn_products": [
+      ["glass_shard", 0.5]
+    ],
     "repair_difficulty": 4,
     "resist": { "bash": 20, "cut": 25, "acid": 15, "heat": 5, "bullet": 1 }
   }
   
   
   
-  ]
+]

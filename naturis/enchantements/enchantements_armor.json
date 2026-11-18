@@ -1,41 +1,40 @@
 [
-    {
-    "type": "enchantment",
-    "id": "enchant_zap_back",
-    "condition": "ALWAYS",
-    "has": "WORN",
-    "hit_me_effect": [{ "id": "zap_armor", "hit_self": false, "once_in": 3 }]
-  },
-    {
-    "type": "enchantment",
-    "id": "enchant_heat_resist",
-    "has": "WORN",
-    "condition": "ALWAYS",
-    "name": { "str": "heat resist" },
-    "description": ".",
-    "incoming_damage_mod": [{ "type": "heat", "multiply": -0.20 }]
-  },
-   {
-   "type": "enchantment",
-   "id": "enchant_enhanced_stamina",
-   "has": "WORN",
-   "condition": "ALWAYS",
-   "name": { "str": "enhanced stamina" },
-   "description": ".",
-   "values": [ { "value": "MAX_STAMINA", "add": 200 } ]
- },
-  {
-   "type": "enchantment",
-   "id": "enchant_fling",
-   "has": "WORN",
-   "hit_you_effect": [{ "id": "fling", "hit_self": false, "once_in": 5 }]
-   },
-     {
-    "type": "enchantment",
-    "id": "enchant_strong",
-    "has": "WORN",
+{
+  "type": "enchantment",
+  "id": "enchant_zap_back",
+  "condition": "ALWAYS",
+  "has": "WORN",
+  "hit_me_effect": [{ "id": "zap_armor", "hit_self": false, "once_in": 3 }]
+},
+{
+  "type": "enchantment",
+  "id": "enchant_heat_resist",
+  "has": "WORN",
+  "condition": "ALWAYS",
+  "name": { "str": "heat resist" },
+  "description": ".",
+  "incoming_damage_mod": [{ "type": "heat", "multiply": -0.20 }]
+},
+{
+  "type": "enchantment",
+  "id": "enchant_enhanced_stamina",
+  "has": "WORN",
+  "condition": "ALWAYS",
+  "name": { "str": "enhanced stamina" },
+  "description": ".",
+  "values": [{ "value": "MAX_STAMINA", "add": 200 }]
+},
+{
+  "type": "enchantment",
+  "id": "enchant_fling",
+  "has": "WORN",
+  "hit_you_effect": [{ "id": "fling", "hit_self": false, "once_in": 5 }]
+},
+{
+  "type": "enchantment",
+  "id": "enchant_strong",
+  "has": "WORN",
   "values": [
     { "value": "STRENGTH", "add": 1 }
   ]
-  }
-]
+}]

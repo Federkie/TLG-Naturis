@@ -6,84 +6,128 @@
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "fabrication",
-    "skills_required": [ [ "traps", 1 ], [ "archery", 3 ] ],
+    "skills_required": [
+      ["traps", 1],
+      ["archery", 3]
+    ],
     "difficulty": 5,
     "time": "3 h",
     "reversible": true,
     "decomp_learn": 2,
-    "autolearn": [ ["research", 5] ],
+    "autolearn": [
+      ["research", 5]
+    ],
     "proficiencies": [
       { "proficiency": "prof_bowyery", "time_multiplier": 1.5, "skill_penalty": 0.15 },
       { "proficiency": "prof_gunsmithing_spring" }
     ],
-    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
+    "qualities": [{ "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }],
     "components": [
-      [ [ "dragon_hair", 2 ] ], 
-     [ [ "living_wood", 2 ] ],
-      [ [ "scrap", 2 ] ],
-      [ [ "leather_patch", 1 ] ]
+      [
+        ["dragon_hair", 2]
+      ],
+      [
+        ["living_wood", 2]
+      ],
+      [
+        ["scrap", 2]
+      ],
+      [
+        ["leather_patch", 1]
+      ]
     ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "MODERATE_EXERCISE",
     "result": "f_rifle",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "mechanics",
-    "skills_required": [ [ "gun", 3 ] ],
+    "skills_required": [
+      ["gun", 3]
+    ],
     "difficulty": 7,
     "time": "4 h",
-    "autolearn": [ ["research", 7] ],
-    "using": [ [ "welding_standard", 1 ] ],
-    "qualities": [ { "id": "DRILL", "level": 1 }, { "id": "CUT", "level": 2 } ],
+    "autolearn": [
+      ["research", 7]
+    ],
+    "using": [
+      ["welding_standard", 1]
+    ],
+    "qualities": [{ "id": "DRILL", "level": 1 }, { "id": "CUT", "level": 2 }],
     "proficiencies": [
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_welding_basic" },
-      { "proficiency": 
-        "prof_carving" },
+      {
+        "proficiency": "prof_carving"
+      },
       { "proficiency": "prof_gunsmithing_improv" }
     ],
-    "components": [ 
-      [ [ "air_launcher", 1 ] ], 
-      [ [ "forest_pearl", 1 ] ],
-      [ [ "dragon_hair", 2 ] ],
-      [ [ "shard_fire", 1 ] ],
-      [ [ "living_wood", 1 ] ] 
+    "components": [
+      [
+        ["air_launcher", 1]
+      ],
+      [
+        ["forest_pearl", 1]
+      ],
+      [
+        ["dragon_hair", 2]
+      ],
+      [
+        ["shard_fire", 1]
+      ],
+      [
+        ["living_wood", 1]
+      ]
     ]
   },
   {
-  "type": "recipe",
-  "result": "rifle_resonance",
-  "activity_level": "BRISK_EXERCISE",
-  "category": "CC_WEAPON",
-  "subcategory": "CSC_WEAPON_RANGED",
-  "skill_used": "fabrication",
-  "difficulty": 8,
-  "time": "12 h",
-  "autolearn": [
-    [ "research", 8 ]
-  ],
-  "proficiencies": [
-    { "proficiency": "prof_metalworking" },
-    { "proficiency": "prof_welding_basic" },
-    { "proficiency": "prof_gunsmithing_improv" }
-  ],
-  "using": [ [ "welding_standard", 2 ] ],
-  "qualities": [
-    { "id": "WRENCH", "level": 2 },
-    { "id": "DRILL", "level": 2 },
-    { "id": "SAW_M", "level": 2 }
-  ],
-  "components": [
-    [ [ "crystal_core", 1 ] ],
-    [ [ "alloy_crystal", 4 ] ],
-    [ [ "copper_wire", 6 ] ],
-    [ [ "power_supply", 1 ] ],
-    [ [ "gun_module", 1 ] ],
-    [ [ "pipe", 1 ] ]
-  ]
-},
+    "type": "recipe",
+    "result": "rifle_resonance",
+    "activity_level": "BRISK_EXERCISE",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "12 h",
+    "autolearn": [
+      ["research", 8]
+    ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_welding_basic" },
+      { "proficiency": "prof_gunsmithing_improv" }
+    ],
+    "using": [
+      ["welding_standard", 2]
+    ],
+    "qualities": [
+      { "id": "WRENCH", "level": 2 },
+      { "id": "DRILL", "level": 2 },
+      { "id": "SAW_M", "level": 2 }
+    ],
+    "components": [
+      [
+        ["crystal_core", 1]
+      ],
+      [
+        ["alloy_crystal", 4]
+      ],
+      [
+        ["copper_wire", 6]
+      ],
+      [
+        ["power_supply", 1]
+      ],
+      [
+        ["gun_module", 1]
+      ],
+      [
+        ["pipe", 1]
+      ]
+    ]
+  },
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -91,46 +135,69 @@
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "fabrication",
-    "skills_required": [ "archery", 3 ],
+    "skills_required": ["archery", 3],
     "difficulty": 5,
     "time": "9 h",
     "decomp_learn": 1,
-    "proficiencies": [ { "proficiency": "prof_bowyery" }, { "proficiency": "prof_carving" } ],
+    "proficiencies": [{ "proficiency": "prof_bowyery" }, { "proficiency": "prof_carving" }],
     "autolearn": [
-       ["research", 3]
-        ],
-    "qualities": [ { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "stick_long", 1 ], [ "2x4", 1 ] ], [ [ "raptor_tendon", 2 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
+      ["research", 3]
+    ],
+    "qualities": [{ "id": "CUT", "level": 2 }],
+    "components": [
+      [
+        ["stick_long", 1],
+        ["2x4", 1]
+      ],
+      [
+        ["raptor_tendon", 2]
+      ],
+      [
+        ["cordage_superior", 2, "LIST"]
+      ]
+    ]
   },
   {
-  "type": "recipe",
-  "result": "root_circuit_rifle",
-  "activity_level": "BRISK_EXERCISE",
-  "category": "CC_WEAPON",
-  "subcategory": "CSC_WEAPON_RANGED",
-  "skill_used": "fabrication",
-  "difficulty": 8,
-  "time": "22 h",
-  "proficiencies": [
-    { "proficiency": "prof_monstermaterials" },
-    { "proficiency": "prof_carpentry_basic" }
-  ],
-  "qualities": [
-    { "id": "WRENCH", "level": 2 },
-    { "id": "DRILL", "level": 2 },
-    { "id": "SAW_W", "level": 2 }
-  ],
-  "components": [
-    [ [ "biological_conductor", 1 ] ],
-    [ [ "living_wood", 2 ] ],
-    [ [ "forest_enzyme", 4 ] ],
-    [ [ "golden_heart", 1 ] ],
-    [ [ "mycelium", 2 ] ],
-    [ [ "forest_pearl", 1 ] ]
-  ]
-}
-
-
-
-
+    "type": "recipe",
+    "result": "root_circuit_rifle",
+    "activity_level": "BRISK_EXERCISE",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "22 h",
+    "proficiencies": [
+      { "proficiency": "prof_monstermaterials" },
+      { "proficiency": "prof_carpentry_basic" }
+    ],
+    "qualities": [
+      { "id": "WRENCH", "level": 2 },
+      { "id": "DRILL", "level": 2 },
+      { "id": "SAW_W", "level": 2 }
+    ],
+    "components": [
+      [
+        ["biological_conductor", 1]
+      ],
+      [
+        ["living_wood", 2]
+      ],
+      [
+        ["forest_enzyme", 4]
+      ],
+      [
+        ["golden_heart", 1]
+      ],
+      [
+        ["mycelium", 2]
+      ],
+      [
+        ["forest_pearl", 1]
+      ]
+    ]
+  }
+  
+  
+  
+  
 ]

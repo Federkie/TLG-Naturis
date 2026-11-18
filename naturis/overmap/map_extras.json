@@ -1,114 +1,113 @@
 [
-  {
-    "type": "map_extra",
-    "id": "mx_naturis_nest",
-    "name": { "str": "naturis nest forest" },
-    "description": "The nest of an naturis beast in the forest.",
-    "generator": {
-      "generator_method": "update_mapgen",
-      "generator_id": "mx_naturis_nest"
-    },
-    "min_max_zlevel": [ 0, 0 ],
-    "sym": "F",
-    "color": "magenta",
-    "autonote": false
+{
+  "type": "map_extra",
+  "id": "mx_naturis_nest",
+  "name": { "str": "naturis nest forest" },
+  "description": "The nest of an naturis beast in the forest.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_nest"
   },
-    {
-    "type": "map_extra",
-    "id": "mx_naturis_nest_field",
-    "name": { "str": "naturis nest field" },
-    "description": "The nest of an naturis beast on the field.",
-    "generator": {
-      "generator_method": "update_mapgen",
-      "generator_id": "mx_naturis_nest_field"
-    },
-    "min_max_zlevel": [0, 0],
-    "sym": "F",
-    "color": "magenta",
-    "autonote": false
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_nest_field",
+  "name": { "str": "naturis nest field" },
+  "description": "The nest of an naturis beast on the field.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_nest_field"
   },
-   {
-   "type": "map_extra",
-   "id": "mx_naturis_swamp_additions",
-   "name": { "str": "naturis swamp additions" },
-   "description": "Map extras for the swamp.",
-   "generator": {
-     "generator_method": "update_mapgen",
-     "generator_id": "mx_naturis_swamp_additions"
-   },
-   "min_max_zlevel": [0, 0],
-   "sym": "F",
-   "color": "magenta",
-   "autonote": false
- },
-     {
-      "type": "map_extra",
-      "id": "mx_naturis_tracks_field",
-      "name": { "str": "naturis field tracks" },
-      "description": "Monster tracks.",
-      "generator": {
-        "generator_method": "update_mapgen",
-        "generator_id": "mx_naturis_tracks_field"
-      },
-      "min_max_zlevel": [0, 0],
-      "sym": "F",
-      "color": "magenta",
-      "autonote": false
-    },
-     {
-      "type": "map_extra",
-      "id": "mx_naturis_ressources",
-      "name": { "str": "naturis ressources" },
-      "description": "Natural Ressources.",
-      "generator": {
-        "generator_method": "update_mapgen",
-        "generator_id": "mx_naturis_ressources"
-      },
-      "min_max_zlevel": [0, 0],
-      "sym": "F",
-      "color": "magenta",
-      "autonote": false
-    },
-     {
-       "type": "map_extra",
-       "id": "mx_naturis_overgrown_buildings",
-       "name": { "str": "naturis ressources" },
-       "description": "Natural locations in buildings.",
-       "generator": {
-         "generator_method": "update_mapgen",
-         "generator_id": "mx_naturis_overgrown_buildings"
-       },
-       "min_max_zlevel": [0, 0],
-       "sym": "F",
-       "color": "magenta",
-       "autonote": false
-    },
-         {
-       "type": "map_extra",
-       "id": "mx_naturis_raptor_building",
-       "name": { "str": "naturis ressources" },
-       "description": "Small raptor nests in buildings.",
-       "generator": {
-         "generator_method": "update_mapgen",
-         "generator_id": "mx_naturis_raptor_building"
-       },
-       "min_max_zlevel": [0, 0],
-       "sym": "F",
-       "color": "magenta",
-       "autonote": false
-     },
-      {
-       "type": "map_extra",
-       "id": "mx_naturis_monster_markings",
-       "name": { "str": "naturis monster markings" },
-       "description": "Monster markings.",
-       "generator": {
-         "generator_method": "update_mapgen",
-         "generator_id": "mx_naturis_monster_markings"
-       },
-       "min_max_zlevel": [0, 0],
-       "sym": "F",
-       "color": "magenta",
-       "autonote": false
-     }
-]
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_swamp_additions",
+  "name": { "str": "naturis swamp additions" },
+  "description": "Map extras for the swamp.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_swamp_additions"
+  },
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_tracks_field",
+  "name": { "str": "naturis field tracks" },
+  "description": "Monster tracks.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_tracks_field"
+  },
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_ressources",
+  "name": { "str": "naturis ressources" },
+  "description": "Natural Ressources.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_ressources"
+  },
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_overgrown_buildings",
+  "name": { "str": "naturis ressources" },
+  "description": "Natural locations in buildings.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_overgrown_buildings"
+  },
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_raptor_building",
+  "name": { "str": "naturis ressources" },
+  "description": "Small raptor nests in buildings.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_raptor_building"
+  },
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+},
+{
+  "type": "map_extra",
+  "id": "mx_naturis_monster_markings",
+  "name": { "str": "naturis monster markings" },
+  "description": "Monster markings.",
+  "generator": {
+    "generator_method": "update_mapgen",
+    "generator_id": "mx_naturis_monster_markings"
+  },
+  "min_max_zlevel": [0, 0],
+  "sym": "F",
+  "color": "magenta",
+  "autonote": false
+}]

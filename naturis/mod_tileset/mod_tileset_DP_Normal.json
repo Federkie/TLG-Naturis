@@ -1,259 +1,279 @@
 [
-  {
-    "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus" ],
-    "tiles-new": [
-      {
-        "file": "mod_tileset/naturis_expan_dp_normal.png",
-        "sprite_width": 32,
-        "sprite_height": 32,
-        "tiles": [
-          { "id": "t_natur", "fg": 1, "rotates": false, "bg": 5 },
-          { "id": "t_natur_2", "fg": 2, "rotates": false, "bg": 5 },
-          { "id": "f_obelisk", "fg": 3, "rotates": false },
-          { "id": "f_obelisk_glow", "fg": 4, "rotates": false },
-          { "id": "mon_forest_dog", "fg": 6, "rotates": false, "bg": 5  },
-          { "id": ["f_natur_root", "fd_roots"], "fg": 7, "rotates": false },
-          { "id": "f_chair_grown", "fg": 8, "rotates": false },
-          { "id": "f_rack_coat_grown", "fg": 9, "rotates": false },
-          { "id": "f_trashcan_grown", "fg": 10, "rotates": false },
-          { "id": "f_stool_grown", "fg": 11, "rotates": false },
- {
-  "id": "f_dresser_grown", 
-  "fg": [
-    { "weight": 50, "sprite": 12 },
-    { "weight": 50, "sprite": 90 }
-  ],
-  "rotates": false,
-  "animated": false
-},
-          { "id": "t_m_mushroom", "fg": 13, "bg": 0 },
-          { "id": "mon_bone_snake", "fg": 30, "rotates": false, "bg": 5  },
-          { "id": "t_m_mushroom_harvested", "fg": 29, "bg": 0 },
-          { "id": "sword_rooted", "fg": 32, "rotates": false },
-          { "id": "mon_rainbird", "fg": 33, "rotates": false, "bg": 5 },
-          { "id": "plush_cthulu", "fg": 34, "rotates": false },
-          { "id": "overlay_wielded_sword_rooted", "fg": 35, "rotates": false },
-  {
-            "id": "mon_fire_anomaly",
-            "fg": [
-              { "weight": 25, "sprite": 36 },
-              { "weight": 25, "sprite": 37 },
-              { "weight": 25, "sprite": 38 },
-              { "weight": 25, "sprite": 39 }
-            ],
-            "rotates": false,
-            "animated": true
-          },
-  {
-            "id": "overlay_wielded_sword_burning_on",
-            "fg": [
-              { "weight": 25, "sprite": 40 },
-              { "weight": 25, "sprite": 41 },
-              { "weight": 25, "sprite": 43 },
-              { "weight": 25, "sprite": 42 }
-            ],
-            "rotates": false,
-            "animated": true
-          },
-          { "id": "overlay_wielded_sword_burning_off", "fg": 44, "rotates": false },
-  {
-            "id": "mon_acid_anomaly",
-            "fg": [
-              { "weight": 25, "sprite": 45 },
-              { "weight": 25, "sprite": 46 },
-              { "weight": 25, "sprite": 47 },
-              { "weight": 25, "sprite": 48 }
-            ],
-            "rotates": false,
-            "animated": true
-          },
-  {
-            "id": "mon_shock_anomaly",
-            "fg": [
-              { "weight": 25, "sprite": 49 },
-              { "weight": 25, "sprite": 50 },
-              { "weight": 25, "sprite": 51 },
-              { "weight": 25, "sprite": 52 }
-            ],
-            "rotates": false,
-            "animated": true
-          },
-  {
-            "id": "mon_gravity_anomaly",
-            "fg": [
-              { "weight": 25, "sprite": 53 },
-              { "weight": 25, "sprite": 54 },
-              { "weight": 25, "sprite": 55 },
-              { "weight": 25, "sprite": 56 }
-            ],
-            "rotates": false,
-            "animated": true
-          },
 {
-            "id": "mon_acid_anomaly_small",
-            "fg": [
-              { "weight": 30, "sprite": 57 },
-              { "weight": 30, "sprite": 58 },
-              { "weight": 30, "sprite": 59 }
-            ],
-            "rotates": false,
-            "animated": false
-          },
-          { "id": "fd_leaves", "fg": 60, "rotates": false },
-          { "id": "overlay_wielded_f_rifle", "fg": 61, "rotates": false },
-          { "id": "f_rifle", "fg": 62, "rotates": false },
-          { "id": "fd_leaves_pink", "fg": 63, "rotates": false },
-          { "id": "fd_spikes_ice","fg": 64, "rotates": false },
-          { "id": "permafrost_cleaver", "fg": 65, "rotates": false },
-          { "id": "overlay_wielded_permafrost_cleaver", "fg": 66, "rotates": false },
-          { "id": "fd_monster_track","fg": 67, "rotates": false },
-          { "id": "staff_claw","fg": 68, "rotates": false },
-          { "id": "overlay_wielded_staff_claw","fg": 69, "rotates": false },
-          { "id": "t_pink_flowers", "fg": 70, "rotates": false },
-          { "id": "t_pink_flowers_harvested", "fg": 71, "rotates": false },
-          { "id": "overlay_wielded_sword_static", "fg": 72, "rotates": false },
-          { "id": "sword_static", "fg": 73, "rotates": false },
-          { "id": "fd_monster_track_herb", "fg": 74, "rotates": false },
-          { "id": "t_crystal_pillar", "fg": 75, "rotates": false, "bg": 109 },
-          { "id": "fd_crystal_shards", "fg": 76, "rotates": false },
-          { "id": "mon_glow_cap", "fg": 77, "rotates": false, "bg": 5  },
- {
-  "id": "mon_small_raptor",
-  "fg": [
-    { "weight": 25, "sprite": 78 },
-    { "weight": 25, "sprite": 79 },
-    { "weight": 25, "sprite": 80 },
-    { "weight": 25, "sprite": 81 },
-    { "weight": 25, "sprite": 82 },
-    { "weight": 25, "sprite": 83 }
-  ],
-  "rotates": false,
-  "animated": false,
-  "bg": 5
-},
- { "id": "overlay_wielded_crystal_ax", "fg": 84, "rotates": false },
- { "id": "crystal_ax", "fg": 85, "rotates": false },
-   { "id": "tr_electric_hunting_trap", "fg": 91, "rotates": false },
-   { "id": "electric_hunting_trap", "fg": 92, "rotates": false },
-   { "id": "mon_crawler_bastion", "fg": 95, "rotates": false, "bg": 5  },
-   { "id": "spear_ice", "fg": 96, "rotates": false },
-   { "id": "ice_hammer", "fg": 97, "rotates": false },
-   { "id": "overlay_wielded_ice_spear", "fg": 98, "rotates": false },
-   { "id": "overlay_wielded_ice_hammer", "fg": 99, "rotates": false },
-   { "id": "mon_crystal_slurker", "fg": 100, "rotates": false, "bg": 5  },
-         {
-  "id": "t_dirt_crystal",
-  "fg": [
-    { "weight": 25, "sprite": 101 },
-    { "weight": 25, "sprite": 102 },
-    { "weight": 25, "sprite": 103 },
-    { "weight": 25, "sprite": 104 }
-  ],
-  "rotates": false,
-  "animated": false,
-  "bg": 109
-},
-   { "id": "t_beehive_crystal", "fg": 105, "rotates": false, "bg": 109  },
-   { "id": "fd_bee_swarm_crystal", "fg": 106, "rotates": false, "bg": 5  },
-   { "id": "t_heart_crystal", "fg": 107, "rotates": false, "bg": 109  },
-   { "id": "t_heart_crystal_destroyed", "fg": 108, "rotates": false, "bg": 109  },
-   { "id": "crystal_edge", "fg": 110, "rotates": false },
-   { "id": "overlay_wielded_crystal_edge", "fg": 111, "rotates": false },
-   
-   { "id": "fd_grounding", "fg": 112, "rotates": false, 
-     "multitile": true, 
-     "additional_tiles": [
-       {"id": "center", "fg": 113}, 
-       {"id": "corner", "fg": 114}, 
-       {"id": "edge", "fg": 115}, 
-       {"id": "t_connection", "fg": 116},
-       {"id": "end_piece", "fg": 117}, 
-       {"id": "unconnected", "fg": 112}
-                        ]
-                    },
-   { "id": [
-              "t_raptor_nest",
-              "t_rapid_nest"
-            ],
-     "fg": 118, "rotates": false, 
-     "multitile": true, 
-     "additional_tiles": [
-      {"id": "center", "fg": 119,  "bg": 109}, 
-       {"id": "corner", "fg": 120,  "bg": 109}, 
-       {"id": "edge", "fg": 121,  "bg": 109}, 
-       {"id": "t_connection", "fg": 122,  "bg": 109},
-       {"id": "end_piece", "fg": 123,  "bg": 109}, 
-       {"id": "unconnected", "fg": 118,  "bg": 109}
-                        ]
-                    },
-     { "id": "t_ice_perma", "fg": 124, 
-     "rotates": false, 
-     "multitile": true, 
-     "additional_tiles": [
-      {"id": "center", "fg": [
-        { "weight": 20, "sprite": 125 },
-        { "weight": 5, "sprite": 126  }
-            ], "bg": 109 },       
-       {"id": "corner", "fg": 127,  "bg": 109}, 
-       {"id": "edge", "fg": 128,  "bg": 109}, 
-       {"id": "t_connection", "fg": 129,  "bg": 109},
-       {"id": "end_piece", "fg": 130,  "bg": 109}, 
-       {"id": "unconnected", "fg": 124,  "bg": 109}
-                        ]
-                    },
-         { "id": "t_ice_flowers", "fg": 134, "rotates": false }, 
-         { "id": "t_ice_flowers_harvested", "fg": 135, "rotates": false },
-     { "id": "t_naturis_frost_stone", "fg": 136, 
-     "rotates": false, 
-     "multitile": true, 
-     "additional_tiles": [
-      {"id": "center", "fg": [
-        { "weight": 30, "sprite": 131 },
-        { "weight": 30, "sprite": 132 },
-        { "weight": 30, "sprite": 133  }
-            ] },       
-       {"id": "corner", "fg": 137 }, 
-       {"id": "edge", "fg": 138 }, 
-       {"id": "t_connection", "fg": 139 },
-       {"id": "end_piece", "fg": 140 }, 
-       {"id": "unconnected", "fg": 136 }
-                        ]
-                    },
-       { "id": "t_scratch_marks", "fg": 141, "rotates": false }, 
-       { "id": "t_egg_shells", "fg": 142, "rotates": false },
-    { "id": "fd_grinding_mark", "fg": 143, "rotates": false, 
-     "multitile": true, 
-     "additional_tiles": [
-       {"id": "center", "fg": 144}, 
-       {"id": "corner", "fg": 145}, 
-       {"id": "edge", "fg": 146}, 
-       {"id": "t_connection", "fg": 147},
-       {"id": "end_piece", "fg": 148}, 
-       {"id": "unconnected", "fg": 143}
-                        ]
-                    },
-          { "id": "mon_crystal_weaver", "fg": 149, "rotates": false, "bg": 5  },
-          { "id": "mon_ice_weaver", "fg": 150, "rotates": false, "bg": 5  },
-          { "id": "t_fungal_deposit", "fg": 151, "rotates": false, "bg": 5 }, 
-          { "id": "t_fungal_deposit_harvested", "fg": 152, "rotates": false, "bg": 5 },
-          { "id": "t_growing_dog", "fg": 153, "rotates": false },
-   { "id": "fd_raptor_track", "fg": 154, "rotates": false, 
-     "multitile": true, 
-     "additional_tiles": [
-       {"id": "center", "fg": 155}, 
-       {"id": "corner", "fg": 156}, 
-       {"id": "edge", "fg": 157}, 
-       {"id": "t_connection", "fg": 158},
-       {"id": "end_piece", "fg": 159}, 
-       {"id": "unconnected", "fg": 154}
-                        ]
-                    },
-   { "id": "overlay_wielded_root_circuit_rifle", "fg": 160, "rotates": false },
-   { "id": "root_circuit_rifle", "fg": 161 },
-   { "id": "mon_ember_stalker", "fg": 162, "rotates": false, "bg": 5  }
+  "type": "mod_tileset",
+  "compatibility": ["MshockXottoplus"],
+  "tiles-new": [
+  {
+    "file": "mod_tileset/naturis_expan_dp_normal.png",
+    "sprite_width": 32,
+    "sprite_height": 32,
+    "tiles": [
+      { "id": "t_natur", "fg": 1, "rotates": false, "bg": 5 },
+      { "id": "t_natur_2", "fg": 2, "rotates": false, "bg": 5 },
+      { "id": "f_obelisk", "fg": 3, "rotates": false },
+      { "id": "f_obelisk_glow", "fg": 4, "rotates": false },
+      { "id": "mon_forest_dog", "fg": 6, "rotates": false, "bg": 5 },
+      { "id": ["f_natur_root", "fd_roots"], "fg": 7, "rotates": false },
+      { "id": "f_chair_grown", "fg": 8, "rotates": false },
+      { "id": "f_rack_coat_grown", "fg": 9, "rotates": false },
+      { "id": "f_trashcan_grown", "fg": 10, "rotates": false },
+      { "id": "f_stool_grown", "fg": 11, "rotates": false },
+      {
+        "id": "f_dresser_grown",
+        "fg": [
+          { "weight": 50, "sprite": 12 },
+          { "weight": 50, "sprite": 90 }
+        ],
+        "rotates": false,
+        "animated": false
+      },
+      { "id": "t_m_mushroom", "fg": 13, "bg": 0 },
+      { "id": "mon_bone_snake", "fg": 30, "rotates": false, "bg": 5 },
+      { "id": "t_m_mushroom_harvested", "fg": 29, "bg": 0 },
+      { "id": "sword_rooted", "fg": 32, "rotates": false },
+      { "id": "mon_rainbird", "fg": 33, "rotates": false, "bg": 5 },
+      { "id": "plush_cthulu", "fg": 34, "rotates": false },
+      { "id": "overlay_wielded_sword_rooted", "fg": 35, "rotates": false },
+      {
+        "id": "mon_fire_anomaly",
+        "fg": [
+          { "weight": 25, "sprite": 36 },
+          { "weight": 25, "sprite": 37 },
+          { "weight": 25, "sprite": 38 },
+          { "weight": 25, "sprite": 39 }
+        ],
+        "rotates": false,
+        "animated": true
+      },
+      {
+        "id": "overlay_wielded_sword_burning_on",
+        "fg": [
+          { "weight": 25, "sprite": 40 },
+          { "weight": 25, "sprite": 41 },
+          { "weight": 25, "sprite": 43 },
+          { "weight": 25, "sprite": 42 }
+        ],
+        "rotates": false,
+        "animated": true
+      },
+      { "id": "overlay_wielded_sword_burning_off", "fg": 44, "rotates": false },
+      {
+        "id": "mon_acid_anomaly",
+        "fg": [
+          { "weight": 25, "sprite": 45 },
+          { "weight": 25, "sprite": 46 },
+          { "weight": 25, "sprite": 47 },
+          { "weight": 25, "sprite": 48 }
+        ],
+        "rotates": false,
+        "animated": true
+      },
+      {
+        "id": "mon_shock_anomaly",
+        "fg": [
+          { "weight": 25, "sprite": 49 },
+          { "weight": 25, "sprite": 50 },
+          { "weight": 25, "sprite": 51 },
+          { "weight": 25, "sprite": 52 }
+        ],
+        "rotates": false,
+        "animated": true
+      },
+      {
+        "id": "mon_gravity_anomaly",
+        "fg": [
+          { "weight": 25, "sprite": 53 },
+          { "weight": 25, "sprite": 54 },
+          { "weight": 25, "sprite": 55 },
+          { "weight": 25, "sprite": 56 }
+        ],
+        "rotates": false,
+        "animated": true
+      },
+      {
+        "id": "mon_acid_anomaly_small",
+        "fg": [
+          { "weight": 30, "sprite": 57 },
+          { "weight": 30, "sprite": 58 },
+          { "weight": 30, "sprite": 59 }
+        ],
+        "rotates": false,
+        "animated": false
+      },
+      { "id": "fd_leaves", "fg": 60, "rotates": false },
+      { "id": "overlay_wielded_f_rifle", "fg": 61, "rotates": false },
+      { "id": "f_rifle", "fg": 62, "rotates": false },
+      { "id": "fd_leaves_pink", "fg": 63, "rotates": false },
+      { "id": "fd_spikes_ice", "fg": 64, "rotates": false },
+      { "id": "permafrost_cleaver", "fg": 65, "rotates": false },
+      { "id": "overlay_wielded_permafrost_cleaver", "fg": 66, "rotates": false },
+      { "id": "fd_monster_track", "fg": 67, "rotates": false },
+      { "id": "staff_claw", "fg": 68, "rotates": false },
+      { "id": "overlay_wielded_staff_claw", "fg": 69, "rotates": false },
+      { "id": "t_pink_flowers", "fg": 70, "rotates": false },
+      { "id": "t_pink_flowers_harvested", "fg": 71, "rotates": false },
+      { "id": "overlay_wielded_sword_static", "fg": 72, "rotates": false },
+      { "id": "sword_static", "fg": 73, "rotates": false },
+      { "id": "fd_monster_track_herb", "fg": 74, "rotates": false },
+      { "id": "t_crystal_pillar", "fg": 75, "rotates": false, "bg": 109 },
+      { "id": "fd_crystal_shards", "fg": 76, "rotates": false },
+      { "id": "mon_glow_cap", "fg": 77, "rotates": false, "bg": 5 },
+      {
+        "id": "mon_small_raptor",
+        "fg": [
+          { "weight": 25, "sprite": 78 },
+          { "weight": 25, "sprite": 79 },
+          { "weight": 25, "sprite": 80 },
+          { "weight": 25, "sprite": 81 },
+          { "weight": 25, "sprite": 82 },
+          { "weight": 25, "sprite": 83 }
+        ],
+        "rotates": false,
+        "animated": false,
+        "bg": 5
+      },
+      { "id": "overlay_wielded_crystal_ax", "fg": 84, "rotates": false },
+      { "id": "crystal_ax", "fg": 85, "rotates": false },
+      { "id": "tr_electric_hunting_trap", "fg": 91, "rotates": false },
+      { "id": "electric_hunting_trap", "fg": 92, "rotates": false },
+      { "id": "mon_crawler_bastion", "fg": 95, "rotates": false, "bg": 5 },
+      { "id": "spear_ice", "fg": 96, "rotates": false },
+      { "id": "ice_hammer", "fg": 97, "rotates": false },
+      { "id": "overlay_wielded_ice_spear", "fg": 98, "rotates": false },
+      { "id": "overlay_wielded_ice_hammer", "fg": 99, "rotates": false },
+      { "id": "mon_crystal_slurker", "fg": 100, "rotates": false, "bg": 5 },
+      {
+        "id": "t_dirt_crystal",
+        "fg": [
+          { "weight": 25, "sprite": 101 },
+          { "weight": 25, "sprite": 102 },
+          { "weight": 25, "sprite": 103 },
+          { "weight": 25, "sprite": 104 }
+        ],
+        "rotates": false,
+        "animated": false,
+        "bg": 109
+      },
+      { "id": "t_beehive_crystal", "fg": 105, "rotates": false, "bg": 109 },
+      { "id": "fd_bee_swarm_crystal", "fg": 106, "rotates": false, "bg": 5 },
+      { "id": "t_heart_crystal", "fg": 107, "rotates": false, "bg": 109 },
+      { "id": "t_heart_crystal_destroyed", "fg": 108, "rotates": false, "bg": 109 },
+      { "id": "crystal_edge", "fg": 110, "rotates": false },
+      { "id": "overlay_wielded_crystal_edge", "fg": 111, "rotates": false },
+      
+      {
+        "id": "fd_grounding",
+        "fg": 112,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          { "id": "center", "fg": 113 },
+          { "id": "corner", "fg": 114 },
+          { "id": "edge", "fg": 115 },
+          { "id": "t_connection", "fg": 116 },
+          { "id": "end_piece", "fg": 117 },
+          { "id": "unconnected", "fg": 112 }
         ]
-      }
+      },
+      {
+        "id": [
+          "t_raptor_nest",
+          "t_rapid_nest"
+        ],
+        "fg": 118,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          { "id": "center", "fg": 119, "bg": 109 },
+          { "id": "corner", "fg": 120, "bg": 109 },
+          { "id": "edge", "fg": 121, "bg": 109 },
+          { "id": "t_connection", "fg": 122, "bg": 109 },
+          { "id": "end_piece", "fg": 123, "bg": 109 },
+          { "id": "unconnected", "fg": 118, "bg": 109 }
+        ]
+      },
+      {
+        "id": "t_ice_perma",
+        "fg": 124,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          {
+            "id": "center",
+            "fg": [
+              { "weight": 20, "sprite": 125 },
+              { "weight": 5, "sprite": 126 }
+            ],
+            "bg": 109
+          },
+          { "id": "corner", "fg": 127, "bg": 109 },
+          { "id": "edge", "fg": 128, "bg": 109 },
+          { "id": "t_connection", "fg": 129, "bg": 109 },
+          { "id": "end_piece", "fg": 130, "bg": 109 },
+          { "id": "unconnected", "fg": 124, "bg": 109 }
+        ]
+      },
+      { "id": "t_ice_flowers", "fg": 134, "rotates": false },
+      { "id": "t_ice_flowers_harvested", "fg": 135, "rotates": false },
+      {
+        "id": "t_naturis_frost_stone",
+        "fg": 136,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          {
+            "id": "center",
+            "fg": [
+              { "weight": 30, "sprite": 131 },
+              { "weight": 30, "sprite": 132 },
+              { "weight": 30, "sprite": 133 }
+            ]
+          },
+          { "id": "corner", "fg": 137 },
+          { "id": "edge", "fg": 138 },
+          { "id": "t_connection", "fg": 139 },
+          { "id": "end_piece", "fg": 140 },
+          { "id": "unconnected", "fg": 136 }
+        ]
+      },
+      { "id": "t_scratch_marks", "fg": 141, "rotates": false },
+      { "id": "t_egg_shells", "fg": 142, "rotates": false },
+      {
+        "id": "fd_grinding_mark",
+        "fg": 143,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          { "id": "center", "fg": 144 },
+          { "id": "corner", "fg": 145 },
+          { "id": "edge", "fg": 146 },
+          { "id": "t_connection", "fg": 147 },
+          { "id": "end_piece", "fg": 148 },
+          { "id": "unconnected", "fg": 143 }
+        ]
+      },
+      { "id": "mon_crystal_weaver", "fg": 149, "rotates": false, "bg": 5 },
+      { "id": "mon_ice_weaver", "fg": 150, "rotates": false, "bg": 5 },
+      { "id": "t_fungal_deposit", "fg": 151, "rotates": false, "bg": 5 },
+      { "id": "t_fungal_deposit_harvested", "fg": 152, "rotates": false, "bg": 5 },
+      { "id": "t_growing_dog", "fg": 153, "rotates": false },
+      {
+        "id": "fd_raptor_track",
+        "fg": 154,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          { "id": "center", "fg": 155 },
+          { "id": "corner", "fg": 156 },
+          { "id": "edge", "fg": 157 },
+          { "id": "t_connection", "fg": 158 },
+          { "id": "end_piece", "fg": 159 },
+          { "id": "unconnected", "fg": 154 }
+        ]
+      },
+      { "id": "overlay_wielded_root_circuit_rifle", "fg": 160, "rotates": false },
+      { "id": "root_circuit_rifle", "fg": 161 },
+      { "id": "mon_ember_stalker", "fg": 162, "rotates": false, "bg": 5 }
     ]
-  }
-]
+  }]
+}]

@@ -1,110 +1,216 @@
 [
-  {
-    "type": "terrain",
-    "id": "t_natur",
-    "name": "natural grass",
-    "description": "An area of hardy grass about ankle high.",
-    "symbol": ".",
-    "color": "green",
-    "move_cost": 2,
-    "flags": [ "DIGGABLE", "FLAT", "PLOWABLE", "GRAZABLE" ],
-    "bash": { "sound": "thump", "ter_set": "t_dirt", "str_min": 15, "str_max": 40, "bash_below": true }
-   },
 {
-    "type": "terrain",
-    "id": "t_m_mushroom",
-    "name": "magic mushroom",
-    "description": "Strange mushrooms that are somewhat reminiscent of fly agarics.",
-    "symbol": "#",
-    "color": "red",
-    "move_cost": 3,
-    "coverage": 20,
-    "concealment": 20,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "SMALL_HIDE" ],
-    "examine_action": "harvest_ter",
-    "harvest_by_season": [ { "seasons": [ "spring" ], "id": "shroom_harvest" } ],
-    "transforms_into": "t_m_mushroom_harvested",
-    "bash": {
-      "str_min": 2,
-      "str_max": 6,
-      "sound": "crunch.",
-      "sound_fail": "whish.",
-      "ter_set": "t_dirt",
-      "items": [ { "item": "withered", "prob": 50, "count": [ 1, 2 ] }, { "item": "leaves", "count": [ 1, 2 ] } ]
-    }
-  },
+  "type": "terrain",
+  "id": "t_natur",
+  "name": "natural grass",
+  "description": "An area of hardy grass about ankle high.",
+  "symbol": ".",
+  "color": "green",
+  "move_cost": 2,
+  "flags": [
+    "DIGGABLE",
+    "FLAT",
+    "PLOWABLE",
+    "GRAZABLE"
+  ],
+  "bash": {
+    "sound": "thump",
+    "ter_set": "t_dirt",
+    "str_min": 15,
+    "str_max": 40,
+    "bash_below": true
+  }
+},
 {
-    "type": "terrain",
-    "id": "t_m_mushroom_harvested",
-    "name": "magic mushroom",
-    "description": "A short plant harvested.",
-    "symbol": "#",
-    "color": "red",
-    "move_cost": 3,
-    "coverage": 20,
-    "concealment": 20,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE" ],
-    "examine_action": "harvested_plant",
-    "transforms_into": "t_m_mushroom",
-    "bash": {
-      "str_min": 2,
-      "str_max": 6,
-      "sound": "crunch.",
-      "sound_fail": "whish.",
-      "ter_set": "t_dirt",
-      "items": [ { "item": "withered", "prob": 50, "count": [ 1, 2 ] }, { "item": "leaves", "count": [ 1, 2 ] } ]
-    }
-  },
+  "type": "terrain",
+  "id": "t_m_mushroom",
+  "name": "magic mushroom",
+  "description": "Strange mushrooms that are somewhat reminiscent of fly agarics.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 20,
+  "concealment": 20,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SMALL_HIDE"
+  ],
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
   {
-    "type": "terrain",
-    "id": "t_natur_2",
-    "name": "natural grass with roots",
-    "description": "An area of hardy grass about ankle high.",
-    "symbol": ".",
-    "color": "green",
-    "move_cost": 3,
-    "flags": [ "TRANSPARENT", "DIGGABLE", "FLAT", "PLOWABLE", "GRAZABLE" ],
-    "bash": { "sound": "thump", "ter_set": "t_dirt", "str_min": 15, "str_max": 40, "bash_below": true }
-   },
-     {
-    "type": "terrain",
-    "id": "t_ice_thin",
-    "name": "thin ice",
-    "looks_like": "t_ice_sh_thick",
-    "description": "A thin layer of ice.  It may not support much weight.",
-    "symbol": "/",
-    "color": "light_cyan",
-    "move_cost": 4,
-    "trap": "tr_thin_ice",
-    "examine_action": "thin_ice",
-    "bash": { "str_min": 3, "str_max": 6, "sound": "crack!", "ter_set": "t_grass" },
-    "flags": ["THIN_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
-  },
+    "seasons": [
+      "spring"
+    ],
+    "id": "shroom_harvest"
+  }],
+  "transforms_into": "t_m_mushroom_harvested",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [
     {
-    "type": "terrain",
-    "id": "t_ice_thick",
-    "name": "ice",
-    "looks_like": "t_ice_dp_thick",
-    "description": "A sheet of ice.",
-    "symbol": "/",
-    "color": "cyan",
-    "move_cost": 2,
-    "bash": { "str_min": 80, "str_max": 180, "sound": "crack!", "ter_set": "t_grass" },
-    "flags": ["THICK_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
-  },
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
     {
-    "type": "terrain",
-    "id": "t_ice_pillar",
-    "name": "ice",
-    "looks_like": "t_ice_dp_thick",
-    "description": "A pillar of ice.",
-    "symbol": "/",
-    "color": "cyan",
-    "move_cost": -1,
-    "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_ice_thin" },
-    "flags": ["THICK_ICE", "TRANSPARENT", "FLAT", "PHASE_BACK"]
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_m_mushroom_harvested",
+  "name": "magic mushroom",
+  "description": "A short plant harvested.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 20,
+  "concealment": 20,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "HARVESTED",
+    "SMALL_HIDE"
+  ],
+  "examine_action": "harvested_plant",
+  "transforms_into": "t_m_mushroom",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_natur_2",
+  "name": "natural grass with roots",
+  "description": "An area of hardy grass about ankle high.",
+  "symbol": ".",
+  "color": "green",
+  "move_cost": 3,
+  "flags": [
+    "TRANSPARENT",
+    "DIGGABLE",
+    "FLAT",
+    "PLOWABLE",
+    "GRAZABLE"
+  ],
+  "bash": {
+    "sound": "thump",
+    "ter_set": "t_dirt",
+    "str_min": 15,
+    "str_max": 40,
+    "bash_below": true
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_ice_thin",
+  "name": "thin ice",
+  "looks_like": "t_ice_sh_thick",
+  "description": "A thin layer of ice.  It may not support much weight.",
+  "symbol": "/",
+  "color": "light_cyan",
+  "move_cost": 4,
+  "trap": "tr_thin_ice",
+  "examine_action": "thin_ice",
+  "bash": {
+    "str_min": 3,
+    "str_max": 6,
+    "sound": "crack!",
+    "ter_set": "t_grass"
   },
-  {
+  "flags": [
+    "THIN_ICE",
+    "TRANSPARENT",
+    "FLAT",
+    "PHASE_BACK"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_ice_thick",
+  "name": "ice",
+  "looks_like": "t_ice_dp_thick",
+  "description": "A sheet of ice.",
+  "symbol": "/",
+  "color": "cyan",
+  "move_cost": 2,
+  "bash": {
+    "str_min": 80,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_grass"
+  },
+  "flags": [
+    "THICK_ICE",
+    "TRANSPARENT",
+    "FLAT",
+    "PHASE_BACK"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_ice_pillar",
+  "name": "ice",
+  "looks_like": "t_ice_dp_thick",
+  "description": "A pillar of ice.",
+  "symbol": "/",
+  "color": "cyan",
+  "move_cost": -1,
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_ice_thin"
+  },
+  "flags": [
+    "THICK_ICE",
+    "TRANSPARENT",
+    "FLAT",
+    "PHASE_BACK"
+  ]
+},
+{
   "type": "terrain",
   "id": "t_pink_flowers",
   "name": "pink flowers",
@@ -114,9 +220,23 @@
   "move_cost": 3,
   "coverage": 10,
   "concealment": 10,
-  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "SMALL_HIDE"],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SMALL_HIDE"
+  ],
   "examine_action": "harvest_ter",
-  "harvest_by_season": [{ "seasons": ["spring"], "id": "leaves_pink_harvest" }],
+  "harvest_by_season": [
+  {
+    "seasons": [
+      "spring"
+    ],
+    "id": "leaves_pink_harvest"
+  }],
   "transforms_into": "t_pink_flowers_harvested",
   "bash": {
     "str_min": 2,
@@ -124,7 +244,22 @@
     "sound": "crunch.",
     "sound_fail": "whish.",
     "ter_set": "t_dirt",
-    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
   }
 },
 {
@@ -137,7 +272,16 @@
   "move_cost": 3,
   "coverage": 5,
   "concealment": 5,
-  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE"],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "HARVESTED",
+    "SMALL_HIDE"
+  ],
   "examine_action": "harvested_plant",
   "transforms_into": "t_pink_flowers",
   "bash": {
@@ -146,183 +290,316 @@
     "sound": "crunch.",
     "sound_fail": "whish.",
     "ter_set": "t_dirt",
-    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
   }
 },
+{
+  "type": "terrain",
+  "id": "t_tree_static",
+  "name": "static tree",
+  "looks_like": "t_tree_dead",
+  "roof": "t_treetop",
+  "description": "A dead tree, split by a deep crack as if struck by lightning. Nearby, there is a constant crackling and snapping, as though remnants of energy still linger.",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost": 0,
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
   {
-    "type": "terrain",
-    "id": "t_tree_static",
-    "name": "static tree",
-    "looks_like": "t_tree_dead",
-    "roof": "t_treetop",
-    "description": "A dead tree, split by a deep crack as if struck by lightning. Nearby, there is a constant crackling and snapping, as though remnants of energy still linger.",
-    "symbol": "7",
-    "color": "brown",
-    "move_cost": 0,
-    "examine_action": "harvest_ter",
-   "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn", "winter" ], "id": "tree_static_harv" } ],
-    "transforms_into": "t_tree_static_dead", 
-    "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
-    "bash": {
-      "str_min": 70,
-      "str_max": 140,
-      "sound": "crunch!",
-      "sound_fail": "whack!",
-      "ter_set": "t_dirt",
-      "items": [
-        { "item": "charged_wood", "count": [1, 4] },
-        { "item": "stick", "count": [1, 4] },
-        { "item": "shard_electric", "count": [5, 15] }
-      ]
-    }
-  },
-
-  {
-    "type": "terrain",
-    "id": "t_tree_static_dead", 
-    "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
-    "name": "static tree",
-    "looks_like": "t_tree_dead",
-    "roof": "t_treetop",
-    "description": "A hollowed-out, dead tree, split by a deep fissure as if struck by lightning. Nearby, there is a constant crackling and popping, as though remnants of energy still linger.",
-    "symbol": "7",
-    "color": "brown",
-    "move_cost": 0,
-    "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
-    "bash": {
-      "str_min": 70,
-      "str_max": 140,
-      "sound": "crunch!",
-      "sound_fail": "whack!",
-      "ter_set": "t_dirt",
-      "items": [
-        { "item": "charged_wood", "count": [1, 4] },
-        { "item": "stick", "count": [1, 4] },
-        { "item": "shard_electric", "count": [5, 15] }
-      ]
-    }
-  },
-  {
-    "type": "terrain",
-    "id": "t_naturis_cold_stone",
-    "name": "frost stone",
-    "description": "A cold breath surrounds the rock formation.",
-    "symbol": "*",
-    "looks_like": "t_dirt_rocky",
-    "color": "light_blue",
-    "move_cost": 1,
-    "flags": [ "TRANSPARENT" ],
-    "emissions": [ "emit_cold_air3_blast" ]
-  },
-    {
-    "type": "terrain",
-    "id": "t_naturis_hot_stone",
-    "name": "heat stone",
-    "description": "This stone floor radiates a warmth that is initially pleasant.",
-    "symbol": "*",
-    "looks_like": "t_dirt_rocky",
-    "color": "light_blue",
-    "move_cost": 1,
-    "flags": ["TRANSPARENT"],
-    "emissions": ["emit_hot_air2_blast"]
-  },
-    {
-    "type": "terrain",
-    "id": "t_crystal_pillar",
-    "name": "crystal pillar",
-    "description": "A pillar of crystal.",
-    "symbol": "/",
-    "color": "cyan",
-    "move_cost": -1,
-    "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
-    "flags": ["TRANSPARENT"]
-  },
-    {
-    "type": "terrain",
-    "id": "t_tree_burned",
-    "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
-    "name": "burned tree",
-    "looks_like": "t_tree_dead",
-    "roof": "t_treetop",
-    "description": "The remains of a tree burnt to charcoal.",
-    "symbol": "7",
-    "color": "brown",
-    "move_cost": 0,
-    "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
-    "bash": {
-      "str_min": 50,
-      "str_max": 80,
-      "sound": "crunch!",
-      "sound_fail": "whack!",
-      "ter_set": "t_dirt",
-      "items": [
-        { "item": "charcoal", "count": [1, 4] },
-        { "item": "stick", "count": [1, 4] }
-      ]
-    }
-  },
-    {
-    "type": "terrain",
-    "id": "t_tree_hollowed",
-    "name": "hollowed-out tree",
-    "description": "A large, old tree, whose hollow trunk offers a comfortable place to spend the night.",
-    "symbol": "#",
-    "color": "brown_green",
-    "looks_like": "t_leanto",
-    "floor_bedding_warmth": 1200,
-    "comfort": 4,
-    "move_cost": 2,
-    "coverage": 30,
-    "concealment": 30,
-    "connect_groups": "INDOORFLOOR",
-    "flags": [
-      "TRANSPARENT",
-      "CONTAINER",
-      "THIN_OBSTACLE",
-      "REDUCE_SCENT",
-      "INDOORS",
-      "FLAMMABLE_ASH",
-      "TINDER",
-      "MOUNTABLE",
-      "HIDE_PLACE"
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
     ],
-    "bash": {
-      "str_min": 4,
-      "str_max": 60,
-      "sound": "crunch.",
-      "sound_fail": "brush.",
-      "ter_set": "t_dirt",
-      "items": [
-        { "item": "stick", "count": [3, 15] },
-        { "item": "withered", "count": [40, 80] }
+    "id": "tree_static_harv"
+  }],
+  "transforms_into": "t_tree_static_dead",
+  "flags": [
+    "FLAMMABLE",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "PERMEABLE",
+    "CLIMB_ADJACENT"
+  ],
+  "bash": {
+    "str_min": 70,
+    "str_max": 140,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "charged_wood",
+      "count": [
+        1,
+        4
       ]
-    }
-  },
-      {
-      "type": "terrain",
-      "id": "t_tree_crystal",
-      "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
-      "name": "crystal tree",
-      "looks_like": "t_tree_dead",
-      "roof": "t_treetop",
-      "description": "The crystalline remains of a tree. Its former leaves are sharp and clatter in the wind.",
-      "symbol": "7",
-      "color": "brown",
-      "move_cost": 0,
-      "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
-      "bash": {
-        "str_min": 50,
-        "str_max": 80,
-        "sound": "crunch!",
-        "sound_fail": "whack!",
-        "ter_set": "t_dirt",
-        "items": [
-          { "item": "shard_crystal", "count": [1, 4] },
-          { "item": "stick", "count": [1, 4] }
-        ]
-      }
     },
- {
+    {
+      "item": "stick",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "shard_electric",
+      "count": [
+        5,
+        15
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_tree_static_dead",
+  "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+  "name": "static tree",
+  "looks_like": "t_tree_dead",
+  "roof": "t_treetop",
+  "description": "A hollowed-out, dead tree, split by a deep fissure as if struck by lightning. Nearby, there is a constant crackling and popping, as though remnants of energy still linger.",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost": 0,
+  "flags": [
+    "FLAMMABLE",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "PERMEABLE",
+    "CLIMB_ADJACENT"
+  ],
+  "bash": {
+    "str_min": 70,
+    "str_max": 140,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "charged_wood",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "stick",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "shard_electric",
+      "count": [
+        5,
+        15
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_naturis_cold_stone",
+  "name": "frost stone",
+  "description": "A cold breath surrounds the rock formation.",
+  "symbol": "*",
+  "looks_like": "t_dirt_rocky",
+  "color": "light_blue",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "emissions": [
+    "emit_cold_air3_blast"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_naturis_hot_stone",
+  "name": "heat stone",
+  "description": "This stone floor radiates a warmth that is initially pleasant.",
+  "symbol": "*",
+  "looks_like": "t_dirt_rocky",
+  "color": "light_blue",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "emissions": [
+    "emit_hot_air2_blast"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_crystal_pillar",
+  "name": "crystal pillar",
+  "description": "A pillar of crystal.",
+  "symbol": "/",
+  "color": "cyan",
+  "move_cost": -1,
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
+  },
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_tree_burned",
+  "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+  "name": "burned tree",
+  "looks_like": "t_tree_dead",
+  "roof": "t_treetop",
+  "description": "The remains of a tree burnt to charcoal.",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost": 0,
+  "flags": [
+    "FLAMMABLE",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "PERMEABLE",
+    "CLIMB_ADJACENT"
+  ],
+  "bash": {
+    "str_min": 50,
+    "str_max": 80,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "charcoal",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "stick",
+      "count": [
+        1,
+        4
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_tree_hollowed",
+  "name": "hollowed-out tree",
+  "description": "A large, old tree, whose hollow trunk offers a comfortable place to spend the night.",
+  "symbol": "#",
+  "color": "brown_green",
+  "looks_like": "t_leanto",
+  "floor_bedding_warmth": 1200,
+  "comfort": 4,
+  "move_cost": 2,
+  "coverage": 30,
+  "concealment": 30,
+  "connect_groups": "INDOORFLOOR",
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "THIN_OBSTACLE",
+    "REDUCE_SCENT",
+    "INDOORS",
+    "FLAMMABLE_ASH",
+    "TINDER",
+    "MOUNTABLE",
+    "HIDE_PLACE"
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "stick",
+      "count": [
+        3,
+        15
+      ]
+    },
+    {
+      "item": "withered",
+      "count": [
+        40,
+        80
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_tree_crystal",
+  "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+  "name": "crystal tree",
+  "looks_like": "t_tree_dead",
+  "roof": "t_treetop",
+  "description": "The crystalline remains of a tree. Its former leaves are sharp and clatter in the wind.",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost": 0,
+  "flags": [
+    "FLAMMABLE",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "PERMEABLE",
+    "CLIMB_ADJACENT"
+  ],
+  "bash": {
+    "str_min": 50,
+    "str_max": 80,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "shard_crystal",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "stick",
+      "count": [
+        1,
+        4
+      ]
+    }]
+  }
+},
+{
   "type": "terrain",
   "id": "t_crystal_pillar_large",
   "name": "large crystal pillar",
@@ -331,120 +608,204 @@
   "color": "cyan",
   "coverage": 25,
   "move_cost": -1,
-    "examine_action": "harvest_ter",
-   "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn", "winter" ], "id": "crystal_pillar_large_harvest" } ],
-    "transforms_into": "t_crystal_pillar_large_harv",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+  {
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "id": "crystal_pillar_large_harvest"
+  }],
+  "transforms_into": "t_crystal_pillar_large_harv",
   "bash": {
     "str_min": 60,
     "str_max": 180,
     "sound": "crack!",
     "ter_set": "t_dirt_rocky"
   },
-  "flags": ["TRANSPARENT"]
+  "flags": [
+    "TRANSPARENT"
+  ]
 },
-            {
-          "type": "terrain",
-          "id": "t_crystal_pillar_large_harv",
-          "name": "large crystal pillar",
-          "description": "A pillar of crystal.",
-          "looks_like": "t_crystal_pillar_large",
-          "symbol": "/",
-          "color": "cyan",
-          "coverage": 25,
-          "move_cost": -1,
-          "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
-          "flags": ["TRANSPARENT"]
-        },
-      {
-    "type": "terrain",
-    "id": "t_beehive_crystal",
-    "name": "crystal bee hive",
-    "description": "A crystalline beehive. It hums all around with industrious bees.",
-    "symbol": "h",
-    "color": ["yellow"],
-    "move_cost": 0,
-    "coverage": 10,
-    "concealment": 10,
-    "flags": ["FLAMMABLE_ASH", "NOITEM"],
-    "examine_action": "harvest_ter",
-    "harvest_by_season": [{ "seasons": ["summer", "autumn"], "id": "beehive_crystal_harv" }],
-    "transforms_into": "t_stump",
-    "emissions": ["emit_crystal_bees"],
-    "bash": {
-      "str_min": 2,
-      "str_max": 5,
-      "sound": "crunch!",
-      "sound_fail": "whack!",
-      "ter_set": "t_tree",
-      "items": [{ "item": "wax", "count": [2, 4] }, { "item": "honeycomb", "count": [3, 6] }]
-    }
+{
+  "type": "terrain",
+  "id": "t_crystal_pillar_large_harv",
+  "name": "large crystal pillar",
+  "description": "A pillar of crystal.",
+  "looks_like": "t_crystal_pillar_large",
+  "symbol": "/",
+  "color": "cyan",
+  "coverage": 25,
+  "move_cost": -1,
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
   },
-        {
-        "type": "terrain",
-        "id": "t_heart_crystal",
-        "name": "crystal heart",
-        "description": "A large, glowing crystal. It looks as though something is hidden inside it.",
-        "symbol": "h",
-        "color": ["yellow"],
-        "move_cost": 0,
-        "coverage": 15,
-        "concealment": 10,
-        "light_emitted": 3,
-        "flags": ["NOITEM"],
-        "examine_action": "harvest_ter",
-        "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn", "winter"], "id": "heart_crystal_harv" }],
-        "transforms_into": "t_heart_crystal_destroyed",
-        "emissions": ["emit_crystal_bees"],
-        "bash": {
-          "str_min": 25,
-          "str_max": 45,
-          "sound": "crunch!",
-          "sound_fail": "whack!",
-          "ter_set": "t_dirt",
-          "items": [{ "item": "shard_crystal", "count": [3, 6] }]
-        }
-      },
-            {
-        "type": "terrain",
-        "id": "t_heart_crystal_destroyed",
-        "name": "destroyed crystal heart",
-        "description": "A large, broken crystal. There is nothing of interest left to be found here.",
-        "symbol": "h",
-        "color": ["yellow"],
-        "move_cost": 0,
-        "coverage": 15,
-        "concealment": 10,
-        "flags": ["NOITEM"],
-        "bash": {
-          "str_min": 5,
-          "str_max": 15,
-          "sound": "crunch!",
-          "sound_fail": "whack!",
-          "ter_set": "t_dirt",
-          "items": [{ "item": "shard_crystal", "count": [2, 4] }]
-        }
-      },
-        {
-    "type": "terrain",
-    "id": "t_dirt_crystal",
-    "name": "rocky soil",
-    "description": "Various fragments and chunks of formerly large crystal structures.",
-    "symbol": ".",
-    "coverage": 0,
-    "color": "light_gray",
-    "looks_like": "t_railroad_rubble",
-    "move_cost": 2,
-    "flags": ["TRANSPARENT", "DIGGABLE", "FLAT", "TIRE_DAMAGE"],
-    "bash": {
-      "sound": "thump",
-      "ter_set": "t_open_air",
-      "str_min": 110,
-      "str_max": 220,
-      "str_min_supported": 100,
-      "bash_below": true
-    }
-  },
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_beehive_crystal",
+  "name": "crystal bee hive",
+  "description": "A crystalline beehive. It hums all around with industrious bees.",
+  "symbol": "h",
+  "color": [
+    "yellow"
+  ],
+  "move_cost": 0,
+  "coverage": 10,
+  "concealment": 10,
+  "flags": [
+    "FLAMMABLE_ASH",
+    "NOITEM"
+  ],
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
   {
+    "seasons": [
+      "summer",
+      "autumn"
+    ],
+    "id": "beehive_crystal_harv"
+  }],
+  "transforms_into": "t_stump",
+  "emissions": [
+    "emit_crystal_bees"
+  ],
+  "bash": {
+    "str_min": 2,
+    "str_max": 5,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_tree",
+    "items": [
+    {
+      "item": "wax",
+      "count": [
+        2,
+        4
+      ]
+    },
+    {
+      "item": "honeycomb",
+      "count": [
+        3,
+        6
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_heart_crystal",
+  "name": "crystal heart",
+  "description": "A large, glowing crystal. It looks as though something is hidden inside it.",
+  "symbol": "h",
+  "color": [
+    "yellow"
+  ],
+  "move_cost": 0,
+  "coverage": 15,
+  "concealment": 10,
+  "light_emitted": 3,
+  "flags": [
+    "NOITEM"
+  ],
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+  {
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "id": "heart_crystal_harv"
+  }],
+  "transforms_into": "t_heart_crystal_destroyed",
+  "emissions": [
+    "emit_crystal_bees"
+  ],
+  "bash": {
+    "str_min": 25,
+    "str_max": 45,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "shard_crystal",
+      "count": [
+        3,
+        6
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_heart_crystal_destroyed",
+  "name": "destroyed crystal heart",
+  "description": "A large, broken crystal. There is nothing of interest left to be found here.",
+  "symbol": "h",
+  "color": [
+    "yellow"
+  ],
+  "move_cost": 0,
+  "coverage": 15,
+  "concealment": 10,
+  "flags": [
+    "NOITEM"
+  ],
+  "bash": {
+    "str_min": 5,
+    "str_max": 15,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "shard_crystal",
+      "count": [
+        2,
+        4
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_dirt_crystal",
+  "name": "rocky soil",
+  "description": "Various fragments and chunks of formerly large crystal structures.",
+  "symbol": ".",
+  "coverage": 0,
+  "color": "light_gray",
+  "looks_like": "t_railroad_rubble",
+  "move_cost": 2,
+  "flags": [
+    "TRANSPARENT",
+    "DIGGABLE",
+    "FLAT",
+    "TIRE_DAMAGE"
+  ],
+  "bash": {
+    "sound": "thump",
+    "ter_set": "t_open_air",
+    "str_min": 110,
+    "str_max": 220,
+    "str_min_supported": 100,
+    "bash_below": true
+  }
+},
+{
   "type": "terrain",
   "id": "t_raptor_nest",
   "name": "raptor nest",
@@ -453,89 +814,137 @@
   "color": "brown",
   "move_cost": 200,
   "coverage": 0,
-  "flags": ["TRANSPARENT"]
+  "flags": [
+    "TRANSPARENT"
+  ]
 },
+{
+  "type": "terrain",
+  "id": "t_rapid_nest",
+  "name": "raptor nest",
+  "description": "A large nest made from branches, leaves and scavenged material. Something may still be living nearby.",
+  "symbol": "N",
+  "color": "brown",
+  "move_cost": 200,
+  "coverage": 0,
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_ice_pillar_large",
+  "name": "large ice pillar",
+  "description": "A pillar of ice.",
+  "symbol": "/",
+  "color": "cyan",
+  "coverage": 25,
+  "move_cost": -1,
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
   {
-    "type": "terrain",
-    "id": "t_rapid_nest",
-    "name": "raptor nest",
-    "description": "A large nest made from branches, leaves and scavenged material. Something may still be living nearby.",
-    "symbol": "N",
-    "color": "brown",
-    "move_cost": 200,
-    "coverage": 0,
-    "flags": ["TRANSPARENT"]
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "id": "ice_pillar_large_harvest"
+  }],
+  "transforms_into": "t_ice_pillar_large_harv",
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
   },
-   {
-   "type": "terrain",
-   "id": "t_ice_pillar_large",
-   "name": "large ice pillar",
-   "description": "A pillar of ice.",
-   "symbol": "/",
-   "color": "cyan",
-   "coverage": 25,
-   "move_cost": -1,
-    "examine_action": "harvest_ter",
-   "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn", "winter" ], "id": "ice_pillar_large_harvest" } ],
-    "transforms_into": "t_ice_pillar_large_harv",
-   "bash": {
-     "str_min": 60,
-     "str_max": 180,
-     "sound": "crack!",
-     "ter_set": "t_dirt_rocky"
-   },
-   "flags": ["TRANSPARENT"]
- },
- {
-   "type": "terrain",
-   "id": "t_ice_pillar_large_harv",
-   "name": "large ice pillar",
-   "description": "A pillar of ice.",
-   "looks_like": "t_ice_pillar_large",
-   "symbol": "/",
-   "color": "cyan",
-   "coverage": 25,
-   "move_cost": -1,
-   "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
-   "flags": ["TRANSPARENT"]
- },
-       {
-        "type": "terrain",
-        "id": "t_tree_ice",
-        "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
-        "name": "ice tree",
-        "looks_like": "t_tree_dead",
-        "roof": "t_treetop",
-        "description": "A large, frozen tree. The ice coating it seems to have taken even its leaves by surprise; they tinkle softly in the breeze, as if a set of wind chimes were playing a gentle melody.",
-        "symbol": "7",
-        "color": "brown",
-        "move_cost": 0,
-        "flags": ["FLAMMABLE", "NOITEM", "SUPPORTS_ROOF", "TREE", "PERMEABLE", "CLIMB_ADJACENT"],
-        "bash": {
-          "str_min": 50,
-          "str_max": 80,
-          "sound": "crunch!",
-          "sound_fail": "whack!",
-          "ter_set": "t_dirt",
-          "items": [
-            { "item": "shard_ice", "count": [1, 4] },
-            { "item": "stick", "count": [1, 4] }
-          ]
-        }
-      },
-     {
-       "type": "terrain",
-       "id": "t_ice_perma",
-       "name": "perma ice",
-       "looks_like": "t_ice_sh_thick",
-       "description": "Ice frozen as hard as stone, it is doubtful whether even the summer could melt it. Within it, one can discern the remains of creatures that became trapped inside.",
-       "symbol": "/",
-       "color": "light_cyan",
-       "move_cost": 4,
-       "bash": { "str_min": 80, "str_max": 120, "sound": "crack!", "ter_set": "t_dirt" },
-       "flags": ["TRANSPARENT", "FLAT"]
-     },
- {
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_ice_pillar_large_harv",
+  "name": "large ice pillar",
+  "description": "A pillar of ice.",
+  "looks_like": "t_ice_pillar_large",
+  "symbol": "/",
+  "color": "cyan",
+  "coverage": 25,
+  "move_cost": -1,
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
+  },
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_tree_ice",
+  "//": "we must avoid copy-from here so that the dead tree cannot regrow and be harvested again",
+  "name": "ice tree",
+  "looks_like": "t_tree_dead",
+  "roof": "t_treetop",
+  "description": "A large, frozen tree. The ice coating it seems to have taken even its leaves by surprise; they tinkle softly in the breeze, as if a set of wind chimes were playing a gentle melody.",
+  "symbol": "7",
+  "color": "brown",
+  "move_cost": 0,
+  "flags": [
+    "FLAMMABLE",
+    "NOITEM",
+    "SUPPORTS_ROOF",
+    "TREE",
+    "PERMEABLE",
+    "CLIMB_ADJACENT"
+  ],
+  "bash": {
+    "str_min": 50,
+    "str_max": 80,
+    "sound": "crunch!",
+    "sound_fail": "whack!",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "shard_ice",
+      "count": [
+        1,
+        4
+      ]
+    },
+    {
+      "item": "stick",
+      "count": [
+        1,
+        4
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_ice_perma",
+  "name": "perma ice",
+  "looks_like": "t_ice_sh_thick",
+  "description": "Ice frozen as hard as stone, it is doubtful whether even the summer could melt it. Within it, one can discern the remains of creatures that became trapped inside.",
+  "symbol": "/",
+  "color": "light_cyan",
+  "move_cost": 4,
+  "bash": {
+    "str_min": 80,
+    "str_max": 120,
+    "sound": "crack!",
+    "ter_set": "t_dirt"
+  },
+  "flags": [
+    "TRANSPARENT",
+    "FLAT"
+  ]
+},
+{
   "type": "terrain",
   "id": "t_frozen_terror",
   "name": "frozen terror",
@@ -545,7 +954,16 @@
   "coverage": 25,
   "move_cost": -1,
   "examine_action": "harvest_ter",
-  "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn", "winter"], "id": "frozen_terror_harvest" }],
+  "harvest_by_season": [
+  {
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "id": "frozen_terror_harvest"
+  }],
   "transforms_into": "t_frozen_terror_harv",
   "bash": {
     "str_min": 60,
@@ -553,7 +971,9 @@
     "sound": "crack!",
     "ter_set": "t_dirt_rocky"
   },
-  "flags": ["TRANSPARENT"]
+  "flags": [
+    "TRANSPARENT"
+  ]
 },
 {
   "type": "terrain",
@@ -565,123 +985,202 @@
   "color": "cyan",
   "coverage": 25,
   "move_cost": -1,
-  "bash": { "str_min": 60, "str_max": 180, "sound": "crack!", "ter_set": "t_dirt_rocky" },
-  "flags": ["TRANSPARENT"]
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
+  },
+  "flags": [
+    "TRANSPARENT"
+  ]
 },
-   {
-    "type": "terrain",
-    "id": "t_ice_flowers",
-    "name": "ice flowers",
-    "description": "Small, blue flowers. They are delicate and feel cool to the touch.",
-    "symbol": "#",
-    "color": "red",
-    "move_cost": 3,
-    "coverage": 10,
-    "concealment": 10,
-    "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "SMALL_HIDE"],
-    "examine_action": "harvest_ter",
-    "harvest_by_season": [{ "seasons": ["winter", "spring"], "id": "ice_petals_harvest" }],
-    "transforms_into": "t_ice_flowers_harvested",
-    "bash": {
-      "str_min": 2,
-      "str_max": 6,
-      "sound": "crunch.",
-      "sound_fail": "whish.",
-      "ter_set": "t_dirt",
-      "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
-    }
-  },
+{
+  "type": "terrain",
+  "id": "t_ice_flowers",
+  "name": "ice flowers",
+  "description": "Small, blue flowers. They are delicate and feel cool to the touch.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 10,
+  "concealment": 10,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "SMALL_HIDE"
+  ],
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
   {
-    "type": "terrain",
-    "id": "t_ice_flowers_harvested",
-    "name": "ice flowers",
-    "description": "A short plant harvested.",
-    "symbol": "#",
-    "color": "red",
-    "move_cost": 3,
-    "coverage": 5,
-    "concealment": 5,
-    "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE"],
-    "examine_action": "harvested_plant",
-    "transforms_into": "t_pink_flowers",
-    "bash": {
-      "str_min": 2,
-      "str_max": 6,
-      "sound": "crunch.",
-      "sound_fail": "whish.",
-      "ter_set": "t_dirt",
-      "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
-    }
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "id": "ice_petals_harvest"
+  }],
+  "transforms_into": "t_ice_flowers_harvested",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_ice_flowers_harvested",
+  "name": "ice flowers",
+  "description": "A short plant harvested.",
+  "symbol": "#",
+  "color": "red",
+  "move_cost": 3,
+  "coverage": 5,
+  "concealment": 5,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "HARVESTED",
+    "SMALL_HIDE"
+  ],
+  "examine_action": "harvested_plant",
+  "transforms_into": "t_pink_flowers",
+  "bash": {
+    "str_min": 2,
+    "str_max": 6,
+    "sound": "crunch.",
+    "sound_fail": "whish.",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
+  }
+},
+{
+  "type": "terrain",
+  "id": "t_ice_perma_lake",
+  "name": "perma ice",
+  "looks_like": "t_ice_perma",
+  "description": "Ice frozen as hard as stone, it is doubtful whether even the summer could melt it. Within it, one can discern the remains of creatures that became trapped inside.",
+  "symbol": "/",
+  "color": "light_cyan",
+  "move_cost": 4,
+  "bash": {
+    "str_min": 80,
+    "str_max": 120,
+    "sound": "crack!",
+    "ter_set": "t_dirt"
   },
-     {
-       "type": "terrain",
-       "id": "t_ice_perma_lake",
-       "name": "perma ice",
-       "looks_like": "t_ice_perma",
-       "description": "Ice frozen as hard as stone, it is doubtful whether even the summer could melt it. Within it, one can discern the remains of creatures that became trapped inside.",
-       "symbol": "/",
-       "color": "light_cyan",
-       "move_cost": 4,
-       "bash": { "str_min": 80, "str_max": 120, "sound": "crack!", "ter_set": "t_dirt" },
-       "flags": ["TRANSPARENT", "FLAT"]
-     },
-   {
-    "type": "terrain",
-    "id": "t_monster_nest",
-    "name": "big monster nest",
-    "description": "A large nest made from branches, leaves and scavenged material. Something may still be living nearby.",
-    "symbol": "N",
-    "color": "brown",
-    "move_cost": 200,
-    "coverage": 0,
-    "looks_like": "t_raptor_nest",
-    "flags": ["TRANSPARENT"]
+  "flags": [
+    "TRANSPARENT",
+    "FLAT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_monster_nest",
+  "name": "big monster nest",
+  "description": "A large nest made from branches, leaves and scavenged material. Something may still be living nearby.",
+  "symbol": "N",
+  "color": "brown",
+  "move_cost": 200,
+  "coverage": 0,
+  "looks_like": "t_raptor_nest",
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_naturis_frost_stone",
+  "name": "frozen frost stone",
+  "description": "A cold breath surrounds the rock formation.",
+  "symbol": "*",
+  "looks_like": "t_dirt_rocky",
+  "color": "light_blue",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ],
+  "emissions": [
+    "emit_cold_air3_blast"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_scratch_marks",
+  "name": "scratch marks",
+  "description": "Scratch marks from a large creature, perhaps they will tell you a bit more about the local fauna.",
+  "symbol": "*",
+  "examine_action": {
+    "type": "effect_on_condition",
+    "effect_on_conditions": [
+      "EOC_MONSTER_MARKS"
+    ]
   },
-   {
-    "type": "terrain",
-    "id": "t_naturis_frost_stone",
-    "name": "frozen frost stone",
-    "description": "A cold breath surrounds the rock formation.",
-    "symbol": "*",
-    "looks_like": "t_dirt_rocky",
-    "color": "light_blue",
-    "move_cost": 1,
-    "flags": ["TRANSPARENT"],
-    "emissions": ["emit_cold_air3_blast"]
+  "color": "cyan",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_egg_shells",
+  "name": "broken eggshells",
+  "description": "Broken eggshells from a large monster. It’s hard to tell whether they were plundered or if the creatures hatched. Perhaps you’ll learn more by examining them.",
+  "symbol": "*",
+  "examine_action": {
+    "type": "effect_on_condition",
+    "effect_on_conditions": [
+      "EOC_MONSTER_MARKS"
+    ]
   },
-         {
-          "type": "terrain",
-          "id": "t_scratch_marks",
-          "name": "scratch marks",
-          "description": "Scratch marks from a large creature, perhaps they will tell you a bit more about the local fauna.",
-          "symbol": "*",
-          "examine_action": {
-            "type": "effect_on_condition",
-            "effect_on_conditions": [
-              "EOC_MONSTER_MARKS"
-            ]
-          },
-          "color": "cyan",
-          "move_cost": 1,
-          "flags": ["TRANSPARENT"]
-        },
-        {
-          "type": "terrain",
-          "id": "t_egg_shells",
-          "name": "broken eggshells",
-          "description": "Broken eggshells from a large monster. It’s hard to tell whether they were plundered or if the creatures hatched. Perhaps you’ll learn more by examining them.",
-          "symbol": "*",
-          "examine_action": {
-            "type": "effect_on_condition",
-            "effect_on_conditions": [
-              "EOC_MONSTER_MARKS"
-            ]
-          },
-          "color": "cyan",
-          "move_cost": 1,
-          "flags": ["TRANSPARENT"]
-        },
-  {
+  "color": "cyan",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
   "type": "terrain",
   "id": "t_fungal_deposit",
   "name": "fungal deposit",
@@ -691,9 +1190,24 @@
   "move_cost": 2,
   "coverage": 10,
   "concealment": 10,
-  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB"],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB"
+  ],
   "examine_action": "harvest_ter",
-  "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn"], "id": "fungal_deposit_harvest" }],
+  "harvest_by_season": [
+  {
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "id": "fungal_deposit_harvest"
+  }],
   "transforms_into": "t_fungal_deposit_harvested",
   "bash": {
     "str_min": 2,
@@ -701,7 +1215,22 @@
     "sound": "crunch.",
     "sound_fail": "whish.",
     "ter_set": "t_dirt",
-    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
   }
 },
 {
@@ -714,7 +1243,16 @@
   "move_cost": 3,
   "coverage": 20,
   "concealment": 20,
-  "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "FLAT", "THIN_OBSTACLE", "SHRUB", "HARVESTED", "SMALL_HIDE"],
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "DIGGABLE",
+    "FLAT",
+    "THIN_OBSTACLE",
+    "SHRUB",
+    "HARVESTED",
+    "SMALL_HIDE"
+  ],
   "examine_action": "harvested_plant",
   "transforms_into": "t_fungal_deposit",
   "bash": {
@@ -723,63 +1261,99 @@
     "sound": "crunch.",
     "sound_fail": "whish.",
     "ter_set": "t_dirt",
-    "items": [{ "item": "withered", "prob": 50, "count": [1, 2] }, { "item": "leaves", "count": [1, 2] }]
+    "items": [
+    {
+      "item": "withered",
+      "prob": 50,
+      "count": [
+        1,
+        2
+      ]
+    },
+    {
+      "item": "leaves",
+      "count": [
+        1,
+        2
+      ]
+    }]
   }
 },
-        {
-          "type": "terrain",
-          "id": "t_growing_dog",
-          "name": "growing forest dog",
-          "description": "Half decomposed bones and plant remains have begun to coalesce into a dog-like body. It won’t be long now before it comes to life.",
-          "symbol": "*",
-          "examine_action": {
-            "type": "effect_on_condition",
-            "effect_on_conditions": [
-              "EOC_MONSTER_MARKS"
-            ]
-          },
-          "color": "cyan",
-          "move_cost": 1,
-          "flags": ["TRANSPARENT"]
-        },
-     {
-      "type": "terrain",
-      "id": "t_tree_hollowed_gold",
-      "name": "pink hollowed-out tree",
-      "description": "A large, old tree, whose hollow trunk offers a comfortable place to spend the night.",
-      "symbol": "#",
-      "color": "brown_green",
-      "looks_like": "t_tree_hollowed",
-      "floor_bedding_warmth": 1200,
-      "comfort": 4,
-      "move_cost": 2,
-      "coverage": 30,
-      "concealment": 30,
-      "connect_groups": "INDOORFLOOR",
-      "examine_action": "harvest_ter",
-        "harvest_by_season": [{ "seasons": ["spring", "summer", "autumn", "winter"], "id": "hollowed_gold_harv" }],
-        "transforms_into": "t_tree_hollowed",
-      "flags": [
-        "TRANSPARENT",
-        "CONTAINER",
-        "THIN_OBSTACLE",
-        "REDUCE_SCENT",
-        "INDOORS",
-        "FLAMMABLE_ASH",
-        "TINDER",
-        "MOUNTABLE",
-        "HIDE_PLACE"
-      ],
-      "bash": {
-        "str_min": 4,
-        "str_max": 60,
-        "sound": "crunch.",
-        "sound_fail": "brush.",
-        "ter_set": "t_dirt",
-        "items": [
-          { "item": "stick", "count": [3, 15] },
-          { "item": "withered", "count": [40, 80] }
-        ]
-      }
-    }
-]
+{
+  "type": "terrain",
+  "id": "t_growing_dog",
+  "name": "growing forest dog",
+  "description": "Half decomposed bones and plant remains have begun to coalesce into a dog-like body. It won’t be long now before it comes to life.",
+  "symbol": "*",
+  "examine_action": {
+    "type": "effect_on_condition",
+    "effect_on_conditions": [
+      "EOC_MONSTER_MARKS"
+    ]
+  },
+  "color": "cyan",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_tree_hollowed_gold",
+  "name": "pink hollowed-out tree",
+  "description": "A large, old tree, whose hollow trunk offers a comfortable place to spend the night.",
+  "symbol": "#",
+  "color": "brown_green",
+  "looks_like": "t_tree_hollowed",
+  "floor_bedding_warmth": 1200,
+  "comfort": 4,
+  "move_cost": 2,
+  "coverage": 30,
+  "concealment": 30,
+  "connect_groups": "INDOORFLOOR",
+  "examine_action": "harvest_ter",
+  "harvest_by_season": [
+  {
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "id": "hollowed_gold_harv"
+  }],
+  "transforms_into": "t_tree_hollowed",
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "THIN_OBSTACLE",
+    "REDUCE_SCENT",
+    "INDOORS",
+    "FLAMMABLE_ASH",
+    "TINDER",
+    "MOUNTABLE",
+    "HIDE_PLACE"
+  ],
+  "bash": {
+    "str_min": 4,
+    "str_max": 60,
+    "sound": "crunch.",
+    "sound_fail": "brush.",
+    "ter_set": "t_dirt",
+    "items": [
+    {
+      "item": "stick",
+      "count": [
+        3,
+        15
+      ]
+    },
+    {
+      "item": "withered",
+      "count": [
+        40,
+        80
+      ]
+    }]
+  }
+}]

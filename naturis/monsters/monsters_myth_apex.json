@@ -6,14 +6,14 @@
     "description": "A hulking lizard, its red scales shimmering like droplets of fresh blood. In its eyes glimmers a cold, lurking greed for new prey.",
     "default_faction": "forest",
     "bodytype": "lizard",
-    "species": [ "MYTHIC" ],
+    "species": ["MYTHIC"],
     "diff": 10,
     "volume": "620 L",
     "weight": "760 kg",
     "hp": 400,
     "speed": 140,
     "stomach_size": 8000,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "S",
     "color": "brown",
     "aggression": 0,
@@ -22,114 +22,126 @@
     "melee_skill": 7,
     "melee_dice": 5,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
+    "melee_damage": [{ "damage_type": "stab", "amount": 8 }],
     "dodge": 4,
     "vision_day": 35,
     "vision_night": 15,
     "weakpoint_sets": [
-    "wps_rapid_striker"
-  ],
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic" ],
+      "wps_rapid_striker"
+    ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "harvest": "rapid_striker",
     "dissect": "dissect_naturis_sample_rapid",
     "grab_strength": 70,
     "special_attacks": [
-      [ "EAT_FOOD", 80 ], 
-      [ "EAT_CARRION", 80 ],
-{
-  "type": "spell",
-  "spell_data": {
-    "id": "rapid_striker_tail_detach",
-"hit_self": true,
-    "min_level": 1
-  },
-  "cooldown": 2,
-"allow_no_target": true,
-  "condition": {
-    "and": [
-      { "math": [ "u_hp('ALL') <= 50" ]
+      ["EAT_FOOD", 80],
+      ["EAT_CARRION", 80],
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "rapid_striker_tail_detach",
+          "hit_self": true,
+          "min_level": 1
+        },
+        "cooldown": 2,
+        "allow_no_target": true,
+        "condition": {
+          "and": [
+            {
+              "math": ["u_hp('ALL') <= 50"]
+            },
+            { "not": { "u_has_effect": "maimed_tail" } }
+          ]
+        }
       },
-      { "not": { "u_has_effect": "maimed_tail" } }
-    ]
-  }
-},
-  { "id": "slam", "cooldown": 10,
-    "condition": {
-    "and": [
-      { "math": [ "u_hp('ALL') >= 300" ] },
-      { "not": { "u_has_effect": "maimed_tail" } }
-    ]
-  }
-     },
+      {
+        "id": "slam",
+        "cooldown": 10,
+        "condition": {
+          "and": [
+            { "math": ["u_hp('ALL') >= 300"] },
+            { "not": { "u_has_effect": "maimed_tail" } }
+          ]
+        }
+      },
       {
         "id": "bite_grab",
         "cooldown": 15,
-        "damage_max_instance": [ { "damage_type": "stab", "amount": 22, "armor_multiplier": 0.1 } ],
-        "effects": [ { "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 } ],
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 22, "armor_multiplier": 0.1 }],
+        "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
         "infection_chance": 30
       },
-   {
-    "type": "monster_attack",
-    "attack_type": "melee",
-    "id": "rapid_striker_wounded_lunge",
-    "cooldown": 12,
-    "move_cost": 130,
-    "damage_max_instance": [
-      { "damage_type": "cut",
-        "amount": 10 },
-      { "damage_type": "bash", "amount": 18 }
-    ],
-    "condition": {
-      "and": [
-        { "math": [ "u_hp('ALL') > 50" ]
+      {
+        "type": "monster_attack",
+        "attack_type": "melee",
+        "id": "rapid_striker_wounded_lunge",
+        "cooldown": 12,
+        "move_cost": 130,
+        "damage_max_instance": [
+          {
+            "damage_type": "cut",
+            "amount": 10
+          },
+          { "damage_type": "bash", "amount": 18 }
+        ],
+        "condition": {
+          "and": [
+            {
+              "math": ["u_hp('ALL') > 50"]
+            },
+            { "math": ["u_hp('ALL') < 300"] }
+          ]
         },
-        { "math": [ "u_hp('ALL') < 300" ] }
-      ]
-    },
-    "dodgeable": true,
-    "blockable": true,
-    "hit_dmg_u": "%1$s lunges forward and tears into your %2$s!",
-    "hit_dmg_npc": "%1$s lunges forward and tears into <npcname>!",
-    "miss_msg_u": "%1$s lunges at you, but you dodge!",
-    "miss_msg_npc": "%1$s lunges at <npcname>, but they dodge!",
-    "no_dmg_msg_u": "%1$s lunges at you, but your armor stops the blow.",
-    "no_dmg_msg_npc": "%1$s lunges at <npcname>, but their armor stops the blow."
-  },
-  {
-    "type": "monster_attack",
-    "attack_type": "melee",
-    "id": "rapid_striker_wounded_bite",
-    "cooldown": 7,
-    "move_cost": 90,
-    "damage_max_instance": [
-      { "damage_type": "stab",
-        "amount": 14 }
+        "dodgeable": true,
+        "blockable": true,
+        "hit_dmg_u": "%1$s lunges forward and tears into your %2$s!",
+        "hit_dmg_npc": "%1$s lunges forward and tears into <npcname>!",
+        "miss_msg_u": "%1$s lunges at you, but you dodge!",
+        "miss_msg_npc": "%1$s lunges at <npcname>, but they dodge!",
+        "no_dmg_msg_u": "%1$s lunges at you, but your armor stops the blow.",
+        "no_dmg_msg_npc": "%1$s lunges at <npcname>, but their armor stops the blow."
+      },
+      {
+        "type": "monster_attack",
+        "attack_type": "melee",
+        "id": "rapid_striker_wounded_bite",
+        "cooldown": 7,
+        "move_cost": 90,
+        "damage_max_instance": [
+        {
+          "damage_type": "stab",
+          "amount": 14
+        }],
+        "condition": {
+          "and": [
+            { "math": ["u_hp('ALL') > 50"] },
+            { "math": ["u_hp('ALL') < 300"] }
+          ]
+        },
+        "dodgeable": true,
+        "blockable": true,
+        "hit_dmg_u": "%1$s snaps at you with its jaws!",
+        "hit_dmg_npc": "%1$s snaps at <npcname> with its jaws!",
+        "miss_msg_u": "%1$s snaps at you, but you dodge!",
+        "miss_msg_npc": "%1$s snaps at <npcname>, but they dodge!",
+        "no_dmg_msg_u": "%1$s bites at you, but your armor protects you.",
+        "no_dmg_msg_npc": "%1$s bites at <npcname>, but their armor protects them."
+      }
     ],
-    "condition": {
-      "and": [
-        { "math": [ "u_hp('ALL') > 50" ] },
-        { "math": [ "u_hp('ALL') < 300" ] } 
-      ]
-    },
-    "dodgeable": true,
-    "blockable": true,
-    "hit_dmg_u": "%1$s snaps at you with its jaws!",
-    "hit_dmg_npc": "%1$s snaps at <npcname> with its jaws!",
-    "miss_msg_u": "%1$s snaps at you, but you dodge!",
-    "miss_msg_npc": "%1$s snaps at <npcname>, but they dodge!",
-    "no_dmg_msg_u": "%1$s bites at you, but your armor protects you.",
-    "no_dmg_msg_npc": "%1$s bites at <npcname>, but their armor protects them." } ],
     "regenerates": 0,
-    "regeneration_modifiers": [  ["maimed_tail", 1] ],
+    "regeneration_modifiers": [
+      ["maimed_tail", 1]
+    ],
     "regen_morale": true,
     "death_drops": "mon_rapid_striker_death_drops",
     "emit_fields": [
-    { "emit_id": "emit_grinding_mark", "delay": "1 s" } ],
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE", "STALK", "PLAYER_NEAR_BABY", "PLAYER_WEAK", "MATING_SEASON" ],
-        "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 20 },
+      { "emit_id": "emit_grinding_mark", "delay": "1 s" }
+    ],
+    "anger_triggers": ["HURT", "PLAYER_CLOSE", "STALK", "PLAYER_NEAR_BABY", "PLAYER_WEAK", "MATING_SEASON"],
+    "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 20 },
     "reproduction": { "baby_egg": "egg_rapid_striker", "baby_count": 4, "baby_timer": 20 },
     "baby_flags": ["AUTUMN"],
-    "flags": [ "SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS", "EATS" ],
+    "flags": ["SEES", "SMELLS", "BADVENOM", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "GOODHEARING", "SWIMS", "EATS"],
     "armor": { "bash": 6, "cut": 8, "bullet": 5, "electric": 5, "acid": 6 }
   },
   {
@@ -141,8 +153,8 @@
     "symbol": "7",
     "default_faction": "forest",
     "bodytype": "snake",
-    "species": [ "MYTHIC" ],
-    "material": [ "flesh" ],
+    "species": ["MYTHIC"],
+    "material": ["flesh"],
     "volume": "10 L",
     "weight": "10 kg",
     "hp": 25,
@@ -153,43 +165,43 @@
     "melee_skill": 3,
     "melee_dice": 2,
     "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4 }],
     "grab_strength": 15,
     "dodge": 7,
     "bleed_rate": 0,
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_basic_bug", "prof_wp_spider" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_wp_basic_bug", "prof_wp_spider"],
     "harvest": "rapid_striker_tail",
-    "flags": [ "HEARS", "GOODHEARING", "STUMBLES", "WEBWALK", "GRABS", "ATTACKMON", "HARDTOSHOOT", "STUN_IMMUNE", "NOHEAD" ]
+    "flags": ["HEARS", "GOODHEARING", "STUMBLES", "WEBWALK", "GRABS", "ATTACKMON", "HARDTOSHOOT", "STUN_IMMUNE", "NOHEAD"]
   },
-{
+  {
     "id": "mon_forest_dragon",
     "type": "MONSTER",
     "name": { "str": "forest dragon" },
     "description": "A massive dragon that dwells deep within the forest. Its thick green scales and powerful body make it a formidable predator.",
     "default_faction": "forest",
     "bodytype": "snake",
-    "species": [ "MYTHIC"],
+    "species": ["MYTHIC"],
     "volume": "625000 ml",
     "weight": "200 kg",
     "hp": 370,
     "diff": 10,
     "speed": 95,
     "stomach_size": 5000,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "S",
     "color": "green",
-    "scents_tracked": [ "sc_human", "sc_fetid" ],
+    "scents_tracked": ["sc_human", "sc_fetid"],
     "aggression": 60,
-    "anger_triggers": [ "HURT", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "anger_triggers": ["HURT", "PLAYER_WEAK", "PLAYER_CLOSE"],
     "morale": 100,
-      "death_function": {
+    "death_function": {
       "message": "The %s explodes in a shower of leaves!",
       "effect": { "id": "death_leaves", "hit_self": true, "min_level": 0 }
-  },
+    },
     "melee_skill": 7,
     "melee_dice": 3,
     "melee_dice_sides": 7,
-    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 0 }],
     "dodge": 3,
     "families": [
       "prof_intro_biology",
@@ -199,51 +211,58 @@
     "vision_day": 35,
     "vision_night": 8,
     "weakpoint_sets": [
-    "wps_forest_dragon"
-  ],
+      "wps_forest_dragon"
+    ],
     "dissect": "dissect_naturis_sample_fdragon",
     "special_attacks": [
-      [ "EAT_CROP", 60 ],
-     {"type": "spell",
-        "spell_data": { "id": "leave_burst"},
+      ["EAT_CROP", 60],
+      {
+        "type": "spell",
+        "spell_data": { "id": "leave_burst" },
         "monster_message": "The %s shoots an shower of sharp leaves on you!",
         "cooldown": 15,
-         "condition": {
-        "not": {
-            "u_has_effect": "destroyed_tip" }
-        }
-      },    
-      { "id": "bite_grab", "cooldown": 5 }, 
-      { "id": "bite_grab_required", "cooldown": 8 },
-      { "id": "slam",  "cooldown": 30,
         "condition": {
-        "not": {
-            "u_has_effect": "maimed_tail" }
+          "not": {
+            "u_has_effect": "destroyed_tip"
+          }
+        }
+      },
+      { "id": "bite_grab", "cooldown": 5 },
+      { "id": "bite_grab_required", "cooldown": 8 },
+      {
+        "id": "slam",
+        "cooldown": 30,
+        "condition": {
+          "not": {
+            "u_has_effect": "maimed_tail"
+          }
         },
-        "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
-      { "id": "longswipe",
-       "condition": {
-        "not": {
-            "u_has_effect": "maimed_tail" }
+        "damage_max_instance": [{ "damage_type": "bash", "amount": 35 }]
+      },
+      {
+        "id": "longswipe",
+        "condition": {
+          "not": {
+            "u_has_effect": "maimed_tail"
+          }
         }
       },
       { "id": "cut_throat" },
       { "id": "smash", "throw_strength": 72, "cooldown": 35 }
     ],
-"emit_fields": [
-  {
-    "emit_id": "emit_forest_dragon_track",
-    "delay": "7 h"
-  }
-],
+    "emit_fields": [
+    {
+      "emit_id": "emit_forest_dragon_track",
+      "delay": "7 h"
+    }],
     "death_drops": "mon_forest_dragon_death_drops",
     "harvest": "forest_dragon",
-        "reproduction": { "baby_egg": "egg_forest_dragon", "baby_count": 1, "baby_timer": 20 },
+    "reproduction": { "baby_egg": "egg_forest_dragon", "baby_count": 1, "baby_timer": 20 },
     "baby_flags": ["SPRING"],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND",  "FIREPROOF", "EATS" ],
+    "flags": ["SEES", "HEARS", "SMELLS", "WARM", "DESTROYS", "HAS_MIND", "FIREPROOF", "EATS"],
     "armor": { "bash": 15, "cut": 20, "bullet": 15, "electric": 4, "acid": 10 }
   },
-    {
+  {
     "type": "MONSTER",
     "id": "mon_flying_fire",
     "name": { "str": "flying fire" },
@@ -258,7 +277,7 @@
     "color": "blue_green",
     "volume": "145 L",
     "weight": "150 kg",
-    "material": "flesh", 
+    "material": "flesh",
     "aggression": 80,
     "morale": 100,
     "speed": 120,
@@ -268,29 +287,31 @@
     "melee_dice": 3,
     "melee_dice_sides": 6,
     "dissect": "dissect_naturis_sample_flfire",
-    "melee_damage": [ { "damage_type": "cut", "amount": 4.0 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4.0 }],
     "dodge": 3,
     "hp": 350,
     "harvest": "flying_fire",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_flying", "prof_wp_basic_bird", "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_wp_flying", "prof_wp_basic_bird", "prof_wp_mythic"],
     "weakpoint_sets": [
-    "wps_flying_fire"
-  ],
+      "wps_flying_fire"
+    ],
     "special_attacks": [
       { "type": "leap", "cooldown": 5, "max_range": 6, "allow_no_target": true },
-      [ "SHRIEK_STUN", 5 ],
+      ["SHRIEK_STUN", 5],
       { "id": "hunter_peck" },
-      {"type": "spell",
-        "spell_data": { "id": "fire_jumping"},
+      {
+        "type": "spell",
+        "spell_data": { "id": "fire_jumping" },
         "monster_message": "The %s spits fire on you!",
         "cooldown": 10,
         "condition": {
-        "not": {
-            "u_has_effect": "maimed_wings" }
+          "not": {
+            "u_has_effect": "maimed_wings"
+          }
         }
       }
     ],
-        "reproduction": { "baby_egg": "egg_flying_fire", "baby_count": 1, "baby_timer": 10 },
+    "reproduction": { "baby_egg": "egg_flying_fire", "baby_count": 1, "baby_timer": 10 },
     "baby_flags": ["SPRING", "SUMMER"],
     "biosignature": { "biosig_item": "charcoal", "biosig_timer": 6 },
     "flags": [
@@ -303,33 +324,32 @@
       "HARDTOSHOOT",
       "KEEP_DISTANCE"
     ],
-"emit_fields": [
-  {
-    "emit_id": "emit_flying_fire_track",
-    "delay": "30 m"
-  },
+    "emit_fields": [
     {
-    "emit_id": "emit_naturis_hot_aura",
-    "delay": "1 m"
-  }
-],
-  "death_drops": "mon_flying_fire_death_drops",
+      "emit_id": "emit_flying_fire_track",
+      "delay": "30 m"
+    },
+    {
+      "emit_id": "emit_naturis_hot_aura",
+      "delay": "1 m"
+    }],
+    "death_drops": "mon_flying_fire_death_drops",
     "armor": { "bash": 5, "cut": 10, "bullet": 8, "electric": 2 }
   },
-   {
+  {
     "id": "mon_ice_former",
     "type": "MONSTER",
     "name": { "str": "ice former" },
     "description": "Sunlight refracts within the cold clutches of this creature, vying with the sparkling blue eyes that hold your gaze firmly captive.",
     "default_faction": "ice",
     "bodytype": "lizard",
-    "species": [ "MYTHIC" ],
+    "species": ["MYTHIC"],
     "diff": 10,
     "volume": "780 L",
     "weight": "820 kg",
     "hp": 520,
     "speed": 100,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "S",
     "color": "brown",
     "aggression": 100,
@@ -337,47 +357,47 @@
     "melee_skill": 8,
     "melee_dice": 5,
     "melee_dice_sides": 7,
-    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
+    "melee_damage": [{ "damage_type": "stab", "amount": 8 }],
     "dodge": 2,
     "vision_day": 25,
     "vision_night": 3,
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_wp_mythic"],
     "harvest": "ice_former",
     "weakpoint_sets": [
-    "wps_ice_former"
-  ],
+      "wps_ice_former"
+    ],
     "dissect": "dissect_naturis_sample_iformer",
     "grab_strength": 50,
     "special_attacks": [
-{
-  "type": "spell",
-  "spell_data": {
-    "id": "burst_ice" },
-    "cooldown": 10,
-    "monster_message": "The %s spits ice on you!"
-  },
-  { "id": "slam", "cooldown": 15, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
-  { "id": "bite_grab", "cooldown": 15 },
-  { "id": "longswipe" }
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "burst_ice"
+        },
+        "cooldown": 10,
+        "monster_message": "The %s spits ice on you!"
+      },
+      { "id": "slam", "cooldown": 15, "damage_max_instance": [{ "damage_type": "bash", "amount": 35 }] },
+      { "id": "bite_grab", "cooldown": 15 },
+      { "id": "longswipe" }
     ],
-"emit_fields": [
-  {
-    "emit_id": "emit_naturis_cold_aura",
-    "delay": "1 m"
-  },
-  {
-   "emit_id": "emit_ice_former_track",
-   "delay": "15 h"
-  }
-],
+    "emit_fields": [
+    {
+      "emit_id": "emit_naturis_cold_aura",
+      "delay": "1 m"
+    },
+    {
+      "emit_id": "emit_ice_former_track",
+      "delay": "15 h"
+    }],
     "death_drops": "mon_ice_former_death_drops",
-        "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 10 },
+    "biosignature": { "biosig_item": "fetid_goop", "biosig_timer": 10 },
     "reproduction": { "baby_egg": "egg_ice_former", "baby_count": 2, "baby_timer": 35 },
     "baby_flags": ["WINTER"],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "LOUDMOVES", "GOODHEARING", "COLDPROOF" ],
+    "flags": ["SEES", "SMELLS", "KEENNOSE", "CLIMBS", "LOUDMOVES", "GOODHEARING", "COLDPROOF"],
     "armor": { "bash": 10, "cut": 15, "bullet": 10, "electric": 1, "acid": 1 }
   },
-    {
+  {
     "id": "mon_beast_static",
     "type": "MONSTER",
     "name": {
@@ -406,11 +426,10 @@
     "melee_dice": 6,
     "melee_dice_sides": 6,
     "melee_damage": [
-      {
-        "damage_type": "stab",
-        "amount": 10
-      }
-    ],
+    {
+      "damage_type": "stab",
+      "amount": 10
+    }],
     "dodge": 3,
     "vision_day": 25,
     "vision_night": 5,
@@ -424,45 +443,50 @@
     "dissect": "dissect_naturis_sample_static",
     "grab_strength": 80,
     "special_attacks": [
-    ["SHOCKSTORM", 25 ],
-      { "id": "grab_drag", "cooldown": 15,
-          "condition": {
-    "not": {
-      "u_has_effect": "maimed_claw" }
-  }
+      ["SHOCKSTORM", 25],
+      {
+        "id": "grab_drag",
+        "cooldown": 15,
+        "condition": {
+          "not": {
+            "u_has_effect": "maimed_claw"
+          }
+        }
       },
-      { "id": "cut_throat",
+      {
+        "id": "cut_throat",
         "cooldown": 10,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
       { "id": "longswipe" },
-{
-  "type": "spell",
-  "spell_data": {
-    "id": "explosion_static",
-       "hit_self": true },
-    "cooldown": 20,
-   "allow_no_target": true,
-       "condition": {
-            "u_has_effect": "maimed_claw" 
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "explosion_static",
+          "hit_self": true
+        },
+        "cooldown": 20,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "maimed_claw"
         }
       }
     ],
-    "special_when_hit": [ "ZAPBACK", 100 ],
+    "special_when_hit": ["ZAPBACK", 100],
     "emit_fields": [
-      {
-        "emit_id": "emit_beast_static_track",
-        "delay": "3 h"
-      }
-    ],
+    {
+      "emit_id": "emit_beast_static_track",
+      "delay": "3 h"
+    }],
     "death_drops": "mon_beast_static_drops",
     "harvest": "static_beast",
     "biosignature": { "biosig_item": "static_residue", "biosig_timer": 10 },
     "reproduction": { "baby_egg": "egg_static_beast", "baby_count": 3, "baby_timer": 15 },
-        "baby_flags": ["SUMMER"],
+    "baby_flags": ["SUMMER"],
     "flags": [
       "SEES",
       "ELECTRIC_FIELD",
@@ -479,7 +503,7 @@
       "acid": 6
     }
   },
-    {
+  {
     "id": "mon_crystal_seeder",
     "type": "MONSTER",
     "name": { "str": "crystal seeder" },
@@ -510,22 +534,25 @@
     "vision_night": 2,
     "harvest": "crystal_seeder",
     "grab_strength": 45,
-        "emit_fields": [
-     { "emit_id": "emit_grinding_mark", "delay": "1 s" } ],
+    "emit_fields": [
+      { "emit_id": "emit_grinding_mark", "delay": "1 s" }
+    ],
     "death_drops": "mon_crystal_seeder_death_drops",
     "special_attacks": [
-      { "id": "grab" }, 
-      { "id": "scratch_humanoid" }, 
+      { "id": "grab" },
+      { "id": "scratch_humanoid" },
       { "id": "smash", "throw_strength": 96 },
-      {"type": "spell",
-        "spell_data": { "id": "crystal_crawler_summon"},
+      {
+        "type": "spell",
+        "spell_data": { "id": "crystal_crawler_summon" },
         "monster_message": "The %s summons several crystal crawlers!",
         "cooldown": 25,
-         "condition": {
-        "not": {
-            "u_has_effect": "destroyed_heart" }
+        "condition": {
+          "not": {
+            "u_has_effect": "destroyed_heart"
+          }
         }
-      }         
+      }
     ],
     "flags": [
       "SEES",
@@ -541,6 +568,6 @@
     ],
     "armor": { "bash": 12, "cut": 18, "bullet": 8, "electric": 8 }
   }
-
-
+  
+  
 ]

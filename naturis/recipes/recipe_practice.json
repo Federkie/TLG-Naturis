@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": "practice_research_basics",
     "type": "practice",
     "activity_level": "NO_EXERCISE",
@@ -9,9 +9,11 @@
     "description": "You observe the newly emerged fauna, their habits and ways of life.",
     "skill_used": "research",
     "time": "2 h",
-    "autolearn": [ [ "research", 0 ] ],
+    "autolearn": [
+      ["research", 0]
+    ],
     "practice_data": { "min_difficulty": 0, "max_difficulty": 1, "skill_limit": 2 },
-        "tools": [
+    "tools": [
       [
         "binoculars"
       ]

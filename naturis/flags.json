@@ -1,14 +1,14 @@
 [
-    {
+  {
     "id": "RAPTORFOOD",
     "type": "monster_flag",
     "//": "This monster will respond to you."
   },
- {
-  "id": "SPELL_EXTRA",
-  "type": "monster_flag",
-  "//": "This monster has extra spells."
-}
+  {
+    "id": "SPELL_EXTRA",
+    "type": "monster_flag",
+    "//": "This monster has extra spells."
+  }
   
   
   

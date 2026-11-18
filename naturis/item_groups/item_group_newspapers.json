@@ -1,14 +1,14 @@
 [
-   {
-   "type": "item_group",
-   "id": "lab_files_generic",
-   "copy-from": "lab_files_generic",
-   "extend": {
-     "items": [
-       { "item": "lab_file_bio_naturis", "prob": 1 }
-     ]
-   }
- }
+  {
+    "type": "item_group",
+    "id": "lab_files_generic",
+    "copy-from": "lab_files_generic",
+    "extend": {
+      "items": [
+        { "item": "lab_file_bio_naturis", "prob": 1 }
+      ]
+    }
+  }
   
   
   

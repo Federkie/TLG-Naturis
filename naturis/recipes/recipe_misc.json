@@ -1,27 +1,42 @@
 [
-    {
+  {
     "result": "grounding_anchor_capsule",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_EXPLOSIVE",
     "skill_used": "electronics",
-    "skills_required": [ [ "research", 4 ] ],
+    "skills_required": [
+      ["research", 4]
+    ],
     "difficulty": 4,
     "time": "5 m",
     "reversible": true,
-    "autolearn": [ ["research", 4] ],
-    "proficiencies": [ { "proficiency": "prof_handloading" } ],
-    "qualities": [ { "id": "SAW_M", "level": 1 } ],
-    "using": [ [ "soldering_standard", 10 ] ],
+    "autolearn": [
+      ["research", 4]
+    ],
+    "proficiencies": [{ "proficiency": "prof_handloading" }],
+    "qualities": [{ "id": "SAW_M", "level": 1 }],
+    "using": [
+      ["soldering_standard", 10]
+    ],
     "components": [
-      [ [ "small_gas_canister_case", 1, "LIST" ] ],
-      [ [ "shard_crystal", 4 ] ],
-      [ [ "super_glue", 4 ], [ "duct_tape", 10 ] ],
-      [ [ "cable", 5 ] ]
+      [
+        ["small_gas_canister_case", 1, "LIST"]
+      ],
+      [
+        ["shard_crystal", 4]
+      ],
+      [
+        ["super_glue", 4],
+        ["duct_tape", 10]
+      ],
+      [
+        ["cable", 5]
+      ]
     ]
   },
-    {
+  {
     "result": "fa_mag",
     "type": "recipe",
     "activity_level": "MODERATE_EXERCISE",
@@ -29,28 +44,45 @@
     "subcategory": "CSC_WEAPON_MAGAZINES",
     "skill_used": "fabrication",
     "difficulty": 3,
-    "skills_required": [ "gun", 2 ],
+    "skills_required": ["gun", 2],
     "time": "20 m",
-    "autolearn": [ ["research", 7] ],
-    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [ [ [ "sheet_metal_small", 1 ] ] ]
+    "autolearn": [
+      ["research", 7]
+    ],
+    "qualities": [{ "id": "SAW_M", "level": 1 }, { "id": "HAMMER", "level": 1 }],
+    "components": [
+      [
+        ["sheet_metal_small", 1]
+      ]
+    ]
   },
-   {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "chipped_ice",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "fabrication",
-    "skills_required": [ "throw", 2 ],
+    "skills_required": ["throw", 2],
     "difficulty": 2,
     "time": "20 min",
-    "autolearn": [ ["research", 1] ],
-    "tools": [ [ [ "rock", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_knapping" }, { "proficiency": "prof_knapping_speed" } ],
-    "components": [ [ [ "bone_frozen", 1 ], [ "ice_chunk", 1 ] ] ]
+    "autolearn": [
+      ["research", 1]
+    ],
+    "tools": [
+      [
+        ["rock", -1]
+      ]
+    ],
+    "proficiencies": [{ "proficiency": "prof_knapping" }, { "proficiency": "prof_knapping_speed" }],
+    "components": [
+      [
+        ["bone_frozen", 1],
+        ["ice_chunk", 1]
+      ]
+    ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "fermentable_liquid_rapid",
@@ -58,19 +90,30 @@
     "subcategory": "CSC_CHEM_CHEMICALS",
     "skill_used": "survival",
     "difficulty": 3,
-    "autolearn": [ ["research", 4] ],
+    "autolearn": [
+      ["research", 4]
+    ],
     "time": "2 m",
     "charges": 3,
-    "batch_time_factors": [ 90, 4 ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "NO_TRAIN", "NO_FAIL" ],
-    "tools": [ [ "fake_digester_tank" ] ],
-    "components": [ 
-      [ [ "water", 3 ], [ "water_clean", 3 ] ],
-      [ [ "forest_enzyme", 1 ] ] 
+    "batch_time_factors": [90, 4],
+    "flags": ["BLIND_EASY", "ALLOW_ROTTEN", "NO_TRAIN", "NO_FAIL"],
+    "tools": [
+      ["fake_digester_tank"]
     ],
-    "using": [ [ "organic_waste", 1 ] ]
+    "components": [
+      [
+        ["water", 3],
+        ["water_clean", 3]
+      ],
+      [
+        ["forest_enzyme", 1]
+      ]
+    ],
+    "using": [
+      ["organic_waste", 1]
+    ]
   },
-   {
+  {
     "result": "fire_shard_starter",
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
@@ -80,9 +123,15 @@
     "difficulty": 1,
     "time": "10 sec",
     "autolearn": true,
-    "components": [ 
-      [ [ "shard_fire", 1 ] ], 
-      [ [ "flint", 1 ], [ "rock_flaking", 1 ], [ "rock", 1 ] ] 
+    "components": [
+      [
+        ["shard_fire", 1]
+      ],
+      [
+        ["flint", 1],
+        ["rock_flaking", 1],
+        ["rock", 1]
+      ]
     ]
   }
   

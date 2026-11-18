@@ -1,5 +1,4 @@
 [
-
 {
   "type": "weakpoint_set",
   "id": "wps_ice_former",
@@ -22,14 +21,13 @@
         "ranged": 5
       },
       "effects": [
-        {
-          "effect_on_conditions": [
-           "EOC_ICE_FORMER_EXPLOSION"
-          ],
-          "chance": 100,
-          "damage_required": [ 5, 100 ]
-        }
-      ],
+      {
+        "effect_on_conditions": [
+          "EOC_ICE_FORMER_EXPLOSION"
+        ],
+        "chance": 100,
+        "damage_required": [5, 100]
+      }],
       "coverage": 15
     },
     {
@@ -49,7 +47,7 @@
         "ranged": 3
       },
       "coverage": 50
-    }, 
+    },
     {
       "id": "claw",
       "name": "the ice claw",
@@ -66,20 +64,18 @@
         "melee": 3,
         "ranged": 5
       },
-    "effects": [
-        {
-          "effect_on_conditions": [
-           "EOC_MORALE_DROP"
-          ],
-          "chance": 100,
-          "damage_required": [ 20, 100 ]
-        }
-      ],
+      "effects": [
+      {
+        "effect_on_conditions": [
+          "EOC_MORALE_DROP"
+        ],
+        "chance": 100,
+        "damage_required": [20, 100]
+      }],
       "coverage": 5
     }
     
     
     
   ]
-}
-]
+}]

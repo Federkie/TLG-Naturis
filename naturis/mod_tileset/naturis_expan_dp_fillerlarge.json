@@ -1,32 +1,30 @@
 [
+{
+  "type": "mod_tileset",
+  "compatibility": ["MshockXottoplus"],
+  "tiles-new": [
   {
-    "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus" ],
-    "tiles-new": [
-      {
-        "file": "mod_tileset/naturis_expan_dp_fillerlarge.png",
-        "sprite_offset_x": -16,
-        "sprite_offset_y": -32,
-        "sprite_width": 64,
-        "sprite_height": 64,
-        "tiles": [
-          { "id": "mon_forest_dragon", "fg": 0, "rotates": false, "bg": 12 },
-          { "id": "corpse_mon_forest_dragon", "fg": 1, "rotates": false, "bg": 12 },
-          { "id": "mon_rapid_striker", "fg": 2, "rotates": false, "bg": 12 },
-          { "id": "mon_rapid_striker_tail","fg": 5, "rotates": false, "bg": 12 },
-          { "id": "mon_flying_fire", "fg": 6, "rotates": false, "bg": 12 },
-          { "id": "mon_ice_former", "fg": 7, "rotates": false, "bg": 12 },
-          { "id": "mon_beast_static", "fg": 8, "rotates": false, "bg": 12 },
-          { "id": "mon_crystal_walker", "fg": 14, "rotates": false, "bg": 12 },
-          { "id": "mon_crystal_walker_calf", "fg": 15, "rotates": false, "bg": 12 },
-          { "id": "mon_crystal_seeder", "fg": 16, "rotates": false, "bg": 12 },
-          { "id": "mon_ice_shadow", "fg": 17, "rotates": false, "bg": 12 }
-          
-          
-          
-          
+    "file": "mod_tileset/naturis_expan_dp_fillerlarge.png",
+    "sprite_offset_x": -16,
+    "sprite_offset_y": -32,
+    "sprite_width": 64,
+    "sprite_height": 64,
+    "tiles": [
+      { "id": "mon_forest_dragon", "fg": 0, "rotates": false, "bg": 12 },
+      { "id": "corpse_mon_forest_dragon", "fg": 1, "rotates": false, "bg": 12 },
+      { "id": "mon_rapid_striker", "fg": 2, "rotates": false, "bg": 12 },
+      { "id": "mon_rapid_striker_tail", "fg": 5, "rotates": false, "bg": 12 },
+      { "id": "mon_flying_fire", "fg": 6, "rotates": false, "bg": 12 },
+      { "id": "mon_ice_former", "fg": 7, "rotates": false, "bg": 12 },
+      { "id": "mon_beast_static", "fg": 8, "rotates": false, "bg": 12 },
+      { "id": "mon_crystal_walker", "fg": 14, "rotates": false, "bg": 12 },
+      { "id": "mon_crystal_walker_calf", "fg": 15, "rotates": false, "bg": 12 },
+      { "id": "mon_crystal_seeder", "fg": 16, "rotates": false, "bg": 12 },
+      { "id": "mon_ice_shadow", "fg": 17, "rotates": false, "bg": 12 }
+      
+      
+      
+      
     ]
-  }
-] 
-}
-]
+  }]
+}]

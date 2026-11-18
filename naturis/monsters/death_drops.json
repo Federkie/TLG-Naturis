@@ -4,70 +4,86 @@
     "subtype": "collection",
     "id": "mon_forest_dragon_death_drops",
     "entries": [
-      { "item": "forest_claw", "count": [ 1, 3 ] },
-      { "item": "dragon_hair", "count": [ 1, 5 ] },
-      { "item": "leaves_pink", "count": [ 3, 7 ] },
-      { "item": "scale_forest_dragon", "count": [ 0, 3 ] }
+      { "item": "forest_claw", "count": [1, 3] },
+      { "item": "dragon_hair", "count": [1, 5] },
+      { "item": "leaves_pink", "count": [3, 7] },
+      { "item": "scale_forest_dragon", "count": [0, 3] }
     ]
   },
- {
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "mon_walking_tree_death_drops",
     "entries": [
-      { "item": "living_wood", "count": [ 0, 3 ] }
+      { "item": "living_wood", "count": [0, 3] }
     ]
   },
-   {
-   "type": "item_group",
-   "subtype": "collection",
-   "id": "mon_rapid_striker_death_drops",
-   "entries": [
-     { "item": "claw_sharp", "count": [1, 4] },
-     { "item": "spike_neck", "count": [1, 3] },
-     { "item": "fang_venomous", "count": [0, 2] }
-   ]
- },
-   {
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_rapid_striker_death_drops",
+    "entries": [
+      { "item": "claw_sharp", "count": [1, 4] },
+      { "item": "spike_neck", "count": [1, 3] },
+      { "item": "fang_venomous", "count": [0, 2] }
+    ]
+  },
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "mon_flying_fire_death_drops",
     "entries": [
-      { "item": "claw_sharp", "count": [
-0, 4] },
-      { "item": "feather_burning", "count": [
-3, 7] },
+      {
+        "item": "claw_sharp",
+        "count": [
+          0, 4
+        ]
+      },
+      {
+        "item": "feather_burning",
+        "count": [
+          3, 7
+        ]
+      },
       { "item": "feather_long", "count": [0, 3] }
     ]
   },
-   {
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "mon_ice_former_death_drops",
     "entries": [
-      { "item": "claw_frozen", "count": [
-0, 2] },
+      {
+        "item": "claw_frozen",
+        "count": [
+          0, 2
+        ]
+      },
       { "item": "shard_ice", "count": [1, 3] }
     ]
   },
-     {
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "mon_beast_static_drops",
     "entries": [
-      { "item": "sickle_shaped_claw", "count": [
-0, 2] },
+      {
+        "item": "sickle_shaped_claw",
+        "count": [
+          0, 2
+        ]
+      },
       { "item": "static_chunk", "count": [1, 3] }
     ]
   },
   {
-  "type": "item_group",
-  "subtype": "collection",
-  "id": "mon_veil_stalker_death_drops",
-  "entries": [
-    { "item": "shadow_pearl", "count": [0, 1] }
-  ]
-},
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_veil_stalker_death_drops",
+    "entries": [
+      { "item": "shadow_pearl", "count": [0, 1] }
+    ]
+  },
   {
     "type": "item_group",
     "subtype": "collection",
@@ -76,7 +92,7 @@
       { "item": "shadow_pearl", "count": [1, 3] }
     ]
   },
-    {
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "mon_crawler_bastion_death_drops",
@@ -84,22 +100,22 @@
       { "item": "crystal_structural", "count": [1, 3] }
     ]
   },
-    {
-      "type": "item_group",
-      "subtype": "collection",
-      "id": "mon_blob_ice_death_drops",
-      "entries": [
-        { "item": "shard_ice", "count": [1, 3] }
-      ]
-    },
-     {
-      "type": "item_group",
-      "subtype": "collection",
-      "id": "mon_egg_snatcher_death_drops",
-      "entries": [
-        { "item": "egg_unknown", "count": [1, 2] }
-      ]
-    },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_blob_ice_death_drops",
+    "entries": [
+      { "item": "shard_ice", "count": [1, 3] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_egg_snatcher_death_drops",
+    "entries": [
+      { "item": "egg_unknown", "count": [1, 2] }
+    ]
+  },
   {
     "type": "item_group",
     "subtype": "collection",
@@ -108,6 +124,6 @@
       { "item": "shard_crystal", "count": [1, 4] }
     ]
   }
-
-
+  
+  
 ]

@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": "mon_crystal_walker",
     "type": "MONSTER",
     "name": { "str_sp": "crystal walker" },
@@ -47,21 +47,23 @@
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 8 },
     "special_attacks": [
       { "id": "smash", "throw_strength": 60, "cooldown": 40 },
-      {"type": "spell",
-        "spell_data": { "id": "crystal_storm"},
+      {
+        "type": "spell",
+        "spell_data": { "id": "crystal_storm" },
         "monster_message": "The %s shoots an shower of crystal shards on you!",
         "cooldown": 10,
-         "condition": {
-        "not": {
-            "u_has_effect": "destroyed_antler" }
+        "condition": {
+          "not": {
+            "u_has_effect": "destroyed_antler"
+          }
         }
-      },    
+      },
       ["EAT_CROP", 60],
       ["GRAZE", 50]
     ],
-        "emit_fields": [
-  { "emit_id": "emit_herbivore_track", "delay": "1 h" }
-],
+    "emit_fields": [
+      { "emit_id": "emit_herbivore_track", "delay": "1 h" }
+    ],
     "flags": [
       "SEES",
       "HEARS",
@@ -76,7 +78,7 @@
     ],
     "armor": { "bash": 2, "cut": 8, "bullet": 6, "electric": 2 }
   },
-    {
+  {
     "id": "mon_veil_stalker",
     "type": "MONSTER",
     "name": { "str": "veil stalker" },
@@ -108,13 +110,14 @@
     "death_drops": "mon_veil_stalker_death_drops",
     "grab_strength": 25,
     "special_attacks": [
-      {"type": "spell",
-        "spell_data": { "id": "short_invisibility_spell"},
+      {
+        "type": "spell",
+        "spell_data": { "id": "short_invisibility_spell" },
         "monster_message": "The %s is obscuring his position!",
         "cooldown": 10,
         "allow_no_target": true,
         "condition": {
-          "math": [ "u_hp('ALL') <= 60" ]
+          "math": ["u_hp('ALL') <= 60"]
         }
       },
       {
@@ -136,7 +139,7 @@
     ],
     "armor": { "bash": 4, "cut": 2, "stab": 2, "heat": 2, "bullet": 4, "electric": 2 }
   },
-    {
+  {
     "id": "mon_ghost_stalker",
     "type": "MONSTER",
     "name": { "str": "ghost stalker" },
@@ -152,7 +155,7 @@
     "color": "light_gray",
     "aggression": -30,
     "morale": 10,
-    "fear_triggers": [ "PLAYER_CLOSE" ],
+    "fear_triggers": ["PLAYER_CLOSE"],
     "melee_skill": 1,
     "melee_dice": 1,
     "melee_dice_sides": 1,
@@ -162,18 +165,19 @@
     "vision_night": 10,
     "aggro_character": false,
     "upgrades": { "half_life": 120, "into": "mon_veil_stalker" },
-    "special_attacks": [ ],
+    "special_attacks": [],
     "death_drops": "mon_ghost_stalker_death_drops",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s fades away!" },
-    "flags": [      
+    "flags": [
       "SEES",
       "HEARS",
       "GOODHEARING",
       "BELLYUP",
       "HARDTOSHOOT",
-      "NO_BREATHE"]
+      "NO_BREATHE"
+    ]
   },
-   {
+  {
     "id": "mon_big_raptor",
     "type": "MONSTER",
     "name": {
@@ -182,14 +186,14 @@
     "description": "A large, upright walking raptor that appears significantly more dangerous than its smaller relatives.",
     "default_faction": "forest",
     "bodytype": "lizard",
-    "species": [ "REPTILE" ],
+    "species": ["REPTILE"],
     "diff": 5,
     "volume": "70 L",
     "weight": "50000 g",
     "hp": 170,
     "speed": 150,
     "stomach_size": 800,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "r",
     "color": "brown",
     "aggression": 100,
@@ -198,30 +202,32 @@
     "melee_dice": 4,
     "melee_dice_sides": 4,
     "melee_damage": [
-      {
-        "damage_type": "cut",
-        "amount": 4
-      }
-    ],
+    {
+      "damage_type": "cut",
+      "amount": 4
+    }],
     "dodge": 2,
     "families": [
       "prof_intro_biology",
-      "prof_physiology", "prof_field_research",  "prof_wp_mythic"
+      "prof_physiology", "prof_field_research", "prof_wp_mythic"
     ],
     "weakpoint_sets": ["wps_big_raptor"],
-      "special_attacks": [
-      [ "EAT_CARRION", 40 ],
+    "special_attacks": [
+      ["EAT_CARRION", 40],
       { "type": "leap", "cooldown": 10, "max_range": 6, "ignore_dest_danger": true },
-      { "id": "cut_throat", "cooldown": 12,
-          "condition": {
-            "not": {
-            "u_has_effect": "maimed_claw" }
+      {
+        "id": "cut_throat",
+        "cooldown": 12,
+        "condition": {
+          "not": {
+            "u_has_effect": "maimed_claw"
           }
+        }
       }
     ],
     "harvest": "big_raptor",
     "reproduction": { "baby_egg": "egg_small_raptor", "baby_count": 1, "baby_timer": 50 },
-    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
+    "baby_flags": ["SPRING", "SUMMER", "AUTUMN", "WINTER"],
     "dissect": "dissect_naturis_sample_normal",
     "vision_day": 30,
     "vision_night": 2,
@@ -235,7 +241,7 @@
     ],
     "armor": { "bash": 4, "cut": 4, "stab": 1, "heat": 3, "bullet": 2, "electric": 1 }
   },
-    {
+  {
     "id": "mon_ice_shadow",
     "type": "MONSTER",
     "name": {
@@ -244,14 +250,14 @@
     "description": "A large, ray-like creature. Most of the time, it remains hidden, waiting for unsuspecting victims.",
     "default_faction": "ice",
     "bodytype": "lizard",
-    "species": [ "MYTHIC" ],
+    "species": ["MYTHIC"],
     "diff": 5,
     "volume": "90 L",
     "weight": "48000 g",
     "hp": 150,
     "speed": 120,
     "stomach_size": 600,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "r",
     "color": "blue",
     "aggression": 100,
@@ -260,28 +266,30 @@
     "melee_dice": 3,
     "melee_dice_sides": 7,
     "melee_damage": [
-      {
-        "damage_type": "cut",
-        "amount": 2
-      }
-    ],
+    {
+      "damage_type": "cut",
+      "amount": 2
+    }],
     "dodge": 3,
     "weakpoint_sets": ["wps_ice_shadow"],
     "families": [
       "prof_intro_biology",
       "prof_physiology", "prof_wp_mythic"
     ],
-      "special_attacks": [
-      [ "EAT_CARRION", 40 ],
+    "special_attacks": [
+      ["EAT_CARRION", 40],
       {
         "type": "bite",
         "cooldown": 10,
         "damage_max_instance": [{ "damage_type": "stab", "amount": 6, "armor_multiplier": 0.5 }]
       },
-      { "id": "cut_throat", "cooldown": 15, 
+      {
+        "id": "cut_throat",
+        "cooldown": 15,
         "condition": {
-        "not": {
-            "u_has_effect": "damaged_swing" }
+          "not": {
+            "u_has_effect": "damaged_swing"
+          }
         }
       }
     ],

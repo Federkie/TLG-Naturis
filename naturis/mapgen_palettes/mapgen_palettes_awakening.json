@@ -4,43 +4,84 @@
     "type": "palette",
     "id": "awakening_palette",
     "terrain": {
-       "x": "t_grass",
-       "C": "t_grass",
-       "0": "t_grass",
-       "l": "t_wall_wood",
-       "/": [ [ "t_tree_young", 3 ], [ "t_trunk", 2 ],[ "t_tree_beech", 1 ],[ "t_dirtmound", 2 ] ],
-       "t": [ 
-       [ "t_tree_young", 2 ], 
-       [ "t_tree_maple", 1 ], 
-       [ "t_trunk", 2 ],
-       [ "t_tree_cherry", 1 ],
-       [ "t_tree_willow", 2 ],
-       [ "t_tree_hickory", 1 ],
-       [ "t_tree_deadpine", 2 ],
-       [ "t_tree_coffee", 1 ],
-       [ "t_tree_pine", 1 ],
-       [ "t_tree_pear", 1 ],
-       [ "t_tree_beech", 2],
-       [ "t_tree_apple", 1 ] ],
-       ".": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
-       ",": "t_beehive_natural",
-       "M": "t_moss",
-       "T": "t_tree_hollowed_gold",
-       "w": "t_window_stained_blue",
-       "r": "t_root_floor",
-       "f": [ [ "t_fungal_deposit",1 ], [ "t_fungal_deposit_harvested", 2 ] ],
-       "2": [ [ "t_growing_dog",1 ], [ "t_fungal_deposit", 1 ], [ "t_pink_flowers",2 ] ],
-       "3": [ [ "t_pink_flowers",1 ], [ "t_pink_flowers_harvested", 2 ] ],
-       "I": "t_tree_beech",
-       "m": [ [ "t_m_mushroom", 3 ], [ "t_m_mushroom_harvested", 1 ] ],
-       "^": [ [ "t_underbrush", 2], [ "t_shrub", 2], [ "t_moss", 2], [ "t_fern",1 ] ],
-       "*": "t_water_sh"
+      "x": "t_grass",
+      "C": "t_grass",
+      "0": "t_grass",
+      "l": "t_wall_wood",
+      "/": [
+        ["t_tree_young", 3],
+        ["t_trunk", 2],
+        ["t_tree_beech", 1],
+        ["t_dirtmound", 2]
+      ],
+      "t": [
+        ["t_tree_young", 2],
+        ["t_tree_maple", 1],
+        ["t_trunk", 2],
+        ["t_tree_cherry", 1],
+        ["t_tree_willow", 2],
+        ["t_tree_hickory", 1],
+        ["t_tree_deadpine", 2],
+        ["t_tree_coffee", 1],
+        ["t_tree_pine", 1],
+        ["t_tree_pear", 1],
+        ["t_tree_beech", 2],
+        ["t_tree_apple", 1]
+      ],
+      ".": [
+        ["t_grass", 3],
+        ["t_grass_dead", 1],
+        ["t_grass_long", 1]
+      ],
+      ",": "t_beehive_natural",
+      "M": "t_moss",
+      "T": "t_tree_hollowed_gold",
+      "w": "t_window_stained_blue",
+      "r": "t_root_floor",
+      "f": [
+        ["t_fungal_deposit", 1],
+        ["t_fungal_deposit_harvested", 2]
+      ],
+      "2": [
+        ["t_growing_dog", 1],
+        ["t_fungal_deposit", 1],
+        ["t_pink_flowers", 2]
+      ],
+      "3": [
+        ["t_pink_flowers", 1],
+        ["t_pink_flowers_harvested", 2]
+      ],
+      "I": "t_tree_beech",
+      "m": [
+        ["t_m_mushroom", 3],
+        ["t_m_mushroom_harvested", 1]
+      ],
+      "^": [
+        ["t_underbrush", 2],
+        ["t_shrub", 2],
+        ["t_moss", 2],
+        ["t_fern", 1]
+      ],
+      "*": "t_water_sh"
     },
     "furniture": {
-      "C": [ [ "f_chair_grown", 1 ], [ "f_null", 2 ] ],
-      "x": [ [ "f_stool_grown", 1 ], [ "f_null", 2 ] ],
-      "0": [ [ "f_boulder_small", 4 ], [ "f_obelisk", 2 ], [ "f_natur_root", 3], [ "f_obelisk_glow", 2], [ "f_obelisk_big", 1 ], [ "f_obelisk_big_glow", 1 ] ]
+      "C": [
+        ["f_chair_grown", 1],
+        ["f_null", 2]
+      ],
+      "x": [
+        ["f_stool_grown", 1],
+        ["f_null", 2]
+      ],
+      "0": [
+        ["f_boulder_small", 4],
+        ["f_obelisk", 2],
+        ["f_natur_root", 3],
+        ["f_obelisk_glow", 2],
+        ["f_obelisk_big", 1],
+        ["f_obelisk_big_glow", 1]
+      ]
     }
   }
-
+  
 ]

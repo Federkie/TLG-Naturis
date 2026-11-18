@@ -1,8 +1,8 @@
 [
-    {
+  {
     "id": "raptorfood",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "comestible_type": "FOOD",
     "name": { "str_sp": "raptor food" },
     "description": "A mixture of different types of meat. A young raptor should be happy with that.",
@@ -12,16 +12,21 @@
     "volume": "500 ml",
     "price_postapoc": "4 USD 50 cent",
     "to_hit": -5,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": ";",
     "quench": 2,
     "calories": 450,
-    "vitamins": [ [ "vitC", 4 ], [ "iron", 17 ], [ "calcium", 0 ], [ "meat_allergen", 1 ] ],
+    "vitamins": [
+      ["vitC", 4],
+      ["iron", 17],
+      ["calcium", 0],
+      ["meat_allergen", 1]
+    ],
     "fun": -15,
     "color": "brown",
-    "flags": [ "LUPINE" ],
-    "use_action": [ "PETFOOD" ],
-    "petfood": [ "RAPTORFOOD" ]
+    "flags": ["LUPINE"],
+    "use_action": ["PETFOOD"],
+    "petfood": ["RAPTORFOOD"]
   }
   
   

@@ -1,10 +1,10 @@
 [
   {
     "type": "mapgen",
-    "om_terrain": [ "frozen_cave" ],
+    "om_terrain": ["frozen_cave"],
     "object": {
       "predecessor_mapgen": "forest_thick",
-          "rows": [
+      "rows": [
         "                        ",
         "                        ",
         "                        ",
@@ -32,13 +32,13 @@
       ],
       "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"],
       "palettes": ["cave_surface_palette"]
-      }
-    },
- {
+    }
+  },
+  {
     "type": "mapgen",
-    "om_terrain": [ "frozen_cave_underground" ],
+    "om_terrain": ["frozen_cave_underground"],
     "object": {
-    "fill_ter": "t_sand",
+      "fill_ter": "t_sand",
       "rows": [
         "************************",
         "**........***....+..****",
@@ -65,26 +65,26 @@
         "*****.............******",
         "************************"
       ],
-       "terrain": {
-         ">": "t_slope_up"
-    },
-      "palettes": [ "frozen_palette" ],
-       "nested": {
-   "?": {
-     "chunks": [
-       ["null", 40],
-       ["frozen_1x1_01", 30],
-       ["frozen_1x1_02", 30],
-       ["frozen_2x2_03", 30],
-       ["frozen_2x2_04", 30],
-       ["frozen_2x2_05", 30],
-       ["frozen_2x2_06", 30],
-       ["frozen_2x2_08", 20],
-       ["frozen_2x2_07", 50]
-     ]
-   }
- }
+      "terrain": {
+        ">": "t_slope_up"
+      },
+      "palettes": ["frozen_palette"],
+      "nested": {
+        "?": {
+          "chunks": [
+            ["null", 40],
+            ["frozen_1x1_01", 30],
+            ["frozen_1x1_02", 30],
+            ["frozen_2x2_03", 30],
+            ["frozen_2x2_04", 30],
+            ["frozen_2x2_05", 30],
+            ["frozen_2x2_06", 30],
+            ["frozen_2x2_08", 20],
+            ["frozen_2x2_07", 50]
+          ]
+        }
       }
     }
-
+  }
+  
 ]

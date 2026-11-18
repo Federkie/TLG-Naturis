@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "naturis_research_file",
@@ -7,33 +7,57 @@
     "subcategory": "CSC_RESEARCH_ANALYSIS",
     "time": "30 m",
     "autolearn": true,
-    "flags": [ "BLIND_HARD" ],
-    "qualities": [ { "id": "RESEARCH", "level": 1 } ],
+    "flags": ["BLIND_HARD"],
+    "qualities": [{ "id": "RESEARCH", "level": 1 }],
     "components": [
-      [ [ "paper", 1 ] ],
-      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_small", 1 ], [ "naturis_sample_small_pres", 1 ] ]
-    ]  
-    },
-   {
+      [
+        ["paper", 1]
+      ],
+      [
+        ["pencil", 1],
+        ["black_pen", 1],
+        ["blue_pen", 1],
+        ["red_pen", 1],
+        ["green_pen", 1]
+      ],
+      [
+        ["naturis_sample_small", 1],
+        ["naturis_sample_small_pres", 1]
+      ]
+    ]
+  },
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "naturis_research_dossier",
     "category": "CC_RESEARCH",
     "subcategory": "CSC_RESEARCH_ANALYSIS",
     "skill_used": "research",
-    "flags": [ "BLIND_HARD" ],
+    "flags": ["BLIND_HARD"],
     "difficulty": 2,
     "time": "1 h",
-    "autolearn": [ ["research", 3] ],
-    "qualities": [ { "id": "RESEARCH", "level": 2 } ],
+    "autolearn": [
+      ["research", 3]
+    ],
+    "qualities": [{ "id": "RESEARCH", "level": 2 }],
     "components": [
-      [ [ "paper", 2 ] ],
-      [ [ "pencil", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "red_pen", 1 ], [ "green_pen", 1 ] ],
-      [ [ "naturis_sample_normal", 1 ], [ "naturis_sample_normal_pres", 1 ] ]
-    ]  
-    },
-      {
+      [
+        ["paper", 2]
+      ],
+      [
+        ["pencil", 1],
+        ["black_pen", 1],
+        ["blue_pen", 1],
+        ["red_pen", 1],
+        ["green_pen", 1]
+      ],
+      [
+        ["naturis_sample_normal", 1],
+        ["naturis_sample_normal_pres", 1]
+      ]
+    ]
+  },
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "field_analysis_kit",
@@ -45,12 +69,19 @@
     "reversible": false,
     "autolearn": true,
     "components": [
-      [ [ "xacto", 1 ] ],
-      [ [ "lens", 1 ], [ "lens_small", 2 ] ],
-      [ [ "rubber_band", 1 ] ]
+      [
+        ["xacto", 1]
+      ],
+      [
+        ["lens", 1],
+        ["lens_small", 2]
+      ],
+      [
+        ["rubber_band", 1]
+      ]
     ]
   },
-      {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "field_scanner",
@@ -60,21 +91,34 @@
     "difficulty": 2,
     "time": "35 m",
     "reversible": false,
-    "autolearn": [ ["research", 2] ],
-    "using": [ [ "soldering_standard", 4 ] ],
+    "autolearn": [
+      ["research", 2]
+    ],
+    "using": [
+      ["soldering_standard", 4]
+    ],
     "proficiencies": [
       { "proficiency": "prof_elec_soldering" },
       { "proficiency": "prof_elec_circuits" }
     ],
-    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "qualities": [{ "id": "SCREW", "level": 1 }],
     "components": [
-      [ [ "smart_phone", 1 ] ],
-      [ [ "lens", 1 ], [ "lens_small", 2 ] ],
-      [ [ "test_tube", 1 ] ],
-      [ [ "cable", 4 ] ]
+      [
+        ["smart_phone", 1]
+      ],
+      [
+        ["lens", 1],
+        ["lens_small", 2]
+      ],
+      [
+        ["test_tube", 1]
+      ],
+      [
+        ["cable", 4]
+      ]
     ]
   },
-        {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "field_scanner_2",
@@ -84,21 +128,33 @@
     "difficulty": 5,
     "time": "1 h",
     "reversible": false,
-    "autolearn": [ ["research", 5] ],
-    "using": [ [ "soldering_standard", 6 ] ],
+    "autolearn": [
+      ["research", 5]
+    ],
+    "using": [
+      ["soldering_standard", 6]
+    ],
     "proficiencies": [
       { "proficiency": "prof_elec_soldering" },
       { "proficiency": "prof_elec_circuits" }
     ],
-    "qualities": [ { "id": "SCREW", "level": 2 } ],
+    "qualities": [{ "id": "SCREW", "level": 2 }],
     "components": [
-      [ [ "field_scanner", 1 ] ],
-      [ [ "lens_small", 4 ] ],
-      [ [ "amplifier", 1 ] ],
-      [ [ "e_scrap", 3 ] ]
+      [
+        ["field_scanner", 1]
+      ],
+      [
+        ["lens_small", 4]
+      ],
+      [
+        ["amplifier", 1]
+      ],
+      [
+        ["e_scrap", 3]
+      ]
     ]
   },
-   {
+  {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "field_scanner_3",
@@ -108,18 +164,30 @@
     "difficulty": 8,
     "time": "2 h",
     "reversible": false,
-    "autolearn": [ ["research", 8] ],
-    "using": [ [ "soldering_standard", 2 ] ],
+    "autolearn": [
+      ["research", 8]
+    ],
+    "using": [
+      ["soldering_standard", 2]
+    ],
     "proficiencies": [
       { "proficiency": "prof_elec_soldering" },
       { "proficiency": "prof_elec_circuits" }
     ],
-    "qualities": [ { "id": "SCREW_FINE", "level": 2 }, { "id": "VISE", "level": 1 } ],
+    "qualities": [{ "id": "SCREW_FINE", "level": 2 }, { "id": "VISE", "level": 1 }],
     "components": [
-      [ [ "field_scanner_2", 1 ] ],
-      [ [ "magnifying_glass", 1 ] ],
-      [ [ "antenna", 1 ] ],
-      [ [ "cable", 3 ] ]
+      [
+        ["field_scanner_2", 1]
+      ],
+      [
+        ["magnifying_glass", 1]
+      ],
+      [
+        ["antenna", 1]
+      ],
+      [
+        ["cable", 3]
+      ]
     ]
   }
   

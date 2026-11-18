@@ -1,7 +1,7 @@
 [
-    {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_flying_fire",
     "name": { "str": "flying fire egg" },
     "weight": "1500 g",
@@ -13,16 +13,20 @@
     "calories": 2600,
     "description": "The egg of a flying fire. It is clearly identifiable by its reddish color, and it still feels slightly warm to the touch.",
     "price_postapoc": "120 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "FREEZERBURN", "RAW" ],
-    "rot_spawn": {  "group": "GROUP_FIRE_CHICK", "chance": 25 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["FREEZERBURN", "RAW"],
+    "rot_spawn": { "group": "GROUP_FIRE_CHICK", "chance": 25 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-      {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_static_beast",
     "name": { "str": "static beast egg" },
     "weight": "1500 g",
@@ -34,16 +38,20 @@
     "calories": 2600,
     "description": "The egg of a static beast. They are usually laid in groups to increase the birth rate.",
     "price_postapoc": "120 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "FREEZERBURN", "RAW" ],
-    "rot_spawn": {  "group": "GROUP_HATCHLING_STATIC", "chance": 25 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["FREEZERBURN", "RAW"],
+    "rot_spawn": { "group": "GROUP_HATCHLING_STATIC", "chance": 25 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-    {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_rapid_striker",
     "name": { "str": "rapid striker egg" },
     "weight": "1500 g",
@@ -55,16 +63,20 @@
     "calories": 2600,
     "description": "The egg of a Rapid Striker. The shell appears thin and pliable, yet seems stronger than leather.",
     "price_postapoc": "120 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "FREEZERBURN", "RAW" ],
-    "rot_spawn": {  "group": "GROUP_HATCHLING_RAPID", "chance": 25 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["FREEZERBURN", "RAW"],
+    "rot_spawn": { "group": "GROUP_HATCHLING_RAPID", "chance": 25 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-    {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_forest_dragon",
     "name": { "str": "forest dragon egg" },
     "weight": "1500 g",
@@ -76,16 +88,20 @@
     "calories": 2600,
     "description": "The green egg of a forest dragon. The sheen of its shell is reminiscent of its parents.",
     "price_postapoc": "120 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "FREEZERBURN", "RAW" ],
-    "rot_spawn": {  "group": "GROUP_HATCHLING_FDRAGON", "chance": 70 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["FREEZERBURN", "RAW"],
+    "rot_spawn": { "group": "GROUP_HATCHLING_FDRAGON", "chance": 70 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-    {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_ice_former",
     "name": { "str": "ice former egg" },
     "weight": "1500 g",
@@ -97,16 +113,20 @@
     "calories": 2600,
     "description": "A bluish, almost transparent egg. If you look closely, you can almost make out what’s inside.",
     "price_postapoc": "120 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "RAW" ],
-    "rot_spawn": {  "group": "GROUP_HATCHLING_ICEF", "chance": 60 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["RAW"],
+    "rot_spawn": { "group": "GROUP_HATCHLING_ICEF", "chance": 60 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-    {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_small_raptor",
     "name": { "str": "small raptor egg" },
     "weight": "50 g",
@@ -119,16 +139,20 @@
     "calories": 71,
     "description": "A nutritious egg laid by a small raptor.",
     "price_postapoc": "65 cent",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "50 ml",
     "fun": -8,
-    "flags": [ "FREEZERBURN", "RAW" ],
+    "flags": ["FREEZERBURN", "RAW"],
     "rot_spawn": { "group": "GROUP_SMALL_RAPTOR_HATCHLINGS", "chance": 30 },
-    "vitamins": [ [ "iron", "900 μg" ], [ "calcium", "28 mg" ], [ "egg_allergen", 1 ] ]
+    "vitamins": [
+      ["iron", "900 μg"],
+      ["calcium", "28 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-     {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_unknown",
     "name": { "str": "unknown egg" },
     "weight": "1500 g",
@@ -140,16 +164,20 @@
     "calories": 2600,
     "description": "A large egg, the origin of which is difficult to determine. Perhaps you should wait to see what hatches from it.",
     "price_postapoc": "120 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "RAW" ],
-    "rot_spawn": {  "group": "GROUP_HATCHLINGS", "chance": 60 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["RAW"],
+    "rot_spawn": { "group": "GROUP_HATCHLINGS", "chance": 60 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-   {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "egg_forest_raptor",
     "name": { "str": "forest raptor egg" },
     "weight": "1500 g",
@@ -161,16 +189,20 @@
     "calories": 2600,
     "description": "A greenish, almost transparent egg. If you look closely, you can almost make out what’s inside.",
     "price_postapoc": "10 USD",
-    "material": [ "egg" ],
+    "material": ["egg"],
     "volume": "1500 ml",
     "fun": -8,
-    "flags": [ "RAW" ],
-    "rot_spawn": {  "group": "GROUP_FOREST_RAPTOR_HATCHLINGS", "chance": 60 },
-    "vitamins": [ [ "iron", "30000 μg" ], [ "calcium", "700 mg" ], [ "egg_allergen", 1 ] ]
+    "flags": ["RAW"],
+    "rot_spawn": { "group": "GROUP_FOREST_RAPTOR_HATCHLINGS", "chance": 60 },
+    "vitamins": [
+      ["iron", "30000 μg"],
+      ["calcium", "700 mg"],
+      ["egg_allergen", 1]
+    ]
   },
-     {
+  {
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "subtypes": ["COMESTIBLE"],
     "id": "dog_seedling",
     "name": { "str": "forest seedling" },
     "weight": "50 g",
@@ -182,10 +214,32 @@
     "quench": 4,
     "description": "A small, green tuber. After some time, perhaps something will hatch from it.",
     "price_postapoc": "35 cent",
-    "material": [ "dry_plant" ],
+    "material": ["dry_plant"],
     "volume": "50 ml",
-    "flags": [ "INEDIBLE", "RAW" ],
+    "flags": ["INEDIBLE", "RAW"],
     "rot_spawn": { "group": "GROUP_FOREST_DOG", "chance": 70 }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "id": "egg_forest_raptor_stasis",
+    "name": { "str": "stasis raptor egg" },
+    "weight": "1500 g",
+    "color": "brown",
+    "symbol": "o",
+    "description": "A raptor egg kept in stasis. The structure, made of glass and metal, looks complex and fragile. The activation ends the stasis and allows the raptor to hatch.",
+    "price_postapoc": "50 USD",
+    "material": ["egg", "glass"],
+    "volume": "1650 ml",
+    "flags": ["MUNDANE", "SINGLE_USE"],
+    "melee_damage": { "bash": 7 },
+    "use_action":
+    {
+      "type": "cast_spell",
+      "spell_id": "hatch_stasis_egg",
+      "no_fail": true,
+      "level": 1
+    }
   }
   
   

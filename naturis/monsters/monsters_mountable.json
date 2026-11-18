@@ -1,19 +1,19 @@
 [
-    {
+  {
     "id": "mon_forest_raptor",
     "type": "MONSTER",
     "name": { "str": "forest raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 220,
     "speed": 240,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 100,
@@ -23,48 +23,69 @@
     "melee_dice_sides": 6,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4 }],
     "dodge": 4,
     "stomach_size": 8500,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "FIRE", "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["FIRE", "SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "upgrades": {
-       "half_life": 90,
-       "into_group": "GROUP_RAPTOR_UPGRADES"
-      },
+      "half_life": 90,
+      "into_group": "GROUP_RAPTOR_UPGRADES"
+    },
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "bite_grab",
-         "cooldown": 20,
-         "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
-         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
-            "infection_chance": 30
-          },
-      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "pet_martial_art"
-  }
-}
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "bite_grab",
+        "cooldown": 20,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
+        "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+        "infection_chance": 30
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "pet_martial_art"
+        }
+      },
+      {
+        "id": "defensive_stance",
+        "type": "spell",
+        "spell_data": { "id": "defensive_stance" },
+        "monster_message": "The %s adopts a defensive stance.",
+        "cooldown": 80,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_defensive_stance" } }, { "u_has_effect": "pet_martial_art_defensive" }, {
+            "math": ["u_hp('ALL') <= 60"]
+          }]
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.33,
     "flags": [
       "SEES",
@@ -83,21 +104,21 @@
     ],
     "armor": { "bash": 3, "cut": 8, "bullet": 2, "electric": 2 }
   },
-    {
+  {
     "id": "mon_static_raptor",
     "type": "MONSTER",
     "name": { "str": "static raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 220,
     "speed": 240,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 80,
@@ -107,46 +128,67 @@
     "melee_dice_sides": 7,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 5 }],
     "dodge": 4,
     "stomach_size": 9000,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "FIRE", "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["FIRE", "SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-     [ "EAT_CARRION", 100 ], 
-     { "id": "longswipe" },
-     { "id": "bite_grab",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      { "id": "longswipe" },
+      {
+        "id": "bite_grab",
         "cooldown": 20,
         "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
-            "infection_chance": 30
-          },
-      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "pet_martial_art"
-  }
-}
+        "infection_chance": 30
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "pet_martial_art"
+        }
+      },
+      {
+        "id": "defensive_stance",
+        "type": "spell",
+        "spell_data": { "id": "defensive_stance" },
+        "monster_message": "The %s adopts a defensive stance.",
+        "cooldown": 80,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_defensive_stance" } }, { "u_has_effect": "pet_martial_art_defensive" }, {
+            "math": ["u_hp('ALL') <= 60"]
+          }]
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "special_when_hit": [ "ZAPBACK", 30 ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "special_when_hit": ["ZAPBACK", 30],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.33,
     "flags": [
       "SEES",
@@ -166,21 +208,21 @@
     ],
     "armor": { "bash": 5, "cut": 10, "bullet": 4, "electric": 15 }
   },
-    {
+  {
     "id": "mon_crystal_raptor",
     "type": "MONSTER",
     "name": { "str": "crystal raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 260,
     "speed": 240,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 100,
@@ -190,44 +232,65 @@
     "melee_dice_sides": 6,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4 }],
     "dodge": 2,
     "stomach_size": 9000,
     "regenerates": 1,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
-    "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "FIRE", "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
-    "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
-    "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "bite_grab",
-         "cooldown": 20,
-         "damage_max_instance": [{ "damage_type": "stab", "amount": 20, "armor_multiplier": 0.1 }],
-         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
-            "infection_chance": 30
-          },
-      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "pet_martial_art"
-  }
-}
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
     ],
-     "emit_fields": [
-     {
+    "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["FIRE", "SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
+    "dissect": "dissect_naturis_sample_normal",
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
+    "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
+    "baby_flags": ["AUTUMN"],
+    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "bite_grab",
+        "cooldown": 20,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 20, "armor_multiplier": 0.1 }],
+        "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+        "infection_chance": 30
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "pet_martial_art"
+        }
+      },
+      {
+        "id": "defensive_stance",
+        "type": "spell",
+        "spell_data": { "id": "defensive_stance" },
+        "monster_message": "The %s adopts a defensive stance.",
+        "cooldown": 80,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_defensive_stance" } }, { "u_has_effect": "pet_martial_art_defensive" }, {
+            "math": ["u_hp('ALL') <= 60"]
+          }]
+        }
+      }
+    ],
+    "emit_fields": [
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.33,
     "flags": [
       "SEES",
@@ -247,21 +310,21 @@
     ],
     "armor": { "bash": 6, "cut": 14, "bullet": 4, "electric": 2 }
   },
-     {
+  {
     "id": "mon_ancient_raptor",
     "type": "MONSTER",
     "name": { "str": "ancient raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 240,
     "speed": 240,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 80,
@@ -271,51 +334,74 @@
     "melee_dice_sides": 5,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 5 }],
     "dodge": 3,
     "stomach_size": 9000,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "cut_throat",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "cut_throat",
         "cooldown": 8,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
-      { "id": "bite_grab",
-         "cooldown": 15,
-         "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
-         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
-            "infection_chance": 30
-          },
-      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "pet_martial_art"
-  }
-}
+      {
+        "id": "bite_grab",
+        "cooldown": 15,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
+        "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+        "infection_chance": 30
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "pet_martial_art"
+        }
+      },
+      {
+        "id": "defensive_stance",
+        "type": "spell",
+        "spell_data": { "id": "defensive_stance" },
+        "monster_message": "The %s adopts a defensive stance.",
+        "cooldown": 80,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_defensive_stance" } }, { "u_has_effect": "pet_martial_art_defensive" }, {
+            "math": ["u_hp('ALL') <= 60"]
+          }]
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.33,
     "flags": [
       "SEES",
@@ -335,21 +421,21 @@
     ],
     "armor": { "bash": 10, "cut": 14, "bullet": 6, "electric": 2 }
   },
-{
+  {
     "id": "mon_ice_raptor",
     "type": "MONSTER",
     "name": { "str": "ice raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 250,
     "speed": 210,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 120,
@@ -359,51 +445,74 @@
     "melee_dice_sides": 6,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4 }],
     "dodge": 3,
     "stomach_size": 9000,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "cut_throat",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "cut_throat",
         "cooldown": 10,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
-      { "id": "bite_grab",
-         "cooldown": 20,
-         "damage_max_instance": [{ "damage_type": "stab", "amount": 18, "armor_multiplier": 0.1 }],
-         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
-            "infection_chance": 30
-          },
-      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "pet_martial_art"
-  }
-}
+      {
+        "id": "bite_grab",
+        "cooldown": 20,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 18, "armor_multiplier": 0.1 }],
+        "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+        "infection_chance": 30
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "pet_martial_art"
+        }
+      },
+      {
+        "id": "defensive_stance",
+        "type": "spell",
+        "spell_data": { "id": "defensive_stance" },
+        "monster_message": "The %s adopts a defensive stance.",
+        "cooldown": 80,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_defensive_stance" } }, { "u_has_effect": "pet_martial_art_defensive" }, {
+            "math": ["u_hp('ALL') <= 60"]
+          }]
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.34,
     "flags": [
       "SEES",
@@ -423,21 +532,21 @@
     ],
     "armor": { "bash": 12, "cut": 14, "bullet": 6, "electric": 2 }
   },
-{
+  {
     "id": "mon_fire_raptor",
     "type": "MONSTER",
     "name": { "str": "fire raptor" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 220,
     "speed": 240,
     "attack_cost": 190,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 80,
@@ -447,51 +556,74 @@
     "melee_dice_sides": 5,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
     "dodge": 3,
     "stomach_size": 9000,
     "regenerates": 1,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "cut_throat",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "cut_throat",
         "cooldown": 10,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
-      { "id": "bite_grab",
-         "cooldown": 20,
-         "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
-         "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
-            "infection_chance": 30
-          },
-      { "type": "leap", "cooldown": 15, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "pet_martial_art"
-  }
-}
+      {
+        "id": "bite_grab",
+        "cooldown": 20,
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 15, "armor_multiplier": 0.1 }],
+        "effects": [{ "id": "venom_dmg", "duration": 1200 }, { "id": "venom_weaken", "duration": 3000 }],
+        "infection_chance": 30
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "pet_martial_art"
+        }
+      },
+      {
+        "id": "defensive_stance",
+        "type": "spell",
+        "spell_data": { "id": "defensive_stance" },
+        "monster_message": "The %s adopts a defensive stance.",
+        "cooldown": 80,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_defensive_stance" } }, { "u_has_effect": "pet_martial_art_defensive" }, {
+            "math": ["u_hp('ALL') <= 60"]
+          }]
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.33,
     "flags": [
       "SEES",

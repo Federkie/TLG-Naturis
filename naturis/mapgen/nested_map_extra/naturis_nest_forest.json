@@ -3,7 +3,7 @@
     "type": "mapgen",
     "update_mapgen_id": "mx_naturis_nest",
     "object": {
-"flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
+      "flags": ["ALLOW_TERRAIN_UNDER_OTHER_DATA"],
       "rows": [
         "                        ",
         "                        ",
@@ -33,33 +33,37 @@
       "nested": {
         "1": {
           "chunks": [
-            [             "naturis_static_nest_nested", 20
+            ["naturis_static_nest_nested", 20],
+            [
+              "naturis_burning_nest_nested", 20
+            ],
+            ["naturis_burned_trees_nested", 30],
+            ["naturis_tree_hollowed_nested", 30],
+            ["naturis_burned_trees_02_nested", 30],
+            [
+              "naturis_hunting_ground_nested", 40
             ],
             [
-            "naturis_burning_nest_nested", 20
+              "naturis_mushroom_ring_nested", 40
             ],
-              [              "naturis_burned_trees_nested", 30
+            [
+              "naturis_monster_drops_nested", 50
             ],
-             [               "naturis_tree_hollowed_nested", 30
+            [
+              "naturis_monster_track_nested", 70
             ],
-               [ "naturis_burned_trees_02_nested", 30
+            [
+              "naturis_leaves_nested", 70
             ],
-             [
-            "naturis_hunting_ground_nested", 40],
-             [
-            "naturis_mushroom_ring_nested", 40],
-              [
-            "naturis_monster_drops_nested", 50],
-             [
-            "naturis_monster_track_nested", 70],
-              [
-              "naturis_leaves_nested", 70],
-              [
-            "naturis_monster_track_h_nested", 70],
-               [
-            "naturis_hunting_ground_02_nested", 30],
-               [
-            "naturis_hunting_ground_03_nested", 30]
+            [
+              "naturis_monster_track_h_nested", 70
+            ],
+            [
+              "naturis_hunting_ground_02_nested", 30
+            ],
+            [
+              "naturis_hunting_ground_03_nested", 30
+            ]
           ]
         }
       }
@@ -84,20 +88,19 @@
         "         ",
         "         "
       ],
-        "item": {
+      "item": {
         "1": { "item": "egg_static_beast", "chance": 30 }
-        },
+      },
       "place_fields": [
-        {
-          "field": "fd_blood",
-          "x": [
-            3,
-            8
-          ],
-          "y": [ 1, 8 ],
-          "repeat": [ 1, 3 ]
-        }
-      ],
+      {
+        "field": "fd_blood",
+        "x": [
+          3,
+          8
+        ],
+        "y": [1, 8],
+        "repeat": [1, 3]
+      }],
       "terrain": {
         "t": "t_tree_static",
         "1": "t_dirt_rocky",
@@ -127,26 +130,25 @@
         "         ",
         "         "
       ],
-    "item": {
-     "1": { "item": "egg_flying_fire", "chance": 30 }
-   },
+      "item": {
+        "1": { "item": "egg_flying_fire", "chance": 30 }
+      },
       "place_fields": [
-        {
-          "field": "fd_blood",
-          "x": [
-            3,
-            8
-          ],
-          "y": [
-            1,
-            8
-          ],
-          "repeat": [
-            1,
-            3
-          ]
-        }
-      ],
+      {
+        "field": "fd_blood",
+        "x": [
+          3,
+          8
+        ],
+        "y": [
+          1,
+          8
+        ],
+        "repeat": [
+          1,
+          3
+        ]
+      }],
       "terrain": {
         "t": "t_lava",
         "1": "t_dirt_rocky"
@@ -172,21 +174,20 @@
         " t1111   ",
         "  tttt   "
       ],
-     
+      
       "place_fields": [
-        {
-          "field": "fd_fire",
-          "x": [
-            3,
-            8
-          ],
-          "y": [ 1, 8 ],
-          "repeat": [ 0, 3 ]
-        }
+      {
+        "field": "fd_fire",
+        "x": [
+          3,
+          8
+        ],
+        "y": [1, 8],
+        "repeat": [0, 3]
+      }],
+      "place_monster": [
+        { "monster": "mon_ember_stalker", "x": [3], "y": [3], "repeat": [0, 2] }
       ],
-       "place_monster": [
-          { "monster": "mon_ember_stalker", "x": [3], "y": [3], "repeat": [0, 2] }
-          ],
       "terrain": {
         "t": "t_tree_burned",
         "1": "t_dirt_rocky",
@@ -197,7 +198,7 @@
       }
     }
   },
-    {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_tree_hollowed_nested",
     "object": {
@@ -209,14 +210,14 @@
         "t"
       ],
       "place_monster": [
-     { "group": "GROUP_WILDERNESS_FOREST_MAMMAL", "x": [1], "y": [1], "chance": 70 }
+        { "group": "GROUP_WILDERNESS_FOREST_MAMMAL", "x": [1], "y": [1], "chance": 70 }
       ],
       "terrain": {
         "t": "t_tree_hollowed"
       }
     }
   },
-    {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_burned_trees_02_nested",
     "object": {
@@ -235,21 +236,20 @@
         " t1111   ",
         "  11tt   "
       ],
-     
+      
       "place_fields": [
-        {
-          "field": "fd_fire",
-          "x": [
-            3,
-            8
-          ],
-          "y": [ 1, 8 ],
-          "repeat": [ 0, 3 ]
-        }
+      {
+        "field": "fd_fire",
+        "x": [
+          3,
+          8
+        ],
+        "y": [1, 8],
+        "repeat": [0, 3]
+      }],
+      "place_monster": [
+        { "monster": "mon_ember_stalker", "x": [3], "y": [3], "repeat": [0, 2] }
       ],
-       "place_monster": [
-          { "monster": "mon_ember_stalker", "x": [3], "y": [3], "repeat": [0, 2] }
-          ],
       "terrain": {
         "t": "t_tree_burned",
         "1": "t_dirt_rocky",
@@ -260,7 +260,7 @@
       }
     }
   },
-   {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_hunting_ground_nested",
     "object": {
@@ -279,37 +279,48 @@
         " ^   ..  ",
         "      d  "
       ],
-        "items": {
+      "items": {
         "M": { "item": "flesh_bone", "chance": 30 }
-        },
+      },
       "place_fields": [
-        {
-          "field": "fd_blood",
-          "x": [
-            3,
-            8
-          ],
-          "y": [ 1, 8 ],
-          "repeat": [ 1, 3 ]
-        }
-      ],
-       "place_monster": [
+      {
+        "field": "fd_blood",
+        "x": [
+          3,
+          8
+        ],
+        "y": [1, 8],
+        "repeat": [1, 3]
+      }],
+      "place_monster": [
         { "group": "GROUP_WILDERNESS_FOREST_MAMMAL", "x": [3], "y": [3], "chance": 70 }
       ],
       "terrain": {
-       ".": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
-       "M": "t_moss",
-       "3": "t_sand",
-       "I": "t_tree_beech",
-       "m": [ [ "t_m_mushroom", 3 ], [ "t_m_mushroom_harvested", 1 ] ],
-       "^": [ [ "t_underbrush", 2], [ "t_shrub", 2], [ "t_moss", 2], [ "t_fern",1 ] ]
+        ".": [
+          ["t_grass", 3],
+          ["t_grass_dead", 1],
+          ["t_grass_long", 1]
+        ],
+        "M": "t_moss",
+        "3": "t_sand",
+        "I": "t_tree_beech",
+        "m": [
+          ["t_m_mushroom", 3],
+          ["t_m_mushroom_harvested", 1]
+        ],
+        "^": [
+          ["t_underbrush", 2],
+          ["t_shrub", 2],
+          ["t_moss", 2],
+          ["t_fern", 1]
+        ]
       },
       "furniture": {
         "d": "f_boulder_small"
       }
     }
   },
-    {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_mushroom_ring_nested",
     "object": {
@@ -329,100 +340,100 @@
         "         "
       ],
       "terrain": {
-        "m": [ [ "t_m_mushroom", 3 ], [ "t_m_mushroom_harvested", 1 ] ],
+        "m": [
+          ["t_m_mushroom", 3],
+          ["t_m_mushroom_harvested", 1]
+        ],
         "I": "t_tree_beech"
       }
     }
   },
-   {
-   "type": "mapgen",
-   "nested_mapgen_id": "naturis_monster_drops_nested",
-   "object": {
-     "mapgensize": [
-       1,
-       1
-     ],
-     "rows": [
-       "t"
-     ],
-     "items": {
-      "t": { "item": "monster_materials", "chance": 5 }
-    },
-     "terrain": {
-       "t": "t_forestfloor"
-     }
-   }
- },
   {
-   "type": "mapgen",
-   "nested_mapgen_id": "naturis_monster_track_nested",
-   "object": {
-     "mapgensize": [
-       1,
-       1
-     ],
-     "rows": [
-       "."
-     ],
-         "place_fields": [
-        {
-          "field": "fd_monster_track",
-          "x": [1],
-          "y": [1]
-        }
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_monster_drops_nested",
+    "object": {
+      "mapgensize": [
+        1,
+        1
       ],
-     "terrain": {
-       ".": "t_forestfloor"
-     }
-   }
- },
-   {
-   "type": "mapgen",
-   "nested_mapgen_id": "naturis_leaves_nested",
-   "object": {
-     "mapgensize": [
-       1,
-       1
-     ],
-     "rows": [
-       "."
-     ],
-         "place_fields": [
-        {
-          "field": "fd_leaves_pink",
-          "x": [1],
-          "y": [1]
-        }
+      "rows": [
+        "t"
       ],
-     "terrain": {
-       ".": "t_forestfloor"
-     }
-   }
- },
+      "items": {
+        "t": { "item": "monster_materials", "chance": 5 }
+      },
+      "terrain": {
+        "t": "t_forestfloor"
+      }
+    }
+  },
   {
-   "type": "mapgen",
-   "nested_mapgen_id": "naturis_monster_track_h_nested",
-   "object": {
-     "mapgensize": [
-       1,
-       1
-     ],
-     "rows": [
-       "."
-     ],
-         "place_fields": [
-        {
-          "field": "fd_monster_track_herb",
-          "x": [1],
-          "y": [1]
-        }
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_monster_track_nested",
+    "object": {
+      "mapgensize": [
+        1,
+        1
       ],
-     "terrain": {
-       ".": "t_forestfloor"
-     }
-   }
- },
-   {
+      "rows": [
+        "."
+      ],
+      "place_fields": [
+      {
+        "field": "fd_monster_track",
+        "x": [1],
+        "y": [1]
+      }],
+      "terrain": {
+        ".": "t_forestfloor"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_leaves_nested",
+    "object": {
+      "mapgensize": [
+        1,
+        1
+      ],
+      "rows": [
+        "."
+      ],
+      "place_fields": [
+      {
+        "field": "fd_leaves_pink",
+        "x": [1],
+        "y": [1]
+      }],
+      "terrain": {
+        ".": "t_forestfloor"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_monster_track_h_nested",
+    "object": {
+      "mapgensize": [
+        1,
+        1
+      ],
+      "rows": [
+        "."
+      ],
+      "place_fields": [
+      {
+        "field": "fd_monster_track_herb",
+        "x": [1],
+        "y": [1]
+      }],
+      "terrain": {
+        ".": "t_forestfloor"
+      }
+    }
+  },
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_hunting_ground_02_nested",
     "object": {
@@ -441,37 +452,48 @@
         " ^   ..  ",
         "      d  "
       ],
-        "items": {
+      "items": {
         "M": { "item": "flesh_bone", "chance": 30 }
-        },
+      },
       "place_fields": [
-        {
-          "field": "fd_blood",
-          "x": [
-            3,
-            8
-          ],
-          "y": [ 1, 8 ],
-          "repeat": [ 1, 3 ]
-        }
-      ],
-       "place_monster": [
+      {
+        "field": "fd_blood",
+        "x": [
+          3,
+          8
+        ],
+        "y": [1, 8],
+        "repeat": [1, 3]
+      }],
+      "place_monster": [
         { "group": "GROUP_RAPTORS", "x": [3], "y": [3], "chance": 70 }
       ],
       "terrain": {
-       ".": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
-       "M": "t_moss",
-       "3": "t_sand",
-       "I": "t_tree_beech",
-       "m": [ [ "t_m_mushroom", 3 ], [ "t_m_mushroom_harvested", 1 ] ],
-       "^": [ [ "t_underbrush", 2], [ "t_shrub", 2], [ "t_moss", 2], [ "t_fern",1 ] ]
+        ".": [
+          ["t_grass", 3],
+          ["t_grass_dead", 1],
+          ["t_grass_long", 1]
+        ],
+        "M": "t_moss",
+        "3": "t_sand",
+        "I": "t_tree_beech",
+        "m": [
+          ["t_m_mushroom", 3],
+          ["t_m_mushroom_harvested", 1]
+        ],
+        "^": [
+          ["t_underbrush", 2],
+          ["t_shrub", 2],
+          ["t_moss", 2],
+          ["t_fern", 1]
+        ]
       },
       "furniture": {
         "d": "f_boulder_small"
       }
     }
   },
-   {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_hunting_ground_03_nested",
     "object": {
@@ -490,37 +512,48 @@
         " ^   ..  ",
         "      d  "
       ],
-        "items": {
+      "items": {
         "M": { "item": "flesh_bone", "chance": 30 }
-        },
+      },
       "place_fields": [
-        {
-          "field": "fd_blood",
-          "x": [
-            3,
-            8
-          ],
-          "y": [ 1, 8 ],
-          "repeat": [ 1, 3 ]
-        }
-      ],
-       "place_monster": [
+      {
+        "field": "fd_blood",
+        "x": [
+          3,
+          8
+        ],
+        "y": [1, 8],
+        "repeat": [1, 3]
+      }],
+      "place_monster": [
         { "monster": "mon_veil_stalker", "x": [3], "y": [3], "chance": 70 }
       ],
       "terrain": {
-       ".": [ [ "t_grass", 3 ], [ "t_grass_dead", 1 ], [ "t_grass_long", 1 ] ],
-       "M": "t_moss",
-       "3": "t_sand",
-       "I": "t_tree_beech",
-       "m": [ [ "t_m_mushroom", 3 ], [ "t_m_mushroom_harvested", 1 ] ],
-       "^": [ [ "t_underbrush", 2], [ "t_shrub", 2], [ "t_moss", 2], [ "t_fern",1 ] ]
+        ".": [
+          ["t_grass", 3],
+          ["t_grass_dead", 1],
+          ["t_grass_long", 1]
+        ],
+        "M": "t_moss",
+        "3": "t_sand",
+        "I": "t_tree_beech",
+        "m": [
+          ["t_m_mushroom", 3],
+          ["t_m_mushroom_harvested", 1]
+        ],
+        "^": [
+          ["t_underbrush", 2],
+          ["t_shrub", 2],
+          ["t_moss", 2],
+          ["t_fern", 1]
+        ]
       },
       "furniture": {
         "d": "f_boulder_small"
       }
     }
   },
-   {
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_field_pink_nested",
     "object": {
@@ -539,11 +572,11 @@
         " m   mm  ",
         "       m "
       ],
-       "place_monster": [
+      "place_monster": [
         { "monster": "mon_crystal_walker", "x": [3], "y": [3], "chance": 50 }
       ],
       "terrain": {
-       "m": "t_pink_flowers"
+        "m": "t_pink_flowers"
       }
     }
   }

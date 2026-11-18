@@ -2,18 +2,18 @@
   {
     "name": "GROUP_HEART",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_forest_dog", "weight": 350, "cost_multiplier": 0 },
-   { "monster": "mon_old_stone", "weight": 100, "cost_multiplier": 0 },
+      { "monster": "mon_old_stone", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_bone_snake", "weight": 200, "cost_multiplier": 0 },
       { "monster": "mon_old_chick", "weight": 50, "cost_multiplier": 0 },
       { "monster": "mon_walking_tree", "weight": 200, "cost_multiplier": 0 }
     ]
   },
- {
+  {
     "name": "GROUP_BIRD_SPELL",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_crow", "weight": 300, "cost_multiplier": 0 },
       { "monster": "mon_raven", "weight": 300, "cost_multiplier": 0 },
       { "monster": "mon_cardinal", "weight": 300, "cost_multiplier": 0 },
@@ -23,10 +23,10 @@
       { "monster": "mon_pigeon", "weight": 300, "cost_multiplier": 0 }
     ]
   },
-{
+  {
     "name": "GROUP_PETS_SPELL",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_crow", "weight": 300, "cost_multiplier": 0 },
       { "monster": "mon_fox", "weight": 50, "cost_multiplier": 0 },
       { "monster": "mon_squirrel", "weight": 50, "cost_multiplier": 0 },
@@ -41,10 +41,10 @@
       { "monster": "mon_pigeon", "weight": 300, "cost_multiplier": 0 }
     ]
   },
-{
+  {
     "name": "GROUP_ZOM_HEART",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_zom_squirrel", "weight": 200, "cost_multiplier": 0 },
       { "monster": "mon_zom_bat", "weight": 200, "cost_multiplier": 0 },
       { "monster": "mon_zombie_fat", "weight": 200, "cost_multiplier": 0 },
@@ -52,58 +52,62 @@
       { "monster": "mon_zombie", "weight": 400, "cost_multiplier": 0 }
     ]
   },
-
-{
-
+  
+  {
+    
     "name": "GROUP_FOREST_WALKER",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_forest_walker", "weight": 75, "cost_multiplier": 0 } ]
-},
-{
-
+    "monsters": [
+      { "monster": "mon_forest_walker", "weight": 75, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    
     "name": "GROUP_ANOMALY_E",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_shock_anomaly", "weight": 75, "cost_multiplier": 0 } ]
-},
-{
-
+    "monsters": [
+      { "monster": "mon_shock_anomaly", "weight": 75, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    
     "name": "GROUP_ANOMALY_F",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_fire_anomaly", "weight": 75, "cost_multiplier": 0 } ]
-},
-{
-
+    "monsters": [
+      { "monster": "mon_fire_anomaly", "weight": 75, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    
     "name": "GROUP_ANOMALY",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_shock_anomaly", "weight": 30, "cost_multiplier": 0 },
       { "monster": "mon_acid_anomaly", "weight": 30, "cost_multiplier": 0 },
       { "monster": "mon_fire_anomaly", "weight": 30, "cost_multiplier": 0 }
- ]
-},
-{
-
+    ]
+  },
+  {
+    
     "name": "GROUP_EGG_HEART",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_rain_chick", "weight": 300, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_rain_chick", "weight": 300, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_HEART_FINAL",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_old_bird", "weight": 300, "cost_multiplier": 0 },
       { "monster": "mon_flesh_wolf", "weight": 300, "cost_multiplier": 0 }
-]
+    ]
   },
-{
-
+  {
+    
     "name": "GROUP_CELLAR",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_shock_anomaly", "weight": 1, "cost_multiplier": 30 },
       { "monster": "mon_acid_anomaly", "weight": 1, "cost_multiplier": 30 },
       { "monster": "mon_fire_anomaly", "weight": 1, "cost_multiplier": 30 },
@@ -117,61 +121,66 @@
       { "monster": "mon_zombie_tough", "weight": 70, "cost_multiplier": 0 },
       { "group": "GROUP_ROACH", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_zombie", "weight": 200, "cost_multiplier": 0 }
- ]
-},
-{
+    ]
+  },
+  {
     "name": "GROUP_FIRE_CHICK",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_fire_chick", "weight": 100, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_fire_chick", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_HATCHLING_STATIC",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_hatchling_static", "weight": 100, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_hatchling_static", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_HATCHLING_RAPID",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_hatchling_rapid", "weight": 100, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_hatchling_rapid", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_HATCHLING_FDRAGON",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_hatchling_fdragon", "weight": 100, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_hatchling_fdragon", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_HATCHLING_ICEF",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_hatchling_icef", "weight": 100, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_hatchling_icef", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_OTTER_BIG",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_otter_big", "weight": 100, "cost_multiplier": 0 },
-      { "monster": "mon_cub_otter_big", "weight": 10, "cost_multiplier": 1 } 
-       
-     ]
-},
-{
-  "name": "GROUP_SMALL_RAPTOR",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_small_raptor", "weight": 100, "cost_multiplier": 1 }
-  ]
-},
-{
-  "name": "GROUP_SMALL_RAPTOR_HATCHLINGS",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_hatchling_small_raptor", "weight": 100, "cost_multiplier": 1 }
-  ]
-},
+      { "monster": "mon_cub_otter_big", "weight": 10, "cost_multiplier": 1 }
+      
+    ]
+  },
+  {
+    "name": "GROUP_SMALL_RAPTOR",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_small_raptor", "weight": 100, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "name": "GROUP_SMALL_RAPTOR_HATCHLINGS",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_hatchling_small_raptor", "weight": 100, "cost_multiplier": 1 }
+    ]
+  },
   {
     "name": "GROUP_RAPTORS",
     "type": "monstergroup",
@@ -182,7 +191,7 @@
       { "monster": "mon_big_raptor", "weight": 50, "cost_multiplier": 5, "starts": "20 days" }
     ]
   },
-    {
+  {
     "name": "GROUP_CRYSTAL_FIELD",
     "type": "monstergroup",
     "monsters": [
@@ -191,137 +200,138 @@
       { "monster": "mon_crystal_walker", "weight": 50, "cost_multiplier": 5, "starts": "20 days" }
     ]
   },
-    {
-      "name": "GROUP_FROST_GROUND",
-      "type": "monstergroup",
-      "monsters": [
-        { "monster": "mon_null", "weight": 50 },
-        { "monster": "mon_frost_brawler", "weight": 30, "cost_multiplier": 3 },
-        { "monster": "mon_ice_mole", "weight": 20, "cost_multiplier": 0 },
-        { "monster": "mon_ice_worm", "weight": 20, "cost_multiplier": 0 },
-        { "monster": "mon_blob_frozen", "weight": 20, "pack_size": [ 2, 5 ], "cost_multiplier": 4 }
-      ]
-    },
-   {
-  "name": "GROUP_NEST_TRIGGER",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_small_raptor", "weight": 5, "pack_size": [ 2, 7 ] },
-    { "monster": "mon_thorn_skitter", "weight": 5 },
-    { "monster": "mon_rapid_striker", "weight": 1 },
-    { "monster": "mon_beast_static", "weight": 1 },
-    { "monster": "mon_forest_dragon", "weight": 1 }, 
-    { "monster": "mon_flying_fire", "weight": 1 },
-    { "monster": "mon_ice_former", "weight": 1 },
-    { "monster": "mon_forest_raptor", "weight": 3 }
-  ]
-},
-{
+  {
+    "name": "GROUP_FROST_GROUND",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_null", "weight": 50 },
+      { "monster": "mon_frost_brawler", "weight": 30, "cost_multiplier": 3 },
+      { "monster": "mon_ice_mole", "weight": 20, "cost_multiplier": 0 },
+      { "monster": "mon_ice_worm", "weight": 20, "cost_multiplier": 0 },
+      { "monster": "mon_blob_frozen", "weight": 20, "pack_size": [2, 5], "cost_multiplier": 4 }
+    ]
+  },
+  {
+    "name": "GROUP_NEST_TRIGGER",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_small_raptor", "weight": 5, "pack_size": [2, 7] },
+      { "monster": "mon_thorn_skitter", "weight": 5 },
+      { "monster": "mon_rapid_striker", "weight": 1 },
+      { "monster": "mon_beast_static", "weight": 1 },
+      { "monster": "mon_forest_dragon", "weight": 1 },
+      { "monster": "mon_flying_fire", "weight": 1 },
+      { "monster": "mon_ice_former", "weight": 1 },
+      { "monster": "mon_forest_raptor", "weight": 3 }
+    ]
+  },
+  {
     "name": "GROUP_FROSTBOUND_LAKE",
     "type": "monstergroup",
-     "monsters": [
-      { "monster": "mon_ice_shadow", "weight": 100, "cost_multiplier": 0 } ]
-},
-{
+    "monsters": [
+      { "monster": "mon_ice_shadow", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "name": "GROUP_HATCHLINGS",
     "type": "monstergroup",
-     "monsters": [
+    "monsters": [
       { "monster": "mon_old_chick", "weight": 1 },
-     { "monster": "mon_rain_chick", "weight": 3 },
-     { "monster": "mon_hatchling_static", "weight": 1 },
-     { "monster": "mon_hatchling_rapid", "weight": 1 },
-     { "monster": "mon_hatchling_fdragon", "weight": 1 }, 
-     { "monster": "mon_hatchling_icef", "weight": 1 },
-     { "monster": "mon_hatchling_small_raptor", "weight": 5 },
-     { "monster": "mon_hatchling_forest_raptor", "weight": 3 }
-     ]
-},
-{
-  "name": "GROUP_FOREST_RAPTOR_HATCHLINGS",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_hatchling_forest_raptor", "weight": 100 }
-  ]
-},
-{
+      { "monster": "mon_rain_chick", "weight": 3 },
+      { "monster": "mon_hatchling_static", "weight": 1 },
+      { "monster": "mon_hatchling_rapid", "weight": 1 },
+      { "monster": "mon_hatchling_fdragon", "weight": 1 },
+      { "monster": "mon_hatchling_icef", "weight": 1 },
+      { "monster": "mon_hatchling_small_raptor", "weight": 5 },
+      { "monster": "mon_hatchling_forest_raptor", "weight": 3 }
+    ]
+  },
+  {
+    "name": "GROUP_FOREST_RAPTOR_HATCHLINGS",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_hatchling_forest_raptor", "weight": 100 }
+    ]
+  },
+  {
+    
+    "name": "GROUP_AWAKENING",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_hatchling_forest_raptor", "weight": 5, "cost_multiplier": 0 },
+      { "monster": "mon_hatchling_fdragon", "weight": 5, "cost_multiplier": 0 },
+      { "monster": "mon_forest_raptor", "weight": 1, "cost_multiplier": 6 },
+      { "monster": "mon_forest_walker", "weight": 2, "cost_multiplier": 10 },
+      { "monster": "mon_forest_dog", "weight": 10, "cost_multiplier": 2 },
+      { "monster": "mon_walking_tree", "weight": 8, "cost_multiplier": 5 },
+      { "group": "GROUP_PETS_SPELL", "weight": 5, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_FOREST_DOG",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_forest_dog" }
+    ]
+  },
+  {
+    "name": "GROUP_RAPTOR_UPGRADES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_crystal_raptor", "weight": 30 },
+      { "monster": "mon_ice_raptor", "weight": 30 },
+      { "monster": "mon_fire_raptor", "weight": 30 },
+      { "monster": "mon_ancient_raptor", "weight": 10 },
+      { "monster": "mon_static_raptor", "weight": 30 }
+    ]
+  },
+  {
+    "name": "GROUP_ANRAPTOR_UPGRADES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_ancient_thorn_raptor", "weight": 30 },
+      { "monster": "mon_ancient_striker_raptor", "weight": 30 },
+      { "monster": "mon_ancient_stalker_raptor", "weight": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_STRAPTOR_UPGRADES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_static_thunder_raptor", "weight": 30 },
+      { "monster": "mon_static_singularity_raptor", "weight": 30 },
+      { "monster": "mon_static_tempest_raptor", "weight": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_FIRAPTOR_UPGRADES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_fire_blaze_raptor", "weight": 30 },
+      { "monster": "mon_fire_obsidian_raptor", "weight": 30 },
+      { "monster": "mon_fire_solaris_raptor", "weight": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_ICRAPTOR_UPGRADES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_ice_zero_raptor", "weight": 30 },
+      { "monster": "mon_ice_frostspike_raptor", "weight": 30 },
+      { "monster": "mon_ice_blizzard_raptor", "weight": 10 }
+    ]
+  },
+  {
+    "name": "GROUP_CRRAPTOR_UPGRADES",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_crystal_prism_raptor", "weight": 30 },
+      { "monster": "mon_crystal_resonance_raptor", "weight": 30 },
+      { "monster": "mon_crystal_genesis_raptor", "weight": 10 }
+    ]
+  }
   
-  "name": "GROUP_AWAKENING",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_hatchling_forest_raptor", "weight": 5, "cost_multiplier": 0 },
-    { "monster": "mon_hatchling_fdragon", "weight": 5, "cost_multiplier": 0 },
-    { "monster": "mon_forest_raptor", "weight": 1, "cost_multiplier": 6 },
-    { "monster": "mon_forest_walker", "weight": 2, "cost_multiplier": 10 },
-    { "monster": "mon_forest_dog", "weight": 10, "cost_multiplier": 2 },
-    { "monster": "mon_walking_tree", "weight": 8, "cost_multiplier": 5 },
-    { "group": "GROUP_PETS_SPELL", "weight": 5, "cost_multiplier": 0 }
-  ]
-},
-{
-  "name": "GROUP_FOREST_DOG",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_forest_dog" }
-  ]
-},
-{
-  "name": "GROUP_RAPTOR_UPGRADES",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_crystal_raptor", "weight": 30 },
-    { "monster": "mon_ice_raptor", "weight": 30 },
-    { "monster": "mon_fire_raptor", "weight": 30 },
-    { "monster": "mon_ancient_raptor", "weight": 10 },
-    { "monster": "mon_static_raptor", "weight": 30 }
-  ]
-},
-{
-  "name": "GROUP_ANRAPTOR_UPGRADES",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_ancient_thorn_raptor", "weight": 30 },
-    { "monster": "mon_ancient_striker_raptor", "weight": 30 },
-    { "monster": "mon_ancient_stalker_raptor", "weight": 10 }
-  ]
-},
-{
-  "name": "GROUP_STRAPTOR_UPGRADES",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_static_thunder_raptor", "weight": 30 },
-    { "monster": "mon_static_singularity_raptor", "weight": 30 },
-    { "monster": "mon_static_tempest_raptor", "weight": 10 }
-  ]
-},
-{
-  "name": "GROUP_FIRAPTOR_UPGRADES",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_fire_blaze_raptor", "weight": 30 },
-    { "monster": "mon_fire_obsidian_raptor", "weight": 30 },
-    { "monster": "mon_fire_solaris_raptor", "weight": 10 }
-  ]
-},
-{
-  "name": "GROUP_ICRAPTOR_UPGRADES",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_ice_zero_raptor", "weight": 30 },
-    { "monster": "mon_ice_frostspike_raptor", "weight": 30 },
-    { "monster": "mon_ice_blizzard_raptor", "weight": 10 }
-  ]
-},
-{
-  "name": "GROUP_CRRAPTOR_UPGRADES",
-  "type": "monstergroup",
-  "monsters": [
-    { "monster": "mon_crystal_prism_raptor", "weight": 30 },
-    { "monster": "mon_crystal_resonance_raptor", "weight": 30 },
-    { "monster": "mon_crystal_genesis_raptor", "weight": 10 }
-  ]
-}
-
-
-
-
+  
+  
+  
 ]

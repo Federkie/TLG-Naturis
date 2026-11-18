@@ -1,23 +1,24 @@
 [
-     {
-     "type": "item_group",
-     "id": "lab_files_biology",
-     "copy-from": "lab_files_biology",
-     "subtype": "collection",
-     "extend": {
-       "items": [
-         { "item": "naturis_research_file", "prob": 10 },
-         { "item": "naturis_research_dossier", "prob": 5 },
-         { "item": "lab_file_bio_naturis", "prob": 5 },
-         { "item": "naturis_static_archive", "prob": 2 },
-         { "item": "naturis_rapid_archive", "prob": 2 },
-         { "item": "naturis_fdragon_archive", "prob": 2 },
-         { "item": "naturis_flfire_archive", "prob": 2 },
-         { "item": "naturis_iformer_archive", "prob": 2 }
-       ]
-     }
-   },
-     {
+  {
+    "type": "item_group",
+    "id": "lab_files_biology",
+    "copy-from": "lab_files_biology",
+    "subtype": "collection",
+    "extend": {
+      "items": [
+        { "item": "naturis_research_file", "prob": 10 },
+        { "item": "naturis_research_dossier", "prob": 5 },
+        { "item": "lab_file_bio_naturis", "prob": 5 },
+        { "item": "naturis_static_archive", "prob": 2 },
+        { "item": "naturis_rapid_archive", "prob": 2 },
+        { "item": "naturis_fdragon_archive", "prob": 2 },
+        { "item": "naturis_flfire_archive", "prob": 2 },
+        { "item": "naturis_iformer_archive", "prob": 2 },
+        { "item": "naturis_crseeder_archive", "prob": 2 }
+      ]
+    }
+  },
+  {
     "type": "item_group",
     "id": "supplies_samples_lab",
     "copy-from": "supplies_samples_lab",
@@ -31,61 +32,62 @@
       ]
     }
   },
-       {
-       "type": "item_group",
-       "id": "science",
-       "copy-from": "science",
-       "extend": {
-         "items": [
-           { "item": "naturis_research_file", "prob": 3 },
-           { "item": "naturis_research_dossier", "prob": 2 },
-           { "item": "lab_file_bio_naturis", "prob": 1 },
-           { "item": "creature_remnant", "prob": 2 },
-           { "item": "field_scanner", "prob": 2 },
-           { "item": "field_scanner_2", "prob": 1 }
-         ]
-       }
-     },
-      {
-       "type": "item_group",
-       "id": "monparts",
-       "copy-from": "monparts",
-       "subtype": "distribution",
-       "extend": {
-         "items": [
-           { "item": "shard_fire", "prob": 10 },
-           { "item": "feather_burning", "prob": 5 },
-           { "item": "shard_ice", "prob": 10 },
-            { "item": "claw_frozen", "prob": 2 },
-           { "item": "bone_frozen", "prob": 5 },
-           { "item": "shard_electric", "prob": 10 },
-           { "item": "bone_curved", "prob": 5 },
-           { "item": "scale_forest_dragon", "prob": 5 },
-           { "item": "forest_claw", "prob": 2 },
-            { "item": "claw_sharp", "prob": 2 },
-           { "item": "mushroom_network", "prob": 5 },
-           { "item": "shard_crystal", "prob": 10 }
-         ]
-       }
-     },
-{
-  "type": "item_group",
-  "id": "tools_science",
-  "copy-from": "tools_science",
-  "extend": {
-    "items": [
-      { "item": "field_analysis_kit", "prob": 5 },
-      { "item": "field_scanner", "prob": 10 },
-      { "item": "field_scanner_2", "prob": 6 },
-      { "item": "field_scanner_3", "prob": 2 },
-      { "item": "stasis_cage", "prob": 8 },
-      { "item": "pet_stimulator", "prob": 10 },
-      { "item": "pet_stimulator_enhanced", "prob": 6 },
-      { "item": "pet_stimulator_profi", "prob": 2 },
-      { "item": "praptor_mutator", "prob": 4 }
-    ]
+  {
+    "type": "item_group",
+    "id": "science",
+    "copy-from": "science",
+    "extend": {
+      "items": [
+        { "item": "naturis_research_file", "prob": 3 },
+        { "item": "naturis_research_dossier", "prob": 2 },
+        { "item": "lab_file_bio_naturis", "prob": 1 },
+        { "item": "creature_remnant", "prob": 6 },
+        { "item": "field_scanner", "prob": 2 },
+        { "item": "field_scanner_2", "prob": 1 },
+        { "item": "egg_forest_raptor_stasis", "prob": 1 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "monparts",
+    "copy-from": "monparts",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        { "item": "shard_fire", "prob": 10 },
+        { "item": "feather_burning", "prob": 5 },
+        { "item": "shard_ice", "prob": 10 },
+        { "item": "claw_frozen", "prob": 2 },
+        { "item": "bone_frozen", "prob": 5 },
+        { "item": "shard_electric", "prob": 10 },
+        { "item": "bone_curved", "prob": 5 },
+        { "item": "scale_forest_dragon", "prob": 5 },
+        { "item": "forest_claw", "prob": 2 },
+        { "item": "claw_sharp", "prob": 2 },
+        { "item": "mushroom_network", "prob": 5 },
+        { "item": "shard_crystal", "prob": 10 }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "tools_science",
+    "copy-from": "tools_science",
+    "extend": {
+      "items": [
+        { "item": "field_analysis_kit", "prob": 5 },
+        { "item": "field_scanner", "prob": 10 },
+        { "item": "field_scanner_2", "prob": 5 },
+        { "item": "field_scanner_3", "prob": 2 },
+        { "item": "stasis_cage", "prob": 8 },
+        { "item": "pet_stimulator", "prob": 10 },
+        { "item": "pet_stimulator_enhanced", "prob": 6 },
+        { "item": "pet_stimulator_profi", "prob": 2 },
+        { "item": "praptor_mutator", "prob": 4 }
+      ]
+    }
   }
-}
   
   
 ]

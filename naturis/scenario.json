@@ -1,0 +1,13 @@
+[
+    {
+    "type": "scenario",
+    "id": "lab_staff_raptor",
+    "name": "Lab Staff Raptor Researcher",
+    "points": -3,
+    "description": "Your work researching the meteorite anomalies and their environmental impact was brought to an abrupt end by the apocalypse. You managed to salvage one of the raptor eggs kept in stasis, and now you must find a way out of the laboratory",
+    "start_name": "Locked Lab",
+    "professions": ["raptor_researcher"],
+    "allowed_locs": ["sloc_lab_random", "sloc_lab_escape_cells"],
+    "flags": ["CHALLENGE", "CITY_START", "LONE_START"]
+  }
+]

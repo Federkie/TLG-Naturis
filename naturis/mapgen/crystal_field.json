@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "mapgen",
     "om_terrain": "crystal_field",
     "object": {
@@ -30,25 +30,25 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "crystal" ],
+      "palettes": ["crystal"],
       "place_nested": [
-        { "chunks": [ "24x24_crystal_field_n" ], "neighbors": { "south": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_ne" ], "neighbors": { "south_west": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_e" ], "neighbors": { "west": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_se" ], "neighbors": { "north_west": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_s" ], "neighbors": { "north": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_sw" ], "neighbors": { "north_east": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_w" ], "neighbors": { "east": [ "crystal_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_crystal_field_nw" ], "neighbors": { "south_east": [ "crystal_grove" ] }, "x": 0, "y": 0 }
+        { "chunks": ["24x24_crystal_field_n"], "neighbors": { "south": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_ne"], "neighbors": { "south_west": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_e"], "neighbors": { "west": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_se"], "neighbors": { "north_west": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_s"], "neighbors": { "north": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_sw"], "neighbors": { "north_east": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_w"], "neighbors": { "east": ["crystal_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_crystal_field_nw"], "neighbors": { "south_east": ["crystal_grove"] }, "x": 0, "y": 0 }
       ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_n",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "       000000     0     ",
         "  0000000000000     0   ",
@@ -75,26 +75,26 @@
         "222222222222222222222222",
         "222222222222222222222222"
       ],
-      "palettes": [ "crystal" ],
-  "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_ne",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "                        ",
         "                1       ",
@@ -121,26 +121,26 @@
         "222222211111111000000   ",
         "2222222211111110000000  "
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_e",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "2222222221111110000000  ",
         "2222222221111111000000  ",
@@ -167,26 +167,26 @@
         "2222222221111111000000  ",
         "2222222211111110000000  "
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_se",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "2222222211111110000000  ",
         "222222211111111000000   ",
@@ -213,26 +213,26 @@
         "            0           ",
         "                        "
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_s",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "222222222222222222222222",
         "222222222222222222222222",
@@ -259,26 +259,26 @@
         "  000000000000000000    ",
         "   1   0000000          "
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_sw",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "  0000000111111122222222",
         "   000000111111112222222",
@@ -305,26 +305,26 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_w",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "  0000000111111222222222",
         "   000001111111222222222",
@@ -351,26 +351,26 @@
         "  0000001111111222222222",
         "  0000000111111122222222"
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_crystal_field_nw",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "                        ",
         "                 0      ",
@@ -397,19 +397,19 @@
         "   000000111111112222222",
         "  0000000111111222222222"
       ],
-      "palettes": [ "crystal" ],
-        "nested": {
-    "+": {
-      "chunks": [
-        ["null", 50],
-        ["crystal_3x3_01", 20],
-        ["crystal_3x3_02", 10],
-        ["crystal_3x3_03", 40],
-        ["crystal_3x3_04", 30]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["crystal"],
+      "nested": {
+        "+": {
+          "chunks": [
+            ["null", 50],
+            ["crystal_3x3_01", 20],
+            ["crystal_3x3_02", 10],
+            ["crystal_3x3_03", 40],
+            ["crystal_3x3_04", 30]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   }
   

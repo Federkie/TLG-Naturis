@@ -1,8 +1,10 @@
 [
-{
+  {
     "type": "ITEM",
     "id": "forest_pearl",
-    "name": { "str": "forest pearl" },
+    "name": {
+      "str": "forest pearl"
+    },
     "description": "A small pearl from the skull of a forest dragon. It shimmers with rainbow colors and rests gently in the hand.",
     "category": "other",
     "weight": "5 g",
@@ -11,19 +13,28 @@
     "symbol": "*",
     "color": "green",
     "to_hit": -5,
-    "material": [ "gemstone" ],
-    "flags": [ "NO_SALVAGE", "GEMSTONE" ]
-},
+    "material": [
+      "gemstone"
+    ],
+    "flags": [
+      "NO_SALVAGE",
+      "GEMSTONE"
+    ]
+  },
   {
     "type": "ITEM",
     "id": "dragon_hair",
     "symbol": "l",
     "color": "green",
-     "name": { "str": "dragon hair" },
-  "description": "The long neck hair of a forest dragon. It's wiry and hard to bend.",
+    "name": {
+      "str": "dragon hair"
+    },
+    "description": "The long neck hair of a forest dragon. It's wiry and hard to bend.",
     "category": "spare_parts",
     "price_postapoc": "40 USD",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "weight": "2 g",
     "volume": "5 ml",
     "to_hit": -2
@@ -31,120 +42,192 @@
   {
     "type": "ITEM",
     "id": "living_wood",
-    "name": { "str": "living wood" },
+    "name": {
+      "str": "living wood"
+    },
     "description": "Finely grained, smooth wood that displays an oily sheen in sunlight. It is easy to shape yet appears very durable.",
     "category": "spare_parts",
     "weight": "800 g",
     "color": "green",
     "symbol": "/",
-    "material": [ "wood" ],
+    "material": [
+      "wood"
+    ],
     "volume": "1600 ml",
     "longest_side": "50 cm",
-    "to_hit": { "grip": "none", "length": "short", "surface": "any", "balance": "clumsy" },
+    "to_hit": {
+      "grip": "none",
+      "length": "short",
+      "surface": "any",
+      "balance": "clumsy"
+    },
     "price_postapoc": "20 USD",
-    "flags": [ "FIREWOOD" ],
-    "melee_damage": { "bash": 5 }
+    "flags": [
+      "FIREWOOD"
+    ],
+    "melee_damage": {
+      "bash": 5
+    }
   },
   {
     "id": "bone_curved",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "curved bone" },
+    "subtypes": [
+      "COMESTIBLE"
+    ],
+    "name": {
+      "str": "curved bone"
+    },
     "description": "A long, curved bone that tapers to a point at the front.",
     "weight": "310 g",
     "volume": "340 ml",
     "longest_side": "62 cm",
     "symbol": "%",
     "color": "white",
-    "material": [ "bone" ],
+    "material": [
+      "bone"
+    ],
     "comestible_type": "FOOD",
     "category": "spare_parts",
     "price": "500 cent",
-    "flags": [ "RAW", "NUTRIENT_OVERRIDE", "INEDIBLE", "NO_TEMP" ],
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "flags": [
+      "RAW",
+      "NUTRIENT_OVERRIDE",
+      "INEDIBLE",
+      "NO_TEMP"
+    ],
+    "vitamins": [
+      [
+        "meat_allergen",
+        1
+      ]
+    ]
   },
-    {
+  {
     "type": "ITEM",
     "id": "claw_sharp",
-    "name": { "str": "sharp claw" },
+    "name": {
+      "str": "sharp claw"
+    },
     "description": "A long, sharp monster claw.",
     "weight": "540 g",
     "to_hit": 1,
     "color": "green",
     "symbol": ",",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "volume": "250 ml",
-    "flags": ["SPEAR"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "50 USD",
-    "melee_damage": { "stab": 7 }
+    "melee_damage": {
+      "stab": 7
+    }
   },
-    {
+  {
     "type": "ITEM",
-    "id": "forest_claw", 
-    "name": { "str": "forest claw" },
+    "id": "forest_claw",
+    "name": {
+      "str": "forest claw"
+    },
     "description": "The curved claw of a forest dragon, he won't be pleased about having lost it.",
     "weight": "340 g",
     "to_hit": 1,
     "color": "green",
     "symbol": ",",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "volume": "250 ml",
-    "flags": ["SPEAR"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "70 USD",
-    "melee_damage": { "stab": 6 }
+    "melee_damage": {
+      "stab": 6
+    }
   },
-    {
+  {
     "type": "ITEM",
     "id": "leaves_pink",
-    "name": { "str": "handful of pink leaves", "str_pl": "handfuls of pink leaves" },
+    "name": {
+      "str": "handful of pink leaves",
+      "str_pl": "handfuls of pink leaves"
+    },
     "description": "Petals the size of a thumbnail that give off a delicate scent. Despite their delicacy, they are as sharp as razor blades.",
     "weight": "10 g",
     "color": "green",
     "symbol": ",",
     "price": "2 USD",
-    "material": ["vegetable"],
+    "material": [
+      "vegetable"
+    ],
     "volume": "100 ml",
-    "flags": ["TRADER_AVOID", "FIREWOOD", "TINDER"]
+    "flags": [
+      "TRADER_AVOID",
+      "FIREWOOD",
+      "TINDER"
+    ]
   },
   {
-  "type": "ITEM",
-  "id": "shard_fire",
-  "name": { "str": "fire shard" },
-  "description": "A red-glowing shard made of a strange material. You have to be careful not to cut yourself on the jagged edges.",
-  "category": "other",
-  "weight": "15 g",
-  "volume": "17 ml",
-  "price_postapoc": "3 USD",
-  "symbol": "s",
-  "color": "red",
-  "flags": ["NO_SALVAGE"]
-},
-{
-  "type": "ITEM",
-  "id": "shard_ice",
-  "name": { "str": "ice shard" },
-  "description": "A white-glowing shard made of a strange material. You have to be careful not to cut yourself on the jagged edges.",
-  "category": "other",
-  "weight": "15 g",
-  "volume": "17 ml",
-  "price_postapoc": "120 USD",
-  "symbol": "s",
-  "color": "blue",
-  "flags": ["NO_SALVAGE"]
-},
+    "type": "ITEM",
+    "id": "shard_fire",
+    "name": {
+      "str": "fire shard"
+    },
+    "description": "A red-glowing shard made of a strange material. You have to be careful not to cut yourself on the jagged edges.",
+    "category": "other",
+    "weight": "15 g",
+    "volume": "17 ml",
+    "price_postapoc": "3 USD",
+    "symbol": "s",
+    "color": "red",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "type": "ITEM",
+    "id": "shard_ice",
+    "name": {
+      "str": "ice shard"
+    },
+    "description": "A white-glowing shard made of a strange material. You have to be careful not to cut yourself on the jagged edges.",
+    "category": "other",
+    "weight": "15 g",
+    "volume": "17 ml",
+    "price_postapoc": "120 USD",
+    "symbol": "s",
+    "color": "blue",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
   {
     "id": "shard_electric",
     "type": "ITEM",
-    "subtypes": ["AMMO"],
+    "subtypes": [
+      "AMMO"
+    ],
     "category": "chems",
-    "name": { "str_sp": "static shard" },
+    "name": {
+      "str_sp": "static shard"
+    },
     "description": "A blue-glowing shard made of a strange material. You have to be careful not to cut yourself on the jagged edges.",
     "weight": "10 g",
     "volume": "12 ml",
     "price_postapoc": "25 USD",
-    "material": ["chitin"],
+    "material": [
+      "chitin"
+    ],
     "symbol": "=",
     "color": "dark_gray",
     "count": 10,
@@ -153,7 +236,9 @@
   {
     "type": "ITEM",
     "id": "stone_frozen",
-    "name": { "str": "frozen stone" },
+    "name": {
+      "str": "frozen stone"
+    },
     "description": "The cold, rock hard heart of an ice former.",
     "category": "other",
     "weight": "55 g",
@@ -162,24 +247,39 @@
     "price_postapoc": "500 USD",
     "symbol": "%",
     "color": "blue",
-    "flags": ["NO_SALVAGE"]
+    "flags": [
+      "NO_SALVAGE"
+    ]
   },
-    {
+  {
     "type": "ITEM",
-    "subtypes": ["TOOL"],
+    "subtypes": [
+      "TOOL"
+    ],
     "id": "feather_burning",
     "category": "spare_parts",
     "price": "10 USD",
     "price_postapoc": "25 USD",
-    "name": { "str": "heated feather" },
+    "name": {
+      "str": "heated feather"
+    },
     "symbol": "=",
     "color": "red",
     "description": "A long feather that nestles warmly in your hand.",
-    "material": ["feather_burning"],
+    "material": [
+      "feather_burning"
+    ],
     "volume": "250 ml",
     "weight": "1 g",
-    "use_action": { "type": "firestarter", "moves": 40, "moves_slow": 1000 },
-    "flags": [ "FIRESTARTER", "WATER_BREAK" ]
+    "use_action": {
+      "type": "firestarter",
+      "moves": 40,
+      "moves_slow": 1000
+    },
+    "flags": [
+      "FIRESTARTER",
+      "WATER_BREAK"
+    ]
   },
   {
     "type": "ITEM",
@@ -201,233 +301,368 @@
       "TRADER_AVOID"
     ]
   },
-    {
+  {
     "type": "ITEM",
     "id": "skull_forest_dragon",
-    "name": { "str": "forest dragon skull" },
+    "name": {
+      "str": "forest dragon skull"
+    },
     "description": "The skull of a forest dragon; the empty eye sockets stare at you, almost reproachfully.",
     "copy-from": "skull_abstract",
     "weight": "70 g",
     "volume": "530 ml",
     "longest_side": "15 cm"
   },
-    {
+  {
     "type": "ITEM",
     "id": "sickle_shaped_claw",
     "symbol": "(",
     "color": "light_gray",
-    "name": { "str": "sickle shaped claw" },
+    "name": {
+      "str": "sickle shaped claw"
+    },
     "description": "The long, curved claw of a static beast. The touch triggers a tingling sensation.",
     "category": "spare_parts",
     "price": "350 USD",
     "price_postapoc": "200 USD",
-    "material": [ "chitin" ],
+    "material": [
+      "chitin"
+    ],
     "weight": "1000 g",
     "volume": "1500 ml",
     "to_hit": -2,
-    "qualities": [ [ "BUTCHER", -38 ] ],
-    "melee_damage": { "bash": 7, "cut": 9 }
+    "qualities": [
+      [
+        "BUTCHER",
+        -38
+      ]
+    ],
+    "melee_damage": {
+      "bash": 7,
+      "cut": 9
+    }
   },
-    {
+  {
     "type": "ITEM",
     "id": "fang_venomous",
-    "name": { "str": "venomous fang" },
+    "name": {
+      "str": "venomous fang"
+    },
     "description": "A long fang, razor sharp and needle-pointed. You should be careful with it.",
     "weight": "540 g",
     "to_hit": -2,
     "color": "white",
     "symbol": ",",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "volume": "50 ml",
-    "flags": ["SPEAR", "FRAGILE_MELEE"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR",
+      "FRAGILE_MELEE"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "220 USD",
-    "melee_damage": { "stab": 10 }
+    "melee_damage": {
+      "stab": 10
+    }
   },
   {
     "type": "ITEM",
     "id": "spike_neck",
-    "name": { "str": "neck spike" },
+    "name": {
+      "str": "neck spike"
+    },
     "description": "Spikes from the dorsal ridge of a Rapid Striker, they are sturdier than they look and taper to a point.",
     "weight": "540 g",
     "to_hit": -2,
     "color": "white",
     "symbol": ",",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "volume": "150 ml",
-    "flags": ["SPEAR"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "70 USD",
-    "melee_damage": { "stab": 5 }
+    "melee_damage": {
+      "stab": 5
+    }
   },
-   {
-   "type": "ITEM",
-   "subtypes": ["TOOL"],
-   "id": "feather_long",
-   "category": "spare_parts",
-   "price_postapoc": "250 USD",
-   "name": { "str": "long feather" },
-   "symbol": "=",
-   "color": "red",
-   "description": "The long tail feather of a flying fire. It is warm and rests gently against the skin; there is no longer any trace of the danger posed by its owner.",
-   "material": ["feather_burning"],
-   "volume": "550 ml",
-   "weight": "3 g",
-   "flags": ["SLEEP_AID"]
- },
-   {
+  {
+    "type": "ITEM",
+    "subtypes": [
+      "TOOL"
+    ],
+    "id": "feather_long",
+    "category": "spare_parts",
+    "price_postapoc": "250 USD",
+    "name": {
+      "str": "long feather"
+    },
+    "symbol": "=",
+    "color": "red",
+    "description": "The long tail feather of a flying fire. It is warm and rests gently against the skin; there is no longer any trace of the danger posed by its owner.",
+    "material": [
+      "feather_burning"
+    ],
+    "volume": "550 ml",
+    "weight": "3 g",
+    "flags": [
+      "SLEEP_AID"
+    ]
+  },
+  {
     "type": "ITEM",
     "id": "claw_frozen",
-    "name": { "str": "frozen claw" },
+    "name": {
+      "str": "frozen claw"
+    },
     "description": "A bluish, shimmering claw radiating a peculiar coldness.",
     "weight": "370 g",
     "to_hit": 1,
     "color": "white",
     "symbol": ",",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "volume": "250 ml",
-    "flags": ["SPEAR", "FRAGILE_MELEE"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR",
+      "FRAGILE_MELEE"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "210 USD",
-    "melee_damage": { "stab": 8 }
+    "melee_damage": {
+      "stab": 8
+    }
   },
-    {
+  {
     "id": "static_chunk",
     "type": "ITEM",
     "category": "spare_parts",
-    "name": { "str": "static chunk", "str_pl": "static chunks" },
+    "name": {
+      "str": "static chunk",
+      "str_pl": "static chunks"
+    },
     "description": "A chunk of bluish material that produces a faint crackling sound when touched.",
     "weight": "1000 g",
     "volume": "125 ml",
     "price_postapoc": "50 USD",
     "to_hit": -3,
-    "material": [ "chitin" ],
+    "material": [
+      "chitin"
+    ],
     "symbol": ",",
     "color": "light_gray",
-    "flags": ["CONDUCTIVE"],
-    "qualities": [ [ "HAMMER", 1 ] ],
-    "melee_damage": { "bash": 6 }
+    "flags": [
+      "CONDUCTIVE"
+    ],
+    "qualities": [
+      [
+        "HAMMER",
+        1
+      ]
+    ],
+    "melee_damage": {
+      "bash": 6
+    }
   },
-   {
-   "type": "ITEM",
-   "category": "other",
-   "id": "tongue_split",
-   "price": "10 USD",
-   "price_postapoc": "185 USD",
-   "name": { "str": "split tongue" },
-   "symbol": "=",
-   "color": "red",
-   "description": "A very long, forked tongue. It feels rough and tough and gives off a peculiar odor. It doesn't look edible.",
-   "material": ["leather"],
-   "volume": "450 ml",
-   "weight": "10 g"
- },
+  {
+    "type": "ITEM",
+    "category": "other",
+    "id": "tongue_split",
+    "price": "10 USD",
+    "price_postapoc": "185 USD",
+    "name": {
+      "str": "split tongue"
+    },
+    "symbol": "=",
+    "color": "red",
+    "description": "A very long, forked tongue. It feels rough and tough and gives off a peculiar odor. It doesn't look edible.",
+    "material": [
+      "leather"
+    ],
+    "volume": "450 ml",
+    "weight": "10 g"
+  },
   {
     "id": "bone_frozen",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "frozen bone" },
+    "subtypes": [
+      "COMESTIBLE"
+    ],
+    "name": {
+      "str": "frozen bone"
+    },
     "description": "A bone riddled with thick cracks, held together only by steel-hard ice.",
     "weight": "410 g",
     "volume": "340 ml",
     "longest_side": "58 cm",
     "symbol": "%",
     "color": "white",
-    "material": [ "bone" ],
+    "material": [
+      "bone"
+    ],
     "comestible_type": "FOOD",
     "category": "spare_parts",
     "price_postapoc": "50 USD",
     "spoils_in": "30 day",
-    "flags": [ "RAW", "NUTRIENT_OVERRIDE", "INEDIBLE" ],
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "flags": [
+      "RAW",
+      "NUTRIENT_OVERRIDE",
+      "INEDIBLE"
+    ],
+    "vitamins": [
+      [
+        "meat_allergen",
+        1
+      ]
+    ]
   },
-    {
+  {
     "type": "ITEM",
     "id": "stinger_charged",
-    "name": { "str": "charged stinger" },
+    "name": {
+      "str": "charged stinger"
+    },
     "description": "The electrically charged tail tip of a static beast.",
     "weight": "340 g",
     "to_hit": -1,
     "color": "white",
     "symbol": ",",
-    "material": ["bone"],
+    "material": [
+      "bone"
+    ],
     "volume": "250 ml",
-    "flags": ["SPEAR", "CONDUCTIVE"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR",
+      "CONDUCTIVE"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "130 USD",
-    "melee_damage": { "stab": 6, "electric": 3 }
+    "melee_damage": {
+      "stab": 6,
+      "electric": 3
+    }
   },
-    {
+  {
     "type": "ITEM",
     "id": "leather_durable",
     "symbol": ",",
     "color": "brown",
-    "name": { "str": "durable leather" },
+    "name": {
+      "str": "durable leather"
+    },
     "description": "Very tough, slightly bluish leather that once protected the body of a static beast from the elements.",
     "price_postapoc": "25 USD",
-    "material": ["leather"],
-    "flags": ["NO_SALVAGE"],
+    "material": [
+      "leather"
+    ],
+    "flags": [
+      "NO_SALVAGE"
+    ],
     "weight": "30 g",
     "volume": "23 ml",
     "category": "spare_parts"
   },
-    {
+  {
     "type": "ITEM",
     "id": "plate_static",
-    "name": { "str": "static beast plate" },
+    "name": {
+      "str": "static beast plate"
+    },
     "description": "A disc-shaped object from the body of a Static Beast. What could it have once been used for?.",
-    "flags": ["CONDUCTIVE", "DAMAGE_VEHICLE_WHEELS"],
+    "flags": [
+      "CONDUCTIVE",
+      "DAMAGE_VEHICLE_WHEELS"
+    ],
     "category": "spare_parts",
     "weight": "500 kg",
     "volume": "1400 ml",
     "symbol": "@",
     "color": "white",
     "price_postapoc": "450 USD",
-    "material": ["bone"]
+    "material": [
+      "bone"
+    ]
   },
-   {
-   "type": "ITEM",
-   "id": "tail_tip",
-   "name": { "str": "tail tip" },
-   "description": "A sharp tail tip, dangerous even without further processing.",
-   "weight": "440 g",
-   "to_hit": -1,
-   "color": "white",
-   "symbol": ",",
-   "material": ["flesh"],
-   "volume": "275 ml",
-   "flags": ["SPEAR"],
-   "weapon_category": ["SHIVS"],
-   "price": "30 USD",
-   "price_postapoc": "0 cent",
-   "melee_damage": { "stab": 10 }
- },
-{
-  "type": "ITEM",
-  "id": "fire_pearl",
-  "name": { "str": "fire pearl" },
-  "description": "This fiery, shimmering pearl comes from a flying fire that once guarded it deep within its body.",
-  "category": "other",
-  "weight": "5 g",
-  "volume": "3 ml",
-  "price_postapoc": "400 USD",
-  "symbol": "*",
-  "color": "red",
-  "to_hit": -5,
-  "material": ["gemstone"],
-  "flags": ["NO_SALVAGE", "GEMSTONE"]
-},
   {
     "type": "ITEM",
-    "subtypes": ["AMMO"],
+    "id": "tail_tip",
+    "name": {
+      "str": "tail tip"
+    },
+    "description": "A sharp tail tip, dangerous even without further processing.",
+    "weight": "440 g",
+    "to_hit": -1,
+    "color": "white",
+    "symbol": ",",
+    "material": [
+      "flesh"
+    ],
+    "volume": "275 ml",
+    "flags": [
+      "SPEAR"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
+    "price": "30 USD",
+    "price_postapoc": "0 cent",
+    "melee_damage": {
+      "stab": 10
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "fire_pearl",
+    "name": {
+      "str": "fire pearl"
+    },
+    "description": "This fiery, shimmering pearl comes from a flying fire that once guarded it deep within its body.",
+    "category": "other",
+    "weight": "5 g",
+    "volume": "3 ml",
+    "price_postapoc": "400 USD",
+    "symbol": "*",
+    "color": "red",
+    "to_hit": -5,
+    "material": [
+      "gemstone"
+    ],
+    "flags": [
+      "NO_SALVAGE",
+      "GEMSTONE"
+    ]
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [
+      "AMMO"
+    ],
     "id": "charcoal_old",
     "category": "spare_parts",
     "price_postapoc": "400 USD",
-    "name": { "str_sp": "old charcoal" },
+    "name": {
+      "str_sp": "old charcoal"
+    },
     "symbol": "=",
     "color": "dark_gray",
     "description": "Petrified coal created by intensely hot fire. It makes good fuel, but you would be better off using it for something else.",
-    "material": ["charcoal"],
+    "material": [
+      "charcoal"
+    ],
     "phase": "solid",
     "volume": "5 ml",
     "weight": "120 mg",
@@ -435,297 +670,437 @@
     "count": 1,
     "stack_size": 1
   },
-   {
-   "type": "ITEM",
-   "id": "perennial_ice",
-   "name": { "str": "perennial ice" },
-   "description": "The sun seems unable to affect this chunk of ice; its surface gleams as if freshly polished and sparkles in a thousand colors.",
-   "category": "other",
-   "weight": "40 g",
-   "volume": "35 ml",
-   "price_postapoc": "300 USD",
-   "symbol": "i",
-   "color": "cyan",
-   "flags": ["NO_SALVAGE"]
- },
-   {
+  {
+    "type": "ITEM",
+    "id": "perennial_ice",
+    "name": {
+      "str": "perennial ice"
+    },
+    "description": "The sun seems unable to affect this chunk of ice; its surface gleams as if freshly polished and sparkles in a thousand colors.",
+    "category": "other",
+    "weight": "40 g",
+    "volume": "35 ml",
+    "price_postapoc": "300 USD",
+    "symbol": "i",
+    "color": "cyan",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
     "type": "ITEM",
     "id": "static_residue",
     "category": "chems",
     "price_postapoc": "1 USD",
-    "name": { "str_sp": "static residue" },
+    "name": {
+      "str_sp": "static residue"
+    },
     "symbol": "i",
     "color": "dark_gray",
     "description": "Clumped, glassy remnants made of a lightweight yet hard material.",
-    "material": ["chitin"],
+    "material": [
+      "chitin"
+    ],
     "volume": "5 ml",
     "weight": "140 mg"
   },
-    {
+  {
     "type": "ITEM",
     "id": "skin_thorn",
     "symbol": ",",
     "color": "brown",
-    "name": { "str": "thorn skin" },
+    "name": {
+      "str": "thorn skin"
+    },
     "description": "The tough, thorn-covered skin of a thorn skitter.",
     "price_postapoc": "1 USD",
-    "material": ["leather"],
-    "flags": ["NO_SALVAGE"],
+    "material": [
+      "leather"
+    ],
+    "flags": [
+      "NO_SALVAGE"
+    ],
     "weight": "30 g",
     "volume": "26 ml",
     "category": "spare_parts"
   },
   {
-  "type": "ITEM",
-  "id": "mushroom_network",
-  "name": { "str": "mushroom network" },
-  "description": "A piece of fungal network, lighter than it looks. You aren’t sure what you’re supposed to do with it.",
-  "category": "other",
-  "weight": "18 g",
-  "volume": "35 ml",
-  "price_postapoc": "2 USD",
-  "symbol": "s",
-  "color": "blue",
-  "flags": ["NO_SALVAGE"]
-},
- {
+    "type": "ITEM",
+    "id": "mushroom_network",
+    "name": {
+      "str": "mushroom network"
+    },
+    "description": "A piece of fungal network, lighter than it looks. You aren’t sure what you’re supposed to do with it.",
+    "category": "other",
+    "weight": "18 g",
+    "volume": "35 ml",
+    "price_postapoc": "2 USD",
+    "symbol": "s",
+    "color": "blue",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
     "id": "strong_bone",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "strong bone" },
+    "subtypes": [
+      "COMESTIBLE"
+    ],
+    "name": {
+      "str": "strong bone"
+    },
     "description": "A large, heavy monster bone.",
     "weight": "385 g",
     "volume": "330 ml",
     "longest_side": "54 cm",
     "symbol": "%",
     "color": "white",
-    "material": [ "bone" ],
+    "material": [
+      "bone"
+    ],
     "comestible_type": "FOOD",
     "category": "spare_parts",
     "price_postapoc": "25 USD",
     "spoils_in": "60 day",
-    "flags": [ "RAW", "NUTRIENT_OVERRIDE", "INEDIBLE" ],
-    "vitamins": [ [ "meat_allergen", 1 ] ]
+    "flags": [
+      "RAW",
+      "NUTRIENT_OVERRIDE",
+      "INEDIBLE"
+    ],
+    "vitamins": [
+      [
+        "meat_allergen",
+        1
+      ]
+    ]
   },
-    {
+  {
     "type": "ITEM",
     "id": "crystallized_fur_sheet",
     "symbol": ",",
     "color": "brown",
-    "name": { "str": "crystallized fur sheet" },
+    "name": {
+      "str": "crystallized fur sheet"
+    },
     "description": "A large piece of crystallized fur; the surface is rough, resembling sandpaper. You must be careful not to injure yourself on the sharp edges.",
     "price_postapoc": "25 USD",
-    "material": ["crystallized_fur"],
+    "material": [
+      "crystallized_fur"
+    ],
     "weight": "395 g",
     "volume": "465 ml",
     "category": "spare_parts"
   },
-   {
+  {
     "type": "ITEM",
     "id": "crystal_antler",
     "symbol": "%",
     "color": "white",
-    "name": { "str": "crystal antler" },
+    "name": {
+      "str": "crystal antler"
+    },
     "description": "The stately antlers of a crystal walker; the long tines taper to a point and sparkle in the light.",
     "price_postapoc": "150 USD",
-    "material": ["crystal"],
-    "techniques": ["WBLOCK_1"],
+    "material": [
+      "crystal"
+    ],
+    "techniques": [
+      "WBLOCK_1"
+    ],
     "weight": "1600 g",
     "volume": "830 ml",
     "longest_side": "43 cm",
-    "to_hit": { "grip": "solid", "length": "hand", "surface": "line", "balance": "clumsy" },
-    "melee_damage": { "cut": 3 }
+    "to_hit": {
+      "grip": "solid",
+      "length": "hand",
+      "surface": "line",
+      "balance": "clumsy"
+    },
+    "melee_damage": {
+      "cut": 3
+    }
   },
- {
-  "type": "ITEM",
-  "id": "shadow_pearl",
-  "symbol": "*",
-  "color": "red",
-  "flags": ["GEMSTONE"],
-  "name": { "str": "shadow pearl" },
-  "description": "A small pearl, whose shadowy outlines are difficult to discern.",
-  "price_postapoc": "200 USD",
-  "material": ["gemstone"],
-  "weight": "200 mg",
-  "volume": "6 ml",
-  "to_hit": -5
-},
- {
-   "type": "ITEM",
-   "category": "other",
-   "id": "raptor_tendon",
-   "price_postapoc": "1 USD",
-   "name": { "str": "raptor tendon" },
-   "symbol": "=",
-   "color": "red",
-   "description": "The powerful jumping tendon of a raptor.",
-   "material": ["leather"],
-   "volume": "120 ml",
-   "weight": "6 g"
- },
-   {
+  {
+    "type": "ITEM",
+    "id": "shadow_pearl",
+    "symbol": "*",
+    "color": "red",
+    "flags": [
+      "GEMSTONE"
+    ],
+    "name": {
+      "str": "shadow pearl"
+    },
+    "description": "A small pearl, whose shadowy outlines are difficult to discern.",
+    "price_postapoc": "200 USD",
+    "material": [
+      "gemstone"
+    ],
+    "weight": "200 mg",
+    "volume": "6 ml",
+    "to_hit": -5
+  },
+  {
+    "type": "ITEM",
+    "category": "other",
+    "id": "raptor_tendon",
+    "price_postapoc": "1 USD",
+    "name": {
+      "str": "raptor tendon"
+    },
+    "symbol": "=",
+    "color": "red",
+    "description": "The powerful jumping tendon of a raptor.",
+    "material": [
+      "leather"
+    ],
+    "volume": "120 ml",
+    "weight": "6 g"
+  },
+  {
     "type": "ITEM",
     "id": "claw_long",
-    "name": { "str": "long claw" },
+    "name": {
+      "str": "long claw"
+    },
     "description": "A long, curved claw of a raptor.",
     "weight": "40 g",
     "to_hit": 1,
     "color": "green",
     "symbol": ",",
-    "material": ["keratin"],
+    "material": [
+      "keratin"
+    ],
     "volume": "45 ml",
-    "flags": ["SPEAR"],
-    "weapon_category": ["SHIVS"],
+    "flags": [
+      "SPEAR"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
     "price_postapoc": "5 USD",
-    "melee_damage": { "stab": 5 }
+    "melee_damage": {
+      "stab": 5
+    }
   },
-   {
-   "type": "ITEM",
-   "id": "crystal_structural",
-   "symbol": "*",
-   "color": "red",
-   "flags": ["GEMSTONE"],
-   "name": { "str": "structural crystal" },
-   "description": "A very rare, hard material of unknown origin.",
-   "price_postapoc": "200 USD",
-   "material": ["crystal_hard"],
-   "weight": "700 mg",
-   "volume": "6 ml",
-   "to_hit": -5
- },
-   {
+  {
+    "type": "ITEM",
+    "id": "crystal_structural",
+    "symbol": "*",
+    "color": "red",
+    "flags": [
+      "GEMSTONE"
+    ],
+    "name": {
+      "str": "structural crystal"
+    },
+    "description": "A very rare, hard material of unknown origin.",
+    "price_postapoc": "200 USD",
+    "material": [
+      "crystal_hard"
+    ],
+    "weight": "700 mg",
+    "volume": "6 ml",
+    "to_hit": -5
+  },
+  {
     "id": "crystal_chunk",
     "type": "ITEM",
     "category": "spare_parts",
-    "name": { "str": "crystal chunk", "str_pl": "crystal chunks" },
+    "name": {
+      "str": "crystal chunk",
+      "str_pl": "crystal chunks"
+    },
     "description": "A palm-sized piece of solid crystal.",
     "weight": "750 g",
     "volume": "125 ml",
     "price_postapoc": "65 cent",
     "to_hit": -3,
-    "material": [ "crystal_hard" ],
+    "material": [
+      "crystal_hard"
+    ],
     "symbol": ",",
     "color": "light_gray",
-    "qualities": [ [ "CUT", 1 ] ],
-    "melee_damage": { "cut": 4 }
+    "qualities": [
+      [
+        "CUT",
+        1
+      ]
+    ],
+    "melee_damage": {
+      "cut": 4
+    }
   },
-   {
+  {
     "id": "crystal_lattice",
     "type": "ITEM",
     "category": "other",
-    "name": { "str": "crystal lattice", "str_pl": "crystal lattices" },
+    "name": {
+      "str": "crystal lattice",
+      "str_pl": "crystal lattices"
+    },
     "description": "This material holds the crystal structure together and enables growth on biological material.",
     "weight": "250 g",
     "volume": "75 ml",
     "price_postapoc": "100 USD",
     "to_hit": -3,
-    "material": [ "crystal" ],
+    "material": [
+      "crystal"
+    ],
     "symbol": ",",
     "color": "light_gray",
-    "melee_damage": { "cut": 1 }
+    "melee_damage": {
+      "cut": 1
+    }
   },
   {
-  "type": "ITEM",
-  "subtypes": ["TOOL", "ARTIFACT"],
-  "id": "crystal_seed",
-  "category": "other",
-  "name": { "str": "crystal seed" },
-  "description": "A small, gemstone-like crystal from the inside of a crystal seeder. It grants the monster the ability to grow crystal structures. Creates a wall of crystals upon activation.",
-  "weight": "4 g",
-  "volume": "3 ml",
-  "price_postapoc": "20 USD",
-  "material": ["gemstone"],
-  "symbol": "*",
-  "color": "light_blue",
-  "initial_charges": 1,
-  "max_charges": 1,
-  "charges_per_use": 1,
-  "flags": ["NO_SALVAGE", "GEMSTONE", "MUNDANE"],
-  "use_action": {
-   "type": "effect_on_conditions",
+    "type": "ITEM",
+    "subtypes": [
+      "TOOL",
+      "ARTIFACT"
+    ],
+    "id": "crystal_seed",
+    "category": "other",
+    "name": {
+      "str": "crystal seed"
+    },
+    "description": "A small, gemstone-like crystal from the inside of a crystal seeder. It grants the monster the ability to grow crystal structures. Creates a wall of crystals upon activation.",
+    "weight": "4 g",
+    "volume": "3 ml",
+    "price_postapoc": "20 USD",
+    "material": [
+      "gemstone"
+    ],
+    "symbol": "*",
+    "color": "light_blue",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "flags": [
+      "NO_SALVAGE",
+      "GEMSTONE",
+      "MUNDANE"
+    ],
+    "use_action": {
+      "type": "effect_on_conditions",
       "effect_on_conditions": [
         {
-  "id": "EOC_CRYSTAL_SEED",
-   "effect": [
-    {
-      "u_cast_spell": {
-        "id": "create_crystals_player"
-      }
-    },
-      {
-     "u_message": "The crystal seed releases its energy and creates crystals."
-    },
-    {
-      "transform_item": "crystal_seed_spent"
+          "id": "EOC_CRYSTAL_SEED",
+          "effect": [
+            {
+              "u_cast_spell": {
+                "id": "create_crystals_player"
+              }
+            },
+            {
+              "u_message": "The crystal seed releases its energy and creates crystals."
+            },
+            {
+              "transform_item": "crystal_seed_spent"
+            }
+          ]
+        }
+      ],
+      "need_wielding": true
     }
-  ]
-}
-],
-    "need_wielding": true
-  }
-},
-{
-  "type": "ITEM",
-  "subtypes": ["TOOL"],
-  "id": "crystal_seed_spent",
-  "category": "tools",
-  "name": { "str": "empty crystal seed" },
-  "description": "An empty crystal seed; it doesn't seem to have much use anymore.",
-  "weight": "2 g",
-  "volume": "3 ml",
-  "price_postapoc": "0 cent",
-  "material": ["gemstone"],
-  "symbol": "*",
-  "flags": ["NO_SALVAGE", "GEMSTONE", "MUNDANE"],
-  "color": "dark_gray"
-},
-    {
-      "type": "ITEM",
-      "id": "ice_fang",
-      "name": { "str": "ice fang" },
-      "description": "a long, sharp fang.",
-      "weight": "540 g",
-      "color": "green",
-      "symbol": ",",
-      "material": ["keratin"],
-      "volume": "250 ml",
-      "flags": ["SPEAR"],
-      "weapon_category": ["SHIVS"],
-      "price_postapoc": "65 USD",
-      "melee_damage": { "stab": 6 }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [
+      "TOOL"
+    ],
+    "id": "crystal_seed_spent",
+    "category": "tools",
+    "name": {
+      "str": "empty crystal seed"
     },
-    {
+    "description": "An empty crystal seed; it doesn't seem to have much use anymore.",
+    "weight": "2 g",
+    "volume": "3 ml",
+    "price_postapoc": "0 cent",
+    "material": [
+      "gemstone"
+    ],
+    "symbol": "*",
+    "flags": [
+      "NO_SALVAGE",
+      "GEMSTONE",
+      "MUNDANE"
+    ],
+    "color": "dark_gray"
+  },
+  {
+    "type": "ITEM",
+    "id": "ice_fang",
+    "name": {
+      "str": "ice fang"
+    },
+    "description": "a long, sharp fang.",
+    "weight": "540 g",
+    "color": "green",
+    "symbol": ",",
+    "material": [
+      "keratin"
+    ],
+    "volume": "250 ml",
+    "flags": [
+      "SPEAR"
+    ],
+    "weapon_category": [
+      "SHIVS"
+    ],
+    "price_postapoc": "65 USD",
+    "melee_damage": {
+      "stab": 6
+    }
+  },
+  {
     "id": "ice_chunk",
     "type": "ITEM",
     "category": "spare_parts",
-    "name": { "str": "ice chunk", "str_pl": "ice chunks" },
+    "name": {
+      "str": "ice chunk",
+      "str_pl": "ice chunks"
+    },
     "description": "A palm-sized piece of solid ice.",
     "weight": "720 g",
     "volume": "125 ml",
     "price_postapoc": "65 cent",
     "to_hit": -3,
-    "material": [ "perennial_ice" ],
+    "material": [
+      "perennial_ice"
+    ],
     "symbol": ",",
     "color": "light_gray",
-    "qualities": [ [ "CUT", 1 ] ],
-    "melee_damage": { "cut": 4 }
+    "qualities": [
+      [
+        "CUT",
+        1
+      ]
+    ],
+    "melee_damage": {
+      "cut": 4
+    }
   },
-     {
-     "type": "ITEM",
-     "id": "forest_enzyme",
-     "symbol": "*",
-     "color": "red",
-     "flags": ["GEMSTONE"],
-     "name": { "str": "forest enzyme" },
-     "description": "A greenish mineral, not unlike fossilized resin. It appears to play an important role in the survival of a forest dog.",
-     "price_postapoc": "20 USD",
-     "material": ["crystal"],
-     "weight": "540 mg",
-     "volume": "6 ml",
-     "to_hit": -5
-   }
- 
- 
- 
- 
+  {
+    "type": "ITEM",
+    "id": "forest_enzyme",
+    "symbol": "*",
+    "color": "red",
+    "flags": [
+      "GEMSTONE"
+    ],
+    "name": {
+      "str": "forest enzyme"
+    },
+    "description": "A greenish mineral, not unlike fossilized resin. It appears to play an important role in the survival of a forest dog.",
+    "price_postapoc": "20 USD",
+    "material": [
+      "crystal"
+    ],
+    "weight": "540 mg",
+    "volume": "6 ml",
+    "to_hit": -5
+  }
 ]

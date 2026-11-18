@@ -30,15 +30,16 @@
         "2222222222222222.2222222",
         "2222222222222222222#2222"
       ],
-      "palettes": [ "crystal" ],
+      "palettes": ["crystal"],
       "place_fields": [
-     { "field": "fd_crystal_shards", "x": [3, 20], "y": [4, 20], "repeat": [1, 30] }   ],
-         "place_monster": [
-      { "monster": "mon_crystal_seeder", "x": [12], "y": [12] }
-    ]
+        { "field": "fd_crystal_shards", "x": [3, 20], "y": [4, 20], "repeat": [1, 30] }
+      ],
+      "place_monster": [
+        { "monster": "mon_crystal_seeder", "x": [12], "y": [12] }
+      ]
     }
   }
-
+  
   
   
   

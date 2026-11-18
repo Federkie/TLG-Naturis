@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "material",
     "id": "cryo_powder",
     "name": "Cryo Powder",
@@ -14,14 +14,14 @@
     "cut_dmg_verb": "damaged",
     "acid_dmg_verb": "damaged",
     "//": "The ground remains of a frozen heart.",
-       "burn_data": [
-     { "fuel": -100, "smoke": 1, "burn": 1 },
-     { "fuel": -50, "smoke": 2, "burn": 1 },
-     { "fuel": -10, "smoke": 2, "burn": 2 }
-   ],
+    "burn_data": [
+      { "fuel": -100, "smoke": 1, "burn": 1 },
+      { "fuel": -50, "smoke": 2, "burn": 1 },
+      { "fuel": -10, "smoke": 2, "burn": 2 }
+    ],
     "resist": { "bash": 1, "cut": 1, "acid": 0, "heat": 0, "bullet": 1 }
   },
-       {
+  {
     "type": "material",
     "id": "alloy_crystal",
     "name": "crystal alloy",
@@ -30,7 +30,7 @@
     "specific_heat_solid": 0.84,
     "latent_heat": 270,
     "chip_resist": 8,
-    "dmg_adj": [ "scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered" ],
+    "dmg_adj": ["scratched", { "str": "cut", "ctxt": "material damage adjective" }, "cracked", "shattered"],
     "bash_dmg_verb": "cracked",
     "cut_dmg_verb": "scratched",
     "acid_dmg_verb": "etched",
@@ -39,7 +39,9 @@
       { "fuel": 0, "smoke": 0, "burn": 0 },
       { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
     ],
-    "burn_products": [ [ "glass_shard", 0.5 ] ],
+    "burn_products": [
+      ["glass_shard", 0.5]
+    ],
     "repair_difficulty": 4,
     "resist": { "bash": 2, "cut": 4, "acid": 15, "heat": 3, "bullet": 1 }
   }

@@ -5,11 +5,10 @@
   "cooldown": 12,
   "move_cost": 100,
   "damage_max_instance": [
-    {
-      "damage_type": "bash",
-      "amount": 0
-    }
-  ],
+  {
+    "damage_type": "bash",
+    "amount": 0
+  }],
   "dodgeable": false,
   "blockable": false,
   "eoc": [

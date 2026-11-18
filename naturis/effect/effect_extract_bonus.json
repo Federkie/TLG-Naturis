@@ -1,48 +1,47 @@
 [
-      {
-      "type": "effect_type",
-      "id": "effect_healing_extract_bonus",
-      "name": ["healing water bonus effect"],
-      "desc": ["Given your experience with extracts, the last one turned out particularly well and he alleviates your pain"],
-      "apply_message": "",
-      "remove_message": "",
-      "rating": "good",
-      "max_duration": "15 minutes",
-      "max_intensity": 1,
-      "base_mods": { "pkill_tick": [ 42 ], "pkill_min": [ 2 ] }
-    },
-      {
-      "type": "effect_type",
-      "id": "effect_stamina_extract_bonus",
-      "name": ["enhanced stamina bonus effect"],
-      "desc": ["Given your experience with extracts, the last one turned out particularly well and increases your stamina."],
-      "apply_message": "",
-      "remove_message": "",
-      "rating": "good",
-      "max_duration": "15 minutes",
-      "max_intensity": 1,
-      "enchantments": [
-      {
-        "values": [
-          { "value": "MAX_STAMINA", "add": 2000 }
-        ]
-      }
-    ]
-     },
-      {
-      "type": "effect_type",
-      "id": "effect_fatigue_extract_bonus",
-      "name": ["enhanced fatigue bonus effect"],
-      "desc": ["Given your experience with extracts, the last one turned out particularly well and increases your attention."],
-      "apply_message": "",
-      "remove_message": "",
-      "rating": "good",
-      "max_duration": "15 minutes",
-      "max_intensity": 1,
-      "base_mods": {
-        "dex_mod": [2]
+  {
+    "type": "effect_type",
+    "id": "effect_healing_extract_bonus",
+    "name": ["healing water bonus effect"],
+    "desc": ["Given your experience with extracts, the last one turned out particularly well and he alleviates your pain"],
+    "apply_message": "",
+    "remove_message": "",
+    "rating": "good",
+    "max_duration": "15 minutes",
+    "max_intensity": 1,
+    "base_mods": { "pkill_tick": [42], "pkill_min": [2] }
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_stamina_extract_bonus",
+    "name": ["enhanced stamina bonus effect"],
+    "desc": ["Given your experience with extracts, the last one turned out particularly well and increases your stamina."],
+    "apply_message": "",
+    "remove_message": "",
+    "rating": "good",
+    "max_duration": "15 minutes",
+    "max_intensity": 1,
+    "enchantments": [
+    {
+      "values": [
+        { "value": "MAX_STAMINA", "add": 2000 }
+      ]
+    }]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_fatigue_extract_bonus",
+    "name": ["enhanced fatigue bonus effect"],
+    "desc": ["Given your experience with extracts, the last one turned out particularly well and increases your attention."],
+    "apply_message": "",
+    "remove_message": "",
+    "rating": "good",
+    "max_duration": "15 minutes",
+    "max_intensity": 1,
+    "base_mods": {
+      "dex_mod": [2]
     }
-     }
+  }
   
   
   

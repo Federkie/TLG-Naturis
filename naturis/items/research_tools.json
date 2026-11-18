@@ -1,30 +1,33 @@
 [
-  {
-    "type": "ITEM",
-    "subtypes": [ "TOOL" ],
-    "id": "field_analysis_kit",
-    "name": {
-      "str": "field analysis kit"
-    },
-    "description": "A rudimentary analysis kit. It includes a sharp blade and a lens for examining samples. Nothing fancy, but it’ll do for starters.",
-    "category": "tools",
-    "weight": "180 g",
-    "volume": "150 ml",
-    "longest_side": "160 mm",
-    "price_postapoc": "2 USD",
-    "material": [ "plastic", "steel", "glass" ],
-    "symbol": ";",
-    "color": "light_gray",
-    "qualities": [ [ "RESEARCH", 1 ], [ "CUT_FINE", 2 ] ],
-    "flags": [
-      "NO_SALVAGE"
-    ]
+{
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "id": "field_analysis_kit",
+  "name": {
+    "str": "field analysis kit"
   },
- {
+  "description": "A rudimentary analysis kit. It includes a sharp blade and a lens for examining samples. Nothing fancy, but it’ll do for starters.",
+  "category": "tools",
+  "weight": "180 g",
+  "volume": "150 ml",
+  "longest_side": "160 mm",
+  "price_postapoc": "2 USD",
+  "material": ["plastic", "steel", "glass"],
+  "symbol": ";",
+  "color": "light_gray",
+  "qualities": [
+    ["RESEARCH", 1],
+    ["CUT_FINE", 2]
+  ],
+  "flags": [
+    "NO_SALVAGE"
+  ]
+},
+{
   "id": "field_scanner",
   "copy-from": "abstract_smart_phone",
   "type": "ITEM",
-  "subtypes": [ "TOOL" ],
+  "subtypes": ["TOOL"],
   "name": { "str": "field scanner" },
   "description": "A smartphone that has been converted into a research tool. Most of the smartphone's basic functions remained intact. It is capable of examining the remains of simple creatures and determining the direction in which the creature was moving.",
   "weight": "240 g",
@@ -66,58 +69,57 @@
     }
   ],
   "pocket_data": [
-    {
-      "pocket_type": "MAGAZINE",
-      "rigid": true,
-      "ammo_restriction": { "battery": 56 }
-    },
-    {
-      "pocket_type": "E_FILE_STORAGE",
-      "rigid": true,
-      "max_contains_volume": "1 ml",
-      "max_contains_weight": "1 g",
-      "weight_multiplier": 0.0,
-      "ememory_max": "256 GB"
-    }
-  ]
-},
   {
-    "id": "field_scanner_flashlight",
-    "copy-from": "field_scanner",
-    "type": "ITEM",
-    "subtypes": ["TOOL"],
-    "name": { "str": "field scanner - Flashlight", "str_pl": "field scanners - Flashlight" },
-    "power_draw": "2 W",
-    "revert_to": "field_scanner",
-    "use_action": [
-      "E_FILE_DEVICE",
-      "EBOOKSAVE",
-      "PORTABLE_GAME",
-      {
-        "ammo_scale": 0,
-        "target": "field_scanner",
-        "msg": "You deactivate the flashlight.",
-        "menu_text": "Turn off flashlight",
-        "type": "transform"
-      },
-      { "type": "link_up", "cable_length": 3, "charge_rate": "20 W" },
-       {
-   "type": "effect_on_conditions",
-   "effect_on_conditions": [
-     "EOC_NATURIS_FIELD_SCANNER_HUNT"
-   ],
-   "menu_text": "Analyze creature remnant",
-   "description": "Analyze a creature remnant and generate a hunting assignment."
- }
-    ],
-    "light": 20,
-    "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] }
+    "pocket_type": "MAGAZINE",
+    "rigid": true,
+    "ammo_restriction": { "battery": 56 }
   },
-   {
+  {
+    "pocket_type": "E_FILE_STORAGE",
+    "rigid": true,
+    "max_contains_volume": "1 ml",
+    "max_contains_weight": "1 g",
+    "weight_multiplier": 0.0,
+    "ememory_max": "256 GB"
+  }]
+},
+{
+  "id": "field_scanner_flashlight",
+  "copy-from": "field_scanner",
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "name": { "str": "field scanner - Flashlight", "str_pl": "field scanners - Flashlight" },
+  "power_draw": "2 W",
+  "revert_to": "field_scanner",
+  "use_action": [
+    "E_FILE_DEVICE",
+    "EBOOKSAVE",
+    "PORTABLE_GAME",
+    {
+      "ammo_scale": 0,
+      "target": "field_scanner",
+      "msg": "You deactivate the flashlight.",
+      "menu_text": "Turn off flashlight",
+      "type": "transform"
+    },
+    { "type": "link_up", "cable_length": 3, "charge_rate": "20 W" },
+    {
+      "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        "EOC_NATURIS_FIELD_SCANNER_HUNT"
+      ],
+      "menu_text": "Analyze creature remnant",
+      "description": "Analyze a creature remnant and generate a hunting assignment."
+    }
+  ],
+  "light": 20,
+  "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] }
+},
+{
   "id": "field_scanner_2",
   "copy-from": "abstract_smart_phone",
   "type": "ITEM",
-  "subtypes": [ "TOOL" ],
+  "subtypes": ["TOOL"],
   "name": { "str": "field scanner MK. II" },
   "description": "An improved version of the field scanner. It is still quite rudimentary, but it can extract more data from samples than its predecessor.",
   "weight": "250 g",
@@ -159,60 +161,63 @@
     }
   ],
   "pocket_data": [
+  {
+    "pocket_type": "MAGAZINE",
+    "rigid": true,
+    "ammo_restriction": { "battery": 56 }
+  },
+  {
+    "pocket_type": "E_FILE_STORAGE",
+    "rigid": true,
+    "max_contains_volume": "1 ml",
+    "max_contains_weight": "1 g",
+    "weight_multiplier": 0.0,
+    "ememory_max": "256 GB",
+    "qualities": [
+      ["RESEARCH", 1]
+    ]
+  }]
+},
+{
+  "id": "field_scanner_flashlight_2",
+  "copy-from": "field_scanner_2",
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "name": { "str": "field scanner MK. II - Flashlight", "str_pl": "field scanners MK. II - Flashlight" },
+  "power_draw": "2 W",
+  "revert_to": "field_scanner_2",
+  "use_action": [
+    "E_FILE_DEVICE",
+    "EBOOKSAVE",
+    "PORTABLE_GAME",
     {
-      "pocket_type": "MAGAZINE",
-      "rigid": true,
-      "ammo_restriction": { "battery": 56 }
+      "ammo_scale": 0,
+      "target": "field_scanner_2",
+      "msg": "You deactivate the flashlight.",
+      "menu_text": "Turn off flashlight",
+      "type": "transform"
     },
+    { "type": "link_up", "cable_length": 3, "charge_rate": "20 W" },
     {
-      "pocket_type": "E_FILE_STORAGE",
-      "rigid": true,
-      "max_contains_volume": "1 ml",
-      "max_contains_weight": "1 g",
-      "weight_multiplier": 0.0,
-      "ememory_max": "256 GB",
-      "qualities": [ [ "RESEARCH", 1 ] ]
+      "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        "EOC_NATURIS_FIELD_SCANNER_HUNT_2"
+      ],
+      "menu_text": "Analyze creature remnant",
+      "description": "Analyze a creature remnant and generate a hunting assignment."
     }
+  ],
+  "light": 20,
+  "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] },
+  "qualities": [
+    ["RESEARCH", 1]
   ]
 },
-  {
-    "id": "field_scanner_flashlight_2",
-    "copy-from": "field_scanner_2",
-    "type": "ITEM",
-    "subtypes": ["TOOL"],
-    "name": { "str": "field scanner MK. II - Flashlight", "str_pl": "field scanners MK. II - Flashlight" },
-    "power_draw": "2 W",
-    "revert_to": "field_scanner_2",
-    "use_action": [
-      "E_FILE_DEVICE",
-      "EBOOKSAVE",
-      "PORTABLE_GAME",
-      {
-        "ammo_scale": 0,
-        "target": "field_scanner_2",
-        "msg": "You deactivate the flashlight.",
-        "menu_text": "Turn off flashlight",
-        "type": "transform"
-      },
-      { "type": "link_up", "cable_length": 3, "charge_rate": "20 W" },
-       {
-   "type": "effect_on_conditions",
-   "effect_on_conditions": [
-     "EOC_NATURIS_FIELD_SCANNER_HUNT_2"
-   ],
-   "menu_text": "Analyze creature remnant",
-   "description": "Analyze a creature remnant and generate a hunting assignment."
- }
-    ],
-    "light": 20,
-    "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] },
-    "qualities": [ [ "RESEARCH", 1 ] ]
-  },
-     {
+{
   "id": "field_scanner_3",
   "copy-from": "abstract_smart_phone",
   "type": "ITEM",
-  "subtypes": [ "TOOL" ],
+  "subtypes": ["TOOL"],
   "name": { "str": "field scanner MK. III" },
   "description": "The professional version of a field scanner. It can identify not only a subject's location but also its species.",
   "weight": "250 g",
@@ -254,74 +259,80 @@
     }
   ],
   "pocket_data": [
+  {
+    "pocket_type": "MAGAZINE",
+    "rigid": true,
+    "ammo_restriction": { "battery": 56 }
+  },
+  {
+    "pocket_type": "E_FILE_STORAGE",
+    "rigid": true,
+    "max_contains_volume": "1 ml",
+    "max_contains_weight": "1 g",
+    "weight_multiplier": 0.0,
+    "ememory_max": "256 GB",
+    "qualities": [
+      ["RESEARCH", 3]
+    ]
+  }]
+},
+{
+  "id": "field_scanner_flashlight_3",
+  "copy-from": "field_scanner_3",
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "name": { "str": "field scanner MK. III - Flashlight", "str_pl": "field scanners MK. III - Flashlight" },
+  "power_draw": "1 W",
+  "revert_to": "field_scanner_3",
+  "use_action": [
+    "E_FILE_DEVICE",
+    "EBOOKSAVE",
+    "PORTABLE_GAME",
     {
-      "pocket_type": "MAGAZINE",
-      "rigid": true,
-      "ammo_restriction": { "battery": 56 }
+      "ammo_scale": 0,
+      "target": "field_scanner_3",
+      "msg": "You deactivate the flashlight.",
+      "menu_text": "Turn off flashlight",
+      "type": "transform"
     },
+    { "type": "link_up", "cable_length": 4, "charge_rate": "20 W" },
     {
-      "pocket_type": "E_FILE_STORAGE",
-      "rigid": true,
-      "max_contains_volume": "1 ml",
-      "max_contains_weight": "1 g",
-      "weight_multiplier": 0.0,
-      "ememory_max": "256 GB",
-      "qualities": [ [ "RESEARCH", 3 ] ]
+      "type": "effect_on_conditions",
+      "effect_on_conditions": [
+        "EOC_NATURIS_FIELD_SCANNER_HUNT_3"
+      ],
+      "menu_text": "Analyze creature remnant",
+      "description": "Analyze a creature remnant and generate a hunting assignment."
     }
+  ],
+  "light": 20,
+  "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] },
+  "qualities": [
+    ["RESEARCH", 3]
   ]
 },
-  {
-    "id": "field_scanner_flashlight_3",
-    "copy-from": "field_scanner_3",
-    "type": "ITEM",
-    "subtypes": ["TOOL"],
-    "name": { "str": "field scanner MK. III - Flashlight", "str_pl": "field scanners MK. III - Flashlight" },
-    "power_draw": "1 W",
-    "revert_to": "field_scanner_3",
-    "use_action": [
-      "E_FILE_DEVICE",
-      "EBOOKSAVE",
-      "PORTABLE_GAME",
-      {
-        "ammo_scale": 0,
-        "target": "field_scanner_3",
-        "msg": "You deactivate the flashlight.",
-        "menu_text": "Turn off flashlight",
-        "type": "transform"
-      },
-      { "type": "link_up", "cable_length": 4, "charge_rate": "20 W" },
-       {
-   "type": "effect_on_conditions",
-   "effect_on_conditions": [
-     "EOC_NATURIS_FIELD_SCANNER_HUNT_3"
-   ],
-   "menu_text": "Analyze creature remnant",
-   "description": "Analyze a creature remnant and generate a hunting assignment."
- }
-    ],
-    "light": 20,
-    "extend": { "flags": ["CHARGEDIM", "TRADER_AVOID", "SPAWN_ACTIVE"] },
-    "qualities": [ [ "RESEARCH", 3 ] ]
-  },
-    {
-    "id": "mineral_extractor",
-    "type": "ITEM",
-    "subtypes": [ "TOOL" ],
-    "name": { "str": "mineral extractor" },
-    "description": "Makes it possible to extract raw materials from various mineral deposits.",
-    "weight": "300 g",
-    "volume": "140 ml",
-    "longest_side": "50 cm",
-    "price_postapoc": "15 USD",
-    "to_hit": { "grip": "solid", "length": "short", "surface": "point", "balance": "uneven" },
-    "material": [ "steel", "aluminum" ],
-    "symbol": ";",
-    "color": "dark_gray",
-    "techniques": [ "WBLOCK_1" ],
-    "qualities": [ [ "HAMMER", 2 ], [ "HAMMER_FINE", 1 ], [ "PRY", 1 ] ],
-    "use_action": [ "CROWBAR" ],
-    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "SHEATH_AXE" ],
-    "weapon_category": [ "HAND_AXES", "HOOKING_WEAPONRY" ],
-    "melee_damage": { "bash": 1, "stab": 12 }
-  }
-]
+{
+  "id": "mineral_extractor",
+  "type": "ITEM",
+  "subtypes": ["TOOL"],
+  "name": { "str": "mineral extractor" },
+  "description": "Makes it possible to extract raw materials from various mineral deposits.",
+  "weight": "300 g",
+  "volume": "140 ml",
+  "longest_side": "50 cm",
+  "price_postapoc": "15 USD",
+  "to_hit": { "grip": "solid", "length": "short", "surface": "point", "balance": "uneven" },
+  "material": ["steel", "aluminum"],
+  "symbol": ";",
+  "color": "dark_gray",
+  "techniques": ["WBLOCK_1"],
+  "qualities": [
+    ["HAMMER", 2],
+    ["HAMMER_FINE", 1],
+    ["PRY", 1]
+  ],
+  "use_action": ["CROWBAR"],
+  "flags": ["DURABLE_MELEE", "BELT_CLIP", "SHEATH_AXE"],
+  "weapon_category": ["HAND_AXES", "HOOKING_WEAPONRY"],
+  "melee_damage": { "bash": 1, "stab": 12 }
+}]

@@ -1,15 +1,15 @@
 [
-    {
-     "type": "item_group",
-     "id": "SUS_spice_collection",
-     "copy-from": "SUS_spice_collection",
-     "subtype": "collection",
-     "extend": {
-       "items": [
-         { "item": "turmeric", "prob": 5 }
-       ]
-     }
-   }
+  {
+    "type": "item_group",
+    "id": "SUS_spice_collection",
+    "copy-from": "SUS_spice_collection",
+    "subtype": "collection",
+    "extend": {
+      "items": [
+        { "item": "turmeric", "prob": 5 }
+      ]
+    }
+  }
   
   
   

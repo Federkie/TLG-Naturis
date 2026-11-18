@@ -1,6 +1,4 @@
 [
-
-
   {
     "type": "SPECIES",
     "id": "FLESH",
@@ -17,16 +15,16 @@
     "id": "ELECTRIC_ANOMALY",
     "bleeds": "fd_electricity"
   },
-{
+  {
     "type": "SPECIES",
     "id": "ACID_ANOMALY",
     "bleeds": "fd_acid"
   },
-{
+  {
     "type": "SPECIES",
     "id": "MYTHIC",
     "bleeds": "fd_blood"
   }
-
-
+  
+  
 ]
