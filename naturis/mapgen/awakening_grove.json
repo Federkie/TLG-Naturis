@@ -30,15 +30,16 @@
         "../....t.......t........",
         "...........2........t..."
       ],
-      "palettes": [ "awakening_palette" ],
+      "palettes": ["awakening_palette"],
       "place_fields": [
-     { "field": "fd_leaves_pink", "x": [3, 20], "y": [4, 20], "repeat": [1, 15] }   ],
+        { "field": "fd_leaves_pink", "x": [3, 20], "y": [4, 20], "repeat": [1, 15] }
+      ],
       "place_monster": [
-           { "group": "GROUP_BIRD_SPELL", "x": [2, 21], "y": [2, 21], "chance": 60, "repeat": [3, 7] }
-         ]
+        { "group": "GROUP_BIRD_SPELL", "x": [2, 21], "y": [2, 21], "chance": 60, "repeat": [3, 7] }
+      ]
     }
   }
-
+  
   
   
   

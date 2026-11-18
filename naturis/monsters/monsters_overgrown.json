@@ -1,19 +1,19 @@
 [
- {
+  {
     "id": "mon_forest_walker",
     "type": "MONSTER",
     "name": { "str": "forest walker" },
     "description": "A hulking figure made of branches, roots, and bones. Its pale deer skull is crowned with antlers of black wood..",
     "default_faction": "overgrown",
     "bodytype": "human",
-    "species": [ "PLANT" ],
+    "species": ["PLANT"],
     "diff": 5,
     "volume": "73000 ml",
     "weight": "72000 g",
     "hp": 200,
-     "death_function": { "effect": { "id": "death_leaves", "hit_self": true }, "message": "The %s explodes in a cloud of leaves and twigs!!" },
+    "death_function": { "effect": { "id": "death_leaves", "hit_self": true }, "message": "The %s explodes in a cloud of leaves and twigs!!" },
     "speed": 90,
-    "material": [ "wood" ],
+    "material": ["wood"],
     "symbol": "F",
     "color": "green",
     "aggression": 0,
@@ -21,17 +21,17 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 8,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
     "dodge": 1,
-    "weakpoint_sets": [ "wps_humanoid_body", "wps_humanoid_head_small" ],
-    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "weakpoint_sets": ["wps_humanoid_body", "wps_humanoid_head_small"],
+    "families": ["prof_intro_biology", "prof_physiology"],
     "bleed_rate": 10,
     "vision_night": 4,
-    "fear_triggers": [ "FIRE" ],
+    "fear_triggers": ["FIRE"],
     "harvest": "overgrown",
     "grab_strength": 35,
-    "anger_triggers": [ "HURT", "PLAYER_CLOSE" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["HURT", "PLAYER_CLOSE"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "special_attacks": [
       { "id": "grab", "cooldown": 10 },
       { "id": "mutant_antler", "cooldown": 15 },
@@ -79,17 +79,18 @@
     "melee_skill": 6,
     "melee_dice": 3,
     "melee_dice_sides": 8,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4.0 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4.0 }],
     "dodge": 3,
     "hp": 110,
     "special_attacks": [
       { "type": "leap", "cooldown": 5, "max_range": 5, "allow_no_target": true },
-      [ "PULL_METAL_WEAPON", 120 ],
-      [ "SHRIEK_STUN", 10 ],
+      ["PULL_METAL_WEAPON", 120],
+      ["SHRIEK_STUN", 10],
       { "id": "hunter_peck" },
       { "id": "mutant_hoof", "dodgeable": true },
-      {"type": "spell",
-        "spell_data": { "id": "old_stone_summon"},
+      {
+        "type": "spell",
+        "spell_data": { "id": "old_stone_summon" },
         "monster_message": "The %s focuses!",
         "cooldown": 20
       }
@@ -104,7 +105,7 @@
       "GROUP_MORALE"
     ],
     "harvest": "bird_large",
-    "categories": [ "WILDLIFE" ],
+    "categories": ["WILDLIFE"],
     "armor": { "bash": 4, "cut": 4, "bullet": 6, "electric": 2 }
   },
   {
@@ -113,35 +114,36 @@
     "name": { "str": "old stone" },
     "description": "A strange stone formation that attacks anything that comes near it.",
     "default_faction": "overgrown",
-    "species": [ "PLANT" ],
+    "species": ["PLANT"],
     "diff": 5,
     "volume": "30000 ml",
     "weight": "40750 g",
     "hp": 35,
     "speed": 100,
-    "material": [ "stone" ],
+    "material": ["stone"],
     "symbol": "2",
     "color": "green",
     "aggression": 100,
     "morale": 100,
     "vision_night": 1,
-    "weakpoint_sets": [ "wps_turret" ],
+    "weakpoint_sets": ["wps_turret"],
     "special_attacks": [
-        {"type": "spell",
-        "spell_data": { "id": "acid_barf"},
+      {
+        "type": "spell",
+        "spell_data": { "id": "acid_barf" },
         "monster_message": "The %s spits acid on you!",
         "cooldown": 15
-      },    
-      [ "PARA_STING",  4 ]
-],
-
-    "flags": [ "SEES", "NOHEAD", "BIOLOGICALPROOF", "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN" ],
+      },
+      ["PARA_STING", 4]
+    ],
+    
+    "flags": ["SEES", "NOHEAD", "BIOLOGICALPROOF", "COLDPROOF", "IMMOBILE", "NO_BREATHE", "NO_TRAIN"],
     "armor": { "bash": 3, "cut": 8, "bullet": 15, "stab": 14, "acid": 1 }
   }
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
 ]

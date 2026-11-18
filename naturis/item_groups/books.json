@@ -1,51 +1,51 @@
 [
- {
-    "type": "item_group",
-    "id": "homebooks",
-    "copy-from": "homebooks",
-    "extend": {
-      "items": [
-        { "item": "modular_weapons", "prob": 4 },
-        { "item": "monster_hunter_2", "prob": 1 },
-        { "item": "monster_hunter", "prob": 4 },
-        { "item": "alternative_medicine", "prob": 4 }
-      ]
-    }
-  },
-   {
-   "type": "item_group",
-   "id": "hardware_books",
-   "copy-from": "hardware_books",
-   "extend": {
-     "items": [
-       { "item": "modular_weapons", "prob": 5 }
-     ]
-   }
- },
-  {
-   "type": "item_group",
-   "id": "kids_books",
-   "copy-from": "kids_books",
-   "extend": {
-     "items": [
-       { "item": "monster_hunter", "prob": 3 },
-       { "item": "monster_hunter_2", "prob": 4 }
-     ]
-   }
- },
-  {
-   "type": "item_group",
-   "id": "mansion_books",
-   "copy-from": "mansion_books",
-   "extend": {
-     "items": [
-       { "item": "monster_hunter", "prob": 10 },
-       { "item": "monster_hunter_2", "prob": 15 },
-       { "item": "book_research_2", "prob": 5 }
-     ]
-   }
- },
- {
+{
+  "type": "item_group",
+  "id": "homebooks",
+  "copy-from": "homebooks",
+  "extend": {
+    "items": [
+      { "item": "modular_weapons", "prob": 4 },
+      { "item": "monster_hunter_2", "prob": 1 },
+      { "item": "monster_hunter", "prob": 4 },
+      { "item": "alternative_medicine", "prob": 4 }
+    ]
+  }
+},
+{
+  "type": "item_group",
+  "id": "hardware_books",
+  "copy-from": "hardware_books",
+  "extend": {
+    "items": [
+      { "item": "modular_weapons", "prob": 5 }
+    ]
+  }
+},
+{
+  "type": "item_group",
+  "id": "kids_books",
+  "copy-from": "kids_books",
+  "extend": {
+    "items": [
+      { "item": "monster_hunter", "prob": 3 },
+      { "item": "monster_hunter_2", "prob": 4 }
+    ]
+  }
+},
+{
+  "type": "item_group",
+  "id": "mansion_books",
+  "copy-from": "mansion_books",
+  "extend": {
+    "items": [
+      { "item": "monster_hunter", "prob": 10 },
+      { "item": "monster_hunter_2", "prob": 15 },
+      { "item": "book_research_2", "prob": 5 }
+    ]
+  }
+},
+{
   "type": "item_group",
   "id": "lab_bookshelves",
   "copy-from": "lab_bookshelves",
@@ -68,5 +68,4 @@
       { "item": "book_research_4", "prob": 3 }
     ]
   }
-}
-]
+}]

@@ -1,7 +1,7 @@
 [
   {
     "type": "mapgen",
-    "om_terrain": [ "hunting_fields" ],
+    "om_terrain": ["hunting_fields"],
     "object": {
       "fill_ter": "t_grass",
       "rows": [
@@ -30,22 +30,23 @@
         "........................",
         "........................"
       ],
-      "palettes": [ "burning_palette" ],
+      "palettes": ["burning_palette"],
       "items": {
         "'": { "item": "bones", "chance": 15 }
-},
-    "item": {
-     "'": { "item": "egg_rapid_striker", "chance": 5 }
-   },
-   "place_fields": [
-     { "field": "fd_blood", "x": [3, 12], "y": [4, 20], "repeat": [1, 30] }   ],
-    "place_monster": [
-      { "monster": "mon_rapid_striker", "x": [12], "y": [12] }
-    ],
+      },
+      "item": {
+        "'": { "item": "egg_rapid_striker", "chance": 5 }
+      },
+      "place_fields": [
+        { "field": "fd_blood", "x": [3, 12], "y": [4, 20], "repeat": [1, 30] }
+      ],
+      "place_monster": [
+        { "monster": "mon_rapid_striker", "x": [12], "y": [12] }
+      ],
       "terrain": {
         "+": "t_sand"
       }
-      }
     }
-
+  }
+  
 ]

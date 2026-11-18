@@ -1,115 +1,115 @@
 [
   {
-"type": "ITEM",
-"id": "electric_hunting_trap",
-"subtypes": [ "TOOL" ],
-"name": {
-"str": "electric hunting trap"
-},
-"description": "A single-use electrical hunting trap made from conductive materials. When a creature steps on it, the trap releases an electrical burst that damages nearby creatures.",
-"category": "traps",
-"weight": "700 g",
-"volume": "350 ml",
-"material": [ "steel", "plastic" ],
-"symbol": ";",
-"color": "light_blue",
-"use_action": {
-"type": "place_trap",
-"trap": "tr_electric_hunting_trap",
-"moves": 100,
-"practice": 1,
-"done_message": "You place the electric hunting trap."
-},
-"flags": [ "SINGLE_USE" ]
-},
-{
-"type": "trap",
-"id": "tr_electric_hunting_trap",
-"name": "placed electric hunting trap",
-"color": "light_blue",
-"symbol": "^",
-"action": "spell",
-"visibility": -1,
-"avoidance": 30,
-"difficulty": 0,
-"spell_data": {
-"id": "electric_trap_burst"
-}
-},
-{
-"type": "ITEM",
-"id": "crystal_pillar_trap",
-"subtypes": [ "TOOL" ],
-"name": {
-"str": "crystal field trap"
-},
-"description": "A trap that, upon activation, generates a crystal field over a wide area.",
-"category": "traps",
-"weight": "620 g",
-"volume": "350 ml",
-"material": [ "steel", "plastic" ],
-"symbol": ";",
-"color": "light_blue",
-"use_action": {
-"type": "place_trap",
-"trap": "tr_crystal_pillar_trap",
-"moves": 100,
-"practice": 1,
-"done_message": "You place the crystal field trap."
-},
-"flags": [ "SINGLE_USE" ]
-},
-{
-"type": "trap",
-"id": "tr_crystal_pillar_trap",
-"name": "placed crystal field trap",
-"color": "light_blue",
-"symbol": "^",
-"action": "spell",
-"visibility": -1,
-"avoidance": 30,
-"difficulty": 0,
-"spell_data": {
-"id": "create_crystals_big"
-}
-},
-{
-  "type": "ITEM",
-  "id": "ice_field_trap",
-  "subtypes": ["TOOL"],
-  "name": {
-    "str": "ice field trap"
+    "type": "ITEM",
+    "id": "electric_hunting_trap",
+    "subtypes": ["TOOL"],
+    "name": {
+      "str": "electric hunting trap"
+    },
+    "description": "A single-use electrical hunting trap made from conductive materials. When a creature steps on it, the trap releases an electrical burst that damages nearby creatures.",
+    "category": "traps",
+    "weight": "700 g",
+    "volume": "350 ml",
+    "material": ["steel", "plastic"],
+    "symbol": ";",
+    "color": "light_blue",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_electric_hunting_trap",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "You place the electric hunting trap."
+    },
+    "flags": ["SINGLE_USE"]
   },
-  "description": "A trap that, upon activation, generates a ice field over a wide area.",
-  "category": "traps",
-  "weight": "620 g",
-  "volume": "350 ml",
-  "material": ["steel", "plastic"],
-  "symbol": ";",
-  "color": "light_blue",
-  "use_action": {
-    "type": "place_trap",
-    "trap": "tr_ice_field_trap",
-    "moves": 100,
-    "practice": 1,
-    "done_message": "You place the ice field trap."
+  {
+    "type": "trap",
+    "id": "tr_electric_hunting_trap",
+    "name": "placed electric hunting trap",
+    "color": "light_blue",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 30,
+    "difficulty": 0,
+    "spell_data": {
+      "id": "electric_trap_burst"
+    }
   },
-  "flags": ["SINGLE_USE"]
-},
-{
-  "type": "trap",
-  "id": "tr_ice_field_trap",
-  "name": "placed ice field trap",
-  "color": "light_blue",
-  "symbol": "^",
-  "action": "spell",
-  "visibility": -1,
-  "avoidance": 30,
-  "difficulty": 0,
-  "spell_data": {
-    "id": "ice_trap_explosion"
-  }
-},
+  {
+    "type": "ITEM",
+    "id": "crystal_pillar_trap",
+    "subtypes": ["TOOL"],
+    "name": {
+      "str": "crystal field trap"
+    },
+    "description": "A trap that, upon activation, generates a crystal field over a wide area.",
+    "category": "traps",
+    "weight": "620 g",
+    "volume": "350 ml",
+    "material": ["steel", "plastic"],
+    "symbol": ";",
+    "color": "light_blue",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_crystal_pillar_trap",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "You place the crystal field trap."
+    },
+    "flags": ["SINGLE_USE"]
+  },
+  {
+    "type": "trap",
+    "id": "tr_crystal_pillar_trap",
+    "name": "placed crystal field trap",
+    "color": "light_blue",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 30,
+    "difficulty": 0,
+    "spell_data": {
+      "id": "create_crystals_big"
+    }
+  },
+  {
+    "type": "ITEM",
+    "id": "ice_field_trap",
+    "subtypes": ["TOOL"],
+    "name": {
+      "str": "ice field trap"
+    },
+    "description": "A trap that, upon activation, generates a ice field over a wide area.",
+    "category": "traps",
+    "weight": "620 g",
+    "volume": "350 ml",
+    "material": ["steel", "plastic"],
+    "symbol": ";",
+    "color": "light_blue",
+    "use_action": {
+      "type": "place_trap",
+      "trap": "tr_ice_field_trap",
+      "moves": 100,
+      "practice": 1,
+      "done_message": "You place the ice field trap."
+    },
+    "flags": ["SINGLE_USE"]
+  },
+  {
+    "type": "trap",
+    "id": "tr_ice_field_trap",
+    "name": "placed ice field trap",
+    "color": "light_blue",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 30,
+    "difficulty": 0,
+    "spell_data": {
+      "id": "ice_trap_explosion"
+    }
+  },
   {
     "type": "ITEM",
     "id": "slow_trap",
@@ -223,7 +223,7 @@
   }
   
   
-
+  
   
   
 ]

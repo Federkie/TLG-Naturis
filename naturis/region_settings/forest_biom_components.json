@@ -1,90 +1,89 @@
 [
-  {
-    "type": "forest_biome_component",
-    "id": "naturis_mystic_forest_features",
-    "sequence": 2,
-    "chance": 650,
-    "types": [
-      [
-        "f_obelisk_big",
-        5
-      ],
-      [
-        "f_obelisk_big_glow",
-        1
-      ],
-      [
-        "f_natur_root",
-        50
-      ],
-      [
-        "f_obelisk_glow",
-        2
-      ],
-      [
-        "t_beehive_crystal",
-        20
-      ],
-      [
-        "t_scratch_marks",
-        10
-      ],     
-      [
-        "t_egg_shells",
-        10
-      ],     
-      [
-        "t_fungal_deposit",
-        10
-      ],
-      [
-        "t_fungal_deposit_harvested",
-        15
-      ],
-      [
-        "t_growing_dog",
-        15
-      ],
-      [
-        "f_obelisk",
-        40
-      ],
-      [
-        "t_m_mushroom_harvested",
-        40
-      ],
-      [
-        "t_m_mushroom",
-        30
-      ],
-      [
-        "t_crystal_pillar_large",
-        10
-      ],
-      [
-        "t_tree_crystal",
-        5
-      ],
-      [
-        "t_pink_flowers",
-        45
-      ],
-      [
-        "t_pink_flowers_harvested",
-        50
-      ]
+{
+  "type": "forest_biome_component",
+  "id": "naturis_mystic_forest_features",
+  "sequence": 2,
+  "chance": 650,
+  "types": [
+    [
+      "f_obelisk_big",
+      5
+    ],
+    [
+      "f_obelisk_big_glow",
+      1
+    ],
+    [
+      "f_natur_root",
+      50
+    ],
+    [
+      "f_obelisk_glow",
+      2
+    ],
+    [
+      "t_beehive_crystal",
+      20
+    ],
+    [
+      "t_scratch_marks",
+      10
+    ],
+    [
+      "t_egg_shells",
+      10
+    ],
+    [
+      "t_fungal_deposit",
+      10
+    ],
+    [
+      "t_fungal_deposit_harvested",
+      15
+    ],
+    [
+      "t_growing_dog",
+      15
+    ],
+    [
+      "f_obelisk",
+      40
+    ],
+    [
+      "t_m_mushroom_harvested",
+      40
+    ],
+    [
+      "t_m_mushroom",
+      30
+    ],
+    [
+      "t_crystal_pillar_large",
+      10
+    ],
+    [
+      "t_tree_crystal",
+      5
+    ],
+    [
+      "t_pink_flowers",
+      45
+    ],
+    [
+      "t_pink_flowers_harvested",
+      50
     ]
-  },
-    {
-    "type": "forest_biome_component",
-    "id": "naturis_mystic_forest_trees",
-    "sequence": 2,
-    "chance": 1800,
-    "types": [
-      [
-        "f_tree_static",
-        1
-      ]
+  ]
+},
+{
+  "type": "forest_biome_component",
+  "id": "naturis_mystic_forest_trees",
+  "sequence": 2,
+  "chance": 1800,
+  "types": [
+    [
+      "f_tree_static",
+      1
     ]
-  }
-]
+  ]
+}]

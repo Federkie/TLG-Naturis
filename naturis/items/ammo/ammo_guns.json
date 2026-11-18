@@ -1,14 +1,14 @@
 [
   {
     "type": "ITEM",
-    "subtypes": [ "AMMO" ],
+    "subtypes": ["AMMO"],
     "id": "fa_r_heat",
     "price_postapoc": "10 USD",
     "name": { "str_sp": "fa_r HEAT" },
     "symbol": "=",
     "color": "dark_gray",
     "description": "The first type of ammunition developed for the forest rifle. It leaves a trail of fire and causes a small explosion upon impact. Should only be fired outdoors.",
-    "material": [ "steel", "powder" ],
+    "material": ["steel", "powder"],
     "longest_side": "43 mm",
     "volume": "160 ml",
     "weight": "12 g",
@@ -18,18 +18,18 @@
     "dispersion": 30,
     "stack_size": 1,
     "recoil": 1000,
-    "effects": [ "STREAM_TINY", "INCENDIARY", "BOUNCE", "TRAIL_FIRE", "NAPALM_SMALL" ]
+    "effects": ["STREAM_TINY", "INCENDIARY", "BOUNCE", "TRAIL_FIRE", "NAPALM_SMALL"]
   },
   {
     "type": "ITEM",
-    "subtypes": [ "AMMO" ],
+    "subtypes": ["AMMO"],
     "id": "fa_r_leaves",
     "price_postapoc": "10 USD",
     "name": { "str_sp": "fa_r LEAVES" },
     "symbol": "=",
     "color": "dark_gray",
     "description": "A modified version of fa_r HEAT that unleashes a storm of razor-sharp blossoms upon impact, similar to a Forest Dragon's attack.",
-    "material": [ "steel", "powder" ],
+    "material": ["steel", "powder"],
     "longest_side": "43 mm",
     "volume": "160 ml",
     "weight": "12 g",
@@ -39,12 +39,12 @@
     "dispersion": 30,
     "stack_size": 1,
     "recoil": 1000,
-    "effects": [ "AE_LEAVE_STORM" ]
+    "effects": ["AE_LEAVE_STORM"]
   },
   {
     "id": "gr_x_0",
     "type": "ITEM",
-    "subtypes": [ "AMMO" ],
+    "subtypes": ["AMMO"],
     "name": { "str_sp": "gravity_x" },
     "description": ".40 S&W ammunition with a 180gr FMJ bullet.  The .40 S&W round...",
     "weight": "15 g",
@@ -52,8 +52,8 @@
     "longest_side": "29 mm",
     "price": "200 USD 20 cent",
     "price_postapoc": "50 USD",
-    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
-    "material": [ "brass", "lead", "powder" ],
+    "flags": ["IRREPLACEABLE_CONSUMABLE"],
+    "material": ["brass", "lead", "powder"],
     "symbol": "=",
     "color": "yellow",
     "count": 40,
@@ -68,32 +68,32 @@
     },
     "dispersion": 50,
     "recoil": 560,
-    "effects": [ "AE_GRAVITY_X" ]
+    "effects": ["AE_GRAVITY_X"]
   },
   {
-  "type": "ITEM",
-  "subtypes": ["AMMO"],
-  "id": "crystal_round",
-  "name": { "str": "crystal growth round" },
-  "description": "A specialized projectile containing a crystal growth charge. On impact, it triggers rapid crystal formation.",
-  "symbol": "=",
-  "color": "light_blue",
-  "material": ["steel", "crystal"],
-  "weight": "30 g",
-  "volume": "55 ml",
-  "longest_side": "43 mm",
-  "price_postapoc": "5 USD",
-  "ammo_type": "naturis_crystal",
-  "damage": {
-    "damage_type": "stab",
-    "amount": 1
+    "type": "ITEM",
+    "subtypes": ["AMMO"],
+    "id": "crystal_round",
+    "name": { "str": "crystal growth round" },
+    "description": "A specialized projectile containing a crystal growth charge. On impact, it triggers rapid crystal formation.",
+    "symbol": "=",
+    "color": "light_blue",
+    "material": ["steel", "crystal"],
+    "weight": "30 g",
+    "volume": "55 ml",
+    "longest_side": "43 mm",
+    "price_postapoc": "5 USD",
+    "ammo_type": "naturis_crystal",
+    "damage": {
+      "damage_type": "stab",
+      "amount": 1
+    },
+    "range": 20,
+    "dispersion": 100,
+    "recoil": 1000,
+    "stack_size": 1,
+    "effects": ["CRYSTAL_GROWTH"]
   },
-  "range": 20,
-  "dispersion": 100,
-  "recoil": 1000,
-  "stack_size": 1,
-  "effects": ["CRYSTAL_GROWTH"]
-},
   {
     "type": "ITEM",
     "subtypes": ["AMMO"],
@@ -114,31 +114,31 @@
     "stack_size": 36,
     "recoil": 800
   },
-{
-  "id": "root_ammo",
-  "type": "ITEM",
-  "subtypes": ["AMMO"],
-  "name": { "str_sp": "Root ammo" },
-  "description": "A charge for the Root Circuit Rifle.",
-  "weight": "1 g",
-  "volume": "1 ml",
-  "price_postapoc": "1 USD",
-  "material": ["wood"],
-  "symbol": "=",
-  "color": "red",
-  "count": 1,
-  "stack_size": 6,
-  "ammo_type": "root_ammo",
-  "range": 35,
-  "dispersion": 5,
-  "recoil": 5,
-  "damage": {
-    "damage_type": "stab",
-    "amount": 40,
-    "armor_penetration": 2
-  },
-  "effects": ["ROOT"]
-}
-
-
+  {
+    "id": "root_ammo",
+    "type": "ITEM",
+    "subtypes": ["AMMO"],
+    "name": { "str_sp": "Root ammo" },
+    "description": "A charge for the Root Circuit Rifle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price_postapoc": "1 USD",
+    "material": ["wood"],
+    "symbol": "=",
+    "color": "red",
+    "count": 1,
+    "stack_size": 6,
+    "ammo_type": "root_ammo",
+    "range": 35,
+    "dispersion": 5,
+    "recoil": 5,
+    "damage": {
+      "damage_type": "stab",
+      "amount": 40,
+      "armor_penetration": 2
+    },
+    "effects": ["ROOT"]
+  }
+  
+  
 ]

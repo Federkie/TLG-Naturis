@@ -21,15 +21,14 @@
         "melee": 4,
         "ranged": 4
       },
-  "effects": [
-        {
-          "effect": "downed",
-          "chance": 25,
-          "duration": [ 5, 15 ],
-          "message": "The %s is downed!",
-          "damage_required": [ 20, 50 ]
-        }
-      ],
+      "effects": [
+      {
+        "effect": "downed",
+        "chance": 25,
+        "duration": [5, 15],
+        "message": "The %s is downed!",
+        "damage_required": [20, 50]
+      }],
       "coverage": 25
     },
     {
@@ -49,28 +48,28 @@
         "ranged": 3
       },
       "coverage": 40
-    }, 
-     {
-   "name": "the tail tip",
-   "is_head": true,
-   "armor_mult": { "physical": 0 },
-   "coverage": 2,
-   "crit_mult": { "all": 1.25 },
-  "difficulty": {
-   "melee": 5,
-   "ranged": 6
- },
-   "effects": [
-     { "effect": "destroyed_tip", "duration": [5, 20], "chance": 25, "message": "The %s roars in pain!", "damage_required": [1, 25] },
-     {
-       "effect": "destroyed_tip",
-       "permanent": true,
-       "chance": 30,
-       "message": "The %s screams in pain!",
-       "damage_required": [26, 100]
-     }
-   ]
- },
+    },
+    {
+      "name": "the tail tip",
+      "is_head": true,
+      "armor_mult": { "physical": 0 },
+      "coverage": 2,
+      "crit_mult": { "all": 1.25 },
+      "difficulty": {
+        "melee": 5,
+        "ranged": 6
+      },
+      "effects": [
+        { "effect": "destroyed_tip", "duration": [5, 20], "chance": 25, "message": "The %s roars in pain!", "damage_required": [1, 25] },
+        {
+          "effect": "destroyed_tip",
+          "permanent": true,
+          "chance": 30,
+          "message": "The %s screams in pain!",
+          "damage_required": [26, 100]
+        }
+      ]
+    },
     {
       "id": "tail",
       "name": "the tail",
@@ -88,25 +87,23 @@
         "ranged": 4
       },
       "effects": [
-        {
-          "effect": "maimed_tail",
-          "chance": 50,
-          "duration": [ 15, 50 ],
-          "message": "The %s's tail is maimed!",
-          "damage_required": [ 1, 2 ]
-        },
-        {
-          "effect": "maimed_tail",
-          "chance": 75,
-          "duration": [ 100, 200 ],
-          "message": "The %s's tail is badly maimed!",
-          "damage_required": [ 10, 30 ]
-        }
-      ],
+      {
+        "effect": "maimed_tail",
+        "chance": 50,
+        "duration": [15, 50],
+        "message": "The %s's tail is maimed!",
+        "damage_required": [1, 2]
+      },
+      {
+        "effect": "maimed_tail",
+        "chance": 75,
+        "duration": [100, 200],
+        "message": "The %s's tail is badly maimed!",
+        "damage_required": [10, 30]
+      }],
       "coverage": 45
     }
     
     
   ]
-}
-]
+}]

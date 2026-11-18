@@ -6,15 +6,15 @@
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "looks_like": "mon_ice_raptor",
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 260,
     "speed": 210,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 80,
@@ -24,60 +24,65 @@
     "melee_dice_sides": 5,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4 }],
     "dodge": 3,
     "stomach_size": 9000,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "cut_throat",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "cut_throat",
         "cooldown": 10,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
       {
-  "id": "ice_claw",
-  "type": "spell",
-  "spell_data": { "id": "ice_claw" },
-  "monster_message": "The %s strikes with its icy claws!",
-  "cooldown": 15,
-  "condition": {
-    "u_has_effect": "extra_spell"
-  }
-},
-{
-  "id": "ice_burst",
-  "type": "spell",
-  "spell_data": { "id": "ice_burst" },
-  "monster_message": "The %s spews a shower of ice!",
-  "cooldown": 35,
-  "condition": {
-    "u_has_effect": "extra_spell_2"
-  }
-}
+        "id": "ice_claw",
+        "type": "spell",
+        "spell_data": { "id": "ice_claw" },
+        "monster_message": "The %s strikes with its icy claws!",
+        "cooldown": 15,
+        "condition": {
+          "u_has_effect": "extra_spell"
+        }
+      },
+      {
+        "id": "ice_burst",
+        "type": "spell",
+        "spell_data": { "id": "ice_burst" },
+        "monster_message": "The %s spews a shower of ice!",
+        "cooldown": 35,
+        "condition": {
+          "u_has_effect": "extra_spell_2"
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.35,
     "flags": [
       "SEES",
@@ -105,15 +110,15 @@
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "looks_like": "mon_ice_raptor",
     "volume": "455000 ml",
     "weight": "460 kg",
     "hp": 200,
     "speed": 240,
     "attack_cost": 200,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 150,
@@ -123,55 +128,64 @@
     "melee_dice_sides": 6,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 4 }],
     "dodge": 5,
     "stomach_size": 9000,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 1] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 1]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "fear_triggers": [ "SOUND" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "fear_triggers": ["SOUND"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "cut_throat",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "cut_throat",
         "cooldown": 10,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
       {
-  "id": "ice_spear",
-  "type": "spell",
-  "spell_data": { "id": "ice_spear" },
-  "monster_message": "The %s hurls a spear made of ice!",
-  "cooldown": 15,
-  "condition": {
-    "u_has_effect": "extra_spell"
-  }
-},
-{ "type": "leap", "cooldown": 10, "max_range": 5, "allow_no_target": true,
-   "condition": {
-    "u_has_effect": "extra_spell_2"
-  }
-} 
+        "id": "ice_spear",
+        "type": "spell",
+        "spell_data": { "id": "ice_spear" },
+        "monster_message": "The %s hurls a spear made of ice!",
+        "cooldown": 15,
+        "condition": {
+          "u_has_effect": "extra_spell"
+        }
+      },
+      {
+        "type": "leap",
+        "cooldown": 10,
+        "max_range": 5,
+        "allow_no_target": true,
+        "condition": {
+          "u_has_effect": "extra_spell_2"
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.31,
     "flags": [
       "SEES",
@@ -193,22 +207,22 @@
     ],
     "armor": { "bash": 8, "cut": 12, "bullet": 6, "electric": 2 }
   },
-{
+  {
     "id": "mon_ice_blizzard_raptor",
     "type": "MONSTER",
     "name": { "str": "blizzard raptor", "str_pl": "blizzard raptors" },
     "description": "A large, upright walking lizard with powerful hind legs. Its eyes appear alert, but not aggressive. Once tamed, it would surely make a loyal companion.",
     "default_faction": "forest",
     "bodytype": "kangoroo",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "REPTILE" ],
+    "categories": ["WILDLIFE"],
+    "species": ["REPTILE"],
     "looks_like": "mon_ice_raptor",
     "volume": "460000 ml",
     "weight": "480 kg",
     "hp": 280,
     "speed": 180,
     "attack_cost": 160,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "R",
     "color": "brown",
     "morale": 200,
@@ -219,46 +233,58 @@
     "melee_dice_sides": 6,
     "vision_day": 32,
     "vision_night": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+    "melee_damage": [{ "damage_type": "cut", "amount": 5 }],
     "dodge": 1,
     "stomach_size": 9000,
     "regenerates": 0,
-    "regeneration_modifiers": [  ["critter_well_fed", 2] ],
+    "regeneration_modifiers": [
+      ["critter_well_fed", 2]
+    ],
     "path_settings": { "max_dist": 10, "avoid_dangerous_fields": true, "avoid_sharp": true },
-    "anger_triggers": [ "FRIEND_ATTACKED", "HURT"],
-    "placate_triggers": [ "PLAYER_WEAK" ],
+    "anger_triggers": ["FRIEND_ATTACKED", "HURT"],
+    "placate_triggers": ["PLAYER_WEAK"],
     "dissect": "dissect_naturis_sample_normal",
-    "families": [ "prof_intro_biology", "prof_physiology", "prof_field_research",  "prof_wp_mythic" ],
+    "families": ["prof_intro_biology", "prof_physiology", "prof_field_research", "prof_wp_mythic"],
     "reproduction": { "baby_egg": "egg_forest_raptor", "baby_count": 1, "baby_timer": 30 },
-    "baby_flags": [ "AUTUMN" ],
+    "baby_flags": ["AUTUMN"],
     "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 20 },
-    "chat_topics": [ "TALK_RAPTOR" ],
-    "special_attacks": [ 
-      [ "EAT_CARRION", 100 ], 
-      { "id": "cut_throat",
+    "chat_topics": ["TALK_RAPTOR"],
+    "special_attacks": [
+      ["EAT_CARRION", 100],
+      {
+        "id": "cut_throat",
         "cooldown": 10,
         "condition": {
           "not": {
-            "u_has_effect": "maimed_claw" }
+            "u_has_effect": "maimed_claw"
+          }
         }
       },
-      { "id": "mutant_antler", "cooldown": 15,
+      {
+        "id": "mutant_antler",
+        "cooldown": 15,
         "condition": {
-    "u_has_effect": "extra_spell" }
+          "u_has_effect": "extra_spell"
+        }
       },
-      { "id": "tail_club", "cooldown": 20,
+      {
+        "id": "tail_club",
+        "cooldown": 20,
         "condition": {
-    "u_has_effect": "extra_spell_2" } }
+          "u_has_effect": "extra_spell_2"
+        }
+      }
     ],
     "emit_fields": [
-     {
+    {
       "emit_id": "raptor_track",
       "delay": "1 s"
-     }
-     ],
-    "petfood": { "food": [ "RAPTORFOOD" ], 
-    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
-    "pet": "The %s snaps briefly at you before nestling his head against your chest."},
+    }],
+    "petfood": {
+      "food": ["RAPTORFOOD"],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s snaps briefly at you before nestling his head against your chest."
+    },
     "mountable_weight_ratio": 0.36,
     "flags": [
       "SEES",

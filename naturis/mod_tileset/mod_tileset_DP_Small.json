@@ -1,54 +1,52 @@
 [
-  {
-    "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus" ],
-    "tiles-new": [
-      {
-        "file": "mod_tileset/naturis_expan_dp_small.png",
-        "sprite_offset_x": 12,
-        "sprite_offset_y": 12,
-        "tiles": [
-		  { "id": "mon_zom_squirrel", "fg": 1, "rotates": false },
-		  { "id": "mon_zom_bat", "fg": 0, "rotates": false },
-		  { "id": "egg_rooted", "fg": 2, "rotates": false },
-		  { "id": "strange_shroom", "fg": 3, "rotates": false },
-		  { "id": "mon_old_chick", "fg": 4, "rotates": false },
-		  { "id": "mon_rain_chick", "fg": 5, "rotates": false },
-		  { "id": "forest_blood", "fg": 6, "rotates": false },
 {
-            "id": "sword_burning_on",
-            "fg": [
-              { "weight": 25, "sprite": 7 },
-              { "weight": 25, "sprite": 8 },
-              { "weight": 25, "sprite": 9 },
-              { "weight": 25, "sprite": 10 }
-            ],
-            "rotates": false,
-            "animated": true
-          },
-          { "id": "sword_burning_off", "fg": 11, "rotates": false },
-          { "id": "forest_pearl", "fg": 12, "rotates": false },
-          { "id": "grenade_forest", "fg": 13, "rotates": false },
-          { "id": "mon_fire_chick", "fg": 14, "rotates": false },
-          { "id": "mon_hatchling_static", "fg": 15, "rotates": false },
-          { "id": "egg_flying_fire", "fg": 16, "rotates": false },
-          { "id": "egg_ice_former", "fg": 17, "rotates": false },
-          { "id": "egg_forest_dragon", "fg": 18, "rotates": false },
-          { "id": "egg_rapid_striker", "fg": 19, "rotates": false },
-          { "id": "egg_static_beast", "fg": 20, "rotates": false },
-          { "id": "otter_pearl", "fg": 21, "rotates": false },
-          { "id": "mon_hatchling_fdragon", "fg": 22, "rotates": false },
-          { "id": "mon_hatchling_rapid", "fg": 23, "rotates": false },
-          { "id": "mon_hatchling_icef", "fg": 24, "rotates": false },
-          { "id": "mon_crystal_crawler", "fg": 25, "rotates": false },
-          { "id": "mon_ice_mole", "fg": 26, "rotates": false },
-          { "id": "mon_ice_worm", "fg": 27, "rotates": false },
-          { "id": "mon_ice_blob", "fg": 28, "rotates": false },
-          { "id": "shard_fire", "fg": 29, "rotates": false }
+  "type": "mod_tileset",
+  "compatibility": ["MshockXottoplus"],
+  "tiles-new": [
+  {
+    "file": "mod_tileset/naturis_expan_dp_small.png",
+    "sprite_offset_x": 12,
+    "sprite_offset_y": 12,
+    "tiles": [
+      { "id": "mon_zom_squirrel", "fg": 1, "rotates": false },
+      { "id": "mon_zom_bat", "fg": 0, "rotates": false },
+      { "id": "egg_rooted", "fg": 2, "rotates": false },
+      { "id": "strange_shroom", "fg": 3, "rotates": false },
+      { "id": "mon_old_chick", "fg": 4, "rotates": false },
+      { "id": "mon_rain_chick", "fg": 5, "rotates": false },
+      { "id": "forest_blood", "fg": 6, "rotates": false },
+      {
+        "id": "sword_burning_on",
+        "fg": [
+          { "weight": 25, "sprite": 7 },
+          { "weight": 25, "sprite": 8 },
+          { "weight": 25, "sprite": 9 },
+          { "weight": 25, "sprite": 10 }
         ],
-        "sprite_width": 20,
-        "sprite_height": 20
-      }
-    ]
-  }
-]
+        "rotates": false,
+        "animated": true
+      },
+      { "id": "sword_burning_off", "fg": 11, "rotates": false },
+      { "id": "forest_pearl", "fg": 12, "rotates": false },
+      { "id": "grenade_forest", "fg": 13, "rotates": false },
+      { "id": "mon_fire_chick", "fg": 14, "rotates": false },
+      { "id": "mon_hatchling_static", "fg": 15, "rotates": false },
+      { "id": "egg_flying_fire", "fg": 16, "rotates": false },
+      { "id": "egg_ice_former", "fg": 17, "rotates": false },
+      { "id": "egg_forest_dragon", "fg": 18, "rotates": false },
+      { "id": "egg_rapid_striker", "fg": 19, "rotates": false },
+      { "id": "egg_static_beast", "fg": 20, "rotates": false },
+      { "id": "otter_pearl", "fg": 21, "rotates": false },
+      { "id": "mon_hatchling_fdragon", "fg": 22, "rotates": false },
+      { "id": "mon_hatchling_rapid", "fg": 23, "rotates": false },
+      { "id": "mon_hatchling_icef", "fg": 24, "rotates": false },
+      { "id": "mon_crystal_crawler", "fg": 25, "rotates": false },
+      { "id": "mon_ice_mole", "fg": 26, "rotates": false },
+      { "id": "mon_ice_worm", "fg": 27, "rotates": false },
+      { "id": "mon_ice_blob", "fg": 28, "rotates": false },
+      { "id": "shard_fire", "fg": 29, "rotates": false }
+    ],
+    "sprite_width": 20,
+    "sprite_height": 20
+  }]
+}]

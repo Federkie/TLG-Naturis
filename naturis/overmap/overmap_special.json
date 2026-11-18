@@ -3,109 +3,109 @@
     "type": "overmap_special",
     "id": "forest_heart",
     "overmaps": [
-      { "point": [ 0, 0, 0 ], "overmap": "forest_heart_0_north" },
-      { "point": [ 0, 0, -1 ], "overmap": "forest_heart_1_north"},
-      { "point": [ 0, -1, -1 ], "overmap": "forest_heart_1n_north"},
-      { "point": [ 0, -1, -2 ], "overmap": "forest_heart_2n_north"},
-      { "point": [ 0, 0, -2 ], "overmap": "forest_heart_2_north"}
+      { "point": [0, 0, 0], "overmap": "forest_heart_0_north" },
+      { "point": [0, 0, -1], "overmap": "forest_heart_1_north" },
+      { "point": [0, -1, -1], "overmap": "forest_heart_1n_north" },
+      { "point": [0, -1, -2], "overmap": "forest_heart_2n_north" },
+      { "point": [0, 0, -2], "overmap": "forest_heart_2_north" }
     ],
-    "locations": [ "forest" ],
-    "city_distance": [ 25, -1 ],
-    "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 1 ],
-    "flags": [ "MAN_MADE" ]
+    "locations": ["forest"],
+    "city_distance": [25, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["MAN_MADE"]
   },
   {
     "type": "overmap_special",
     "id": "fairy_ring",
     "overmaps": [
-      { "point": [ 0, 0, 0 ], "overmap": "fairy_ring_north" },
-      { "point": [ 0, 0, 1 ], "overmap": "fairy_ring_roof_north" }
+      { "point": [0, 0, 0], "overmap": "fairy_ring_north" },
+      { "point": [0, 0, 1], "overmap": "fairy_ring_roof_north" }
     ],
-    "locations": [ "forest" ],
-    "city_distance": [ 20, -1 ],
-    "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 1 ],
-    "flags": [ "MAN_MADE" ]
+    "locations": ["forest"],
+    "city_distance": [20, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["MAN_MADE"]
   },
- {
+  {
     "type": "overmap_special",
     "id": "forgotten_cellar",
     "overmaps": [
-      { "point": [ 0, 0, 0 ], "overmap": "forgotten_cellar_north" },
-      { "point": [ 0, 0, -1 ], "overmap": "forgotten_cellar_1n_north" }
+      { "point": [0, 0, 0], "overmap": "forgotten_cellar_north" },
+      { "point": [0, 0, -1], "overmap": "forgotten_cellar_1n_north" }
     ],
-    "locations": [ "forest" ],
-    "city_distance": [ 5, -1 ],
-    "city_sizes": [ 0, 12 ],
-    "occurrences": [ 0, 2 ],
-    "flags": [ "MAN_MADE" ]
+    "locations": ["forest"],
+    "city_distance": [5, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 2],
+    "flags": ["MAN_MADE"]
   },
-   {
-   "type": "overmap_special",
-   "id": "burning_fields",
-   "overmaps": [
-     { "point": [0, 0, 0], "overmap": "burning_fields_north" },
-     { "point": [0, 0, -1], "overmap": "burning_fields_1_north" }
-   ],
-   "locations": ["field"],
-   "city_distance": [20, -1],
-   "city_sizes": [0, 12],
-   "occurrences": [0, 1],
-   "flags": ["WILDERNESS"]
- },
- {
-  "type": "overmap_special",
-  "id": "hunter_camp",
-  "overmaps": [
-    { "point": [0, 0, 0], "overmap": "hunter_camp_north" },
-    { "point": [0, 0, 1], "overmap": "hunter_camp_roof_north" }
-  ],
-  "locations": ["forest", "field"],
-  "city_distance": [5, -1],
-  "city_sizes": [0, 24],
-  "occurrences": [9, 10],
-  "flags": ["MAN_MADE", "OVERMAP_UNIQUE"]
-},
- {
-   "type": "overmap_special",
-   "id": "frozen_cave",
-   "overmaps": [
-     { "point": [0, 0, 0], "overmap": "frozen_cave_north" },
-     { "point": [0, 0, -1], "overmap": "frozen_cave_underground_north" }
-   ],
-   "locations": ["forest"],
-   "city_distance": [20, -1],
-   "city_sizes": [0, 12],
-   "occurrences": [0, 1],
-   "flags": ["WILDERNESS"]
- },
   {
-   "type": "overmap_special",
-   "id": "pink_ravine",
-   "overmaps": [
-     { "point": [0, 0, 0], "overmap": "pink_ravine_north" },
-     { "point": [0, 0, -1], "overmap": "pink_ravine_ground_north" }
-   ],
-   "locations": ["forest"],
-   "city_distance": [20, -1],
-   "city_sizes": [0, 12],
-   "occurrences": [0, 1],
-   "flags": ["WILDERNESS"]
- },
-   {
-   "type": "overmap_special",
-   "id": "hunting_fields",
-   "overmaps": [
-     { "point": [0, 0, 0], "overmap": "hunting_fields_north" }
-   ],
-   "locations": ["field"],
-   "city_distance": [8, -1],
-   "city_sizes": [0, 12],
-   "occurrences": [0, 1],
-   "flags": ["WILDERNESS"]
- },
-   {
+    "type": "overmap_special",
+    "id": "burning_fields",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "burning_fields_north" },
+      { "point": [0, 0, -1], "overmap": "burning_fields_1_north" }
+    ],
+    "locations": ["field"],
+    "city_distance": [20, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["WILDERNESS"]
+  },
+  {
+    "type": "overmap_special",
+    "id": "hunter_camp",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "hunter_camp_north" },
+      { "point": [0, 0, 1], "overmap": "hunter_camp_roof_north" }
+    ],
+    "locations": ["forest", "field"],
+    "city_distance": [5, -1],
+    "city_sizes": [0, 24],
+    "occurrences": [9, 10],
+    "flags": ["MAN_MADE", "OVERMAP_UNIQUE"]
+  },
+  {
+    "type": "overmap_special",
+    "id": "frozen_cave",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "frozen_cave_north" },
+      { "point": [0, 0, -1], "overmap": "frozen_cave_underground_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [20, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["WILDERNESS"]
+  },
+  {
+    "type": "overmap_special",
+    "id": "pink_ravine",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "pink_ravine_north" },
+      { "point": [0, 0, -1], "overmap": "pink_ravine_ground_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [20, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["WILDERNESS"]
+  },
+  {
+    "type": "overmap_special",
+    "id": "hunting_fields",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "hunting_fields_north" }
+    ],
+    "locations": ["field"],
+    "city_distance": [8, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [0, 1],
+    "flags": ["WILDERNESS"]
+  },
+  {
     "type": "overmap_special",
     "id": "static_fields",
     "overmaps": [
@@ -119,47 +119,47 @@
     "occurrences": [0, 1],
     "flags": ["MAN_MADE"]
   },
-{
-  "type": "overmap_special",
-  "id": "crystal_grove",
-  "overmaps": [
-    { "point": [ 0, 0, 0 ], "overmap": "crystal_grove_north" },
-    { "point": [ 0, -1, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ 1, -1, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ 1, 0, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ 1, 1, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ 0, 1, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ -1, 1, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ -1, 0, 0 ], "overmap": "crystal_field_north" },
-    { "point": [ -1, -1, 0 ], "overmap": "crystal_field_north" }
-  ],
-  "locations": [ "forest" ],
-  "city_distance": [ 25, -1 ],
-  "city_sizes": [ 0, 12 ],
-  "occurrences": [ 1, 2 ],
-  "flags": [ "WILDERNESS", "OVERMAP_UNIQUE" ]
-},
-{
-  "type": "overmap_special",
-  "id": "frostbound_cavern",
-  "overmaps": [
-    { "point": [0, 0, 0], "overmap": "frostbound_cavern_entrance_north" },
-    { "point": [0, 0, -1], "overmap": "frostbound_cavern_north" },
-    { "point": [0, -1, -1], "overmap": "frostbound_ground_north" },
-    { "point": [1, -1, -1], "overmap": "frostbound_ground_north" },
-    { "point": [1, 0, -1], "overmap": "frostbound_ground_north" },
-    { "point": [1, 1, -1], "overmap": "frostbound_ground_north" },
-    { "point": [0, 1, -1], "overmap": "frostbound_ground_north" },
-    { "point": [-1, 1, -1], "overmap": "frostbound_ground_north" },
-    { "point": [-1, 0, -1], "overmap": "frostbound_ground_north" },
-    { "point": [-1, -1, -1], "overmap": "frostbound_ground_north" }
-  ],
-  "locations": ["forest"],
-  "city_distance": [25, -1],
-  "city_sizes": [0, 12],
-  "occurrences": [1, 2],
-  "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
-},
+  {
+    "type": "overmap_special",
+    "id": "crystal_grove",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "crystal_grove_north" },
+      { "point": [0, -1, 0], "overmap": "crystal_field_north" },
+      { "point": [1, -1, 0], "overmap": "crystal_field_north" },
+      { "point": [1, 0, 0], "overmap": "crystal_field_north" },
+      { "point": [1, 1, 0], "overmap": "crystal_field_north" },
+      { "point": [0, 1, 0], "overmap": "crystal_field_north" },
+      { "point": [-1, 1, 0], "overmap": "crystal_field_north" },
+      { "point": [-1, 0, 0], "overmap": "crystal_field_north" },
+      { "point": [-1, -1, 0], "overmap": "crystal_field_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [25, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [1, 2],
+    "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
+  },
+  {
+    "type": "overmap_special",
+    "id": "frostbound_cavern",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "frostbound_cavern_entrance_north" },
+      { "point": [0, 0, -1], "overmap": "frostbound_cavern_north" },
+      { "point": [0, -1, -1], "overmap": "frostbound_ground_north" },
+      { "point": [1, -1, -1], "overmap": "frostbound_ground_north" },
+      { "point": [1, 0, -1], "overmap": "frostbound_ground_north" },
+      { "point": [1, 1, -1], "overmap": "frostbound_ground_north" },
+      { "point": [0, 1, -1], "overmap": "frostbound_ground_north" },
+      { "point": [-1, 1, -1], "overmap": "frostbound_ground_north" },
+      { "point": [-1, 0, -1], "overmap": "frostbound_ground_north" },
+      { "point": [-1, -1, -1], "overmap": "frostbound_ground_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [25, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [1, 2],
+    "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
+  },
   {
     "type": "overmap_special",
     "id": "monster_nest",
@@ -172,25 +172,25 @@
     "occurrences": [2, 8],
     "flags": ["WILDERNESS"]
   },
-{
-  "type": "overmap_special",
-  "id": "awakening_grove",
-  "overmaps": [
-    { "point": [0, 0, 0], "overmap": "awakening_grove_north" },
-    { "point": [0, -1, 0], "overmap": "awakening_field_north" },
-    { "point": [1, -1, 0], "overmap": "awakening_field_north" },
-    { "point": [1, 0, 0], "overmap": "awakening_field_north" },
-    { "point": [1, 1, 0], "overmap": "awakening_field_north" },
-    { "point": [0, 1, 0], "overmap": "awakening_field_north" },
-    { "point": [-1, 1, 0], "overmap": "awakening_field_north" },
-    { "point": [-1, 0, 0], "overmap": "awakening_field_north" },
-    { "point": [-1, -1, 0], "overmap": "awakening_field_north" }
-  ],
-  "locations": ["forest"],
-  "city_distance": [25, -1],
-  "city_sizes": [0, 12],
-  "occurrences": [1, 2],
-  "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
-}
-
+  {
+    "type": "overmap_special",
+    "id": "awakening_grove",
+    "overmaps": [
+      { "point": [0, 0, 0], "overmap": "awakening_grove_north" },
+      { "point": [0, -1, 0], "overmap": "awakening_field_north" },
+      { "point": [1, -1, 0], "overmap": "awakening_field_north" },
+      { "point": [1, 0, 0], "overmap": "awakening_field_north" },
+      { "point": [1, 1, 0], "overmap": "awakening_field_north" },
+      { "point": [0, 1, 0], "overmap": "awakening_field_north" },
+      { "point": [-1, 1, 0], "overmap": "awakening_field_north" },
+      { "point": [-1, 0, 0], "overmap": "awakening_field_north" },
+      { "point": [-1, -1, 0], "overmap": "awakening_field_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [25, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [1, 2],
+    "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
+  }
+  
 ]

@@ -1,6 +1,6 @@
 [
   
-    {
+  {
     "type": "mapgen",
     "om_terrain": "awakening_field",
     "object": {
@@ -31,25 +31,25 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "awakening_palette" ],
+      "palettes": ["awakening_palette"],
       "place_nested": [
-        { "chunks": [ "24x24_awakening_field_n" ], "neighbors": { "south": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_ne" ], "neighbors": { "south_west": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_e" ], "neighbors": { "west": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_se" ], "neighbors": { "north_west": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_s" ], "neighbors": { "north": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_sw" ], "neighbors": { "north_east": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_w" ], "neighbors": { "east": [ "awakening_grove" ] }, "x": 0, "y": 0 },
-        { "chunks": [ "24x24_awakening_field_nw" ], "neighbors": { "south_east": [ "awakening_grove" ] }, "x": 0, "y": 0 }
+        { "chunks": ["24x24_awakening_field_n"], "neighbors": { "south": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_ne"], "neighbors": { "south_west": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_e"], "neighbors": { "west": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_se"], "neighbors": { "north_west": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_s"], "neighbors": { "north": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_sw"], "neighbors": { "north_east": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_w"], "neighbors": { "east": ["awakening_grove"] }, "x": 0, "y": 0 },
+        { "chunks": ["24x24_awakening_field_nw"], "neighbors": { "south_east": ["awakening_grove"] }, "x": 0, "y": 0 }
       ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_n",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "       ......     2     ",
         "  .......0.....     2   ",
@@ -76,27 +76,27 @@
         "........................",
         "........................"
       ],
-      "palettes": [ "awakening_palette" ],
-  "nested": {
-    "!": {
-      "chunks": [
-        ["null", 10],
-        ["awakening_8x8_01", 20],
-        ["awakening_8x8_02", 20],
-        ["awakening_8x8_03", 20],
-        ["awakening_8x8_04", 20],
-        ["awakening_8x8_05", 20]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "nested": {
+        "!": {
+          "chunks": [
+            ["null", 10],
+            ["awakening_8x8_01", 20],
+            ["awakening_8x8_02", 20],
+            ["awakening_8x8_03", 20],
+            ["awakening_8x8_04", 20],
+            ["awakening_8x8_05", 20]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_ne",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "                        ",
         "                2       ",
@@ -123,15 +123,15 @@
         ".....MM.....**....0..   ",
         ".t.....MMM...*/.0.....  "
       ],
-      "palettes": [ "awakening_palette" ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_e",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         ".....MM...*****...0...  ",
         ".t....MMM.....****./..  ",
@@ -158,15 +158,15 @@
         "........../..******0..  ",
         "..MM...M.....*..0.**0.  "
       ],
-      "palettes": [ "awakening_palette" ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_se",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "t.MM../....**..***....  ",
         "....MMM....*...*..0..   ",
@@ -193,15 +193,15 @@
         "            .           ",
         "                        "
       ],
-      "palettes": [ "awakening_palette" ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_s",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "........................",
         "..!.....................",
@@ -228,27 +228,27 @@
         "  ......0.****......    ",
         "   2   .......          "
       ],
-      "palettes": [ "awakening_palette" ],
-        "nested": {
-    "!": {
-      "chunks": [
-        ["null", 10],
-        ["awakening_8x8_01", 20],
-        ["awakening_8x8_02", 20],
-        ["awakening_8x8_03", 20],
-        ["awakening_8x8_04", 20],
-        ["awakening_8x8_05", 20]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "nested": {
+        "!": {
+          "chunks": [
+            ["null", 10],
+            ["awakening_8x8_01", 20],
+            ["awakening_8x8_02", 20],
+            ["awakening_8x8_03", 20],
+            ["awakening_8x8_04", 20],
+            ["awakening_8x8_05", 20]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_sw",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "  ..**...MMM..t.........",
         "   ..*0...M......t......",
@@ -275,15 +275,15 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "awakening_palette" ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_w",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "  ..0**.MM...t..........",
         "   ..*...M/.....t.......",
@@ -310,27 +310,27 @@
         "  ....*.0....M..........",
         "  ..0.**...../MM......t."
       ],
-      "palettes": [ "awakening_palette" ],
-        "nested": {
-    "!": {
-      "chunks": [
-        ["null", 10 ],
-        ["awakening_8x8_01", 20],
-        ["awakening_8x8_02", 20],
-        ["awakening_8x8_03", 20],
-        ["awakening_8x8_04", 20],
-        ["awakening_8x8_05", 20]
-      ]
-    }
-  },
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "nested": {
+        "!": {
+          "chunks": [
+            ["null", 10],
+            ["awakening_8x8_01", 20],
+            ["awakening_8x8_02", 20],
+            ["awakening_8x8_03", 20],
+            ["awakening_8x8_04", 20],
+            ["awakening_8x8_05", 20]
+          ]
+        }
+      },
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   },
   {
     "type": "mapgen",
     "nested_mapgen_id": "24x24_awakening_field_nw",
     "object": {
-      "mapgensize": [ 24, 24 ],
+      "mapgensize": [24, 24],
       "rows": [
         "                        ",
         "                 2      ",
@@ -357,13 +357,13 @@
         "   ...0..*.....t..t.....",
         " ./../.***..M...tt......"
       ],
-      "palettes": [ "awakening_palette" ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": ["awakening_palette"],
+      "flags": ["ERASE_ALL_BEFORE_PLACING_TERRAIN"]
     }
   }
   
   
   
   
-
+  
 ]

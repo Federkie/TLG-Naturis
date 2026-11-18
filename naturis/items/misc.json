@@ -5,15 +5,15 @@
     "name": { "str": "plush cthulu" },
     "description": "A manufactured plush toy.",
     "category": "other",
-    "material": [ { "type": "faux_fur", "portion": 1 }, { "type": "synthetic_fluff", "portion": 15 } ],
+    "material": [{ "type": "faux_fur", "portion": 1 }, { "type": "synthetic_fluff", "portion": 15 }],
     "weight": "900 g",
     "volume": "3 L",
     "price": "20 USD",
     "price_postapoc": "1 USD",
     "symbol": "i",
     "color": "cyan",
-    "flags": [ "SLEEP_AID", "NO_SALVAGE" ]
-},
+    "flags": ["SLEEP_AID", "NO_SALVAGE"]
+  },
   {
     "type": "ITEM",
     "id": "forest_blood",
@@ -25,15 +25,19 @@
     "description": "Fossiled green blood.",
     "price": "5 cent",
     "price_postapoc": "20 cent",
-    "material": [ "stone" ],
+    "material": ["stone"],
     "volume": "150 ml",
     "longest_side": "30 cm",
     "to_hit": -1,
     "melee_damage": { "bash": 3 },
-    "use_action": { "type": "cast_spell",
-       "spell_id": "summon_birds", "no_fail": true, "level": 1 }
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "summon_birds",
+      "no_fail": true,
+      "level": 1
+    }
   },
-{
+  {
     "type": "ITEM",
     "id": "forest_blood_2",
     "category": "spare_parts",
@@ -44,15 +48,19 @@
     "description": "Fossiled green blood.",
     "price": "5 cent",
     "price_postapoc": "20 cent",
-    "material": [ "stone" ],
+    "material": ["stone"],
     "volume": "150 ml",
     "longest_side": "30 cm",
     "to_hit": -1,
     "melee_damage": { "bash": 3 },
-    "use_action": { "type": "cast_spell",
-       "spell_id": "summon_animal_pets", "no_fail": true, "level": 1 }
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "summon_animal_pets",
+      "no_fail": true,
+      "level": 1
+    }
   },
-    {
+  {
     "id": "arm_splint_living",
     "type": "ITEM",
     "subtypes": ["ARMOR"],
@@ -72,11 +80,11 @@
     "flags": ["OUTER", "SPLINT", "ALLOWS_TAIL", "UNRESTRICTED"],
     "armor": [{ "encumbrance": 70, "coverage": 75, "covers": ["arm_l", "arm_r", "wing_bird_l", "wing_bird_r"] }]
   },
-    {
+  {
     "id": "leg_splint_living",
     "type": "ITEM",
     "subtypes": ["ARMOR"],
-    "name": { "str": "living leg splint."},
+    "name": { "str": "living leg splint." },
     "description": "A highly flexible aid for positioning and immobilizing bones that emits gentle warmth.",
     "weight": "500 g",
     "volume": "1 L",
@@ -95,32 +103,32 @@
   {
     "id": "cryo_powder",
     "type": "ITEM",
-    "subtypes": [ "AMMO" ],
+    "subtypes": ["AMMO"],
     "category": "chems",
     "name": { "str_sp": "cryo powder" },
     "description": "A cool, non-flammable powder. Obtained from the remains of an ice former.",
     "weight": "1 mg",
     "volume": "1 ml",
     "price_postapoc": "1 USD",
-    "material": [ "powder_nonflam" ],
+    "material": ["powder_nonflam"],
     "symbol": "=",
     "color": "dark_gray",
     "count": 10,
     "ammo_type": "cryo_powder"
   },
   {
-  "type": "ITEM",
-  "id": "shard_crystal",
-  "name": { "str": "crystal shard" },
-  "description": "A small, sharp crystal fragment.",
-  "category": "other",
-  "weight": "15 g",
-  "volume": "17 ml",
-  "price_postapoc": "10 USD",
-  "symbol": "s",
-  "color": "blue",
-  "flags": ["NO_SALVAGE"]
-},
+    "type": "ITEM",
+    "id": "shard_crystal",
+    "name": { "str": "crystal shard" },
+    "description": "A small, sharp crystal fragment.",
+    "category": "other",
+    "weight": "15 g",
+    "volume": "17 ml",
+    "price_postapoc": "10 USD",
+    "symbol": "s",
+    "color": "blue",
+    "flags": ["NO_SALVAGE"]
+  },
   {
     "id": "forest_powder",
     "type": "ITEM",
@@ -138,7 +146,7 @@
     "flags": ["NO_INGEST", "IRREPLACEABLE_CONSUMABLE", "WATER_DISSOLVE", "NO_TEMP"],
     "use_action": { "type": "heal", "bleed": 15, "disinfectant_power": 2, "bite": 0.95, "move_cost": 2000 }
   },
-    {
+  {
     "id": "healing_liquid",
     "type": "ITEM",
     "subtypes": ["AMMO"],
@@ -149,7 +157,7 @@
     "volume": "1 ml",
     "container": "vial_glass",
     "price_postapoc": "5 USD",
-    "material": [ "water" ],
+    "material": ["water"],
     "symbol": "~",
     "color": "dark_gray",
     "count": 6,
@@ -168,44 +176,43 @@
     "symbol": "*",
     "color": "dark_gray"
   },
-{
-  "type": "ITEM",
-  "subtypes": ["TOOL"],
-  "id": "grounding_anchor_capsule",
-  "category": "tools",
-  "name": { "str": "grounding anchor" },
-  "description": "A single-use grounding device. When activated while wielded, it creates a static protective field that reduces incoming electrical damage.",
-  "weight": "255 g",
-  "volume": "260 ml",
-  "price_postapoc": "50 USD",
-  "material": ["steel", "plastic"],
-  "symbol": "*",
-  "color": "light_blue",
-  "initial_charges": 1,
-  "max_charges": 1,
-  "charges_per_use": 1,
-  "use_action": {
-   "type": "effect_on_conditions",
+  {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "id": "grounding_anchor_capsule",
+    "category": "tools",
+    "name": { "str": "grounding anchor" },
+    "description": "A single-use grounding device. When activated while wielded, it creates a static protective field that reduces incoming electrical damage.",
+    "weight": "255 g",
+    "volume": "260 ml",
+    "price_postapoc": "50 USD",
+    "material": ["steel", "plastic"],
+    "symbol": "*",
+    "color": "light_blue",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "use_action": {
+      "type": "effect_on_conditions",
       "effect_on_conditions": [
-        {
-  "id": "EOC_GROUNDING_ANCHOR",
-  "effect": [
-    {
-      "u_cast_spell": {
-        "id": "grounding"
-      }
-    },
       {
-     "u_message": "A grounding field forms around you."
-    },
-    {
-      "transform_item": "grounding_anchor_spent"
+        "id": "EOC_GROUNDING_ANCHOR",
+        "effect": [
+        {
+          "u_cast_spell": {
+            "id": "grounding"
+          }
+        },
+        {
+          "u_message": "A grounding field forms around you."
+        },
+        {
+          "transform_item": "grounding_anchor_spent"
+        }]
+      }]
     }
-  ]        }
-      ]
-  }
-},
-    {
+  },
+  {
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "id": "grounding_anchor_spent",
@@ -235,7 +242,7 @@
     "count": 10,
     "ammo_type": "remnant"
   },
-    {
+  {
     "id": "powder_crystal",
     "type": "ITEM",
     "category": "chems",
@@ -248,26 +255,26 @@
     "symbol": "*",
     "color": "dark_gray"
   },
-     {
-      "type": "ITEM",
-      "id": "chipped_ice",
-      "category": "weapons",
-      "price_postapoc": "2 USD",
-      "name": { "str": "chipped ice" },
-      "symbol": ";",
-      "color": "light_gray",
-      "description": "It works well as a thrown weapon, but it is very fragile and shatters very easily upon impact.",
-      "material": ["perennial_ice"],
-      "volume": "57 ml",
-      "weight": "190 g",
-      "longest_side": "33 cm",
-      "flags": ["SHEATH_KNIFE", "FRAGILE_MELEE"],
-      "weapon_category": ["KNIVES"],
-      "techniques": ["WBLOCK_0"],
-      "thrown_damage": [{ "damage_type": "bash", "amount": 1 }, { "damage_type": "stab", "amount": 9 }],
-      "melee_damage": { "bash": 9 }
-    },
-   {
+  {
+    "type": "ITEM",
+    "id": "chipped_ice",
+    "category": "weapons",
+    "price_postapoc": "2 USD",
+    "name": { "str": "chipped ice" },
+    "symbol": ";",
+    "color": "light_gray",
+    "description": "It works well as a thrown weapon, but it is very fragile and shatters very easily upon impact.",
+    "material": ["perennial_ice"],
+    "volume": "57 ml",
+    "weight": "190 g",
+    "longest_side": "33 cm",
+    "flags": ["SHEATH_KNIFE", "FRAGILE_MELEE"],
+    "weapon_category": ["KNIVES"],
+    "techniques": ["WBLOCK_0"],
+    "thrown_damage": [{ "damage_type": "bash", "amount": 1 }, { "damage_type": "stab", "amount": 9 }],
+    "melee_damage": { "bash": 9 }
+  },
+  {
     "id": "bandages_mycelium",
     "type": "ITEM",
     "category": "drugs",
@@ -281,8 +288,8 @@
     "color": "white",
     "flags": ["SINGLE_USE", "TINDER"],
     "use_action": { "type": "heal", "bandages_power": 4, "bleed": 10, "move_cost": 7000 }
-   },
-   {
+  },
+  {
     "type": "ITEM",
     "subtypes": ["COMPOSTABLE", "COMESTIBLE"],
     "id": "fermentable_liquid_rapid",
@@ -297,30 +304,30 @@
     "compost_time": "30 days",
     "compost_results": { "fermented_fertilizer_liquid": 1, "biogas": 250 }
   },
-      {
-      "id": "natural_antibiotic_ferment",
-      "type": "ITEM",
-      "name": { "str": "natural antibiotic ferment" },
-      "description": "This jar contains a batch of vegetables set to ferment.  You can seal up the jar once the process is completed.",
-      "weight": "850 g",
-      "volume": "680 ml",
-      "longest_side": "132 mm",
-      "price_postapoc": "20 cent",
-      "material": ["glass", "vegetable"],
-      "symbol": "%",
-      "color": "white",
-      "use_action": {
-        "target": "natural_antibiotic",
-        "container": "jar_glass_sealed",
-        "target_charges": 6,
-        "msg": "The concoction is bubbling slightly. You think it’s about ready, so you seal the jar.",
-        "moves": 50,
-        "type": "delayed_transform",
-        "transform_age": 100800,
-        "not_ready_msg": "It looks the same as before, it probably needs a bit more time."
-      },
-      "melee_damage": { "bash": 8 }
+  {
+    "id": "natural_antibiotic_ferment",
+    "type": "ITEM",
+    "name": { "str": "natural antibiotic ferment" },
+    "description": "This jar contains a batch of vegetables set to ferment.  You can seal up the jar once the process is completed.",
+    "weight": "850 g",
+    "volume": "680 ml",
+    "longest_side": "132 mm",
+    "price_postapoc": "20 cent",
+    "material": ["glass", "vegetable"],
+    "symbol": "%",
+    "color": "white",
+    "use_action": {
+      "target": "natural_antibiotic",
+      "container": "jar_glass_sealed",
+      "target_charges": 6,
+      "msg": "The concoction is bubbling slightly. You think it’s about ready, so you seal the jar.",
+      "moves": 50,
+      "type": "delayed_transform",
+      "transform_age": 100800,
+      "not_ready_msg": "It looks the same as before, it probably needs a bit more time."
     },
+    "melee_damage": { "bash": 8 }
+  },
   {
     "id": "natural_antibiotic",
     "type": "ITEM",
@@ -341,7 +348,7 @@
     "fun": -4,
     "ammo_type": "water",
     "flags": ["EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_AUTO_CONSUME"],
-    "use_action": [ "WEAK_ANTIBIOTIC" ]
+    "use_action": ["WEAK_ANTIBIOTIC"]
   },
   {
     "id": "turmeric",
@@ -369,7 +376,6 @@
     "use_action": { "type": "firestarter", "moves": 40, "moves_slow": 400 },
     "flags": ["FIRESTARTER", "REQUIRES_TINDER", "SINGLE_USE"]
   }
- 
-
+  
+  
 ]
-

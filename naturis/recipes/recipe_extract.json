@@ -1,77 +1,127 @@
 [
-      {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "dormant_seed",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_EXTRACTS",
     "skill_used": "cooking",
-    "proficiencies": [ { "proficiency": "prof_biological_extraction" } ],
+    "proficiencies": [{ "proficiency": "prof_biological_extraction" }],
     "time": " 15 m",
-    "autolearn": [ ["research", 3] ],
-    "book_learn": [ [ "alternative_medicine", 3 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SIEVE", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "flags": [ "BLIND_HARD", "NO_MORALE_OK" ],
+    "autolearn": [
+      ["research", 3]
+    ],
+    "book_learn": [
+      ["alternative_medicine", 3]
+    ],
+    "qualities": [{ "id": "CUT", "level": 1 }, { "id": "SIEVE", "level": 1 }, { "id": "CONTAIN", "level": 1 }],
+    "tools": [
+      [
+        ["surface_heat", 20, "LIST"]
+      ]
+    ],
+    "flags": ["BLIND_HARD", "NO_MORALE_OK"],
     "components": [
-      [ [ "mycelium", 1 ] ],
-      [ [ "living_wood", 1 ] ],
-      [ [ "forest_enzyme", 1 ] ],
-      [ [ "water", 1 ], [ "water_clean", 1 ] ]
+      [
+        ["mycelium", 1]
+      ],
+      [
+        ["living_wood", 1]
+      ],
+      [
+        ["forest_enzyme", 1]
+      ],
+      [
+        ["water", 1],
+        ["water_clean", 1]
+      ]
     ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "healing_water",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_EXTRACTS",
     "skill_used": "cooking",
-    "proficiencies": [ { "proficiency": "prof_biological_extraction" } ],
+    "proficiencies": [{ "proficiency": "prof_biological_extraction" }],
     "time": " 30 s",
-    "autolearn": [ ["research", 7] ],
-    "book_learn": [ [ "alternative_medicine", 6 ] ],
-    "flags": [ "BLIND_HARD", "NO_MORALE_OK" ],
+    "autolearn": [
+      ["research", 7]
+    ],
+    "book_learn": [
+      ["alternative_medicine", 6]
+    ],
+    "flags": ["BLIND_HARD", "NO_MORALE_OK"],
     "components": [
-      [ [ "forest_powder", 1 ] ],
-      [ [ "forest_enzyme", 1 ] ],
-      [ [ "water", 1 ], [ "water_clean", 1 ] ]
+      [
+        ["forest_powder", 1]
+      ],
+      [
+        ["forest_enzyme", 1]
+      ],
+      [
+        ["water", 1],
+        ["water_clean", 1]
+      ]
     ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "enhanced_stamina_extract",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_EXTRACTS",
     "skill_used": "cooking",
-    "proficiencies": [ { "proficiency": "prof_biological_extraction" } ],
+    "proficiencies": [{ "proficiency": "prof_biological_extraction" }],
     "time": " 30 s",
-    "autolearn": [ ["research", 4] ],
-    "book_learn": [ [ "alternative_medicine", 4 ] ],
-    "flags": [ "BLIND_HARD", "NO_MORALE_OK" ],
+    "autolearn": [
+      ["research", 4]
+    ],
+    "book_learn": [
+      ["alternative_medicine", 4]
+    ],
+    "flags": ["BLIND_HARD", "NO_MORALE_OK"],
     "components": [
-      [ [ "dog_seedling", 1 ] ],
-      [ [ "forest_enzyme", 1 ] ],
-      [ [ "water", 1 ], [ "water_clean", 1 ] ]
+      [
+        ["dog_seedling", 1]
+      ],
+      [
+        ["forest_enzyme", 1]
+      ],
+      [
+        ["water", 1],
+        ["water_clean", 1]
+      ]
     ]
   },
-    {
+  {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "reduced_fatigue_extract",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_EXTRACTS",
     "skill_used": "cooking",
-    "proficiencies": [ { "proficiency": "prof_biological_extraction" } ],
+    "proficiencies": [{ "proficiency": "prof_biological_extraction" }],
     "time": " 30 s",
-    "autolearn": [ ["research", 4] ],
-    "book_learn": [ [ "alternative_medicine", 4 ] ],
-    "flags": [ "BLIND_HARD", "NO_MORALE_OK" ],
+    "autolearn": [
+      ["research", 4]
+    ],
+    "book_learn": [
+      ["alternative_medicine", 4]
+    ],
+    "flags": ["BLIND_HARD", "NO_MORALE_OK"],
     "components": [
-      [ [ "ice_petals", 3 ] ],
-      [ [ "forest_enzyme", 1 ] ],
-      [ [ "water", 1 ], [ "water_clean", 1 ] ]
+      [
+        ["ice_petals", 3]
+      ],
+      [
+        ["forest_enzyme", 1]
+      ],
+      [
+        ["water", 1],
+        ["water_clean", 1]
+      ]
     ]
   }
   

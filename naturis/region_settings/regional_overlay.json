@@ -1,36 +1,36 @@
 [
-  {
-    "type": "map_extra_collection",
-    "id": "forest",
-    "copy-from": "forest",
-    "extend": {
-      "extras": [
-        [ "mx_naturis_nest", 15 ]
-      ]
-    }
-  },
-  {
-    "type": "map_extra_collection",
-    "id": "forest_thick",
-    "copy-from": "forest_thick",
-    "extend": {
-      "extras": [
-        [ "mx_naturis_nest", 50 ]
-      ]
-    }
-  },
-  {
-    "type": "map_extra_collection",
-    "id": "forest_water",
-    "copy-from": "forest_water",
-    "extend": {
-      "extras": [
-        ["mx_naturis_nest", 20 ],
-        ["mx_naturis_swamp_additions", 45]
-      ]
-    }
-  },
-  {
+{
+  "type": "map_extra_collection",
+  "id": "forest",
+  "copy-from": "forest",
+  "extend": {
+    "extras": [
+      ["mx_naturis_nest", 15]
+    ]
+  }
+},
+{
+  "type": "map_extra_collection",
+  "id": "forest_thick",
+  "copy-from": "forest_thick",
+  "extend": {
+    "extras": [
+      ["mx_naturis_nest", 50]
+    ]
+  }
+},
+{
+  "type": "map_extra_collection",
+  "id": "forest_water",
+  "copy-from": "forest_water",
+  "extend": {
+    "extras": [
+      ["mx_naturis_nest", 20],
+      ["mx_naturis_swamp_additions", 45]
+    ]
+  }
+},
+{
   "type": "map_extra_collection",
   "id": "field",
   "copy-from": "field",
@@ -43,25 +43,24 @@
     ]
   }
 },
-    {
-    "type": "map_extra_collection",
-    "id": "build",
-    "copy-from": "build",
-    "extend": {
-      "extras": [
-        ["mx_naturis_raptor_building", 20],
-        ["mx_naturis_overgrown_buildings", 10]
-      ]
-    }
-  },
-    {
-    "type": "map_extra_collection",
-    "id": "road",
-    "copy-from": "road",
-    "extend": {
-      "extras": [
-        ["mx_naturis_ressources", 20]
-      ]
-    }
+{
+  "type": "map_extra_collection",
+  "id": "build",
+  "copy-from": "build",
+  "extend": {
+    "extras": [
+      ["mx_naturis_raptor_building", 20],
+      ["mx_naturis_overgrown_buildings", 10]
+    ]
   }
-]
+},
+{
+  "type": "map_extra_collection",
+  "id": "road",
+  "copy-from": "road",
+  "extend": {
+    "extras": [
+      ["mx_naturis_ressources", 20]
+    ]
+  }
+}]

@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": "hood_crystal",
     "type": "ITEM",
     "subtypes": ["ARMOR"],
@@ -19,7 +19,7 @@
     "environmental_protection": 5,
     "armor": [
       {
-         "material": [
+        "material": [
           { "type": "crystallized_fur", "covered_by_mat": 100, "thickness": 1.2 },
           { "type": "leather", "covered_by_mat": 80, "thickness": 0.6 }
         ],
@@ -31,7 +31,7 @@
       { "coverage": 50, "covers": ["head"], "specifically_covers": ["head_forehead"] }
     ]
   },
-    {
+  {
     "id": "hood_crystal_xl",
     "type": "ITEM",
     "subtypes": ["ARMOR"],

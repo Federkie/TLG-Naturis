@@ -61,9 +61,9 @@
       "terrain": {
         "1": "t_scratch_marks"
       }
-      }
-    },
-      {
+    }
+  },
+  {
     "type": "mapgen",
     "nested_mapgen_id": "naturis_egg_shells",
     "object": {
@@ -77,9 +77,9 @@
       "terrain": {
         "1": "t_egg_shells"
       }
-      }
     }
-
+  }
+  
   
   
   

@@ -1,101 +1,111 @@
 [
- {
-   "type": "effect_on_condition",
-   "id": "EOC_RAPID_STRIKER_TAIL_DETACH",
-   "condition": 
-  { "math": [ "u_hp('ALL')", "<", "50" ] } ,
-   "effect": [
-     {
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RAPID_STRIKER_TAIL_DETACH",
+    "condition": { "math": ["u_hp('ALL')", "<", "50"] },
+    "effect": [
+      {
         "u_spawn_monster": "mon_rapid_striker_tail",
         "real_count": 1,
         "min_radius": 1,
         "max_radius": 2,
         "spawn_message": "The maimed tail wriggles loose!"
       },
-  {
-   "math": [ "u_val('morale') = -100" ]
+      {
+        "math": ["u_val('morale') = -100"]
+      },
+      { "u_add_effect": "maimed_tail", "duration": ["24 hours", "55 hours"] }
+    ]
   },
-     { "u_add_effect": "maimed_tail", "duration": [ "24 hours", "55 hours" ] }
-   ]
- },
-   {
+  {
     "type": "effect_on_condition",
     "id": "EOC_REGENERATING_STAFF",
     "effect": [
+    {
+      "u_run_inv_eocs": "all",
+      "search_data": [
       {
-        "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "id": "regenerating_staff"
-          }
-        ],
-        "true_eocs": [
-          {
-            "id": "EOC_REGENERATING_STAFF_RESTORE",
-            "effect": [
-              {
-                "transform_item": "regenerating_staff"
-              },
-              {
-                "u_message": "The living wood rapidly knits itself back together."
-              }
-            ]
-          }
-        ]
-      }
-    ]
+        "id": "regenerating_staff"
+      }],
+      "true_eocs": [
+      {
+        "id": "EOC_REGENERATING_STAFF_RESTORE",
+        "effect": [
+        {
+          "transform_item": "regenerating_staff"
+        },
+        {
+          "u_message": "The living wood rapidly knits itself back together."
+        }]
+      }]
+    }]
   },
-{
-  "type": "effect_on_condition",
-  "id": "EOC_ICE_FORMER_EXPLOSION",
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ICE_FORMER_EXPLOSION",
     "condition": {
-     "not": { "npc_has_effect": "spell_cooldown" }
-  },
-  "effect": [
+      "not": { "npc_has_effect": "spell_cooldown" }
+    },
+    "effect": [
     {
       "npc_cast_spell": {
         "id": "explosion_ice"
       }
-    }
-  ]
-},
- {
-  "type": "effect_on_condition",
-  "id": "EOC_MORALE_DROP",
-  "effect": [
-    {
-   "math": [ "u_val('morale') = -100" ]
-    }
-  ]
-},
- {
-  "type": "effect_on_condition",
-  "id": "EOC_SPELL_COOLDOWN",
-  "effect": [
+    }]
+  },
   {
-   "u_add_effect": "spell_cooldown", "duration": [ 5, 20 ] }
-   ]
-},
-{
-  "type": "effect_on_condition",
-  "id": "EOC_PET_EXTRA_UNLOCK",
-  "effect": [
+    "type": "effect_on_condition",
+    "id": "EOC_MORALE_DROP",
+    "effect": [
+    {
+      "math": ["u_val('morale') = -100"]
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SPELL_COOLDOWN",
+    "effect": [
+    {
+      "u_add_effect": "spell_cooldown",
+      "duration": [5, 20]
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_EXTRA_UNLOCK",
+    "effect": [
     {
       "u_add_effect": "extra_spell",
       "duration": "PERMANENT"
-    }
-  ]
-},
-{
+    }]
+  },
+  {
   "type": "effect_on_condition",
-  "id": "EOC_PET_MARTIAL_ART",
+  "id": "EOC_PET_EXTRA_UNLOCK_2",
   "effect": [
+  {
+    "u_add_effect": "extra_spell_2",
+    "duration": "PERMANENT"
+  }]
+},
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MARTIAL_ART",
+    "effect": [
     {
       "u_add_effect": "pet_martial_art",
       "duration": "PERMANENT"
-    }
-  ]
-}
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MARTIAL_ART_DEF",
+    "effect": [
+    {
+      "u_add_effect": "pet_martial_art_defensive",
+      "duration": "PERMANENT"
+    }]
+  }
   
   
   

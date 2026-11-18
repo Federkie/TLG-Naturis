@@ -17,7 +17,7 @@
     "accelerated_decay": true,
     "display_field": true
   },
- {
+  {
     "id": "fd_leaves_pink",
     "type": "field_type",
     "substance_name": "pink leaves",
@@ -36,10 +36,10 @@
     "display_field": true
   },
   {
-  "id": "fd_spikes_ice",
-  "type": "field_type",
-  "half_life": "1 days",
-  "intensity_levels": [
+    "id": "fd_spikes_ice",
+    "type": "field_type",
+    "half_life": "1 days",
+    "intensity_levels": [
     {
       "name": "small ice spikes",
       "sym": "^",
@@ -47,14 +47,13 @@
       "convection_temperature_mod": -10,
       "dangerous": true,
       "effects": [
-        {
-          "effect_id": "ice_spikes_damage",
-          "intensity": 1,
-          "min_duration": "1 second",
-          "max_duration": "1 second",
-          "is_environmental": false
-        }
-      ]
+      {
+        "effect_id": "ice_spikes_damage",
+        "intensity": 1,
+        "min_duration": "1 second",
+        "max_duration": "1 second",
+        "is_environmental": false
+      }]
     },
     {
       "name": "ice spikes",
@@ -62,14 +61,13 @@
       "convection_temperature_mod": -25,
       "dangerous": true,
       "effects": [
-        {
-          "effect_id": "ice_spikes_damage",
-          "intensity": 1,
-          "min_duration": "1 second",
-          "max_duration": "1 second",
-          "is_environmental": false
-        }
-      ]
+      {
+        "effect_id": "ice_spikes_damage",
+        "intensity": 1,
+        "min_duration": "1 second",
+        "max_duration": "1 second",
+        "is_environmental": false
+      }]
     },
     {
       "name": "large ice spikes",
@@ -77,86 +75,86 @@
       "convection_temperature_mod": -40,
       "dangerous": true,
       "effects": [
-        {
-          "effect_id": "ice_spikes_damage",
-          "intensity": 1,
-          "min_duration": "1 second",
-          "max_duration": "1 second",
-          "is_environmental": false
-        }
-      ]
-    }
-  ],
-  "description_affix": "covered_in",
-  "decrease_intensity_on_contact": true,
-  "priority": 2,
-  "phase": "solid",
-  "display_field": true
-},
-   {
-   "id": "fd_monster_track",
-   "type": "field_type",
-   "substance_name": "monster track",
-   "legacy_enum_id": 3,
-   "intensity_levels": [
-     { "name": "monster tracks", "sym": "~", "color": "green" },
-     { "name": "deep monster tracks", "color": "light_red" }
-   ],
-   "description_affix": "covered_in",
-   "underwater_age_speedup": "5 minutes",
-   "decay_amount_factor": 2,
-   "is_splattering": true,
-   "half_life": "1 days",
-   "accelerated_decay": true,
-   "display_field": true
- },
- {
-   "id": "fd_monster_track_herb",
-   "type": "field_type",
-   "substance_name": "herbivore track",
-   "legacy_enum_id": 3,
-   "intensity_levels": [
-     { "name": "herbivore tracks", "sym": "~", "color": "green" },
-     { "name": "deep herbivore tracks", "color": "light_red" }
-     ],
-   "description_affix": "covered_in",
-   "underwater_age_speedup": "5 minutes",
-   "decay_amount_factor": 2,
-   "is_splattering": true,
-   "half_life": "1 days",
-   "accelerated_decay": true,
-   "display_field": true
-   },
-   {
+      {
+        "effect_id": "ice_spikes_damage",
+        "intensity": 1,
+        "min_duration": "1 second",
+        "max_duration": "1 second",
+        "is_environmental": false
+      }]
+    }],
+    "description_affix": "covered_in",
+    "decrease_intensity_on_contact": true,
+    "priority": 2,
+    "phase": "solid",
+    "display_field": true
+  },
+  {
+    "id": "fd_monster_track",
+    "type": "field_type",
+    "substance_name": "monster track",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "monster tracks", "sym": "~", "color": "green" },
+      { "name": "deep monster tracks", "color": "light_red" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "5 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "1 days",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+  {
+    "id": "fd_monster_track_herb",
+    "type": "field_type",
+    "substance_name": "herbivore track",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "herbivore tracks", "sym": "~", "color": "green" },
+      { "name": "deep herbivore tracks", "color": "light_red" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "5 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "1 days",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+  {
     "id": "fd_crystal_shards",
     "type": "field_type",
     "substance_name": "crystal shards",
     "legacy_enum_id": 3,
     "intensity_levels": [
-      { "name": "some crystal shards", "color": "light_red",
-        "dangerous": true,
-        "effects": [
-        {
-          "effect_id": "crystal_shards_damage",
-          "intensity": 1,
-          "min_duration": "1 second",
-          "max_duration": "1 second",
-          "is_environmental": false
-        }
-      ]},
-      { "name": "many crystal shards", "color": "red",
-        "dangerous": true,
-        "effects": [
-        {
-          "effect_id": "crystal_shards_damage",
-          "intensity": 1,
-          "min_duration": "1 second",
-          "max_duration": "1 second",
-          "is_environmental": false
-        }
-      ]
-      }
-    ],
+    {
+      "name": "some crystal shards",
+      "color": "light_red",
+      "dangerous": true,
+      "effects": [
+      {
+        "effect_id": "crystal_shards_damage",
+        "intensity": 1,
+        "min_duration": "1 second",
+        "max_duration": "1 second",
+        "is_environmental": false
+      }]
+    },
+    {
+      "name": "many crystal shards",
+      "color": "red",
+      "dangerous": true,
+      "effects": [
+      {
+        "effect_id": "crystal_shards_damage",
+        "intensity": 1,
+        "min_duration": "1 second",
+        "max_duration": "1 second",
+        "is_environmental": false
+      }]
+    }],
     "description_affix": "covered_in",
     "underwater_age_speedup": "55 minutes",
     "decay_amount_factor": 2,
@@ -165,14 +163,14 @@
     "accelerated_decay": true,
     "display_field": true
   },
-    {
+  {
     "id": "emit_cold_air3_blast",
     "type": "emit",
     "field": "fd_cold_air3",
     "intensity": 3,
     "qty": 100
   },
-    {
+  {
     "type": "field_type",
     "id": "fd_grounding",
     "phase": "plasma",
@@ -181,24 +179,22 @@
     "percent_spread": 0,
     "display_field": true,
     "intensity_levels": [
-      {
-        "name": "grounding field",
-        "sym": "*",
-        "color": "light_blue",
-        "dangerous": false,
-        "effects": [
-          {
-            "effect_id": "effect_grounded",
-            "intensity": 1,
-            "min_duration": "2 seconds",
-            "max_duration": "2 seconds",
-            "is_environmental": false
-          }
-        ]
-      }
-    ]
-  },
     {
+      "name": "grounding field",
+      "sym": "*",
+      "color": "light_blue",
+      "dangerous": false,
+      "effects": [
+      {
+        "effect_id": "effect_grounded",
+        "intensity": 1,
+        "min_duration": "2 seconds",
+        "max_duration": "2 seconds",
+        "is_environmental": false
+      }]
+    }]
+  },
+  {
     "id": "fd_bee_swarm_crystal",
     "type": "field_type",
     "substance_name": "crystal bees",
@@ -213,7 +209,9 @@
     "outdoor_age_speedup": "10 minutes",
     "dirty_transparency_cache": true,
     "has_fume": true,
-    "immunity_data": { "body_part_env_resistance": [ [ "torso", 5 ] ] },
+    "immunity_data": { "body_part_env_resistance": [
+        ["torso", 5]
+      ] },
     "priority": 3,
     "half_life": "10 minute",
     "phase": "gas",
@@ -221,94 +219,90 @@
     "display_field": true
   },
   {
-  "id": "fd_slow",
-  "type": "field_type",
-  "substance_name": "slowing field",
-  "looks_like": "fd_grounding",
-  "intensity_levels": [
+    "id": "fd_slow",
+    "type": "field_type",
+    "substance_name": "slowing field",
+    "looks_like": "fd_grounding",
+    "intensity_levels": [
     {
       "name": "slowing field",
       "sym": "5",
       "color": "light_blue",
       "dangerous": true,
       "effects": [
-        {
-          "effect_id": "sludged",
-          "intensity": 1,
-          "immune_in_vehicle": true,
-          "is_environmental": false
-        }
-      ]
-    }
-  ],
-  "description_affix": "covered_in",
-  "priority": 2,
-  "half_life": "10 seconds",
-  "phase": "gas",
-  "display_field": true
-},
- {
-   "id": "fd_grinding_mark",
-   "type": "field_type",
-   "substance_name": "grinding mark",
-   "legacy_enum_id": 3,
-   "intensity_levels": [
-     { "name": "grinding mark", "sym": "~", "color": "green" },
-     { "name": "deep grinding mark", "color": "light_red" }
-   ],
-   "description_affix": "covered_in",
-   "underwater_age_speedup": "2 minutes",
-   "decay_amount_factor": 2,
-   "is_splattering": true,
-   "half_life": "1 days",
-   "accelerated_decay": true,
-   "display_field": true
- },
- {
-   "id": "fd_raptor_track",
-   "type": "field_type",
-   "substance_name": "monster track",
-   "legacy_enum_id": 3,
-   "intensity_levels": [
-     { "name": "monster tracks", "sym": "~", "color": "green" },
-     { "name": "deep monster tracks", "color": "light_red" }
-   ],
-   "description_affix": "covered_in",
-   "underwater_age_speedup": "5 minutes",
-   "decay_amount_factor": 2,
-   "is_splattering": true,
-   "half_life": "1 hour",
-   "accelerated_decay": true,
-   "display_field": true
- },
-   {
-  "id": "fd_roots",
-  "type": "field_type",
-  "substance_name": "root field",
-  "looks_like": "fd_grounding",
-  "intensity_levels": [
+      {
+        "effect_id": "sludged",
+        "intensity": 1,
+        "immune_in_vehicle": true,
+        "is_environmental": false
+      }]
+    }],
+    "description_affix": "covered_in",
+    "priority": 2,
+    "half_life": "10 seconds",
+    "phase": "gas",
+    "display_field": true
+  },
+  {
+    "id": "fd_grinding_mark",
+    "type": "field_type",
+    "substance_name": "grinding mark",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "grinding mark", "sym": "~", "color": "green" },
+      { "name": "deep grinding mark", "color": "light_red" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "2 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "1 days",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+  {
+    "id": "fd_raptor_track",
+    "type": "field_type",
+    "substance_name": "monster track",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "monster tracks", "sym": "~", "color": "green" },
+      { "name": "deep monster tracks", "color": "light_red" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "5 minutes",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "1 hour",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+  {
+    "id": "fd_roots",
+    "type": "field_type",
+    "substance_name": "root field",
+    "looks_like": "fd_grounding",
+    "intensity_levels": [
     {
       "name": "slowing field",
       "sym": "5",
       "color": "light_blue",
       "dangerous": true,
       "effects": [
-        {
-          "effect_id": "sludged",
-          "intensity": 1,
-          "immune_in_vehicle": true,
-          "is_environmental": false
-        }
-      ]
-    }
-  ],
-  "description_affix": "covered_in",
-  "priority": 2,
-  "half_life": "50 seconds",
-  "phase": "gas",
-  "display_field": true
-}
-
-
-
+      {
+        "effect_id": "sludged",
+        "intensity": 1,
+        "immune_in_vehicle": true,
+        "is_environmental": false
+      }]
+    }],
+    "description_affix": "covered_in",
+    "priority": 2,
+    "half_life": "50 seconds",
+    "phase": "gas",
+    "display_field": true
+  }
+  
+  
+  
 ]

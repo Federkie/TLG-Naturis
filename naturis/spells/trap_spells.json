@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "SPELL",
     "id": "electric_trap_burst",
     "name": {
@@ -27,10 +27,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 2,
     "extra_effects": [
-      {
-        "id": "electric_trap_paralysis"
-      }
-    ]
+    {
+      "id": "electric_trap_paralysis"
+    }]
   },
   {
     "type": "SPELL",
@@ -55,53 +54,53 @@
     "min_duration": 500,
     "max_duration": 1000
   },
- {
-  "id": "ice_trap_explosion",
-  "type": "SPELL",
-  "name": { "str": "ice trap explosion" },
-  "valid_targets": ["hostile", "ground"],
-  "description": "Trap generated ice field.",
-  "effect": "attack",
-  "extra_effects": [{ "id": "spell_cooldown" }],
-  "message": "The %s releases an ice field!",
-  "field_id": "fd_spikes_ice",
-  "field_chance": 1.9,
-  "min_field_intensity": 1,
-  "field_intensity_variance": 1,
-  "max_field_intensity": 3,
-  "min_aoe": 3,
-  "max_aoe": 5,
-  "min_damage": 30,
-  "max_damage": 70,
-  "min_duration": 1,
-  "damage_type": "cold",
-  "shape": "blast",
-  "flags": ["RANDOM_AOE", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX"]
-},
-    {
-      "type": "SPELL",
-      "id": "slow_field",
-      "name": "Slow Field",
-      "description": "Creates a slowing field.",
-      "valid_targets": ["hostile", "ground", "self"],
-      "flags": [
-        "SILENT",
-        "NO_PROJECTILE",
-        "NO_EXPLOSION_SFX"
-      ],
-      "effect": "attack",
-      "shape": "blast",
-      "min_range": 0,
-      "max_range": 0,
-      "min_aoe": 4,
-      "max_aoe": 4,
-      "min_damage": 0,
-      "max_damage": 0,
-      "field_id": "fd_slow",
-      "field_chance": 1,
-      "min_field_intensity": 1,
-      "max_field_intensity": 1
-    }
+  {
+    "id": "ice_trap_explosion",
+    "type": "SPELL",
+    "name": { "str": "ice trap explosion" },
+    "valid_targets": ["hostile", "ground"],
+    "description": "Trap generated ice field.",
+    "effect": "attack",
+    "extra_effects": [{ "id": "spell_cooldown" }],
+    "message": "The %s releases an ice field!",
+    "field_id": "fd_spikes_ice",
+    "field_chance": 1.9,
+    "min_field_intensity": 1,
+    "field_intensity_variance": 1,
+    "max_field_intensity": 3,
+    "min_aoe": 3,
+    "max_aoe": 5,
+    "min_damage": 30,
+    "max_damage": 70,
+    "min_duration": 1,
+    "damage_type": "cold",
+    "shape": "blast",
+    "flags": ["RANDOM_AOE", "RANDOM_DAMAGE", "NO_EXPLOSION_SFX"]
+  },
+  {
+    "type": "SPELL",
+    "id": "slow_field",
+    "name": "Slow Field",
+    "description": "Creates a slowing field.",
+    "valid_targets": ["hostile", "ground", "self"],
+    "flags": [
+      "SILENT",
+      "NO_PROJECTILE",
+      "NO_EXPLOSION_SFX"
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "min_range": 0,
+    "max_range": 0,
+    "min_aoe": 4,
+    "max_aoe": 4,
+    "min_damage": 0,
+    "max_damage": 0,
+    "field_id": "fd_slow",
+    "field_chance": 1,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
+  }
   
   
   

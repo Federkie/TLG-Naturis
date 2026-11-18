@@ -1,5 +1,5 @@
 [
-    {
+  {
     "type": "ITEM",
     "id": "charged_wood",
     "name": { "str": "charged wood" },
@@ -16,22 +16,22 @@
     "flags": ["FIREWOOD"],
     "melee_damage": { "bash": 6 }
   },
-   {
-   "id": "charged_resin",
-   "type": "ITEM",
-   "subtypes": ["COMESTIBLE"],
-   "name": { "str_sp": "charged resin" },
-   "category": "chems",
-   "description": "A glossy resin that becomes statically charged when rubbed.",
-   "comestible_type": "INVALID",
-   "weight": "250 g",
-   "volume": "250 ml",
-   "price_postapoc": "10 USD",
-   "symbol": "=",
-   "color": "white",
-   "looks_like": "tallow"
- },
-   {
+  {
+    "id": "charged_resin",
+    "type": "ITEM",
+    "subtypes": ["COMESTIBLE"],
+    "name": { "str_sp": "charged resin" },
+    "category": "chems",
+    "description": "A glossy resin that becomes statically charged when rubbed.",
+    "comestible_type": "INVALID",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price_postapoc": "10 USD",
+    "symbol": "=",
+    "color": "white",
+    "looks_like": "tallow"
+  },
+  {
     "type": "ITEM",
     "id": "otter_pearl",
     "symbol": "*",
@@ -45,61 +45,61 @@
     "volume": "6 ml",
     "to_hit": -5
   },
-     {
-     "id": "crystal_core",
-     "type": "ITEM",
-     "name": { "str_sp": "crystal core" },
-     "category": "chems",
-     "flags": ["GEMSTONE"],
-     "description": "The inside of a crystal heart. This crystal looks rare, you’d better keep it safe.",
-     "weight": "250 g",
-     "volume": "250 ml",
-     "price_postapoc": "500 USD",
-     "symbol": "=",
-     "material": ["crystal_hard"],
-     "color": "white"
-   },
-    {
-      "type": "ITEM",
-      "id": "ice_petals",
-      "name": { "str": "handful of frozen petala", "str_pl": "handfuls of feozen petals" },
-      "description": "Several small, blue blossoms from ice flowers.",
-      "weight": "10 g",
-      "color": "green",
-      "symbol": ",",
-      "price": "3 USD",
-      "material": ["vegetable"],
-      "volume": "100 ml",
-      "flags": ["TRADER_AVOID"]
-    },
-      {
-       "id": "golden_heart",
-       "type": "ITEM",
-       "name": { "str_sp": "golden heart" },
-       "category": "chems",
-       "flags": ["GEMSTONE"],
-       "description": "A gold-shimmering gemstone. It looks like a lump of resin in which plant remains and small animals have found their glassy grave.",
-       "weight": "250 g",
-       "volume": "250 ml",
-       "price_postapoc": "500 USD",
-       "symbol": "=",
-       "material": ["crystal"],
-       "color": "white"
-     },
- {
-  "id": "frost_heart",
-  "type": "ITEM",
-  "name": { "str_sp": "frost heart" },
-  "category": "chems",
-  "flags": ["GEMSTONE"],
-  "description": "A chunk of hard ice. It still feels cool and dry, as if the warm surroundings have no effect on it.",
-  "weight": "250 g",
-  "volume": "250 ml",
-  "price_postapoc": "500 USD",
-  "symbol": "=",
-  "material": ["crystal"],
-  "color": "white"
-}
+  {
+    "id": "crystal_core",
+    "type": "ITEM",
+    "name": { "str_sp": "crystal core" },
+    "category": "chems",
+    "flags": ["GEMSTONE"],
+    "description": "The inside of a crystal heart. This crystal looks rare, you’d better keep it safe.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price_postapoc": "500 USD",
+    "symbol": "=",
+    "material": ["crystal_hard"],
+    "color": "white"
+  },
+  {
+    "type": "ITEM",
+    "id": "ice_petals",
+    "name": { "str": "handful of frozen petala", "str_pl": "handfuls of feozen petals" },
+    "description": "Several small, blue blossoms from ice flowers.",
+    "weight": "10 g",
+    "color": "green",
+    "symbol": ",",
+    "price": "3 USD",
+    "material": ["vegetable"],
+    "volume": "100 ml",
+    "flags": ["TRADER_AVOID"]
+  },
+  {
+    "id": "golden_heart",
+    "type": "ITEM",
+    "name": { "str_sp": "golden heart" },
+    "category": "chems",
+    "flags": ["GEMSTONE"],
+    "description": "A gold-shimmering gemstone. It looks like a lump of resin in which plant remains and small animals have found their glassy grave.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price_postapoc": "500 USD",
+    "symbol": "=",
+    "material": ["crystal"],
+    "color": "white"
+  },
+  {
+    "id": "frost_heart",
+    "type": "ITEM",
+    "name": { "str_sp": "frost heart" },
+    "category": "chems",
+    "flags": ["GEMSTONE"],
+    "description": "A chunk of hard ice. It still feels cool and dry, as if the warm surroundings have no effect on it.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price_postapoc": "500 USD",
+    "symbol": "=",
+    "material": ["crystal"],
+    "color": "white"
+  }
   
   
 ]

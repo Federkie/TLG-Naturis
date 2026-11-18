@@ -361,7 +361,8 @@ A vast area overgrown with ice, featuring its own unique dangers and resources.
 - naturis lab
 
 ## Known Issues
-- rooted egg has no function
+- Rooted egg has no function.
+- The Fire Shard Starter is not consumed upon use.
 
 ## Installation Instructions
 1. Download the src code in the latest mod release

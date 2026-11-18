@@ -1,55 +1,108 @@
 [
-    {
+  {
     "id": "wrist_injector",
     "type": "ITEM",
-    "subtypes": ["ARMOR", "TOOL"],
-    "name": { "str": "wrist injector", "str_pl": "wrist injectors" },
+    "subtypes": [
+      "ARMOR",
+      "TOOL"
+    ],
+    "name": {
+      "str": "wrist injector",
+      "str_pl": "wrist injectors"
+    },
     "description": "This device, which resembles a wristwatch, is used to administer targeted injections.",
     "looks_like": "gold_watch",
     "weight": "120 g",
     "volume": "110 ml",
     "price_postapoc": "15 USD",
     "to_hit": -1,
-    "material": ["plastic", "steel", "glass"],
+    "material": [
+      "plastic",
+      "steel",
+      "glass"
+    ],
     "symbol": "[",
     "color": "dark_gray",
     "sided": true,
-    "flags": ["BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY", "OVERSIZE"],
-    "armor": [{ "encumbrance": 1, "coverage": 50, "covers": ["hand_l", "hand_r"], "specifically_covers": ["hand_wrist_l", "hand_wrist_r"] }],
+    "flags": [
+      "BELTED",
+      "FRAGILE",
+      "ALLOWS_NATURAL_ATTACKS",
+      "WATER_FRIENDLY",
+      "OVERSIZE"
+    ],
+    "armor": [
+      {
+        "encumbrance": 1,
+        "coverage": 50,
+        "covers": [
+          "hand_l",
+          "hand_r"
+        ],
+        "specifically_covers": [
+          "hand_wrist_l",
+          "hand_wrist_r"
+        ]
+      }
+    ],
     "use_action": {
       "type": "heal",
       "bleed": 15,
       "move_cost": 20
-},
+    },
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE",
         "description": "The small tank holds 3 units of healing liquid.",
         "rigid": true,
         "watertight": true,
-        "ammo_restriction": { "healing_liquid": 3 }
+        "ammo_restriction": {
+          "healing_liquid": 3
+        }
       }
     ],
     "charges_per_use": 1,
-    "tool_ammo": [ "healing_liquid" ]
+    "tool_ammo": [
+      "healing_liquid"
+    ]
   },
-    {
+  {
     "id": "tech_ring",
     "type": "ITEM",
-    "subtypes": ["ARMOR"],
-    "name": { "str": "tech ring" },
+    "subtypes": [
+      "ARMOR"
+    ],
+    "name": {
+      "str": "tech ring"
+    },
     "description": "This ring strengthens your attacks and generates an electric shock on critical hits.",
     "weight": "15 g",
     "volume": "1 ml",
     "price_postapoc": "100 USD",
-    "material": ["silver"],
+    "material": [
+      "silver"
+    ],
     "symbol": "[",
     "color": "light_gray",
     "sided": true,
-    "armor": [{ "coverage": 0, "covers": ["hand_l", "hand_r"], "specifically_covers": ["hand_fingers_l", "hand_fingers_r"] }],
-    "flags": ["FANCY", "NO_WEAR_EFFECT", "SKINTIGHT", "ALLOWS_TALONS"]
+    "armor": [
+      {
+        "coverage": 0,
+        "covers": [
+          "hand_l",
+          "hand_r"
+        ],
+        "specifically_covers": [
+          "hand_fingers_l",
+          "hand_fingers_r"
+        ]
+      }
+    ],
+    "flags": [
+      "FANCY",
+      "NO_WEAR_EFFECT",
+      "SKINTIGHT",
+      "ALLOWS_TALONS"
+    ]
   }
-  
-  
-  
 ]

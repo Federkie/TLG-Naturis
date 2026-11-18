@@ -6,13 +6,13 @@
     "description": "The skeletal remains of a gigantic snake, constantly scanning the air for new victims.",
     "default_faction": "fleshy",
     "bodytype": "snake",
-    "species": [ "REPTILE" ],
+    "species": ["REPTILE"],
     "diff": 2,
     "volume": "40000 ml",
     "weight": "30000 g",
     "hp": 64,
     "speed": 100,
-    "material": [ "bone" ],
+    "material": ["bone"],
     "symbol": "s",
     "color": "red",
     "morale": 80,
@@ -20,27 +20,27 @@
     "melee_skill": 4,
     "melee_dice": 2,
     "melee_dice_sides": 5,
-    "melee_damage": [ { "damage_type": "stab", "amount": 3 } ],
+    "melee_damage": [{ "damage_type": "stab", "amount": 3 }],
     "dodge": 3,
     "vision_day": 25,
     "vision_night": 6,
-    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "families": ["prof_intro_biology", "prof_physiology"],
     "harvest": "mutant_animal_large_noskin",
     "dissect": "dissect_lizard_sample_small",
     "special_attacks": [
-      [ "ABSORB_MEAT", 10 ],
-      [ "RATTLE", 6 ],
+      ["ABSORB_MEAT", 10],
+      ["RATTLE", 6],
       {
         "type": "bite",
         "cooldown": 6,
-        "damage_max_instance": [ { "damage_type": "stab", "amount": 7, "armor_multiplier": 0.7 } ]
+        "damage_max_instance": [{ "damage_type": "stab", "amount": 7, "armor_multiplier": 0.7 }]
       }
     ],
-    "flags": [ "SEES", "SMELLS", "HARDTOSHOOT", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "ANIMAL", "SWIMS" ],
+    "flags": ["SEES", "SMELLS", "HARDTOSHOOT", "KEENNOSE", "CLIMBS", "PATH_AVOID_DANGER", "ANIMAL", "SWIMS"],
     "armor": { "bash": 4, "cut": 3, "bullet": 1, "electric": 1 }
   },
-
-
+  
+  
   {
     "id": "mon_flesh_wolf",
     "type": "MONSTER",
@@ -48,9 +48,9 @@
     "description": "The grotesque figure of an upright walking wolf that was skinned alive. Now it is searching for victims to suffer in its place.",
     "default_faction": "fleshy",
     "bodytype": "dog",
-    "species": [ "FLESH" ],
+    "species": ["FLESH"],
     "diff": 7,
-    "families": [ "prof_intro_biology" ],
+    "families": ["prof_intro_biology"],
     "volume": "150 L",
     "weight": "170 kg",
     "hp": 140,
@@ -58,12 +58,12 @@
       "message": "The %s explodes in a shower of gore!",
       "corpse_type": "NO_CORPSE",
       "effect": { "id": "death_blood", "hit_self": true, "min_level": 0 }
-  },
+    },
     "speed": 120,
-    "material": [ "flesh" ],
+    "material": ["flesh"],
     "symbol": "W",
     "color": "red",
-    "scents_tracked": [ "sc_human", "sc_fetid" ],
+    "scents_tracked": ["sc_human", "sc_fetid"],
     "aggression": 100,
     "morale": 100,
     "melee_skill": 5,
@@ -75,10 +75,10 @@
     ],
     "grab_strength": 25,
     "special_attacks": [
-      [ "ABSORB_MEAT", 15 ],
-      [ "HOWL", 6 ],
+      ["ABSORB_MEAT", 15],
+      ["HOWL", 6],
       { "id": "cut_throat" },
-      [ "LUNGE", 10 ],
+      ["LUNGE", 10],
       { "id": "bite_grab" },
       {
         "type": "spell",
@@ -91,7 +91,7 @@
     "bleed_rate": 120,
     "vision_day": 30,
     "vision_night": 10,
-    "fear_triggers": [ "FIRE" ],
+    "fear_triggers": ["FIRE"],
     "harvest": "mutant_animal_large_noskin",
     "dissect": "dissect_canine_sample_single",
     "flags": [
@@ -108,8 +108,8 @@
     ],
     "armor": { "bash": 5, "cut": 3, "stab": 7 }
   }
-
-
-
-
+  
+  
+  
+  
 ]
