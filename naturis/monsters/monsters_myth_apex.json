@@ -514,7 +514,7 @@
     "diff": 8,
     "volume": "905000 ml",
     "weight": "210 kg",
-    "hp": 520,
+    "hp": 420,
     "speed": 105,
     "material": ["flesh"],
     "symbol": "Z",
@@ -567,6 +567,109 @@
       "PUSH_VEH"
     ],
     "armor": { "bash": 12, "cut": 18, "bullet": 8, "electric": 8 }
+  },
+  {
+    "id": "mon_primus",
+    "type": "MONSTER",
+    "name": { "str": "Primus" },
+    "description": "A proud, dog like creature. Its silky fur has a soft, pinkish sheen. A stark contrast to the three vials implanted in its back, which continuously supply it with a greenish liquid.",
+    "default_faction": "test_creature",
+    "bodytype": "dog",
+    "species": ["MYTHIC"],
+    "diff": 8,
+    "volume": "142857 ml",
+    "weight": "150 kg",
+    "hp": 320,
+    "speed": 180,
+    "attack_cost": 160,
+    "material": ["flesh"],
+    "symbol": "D",
+    "color": "green",
+    "scents_tracked": ["sc_human", "sc_fetid"],
+    "aggression": 100,
+    "morale": 200,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_damage": [{ "damage_type": "cut", "amount": 2 }],
+    "weakpoint_sets": ["wps_primus"],
+    "families": [
+      "prof_intro_biology", "prof_physiology", "prof_wp_mythic"
+    ],
+    "bleed_rate": 5,
+    "vision_day": 35,
+    "vision_night": 10,
+    "emit_fields": [
+      { "emit_id": "primus_drop", "delay": "10 s" }
+    ],
+    "special_attacks": [
+      { "id": "smash", "throw_strength": 55 },
+      {
+        "id": "energy_core",
+        "type": "spell",
+        "spell_data": { "id": "energy_core" },
+        "monster_message": "The %s creates a few energy orbs!",
+        "cooldown": 25,
+        "condition": {
+          "not": {
+            "or": [
+            {
+              "u_has_effect": "effect_destroyed_vial_upper"
+            },
+            {
+              "u_has_effect": "tamed_locker"
+            }]
+          }
+        }
+      },
+      {
+        "id": "resonance_shield",
+        "type": "spell",
+        "spell_data": { "id": "resonance_shield" },
+        "monster_message": "The %s protects his self with a crystal aura.",
+        "cooldown": 60,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "effect_destroyed_vial_lower" } }, {
+            "math": ["u_hp('ALL') <= 80"]
+          }]
+        }
+      },
+      {
+        "id": "charm_self",
+        "type": "spell",
+        "spell_data": {
+          "id": "charm_self",
+          "hit_self": true
+        },
+        "monster_message": "The %s seems to calm down as the vial shatters.",
+        "cooldown": 1,
+        "allow_no_target": true,
+        "condition": {
+          "and": [{ "not": { "u_has_effect": "tamed_locker" } }, {
+            "u_has_effect": "effect_destroyed_vial_middle"
+          }]
+        }
+      },
+      {
+        "type": "leap",
+        "cooldown": 15,
+        "max_range": 5,
+        "allow_no_target": true
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "WARM",
+      "HIT_AND_RUN"
+    ],
+    "death_function": {
+      "message": "The %s explodes in a shower of gore!",
+      "corpse_type": "NO_CORPSE",
+      "effect": { "id": "death_blood", "hit_self": true, "min_level": 2 }
+    },
+    "armor": { "bash": 10, "cut": 8, "bullet": 8, "electric": 15 }
   }
   
   

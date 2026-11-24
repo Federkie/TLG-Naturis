@@ -209,9 +209,11 @@
     "outdoor_age_speedup": "10 minutes",
     "dirty_transparency_cache": true,
     "has_fume": true,
-    "immunity_data": { "body_part_env_resistance": [
+    "immunity_data": {
+      "body_part_env_resistance": [
         ["torso", 5]
-      ] },
+      ]
+    },
     "priority": 3,
     "half_life": "10 minute",
     "phase": "gas",
@@ -273,7 +275,7 @@
     "underwater_age_speedup": "5 minutes",
     "decay_amount_factor": 2,
     "is_splattering": true,
-    "half_life": "1 hour",
+    "half_life": "20 minute",
     "accelerated_decay": true,
     "display_field": true
   },
@@ -299,6 +301,42 @@
     "description_affix": "covered_in",
     "priority": 2,
     "half_life": "50 seconds",
+    "phase": "gas",
+    "display_field": true
+  },
+  {
+    "id": "fd_serum_residues",
+    "type": "field_type",
+    "substance_name": "serum residues",
+    "legacy_enum_id": 3,
+    "intensity_levels": [
+      { "name": "serum_residues", "sym": "~", "color": "green" }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "5 seconds",
+    "decay_amount_factor": 2,
+    "is_splattering": true,
+    "half_life": "5 minute",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+  {
+    "id": "fd_strange_aura",
+    "type": "field_type",
+    "substance_name": "seed meteorite aura",
+    "looks_like": "fd_grounding",
+    "intensity_levels": [
+    {
+      "name": "strange aura",
+      "sym": "5",
+      "light_emitted": 5,
+      "translucency": 0.5,
+      "light_color": [140, 240, 220],
+      "color": "light_blue"
+    }],
+    "description_affix": "covered_in",
+    "priority": 2,
+    "half_life": "30 seconds",
     "phase": "gas",
     "display_field": true
   }

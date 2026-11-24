@@ -43,8 +43,13 @@
       { "id": "mon_crystal_crawler", "fg": 25, "rotates": false },
       { "id": "mon_ice_mole", "fg": 26, "rotates": false },
       { "id": "mon_ice_worm", "fg": 27, "rotates": false },
-      { "id": "mon_ice_blob", "fg": 28, "rotates": false },
-      { "id": "shard_fire", "fg": 29, "rotates": false }
+      { "id": "mon_blob_frozen", "fg": 28, "rotates": false },
+      { "id": "shard_fire", "fg": 29, "rotates": false },
+      { "id": "egg_forest_raptor_stasis", "fg": 30, "rotates": false },
+      { "id": "mon_hatchling_forest_raptor", "fg": 31, "rotates": false },
+      { "id": "golden_heart", "fg": 32, "rotates": false },
+      { "id": "frost_heart", "fg": 33, "rotates": false },
+      { "id": "crystal_core", "fg": 34, "rotates": false }
     ],
     "sprite_width": 20,
     "sprite_height": 20

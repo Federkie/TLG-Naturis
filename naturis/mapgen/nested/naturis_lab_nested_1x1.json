@@ -1,0 +1,166 @@
+[
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "bookshelf_normal_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "b"
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "items": {
+        "b": [{ "item": "textbooks", "chance": 40, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "bookshelf_rare_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "b"
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "items": {
+        "b": [{ "item": "lab_bookshelves", "chance": 20, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "bookshelf_exotic_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "b"
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "items": {
+        "b": [{ "item": "exotic_books", "chance": 20, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "bookshelf_naturis_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "b"
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "items": {
+        "b": [{ "item": "naturis_books_normal", "chance": 40, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "bookshelf_naturis_exotic_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "b"
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "items": {
+        "b": [{ "item": "naturis_books_exotic", "chance": 30, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "shelf_taming_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "U"
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "items": {
+        "U": [{ "item": "raptor_taming", "chance": 40, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "shelf_emergency_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "U"
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "items": {
+        "U": [{ "item": "raptor_emergency", "chance": 40, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "shelf_cleaning_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "U"
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "items": {
+        "U": [{ "item": "cleaning", "chance": 40, "repeat": [1, 3] }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "glass_cage_upgrade_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "."
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "place_monster": [
+        { "group": "GROUP_RAPTOR_UPGRADES", "x": [1], "y": [1], "chance": 60 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "glass_cage_evolution_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "."
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "place_monster": [
+        { "group": "GROUP_RAPTOR_EVOLUTIONS", "x": [1], "y": [1], "chance": 60 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "glass_cage_corpse_1x1",
+    "object": {
+      "mapgensize": [1, 1],
+      "rows": [
+        "."
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "place_loot": [{ "group": "raptor_trainer_corpse", "x": [1], "y": [1], "chance": 70 }]
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+]

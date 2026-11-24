@@ -6,7 +6,35 @@
     "copy-from": "file",
     "description": "A sheet of paper adorned with an atom-and-flask symbol, detailing some questionable biological research.",
     "snippet_category": "lab_file_bio_naturis"
-  }
+  },
+    {
+    "type": "ITEM",
+    "id": "lab_postit_primus",
+    "copy-from": "lab_postit_bio",
+    "name": { "str": "post-it note" },
+    "snippet_category": "lab_postit_primus"
+  },
+  {
+  "type": "ITEM",
+  "id": "lab_postit_meteorite",
+  "copy-from": "lab_postit_bio",
+  "name": { "str": "post-it note" },
+  "snippet_category": "lab_postit_meteorite"
+},
+{
+  "type": "ITEM",
+  "id": "lab_postit_naturis",
+  "copy-from": "lab_postit_bio",
+  "name": { "str": "post-it note" },
+  "snippet_category": "lab_postit_naturis"
+},
+{
+  "type": "ITEM",
+  "id": "lab_postit_raptor",
+  "copy-from": "lab_postit_bio",
+  "name": { "str": "post-it note" },
+  "snippet_category": "lab_postit_raptor"
+}
   
   
   

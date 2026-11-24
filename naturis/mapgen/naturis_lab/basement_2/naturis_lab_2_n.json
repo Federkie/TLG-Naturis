@@ -1,0 +1,80 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_2_n"],
+  "//": "Raptor hatchling area.",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "||||||||||||||||||||||||",
+      "|?.....|.]->>-]FrrrrrrF|",
+      "|......|.]----]''''''''|",
+      "|......|B]]DD]]'''H'''a|",
+      "|......|.....B]f''''''S|",
+      "|......|......]f''''''n|",
+      "|......|......]]]]D]]]]|",
+      "||||D|||.......]U''9]zz|",
+      "|......B......B]]]D]]B.|",
+      "|.................--...|",
+      "|-B....]]]]DD]]]]....B-|",
+      "#-.....]3..B....].....-#",
+      "#-.....]fh.!!!!!].....-#",
+      "|-B....]]]]]]]]]]....B-|",
+      "|......................|",
+      "|...................hh.|",
+      "|...................ff.|",
+      "|]]]]]]]..........]]]]]|",
+      "|?.....]..........]xxxB|",
+      "|......].........z]xxxx|",
+      "|......D...B.....-Dxxxx|",
+      "|......]..hffh...f]xxxx|",
+      "|......]..hffh...U]xxxx|",
+      "|......].........U]xxxB|"
+    ],
+    "place_fields": [
+      { "field": "fd_blood", "x": [3, 12], "y": [4, 18], "repeat": [1, 10] }
+    ],
+    "set": [{ "point": "bash", "x": [3, 20], "y": [3, 20], "repeat": [5, 20] }],
+    "items": {
+      "U": { "item": "cleaning", "chance": 60, "repeat": 3 },
+      "f": { "item": "raptor_hatching_tools", "chance": 30, "repeat": 3 },
+     "r": { "item": "raptor_training_files", "chance": 40, "repeat": [1, 3] },
+      "x": { "item": "raptor_hatching_nest", "chance": 70, "repeat": 3 },
+      "F": { "item": "raptor_hatching_samples", "chance": 70, "repeat": 3 }
+    },
+    "place_monster": [
+      { "group": "GROUP_LAB", "x": [3, 15], "y": [3, 15], "chance": 70, "repeat": 3 },
+      { "group": "GROUP_FOREST_RAPTOR_HATCHLINGS", "x": [18, 22], "y": [18, 23], "chance": 70, "repeat": 3 }
+    ],
+    "terrain": {
+      "f": "t_floor_blue",
+      "H": "t_floor_blue",
+      "x": "t_floor_blue",
+      "9": "t_thconc_y"
+    },
+    "palettes": ["raptor_lab_palette"],
+    "nested": {
+      "?": {
+        "chunks": [
+          ["null", 10],
+          ["naturis_lab_6x6_medical_02", 30],
+          ["naturis_lab_6x6_waiting", 30],
+          ["naturis_lab_6x6_server", 30],
+          ["naturis_lab_6x6_storage", 30],
+          ["naturis_lab_6x6_clothes", 30]
+        ]
+      },
+      "!": {
+        "chunks": [
+          ["null", 40],
+          ["bookshelf_normal_1x1", 30],
+          ["bookshelf_exotic_1x1", 5],
+          ["bookshelf_naturis_1x1", 20],
+          ["bookshelf_naturis_exotic_1x1", 5],
+          ["bookshelf_rare_1x1", 10]
+        ]
+      }
+    }
+  }
+}]

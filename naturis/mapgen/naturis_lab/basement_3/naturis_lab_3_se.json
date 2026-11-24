@@ -1,0 +1,61 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_3_se"],
+  "//": "Apex cloning Station.",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "rrrrrr.cB..--..B.s.s.s.|",
+      ".h..h..c...--..........|",
+      "rrrrrr.c...--....s.s.s.|",
+      ".h..h..c...--..........|",
+      "rrrrrr.cB..--..B.s.s.s.|",
+      ".h..h..c...--..........|",
+      "rrrrrr.c...--....s.s.s.|",
+      ".h..h..c...--..........|",
+      ".......c...--....s.s.s.|",
+      "ccc..ccc.B.--.B........|",
+      "...........--......CCCC|",
+      "-------------......WWWW|",
+      "-------------..........|",
+      "....................!!!|",
+      ".....::::::::::::......|",
+      "....::..........::.....|",
+      "...::............::....|",
+      ".B.:..............:..B.|",
+      "...:..............:....|",
+      "...:..............:....|",
+      "...:..............:....|",
+      "...:..............:....|",
+      ".z.:..............:.zz.|",
+      "||||||||||||||||||||||||"
+    ],
+    "place_fields": [
+      { "field": "fd_blood", "x": [3, 12], "y": [4, 20], "repeat": [0, 10] }
+    ],
+    "set": [{ "point": "bash", "x": [3, 20], "y": [3, 20], "repeat": [5, 10] }],
+    "place_monster": [
+      { "group": "GROUP_HATCHLINGS", "x": [12, 14], "y": [20, 22], "chance": 60, "repeat": 7 }
+    ],
+    "items": {
+      "r": [{ "item": "lab_files_naturis", "chance": 30 },
+        { "item": "SUS_office_desk", "chance": 60 }
+      ],
+      "C": [{ "item": "tools_science", "chance": 60 },
+        { "item": "raptor_evolution_tools", "chance": 30 }
+      ]
+    },
+    "palettes": ["raptor_lab_palette"],
+    "nested": {
+      "!": {
+        "chunks": [
+          ["null", 20],
+          ["shelf_cleaning_1x1", 30],
+          ["shelf_emergency_1x1", 20]
+        ]
+      }
+    }
+  }
+}]

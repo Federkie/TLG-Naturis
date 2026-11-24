@@ -1,0 +1,129 @@
+[
+  {
+    "type": "snippet",
+    "category": "lab_postit_primus",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_primus_1", "text": "Increase the dosage of the injection solution." }
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "lab_postit_primus",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_primus_2", "text": "Sedatives remain ineffective..." }
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "lab_postit_primus",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_primus_3", "text": "Client dissatisfied. Demands another attempt..." }
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "lab_postit_primus",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_primus_4", "text": "Subject is out of control..." }
+    ]
+  },
+  {
+  "type": "snippet",
+  "category": "lab_postit_primus",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_primus_5", "text": "primus is no longer controllable" }
+  ]
+},
+  {
+    "type": "snippet",
+    "category": "lab_postit_naturis",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_naturis_1", "text": "42" }
+    ]
+  },
+  {
+  "type": "snippet",
+  "category": "lab_postit_naturis",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_naturis_2", "text": "run!" }
+  ]
+},
+  {
+    "type": "snippet",
+    "category": "lab_postit_meteorite",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_meteorite_1", "text": "Meteorite or anomaly?" }
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "lab_postit_meteorite",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_meteorite_2", "text": "Bioluminescence as the cause?" }
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "lab_postit_meteorite",
+    "text": [
+      { "name": "green postit", "id": "lab_postit_meteorite_3", "text": "- the meteorite speaks to me -" }
+    ]
+  },
+  {
+  "type": "snippet",
+  "category": "lab_postit_meteorite",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_meteorite_4", "text": "initial changes noticeable" }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_meteorite",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_meteorite_5", "text": "examine biological material enclosed in minerals" }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_meteorite",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_meteorite_6", "text": "warmth = life?" }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_raptor",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_raptor_1", "text": "attempt at taming successful!" }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_raptor",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_raptor_2", "text": "new food is being accepted" }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_raptor",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_raptor_3", "text": "Some specimens appear more susceptible than others" }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_raptor",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_raptor_4", "text": "Juveniles display greater aggression than adults." }
+  ]
+},
+{
+  "type": "snippet",
+  "category": "lab_postit_raptor",
+  "text": [
+    { "name": "green postit", "id": "lab_postit_raptor_5", "text": "stable behavioral change" }
+  ]
+}
+  
+]

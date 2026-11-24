@@ -191,6 +191,45 @@
     "city_sizes": [0, 12],
     "occurrences": [1, 2],
     "flags": ["WILDERNESS", "OVERMAP_UNIQUE"]
+  },
+  {
+    "type": "overmap_special",
+    "id": "naturis_lab",
+    "overmaps": [
+      { "point": [-1, -1, -1], "overmap": "naturis_lab_1_nw_north" },
+      { "point": [0, -1, -1], "overmap": "naturis_lab_1_n_north" },
+      { "point": [1, -1, -1], "overmap": "naturis_lab_1_ne_north" },
+      { "point": [-1, 0, -1], "overmap": "naturis_lab_1_w_north" },
+      { "point": [0, 0, -1], "overmap": "naturis_lab_1_0_north" },
+      { "point": [0, 0, 0], "overmap": "naturis_lab_cavern_entrance_north" },
+      { "point": [1, 0, -1], "overmap": "naturis_lab_1_e_north" },
+      { "point": [-1, 1, -1], "overmap": "naturis_lab_1_sw_north" },
+      { "point": [0, 1, -1], "overmap": "naturis_lab_1_s_north" },
+      { "point": [1, 1, -1], "overmap": "naturis_lab_1_se_north" },
+      { "point": [-1, -1, -2], "overmap": "naturis_lab_2_nw_north" },
+      { "point": [0, -1, -2], "overmap": "naturis_lab_2_n_north" },
+      { "point": [1, -1, -2], "overmap": "naturis_lab_2_ne_north" },
+      { "point": [-1, 0, -2], "overmap": "naturis_lab_2_w_north" },
+      { "point": [0, 0, -2], "overmap": "naturis_lab_2_0_north" },
+      { "point": [1, 0, -2], "overmap": "naturis_lab_2_e_north" },
+      { "point": [-1, 1, -2], "overmap": "naturis_lab_2_sw_north" },
+      { "point": [0, 1, -2], "overmap": "naturis_lab_2_s_north" },
+      { "point": [1, 1, -2], "overmap": "naturis_lab_2_se_north" },
+      { "point": [-1, -1, -3], "overmap": "naturis_lab_3_nw_north" },
+      { "point": [0, -1, -3], "overmap": "naturis_lab_3_n_north" },
+      { "point": [1, -1, -3], "overmap": "naturis_lab_3_ne_north" },
+      { "point": [-1, 0, -3], "overmap": "naturis_lab_3_w_north" },
+      { "point": [0, 0, -3], "overmap": "naturis_lab_3_0_north" },
+      { "point": [1, 0, -3], "overmap": "naturis_lab_3_e_north" },
+      { "point": [-1, 1, -3], "overmap": "naturis_lab_3_sw_north" },
+      { "point": [0, 1, -3], "overmap": "naturis_lab_3_s_north" },
+      { "point": [1, 1, -3], "overmap": "naturis_lab_3_se_north" }
+    ],
+    "locations": ["forest"],
+    "city_distance": [10, -1],
+    "city_sizes": [0, 12],
+    "occurrences": [1, 1],
+    "flags": ["MAN_MADE", "OVERMAP_UNIQUE"]
   }
   
 ]

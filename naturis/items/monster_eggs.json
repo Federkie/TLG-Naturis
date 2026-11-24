@@ -233,12 +233,10 @@
     "volume": "1650 ml",
     "flags": ["MUNDANE", "SINGLE_USE"],
     "melee_damage": { "bash": 7 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "hatch_stasis_egg",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Hatch raptor",
+      "effect_on_conditions": ["EOC_HATCH_STASIS_EGG"]
     }
   }
   

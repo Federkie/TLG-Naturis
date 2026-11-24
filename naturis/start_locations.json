@@ -1,0 +1,8 @@
+[
+    {
+    "type": "start_location",
+    "id": "naturis_lab",
+    "name": "Naturis Lab",
+    "terrain": ["naturis_lab_2_n", "naturis_lab_2_s"]
+  }
+]

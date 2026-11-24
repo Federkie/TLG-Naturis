@@ -1,0 +1,138 @@
+[
+  {
+    "type": "weakpoint_set",
+    "id": "wps_primus",
+    "weakpoints": [
+      {
+        "id": "head",
+        "name": "the head",
+        "is_head": true,
+        "damage_mult": {
+          "all": 1.2
+        },
+        "crit_mult": {
+          "all": 1.2
+        },
+        "coverage_mult": { "melee": 0.5 },
+        "armor_mult": {
+          "physical": 0.75
+        },
+        "difficulty": {
+          "melee": 4,
+          "ranged": 4
+        },
+        "effects": [
+        {
+          "effect": "downed",
+          "chance": 25,
+          "duration": [5, 15],
+          "message": "The %s is downed!",
+          "damage_required": [20, 50]
+        }],
+        "coverage": 15
+      },
+      {
+        "id": "body",
+        "name": "the body",
+        "damage_mult": {
+          "all": 1.0
+        },
+        "crit_mult": {
+          "all": 1.0
+        },
+        "armor_mult": {
+          "physical": 1.0
+        },
+        "difficulty": {
+          "melee": 4,
+          "ranged": 3
+        },
+        "coverage": 40
+      },
+      {
+        "name": "upper vial",
+        "armor_mult": { "physical": 0 },
+        "coverage": 2,
+        "crit_mult": { "all": 1.25 },
+        "difficulty": {
+          "melee": 6,
+          "ranged": 8
+        },
+        "effects": [
+          { "effect": "effect_destroyed_vial_upper", "duration": [5, 20], "chance": 25, "message": "The upper vial of %s has a crack!", "damage_required": [1, 25] },
+          {
+            "effect": "effect_destroyed_vial_upper",
+            "permanent": true,
+            "chance": 30,
+            "message": "The upper vial of %s is destroyed!",
+            "damage_required": [26, 100]
+          }
+        ]
+      },
+      {
+        "name": "middle vial",
+        "armor_mult": { "physical": 0 },
+        "coverage": 2,
+        "crit_mult": { "all": 1.25 },
+        "difficulty": {
+          "melee": 6,
+          "ranged": 8
+        },
+        "effects": [
+          {
+            "effect": "effect_destroyed_vial_middle",
+            "permanent": true,
+            "chance": 30,
+            "message": "The middle vial of %s is destroyed!",
+            "damage_required": [26, 100]
+          }
+        ]
+      },
+      {
+        "name": "lower vial",
+        "armor_mult": { "physical": 0 },
+        "coverage": 2,
+        "crit_mult": { "all": 1.25 },
+        "difficulty": {
+          "melee": 6,
+          "ranged": 8
+        },
+        "effects": [
+          { "effect": "effect_destroyed_vial_lower", "duration": [5, 20], "chance": 25, "message": "The lower vial of %s has a crack!", "damage_required": [1, 25] },
+          {
+            "effect": "effect_destroyed_vial_lower",
+            "permanent": true,
+            "chance": 30,
+            "message": "The lower vial of %s is destroyed!",
+            "damage_required": [26, 100]
+          }
+        ]
+      },
+      {
+        "id": "tail",
+        "name": "the tail",
+        "damage_mult": {
+          "all": 0.75
+        },
+        "crit_mult": {
+          "all": 1.1
+        },
+        "armor_mult": {
+          "physical": 0.9
+        },
+        "difficulty": {
+          "melee": 3,
+          "ranged": 4
+        },
+        "coverage": 25
+      }
+      
+      
+    ]
+  }
+  
+  
+  
+  
+  
+]

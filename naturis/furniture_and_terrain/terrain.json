@@ -1356,4 +1356,116 @@
       ]
     }]
   }
-}]
+},
+  {
+  "type": "terrain",
+  "id": "t_scratch_marks_concr",
+  "name": "scratch marks",
+  "description": "Scratch marks from a large creature, perhaps they will tell you a bit more about the local fauna.",
+  "symbol": "*",
+  "examine_action": {
+    "type": "effect_on_condition",
+    "effect_on_conditions": [
+      "EOC_MONSTER_MARKS_CONCR"
+    ]
+  },
+  "color": "cyan",
+  "move_cost": 1,
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+  {
+    "type": "terrain",
+    "id": "t_linoleum_white_trigger",
+    "name": "linoleum tile",
+    "looks_like": "t_linoleum_white",
+    "description": "A section of flooring made out of a tough, rubbery material.  Colored a simple white.  Can support a roof.",
+    "symbol": ".",
+    "color": "white",
+    "connect_groups": ["INDOORFLOOR", "LINOLEUM"],
+    "connects_to": "LINOLEUM",
+    "move_cost": 2,
+    "coverage": 0,
+    "flags": ["TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD"],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_open_air",
+      "str_min": 50,
+      "str_max": 400,
+      "str_min_supported": 100,
+      "items": [{ "item": "splinter", "count": [0, 8] }, { "item": "nail", "charges": [0, 10] }]
+    }
+  },
+    {
+    "type": "terrain",
+    "id": "t_vat_raptor",
+    "name": "cloning vat",
+    "description": "A vat full of solution, probably intended to hold growing clones of raptors or other life forms.",
+    "symbol": "0",
+    "color": "light_cyan",
+    "looks_like": "f_standing_tank",
+    "move_cost": 0,
+    "coverage": 40,
+    "concealment": 40,
+    "roof": "t_flat_roof",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": ["TRANSPARENT", "SEALED", "PLACE_ITEM", "WALL", "NO_SPOIL"],
+    "bash": {
+      "str_min": 2,
+      "str_max": 80,
+      "sound": "ker-rash!",
+      "sound_fail": "plunk.",
+      "sound_vol": 16,
+      "sound_fail_vol": 12,
+      "ter_set": "t_vat_raptor_destroyed",
+      "items": [{ "item": "glass_shard", "count": [42, 84] }, { "item": "naturis_sample_small", "count": [0, 2] }]
+    },
+    "shoot": { "chance_to_hit": 50, "reduce_damage": [50, 70], "reduce_damage_laser": [2, 12], "destroy_damage": [5, 30] }
+  },
+  {
+  "type": "terrain",
+  "id": "t_vat_raptor_destroyed",
+  "name": "destroyed cloning vat",
+  "description": "The remains of an cloning vat.",
+  "symbol": "/",
+  "color": "cyan",
+  "coverage": 25,
+  "move_cost": -1,
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_floor"
+  },
+  "flags": [
+    "TRANSPARENT"
+  ]
+},
+{
+  "type": "terrain",
+  "id": "t_seed_meteorite",
+  "name": "seed meteorite",
+  "description": "A large, greenish, shimmering crystal. Upon closer inspection, the remains of strange creatures can be seen.",
+  "looks_like": "t_ice_pillar_large_harv",
+  "symbol": "/",
+  "color": "cyan",
+  "light_emitted": 10,
+  "light_color": [ 140, 240, 220 ],
+  "coverage": 25,
+  "move_cost": -1,
+    "emissions": [
+    "emit_strange_aura"
+  ],
+  "bash": {
+    "str_min": 60,
+    "str_max": 180,
+    "sound": "crack!",
+    "ter_set": "t_dirt_rocky"
+  },
+  "flags": [
+    "TRANSPARENT"
+  ]
+}
+]

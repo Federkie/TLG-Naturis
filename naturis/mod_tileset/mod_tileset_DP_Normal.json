@@ -273,7 +273,33 @@
       },
       { "id": "overlay_wielded_root_circuit_rifle", "fg": 160, "rotates": false },
       { "id": "root_circuit_rifle", "fg": 161 },
-      { "id": "mon_ember_stalker", "fg": 162, "rotates": false, "bg": 5 }
+      { "id": "mon_ember_stalker", "fg": 162, "rotates": false, "bg": 5 },
+      { "id": "mon_caustic_spines", "fg": 163, "rotates": false, "bg": 5 },
+      { "id": "t_scratch_marks_concr", "fg": 164, "rotates": false },
+      {
+        "id": "fd_serum_residues",
+        "fg": [
+          { "weight": 30, "sprite": 165 },
+          { "weight": 30, "sprite": 166 }
+        ],
+        "rotates": false,
+        "animated": false
+      },
+      { "id": "mon_shiny_sphere", "fg": 167, "rotates": false, "bg": 5 },
+      {
+        "id": "fd_strange_aura",
+        "fg": 168,
+        "rotates": false,
+        "multitile": true,
+        "additional_tiles": [
+          { "id": "center", "fg": 169 },
+          { "id": "corner", "fg": 170 },
+          { "id": "edge", "fg": 171 },
+          { "id": "t_connection", "fg": 172 },
+          { "id": "end_piece", "fg": 173 },
+          { "id": "unconnected", "fg": 168 }
+        ]
+      }
     ]
   }]
 }]

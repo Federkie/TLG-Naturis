@@ -20,7 +20,30 @@
       { "id": "mon_otter_big", "fg": 10, "rotates": false, "bg": 6 },
       { "id": "mon_veil_stalker", "fg": 11, "rotates": false, "bg": 6 },
       { "id": "mon_ghost_stalker", "fg": 12, "rotates": false, "bg": 6 },
-      { "id": "mon_frost_brawler", "fg": 13, "rotates": false, "bg": 6 }
+      { "id": "mon_frost_brawler", "fg": 13, "rotates": false, "bg": 6 },
+      {
+        "id": "t_vat_raptor",
+        "fg": [
+          { "weight": 25, "sprite": 14 },
+          { "weight": 25, "sprite": 15 },
+          { "weight": 25, "sprite": 16 },
+          { "weight": 25, "sprite": 17 },
+          { "weight": 25, "sprite": 18 },
+          { "weight": 25, "sprite": 19 }
+        ],
+        "rotates": false,
+        "animated": false
+      },
+      {
+        "id": "t_vat_raptor_destroyed",
+        "fg": [
+          { "weight": 30, "sprite": 20 },
+          { "weight": 30, "sprite": 21 },
+          { "weight": 30, "sprite": 22 }
+        ],
+        "rotates": false,
+        "animated": false
+      }
     ],
     "sprite_width": 32,
     "sprite_height": 48

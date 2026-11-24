@@ -234,6 +234,55 @@
         { "type": "stab", "add": -1 }
       ]
     }]
+  },
+  {
+  "type": "effect_type",
+  "id": "effect_destroyed_vial_upper",
+  "name": ["Destroeyed upper Vial"],
+  "desc": ["The upper of the phials is destroyed."],
+  "show_in_info": true,
+  "base_mods": {
+    "speed_mod": [-20]
+  },
+  "enchantments": [
+  {
+    "incoming_damage_mod": [
+      { "type": "cut", "add": -6 },
+      { "type": "bash", "add": -6 },
+      { "type": "stab", "add": -6 }
+    ]
+  }]
+},
+{
+  "type": "effect_type",
+  "id": "effect_destroyed_vial_middle",
+  "name": ["Destroeyed middle Vial"],
+  "desc": ["The middle of the phials is destroyed."],
+  "show_in_info": true,
+  "base_mods": {
+    "speed_mod": [-20]
+  }
+},
+{
+  "type": "effect_type",
+  "id": "effect_destroyed_vial_lower",
+  "name": ["Destroeyed lower Vial"],
+  "desc": ["The lower of the phials is destroyed."],
+  "show_in_info": true,
+  "base_mods": {
+    "speed_mod": [-10]
+  }
+},
+  {
+    "type": "effect_type",
+    "id": "tamed_locker",
+    "name": ["Tamed Locker"],
+    "desc": ["You are already tamed."]
   }
   
+  
+  
+  
+  
+
 ]

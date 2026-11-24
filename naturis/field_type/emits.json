@@ -79,6 +79,21 @@
     "field": "fd_raptor_track",
     "intensity": 1,
     "chance": 50
+  },
+  {
+    "type": "emit",
+    "id": "primus_drop",
+    "field": "fd_serum_residues",
+    "intensity": 1,
+    "chance": 70
+  },
+  {
+    "type": "emit",
+    "id": "emit_strange_aura",
+    "field": "fd_strange_aura",
+    "intensity": 1,
+    "qty": 4,
+    "chance": 100
   }
   
   

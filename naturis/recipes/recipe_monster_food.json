@@ -15,6 +15,9 @@
     "autolearn": [
       ["research", 3]
     ],
+    "book_learn": [
+      ["book_raptor", 1]
+    ],
     "time": "30 m",
     "proficiencies": [{ "proficiency": "prof_food_prep" }, { "proficiency": "prof_preservation" }, { "proficiency": "prof_food_canning" }],
     "batch_time_factors": [83, 5],
