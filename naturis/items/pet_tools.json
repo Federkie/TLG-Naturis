@@ -11,7 +11,7 @@
     "material": ["steel"],
     "symbol": "#",
     "color": "light_gray",
-    "properties": { "creature_size_capacity": "HIGH" },
+    "properties": { "creature_size_capacity": "MEDIUM" },
     "use_action": ["CAPTURE_MONSTER_ACT"],
     "flags": ["TRADER_AVOID"],
     "melee_damage": { "bash": 1, "cut": 1 }
