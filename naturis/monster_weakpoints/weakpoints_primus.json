@@ -55,8 +55,8 @@
         "coverage": 2,
         "crit_mult": { "all": 1.25 },
         "difficulty": {
-          "melee": 6,
-          "ranged": 8
+          "melee": 4,
+          "ranged": 5
         },
         "effects": [
           { "effect": "effect_destroyed_vial_upper", "duration": [5, 20], "chance": 25, "message": "The upper vial of %s has a crack!", "damage_required": [1, 25] },
@@ -75,8 +75,8 @@
         "coverage": 2,
         "crit_mult": { "all": 1.25 },
         "difficulty": {
-          "melee": 6,
-          "ranged": 8
+          "melee": 4,
+          "ranged": 5
         },
         "effects": [
           {
@@ -94,8 +94,8 @@
         "coverage": 2,
         "crit_mult": { "all": 1.25 },
         "difficulty": {
-          "melee": 6,
-          "ranged": 8
+          "melee": 4,
+          "ranged": 5
         },
         "effects": [
           { "effect": "effect_destroyed_vial_lower", "duration": [5, 20], "chance": 25, "message": "The lower vial of %s has a crack!", "damage_required": [1, 25] },
