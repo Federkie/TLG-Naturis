@@ -108,7 +108,7 @@
     "volume": "160 ml",
     "weight": "12 g",
     "ammo_type": "fa_s",
-    "damage": { "damage_type": "stab", "amount": 45, "armor_penetration": 40 },
+    "damage": { "damage_type": "stab", "amount": 55, "armor_penetration": 40 },
     "range": 35,
     "dispersion": 15,
     "stack_size": 36,
