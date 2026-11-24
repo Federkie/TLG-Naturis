@@ -1,0 +1,171 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HATCH_STASIS_EGG",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "hatch_stasis_egg",
+        "message": "You deactivate the egg's stasis and let the raptor hatch."
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MARTIAL_ART_PET_DEF",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "martial_art_pet_def",
+        "message": "You teach your raptor a new defensive combat technique."
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MARTIAL_ART_PET",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "martial_art_pet",
+        "message": "You teach your raptor a new combat technique."
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_EXTRA_UNLOCK_2",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "pet_extra_unlock_2",
+        "message": "You inject the solution into your raptor and he learns a new attack!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_EXTRA_UNLOCK",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "pet_extra_unlock",
+        "message": "You inject the solution into your raptor and he learns a new attack!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MUTATOR_STATIC",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "mutate_praptor_static",
+        "message": "You inject the solution into your raptor and he mutates!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MUTATOR_ICE",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "mutate_praptor_ice",
+        "message": "You inject the solution into your raptor and he mutates!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MUTATOR_CRYSTAL",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "mutate_praptor_crystal",
+        "message": "You inject the solution into your raptor and he mutates!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MUTATOR_FIRE",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "mutate_praptor_fire",
+        "message": "You inject the solution into your raptor and he mutates!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PET_MUTATOR_FOREST",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "mutate_praptor_forest",
+        "message": "You inject the solution into your raptor and he mutates!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_FOREST_RAPTOR_MUTATION",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "forest_raptor_mutation",
+        "message": "You inject the solution into your raptor and he mutates!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HEAL_PET_PROFI",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "heal_pet",
+        "message": "You inject the solution into your raptor and his wounds are beginning to close!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HEAL_PET",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "heal_pet",
+        "message": "You inject the solution into your raptor and his wounds are beginning to close!"
+      },
+      "targeted": true
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HEAL_PET_LOW",
+    "effect": [
+    {
+      "u_cast_spell": {
+        "id": "heal_pet",
+        "message": "You inject the solution into your raptor and his wounds are beginning to close!"
+      },
+      "targeted": true
+    }]
+  }
+  
+]

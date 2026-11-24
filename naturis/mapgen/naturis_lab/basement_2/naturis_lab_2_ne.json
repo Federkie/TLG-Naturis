@@ -1,0 +1,70 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_2_ne"],
+  "//": "Raptor evolution tests.",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "||||||||||||||||||||||||",
+      ";;;;;;;;;;;;;;;;;;;;;;;|",
+      ";;;;;;;;;;;;;;;;;;;;;;;|",
+      "::::::::::::#::::::::::|",
+      "3....B...!z---z!...B...|",
+      "?..hhhhhh........::::::|",
+      "?.hffffffh.......:+....|",
+      "?.hf.B..fh.......:.....|",
+      "?.hf..B.fh.......#.....|",
+      "...ffffff........:.....|",
+      "Y..hhhhhh........:.....|",
+      "--...............::::::|",
+      "--..................B..|",
+      "::::::...........::::::|",
+      "+....:...........:+....|",
+      ".....:!.........!:.....|",
+      ".....#...........#.....|",
+      ".....:z.........z:.....|",
+      ".....:...........:.....|",
+      "::::::...........::::::|",
+      "..B.................B..|",
+      "|||||D|||||..|||||D|||||",
+      "h.........|..|B.......B|",
+      "f....rrr..|--|!.rrrrr.!|"
+    ],
+    "items": {
+      "f": { "item": "raptor_training_files", "chance": 10 },
+      "r": { "item": "raptor_evolution_tools", "chance": 30 }
+    },
+    "place_monster": [
+      { "group": "GROUP_RAPTOR_UPGRADES", "x": [2, 3], "y": [2, 6], "chance": 60 },
+      { "group": "GROUP_LAB", "x": [5, 18], "y": [5, 18], "repeat": 3 }
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "nested": {
+      "!": {
+        "chunks": [
+          ["shelf_emergency_1x1", 30]
+        ]
+      },
+      "?": {
+        "chunks": [
+          ["null", 40],
+          ["bookshelf_normal_1x1", 30],
+          ["bookshelf_exotic_1x1", 5],
+          ["bookshelf_naturis_1x1", 20],
+          ["bookshelf_naturis_exotic_1x1", 5],
+          ["bookshelf_rare_1x1", 10]
+        ]
+      },
+      "+": {
+        "chunks": [
+          ["null", 10],
+          ["naturis_lab_5x5_training_corpse", 20],
+          ["naturis_lab_5x5_evolution_raptor", 30],
+          ["naturis_lab_5x5_evolution_scratch", 30]
+        ]
+      }
+    }
+  }
+}]

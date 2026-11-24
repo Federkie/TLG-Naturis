@@ -147,7 +147,8 @@
       { "id": "mon_crystal_raptor", "fg": 33, "rotates": false, "bg": 27 },
       { "id": "mon_ice_raptor", "fg": 34, "rotates": false, "bg": 27 },
       { "id": "mon_fire_raptor", "fg": 35, "rotates": false, "bg": 27 },
-      { "id": "mon_ancient_thorn_raptor", "fg": 36, "rotates": false, "bg": 27 }
+      { "id": "mon_ancient_thorn_raptor", "fg": 36, "rotates": false, "bg": 27 },
+      { "id": "t_seed_meteorite", "fg": 37, "rotates": false, "bg": 1 }
     ]
   }]
 }]

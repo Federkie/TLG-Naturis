@@ -1,0 +1,66 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_2_sw"],
+  "//": "Raptor behavioral testing area.",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "|..........--...........",
+      "|...B.............B.....",
+      "|......----------.......",
+      "|.....-..........-......",
+      "|....-..?.........-.....",
+      "|....-............-.....",
+      "|..B.-............-..B..",
+      "|....-............-.....",
+      "|....-............-.....",
+      "|....-............-.....",
+      "|....-............-.....",
+      "|....-............-....-",
+      "|.....-..........-.....-",
+      "|...B..----------..B....",
+      "|.......................",
+      "|D|]]]]]]]]]]]]]]]]]]|D|",
+      "|....rrrrrrrrrrrr......z",
+      "|....hhhhhhhhhhhh......z",
+      "|.....B........B.......z",
+      "|cccccccc.........hhh...",
+      "|!!!!!!!.........hrrrh..",
+      "|...........B....hrrrh.Y",
+      "|!!!!!!!..........hhh.33",
+      "||||||||||||||||||||||||"
+    ],
+    "place_fields": [
+      { "field": "fd_blood", "x": [3, 22], "y": [4, 20], "repeat": [1, 10] }
+    ],
+    "items": {
+      "r": { "item": "raptor_training_files", "chance": 20 }
+    },
+    "place_monster": [
+      { "group": "GROUP_FOREST_RAPTOR_JUVENIL", "x": [3, 8], "y": [3, 8], "chance": 60, "repeat": 3 },
+      { "group": "GROUP_RAPTORS", "x": [3, 8], "y": [3, 8], "chance": 60, "repeat": 3},
+      { "group": "GROUP_LAB", "x": [14, 22], "y": [14, 22], "chance": 60, "repeat": 3 }
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "nested": {
+      "?": {
+        "chunks": [
+          ["naturis_lab_5x5_evolution_scratch", 30],
+          ["naturis_lab_5x5_evolution_raptor", 30],
+          ["naturis_lab_5x5_training_corpse", 30]
+        ]
+      },
+      "!": {
+        "chunks": [
+          ["bookshelf_normal_1x1", 30],
+          ["bookshelf_exotic_1x1", 5],
+          ["bookshelf_naturis_1x1", 20],
+          ["bookshelf_naturis_exotic_1x1", 5],
+          ["bookshelf_rare_1x1", 10]
+        ]
+      }
+    }
+  }
+}]

@@ -1,0 +1,70 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_2_se"],
+  "//": "Labor emergency vault.",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "........B..--..B.......|",
+      "...........--..........|",
+      "...........--..........|",
+      "...........--..........|",
+      "........B..--..B.......|",
+      "...........--..........|",
+      "...........--..........|",
+      "...........--..........|",
+      "...........--..........|",
+      ".........B.--.B........|",
+      "...........--..........|",
+      "-----------------------|",
+      "-----------------------|",
+      "||||=|6|:::::::|6|=|||||",
+      "||||.|||.......|||.|||||",
+      "G......................|",
+      "ccc.cccc...hhh...UUUUUU|",
+      "@@@.@@@c...fff.........|",
+      "ccc.cccc...fff...UUUUUU|",
+      "@@@.@@@c...hhh.........|",
+      "|||||||c.........UUUUUU|",
+      "9....D.................|",
+      "t.S..D...wggggwY.!!!!!!|",
+      "||||||||||||||||||||||||"
+    ],
+    "place_fields": [
+      { "field": "fd_blood", "x": [3, 12], "y": [4, 20], "repeat": [0, 10] }
+    ],
+    "place_monsters": [
+      { "monster": "GROUP_ZOMBIE", "x": [3, 22], "y": [3, 22], "chance": 60, "density": 0.1 },
+      { "monster": "GROUP_LAB", "x": [3, 22], "y": [3, 22], "chance": 60, "density": 0.1 },
+      { "monster": "GROUP_LAB_BASIC_SECURITY", "x": [3, 22], "y": [3, 22], "chance": 80, "density": 0.1 }
+    ],
+    "items": {
+      "U": [{ "item": "gear_medical", "chance": 30 },
+        { "item": "gear_survival", "chance": 80 },
+        { "item": "fireman_gear", "chance": 30 },
+        { "item": "dissection", "chance": 25 },
+        { "item": "drugs_emergency", "chance": 50 }
+      ],
+      "w": [{ "item": "preserved_food", "chance": 80 },
+        { "item": "gear_soldier_sidearm", "chance": 40 },
+        { "item": "guns_shotgun_milspec", "chance": 15 },
+        { "item": "guns_rifle_milspec", "chance": 10 }
+      ]
+    },
+    "palettes": ["raptor_lab_palette"],
+    "nested": {
+      "!": {
+        "chunks": [
+          ["bookshelf_normal_1x1", 30],
+          ["bookshelf_exotic_1x1", 5],
+          ["bookshelf_naturis_1x1", 20],
+          ["bookshelf_naturis_exotic_1x1", 5],
+          ["bookshelf_rare_1x1", 10]
+        ]
+      }
+    }
+  }
+}
+]

@@ -1,0 +1,175 @@
+[
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_10x10_bedroom_se",
+  "weight": 150,
+  "object": {
+    "mapgensize": [10, 10],
+    "rows": [
+      "@@...Z..@@",
+      "ccc....ccc",
+      "@@......@@",
+      "ccc.2..ccc",
+      "@@......@@",
+      "ccccxxcccc",
+      "..........",
+      "....ffh...",
+      "Z...hh....",
+      "Z........3"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "terrain": {
+      "x": "t_linoleum_white_trigger"
+    },
+    "items": {
+      "Z": { "item": "everyday_gear", "chance": 30, "repeat": [1, 4] }
+    },
+    "place_item": [
+      { "item": "vibrator", "x": [1, 7], "y": [1, 7], "chance": 10 },
+      { "item": "condom", "x": [1, 7], "y": [1, 7], "chance": 10 }
+    ]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_10x10_showers_se",
+  "weight": 150,
+  "object": {
+    "mapgensize": [10, 10],
+    "rows": [
+      "9.D..2.D.9",
+      "|||....|||",
+      "9.D....D.9",
+      "|||..2.|||",
+      "9.D....D.9",
+      "||||DD||||",
+      "t..D....Sr",
+      "||||.....8",
+      "n....2...Z",
+      "Y........f"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "Z": { "item": "costume_all_clothing", "chance": 30, "repeat": [1, 4] },
+      "f": { "item": "magazines", "chance": 70 }
+    },
+    "place_item": [
+      { "item": "razor_blade", "x": [1, 7], "y": [1, 7], "chance": 10 },
+      { "item": "condom", "x": [1, 7], "y": [1, 7], "chance": 10 }
+    ]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_10x10_kitchen_se",
+  "weight": 150,
+  "object": {
+    "mapgensize": [10, 10],
+    "rows": [
+      "4s44oo44S4",
+      "4........Y",
+      "4..hfffh..",
+      "o..hfffh..",
+      "4.........",
+      "S....2....",
+      "F.........",
+      "bbbbb.....",
+      "..........",
+      "bb........"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "4": [
+        { "item": "SUS_utensils", "chance": 50 }, { "item": "SUS_knife_drawer", "chance": 50 }, { "item": "SUS_dishes", "chance": 100 }
+      ],
+      "s": { "item": "SUS_dishwasher", "chance": 70 },
+      "o": { "item": "SUS_oven", "chance": 100, "repeat": [1, 2] },
+      "b": { "item": "homebooks", "chance": 30, "repeat": [1, 3] },
+      "F": { "item": "SUS_fridge", "chance": 70 },
+      "f": [{ "item": "cannedfood_commercial", "chance": 60 }, { "item": "produce", "chance": 80, "repeat": [1, 4] }, { "item": "SUS_knife_drawer", "chance": 30 }]
+    }
+  }
+},
+  {
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_10x10_lab",
+  "weight": 150,
+  "object": {
+    "mapgensize": [10, 10],
+    "rows": [
+      "prrrrrrrrA",
+      ".....B....",
+      "n......hff",
+      "S......hff",
+      "cccc...UUU",
+      "fh...B....",
+      "cccc......",
+      "fh........",
+      "cccc......",
+      "wdd..B.avY"
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "items": {
+      "r": [
+        { "item": "raptor_evolution_tools", "chance": 30 }, { "item": "tools_science", "chance": 50 }
+      ],
+      "U": { "item": "raptor_hatching_samples", "chance": 70, "repeat": [1, 3] },
+      "a": { "item": "raptor_hatching_samples_pres", "chance": 90, "repeat": [1, 2] },
+      "f": [{ "item": "science", "chance": 60 }, { "item": "supplies_samples_lab", "chance": 80, "repeat": [1, 4] }, { "item": "raptor_training_files", "chance": 30 }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_10x10_office_se",
+  "weight": 150,
+  "object": {
+    "mapgensize": [10, 10],
+    "rows": [
+      "fh......hf",
+      "ccc....ccc",
+      "fh......hf",
+      "ccc....ccc",
+      "fh......hf",
+      "cccc..cccc",
+      "Y.........",
+      "F..hffh...",
+      "g...hh....",
+      "3........."
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f":{ "item": "SUS_office_desk", "chance": 70 }
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_10x10_science",
+  "weight": 150,
+  "object": {
+    "mapgensize": [10, 10],
+    "rows": [
+      "UprrrrrrAU",
+      ".....2....",
+      "n.......Ru",
+      "S.........",
+      "cccc......",
+      "fh...2....",
+      "cccc......",
+      "fh........",
+      "cccc......",
+      "wdd..2.avY"
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "items": {
+      "r": [
+        { "item": "chem_lab", "chance": 30 }, { "item": "tools_science", "chance": 50 }, { "item": "hospital_lab", "chance": 100 }
+      ],
+      "U": { "item": "supplies_samples_lab", "chance": 70, "repeat": [1, 3] },
+      "a": { "item": "raptor_hatching_samples_pres", "chance": 90, "repeat": [1, 2] },
+      "f": [{ "item": "science", "chance": 60 }, { "item": "writing_utensils", "chance": 80, "repeat": [1, 4] }, { "item": "raptor_training_files", "chance": 30 }]
+    }
+  }
+}
+]

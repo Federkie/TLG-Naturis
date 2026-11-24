@@ -20,7 +20,7 @@
   "type": "MONSTER_FACTION",
   "name": "zombie",
   "copy-from": "zombie",
-  "neutral": ["overgrown", "crystal", "anomaly", "thief", "fleshy", "ice", "fire", "test_creature"]
+  "neutral": ["overgrown", "crystal", "anomaly", "thief", "fleshy", "ice", "fire", "test_creature", "test_creature"]
 },
 {
   "type": "MONSTER_FACTION",
@@ -75,8 +75,6 @@
 {
   "type": "MONSTER_FACTION",
   "name": "test_creature",
-  "friendly": ["player", "small_animal"],
-  "neutral": ["overgrown", "zombie", "static", "crystal", "anomaly", "thief", "fleshy", "ice", "fire"],
   "hate": ["human"],
-  "by_mood": ["zombie"]
+  "neutral": ["overgrown", "crystal", "anomaly", "thief", "fleshy", "ice", "fire", "test_creature", "zombie"]
 }]

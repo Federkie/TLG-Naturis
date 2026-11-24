@@ -1,0 +1,213 @@
+[
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_lab_8x8_security_se",
+    "weight": 150,
+    "object": {
+      "mapgensize": [8, 8],
+      "rows": [
+        "CCCCCCCC",
+        "P..h.h..",
+        "4...2...",
+        "3.......",
+        "U...2...",
+        "U.......",
+        "L.......",
+        "L...a..p"
+      ],
+      "palettes": ["naturis_lab_security"],
+      "items": {
+        "C": [{ "item": "magazines", "chance": 30 }]
+      },
+      "place_item": [
+        { "item": "laptop", "x": 3, "y": 1, "chance": 70 }
+      ],
+      "place_monsters": [{ "monster": "GROUP_LAB_BASIC_SECURITY", "x": [2, 6], "y": [2, 7], "density": 0.1 }]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_lab_8x8_security_se_2",
+    "weight": 150,
+    "object": {
+      "mapgensize": [8, 8],
+      "rows": [
+        "CCCCCCCC",
+        "...h.h..",
+        "....2...",
+        "UUUUUU..",
+        "....2...",
+        "LLLLLL..",
+        "........",
+        ".3....4."
+      ],
+      "palettes": ["naturis_lab_security"],
+      "items": {
+        "C": [{ "item": "magazines", "chance": 30 }]
+      },
+      "place_item": [
+        { "item": "laptop", "x": 3, "y": 1, "chance": 70 }
+      ],
+      "place_monsters": [{ "monster": "GROUP_LAB_BASIC_SECURITY", "x": [2, 6], "y": [2, 7], "density": 0.1 }]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_lab_8x8_golf",
+    "weight": 150,
+    "object": {
+      "mapgensize": [8, 8],
+      "rows": [
+        ";;;;;;;;",
+        ";;;;;;;;",
+        ";;;;;;;;",
+        ";;;;;;;;",
+        ";;;;;;;;",
+        ";;;;;;;;",
+        ";;;;;;;;",
+        ";;;;;;;;"
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "terrain": {
+        "x": "t_grass"
+      },
+      "place_item": [
+        { "item": "golf_tee", "x": [2, 7], "y": [2, 7], "chance": 70 },
+        { "item": "sports_drink", "x": [2, 7], "y": [2, 7], "chance": 70 },
+        { "item": "golf_ball", "x": [2, 7], "y": [2, 7], "chance": 70, "repeat": [1, 4] },
+        { "item": "golf_club", "x": [2, 7], "y": [2, 7], "chance": 70, "repeat": [1, 4] }
+      ],
+      "place_monsters": [{ "monster": "GROUP_ZOMBIE", "x": [2, 6], "y": [2, 7], "density": 0.1 }]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_lab_8x8_meditation",
+    "weight": 150,
+    "object": {
+      "mapgensize": [8, 8],
+      "rows": [
+        ".;;;;;;.",
+        ";x;;x;;;",
+        ";;;;;;x;",
+        ";x;;;;;;",
+        ";;;;;;x;",
+        ";;;;;;;;",
+        ";;x;;;x;",
+        ".;;;;;;."
+      ],
+      "palettes": ["naturis_lab_palette"],
+      "items": {
+        "C": [{ "item": "magazines", "chance": 30 }]
+      },
+      "furniture": {
+        "x": "f_tatami"
+      },
+      "terrain": {
+        "x": "t_carpet_concrete_green"
+      },
+      "place_item": [
+        { "item": "sports_drink", "x": [2, 7], "y": [2, 7], "chance": 70 }
+      ],
+      "place_monsters": [{ "monster": "GROUP_DOJO", "x": [2, 6], "y": [2, 7], "density": 0.1 }]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_lab_8x8_chemicals",
+    "weight": 150,
+    "object": {
+      "mapgensize": [8, 8],
+      "rows": [
+        "CCC..CCC",
+        "........",
+        "CCC..CCC",
+        "........",
+        "........",
+        "........",
+        "CCC..CCC",
+        "........"
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "items": {
+        "C": [{ "item": "treatment_chemicals", "chance": 30 }]
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "naturis_lab_8x8_burn",
+    "weight": 150,
+    "object": {
+      "mapgensize": [8, 8],
+      "rows": [
+        "44444444",
+        "44444444",
+        "44444444",
+        "44444444",
+        "44444444",
+        "44444444",
+        "44444444",
+        "44444444"
+      ],
+      "palettes": ["raptor_lab_palette"],
+      "place_item": [
+        { "item": "ash", "x": [1, 8], "y": [1, 8], "chance": 70,"repeat": [1, 20] }
+      ]
+    }
+  },
+  {
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_8x8_research",
+  "weight": 150,
+  "object": {
+    "mapgensize": [8, 8],
+    "rows": [
+      "CCCCCCCC",
+      "P.hhhhh.",
+      "4...B..h",
+      "3.......",
+      "C...B...",
+      "C.......",
+      "L.......",
+      "L.zza..p"
+    ],
+    "palettes": ["naturis_lab_security"],
+    "items": {
+      "C": [{ "item": "lab_files_naturis", "chance": 30 }, { "item": "SUS_office_desk", "chance": 60 }]
+    },
+    "place_item": [
+      { "item": "tazer", "x": 3, "y": 1, "chance": 30 }
+    ],
+    "place_monsters": [{ "monster": "GROUP_LAB", "x": [2, 6], "y": [2, 6], "chance": 30, "repeat": 3 }]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_8x8_research_02",
+  "weight": 150,
+  "object": {
+    "mapgensize": [8, 8],
+    "rows": [
+      "...zz.43",
+      "Ch......",
+      "Ch..B...",
+      "........",
+      "....B...",
+      "Ch......",
+      "Y.hhhhhh",
+      "CCCCCCCC"
+    ],
+    "palettes": ["naturis_lab_security"],
+    "items": {
+      "C": [{ "item": "lab_files_naturis", "chance": 30 }, { "item": "SUS_office_desk", "chance": 60 }]
+    },
+    "place_item": [
+      { "item": "tazer", "x": 3, "y": 1, "chance": 30 }
+    ],
+    "place_monsters": [{ "monster": "GROUP_LAB", "x": [2, 6], "y": [2, 6], "chance": 30, "repeat": 3 }]
+  }
+}
+  
+  
+]

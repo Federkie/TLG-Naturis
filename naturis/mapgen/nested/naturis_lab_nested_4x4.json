@@ -1,0 +1,33 @@
+[
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_4x4_apex",
+  "object": {
+    "mapgensize": [4, 4],
+    "rows": [
+      "''''",
+      "''''",
+      "''''",
+      "''''"
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_monster": [{ "group": "GROUP_APEX", "x": [2], "y": [2] }]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_4x4_elite",
+  "object": {
+    "mapgensize": [4, 4],
+    "rows": [
+      "''''",
+      "''''",
+      "''''",
+      "''''"
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_monster": [{ "group": "GROUP_ELITE", "x": [2], "y": [2] }]
+  }
+}
+  
+]

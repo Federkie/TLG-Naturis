@@ -255,7 +255,157 @@
     "mondensity": 2,
     "spawns": { "group": "GROUP_AWAKENING", "population": [50, 60], "chance": 80 },
     "flags": ["RISK_EXTREME", "REQUIRES_PREDECESSOR"]
-  }
+  },
+  {
+  "type": "overmap_terrain",
+  "id": "naturis_lab_cavern_entrance",
+  "name": "Naturis Lab",
+  "sym": "F",
+  "looks_like": "cave",
+  "color": "i_green",
+  "see_cost": "high",
+  "flags": ["RISK_HIGH", "REQUIRES_PREDECESSOR"]
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_0",
+  "vision_levels": "blends_till_details",
+  "name": "Naturis Lab",
+  "sym": "F",
+  "color": "i_green",
+  "see_cost": "high",
+  "flags": ["RISK_HIGH"]
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_nw",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_n",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_ne",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_w",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_e",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_sw",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_s",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_1_se",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_0",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_nw",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_n",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_ne",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_w",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_e",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_sw",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_s",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_2_se",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_0",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_nw",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_n",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_ne",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_w",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_e",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_sw",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_s",
+  "copy-from": "naturis_lab_1_0"
+},
+{
+  "type": "overmap_terrain",
+  "id": "naturis_lab_3_se",
+  "copy-from": "naturis_lab_1_0"
+}
   
   
 ]

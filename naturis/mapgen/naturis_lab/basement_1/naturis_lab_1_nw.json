@@ -1,0 +1,79 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_1_nw"],
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_linoleum_white",
+    "rows": [
+      "||||||||||||||||||||||||",
+      "|?.....|!........|?.....",
+      "|......|.........|......",
+      "|......|.........|......",
+      "|......|.........|......",
+      "|......|.........|......",
+      "|......|.........|......",
+      "||||D|||...;;....|||D|||",
+      "|.~y;;;;;;;;;;;;;;;;;y..",
+      "|.~yyyyyyyy;;y~~~~~~~~~~",
+      "|.~~~~~~~~y;;yyyyyyyyyyy",
+      "|...2....~y;;;;;;;;;;;;;",
+      "|..;;;...~y;;;;;;;;;;;;;",
+      "|..;z;...~y;;yyyyyyyyyyy",
+      "|..;;;...~y;;y~~~~~~~~~~",
+      "|........~y;;y~2........",
+      "|...2....~y;;y~.+.......",
+      "|..;;;...~y;;y~.........",
+      "|..;z;...~y;;y~.........",
+      "|..;;;...~y;;y~.........",
+      "|...2....~y;;y~.........",
+      "|..;;;...~y;;y~.........",
+      "|..;z;...~y;;y~.........",
+      "|..;;;...~y;;y~........."
+    ],
+    "place_fields": [
+      { "field": "fd_leaves", "x": [3, 12], "y": [4, 20], "repeat": [1, 10] }
+    ],
+    "items": {
+      "U": { "item": "cleaning", "chance": 30, "repeat": 3 },
+      "f": { "item": "fast_food", "chance": 30 },
+      "F": { "item": "SUS_fridge", "chance": 30 },
+      "x": { "item": "television", "chance": 100 }
+    },
+    "place_monsters": [
+      { "monster": "GROUP_ZOMBIE", "x": [3, 22], "y": [3, 22], "chance": 60, "repeat": 5 }
+    ],
+    "terrain": {
+      "x": "t_linoleum_white"
+    },
+    "palettes": ["naturis_lab_palette"],
+    "nested": {
+      "?": {
+        "chunks": [
+          ["null", 10],
+          ["naturis_lab_6x6_medical", 30],
+          ["naturis_lab_6x6_clothes", 30],
+          ["naturis_lab_6x6_waiting", 30]
+        ]
+      },
+      "+": {
+        "chunks": [
+          ["null", 10],
+          ["naturis_lab_6x6_topiary", 30],
+          ["naturis_lab_6x6_topiary_2", 30],
+          ["naturis_lab_6x6_topiary_2", 30],
+          ["naturis_lab_6x6_flower", 30]
+        ]
+      },
+      "!": {
+        "chunks": [
+          ["null", 20],
+          ["naturis_lab_6x6_waiting_se", 30],
+          ["naturis_lab_6x6_cleaning_se", 30],
+          ["naturis_lab_6x6_meeting_se", 30],
+          ["naturis_lab_6x6_arcade_se", 30]
+        ]
+      }
+    }
+  }
+}]

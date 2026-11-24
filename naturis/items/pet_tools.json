@@ -34,12 +34,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "heal_pet",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_HEAL_PET_LOW"]
     }
   },
   {
@@ -50,12 +48,10 @@
     "name": { "str": "enhanced pet stimulator" },
     "copy-from": "pet_stimulator",
     "description": "A syringe, prepared with a medicinal liquid. Heals a pet for a random amount.",
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "heal_pet",
-      "no_fail": true,
-      "level": 2
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_HEAL_PET"]
     }
   },
   {
@@ -66,38 +62,10 @@
     "name": { "str": "professional pet stimulator" },
     "copy-from": "pet_stimulator",
     "description": "A syringe, prepared with a medicinal liquid. Heals a pet for a random amount.",
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "heal_pet",
-      "no_fail": true,
-      "level": 3
-    }
-  },
-  {
-    "id": "pet_upgrader",
-    "type": "ITEM",
-    "subtypes": ["TOOL"],
-    "category": "drugs",
-    "name": { "str": "pet upgrader" },
-    "description": "A syringe, prepared with a medicinal liquid. It triggers immediate growth through a cocktail of various agents and enzymes.",
-    "looks_like": "syringe",
-    "weight": "4340 mg",
-    "volume": "10 ml",
-    "longest_side": "10 cm",
-    "to_hit": { "grip": "none", "length": "hand", "surface": "point", "balance": "neutral" },
-    "price_postapoc": "25 cent",
-    "material": ["plastic", "water"],
-    "symbol": ",",
-    "color": "white",
-    "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
-    "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "pet_upgrade",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_HEAL_PET_PROFI"]
     }
   },
   {
@@ -118,12 +86,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "forest_raptor_mutation",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_FOREST_RAPTOR_MUTATION"]
     }
   },
   {
@@ -144,12 +110,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "mutate_praptor_forest",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_MUTATOR_FOREST"]
     }
   },
   {
@@ -170,12 +134,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "mutate_praptor_fire",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_MUTATOR_FIRE"]
     }
   },
   {
@@ -196,12 +158,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "mutate_praptor_crystal",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_MUTATOR_CRYSTAL"]
     }
   },
   {
@@ -222,12 +182,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "mutate_praptor_ice",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_MUTATOR_ICE"]
     }
   },
   {
@@ -248,12 +206,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "mutate_praptor_static",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_MUTATOR_STATIC"]
     }
   },
   {
@@ -261,7 +217,7 @@
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "pet enhancer" },
-    "description": "A syringe, prepared with a mutation liquid. Causes your pet to mutate.",
+    "description": "A syringe, prepared with a mutation liquid. Causes your pet to learn a new ability.",
     "looks_like": "syringe",
     "weight": "4340 mg",
     "volume": "10 ml",
@@ -273,12 +229,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "pet_extra_unlock",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_EXTRA_UNLOCK"]
     }
   },
   {
@@ -286,7 +240,7 @@
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "pet enhancer plus" },
-    "description": "A syringe, prepared with a mutation liquid. Causes your pet to mutate.",
+    "description": "A syringe, prepared with a mutation liquid. Causes your pet to learn a new ability.",
     "looks_like": "syringe",
     "weight": "4340 mg",
     "volume": "10 ml",
@@ -298,12 +252,10 @@
     "color": "white",
     "flags": ["FRAGILE_MELEE", "SINGLE_USE", "MUNDANE"],
     "melee_damage": { "stab": 1 },
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "pet_extra_unlock_2",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Inject the solution",
+      "effect_on_conditions": ["EOC_PET_EXTRA_UNLOCK_2"]
     }
   },
   {
@@ -320,36 +272,32 @@
     "volume": "12 ml",
     "longest_side": "297 mm",
     "flags": ["PAPER_SHAPED", "TINDER"],
-    "use_action":
-    {
-      "type": "cast_spell",
-      "spell_id": "martial_art_pet",
-      "no_fail": true,
-      "level": 1
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Teach martial art",
+      "effect_on_conditions": ["EOC_MARTIAL_ART_PET"]
     }
   },
   {
-  "type": "ITEM",
-  "subtypes": ["BOOKS"],
-  "id": "martial_art_pet_def",
-  "name": { "str": "def pet martial arts" },
-  "description": "A curriculum on how to teach a raptor new defensive combat technique.",
-  "weight": "6 g",
-  "color": "green",
-  "symbol": ",",
-  "price_postapoc": "0 cent",
-  "material": ["paper"],
-  "volume": "12 ml",
-  "longest_side": "297 mm",
-  "flags": ["PAPER_SHAPED", "TINDER"],
-  "use_action":
-  {
-    "type": "cast_spell",
-    "spell_id": "martial_art_pet_def",
-    "no_fail": true,
-    "level": 1
+    "type": "ITEM",
+    "subtypes": ["BOOKS"],
+    "id": "martial_art_pet_def",
+    "name": { "str": "def pet martial arts" },
+    "description": "A curriculum on how to teach a raptor new defensive combat technique.",
+    "weight": "6 g",
+    "color": "green",
+    "symbol": ",",
+    "price_postapoc": "0 cent",
+    "material": ["paper"],
+    "volume": "12 ml",
+    "longest_side": "297 mm",
+    "flags": ["PAPER_SHAPED", "TINDER"],
+    "use_action": {
+      "type": "effect_on_conditions",
+      "menu_text": "Teach martial art",
+      "effect_on_conditions": ["EOC_MARTIAL_ART_PET_DEF"]
+    }
   }
-}
   
   
   

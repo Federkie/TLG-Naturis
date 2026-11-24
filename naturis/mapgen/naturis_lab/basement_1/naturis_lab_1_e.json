@@ -1,0 +1,79 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_1_e"],
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_linoleum_white",
+    "rows": [
+      "|||||||||||##|||||||||||",
+      "?.........|;;y.........|",
+      "..........|;;y..;;;;;..|",
+      "..........|;;y..;~~~;..|",
+      "..........|;;y..;~~~;..|",
+      "..........|;;y2.;~~~;..|",
+      "..........|;;y..;~~~;..|",
+      "..........|;;y..;;;;;..|",
+      "..........|;;y.........|",
+      "|||||D|||||;;y...|||||||",
+      "yyyyy;yyyyy;;yyyy|!!!!!|",
+      ";;;;;;;;;;;;;;;;;D;;;;<|",
+      ";;;;;;;;;;;;;;;;;D;;;;<|",
+      "yyyyyyyyyyy;;yyyy|!!!!!|",
+      "~~~~~~~~~~y;;y~~~|||||||",
+      "......2..~y;;y~.~~~~~~~|",
+      ".]]]]]]].~y;;y~........|",
+      ".]xxxxx].~y;;y~...xxx..|",
+      ".]xx0xx].~y;;y~...x1x..|",
+      ".]xxxxx].~y;;y~..2xxx..|",
+      ".]]]]]]].~y;;y~...x1x..|",
+      ".........~y;;y~...xxx..|",
+      ".........~y;;y~........|",
+      "|||||||||||##|||||||||||"
+    ],
+    "place_fields": [
+      { "field": "fd_leaves", "x": [3, 12], "y": [4, 20], "repeat": [1, 10] }
+    ],
+    "place_monsters": [
+      { "monster": "GROUP_ZOMBIE", "x": [11, 15], "y": [5, 20], "chance": 60, "repeat": 4 },
+      { "monster": "GROUP_PARK_ANIMAL", "x": [4, 19], "y": [5, 20], "repeat": 3 }
+    ],
+    "terrain": {
+      "x": "t_grass"
+    },
+    "furniture": {
+      "0": [
+        ["f_boulder_small", 4],
+        ["f_obelisk", 2],
+        ["f_obelisk_glow", 2],
+        ["f_obelisk_big", 1],
+        ["f_obelisk_big_glow", 1]
+      ],
+      "1": [
+        ["f_topiary_animal", 4],
+        ["f_topiary_dragon", 2],
+        ["f_topiary_abstract", 3]
+      ]
+    },
+    "palettes": ["naturis_lab_palette"],
+    "nested": {
+      "!": {
+        "chunks": [
+          ["null", 40],
+          ["bookshelf_normal_1x1", 30],
+          ["bookshelf_exotic_1x1", 5],
+          ["bookshelf_naturis_1x1", 20],
+          ["bookshelf_naturis_exotic_1x1", 5],
+          ["bookshelf_rare_1x1", 10]
+        ]
+      },
+      "?": {
+        "chunks": [
+          ["null", 10],
+          ["naturis_lab_8x8_chemicals", 30]
+        ]
+      }
+    }
+  }
+}
+]

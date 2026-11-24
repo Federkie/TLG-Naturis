@@ -1,0 +1,148 @@
+[
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_reception_se",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      "CCCCC",
+      "r.h..",
+      "r.2..",
+      "...hf",
+      "F...."
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f": [{ "item": "magazines", "chance": 70, "repeat": [1, 3] }]
+    },
+    "place_items": [
+      { "item": "stand_flyer", "x": 2, "y": 0, "chance": 100 }
+    ],
+    "place_item": [
+      { "item": "laptop", "x": 3, "y": 0, "chance": 70 }
+    ]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_vending_se",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      "Y...3",
+      ".hfh.",
+      ".hfh.",
+      "..2.y",
+      "HHHHH"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f": [{ "item": "magazines", "chance": 70, "repeat": [1, 3] }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_training_corpse",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      ".....",
+      ".....",
+      "..B..",
+      ".....",
+      "....."
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_fields": [
+      { "field": "fd_blood", "x": [1, 5], "y": [1, 5], "repeat": [1, 15] }
+    ],
+    "place_loot": [{ "group": "raptor_trainer_corpse", "x": [1, 5], "y": [1, 5], "chance": 70 }]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_training_blood",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      ".....",
+      "..B..",
+      ".....",
+      ".....",
+      "....."
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_fields": [
+      { "field": "fd_blood", "x": [1, 5], "y": [1, 5], "repeat": [1, 15] }
+    ]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_training_scratch",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      ".x...",
+      "..B..",
+      "...x.",
+      "x....",
+      "....."
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_fields": [
+      { "field": "fd_blood", "x": [1, 5], "y": [1, 5], "repeat": [1, 15] }
+    ],
+    "terrain": {
+      "x": [
+        ["t_scratch_marks_concr", 3],
+        ["t_linoleum_white", 1]
+      ]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_evolution_raptor",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      ".....",
+      ".....",
+      "..B..",
+      ".....",
+      "....."
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_monster": [
+      { "monster": "mon_forest_raptor", "x": [2, 4], "y": [2, 4], "chance": 70 }
+    ]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_5x5_evolution_scratch",
+  "object": {
+    "mapgensize": [5, 5],
+    "rows": [
+      "x....",
+      ".....",
+      "..B.x",
+      ".....",
+      ".x..."
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_fields": [
+      { "field": "fd_blood", "x": [1, 5], "y": [1, 5], "repeat": [1, 15] }
+    ],
+    "terrain": {
+  "x": [
+    ["t_scratch_marks_concr", 1],
+    ["t_strconc_floor", 3]
+  ]
+}
+  }
+}
+  
+]

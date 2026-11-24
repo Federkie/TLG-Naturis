@@ -19,7 +19,6 @@
       }
     }]
   },
-  
   {
     "type": "ter_furn_transform",
     "id": "NATURIS_MONSTER_MARKS_EXAMINED",
@@ -32,7 +31,38 @@
         "t_scratch_marks"
       ]
     }]
-  }
+  },
+  {
+  "type": "effect_on_condition",
+  "id": "EOC_MONSTER_MARKS_CONCR",
+  "effect": [
+  {
+    "math": [
+      "u_proficiency('prof_field_research', 'format': 'percent', 'direct': true) += 8"
+    ]
+  },
+  {
+    "u_message": "You’ll learn a bit more about the creatures that live here!"
+  },
+  {
+    "u_transform_radius": 0,
+    "ter_furn_transform": "NATURIS_MONSTER_MARKS_CONCR_EXAMINED",
+    "target_var": {
+      "context_val": "pos"
+    }
+  }]
+},
+{
+  "type": "ter_furn_transform",
+  "id": "NATURIS_MONSTER_MARKS_CONCR_EXAMINED",
+  "terrain": [
+  {
+    "result": "t_strconc_floor",
+    "valid_terrain": [
+      "t_scratch_marks_concr"
+    ]
+  }]
+}
   
   
   

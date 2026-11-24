@@ -122,6 +122,8 @@ Current features:
 - fire raptor
 - crystal raptor
 - ancient raptor
+- Primus
+- shiny sphere
 
 ## Raptor Mutations
 - ancient thorn raptor
@@ -347,6 +349,10 @@ A large nest belonging to a predator that might still be in the vicinity. Rich i
 Frostbound cavern
 A vast area overgrown with ice, featuring its own unique dangers and resources.
 
+Naturis Lab
+An expansive research facility, disguised as the entrance to a cave. The place where Naturis creatures and anomalies originate.
+With its own lab finale.
+
 
 ## To do: 
 - Improve anomaly
@@ -358,7 +364,6 @@ A vast area overgrown with ice, featuring its own unique dangers and resources.
 - static material line
 - fire material line
 - swamp expansion
-- naturis lab
 
 ## Known Issues
 - Rooted egg has no function.

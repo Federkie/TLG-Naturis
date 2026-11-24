@@ -72,7 +72,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_PET_EXTRA_UNLOCK",
+    "id": "EOC_PET_EXTRA_UNLOCK_SPELL",
     "effect": [
     {
       "u_add_effect": "extra_spell",
@@ -81,7 +81,7 @@
   },
   {
   "type": "effect_on_condition",
-  "id": "EOC_PET_EXTRA_UNLOCK_2",
+  "id": "EOC_PET_EXTRA_UNLOCK_2_SPELL",
   "effect": [
   {
     "u_add_effect": "extra_spell_2",
@@ -103,6 +103,15 @@
     "effect": [
     {
       "u_add_effect": "pet_martial_art_defensive",
+      "duration": "PERMANENT"
+    }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TAMED_LOCKER",
+    "effect": [
+    {
+      "u_add_effect": "tamed_locker",
       "duration": "PERMANENT"
     }]
   }

@@ -6,7 +6,7 @@
     "symbol": "q",
     "color": "red",
     "name": { "str": "static beast sample" },
-    "description": "A sample of a static Naturis monster, ready for further examination.",
+    "description": "A sample of a Naturis monster, ready for further examination.",
     "price_postapoc": "2 USD",
     "material": ["flesh"],
     "flags": ["INEDIBLE"],

@@ -374,4 +374,45 @@
     "duration": "10 minutes",
     "decay_start": "10 minutes"
   }]
-}]
+},
+  {
+  "type": "effect_on_condition",
+  "id": "EOC_RAPTOR_CARE_COMBAT_ENHANCED",
+  "eoc_type": "EVENT",
+  "required_event": "character_melee_attacks_monster",
+  "condition": {
+    "and": [
+      "u_is_avatar",
+      {
+        "math": [ "_hits > 0" ]
+      },
+      {
+        "math": [
+          "u_monsters_nearby('mon_forest_raptor', 'mon_juvenile_forest_raptor', 'mon_hatchling_forest_raptor', 'mon_crystal_raptor', 'mon_ancient_raptor', 'mon_static_raptor', 'mon_ancient_thorn_raptor', 'mon_ancient_striker_raptor', 'mon_ancient_stalker_raptor', 'mon_static_thunder_raptor', 'mon_static_singularity_raptor', 'mon_static_tempest_raptor', 'mon_fire_blaze_raptor', 'mon_fire_obsidian_raptor', 'mon_fire_solaris_raptor', 'mon_ice_zero_raptor', 'mon_ice_frostspike_raptor', 'mon_ice_blizzard_raptor', 'mon_crystal_prism_raptor', 'mon_crystal_resonance_raptor', 'mon_crystal_genesis_raptor', 'mon_ice_raptor', 'mon_fire_raptor', 'radius': 3, 'attitude': 'friendly') > 0"
+        ]
+      },
+      {
+        "not": {
+          "u_has_effect": "effect_raptor_care_cooldown"
+        }
+      }
+    ]
+  },
+  "effect": [
+    {
+      "math": [
+        "u_proficiency('prof_raptor_care_enhaned') += 600"
+      ]
+    },
+    {
+      "u_add_effect": "effect_raptor_care_cooldown",
+      "duration": "2 minutes"
+    },
+    {
+      "u_message": "You and your raptor are learning to fight together."
+    }
+  ]
+}
+  
+  
+]

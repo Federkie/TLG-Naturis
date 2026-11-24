@@ -1,0 +1,678 @@
+ [
+   {
+     "type": "palette",
+     "id": "naturis_lab_palette",
+     "toilets": { "t": {} },
+     "liquids": { "g": { "liquid": "water_clean", "amount": [0, 100] } },
+     "terrain": {
+       ">": "t_stairs_up",
+       "<": "t_stairs_down",
+       ".": "t_linoleum_white",
+       "|": "t_concrete_wall",
+       "#": "t_door_metal_lab_c",
+       ";": "t_carpet_concrete_green",
+       "]": "t_wall_glass",
+       "~": "t_water_pool",
+       ":": "t_ballistic_glass",
+       "=": "t_door_metal_locked",
+       "_": "t_pavement",
+       "*": "t_strconc_floor",
+       "L": "t_thconc_y_olight",
+       "B": "t_strconc_floor_olight",
+       "%": "t_linoleum_gray_floor_olight",
+       "2": "t_linoleum_whitefloor_olight",
+       "D": "t_door_glass_lab_c"
+     },
+     "furniture": {
+       "g": "f_water_heater",
+       "6": "f_console",
+       "j": "f_bench",
+       "o": "f_oven",
+       "d": "f_scan_bed",
+       "W": [
+         ["f_CTscan", 3],
+         ["f_MRI", 3],
+         ["f_xray", 3],
+         ["f_autoclave", 1],
+         ["f_centrifuge", 3]
+       ],
+       "C": "f_counter",
+       "f": "f_table",
+       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "b": "f_bookcase",
+       "w": "f_rack_wood",
+       "T": "f_floor_lamp",
+       "h": "f_chair",
+       "z": "f_birdbath",
+       "p": "f_pinball_machine",
+       "A": "f_arcade_machine",
+       "P": "f_filing_cabinet",
+       "F": "f_fridge",
+       "@": "f_bed",
+       "Z": "f_dresser",
+       "c": [
+         ["f_curtain", 3],
+         ["f_curtain_open", 1]
+       ],
+       "3": "f_vending_c",
+       "Y": "f_trashcan",
+       "H": "f_sofa",
+       "S": "f_sink",
+       "r": "f_desk",
+       "9": "f_shower",
+       "8": "f_cupboard",
+       "4": "f_cupboard",
+       "s": "f_dishwasher",
+       "n": "f_eyewash",
+       "U": "f_utility_shelf"
+     },
+     "items": {
+       "j": [{ "item": "trash", "chance": 20, "repeat": [1, 3] }],
+       "P": [{ "item": "file_room", "chance": 100, "repeat": [3, 4] }, { "item": "low_level_badges_mutagen", "chance": 10 }],
+       "o": [{ "item": "saline_bottle_random", "chance": 100 }],
+       "8": [
+         { "item": "SUS_hair_drawer", "chance": 10 },
+         { "item": "SUS_bathroom_cabinet", "chance": 20 },
+         { "item": "SUS_bathroom_medicine", "chance": 20 },
+         { "item": "harddrugs", "chance": 2 }
+       ],
+       "t": { "item": "shower", "chance": 50 },
+       
+       "@": { "item": "bed", "chance": 30 },
+       "F": { "item": "SUS_fridge", "chance": 50, "repeat": [1, 4] },
+       "S": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "9": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "3": [{ "item": "vending_food", "chance": 70 }, { "item": "vending_drink", "chance": 70 }]
+     }
+   },
+   {
+     "type": "palette",
+     "id": "naturis_lab_security",
+     "terrain": {
+       ";": "t_thconc_floor",
+       "B": "t_strconc_floor_olight",
+       "2": "t_linoleum_gray_floor_olight"
+     },
+     "furniture": {
+       "z": "f_console_broken",
+       "Y": "f_trashcan",
+       "W": [
+         ["f_generator_broken", 6],
+         ["f_portable_generator", 1],
+         ["f_diesel_generator", 1],
+         ["f_military_generator", 1],
+         ["f_gasoline_generator", 1]
+       ],
+       "h": "f_chair",
+       "L": "f_locker",
+       "r": "f_desk",
+       "C": "f_counter",
+       "P": "f_filing_cabinet",
+       "p": "f_pinball_machine",
+       "a": "f_arcade_machine",
+       "U": "f_utility_shelf",
+       "3": "f_vending_c",
+       "4": "f_vending_c"
+     },
+     "items": {
+       "3": { "item": "vending_food", "chance": 90 },
+       "4": { "item": "vending_drink", "chance": 90 },
+       "P": { "item": "lab_files_security", "chance": 50 },
+       "U": [
+         { "item": "home_hw", "chance": 10, "repeat": [1, 2] },
+         { "item": "drugs_emergency", "chance": 30, "repeat": [1, 2] },
+         { "item": "cleaning", "chance": 40, "repeat": [1, 2] }
+       ],
+       "L": [
+         { "item": "clothing_soldier_set_pristine", "chance": 100 },
+         { "item": "gear_soldier_sidearm", "chance": 33 },
+         { "item": "book_military", "chance": 33 }
+       ]
+     }
+   },
+   {
+     "type": "palette",
+     "id": "raptor_lab_palette",
+     "toilets": { "t": {} },
+     "liquids": { "g": { "liquid": "water_clean", "amount": [0, 100] } },
+     "terrain": {
+       ">": "t_stairs_up",
+       "<": "t_stairs_down",
+       "*": "t_linoleum_white",
+       "|": "t_concrete_wall",
+       "'": "t_floor_blue",
+       "/": "t_door_metal_c",
+       "#": "t_door_metal_lab_c",
+       ";": "t_carpet_concrete_green",
+       "]": "t_wall_glass",
+       "~": "t_water_pool",
+       ":": "t_ballistic_glass",
+       "=": "t_door_metal_locked",
+       "_": "t_scratch_marks_concr",
+       ".": "t_strconc_floor",
+       "L": "t_thconc_y_olight",
+       "-": "t_thconc_y",
+       "5": "t_recycler",
+       "l": "t_bars",
+       "(": "t_door_bar_locked",
+       "s": [
+         ["t_vat_raptor", 4],
+         ["t_vat_raptor_destroyed", 1]
+       ],
+       "B": "t_strconc_floor_olight",
+       "2": "t_linoleum_gray_floor_olight",
+       "%": "t_linoleum_whitefloor_olight",
+       "D": "t_door_glass_lab_c"
+     },
+     "furniture": {
+       "g": "f_water_heater",
+       "z": "f_console_broken",
+       "6": "f_console",
+       "1": "f_console",
+       "j": "f_bench",
+       "o": "f_oven",
+       "d": "f_scan_bed",
+       "a": "f_sample_freezer",
+       "q": [
+         ["f_crate_c", 1],
+         ["f_crate_o", 1]
+       ],
+       "G": [
+         ["f_generator_broken", 6],
+         ["f_portable_generator", 1],
+         ["f_diesel_generator", 1],
+         ["f_military_generator", 1],
+         ["f_gasoline_generator", 1]
+       ],
+       "W": [
+         ["f_CTscan", 3],
+         ["f_MRI", 3],
+         ["f_xray", 3],
+         ["f_autoclave", 1],
+         ["f_centrifuge", 3]
+       ],
+       "C": "f_counter",
+       "f": "f_table",
+       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "b": "f_bookcase",
+       "w": "f_locker",
+       "h": "f_chair",
+       "p": "f_centrifuge",
+       "A": "f_shaker",
+       "u": "f_autodoc",
+       "R": "f_autodoc_couch",
+       "P": "f_filing_cabinet",
+       "F": "f_fridge",
+       "@": "f_bed",
+       "Z": "f_dresser",
+       "c": [
+         ["f_curtain", 3],
+         ["f_curtain_open", 1]
+       ],
+       "3": "f_vending_c",
+       "Y": "f_trashcan",
+       "v": "f_IV_pole",
+       "H": "f_vent_cold_air2_blast",
+       "S": "f_sink",
+       "r": "f_desk",
+       "9": "f_shower",
+       "8": "f_cupboard",
+       "4": "f_vent_hot_air2_blast",
+       "n": "f_eyewash",
+       "U": "f_utility_shelf"
+     },
+     "items": {
+       "j": [{ "item": "trash", "chance": 20, "repeat": [1, 3] }],
+       "P": [{ "item": "file_room", "chance": 100, "repeat": [3, 4] }],
+       "v": [{ "item": "saline_bottle_random", "chance": 100 }],
+       "8": [
+         { "item": "SUS_hair_drawer", "chance": 10 },
+         { "item": "SUS_bathroom_cabinet", "chance": 20 },
+         { "item": "SUS_bathroom_medicine", "chance": 20 },
+         { "item": "harddrugs", "chance": 2 }
+       ],
+       "t": { "item": "shower", "chance": 50 },
+       
+       "@": { "item": "bed", "chance": 30 },
+       "S": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "9": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "3": [{ "item": "vending_food", "chance": 70 }, { "item": "vending_drink", "chance": 70 }]
+     }
+   },
+   {
+     "type": "palette",
+     "id": "naturis_ice_lab_palette",
+     "toilets": { "t": {} },
+     "liquids": { "g": { "liquid": "water_clean", "amount": [0, 100] } },
+     "terrain": {
+       ">": "t_stairs_up",
+       "<": "t_stairs_down",
+       "*": "t_dirt_rocky",
+       "|": "t_concrete_wall",
+       "'": "t_floor_blue",
+       "#": "t_door_metal_lab_c",
+       "]": "t_wall_glass",
+       "~": "t_naturis_cold_stone",
+       ":": "t_ballistic_glass",
+       ".": "t_strconc_floor",
+       "L": "t_thconc_y_olight",
+       "-": "t_thconc_y",
+       "=": "t_ice_dp_thin",
+       "_": "t_ice_pillar_large",
+       ";": "t_ice_perma",
+       "6": "t_dirt_rocky",
+       "/": [
+         ["t_tree_ice", 2],
+         ["t_ice_pillar_large", 2],
+         ["t_dirt_rocky", 2]
+       ],
+       "q": [
+         ["t_ice_flowers", 1],
+         ["t_ice_flowers_harvested", 2]
+       ],
+       "s": [
+         ["t_ice_sh_thick", 1],
+         ["t_sand", 12],
+         ["t_dirt_rocky", 2]
+       ],
+       "B": "t_strconc_floor_olight",
+       "2": "t_linoleum_gray_floor_olight",
+       "%": "t_linoleum_whitefloor_olight",
+       "D": "t_door_glass_lab_c"
+     },
+     "furniture": {
+       "g": "f_water_heater",
+       "z": "f_console_broken",
+       "j": "f_bench",
+       "o": "f_oven",
+       "d": "f_scan_bed",
+       "a": "f_sample_freezer",
+       "W": [
+         ["f_CTscan", 3],
+         ["f_MRI", 3],
+         ["f_xray", 3],
+         ["f_autoclave", 1],
+         ["f_centrifuge", 3]
+       ],
+       "C": "f_counter",
+       "f": "f_table",
+       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "b": "f_bookcase",
+       "w": "f_locker",
+       "h": "f_chair",
+       "p": "f_centrifuge",
+       "A": "f_shaker",
+       "u": "f_autodoc",
+       "R": "f_autodoc_couch",
+       "P": "f_filing_cabinet",
+       "F": "f_fridge",
+       "@": "f_bed",
+       "Z": "f_dresser",
+       "c": [
+         ["f_curtain", 3],
+         ["f_curtain_open", 1]
+       ],
+       "3": "f_vending_c",
+       "Y": "f_trashcan",
+       "v": "f_IV_pole",
+       "H": "f_vent_cold_air2_blast",
+       "S": "f_sink",
+       "r": "f_desk",
+       "9": "f_shower",
+       "8": "f_cupboard",
+       "4": "f_vent_hot_air2_blast",
+       "n": "f_eyewash",
+       "U": "f_utility_shelf"
+     },
+     "items": {
+       "j": [{ "item": "trash", "chance": 20, "repeat": [1, 3] }],
+       "P": [{ "item": "file_room", "chance": 100, "repeat": [3, 4] }],
+       "v": [{ "item": "saline_bottle_random", "chance": 100 }],
+       "8": [
+         { "item": "SUS_hair_drawer", "chance": 10 },
+         { "item": "SUS_bathroom_cabinet", "chance": 20 },
+         { "item": "SUS_bathroom_medicine", "chance": 20 },
+         { "item": "harddrugs", "chance": 2 }
+       ],
+       "t": { "item": "SUS_toilet", "chance": 50 },
+       
+       "@": { "item": "bed", "chance": 30 },
+       "F": { "item": "vending_food", "chance": 50, "repeat": [1, 4] },
+       "S": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "9": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "3": [{ "item": "vending_food", "chance": 70 }, { "item": "vending_drink", "chance": 70 }]
+     }
+   },
+   {
+     "type": "palette",
+     "id": "naturis_crystal_lab_palette",
+     "toilets": { "t": {} },
+     "liquids": { "g": { "liquid": "water_clean", "amount": [0, 100] } },
+     "terrain": {
+       ">": "t_stairs_up",
+       "<": "t_stairs_down",
+       "*": "t_rock",
+       "|": "t_concrete_wall",
+       "'": "t_floor_blue",
+       "#": "t_door_metal_lab_c",
+       "]": "t_wall_glass",
+       "~": "t_water_sh",
+       ":": "t_ballistic_glass",
+       ".": "t_strconc_floor",
+       "L": "t_thconc_y_olight",
+       "-": "t_thconc_y",
+       "=": "t_sand",
+       "_": "t_beehive_crystal",
+       "6": "t_dirt_rocky",
+       "/": [
+         ["t_tree_crystal", 1],
+         ["t_dirt_rocky", 10],
+         ["t_dirt_crystal", 3],
+         ["t_dirt", 15]
+       ],
+       "q": [
+         ["t_dirt_crystal", 15],
+         ["t_tree_crystal", 3],
+         ["t_crystal_pillar_large", 1]
+       ],
+       "s": [
+         ["t_ice_sh_thick", 1],
+         ["t_sand", 12],
+         ["t_dirt_rocky", 2]
+       ],
+       "B": "t_strconc_floor_olight",
+       "2": "t_linoleum_gray_floor_olight",
+       "%": "t_linoleum_whitefloor_olight",
+       "D": "t_door_glass_lab_c"
+     },
+     "furniture": {
+       "g": "f_water_heater",
+       "z": "f_console_broken",
+       "j": "f_bench",
+       "o": "f_oven",
+       "d": "f_scan_bed",
+       "a": "f_sample_freezer",
+       "W": [
+         ["f_CTscan", 3],
+         ["f_MRI", 3],
+         ["f_xray", 3],
+         ["f_autoclave", 1],
+         ["f_centrifuge", 3]
+       ],
+       "C": "f_counter",
+       "f": "f_table",
+       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "b": "f_bookcase",
+       "w": "f_locker",
+       "h": "f_chair",
+       "p": "f_centrifuge",
+       "A": "f_shaker",
+       "u": "f_autodoc",
+       "R": "f_autodoc_couch",
+       "P": "f_filing_cabinet",
+       "F": "f_fridge",
+       "@": "f_bed",
+       "Z": "f_dresser",
+       "c": [
+         ["f_curtain", 3],
+         ["f_curtain_open", 1]
+       ],
+       "3": "f_vending_c",
+       "Y": "f_trashcan",
+       "v": "f_IV_pole",
+       "H": "f_vent_cold_air2_blast",
+       "S": "f_sink",
+       "r": "f_desk",
+       "9": "f_shower",
+       "8": "f_cupboard",
+       "4": "f_vent_hot_air2_blast",
+       "n": "f_eyewash",
+       "U": "f_utility_shelf"
+     },
+     "items": {
+       "j": [{ "item": "trash", "chance": 20, "repeat": [1, 3] }],
+       "P": [{ "item": "file_room", "chance": 100, "repeat": [3, 4] }],
+       "v": [{ "item": "saline_bottle_random", "chance": 100 }],
+       "8": [
+         { "item": "SUS_hair_drawer", "chance": 10 },
+         { "item": "SUS_bathroom_cabinet", "chance": 20 },
+         { "item": "SUS_bathroom_medicine", "chance": 20 },
+         { "item": "harddrugs", "chance": 2 }
+       ],
+       "t": { "item": "SUS_toilet", "chance": 50 },
+       
+       "@": { "item": "bed", "chance": 30 },
+       "F": { "item": "vending_food", "chance": 50, "repeat": [1, 4] },
+       "S": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "9": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "3": [{ "item": "vending_food", "chance": 70 }, { "item": "vending_drink", "chance": 70 }]
+     }
+   },
+   {
+     "type": "palette",
+     "id": "naturis_forest_lab_palette",
+     "toilets": { "t": {} },
+     "liquids": { "g": { "liquid": "water_clean", "amount": [0, 100] } },
+     "terrain": {
+       ">": "t_stairs_up",
+       "<": "t_stairs_down",
+       "*": "t_water_sh",
+       "|": "t_concrete_wall",
+       "'": [
+         ["t_grass", 3],
+         ["t_grass_dead", 1],
+         ["t_grass_long", 1]
+       ],
+       "#": "t_door_metal_lab_c",
+       "]": "t_wall_glass",
+       "~": "t_water_sh",
+       ":": "t_ballistic_glass",
+       ".": "t_strconc_floor",
+       "L": [
+         ["t_growing_dog", 1],
+         ["t_fungal_deposit", 1],
+         ["t_pink_flowers", 2]
+       ],
+       "-": "t_thconc_y",
+       "^": [
+         ["t_underbrush", 2],
+         ["t_shrub", 2],
+         ["t_moss", 2],
+         ["t_fern", 1]
+       ],
+       "_": "t_tree_beech",
+       ";": [
+         ["t_m_mushroom", 3],
+         ["t_m_mushroom_harvested", 1]
+       ],
+       "6": "t_dirt_rocky",
+       "/": [
+         ["t_tree_young", 3],
+         ["t_trunk", 2],
+         ["t_tree_beech", 1],
+         ["t_dirtmound", 2]
+       ],
+       "q": [
+         ["t_pink_flowers", 1],
+         ["t_pink_flowers_harvested", 2]
+       ],
+       "B": "t_strconc_floor_olight",
+       "2": "t_linoleum_gray_floor_olight",
+       "%": "t_linoleum_whitefloor_olight",
+       "D": "t_door_glass_lab_c"
+     },
+     "furniture": {
+       "x": [
+         ["f_boulder_small", 4],
+         ["f_obelisk", 2],
+         ["f_natur_root", 3],
+         ["f_obelisk_glow", 2],
+         ["f_obelisk_big", 1],
+         ["f_obelisk_big_glow", 1]
+       ],
+       "z": "f_console_broken",
+       "j": "f_bench",
+       "o": "f_oven",
+       "d": "f_scan_bed",
+       "a": "f_sample_freezer",
+       "W": [
+         ["f_CTscan", 3],
+         ["f_MRI", 3],
+         ["f_xray", 3],
+         ["f_autoclave", 1],
+         ["f_centrifuge", 3]
+       ],
+       "C": "f_counter",
+       "f": "f_table",
+       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "b": "f_bookcase",
+       "w": "f_locker",
+       "h": "f_chair",
+       "p": "f_centrifuge",
+       "A": "f_shaker",
+       "u": "f_autodoc",
+       "R": "f_autodoc_couch",
+       "P": "f_filing_cabinet",
+       "F": "f_fridge",
+       "@": "f_bed",
+       "Z": "f_dresser",
+       "c": [
+         ["f_curtain", 3],
+         ["f_curtain_open", 1]
+       ],
+       "3": "f_vending_c",
+       "Y": "f_trashcan",
+       "v": "f_IV_pole",
+       "H": "f_vent_cold_air2_blast",
+       "S": "f_sink",
+       "r": "f_desk",
+       "9": "f_shower",
+       "8": "f_cupboard",
+       "4": "f_vent_hot_air2_blast",
+       "n": "f_eyewash",
+       "U": "f_utility_shelf"
+     },
+     "items": {
+       "j": [{ "item": "trash", "chance": 20, "repeat": [1, 3] }],
+       "P": [{ "item": "file_room", "chance": 100, "repeat": [3, 4] }],
+       "v": [{ "item": "saline_bottle_random", "chance": 100 }],
+       "8": [
+         { "item": "SUS_hair_drawer", "chance": 10 },
+         { "item": "SUS_bathroom_cabinet", "chance": 20 },
+         { "item": "SUS_bathroom_medicine", "chance": 20 },
+         { "item": "harddrugs", "chance": 2 }
+       ],
+       "t": { "item": "SUS_toilet", "chance": 50 },
+       
+       "@": { "item": "bed", "chance": 30 },
+       "F": { "item": "vending_food", "chance": 50, "repeat": [1, 4] },
+       "S": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "9": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "3": [{ "item": "vending_food", "chance": 70 }, { "item": "vending_drink", "chance": 70 }]
+     }
+   },
+   {
+     "type": "palette",
+     "id": "naturis_fire_lab_palette",
+     "toilets": { "t": {} },
+     "liquids": { "g": { "liquid": "water_clean", "amount": [0, 100] } },
+     "terrain": {
+       ">": "t_stairs_up",
+       "<": "t_stairs_down",
+       "*": "t_dirt_rocky",
+       "|": "t_concrete_wall",
+       "'": "t_floor_blue",
+       "#": "t_door_metal_lab_c",
+       "]": "t_wall_glass",
+       "~": "t_naturis_hot_stone",
+       ":": "t_ballistic_glass",
+       ".": "t_strconc_floor",
+       "L": "t_thconc_y_olight",
+       "-": "t_thconc_y",
+       "=": "t_ice_dp_thin",
+       "_": "t_dirt_rocky",
+       ";": "t_sand",
+       "6": "t_dirt_rocky",
+       "/": "t_tree_burned",
+       "q": [
+         ["t_lava", 1],
+         ["t_rock", 12],
+         ["t_dirt_rocky", 2]
+       ],
+       "s": [
+         ["t_ice_sh_thick", 1],
+         ["t_sand", 12],
+         ["t_dirt_rocky", 2]
+       ],
+       "B": "t_strconc_floor_olight",
+       "2": "t_linoleum_gray_floor_olight",
+       "%": "t_linoleum_whitefloor_olight",
+       "D": "t_door_glass_lab_c"
+     },
+     "furniture": {
+       "g": "f_water_heater",
+       "z": "f_console_broken",
+       "j": "f_bench",
+       "o": "f_oven",
+       "d": "f_scan_bed",
+       "a": "f_sample_freezer",
+       "W": [
+         ["f_CTscan", 3],
+         ["f_MRI", 3],
+         ["f_xray", 3],
+         ["f_autoclave", 1],
+         ["f_centrifuge", 3]
+       ],
+       "C": "f_counter",
+       "f": "f_table",
+       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "b": "f_bookcase",
+       "w": "f_locker",
+       "h": "f_chair",
+       "p": "f_centrifuge",
+       "A": "f_shaker",
+       "u": "f_autodoc",
+       "R": "f_autodoc_couch",
+       "P": "f_filing_cabinet",
+       "F": "f_fridge",
+       "@": "f_bed",
+       "Z": "f_dresser",
+       "c": [
+         ["f_curtain", 3],
+         ["f_curtain_open", 1]
+       ],
+       "3": "f_vending_c",
+       "Y": "f_trashcan",
+       "v": "f_IV_pole",
+       "H": "f_vent_cold_air2_blast",
+       "S": "f_sink",
+       "r": "f_desk",
+       "9": "f_shower",
+       "8": "f_cupboard",
+       "4": "f_vent_hot_air2_blast",
+       "n": "f_eyewash",
+       "U": "f_utility_shelf"
+     },
+     "items": {
+       "j": [{ "item": "trash", "chance": 20, "repeat": [1, 3] }],
+       "P": [{ "item": "file_room", "chance": 100, "repeat": [3, 4] }],
+       "v": [{ "item": "saline_bottle_random", "chance": 100 }],
+       "8": [
+         { "item": "SUS_hair_drawer", "chance": 10 },
+         { "item": "SUS_bathroom_cabinet", "chance": 20 },
+         { "item": "SUS_bathroom_medicine", "chance": 20 },
+         { "item": "harddrugs", "chance": 2 }
+       ],
+       "t": { "item": "SUS_toilet", "chance": 50 },
+       
+       "@": { "item": "bed", "chance": 30 },
+       "F": { "item": "vending_food", "chance": 50, "repeat": [1, 4] },
+       "S": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "9": { "item": "SUS_toilet", "chance": 50, "repeat": [1, 4] },
+       "3": [{ "item": "vending_food", "chance": 70 }, { "item": "vending_drink", "chance": 70 }]
+     }
+   }
+   
+   
+   
+ ]

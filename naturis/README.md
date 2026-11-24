@@ -7,11 +7,17 @@ Naturis adds a range of creatures and gives players new reasons to explore the w
 ### What this mod adds
 
 - **New creatures:** A variety of new creatures, each with their own traits and abilities. Many of them have several states that can be triggered.
+
 - **A living ecosystem:** Creatures can hunt, feed, defend themselves, lay eggs, and compete with other species.
+
 - **Hunting and tracking:** Find monster habitats, investigate nests, and take on hunting missions. However, the goal is not a quest system. The player must decide for themselves what to hunt and why.
+
 - **Research:** Collect samples and remains to learn more about creatures and unlock new crafting options.
+
 - **Crafting:** Use monster materials alongside existing items and resources to make weapons, equipment, tools, and other useful gear.
+
 - **New places to explore:** Discover abandoned hunting sites, overgrown structures, nests, and unusual natural formations.
+Right up to an independent laboratory.
 
 - **Pets:** Hatch raptors, raise them, and have them fight by your side. They provide the player with various bonuses, can learn new abilities, and feature their own unique mutations.
 
@@ -26,8 +32,6 @@ Rather than existing alongside the main game, naturis is intended to integrate s
 ## Planned feautures
 - static and fire locations
 - monster evolutions
-- naturis lab
-- naturis lore
 
 ## Installation Instructions
 1. Download the src code in the latest mod release

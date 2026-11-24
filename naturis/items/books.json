@@ -179,5 +179,22 @@
   "time": "55 m",
   "read_skill": "research",
   "read_fun": -2
+},
+{
+  "type": "ITEM",
+  "subtypes": ["BOOK"],
+  "id": "book_raptor",
+  "copy-from": "monster_hunter",
+  "name": {
+    "str": "Raptor Taming Notes",
+    "str_pl": "copies of Raptor Taming Notes"
+  },
+  "description": ".",
+  "required_level": 0,
+  "max_level": 3,
+  "intelligence": 7,
+  "time": "40 m",
+  "read_skill": "research",
+  "read_fun": -2
 }
 ]

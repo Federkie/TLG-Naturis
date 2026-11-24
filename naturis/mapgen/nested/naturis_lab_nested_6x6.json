@@ -1,0 +1,289 @@
+[
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_arcade_se",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      ".A..p|",
+      ".....]",
+      "hh...D",
+      "ffh..]",
+      "ffh.T|",
+      "..2..|"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f": { "item": "fast_food", "chance": 30 }
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_meeting_se",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "Fhhh.|",
+      "hfff.]",
+      "hf2..D",
+      "hfff.]",
+      ".hhh.|",
+      ".....|"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f": { "item": "fast_food", "chance": 30 }
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_cleaning_se",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "USnSU|",
+      ".....]",
+      "ff...D",
+      "ff2..]",
+      ".....|",
+      "jjjj.|"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "U": [{ "item": "cleaning", "chance": 70, "repeat": [1, 3] }],
+      "f": { "item": "fast_food", "chance": 30 },
+      "S": [{ "item": "SUS_bathroom_cabinet", "chance": 50, "repeat": [1, 2] }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_waiting_se",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "Fhhhy|",
+      "h...y]",
+      "h.f..D",
+      "h.2..]",
+      "h....|",
+      "yhh..|"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f": [{ "item": "magazines", "chance": 70, "repeat": [1, 3] }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_medical",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "SU.ccc",
+      "..ddWc",
+      "...2.c",
+      "..hf.c",
+      "f.cccc",
+      "......"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "place_monsters": [{ "monster": "GROUP_HOSPITAL", "x": [2, 4], "y": [2, 4], "density": 0.1 }],
+    "items": {
+      "U": [{ "item": "drugs_emergency", "chance": 70, "repeat": [1, 3] }],
+      "f": { "item": "gear_medical", "chance": 30, "repeat": [1, 5] },
+      "S": [{ "item": "SUS_bathroom_cabinet", "chance": 50, "repeat": [1, 2] }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_clothes",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "UUUUUU",
+      "..22..",
+      "UU..UU",
+      "..22..",
+      "UU..UU",
+      "......"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "U": [{ "item": "NC_DOCTOR_coat", "chance": 70, "repeat": [1, 3] }, { "item": "NC_DOCTOR_misc", "chance": 70, "repeat": [1, 3] }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_topiary",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "xxxxxx",
+      "x1xx1x",
+      "xxxxxx",
+      "x1xx1x",
+      "xxxxxx",
+      "......"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    
+    "terrain": {
+      "x": "t_grass",
+      "1": "t_grass"
+    },
+    "furniture": {
+      "1": [
+        ["f_topiary_animal", 4],
+        ["f_topiary_dragon", 2],
+        ["f_topiary_abstract", 3]
+      ]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_topiary_2",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "xxxxxx",
+      "xx11xx",
+      "x1xx1x",
+      "xx11xx",
+      "xxxxxx",
+      "......"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    
+    "terrain": {
+      "x": "t_grass",
+      "1": "t_grass"
+    },
+    "furniture": {
+      "1": [
+        ["f_topiary_animal", 4],
+        ["f_topiary_dragon", 2],
+        ["f_topiary_abstract", 3]
+      ]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_flower",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "0llll0",
+      "lxxxxl",
+      "lxxxxl",
+      "lxxxxl",
+      "0llll0",
+      "......"
+    ],
+    "palettes": ["naturis_lab_palette"],
+    
+    "terrain": {
+      "l": "t_pink_flowers",
+      "x": "t_pink_flowers"
+    },
+    "furniture": {
+      "0": [
+        ["f_boulder_small", 4],
+        ["f_obelisk", 2],
+        ["f_obelisk_glow", 2],
+        ["f_obelisk_big", 1],
+        ["f_obelisk_big_glow", 1]
+      ]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_waiting",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "yh..hy",
+      "h....h",
+      "h.ff.h",
+      "h..2.h",
+      "yh..hy",
+      "Y....."
+    ],
+    "palettes": ["naturis_lab_palette"],
+    "items": {
+      "f": [{ "item": "magazines", "chance": 70, "repeat": [1, 3] }]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_storage",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "qq..qq",
+      "......",
+      "qq..qq",
+      "......",
+      "qq..qq",
+      "...B.."
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "items": {
+      "q": [
+        { "item": "raptor_hatching_tools", "chance": 30 },
+        { "item": "supplies_samples_lab", "chance": 40 },
+        { "item": "tools_science", "chance": 40 },
+        { "item": "science", "chance": 30 },
+        { "item": "raptor_hatching_samples_pres", "chance": 20 },
+        { "item": "cleaning", "chance": 40, "repeat": [1, 3] }
+      ]
+    }
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_server",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "zz.Bzz",
+      "......",
+      "zzB.zz",
+      "......",
+      "zz..zz",
+      "...B.."
+    ],
+    "palettes": ["raptor_lab_palette"]
+  }
+},
+{
+  "type": "mapgen",
+  "nested_mapgen_id": "naturis_lab_6x6_medical_02",
+  "object": {
+    "mapgensize": [6, 6],
+    "rows": [
+      "SU.ccc",
+      "..ddWc",
+      "...2.c",
+      "..hf.c",
+      "f.cccc",
+      "......"
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "place_monsters": [{ "monster": "GROUP_HOSPITAL", "x": [2, 4], "y": [2, 4], "density": 0.1 }],
+    "items": {
+      "U": [{ "item": "drugs_emergency", "chance": 70, "repeat": [1, 3] }],
+      "f": { "item": "gear_medical", "chance": 30, "repeat": [1, 5] },
+      "S": [{ "item": "SUS_bathroom_cabinet", "chance": 50, "repeat": [1, 2] }]
+    }
+  }
+}]

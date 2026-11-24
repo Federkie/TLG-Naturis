@@ -1,28 +1,30 @@
 [
-{
+  {
     "id": "monster_weapons",
     "type": "item_group",
     "items": [
-      [ "f_rifle", 1 ],
-      [ "disk_cutting", 5 ],
-      [ "fa_r_heat", 2 ],
-      [ "fa_r_leaves", 3 ],
-      [ "gravity_gun", 1 ],
-      [ "disk_crossbow",1 ],
-      [ "disk_static", 3],
-      [ "arrow_wood_crystal", 4],
-      [ "sword_rooted", 1],
-      [ "permafrost_cleaver", 1],
-      [ "regenerating_staff", 3],
-      [ "staff_claw", 1],
-      [ "sword_static", 1],
-      [ "rapid_epee", 1],
-      [ "crystal_ax", 2],
-      [ "claw_knife", 3],
-      [ "knife_forest", 1]
+      { "item": "f_rifle", "prob": 4, "charges": [0, 20] },
+      { "item": "disk_cutting", "prob": 5, "count": [1, 10] },
+      { "item": "fa_r_heat", "prob": 3, "count": [1, 10] },
+      { "item": "fa_r_leaves", "prob": 3, "count": [1, 10] },
+      { "item": "gravity_gun", "prob": 1, "charges": [0, 20] },
+      ["disk_crossbow", 1],
+      { "item": "disk_static", "prob": 3, "count": [1, 10] },
+      { "item": "fa_mag", "prob": 1, "charges": [0, 30] },
+      { "item": "fa_mag", "prob": 4 },
+      ["arrow_wood_crystal", 4],
+      ["sword_rooted", 1],
+      ["permafrost_cleaver", 1],
+      ["regenerating_staff", 3],
+      ["staff_claw", 1],
+      ["sword_static", 1],
+      ["rapid_epee", 1],
+      ["crystal_ax", 2],
+      ["claw_knife", 3],
+      ["knife_forest", 1]
     ]
   }
-
+  
   
   
   

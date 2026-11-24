@@ -1,0 +1,79 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_3_ne"],
+  "//": "Storage area.",
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_strconc_floor",
+    "rows": [
+      "||||||||||||||||||||||||",
+      ".?.......|....|?.......|",
+      ".........|.BB.|........|",
+      ".........|....|........|",
+      ".........|....|........|",
+      ".........#....#........|",
+      ".........|....|........|",
+      ".........||..||........|",
+      "..........|..|.........|",
+      "..........|..|.........|",
+      "|||||||||||..|||||||||||",
+      "-......................|",
+      "-......................|",
+      "lllllllllll(lllllllllll|",
+      ".UUUUUUU.......!!!!!!!!|",
+      ".......................|",
+      ".UUUUUUU.......!!!!!!!!|",
+      ".......................|",
+      ".UUUUUUU...B...!!!!!!!!|",
+      ".......................|",
+      ".UUUUUUU.......!!!!!!!!|",
+      ".......................|",
+      ".UUUUUUU.......!!!!!!!!|",
+      ".......................|"
+    ],
+    "place_fields": [
+      { "field": "fd_blood", "x": [3, 12], "y": [4, 18], "repeat": [1, 10] }
+    ],
+    "set": [{ "point": "bash", "x": [3, 20], "y": [3, 20], "repeat": [5, 20] }],
+    "items": {
+      "U": [{ "item": "NC_DOCTOR_coat", "chance": 70, "repeat": [1, 3] },
+        { "item": "NC_DOCTOR_misc", "chance": 70, "repeat": [1, 3] },
+        { "item": "raptor_hatching_tools", "chance": 50, "repeat": [1, 3] },
+        { "item": "tools_science", "chance": 50, "repeat": [1, 3] },
+        { "item": "science", "chance": 50, "repeat": [1, 3] },
+        { "item": "raptor_hatching_samples_pres", "chance": 40, "repeat": [1, 3] },
+        { "item": "cleaning", "chance": 70, "repeat": [1, 3] },
+        { "item": "lab_files_biology", "chance": 60, "repeat": [1, 3] },
+        { "item": "supplies_samples_lab", "chance": 30, "repeat": [1, 3] },
+        { "item": "monparts", "chance": 40, "repeat": [1, 3] },
+        { "item": "raptor_emergency", "chance": 50, "repeat": [1, 3] },
+        { "item": "raptor_evolution_tools", "chance": 30, "repeat": [1, 3] }
+      ]
+    },
+    "place_monster": [
+      { "group": "GROUP_LAB", "x": [3, 15], "y": [3, 15], "chance": 70, "repeat": 6 },
+      { "group": "GROUP_LAB_BASIC_SECURITY", "x": [18, 22], "y": [18, 23], "chance": 50, "repeat": 5 }
+    ],
+    "palettes": ["raptor_lab_palette"],
+    "nested": {
+      "?": {
+        "chunks": [
+          ["null", 10],
+          ["naturis_lab_8x8_chemicals", 30],
+          ["naturis_lab_8x8_burn", 30]
+        ]
+      },
+      "!": {
+        "chunks": [
+          ["null", 40],
+          ["bookshelf_normal_1x1", 20],
+          ["bookshelf_exotic_1x1", 10],
+          ["bookshelf_naturis_1x1", 30],
+          ["bookshelf_naturis_exotic_1x1", 10],
+          ["bookshelf_rare_1x1", 20]
+        ]
+      }
+    }
+  }
+}]

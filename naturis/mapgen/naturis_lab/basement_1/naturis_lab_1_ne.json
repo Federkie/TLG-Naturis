@@ -1,0 +1,67 @@
+[
+{
+  "type": "mapgen",
+  "om_terrain": ["naturis_lab_1_ne"],
+  "weight": 150,
+  "object": {
+    "fill_ter": "t_linoleum_white",
+    "rows": [
+      "||||||||||||||||||||||||",
+      "?..............?.......|",
+      "...........2...........|",
+      "........;;;;;;;........|",
+      ".......................|",
+      ".......................|",
+      "...........2...........|",
+      ".......................|",
+      ".......................|",
+      "~~~y;;y~~~~~~~~........|",
+      "yyyy;;yyyyyyyy~........|",
+      ";;;;;;;;;;;;;y~........|",
+      ";;;;;;;;;;;;;y~........|",
+      "yyyyyyyyyyy;;y~xxxxxxx.|",
+      "~~~~~~~~~~y;;y~x;;;;;x.|",
+      "....2....~y;;y~x;jjj;x2|",
+      ".]]]]]]].~y;;y~~;j;j;x.|",
+      ".]vvvvv].~y;;;;;;j;j;x.|",
+      ".]vv0vv].~y;;y~~;j;j;x.|",
+      ".]vvvvv].~y;;y~x;j;j;x.|",
+      ".]]]]]]].~y;;y~x;jjj;x.|",
+      ".........~y;;y~x;;;;;x2|",
+      "...2.....~y;;y~xxxxxxx.|",
+      ".........~y;;y~........|"
+    ],
+    "place_fields": [
+      { "field": "fd_leaves", "x": [3, 12], "y": [4, 20], "repeat": [1, 10] }
+    ],
+    "items": {
+      "j": { "item": "vending_drink", "chance": 30 }
+    },
+    "place_monsters": [
+      { "monster": "GROUP_ZOMBIE", "x": [11, 15], "y": [5, 20], "chance": 60, "repeat": 3 },
+      { "monster": "GROUP_PARK_ANIMAL", "x": [4, 19], "y": [5, 20], "repeat": 2 }
+    ],
+    "terrain": {
+      "x": "t_grass",
+      "v": "t_m_mushroom"
+    },
+    "furniture": {
+      "0": [
+        ["f_boulder_small", 4],
+        ["f_obelisk", 2],
+        ["f_obelisk_glow", 2],
+        ["f_obelisk_big", 1],
+        ["f_obelisk_big_glow", 1]
+      ]
+    },
+    "palettes": ["naturis_lab_palette"],
+    "nested": {
+      "?": {
+        "chunks": [
+          ["naturis_lab_8x8_golf", 30],
+          ["naturis_lab_8x8_meditation", 30]
+        ]
+      }
+    }
+  }
+}]

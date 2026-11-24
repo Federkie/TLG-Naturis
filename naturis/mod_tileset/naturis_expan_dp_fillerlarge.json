@@ -20,7 +20,8 @@
       { "id": "mon_crystal_walker", "fg": 14, "rotates": false, "bg": 12 },
       { "id": "mon_crystal_walker_calf", "fg": 15, "rotates": false, "bg": 12 },
       { "id": "mon_crystal_seeder", "fg": 16, "rotates": false, "bg": 12 },
-      { "id": "mon_ice_shadow", "fg": 17, "rotates": false, "bg": 12 }
+      { "id": "mon_ice_shadow", "fg": 17, "rotates": false, "bg": 12 },
+      { "id": "mon_primus", "fg": 19, "rotates": false, "bg": 12 }
       
       
       
