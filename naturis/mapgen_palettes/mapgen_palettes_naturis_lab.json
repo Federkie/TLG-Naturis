@@ -193,7 +193,7 @@
        ],
        "C": "f_counter",
        "f": "f_table",
-       "y": ["f_indoor_plant", "f_indoor_plant_y"],
+       "X": "f_sign_warning",
        "b": "f_bookcase",
        "w": "f_locker",
        "h": "f_chair",

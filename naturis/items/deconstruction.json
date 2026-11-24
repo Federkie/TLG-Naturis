@@ -158,7 +158,35 @@
         ["shard_crystal", 2]
       ]
     ]
-  }
+  },
+  {
+  "result": "crystal_chunk",
+  "type": "uncraft",
+  "activity_level": "LIGHT_EXERCISE",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "30 s",
+  "qualities": [{ "id": "HAMMER", "level": 2 }],
+  "components": [
+    [
+      ["shard_crystal", 8]
+    ]
+  ]
+},
+{
+  "result": "crystal_seed",
+  "type": "uncraft",
+  "activity_level": "LIGHT_EXERCISE",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "10 s",
+  "qualities": [{ "id": "HAMMER", "level": 1 }],
+  "components": [
+    [
+      ["shard_crystal", 2]
+    ]
+  ]
+}
   
   
   
