@@ -26,8 +26,6 @@ Rather than existing alongside the main game, naturis is intended to integrate s
 ## Planned feautures
 - static and fire locations
 - monster evolutions
-- naturis lab
-- naturis lore
 
 ## Installation Instructions
 1. Download the src code in the latest mod release
